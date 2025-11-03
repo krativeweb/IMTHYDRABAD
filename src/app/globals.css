@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npm packages */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "owl.carousel/dist/assets/owl.carousel.min.css";
+@import "owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "aos/dist/aos.css";
+
+/* Custom */
+.has-announcement { padding-top: 60px; }
+
+.navbar {
+  margin-top: 20px ;
+}
