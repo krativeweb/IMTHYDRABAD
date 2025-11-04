@@ -241,7 +241,7 @@ export default function Faculty() {
     { id: 'it-analytics', label: 'IT & Analytics' },
     { id: 'finance-accounting', label: 'Finance and Accounting' },
     { id: 'general-management', label: 'Strategy & General Management' },
-    { id: 'general-management', label: 'Economics & Public Policy' }, // Same department ID as Strategy
+    { id: 'general-management-2', label: 'Economics & Public Policy' }, // Same department ID as Strategy
     { id: 'human-resource', label: 'Human Resource' },
     { id: 'marketing', label: 'Marketing' },
     { id: 'operations-management', label: 'Operations Management' },
