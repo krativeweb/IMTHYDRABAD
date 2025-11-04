@@ -510,7 +510,7 @@ export default function FacultyProfile() {
               </div>
             </div>
           </div>
-        </div>
+        </div>x
       </section>
     </>
   );

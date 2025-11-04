@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // Allow external images from imthyderabad.edu.in
   images: {
     remotePatterns: [
       {
@@ -11,10 +10,15 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "thekreativeweb.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 
-  // Optional: Improve build performance
   eslint: {
     ignoreDuringBuilds: true,
   },

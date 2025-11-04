@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect } from 'react';
-
+import PlacementAlliance from '@/components/PlacementAlliance';
 export default function Committees() {
   // Embedded committee data
   const committeeData = {
@@ -335,38 +335,7 @@ export default function Committees() {
     },
   };
 
-  // Initialize dependencies
-  useEffect(() => {
-    // Import jQuery and Owl Carousel
-    import('jquery').then(($) => {
-      window.$ = window.jQuery = $.default;
-      import('owl.carousel').then(() => {
-        // Initialize Owl Carousel for Placement Alliances
-        window.$('#placement-carousel').owlCarousel({
-          loop: true,
-          margin: 20,
-          nav: true,
-          dots: false,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          responsive: {
-            0: { items: 1 },
-            600: { items: 3 },
-            1000: { items: 4 },
-          },
-        });
-      });
-    });
 
-    // Initialize AOS
-    import('aos').then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
 
   return (
     <>
@@ -442,21 +411,7 @@ export default function Committees() {
           color: #333;
         }
 
-        /* Owl Carousel */
-        .owl-carousel .item {
-          background: #ffffff;
-          padding: 30px;
-          border-radius: 8px;
-          text-align: center;
-          transition: transform 0.3s;
-        }
-        .owl-carousel .item:hover {
-          transform: translateY(-5px);
-        }
-        .owl-carousel .item img {
-          max-height: 80px;
-          object-fit: contain;
-        }
+      
 
         /* Custom Card */
         .custom-card {
@@ -838,35 +793,7 @@ export default function Committees() {
         </div>
       </section>
 
-      {/* Placement Alliances Section */}
-      <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
-        <div className="container text-center">
-          <h6 className="subtitle text-center text-warning" data-aos="fade-down" data-aos-delay="100">
-            Our Alliances
-          </h6>
-          <h2 className="section-title mb-4" data-aos="zoom-in" data-aos-delay="200">
-            PLACEMENT ALLIANCES
-          </h2>
-          <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
-            We are proud to be associated with top companies for student placements.
-          </p>
-
-          {/* Owl Carousel */}
-          <div id="placement-carousel" className="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="400">
-            {[
-              { src: 'https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051319_r14.png', alt: 'Google' },
-              { src: 'https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051331_r39.png', alt: 'Microsoft' },
-              { src: 'https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051345_r12.png', alt: 'Amazon' },
-              { src: 'https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051576_r1.png', alt: 'Infosys' },
-              { src: 'https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051590_r36.png', alt: 'TCS' },
-            ].map((item, index) => (
-              <div className="item" key={index}>
-                <img src={item.src} alt={item.alt} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PlacementAlliance />
     </>
   );
 }
