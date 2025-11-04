@@ -14,8 +14,8 @@ export default function AnnouncementsSection() {
 
     const fetchAnnouncements = async () => {
       try {
-        const { data } = await axios.get(
-          "https://thekreativeweb.com/codes/imt_hydrabad/api/announcements"
+       const { data } = await axios.get(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/announcements`
         );
 
         if (isMounted && Array.isArray(data)) {
