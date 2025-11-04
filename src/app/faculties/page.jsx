@@ -14,7 +14,7 @@ export default function Faculty() {
   const [error, setError] = useState(null);
 
   const baseURL = process.env.NEXT_PUBLIC_BASE_URL; // set in .env.local
-
+  
   // --------------------------------------------------------------
   // 1. FETCH ALL FACULTY
   // --------------------------------------------------------------
