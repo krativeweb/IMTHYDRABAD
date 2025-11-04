@@ -14,9 +14,8 @@ export default function EventsSection() {
 
     const fetchEvents = async () => {
       try {
-        const { data } = await axios.get(
-          "https://thekreativeweb.com/codes/imt_hydrabad/api/events",
-          
+      const { data } = await axios.get(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/events`
         );
 
         if (isMounted && Array.isArray(data)) {
