@@ -14,7 +14,7 @@ export default function AboutSection() {
             >
               <h6 className="subtitle text-warning">About Us</h6>
               <h2 className="title">
-                Shapings Future Leaders Through Holistic Education
+                Shapingssss Future Leaders Through Holistic Education
               </h2>
               <p style={{ textAlign: "justify" }}>
                 Institute of Management Technology, Hyderabad (IMT Hyderabad) is
