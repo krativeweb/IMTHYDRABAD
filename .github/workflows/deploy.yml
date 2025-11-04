@@ -18,6 +18,7 @@ jobs:
           username: Am4DiLNbs9P0aCnA
           port: 22
           key: ${{ secrets.SSH_KEY }}
+          hostKey: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJC6B1Y98Y7mRTMhSfWNxvD5lTf4RMrCXQm0lj7+aX5i
           script: |
             cd ~/imt-hyderabad-test
             echo "Deploying at $(date)"
