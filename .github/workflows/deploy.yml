@@ -17,8 +17,7 @@ jobs:
           host: 13.203.127.190
           username: Am4DiLNbs9P0aCnA
           port: 22
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          hostKey: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJC6B1Y98Y7mRTMhSfWNxvD5lTf4RMrCXQm0lj7+aX5i
+          key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd ~/imt-hyderabad-test/public_html
             echo "Deploying at $(date)"
