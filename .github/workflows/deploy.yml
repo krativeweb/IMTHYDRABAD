@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: Deploy SSR (Private Repo)
 
 on:
   push:
@@ -10,21 +10,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy via SSH
+      - name: Deploy to Server
         uses: appleboy/ssh-action@v0.1.10
         with:
           host: 13.203.127.190
           username: Am4DiLNbs9P0aCnA
           port: 22
-          key: ${{ secrets.SSH_KEY }}
-          hostKey: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJC6B1Y98Y7mRTMhSfWNxvD5lTf4RMrCXQm0lj7+aX5i
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/imt-hyderabad-test/public_html
-            echo "Deploying at $(date)"
+            pm2 stop imt-hyderabad-test || true
+            rm -rf .next node_modules
             git pull origin main
             npm install --omit=dev
             npm run build
-            pm2 restart imt-hyderabad-test
-            echo "Deploy complete!"
-
+            PORT=3000 pm2 start npm --name "imt-hyderabad-test" -- start
+            pm2 save
+            echo "Deployed at $(date)"
