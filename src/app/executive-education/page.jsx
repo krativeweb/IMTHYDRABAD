@@ -377,7 +377,10 @@ export default function ExecutiveEducation() {
             Executive Education
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.
+             Empowering professionals to lead with confidence in a changing business facet.
+          <br/>
+Executive learning that blends strategy, leadership, and innovation. 
+this content in the subtext
           </p>
         </div>
         <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
