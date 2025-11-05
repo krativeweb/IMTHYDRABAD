@@ -122,8 +122,8 @@ export default function PointOfContactSection() {
       <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
         <h2 className="display-5 fw-bold mb-2">Point of Contact</h2>
         <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-          <br /> facere fuga eaque ducimus, praesentium in distinctio
+         Your bridge to global collaboration. <br />
+Our International Relations Office facilitates partnerships, student mobility, and cross-border academic engagement.
         </p>
       </div>
 
