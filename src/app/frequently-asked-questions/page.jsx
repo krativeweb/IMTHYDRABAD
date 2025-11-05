@@ -65,9 +65,8 @@ export default function FAQ() {
         >
           <h2 className="display-5 fw-bold mb-2">Frequently Asked Questions</h2>
           <p className="text-white" data-aos-delay="100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            animi illum <br />
-            facere fuga eaque ducimus, praesentium in distinctio
+             Clear answers for informed decisions. <br />
+Our FAQs help prospective students and parents understand our programs, policies, and learning environment.
           </p>
         </div>
 
