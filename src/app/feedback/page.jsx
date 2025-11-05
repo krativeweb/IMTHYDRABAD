@@ -144,7 +144,8 @@ export default function FeedbackFacility() {
             Feedback Facility for Students and Faculty
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.
+            Listening to grow stronger together. <br />
+We value constructive feedback from students, faculty, and stakeholders to enhance quality and enrich experiences
           </p>
         </div>
         <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
@@ -180,7 +181,7 @@ export default function FeedbackFacility() {
                 <div className="col-lg-12 text-justify">
                   <p>
                     Feedback Facility for Students and Faculty in AICTE Web Portal:{' '}
-                    <Link href="#" target="_blank" className="link-primary">
+                    <Link href="https://www.aicte.gov.in/feedback/index.php" target="_blank" className="link-primary">
                       Click Here
                     </Link>
                   </p>
