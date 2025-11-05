@@ -14,7 +14,7 @@ export default function CampusLifeGallery() {
     {
       img: "/media/img/f.webp",
       title: "CLUBS & COMMITTEES",
-      link: "/clubs-committees",
+      link: "/clubs&committes",
     },
     { img: "/media/img/z.webp", title: "CAMPUS PULSE", link: "/annual-events" },
     { img: "/media/news.jpg", title: "NEWSLETTERS", link: "/newsletters" },
