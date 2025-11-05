@@ -123,9 +123,8 @@ export default function GlobalImmersionProgram() {
             Global Immersion Program
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            animi illum <br /> facere fuga eaque ducimus, praesentium in
-            distinctio
+           Preparing students for a world without borders. <br />
+Our global immersion programs blend international learning with cultural insight to create truly global leaders.
           </p>
         </div>
 
@@ -277,7 +276,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/admin/images/happenings/1739861481_gip25-1.jpg"
+                  src="/media/G-I/1.jpg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -323,7 +322,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/admin/images/happenings/1740468722_gip25-2-1.jpg"
+                  src="/media/G-I/2.jpg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -390,7 +389,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/admin/images/happenings/1740648928_GIP_Session-3_Pic-1.jpg"
+                  src="/media/G-I/3.jpg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -447,7 +446,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/admin/images/happenings/1740649201_gip25-4-1.jpg"
+                  src="/media/G-I/4.jpg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -503,7 +502,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/admin/images/happenings/1740727714_gip25-5-2.jpg"
+                  src="/media/G-I/5.jpg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -555,7 +554,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/admin/images/happenings/1741241357_gip25-6-2.jpg"
+                  src="/media/G-I/6.jpg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -618,7 +617,7 @@ export default function GlobalImmersionProgram() {
             >
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip2024.png"
+                  src="/media/G-I/7.png"
                   alt=""
                   className="w-100 img-fluid"
                 />
@@ -650,7 +649,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip24-1.png"
+                  src="/media/G-I/8.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -741,7 +740,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip24-2.png"
+                  src="/media/G-I/9.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -831,7 +830,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip24-3.png"
+                  src="/media/G-I/10.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -927,7 +926,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip24-4.png"
+                  src="/media/G-I/11.png"
                   alt="GIP24"
                   className="img-responsive w-100"
                 />
@@ -1037,7 +1036,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip24-5.png"
+                  src="/media/G-I/12.png"
                   alt="GIP24"
                   className="img-responsive w-100"
                 />
@@ -1138,7 +1137,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2024/gip24-6.png"
+                  src="/media/G-I/13.png"
                   alt="GIP24"
                   className="img-responsive w-100"
                 />
@@ -1227,7 +1226,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2023/gip23-1.jpg"
+                  src="/media/G-I/14.jpeg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1318,7 +1317,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2023/gip23-2.jpg"
+                  src="/media/G-I/15.jpeg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1395,7 +1394,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2023/gip23-3.jpg"
+                  src="/media/G-I/16.jpeg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1480,7 +1479,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2023/gip23-4.jpg"
+                  src="/media/G-I/17.jpeg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1574,7 +1573,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2023/gip23-5.jpg"
+                  src="/media/G-I/18.jpeg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1654,7 +1653,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/2023/gip23-6.jpg"
+                  src="/media/G-I/19.jpeg"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1727,7 +1726,7 @@ export default function GlobalImmersionProgram() {
             >
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/gip2022.png"
+                  src="/media/G-I/20.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1853,7 +1852,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-1.png"
+                  src="/media/G-I/21.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -1944,7 +1943,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-2.png"
+                  src="/media/G-I/22.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -2032,7 +2031,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-3.png"
+                  src="/media/G-I/23.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -2127,7 +2126,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-4.png"
+                  src="/media/G-I/24.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -2218,7 +2217,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-5.png"
+                  src="/media/G-I/25.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -2310,7 +2309,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-6.png"
+                  src="/media/G-I/26.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -2401,7 +2400,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-7.png"
+                  src="/media/G-I/27.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
@@ -2491,7 +2490,7 @@ export default function GlobalImmersionProgram() {
               <br />
               <p>
                 <img
-                  src="https://www.imthyderabad.edu.in/assets/images-demo/iro/speaker-8.png"
+                  src="/media/G-I/28.png"
                   alt="GIP"
                   className="img-responsive w-100"
                 />
