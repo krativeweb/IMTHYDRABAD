@@ -85,7 +85,7 @@ export default function ModelCodeSection() {
            Rooted in values that define our community. <br />
 Our code of conduct promotes respect, discipline, and professionalism in every interaction and endeavor.
           </p>
-          </p>
+       
         </div>
 
         {/* Breadcrumb */}
