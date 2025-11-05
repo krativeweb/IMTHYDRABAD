@@ -121,7 +121,9 @@ export default function MomBogSection() {
         {/* Top Banner */}
         <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
           <h2 className="display-5 fw-bold mb-2">MOM BOG</h2>
-          <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.</p>
+          <p className="text-white">Led by vision, governed by integrity.
+<br />
+Our Board of Governors ensures strategic direction, sound governance, and academic accountability.</p>
         </div>
 
         {/* Breadcrumb */}
