@@ -19,20 +19,20 @@ export default function PlacementDataSection() {
   // Placement data for each tab
   const placementData = {
     pgdm: [
-      { year: "2020 - 22", link: "#" },
-      { year: "2019 - 21", link: "#" },
-      { year: "2018 - 20", link: "#" },
+      { year: "2020 - 22", link: "https://drive.google.com/file/d/14pKySbYLBdsHNtsopLVfbB67yUkbYQtL/view" },
+      { year: "2019 - 21", link: "https://drive.google.com/file/d/1akoh7Ml_OTY6e7kIRLpxjDK3FDRJ4dQ5/view" },
+      { year: "2018 - 20", link: "https://drive.google.com/file/d/19YY8GmXPbVxgKUVeu5tYxQHOUB2x5ybL/view" },
     ],
     "pgdm-finance": [
-      { year: "2020 - 22", link: "#" },
-      { year: "2019 - 21", link: "#" },
-      { year: "2018 - 20", link: "#" },
+      { year: "2020 - 22", link: "https://drive.google.com/file/d/1xsIWjOCibHq0aeZMgPqcb1R0a0BuD0w_/view" },
+      { year: "2019 - 21", link: "http://drive.google.com/file/d/1zu9dEIxxtQhjFd_6r8GzThDEiSLnHe__/view" },
+      { year: "2018 - 20", link: "https://drive.google.com/file/d/1rZOzFUvlANWo7rJHiTI1l5rH2-8J2fdH/view" },
     ],
     "pgdm-marketing": [
-      { year: "2021 - 23", link: "#" },
-      { year: "2020 - 22", link: "#" },
-      { year: "2019 - 21", link: "#" },
-      { year: "2018 - 20", link: "#" },
+      { year: "2021 - 23", link: "https://drive.google.com/file/d/1XV3vkjC7An0j0AT2Mf4_Ov7xMd-M8hdd/view" },
+      { year: "2020 - 22", link: "https://drive.google.com/file/d/180qm15y4YS_vPpLIoqn54ksHWvvpsy_q/view" },
+      { year: "2019 - 21", link: "https://drive.google.com/file/d/1j8SVJ3gEw3bQx1Fju7X0V_9-69grxZ8f/view" },
+      { year: "2018 - 20", link: "https://drive.google.com/file/d/1Pn3AlbjbhlPhkCrGl_Y2YMcwkjDKgpY9/view" },
     ],
   };
 
@@ -136,8 +136,8 @@ export default function PlacementDataSection() {
       <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
         <h2 className="display-5 fw-bold mb-2">Placement Data</h2>
         <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-          <br /> facere fuga eaque ducimus, praesentium in distinctio.
+          Proven outcomes through real-world success. <br />
+Our placement record reflects strong industry trust, competitive performance, and a network of distinguished recruiters.
         </p>
       </div>
 
@@ -227,7 +227,7 @@ export default function PlacementDataSection() {
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-sm btn-warning fw-semibold">
+                            <Link href={item.link} className="btn btn-sm btn-warning rounded-pill fw-semibold">
                               Click Here
                             </Link>
                           </td>
@@ -256,7 +256,7 @@ export default function PlacementDataSection() {
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-outline-primary btn-sm">
+                            <Link href={item.link} className="btn btn-primary rounded-pill btn-sm">
                               Click Here
                             </Link>
                           </td>
@@ -285,7 +285,7 @@ export default function PlacementDataSection() {
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-outline-primary btn-sm">
+                            <Link href={item.link} className="btn btn-primary rounded-pill btn-sm">
                               Click Here
                             </Link>
                           </td>
