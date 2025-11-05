@@ -82,8 +82,9 @@ export default function ModelCodeSection() {
         <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
           <h2 className="display-5 fw-bold mb-2">Model Code of Conduct</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-            <br /> facere fuga eaque ducimus, praesentium in distinctio.
+           Rooted in values that define our community. <br />
+Our code of conduct promotes respect, discipline, and professionalism in every interaction and endeavor.
+          </p>
           </p>
         </div>
 
