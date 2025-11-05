@@ -35,15 +35,11 @@ export default function PhotoGallerySection() {
   return (
     <>
       {/* Top Banner */}
-      <div
-        className="faculty-hero text-center text-white py-5"
-        data-aos="fade-up"
-      >
+     <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
         <h2 className="display-5 fw-bold mb-2">Photo Gallery</h2>
         <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          animi illum <br /> facere fuga eaque ducimus, praesentium in
-          distinctio
+          Capturing moments of learning, leadership, and life. <br />
+          Our gallery reflects the vibrancy, energy, and achievements of our academic journey.
         </p>
       </div>
 
