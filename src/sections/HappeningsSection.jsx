@@ -1,8 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function HappeningsSection() {
+  const [happenings, setHappenings] = useState([]);
+
+  useEffect(() => {
+    const fetchHappenings = async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/happiness`
+        );
+        const data = await res.json();
+        setHappenings(data.filter((item) => item.is_del === 0));
+      } catch (err) {
+        console.error("Failed to fetch happenings:", err);
+      }
+    };
+
+    fetchHappenings();
+  }, []);
+
   return (
     <section
       className="blogs-section py-4"
@@ -27,90 +46,57 @@ export default function HappeningsSection() {
 
         <div className="row g-4">
           {/* Blog Card 1 */}
-          <div
-            className="col-lg-6 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div className="blog-card card h-100 shadow">
-              <img
-                src="/media/img/shake.webp"
-                className="card-img-top"
-                style={{ height: "25vh", objectFit: "cover" }}
-                alt="Zimbabwe Partnership"
-              />
-              <div className="card-body">
-                <h5 className="card-title">
-                  IMT Hyderabad Explores Academic Partnerships with Zimbabwean
-                  Universities Following High-Level Meeting at CII Africa Summit
-                </h5>
-                <p className="card-text">
-                  Strengthening global outreach through collaborative
-                  opportunities in Africa.
-                </p>
-                <Link href="#" className="btn btn-primary rounded-pill">
-                  Read More
-                </Link>
+          {happenings[0] && (
+            <div
+              className="col-lg-6 col-md-6 col-sm-12"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="blog-card card h-100 shadow">
+                <img
+                  src={happenings[0].team_image}
+                  className="card-img-top"
+                  style={{ height: "25vh", objectFit: "cover" }}
+                  alt={happenings[0].title}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{happenings[0].title}</h5>
+                  <p className="card-text">{happenings[0].description}</p>
+                  <Link href="#" className="btn btn-primary rounded-pill">
+                    Read More
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* Blog Card 2 & 3 */}
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div className="row g-4">
-              <div
-                className="col-12 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div className="blog-card card h-100 shadow">
-                  <img
-                    src="/media/flag.webp"
-                    className="card-img-top"
-                    style={{ height: "20vh", objectFit: "cover" }}
-                    alt="Independence Day"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      79th Independence Day Celebrations
-                    </h5>
-                    <p className="card-text">
-                      Patriotic fervor and cultural performances marked the 79th
-                      Independence Day on campus.
-                    </p>
-                    <Link href="#" className="btn btn-primary rounded-pill">
-                      Read More
-                    </Link>
+              {happenings.slice(1, 3).map((item, idx) => (
+                <div
+                  key={item.id}
+                  className="col-12 col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay={200 + idx * 100}
+                >
+                  <div className="blog-card card h-100 shadow">
+                    <img
+                      src={item.team_image}
+                      className="card-img-top"
+                      style={{ height: "20vh", objectFit: "cover" }}
+                      alt={item.title}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{item.title}</h5>
+                      <p className="card-text">{item.description}</p>
+                      <Link href="#" className="btn btn-primary rounded-pill">
+                        Read More
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div
-                className="col-12 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div className="blog-card card h-100 shadow">
-                  <img
-                    src="/media/img/e.webp"
-                    className="card-img-top"
-                    style={{ height: "20vh", objectFit: "cover" }}
-                    alt="SICI Membership"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      IMT Hyderabad joins Shastri Indo-Canadian Institute (SICI)
-                    </h5>
-                    <p className="card-text">
-                      Promoting Indo-Canadian collaborations in research,
-                      academics, and cultural exchange.
-                    </p>
-                    <Link href="#" className="btn btn-primary rounded-pill">
-                      Read More
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
