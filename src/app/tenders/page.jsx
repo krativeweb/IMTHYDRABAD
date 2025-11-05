@@ -30,8 +30,8 @@ export default function TendersPage() {
         >
           <h2 className="display-5 fw-bold mb-2">Tenders</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum <br />
-            facere fuga eaque ducimus, praesentium in distinctio.
+           Committed to transparent and responsible procurement. <br />
+Our tender processes reflect fairness, accountability, and adherence to institutional and regulatory standards.
           </p>
         </div>
 
@@ -64,9 +64,11 @@ export default function TendersPage() {
                 Quotations are invited for Website Design & Development at Institute of Management Technology, Hyderabad
               </p>
               <p>
-                <button className="btn rounded-pill btn-warning">
+                <Link href="https://drive.google.com/file/d/1_Z5kOJp9n5l-EvBQvVxSQdDhWjkLVt41/view">
+                  <button className="btn rounded-pill btn-warning">
                   <strong>Click here to view</strong>
                 </button>
+                </Link>
               </p>
             </div>
           </div>
