@@ -95,7 +95,7 @@ export default function AnnouncementsSection() {
   ))}
 
   {/* Remaining cards (any number) */}
-  {announcements.slice(2).map((item) => (
+  {announcements.slice(2,5).map((item) => (
     <div key={item.id} className="col-md-4">
       <div className="card h-100 border-0 shadow-sm">
         <div className="card-body">
