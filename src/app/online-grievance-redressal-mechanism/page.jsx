@@ -121,7 +121,8 @@ export default function GrievanceRedressalSection() {
         {/* Top Banner */}
         <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
           <h2 className="display-5 fw-bold mb-2">Online Grievance Redressal Mechanism</h2>
-          <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.</p>
+          <p className="text-white">Ensuring every voice is heard with fairness. <br />
+Our grievance redressal mechanism maintains transparency, empathy, and timely resolution of concerns within our community.</p>
         </div>
 
         {/* Breadcrumb */}
@@ -158,7 +159,7 @@ export default function GrievanceRedressalSection() {
                 <div className="col-lg-12 text-justify">
                   <p>
                     Online Grievance Redressal Mechanism:{" "}
-                    <Link href="#" target="_blank" rel="noopener">
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfdLgcrGEIGvoYtreWgIcrnsHGKcRIqrGNPJb2p6tDodqietw/viewform" target="_blank" rel="noopener">
                       Click Here
                     </Link>
                   </p>
