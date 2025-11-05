@@ -32,8 +32,8 @@ export default function StudyingPage() {
         >
           <h2 className="display-5 fw-bold mb-2">Studying at IMT Hyderabad</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum <br />
-            facere fuga eaque ducimus, praesentium in distinctio
+            A community where students grow, collaborate, and lead. <br />
+We cultivate thinkers and doers prepared for a future shaped by innovation and empathy.
           </p>
         </div>
 
