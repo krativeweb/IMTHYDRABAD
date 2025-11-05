@@ -22,7 +22,7 @@ const StepDubaiContent = () => {
   return (
     <div className="step-dubai-content">
       {/* Hero Section */}
-      <section className="faculty-section" style={{ paddingTop: '80px' }}>
+      <section className="faculty-section" >
         <div
           className="faculty-hero text-center text-white py-5"
           style={{
@@ -43,11 +43,11 @@ const StepDubaiContent = () => {
           />
           <div className="hero-content" style={{ position: 'relative', zIndex: 2, marginTop: '150px' }}>
             <h2 className="display-5 fw-bold mb-2">
-              Short Term Exchange Programs Step at @ IMT Dubai
+              Step at @ IMT Dubai
             </h2>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum <br />
-              facere fuga eaque ducimus, praesentium in distinctio
+             Extending our vision beyond borders. <br />
+Through the STEP Dubai program, we connect students with international business environments and global learning opportunities.
             </p>
           </div>
         </div>
