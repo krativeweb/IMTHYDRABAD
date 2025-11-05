@@ -127,7 +127,7 @@ export default function ResearchCarousel() {
                           {item.description}
                         </p>
                         <Link
-                          href={`/${item.title
+                          href={`/${item.short_title
                             .toLowerCase()
                             .replace(/\s+/g, "")}`}
                           className="link-warning fw-bold text-decoration-underline"
