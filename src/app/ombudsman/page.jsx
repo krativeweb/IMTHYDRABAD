@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import PlacementAlliances from "@/sections/PlacementAlliances.jsx";
 
 export default function OmbudsmanSection() {
   // Initialize AOS and Owl Carousel
@@ -145,22 +146,39 @@ export default function OmbudsmanSection() {
 
       <section className="faculty-section">
         {/* Top Banner */}
-        <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
+        <div
+          className="faculty-hero text-center text-white py-5"
+          data-aos="fade-up"
+        >
           <h2 className="display-5 fw-bold mb-2">OMBUDSMAN</h2>
-          <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.</p>
+          <p className="text-white">
+            Upholding fairness through independent redressal. <br />
+            Our Ombudsman ensures every concern is addressed with integrity,
+            transparency, and commitment to ethical governance.
+          </p>
         </div>
 
         {/* Breadcrumb */}
-        <div className="breadcrumb p-4" style={{ backgroundColor: "rgb(22, 57, 119)" }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: "none" }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   OMBUDSMAN
                 </li>
               </ol>
@@ -183,8 +201,9 @@ export default function OmbudsmanSection() {
               <div className="row justify-content-center mt-3">
                 <div className="col-lg-12 text-justify">
                   <p>
-                    Prof. HimachalamDasaraju, Professor Emeritus-UGC and Professor of Commerce, Sri Venkateswara University,
-                    Tirupati has been nominated as “OMBUDSMAN”.
+                    Prof. HimachalamDasaraju, Professor Emeritus-UGC and
+                    Professor of Commerce, Sri Venkateswara University, Tirupati
+                    has been nominated as “OMBUDSMAN”.
                   </p>
                   <p>Dr. Himachalam Dasaraju</p>
                   <b>Residence:</b>
@@ -206,36 +225,12 @@ export default function OmbudsmanSection() {
         </section>
 
         {/* Placement Alliances Section */}
-        <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
-          <div className="container text-center">
-            <h6 className="subtitle text-center text-warning" data-aos="fade-down" data-aos-delay="100">
-              Our Clients
-            </h6>
-            <h2 className="section-title mb-4" data-aos="zoom-in" data-aos-delay="200">
-              Our Distinguished Clients
-            </h2>
-            <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
-              We are proud to be associated with top companies.
-            </p>
-
-            {/* Owl Carousel */}
-            <div id="placement-carousel" className="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="400">
-              {[
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051319_r14.png", alt: "Google" },
-                {
-                  src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051331_r39.png",
-                  alt: "Microsoft",
-                },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051345_r12.png", alt: "Amazon" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051576_r1.png", alt: "Infosys" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051590_r36.png", alt: "TCS" },
-              ].map((item, index) => (
-                <div className="item" key={index}>
-                  <img src={item.src} alt={item.alt} />
-                </div>
-              ))}
-            </div>
-          </div>
+        <section
+          className="placement-alliances-section py-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <PlacementAlliances />
         </section>
       </section>
     </>
