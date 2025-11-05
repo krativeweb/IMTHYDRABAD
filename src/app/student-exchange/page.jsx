@@ -81,7 +81,7 @@ export default function StudentExchangePage() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="faculty-section" style={{ paddingTop: '80px' }}>
+      <section className="faculty-section" >
         <div
           className="faculty-hero text-center text-white py-5"
           style={{
@@ -103,8 +103,8 @@ export default function StudentExchangePage() {
           <div className="hero-content" style={{ position: 'relative', zIndex: 2, marginTop: '150px' }}>
             <h2 className="display-5 fw-bold mb-2">Student Exchange</h2>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum <br />
-              facere fuga eaque ducimus, praesentium in distinctio
+              Learning without boundaries. <br />
+Our student exchange programs connect classrooms across continents, fostering global exposure and multicultural competence.
             </p>
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function StudentExchangePage() {
         <section className="py-5">
           <nav className="nav nav-pills justify-content-center flex-wrap gap-2 mt-5 mb-5" data-aos="fade-up">
             <Link
-              className="nav-link rounded-pill bg-white active text-black"
+              className="nav-link rounded-pill active text-black"
               data-bs-toggle="tab"
               href="#tab-out"
               role="tab"
@@ -329,72 +329,74 @@ export default function StudentExchangePage() {
 
       {/* SCOPED STYLES */}
       <style jsx>{`
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-
-        .hero-content {
-          position: relative;
-          z-index: 2;
-        }
-
-        .nav-pills .nav-link.active {
-          background-color: #ffc107 !important;
-          color: #000 !important;
-        }
-
-        .scrollable-columns .nav-link {
-          display: inline-block;
-          width: 100%;
-          margin-bottom: 0.5rem;
-        }
-
-        .card {
-          border-radius: 1rem;
-        }
-
-        .table {
-          border-radius: 0.5rem;
-          overflow: hidden;
-        }
-
-        .table td, .table th {
-          vertical-align: middle;
-          font-size: 1rem;
-        }
-
-        .table a.btn {
-          background-color: #ffc107;
-          border: none;
-          color: #000;
-        }
-
-        .table a.btn:hover {
-          background-color: #e0a800;
-        }
-
-        .nav-link {
-          transition: all 0.3s;
-        }
-
-        @media (max-width: 768px) {
-          .hero-content {
-            margin-top: 100px !important;
-          }
-          .hero-content h2 {
-            font-size: 1.8rem;
-          }
-          .scrollable-columns {
-            column-count: 1;
-          }
-          .nav-link {
-            font-size: 0.9rem;
-            padding: 8px 16px;
-          }
-        }
+        /* Gradient banner with subtle overlay */
+                .faculty-hero {
+                  background: url('./images/banner/international relations.jpg');
+                  position: relative;
+                  background-size:cover ;
+                  height:50vh;
+                }
+                .faculty-hero::before {
+                  content: "";
+                  position: absolute;
+                  inset: 0;
+                  background: rgba(0,0,0,0.3);
+                }
+                .faculty-hero h2,
+                .faculty-hero p {
+                   
+                  position: relative;
+                  z-index: 1;
+                }
+               .faculty-hero h2{
+ margin-top:150px;
+ }
+                
+                /* Card styling */
+                .faculty-card {
+                  background: #f8f9fa;
+                  border: none;
+                  border-radius: 1.5rem;
+                }
+                
+                /* Image glow & hover effect */
+                .faculty-img {
+                  border-radius: 1.2rem;
+                  transition: transform 0.4s ease;
+                }
+                .faculty-img:hover {
+                  transform: scale(1.03);
+                }
+                
+                /* Social icons */
+                .social-icon {
+                  display: inline-flex;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  justify-content: center;
+                  align-items: center;
+                  background: #ffc107;
+                  color: #ffffffff;
+                  transition: all 0.3s;
+                }
+                .social-icon:hover {
+                  background: #5390D9;
+                  color: #ffffffff;
+                  transform: translateY(-3px);
+                }
+                
+                /* Tabs */
+                .faculty-tabs .nav-pills .nav-link {
+                  border-radius: 50rem;
+                  background: #e9ecef;
+                  color: #333;
+                  transition: all 0.3s;
+                }
+                .faculty-tabs .nav-pills .nav-link.active {
+                  background: #ffc107;
+                  color: #000000ff;
+                }
       `}</style>
     </>
   );
