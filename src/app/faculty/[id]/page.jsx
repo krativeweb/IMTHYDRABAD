@@ -154,7 +154,7 @@ export default function FacultyProfile() {
 
     const fetchFaculty = async () => {
       try {
-        const { data } = await axios.get(BASE_URL, {
+       const { data } = await axios.get(`${BASE_URL}/faculties/${slug}`, {
           params: { page_slug: slug },
           timeout: 10000
         });
