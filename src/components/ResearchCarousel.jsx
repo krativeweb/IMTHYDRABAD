@@ -1,148 +1,143 @@
-// src/components/ResearchCarousel.jsx
+// src/sections/ResearchCarousel.jsx
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import axios from "axios";
+import "aos/dist/aos.css"; // Make sure you import AOS CSS
 import Link from "next/link";
+
 export default function ResearchCarousel() {
   const carouselRef = useRef(null);
-  const initializedRef = useRef(false);
+  const [researches, setResearches] = useState([]);
 
   useEffect(() => {
-    // Prevent double init
-    if (initializedRef.current) return;
-
-    const initOwl = () => {
-      if (!carouselRef.current || !window.$ || !window.$.fn.owlCarousel) return;
-
-      window.$(carouselRef.current).owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          992: { items: 3 },
-          1200: { items: 4 },
-        },
-      });
-
-      initializedRef.current = true;
+    // Fetch research data
+    const fetchResearch = async () => {
+      try {
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/research_infocus`
+        );
+        // Only take non-deleted items
+        setResearches(res.data.filter((item) => item.is_del === 0));
+      } catch (err) {
+        console.error("Failed to fetch research data:", err);
+      }
     };
-
-    // Try immediately
-    if (window.$ && window.$.fn.owlCarousel) {
-      initOwl();
-    } else {
-      // Poll until Owl is ready (max 5 seconds)
-      let attempts = 0;
-      const interval = setInterval(() => {
-        attempts++;
-        if (window.$ && window.$.fn.owlCarousel) {
-          initOwl();
-          clearInterval(interval);
-        } else if (attempts > 50) {
-          console.warn("Owl Carousel failed to load after 5s");
-          clearInterval(interval);
-        }
-      }, 100);
-
-      return () => clearInterval(interval);
-    }
+    fetchResearch();
   }, []);
 
+  useEffect(() => {
+    // Initialize Bootstrap Carousel
+    const initCarousel = () => {
+      if (!carouselRef.current || !window.bootstrap) return false;
+
+      new window.bootstrap.Carousel(carouselRef.current, {
+        interval: 5000,
+        ride: "carousel",
+        wrap: true,
+        keyboard: true,
+      });
+
+      return true;
+    };
+
+    if (initCarousel()) return;
+
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if (initCarousel()) clearInterval(interval);
+      else if (attempts > 50) {
+        console.warn("Bootstrap Carousel failed to initialize after 5s");
+        clearInterval(interval);
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [researches]);
+
   return (
-    <section className="py-4" style={{ backgroundColor: "#151e54" }}>
+    <section
+      className="research-card-carousel py-4"
+      style={{ backgroundColor: "#151e54" }}
+    >
       <div className="container">
-        <h6 className="text-center text-warning" data-aos="fade-down">
+        <h6
+          className="subtitle text-center text-warning"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           Our Researches
         </h6>
-        <h2 className="text-white text-center mb-4" data-aos="zoom-in">
+        <h2
+          className="section-title text-white mb-4 text-center"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           Research in Focus
         </h2>
 
-        {/* Owl Carousel */}
+        {/* Bootstrap Carousel */}
         <div
           ref={carouselRef}
-          className="owl-carousel owl-theme"
-          id="researchCardCarousel"
+          id="researchCardCarouselss"
+          className="carousel slide"
+          data-bs-ride="carousel"
         >
-          {/* === Card 1 === */}
-          <div className="item" data-aos="fade-up" data-aos-delay="100">
-            <div className="research-card p-3 h-100 shadow rounded bg-white">
-              <img
-                src="/media/img/2.webp"
-                className="img-fluid rounded mb-3"
-                alt="Research 1"
-              />
-              <h5 className="research-org">IMT – CII</h5>
-              <p className="research-title">
-                Impact of COVID pandemic on small and medium enterprises (SMEs)
-              </p>
-              <Link href="/" className="link-primary">
-                Read More
-              </Link>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="row g-4 justify-content-center">
+                {researches.map((item, idx) => (
+                  <div
+                    key={item.id}
+                    className="col-lg-3 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay={100 + idx * 100}
+                  >
+                    <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
+                      <img
+                        src={item.team_image}
+                        className="img-fluid rounded mb-3"
+                        alt={item.title}
+                      />
+                      <h5 className="research-org text-primary">
+                        {item.title}
+                      </h5>
+                      <p className="research-title small">{item.description}</p>
+                      <Link
+                        href={`/${item.title
+                          .toLowerCase()
+                          .replace(/\s+/g, "")}`}
+                        className="link-warning fw-bold text-decoration-underline"
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* === Card 2 === */}
-          <div className="item" data-aos="fade-up" data-aos-delay="200">
-            <div className="research-card p-3 h-100 shadow rounded bg-white">
-              <img
-                src="/media/img/3.webp"
-                className="img-fluid rounded mb-3"
-                alt="Research 2"
-              />
-              <h5 className="research-org">IMT – NABARD</h5>
-              <p className="research-title">
-                Study on defaults in SHef-bank linkage program in Andhra Pradesh
-              </p>
-              <Link href="#" className="faces-primary">
-                Read More
-              </Link>
-            </div>
-          </div>
-
-          {/* === Card 3 === */}
-          <div className="item" data-aos="fade-up" data-aos-delay="300">
-            <div className="research-card p-3 h-100 shadow rounded bg-white">
-              <img
-                src="/media/img/5.webp"
-                className="img-fluid rounded mb-3"
-                alt="Research 3"
-              />
-              <h5 className="research-org">IMT – SCOPE</h5>
-              <p className="research-title">
-                Study on digital transformation in Indian Central Public Sector
-                Undertaking
-              </p>
-              <Link href="#" className="link-primary">
-                Read More
-              </Link>
-            </div>
-          </div>
-
-          {/* === Card 4 === */}
-          <div className="item" data-aos="fade-up" data-aos-delay="400">
-            <div className="research-card p-3 h-100 shadow rounded bg-white">
-              <img
-                src="/media/img/4.webp"
-                className="img-fluid rounded mb-3"
-                alt="Research 4"
-              />
-              <h5 className="research-org">IMT – NPCI</h5>
-              <p className="research-title">
-                Study on Adoption of Cashless Transaction Solutions by Small
-                merchants
-              </p>
-              <Link href="#" className="link-primary">
-                Read More
-              </Link>
-            </div>
-          </div>
+          {/* Navigation Arrows */}
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#researchCardCarouselss"
+            data-bs-slide="prev"
+          >
+            <span className="carousel-control-prev-icon" aria-hidden="true" />
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#researchCardCarouselss"
+            data-bs-slide="next"
+          >
+            <span className="carousel-control-next-icon" aria-hidden="true" />
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
