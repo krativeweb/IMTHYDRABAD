@@ -270,7 +270,7 @@ export default function Faculty() {
                 data-aos-delay={100 + (index % 12) * 100}
               >
                 <div className="card faculty-card shadow h-100 p-3 text-center">
-                  <Link href={`/faculty/${faculty.fd_id}`}>
+                  <Link href={`/faculty/${faculty.page_slug}`}>
                     <Image
                       src={faculty.prof_image}
                       alt={faculty.prof_name}
