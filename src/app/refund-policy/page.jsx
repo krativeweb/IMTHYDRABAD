@@ -91,7 +91,7 @@ export default function RefundPolicySection() {
       <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
         <h2 className="display-5 fw-bold mb-2">Refund Policy</h2>
         <p className="text-white">
-           Committed to fairness and transparency in every process. <br />
+          Committed to fairness and transparency in every process. <br />
 Our refund policy ensures clarity, accountability, and compliance with all regulatory standards.
         </p>
       </div>

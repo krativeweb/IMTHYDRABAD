@@ -684,6 +684,7 @@ export default function ClubsAndCommittees() {
         .image-card.active {
           border-bottom: 12px double #ffc107;
           transition: all 0.3s ease-in-out;
+          background-color: #163977
         }
         .card-overlay {
           position: absolute;
@@ -1016,7 +1017,8 @@ export default function ClubsAndCommittees() {
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Explore Student Life at IMT Hyderabad</h2>
-          <p className="text-white">“Join a club, lead a committee, and shape your campus experience”</p>
+          <p className="text-white">Where learning continues beyond classrooms. <br />
+Student clubs and committees foster leadership, teamwork, and real-world problem-solving through collaboration and creativity.</p>
         </div>
         <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
           <div className="container-fluid">

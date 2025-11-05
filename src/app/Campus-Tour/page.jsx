@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 import Link from "next/link";
+import PlacementAlliances from "@/sections/PlacementAlliances.jsx";
 
 export default function CampusTour() {
   useEffect(() => {
@@ -57,7 +58,8 @@ export default function CampusTour() {
         >
           <h2 className="display-5 fw-bold mb-2">Campus Tour</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.
+           A campus built for ideas, collaboration, and growth. <br />
+Discover state-of-the-art learning spaces designed to inspire innovation and community.
           </p>
         </div>
 
@@ -135,52 +137,7 @@ export default function CampusTour() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="container text-center">
-          <h6
-            className="subtitle text-center text-warning"
-            data-aos="fade-down"
-            data-aos-delay="100"
-          >
-            Our Clients
-          </h6>
-          <h2
-            className="section-title mb-4"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            Our Distinguished Clients
-          </h2>
-          <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
-            We are proud to be associated with top companies.
-          </p>
-
-          {/* Swiper Carousel */}
-          <div
-            id="placement-carousel"
-            className="swiper"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="swiper-wrapper">
-              {[
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051319_r14.png", alt: "Google" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051331_r39.png", alt: "Microsoft" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051345_r12.png", alt: "Amazon" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051576_r1.png", alt: "Infosys" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051590_r36.png", alt: "TCS" },
-              ].map((item, i) => (
-                <div key={i} className="swiper-slide">
-                  <div className="item">
-                    <img src={item.src} alt={item.alt} />
-                  </div>
-                </div>
-              ))}
-            </div>
-            {/* Navigation */}
-            <div className="swiper-button-next"></div>
-            <div className="swiper-button-prev"></div>
-          </div>
-        </div>
+        <PlacementAlliances/>
       </section>
 
       {/* === FULL ORIGINAL STYLES (Video, Carousel, Gallery, Hover) === */}

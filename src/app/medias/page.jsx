@@ -14,7 +14,7 @@ export default function MediaSection() {
           once: true,
         });
       });
-
+ 
       // Custom tab activation script
       const tabs = document.querySelectorAll("#mediaTabs .nav-link");
       tabs.forEach((tab) => {
@@ -120,8 +120,8 @@ export default function MediaSection() {
         <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
           <h2 className="display-5 fw-bold mb-2">Media</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-            <br /> facere fuga eaque ducimus, praesentium in distinctio
+           Here ideas create headlines and achievements inspire stories. <br />
+Explore news, features, and insights showcasing our impact on education, industry, and society.
           </p>
         </div>
 

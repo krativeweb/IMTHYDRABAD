@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import PlacementAlliances from "@/sections/PlacementAlliances.jsx";
 
 export default function OmbudsmanSection() {
   // Initialize AOS and Owl Carousel
@@ -208,35 +209,7 @@ Our Ombudsman ensures every concern is addressed with integrity, transparency, a
 
         {/* Placement Alliances Section */}
         <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
-          <div className="container text-center">
-            <h6 className="subtitle text-center text-warning" data-aos="fade-down" data-aos-delay="100">
-              Our Clients
-            </h6>
-            <h2 className="section-title mb-4" data-aos="zoom-in" data-aos-delay="200">
-              Our Distinguished Clients
-            </h2>
-            <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
-              We are proud to be associated with top companies.
-            </p>
-
-            {/* Owl Carousel */}
-            <div id="placement-carousel" className="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="400">
-              {[
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051319_r14.png", alt: "Google" },
-                {
-                  src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051331_r39.png",
-                  alt: "Microsoft",
-                },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051345_r12.png", alt: "Amazon" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051576_r1.png", alt: "Infosys" },
-                { src: "https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051590_r36.png", alt: "TCS" },
-              ].map((item, index) => (
-                <div className="item" key={index}>
-                  <img src={item.src} alt={item.alt} />
-                </div>
-              ))}
-            </div>
-          </div>
+         <PlacementAlliances/>
         </section>
       </section>
     </>

@@ -1,5 +1,6 @@
 "use client";
 
+import PlacementAlliances from "@/sections/PlacementAlliances.jsx";
 import Link from "next/link";
 import { useEffect } from "react";
 
@@ -185,7 +186,7 @@ export default function StandardsOfScholarship() {
             Standards Of Scholarship And Professionalism
           </h2>
           <p className="text-white">
-            Recognizing merit, nurturing integrity. <br />
+           Recognizing merit, nurturing integrity. <br />
 Our scholarships reward excellence and encourage professionalism grounded in ethics, diligence, and leadership potential.
           </p>
         </div>
@@ -209,7 +210,7 @@ Our scholarships reward excellence and encourage professionalism grounded in eth
         </div>
 
         {/* Policy Content */}
-         <section id="executive-education" className="py-5">
+        <section id="executive-education" className="py-5">
           <div className="container" data-aos="fade-up" data-aos-delay="200">
             <div className="card p-4">
               <h2
@@ -383,25 +384,7 @@ Our scholarships reward excellence and encourage professionalism grounded in eth
 
         {/* Clients Carousel */}
         <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
-          <div className="container text-center">
-            <h6 className="subtitle text-center text-warning" data-aos="fade-down" data-aos-delay="100">
-              Our Clients
-            </h6>
-            <h2 className="section-title mb-4" data-aos="zoom-in" data-aos-delay="200">
-              Our Distinguished Clients
-            </h2>
-            <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
-              We are proud to be associated with top companies.
-            </p>
-
-            <div id="placement-carousel" className="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="400">
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051319_r14.png" alt="Google" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051331_r39.png" alt="Microsoft" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051345_r12.png" alt="Amazon" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051576_r1.png" alt="Infosys" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051590_r36.png" alt="TCS" /></div>
-            </div>
-          </div>
+          <PlacementAlliances/>
         </section>
       </section>
     </>
