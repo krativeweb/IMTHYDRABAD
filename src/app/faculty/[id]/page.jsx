@@ -6,7 +6,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import parse from "html-react-parser";
 import DOMPurify from "isomorphic-dompurify";
-
+import axios from "axios";
 // -------------------------------------------------
 // Helper – extract <li> text from an HTML string
 // -------------------------------------------------
@@ -143,11 +143,10 @@ export default function FacultyProfile({ params }) {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-        const res = await fetch(
-          `https://thekreativeweb.com/codes/imt_hydrabad/api/faculties/${params.id}`
-        );
-        if (!res.ok) throw new Error("Faculty not found");
-        const data = await res.json();
+       const res = await axios.get(
+         `${process.env.NEXT_PUBLIC_BASE_URL}/faculties/${params.id}`
+       );
+      const data = res.data;
 
         // ----- Parse all HTML fields -----
         const { education, service } = parseEducationAndService(
@@ -190,7 +189,7 @@ export default function FacultyProfile({ params }) {
           phone:
             `+91 ${data.prof_mobile?.replace(/(\d{5})(\d{5})/, "$1 $2")}` || "",
           image: data.prof_image || "",
-          qrCode: `https://www.imthyderabad.edu.in/assets/admin/images/faculty-directory/QRCode/${data.prof_qrcode}`,
+          qrCode: `${data.prof_qrcode}`,
           brief: parse(
             DOMPurify.sanitize(
               (data.prof_description || "")
