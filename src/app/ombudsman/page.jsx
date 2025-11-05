@@ -147,7 +147,8 @@ export default function OmbudsmanSection() {
         {/* Top Banner */}
         <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
           <h2 className="display-5 fw-bold mb-2">OMBUDSMAN</h2>
-          <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.</p>
+          <p className="text-white">Upholding fairness through independent redressal. <br />
+Our Ombudsman ensures every concern is addressed with integrity, transparency, and commitment to ethical governance.</p>
         </div>
 
         {/* Breadcrumb */}
