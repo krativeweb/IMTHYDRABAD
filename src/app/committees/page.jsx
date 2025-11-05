@@ -1,14 +1,15 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useEffect } from 'react';
-import PlacementAlliance from '@/components/PlacementAlliance';
+import PlacementAlliances from "@/sections/PlacementAlliances.jsx";
+import Link from "next/link";
+import { useEffect } from "react";
+
 export default function Committees() {
   // Embedded committee data
   const committeeData = {
     antiRagging: {
       policy: {
-        title: 'Anti-Ragging',
+        title: "Anti-Ragging",
         content: `
           <p><strong>Prevention and Prohibition of Ragging</strong></p>
           <p>It has been Institute’s endeavor to keep it free from any act of ragging among students on its premises or outside. All students are hereby advised not to indulge in any act of ragging including any conduct by any student, which has the effect of teasing, treating or handling with rudeness a fresher or any other student or an act of indiscipline causing annoyance, hardship or psychological harm, etc. to any fresher or any other student.</p>
@@ -42,105 +43,106 @@ export default function Committees() {
         `,
       },
       committee: {
-        title: 'Anti-Ragging Committee',
+        title: "Anti-Ragging Committee",
         members: [
           {
             sno: 1,
-            name: 'Dr. K. Sriharsha Reddy',
-            designation: 'Director',
-            phone: '9849528676',
-            landline: '08414-671661',
+            name: "Dr. K. Sriharsha Reddy",
+            designation: "Director",
+            phone: "9849528676",
+            landline: "08414-671661",
           },
           {
             sno: 2,
-            name: 'Prof. Nikhil Rastogi',
-            designation: 'Chairperson-Disciplinary & Academic Counselling Committee',
-            phone: '7306874901',
-            landline: '08414-671670',
+            name: "Prof. Nikhil Rastogi",
+            designation:
+              "Chairperson-Disciplinary & Academic Counselling Committee",
+            phone: "7306874901",
+            landline: "08414-671670",
           },
           {
             sno: 3,
-            name: 'Prof. Vinay Kumar K',
-            designation: 'PGP Chairperson',
-            phone: '8639342389',
-            landline: '08414-671688',
+            name: "Prof. Vinay Kumar K",
+            designation: "PGP Chairperson",
+            phone: "8639342389",
+            landline: "08414-671688",
           },
           {
             sno: 4,
-            name: 'Prof. Tumpa Dey',
-            designation: 'Warden - Girls Hostel',
-            phone: '9000195605',
-            landline: '08414-671695',
+            name: "Prof. Tumpa Dey",
+            designation: "Warden - Girls Hostel",
+            phone: "9000195605",
+            landline: "08414-671695",
           },
           {
             sno: 5,
-            name: 'Prof. Pushpesh Pant',
-            designation: 'Warden - Boys Hostel',
-            phone: '8827218443',
-            landline: '08414-671602',
+            name: "Prof. Pushpesh Pant",
+            designation: "Warden - Boys Hostel",
+            phone: "8827218443",
+            landline: "08414-671602",
           },
           {
             sno: 6,
-            name: 'Mr. Kavi Bhushan Pandey',
-            designation: 'Manager - Administration and Maintenance',
-            phone: '9000114443',
-            landline: '08414-671683',
+            name: "Mr. Kavi Bhushan Pandey",
+            designation: "Manager - Administration and Maintenance",
+            phone: "9000114443",
+            landline: "08414-671683",
           },
           {
             sno: 7,
-            name: 'Ms. K. Padama Sundari',
-            designation: 'Incharge-HR',
-            phone: '9959968904',
-            landline: '08414-671661',
+            name: "Ms. K. Padama Sundari",
+            designation: "Incharge-HR",
+            phone: "9959968904",
+            landline: "08414-671661",
           },
           {
             sno: 8,
-            name: 'Dr. Mamatha Raghuveer Achanta',
-            designation: 'Social Worker',
-            phone: '9849418592',
-            landline: '',
+            name: "Dr. Mamatha Raghuveer Achanta",
+            designation: "Social Worker",
+            phone: "9849418592",
+            landline: "",
           },
           {
             sno: 9,
-            name: 'Mr. K. Srinivasa Rao',
-            designation: 'ACP-Shamshabad Police Station',
-            phone: '9490617481',
-            landline: '',
+            name: "Mr. K. Srinivasa Rao",
+            designation: "ACP-Shamshabad Police Station",
+            phone: "9490617481",
+            landline: "",
           },
           {
             sno: 10,
-            name: 'Mr. A. Ravindra Seshu',
-            designation: 'Senior Reporter, Khammam District',
-            phone: '9063718675',
-            landline: '',
+            name: "Mr. A. Ravindra Seshu",
+            designation: "Senior Reporter, Khammam District",
+            phone: "9063718675",
+            landline: "",
           },
           {
             sno: 11,
-            name: 'Parent Representative',
-            designation: 'Hyderabad',
-            phone: '9391424271',
-            landline: '',
+            name: "Parent Representative",
+            designation: "Hyderabad",
+            phone: "9391424271",
+            landline: "",
           },
           {
             sno: 12,
-            name: 'Mr. Jerry James',
-            designation: 'Sr.Student Representative',
-            phone: '7356673254',
-            landline: '',
+            name: "Mr. Jerry James",
+            designation: "Sr.Student Representative",
+            phone: "7356673254",
+            landline: "",
           },
           {
             sno: 13,
-            name: 'Ms. Mahak Agrawal',
-            designation: 'Sr.Student Representative',
-            phone: '7830443111',
-            landline: '',
+            name: "Ms. Mahak Agrawal",
+            designation: "Sr.Student Representative",
+            phone: "7830443111",
+            landline: "",
           },
           {
             sno: 14,
-            name: 'Mr. Ekansh Uniyal',
-            designation: 'Jr.Student Representative',
-            phone: '7020132115',
-            landline: '',
+            name: "Mr. Ekansh Uniyal",
+            designation: "Jr.Student Representative",
+            phone: "7020132115",
+            landline: "",
           },
         ],
         responsibilities: `
@@ -153,128 +155,128 @@ export default function Committees() {
       },
     },
     internalComplaints: {
-      title: 'Internal Complaints Committee',
+      title: "Internal Complaints Committee",
       content: `
         <p class="lead">The institute has constituted an "Internal Complaints Committee" (Prevention of Sexual Harassment) to investigate and to redress grievances relating to sexual harassment at workplace at IMT, Hyderabad campus or at any official off campus activity is constituted as follows:</p>
       `,
       members: [
         {
           sno: 1,
-          name: 'Prof. Tumpa Dey, <strong>Chairperson</strong>',
-          profession: 'Teaching',
-          phone: '9000195605',
-          address: 'IMT Hyderabad',
+          name: "Prof. Tumpa Dey, <strong>Chairperson</strong>",
+          profession: "Teaching",
+          phone: "9000195605",
+          address: "IMT Hyderabad",
         },
         {
           sno: 2,
-          name: 'Prof. Tulika Sharma',
-          profession: 'Teaching',
-          phone: '9160511828',
-          address: 'IMT Hyderabad',
+          name: "Prof. Tulika Sharma",
+          profession: "Teaching",
+          phone: "9160511828",
+          address: "IMT Hyderabad",
         },
         {
           sno: 3,
-          name: 'Prof. Vinay Kumar Kalakbandi - PGP Chairperson',
-          profession: 'Teaching',
-          phone: '8639342389',
-          address: 'IMT Hyderabad',
+          name: "Prof. Vinay Kumar Kalakbandi - PGP Chairperson",
+          profession: "Teaching",
+          phone: "8639342389",
+          address: "IMT Hyderabad",
         },
         {
           sno: 4,
-          name: 'Dr. Mamatha Raghuveer Achanta',
-          profession: 'Social Worker',
-          phone: '9849418592',
-          address: 'Begumpet, Hyderabad',
+          name: "Dr. Mamatha Raghuveer Achanta",
+          profession: "Social Worker",
+          phone: "9849418592",
+          address: "Begumpet, Hyderabad",
         },
         {
           sno: 5,
-          name: 'Ms. K Padma Sundari',
-          profession: 'Non-Teaching',
-          phone: '9959968904',
-          address: 'IMT Hyderabad',
+          name: "Ms. K Padma Sundari",
+          profession: "Non-Teaching",
+          phone: "9959968904",
+          address: "IMT Hyderabad",
         },
         {
           sno: 6,
-          name: 'Mrs. K Sita Mahalakshmi',
-          profession: 'Advocate',
-          phone: '8008239807',
-          address: 'Hyderabad',
+          name: "Mrs. K Sita Mahalakshmi",
+          profession: "Advocate",
+          phone: "8008239807",
+          address: "Hyderabad",
         },
         {
           sno: 7,
-          name: 'Ms. Uma Maheswari N',
-          profession: 'Sr. Student Representative',
-          phone: '8123203165',
-          address: 'IMT Hyderabad',
+          name: "Ms. Uma Maheswari N",
+          profession: "Sr. Student Representative",
+          phone: "8123203165",
+          address: "IMT Hyderabad",
         },
         {
           sno: 8,
-          name: 'Ms. Aksharita Vaidehi Jayanti',
-          profession: 'Jr. Student Representative',
-          phone: '9398124097',
-          address: 'IMT Hyderabad',
+          name: "Ms. Aksharita Vaidehi Jayanti",
+          profession: "Jr. Student Representative",
+          phone: "9398124097",
+          address: "IMT Hyderabad",
         },
         {
           sno: 9,
-          name: 'Ms. Shivangi Mohan',
-          profession: 'Jr. Student Representative',
-          phone: '7974261041',
-          address: 'IMT Hyderabad',
+          name: "Ms. Shivangi Mohan",
+          profession: "Jr. Student Representative",
+          phone: "7974261041",
+          address: "IMT Hyderabad",
         },
       ],
     },
     grievanceRedressal: {
-      title: 'Grievance Redressal Committee',
+      title: "Grievance Redressal Committee",
       content: `
         <p class="lead">The institute has constituted an "Internal Complaints Committee" (Prevention of Sexual Harassment) to investigate and to redress grievances relating to sexual harassment at workplace at IMT, Hyderabad campus or at any official off campus activity is constituted as follows:</p>
       `,
       members: [
         {
           sno: 1,
-          name: 'Prof. Tulika Sharma - <strong>Chairperson</strong>',
-          profession: 'Teaching',
-          phone: '9160511828',
-          address: 'IMT, Hyderabad',
+          name: "Prof. Tulika Sharma - <strong>Chairperson</strong>",
+          profession: "Teaching",
+          phone: "9160511828",
+          address: "IMT, Hyderabad",
         },
         {
           sno: 2,
-          name: 'Prof. C. Chakrapani - <strong>Dean (Academics)</strong>',
-          profession: 'Teaching',
-          phone: '9849652207',
-          address: 'IMT, Hyderabad',
+          name: "Prof. C. Chakrapani - <strong>Dean (Academics)</strong>",
+          profession: "Teaching",
+          phone: "9849652207",
+          address: "IMT, Hyderabad",
         },
         {
           sno: 3,
-          name: 'Prof. K Vinay Kumar',
-          profession: 'Teaching',
-          phone: '8639342389',
-          address: 'IMT, Hyderabad',
+          name: "Prof. K Vinay Kumar",
+          profession: "Teaching",
+          phone: "8639342389",
+          address: "IMT, Hyderabad",
         },
         {
           sno: 4,
-          name: 'Prof. Tumpa Dey',
-          profession: 'Teaching',
-          phone: '9000195605',
-          address: 'IMT, Hyderabad',
+          name: "Prof. Tumpa Dey",
+          profession: "Teaching",
+          phone: "9000195605",
+          address: "IMT, Hyderabad",
         },
         {
           sno: 5,
-          name: 'Ms. K. Padma Sundari',
-          profession: 'Non-Teaching',
-          phone: '9959968904',
-          address: 'IMT, Hyderabad',
+          name: "Ms. K. Padma Sundari",
+          profession: "Non-Teaching",
+          phone: "9959968904",
+          address: "IMT, Hyderabad",
         },
         {
           sno: 6,
-          name: 'Prof. Mamatha Raghuveer Achanta',
-          profession: 'Social Worker',
-          phone: '9849418592',
-          address: 'Begumpet, Hyderabad',
+          name: "Prof. Mamatha Raghuveer Achanta",
+          profession: "Social Worker",
+          phone: "9849418592",
+          address: "Begumpet, Hyderabad",
         },
       ],
     },
     antiDrug: {
-      title: 'Anti Drug Committee',
+      title: "Anti Drug Committee",
       content: `
         <p>Anti-Drug Committee is constituted with the following members.</p>
         <p><b>Functions and Responsibilities:</b></p>
@@ -284,58 +286,124 @@ export default function Committees() {
       members: [
         {
           sno: 1,
-          category: 'Two faculty members (Appointed by Academic Senate)',
+          category: "Two faculty members (Appointed by Academic Senate)",
           names: [
-            { name: 'Prof. (Dr.) C. Chakrapani, Dean-Academics', phone: '08414671669' },
-            { name: 'Prof. (Dr.) Vinay Kumar, PGP Chairperson', phone: '08414671688' },
+            {
+              name: "Prof. (Dr.) C. Chakrapani, Dean-Academics",
+              phone: "08414671669",
+            },
+            {
+              name: "Prof. (Dr.) Vinay Kumar, PGP Chairperson",
+              phone: "08414671688",
+            },
           ],
         },
         {
           sno: 2,
-          category: 'Two Non-Teaching members',
+          category: "Two Non-Teaching members",
           names: [
-            { name: 'Mr. Kavi Bhushan Pandey, Manager-Administration & Maintenance', phone: '08414671654' },
-            { name: 'Mr. Sarat Kumar, Manager, Academic Programs Office', phone: '08414671662' },
+            {
+              name: "Mr. Kavi Bhushan Pandey, Manager-Administration & Maintenance",
+              phone: "08414671654",
+            },
+            {
+              name: "Mr. Sarat Kumar, Manager, Academic Programs Office",
+              phone: "08414671662",
+            },
           ],
         },
         {
           sno: 3,
-          category: 'Representative from Institute’s Security',
-          names: [{ name: 'Mr. Binod Bihari Raul, Supervisor - Campus Maintenance', phone: '08414671654' }],
+          category: "Representative from Institute’s Security",
+          names: [
+            {
+              name: "Mr. Binod Bihari Raul, Supervisor - Campus Maintenance",
+              phone: "08414671654",
+            },
+          ],
         },
         {
           sno: 4,
-          category: 'Representative from local police station',
-          names: [{ name: 'Mr. K. Narender Reddy, Inspector of Police, Shamshabad Police Station', phone: '9490617213' }],
+          category: "Representative from local police station",
+          names: [
+            {
+              name: "Mr. K. Narender Reddy, Inspector of Police, Shamshabad Police Station",
+              phone: "9490617213",
+            },
+          ],
         },
         {
           sno: 5,
-          category: 'Hostel warden if hostel facility available',
+          category: "Hostel warden if hostel facility available",
           names: [
-            { name: 'Prof. (Dr.) P. Tumpa Dey, Assistant Professor, (Girls Hostel Warden)', phone: '08414671695' },
-            { name: 'Prof. (Dr.) Pushpesh Pant, Assistant Professor, (Boys Hostel Warden)', phone: '08414671602' },
+            {
+              name: "Prof. (Dr.) P. Tumpa Dey, Assistant Professor, (Girls Hostel Warden)",
+              phone: "08414671695",
+            },
+            {
+              name: "Prof. (Dr.) Pushpesh Pant, Assistant Professor, (Boys Hostel Warden)",
+              phone: "08414671602",
+            },
           ],
         },
         {
           sno: 6,
-          category: 'One representative from students from each stream available in the Institute or as suits the Institute',
-          names: [{ name: 'Mr. Hritik Yadav, Senior Student', phone: '8830050891' }],
+          category:
+            "One representative from students from each stream available in the Institute or as suits the Institute",
+          names: [
+            { name: "Mr. Hritik Yadav, Senior Student", phone: "8830050891" },
+          ],
         },
         {
           sno: 7,
-          category: 'Representative from university medical unit/local hospital',
-          names: [{ name: 'Dr. Sreenath Reddy, MBBS', phone: '9133152377' }],
+          category:
+            "Representative from university medical unit/local hospital",
+          names: [{ name: "Dr. Sreenath Reddy, MBBS", phone: "9133152377" }],
         },
         {
           sno: 8,
-          category: 'One representative from Counseling and Psychological Services of the Institute/Health Department/NGO',
-          names: [{ name: 'Ms. Priya, Student Counsellor', phone: '08414671650' }],
+          category:
+            "One representative from Counseling and Psychological Services of the Institute/Health Department/NGO",
+          names: [
+            { name: "Ms. Priya, Student Counsellor", phone: "08414671650" },
+          ],
         },
       ],
     },
   };
 
+  // Initialize dependencies
+  useEffect(() => {
+    // Import jQuery and Owl Carousel
+    import("jquery").then(($) => {
+      window.$ = window.jQuery = $.default;
+      import("owl.carousel").then(() => {
+        // Initialize Owl Carousel for Placement Alliances
+        window.$("#placement-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 3 },
+            1000: { items: 4 },
+          },
+        });
+      });
+    });
 
+    // Initialize AOS
+    import("aos").then((AOS) => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    });
+  }, []);
 
   return (
     <>
@@ -343,13 +411,13 @@ export default function Committees() {
       <style jsx global>{`
         /* Faculty Hero */
         .faculty-hero {
-          background: url('/media/banners/faculty.webp');
+          background: url("/media/banners/faculty.webp");
           position: relative;
           background-size: cover;
           height: 60vh;
         }
         .faculty-hero::before {
-          content: '';
+          content: "";
           position: absolute;
           inset: 0;
           background: rgba(0, 0, 0, 0.3);
@@ -411,7 +479,21 @@ export default function Committees() {
           color: #333;
         }
 
-      
+        /* Owl Carousel */
+        .owl-carousel .item {
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 8px;
+          text-align: center;
+          transition: transform 0.3s;
+        }
+        .owl-carousel .item:hover {
+          transform: translateY(-5px);
+        }
+        .owl-carousel .item img {
+          max-height: 80px;
+          object-fit: contain;
+        }
 
         /* Custom Card */
         .custom-card {
@@ -449,7 +531,7 @@ export default function Committees() {
         .table-bordered td {
           border: 1px solid #dee2e6;
         }
-         .mx-1 {
+        .mx-1 {
           margin-top: 10px;
         }
       `}</style>
@@ -460,7 +542,7 @@ export default function Committees() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -470,24 +552,38 @@ export default function Committees() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/faculty.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Committees</h2>
-          <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.</p>
+          <p className="text-white">
+            Governed by transparency, guided by integrity. <br />
+            Our committees ensure academic quality, accountability, and ethical
+            decision-making across every function.
+          </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link style={{ textDecoration: 'none' }} href="/" className="text-white fw-bold">
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    href="/"
+                    className="text-white fw-bold"
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Committees
                 </li>
               </ol>
@@ -499,12 +595,23 @@ export default function Committees() {
       {/* Committees Section */}
       <section id="committees" className="py-5">
         <div className="container">
-          <h2 className="section-title text-center mb-4" style={{ color: '#08317a' }} data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="section-title text-center mb-4"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Committees
           </h2>
 
           {/* Tabs Navigation */}
-          <ul className="nav nav-pills justify-content-center mb-4" id="CommitteesTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+          <ul
+            className="nav nav-pills justify-content-center mb-4"
+            id="CommitteesTabs"
+            role="tablist"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <li className="nav-item mx-1" role="presentation">
               <button
                 className="nav-link active"
@@ -565,15 +672,34 @@ export default function Committees() {
           <hr />
 
           {/* Tabs Content */}
-          <div className="tab-content card bg-light p-4" id="CommitteesTabsContent" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="tab-content card bg-light p-4"
+            id="CommitteesTabsContent"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             {/* Anti-Ragging */}
-            <div className="tab-pane fade show active" id="long" role="tabpanel" aria-labelledby="long-tab">
-              <h4 className="fw-semibold mb-4 text-center" style={{ color: '#08317a' }}>
+            <div
+              className="tab-pane fade show active"
+              id="long"
+              role="tabpanel"
+              aria-labelledby="long-tab"
+            >
+              <h4
+                className="fw-semibold mb-4 text-center"
+                style={{ color: "#08317a" }}
+              >
                 Anti-Ragging
               </h4>
 
               {/* Inner Tabs Navigation */}
-              <ul className="nav nav-pills justify-content-center mb-4" id="flpInnerTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+              <ul
+                className="nav nav-pills justify-content-center mb-4"
+                id="flpInnerTabs"
+                role="tablist"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 <li className="nav-item mx-1" role="presentation">
                   <button
                     className="nav-link active"
@@ -607,87 +733,125 @@ export default function Committees() {
               {/* Inner Tabs Content */}
               <div className="tab-content" id="flpInnerTabsContent">
                 {/* Policy */}
-                <div className="tab-pane fade show active" id="flp-overview" role="tabpanel" aria-labelledby="flp-overview-tab">
-                  <div dangerouslySetInnerHTML={{ __html: committeeData.antiRagging.policy.content }} />
+                <div
+                  className="tab-pane fade show active"
+                  id="flp-overview"
+                  role="tabpanel"
+                  aria-labelledby="flp-overview-tab"
+                >
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: committeeData.antiRagging.policy.content,
+                    }}
+                  />
                 </div>
 
                 {/* Committee */}
-                <div className="tab-pane fade" id="flp-objectives" role="tabpanel" aria-labelledby="flp-objectives-tab">
+                <div
+                  className="tab-pane fade"
+                  id="flp-objectives"
+                  role="tabpanel"
+                  aria-labelledby="flp-objectives-tab"
+                >
                   <div className="container">
                     <div className="table-responsive">
                       <table className="table table-bordered">
                         <thead className="thead-dark">
                           <tr>
-                            <th scope="col" style={{ width: '10%' }}>
+                            <th scope="col" style={{ width: "10%" }}>
                               Sno.
                             </th>
                             <th scope="col">Name of the Committee Member</th>
                             <th scope="col">Designation</th>
-                            <th scope="col" style={{ width: '15%' }}>
+                            <th scope="col" style={{ width: "15%" }}>
                               Phone No.
                             </th>
-                            <th scope="col" style={{ width: '15%' }}>
+                            <th scope="col" style={{ width: "15%" }}>
                               Landline No.
                             </th>
                           </tr>
                         </thead>
                         <tbody>
-                          {committeeData.antiRagging.committee.members.map((member) => (
-                            <tr key={member.sno}>
-                              <td>{member.sno}</td>
-                              <td>{member.name}</td>
-                              <td>{member.designation}</td>
-                              <td>{member.phone}</td>
-                              <td>{member.landline}</td>
-                            </tr>
-                          ))}
+                          {committeeData.antiRagging.committee.members.map(
+                            (member) => (
+                              <tr key={member.sno}>
+                                <td>{member.sno}</td>
+                                <td>{member.name}</td>
+                                <td>{member.designation}</td>
+                                <td>{member.phone}</td>
+                                <td>{member.landline}</td>
+                              </tr>
+                            )
+                          )}
                         </tbody>
                       </table>
                     </div>
-                    <div className="mt-4" dangerouslySetInnerHTML={{ __html: committeeData.antiRagging.committee.responsibilities }} />
+                    <div
+                      className="mt-4"
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          committeeData.antiRagging.committee.responsibilities,
+                      }}
+                    />
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Internal Complaints Committee */}
-            <div className="tab-pane fade" id="firsttime" role="tabpanel" aria-labelledby="firsttime-tab">
+            <div
+              className="tab-pane fade"
+              id="firsttime"
+              role="tabpanel"
+              aria-labelledby="firsttime-tab"
+            >
               <div className="container mt-4">
-                <h4 className="fw-semibold mt-4 mb-3 text-center" style={{ color: '#08317a' }}>
+                <h4
+                  className="fw-semibold mt-4 mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
                   Internal Complaints Committee
                 </h4>
-                <div dangerouslySetInnerHTML={{ __html: committeeData.internalComplaints.content }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: committeeData.internalComplaints.content,
+                  }}
+                />
                 <div className="table-responsive mt-4">
                   <table className="table table-striped table-bordered">
                     <thead className="table">
                       <tr>
-                        <th scope="col" style={{ width: '5%' }}>
+                        <th scope="col" style={{ width: "5%" }}>
                           Sno.
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Name of the Committee Member
                         </th>
-                        <th scope="col" style={{ width: '20%' }}>
+                        <th scope="col" style={{ width: "20%" }}>
                           Profession
                         </th>
-                        <th scope="col" style={{ width: '15%' }}>
+                        <th scope="col" style={{ width: "15%" }}>
                           Phone
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Address
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      {committeeData.internalComplaints.members.map((member) => (
-                        <tr key={member.sno}>
-                          <td>{member.sno}</td>
-                          <td dangerouslySetInnerHTML={{ __html: member.name }} />
-                          <td>{member.profession}</td>
-                          <td>{member.phone}</td>
-                          <td>{member.address}</td>
-                        </tr>
-                      ))}
+                      {committeeData.internalComplaints.members.map(
+                        (member) => (
+                          <tr key={member.sno}>
+                            <td>{member.sno}</td>
+                            <td
+                              dangerouslySetInnerHTML={{ __html: member.name }}
+                            />
+                            <td>{member.profession}</td>
+                            <td>{member.phone}</td>
+                            <td>{member.address}</td>
+                          </tr>
+                        )
+                      )}
                     </tbody>
                   </table>
                 </div>
@@ -695,43 +859,71 @@ export default function Committees() {
             </div>
 
             {/* Grievance Redressal Committee */}
-            <div className="tab-pane fade" id="Grievance" role="tabpanel" aria-labelledby="Grievance-tab">
+            <div
+              className="tab-pane fade"
+              id="Grievance"
+              role="tabpanel"
+              aria-labelledby="Grievance-tab"
+            >
               <div className="container mt-4">
-                <h4 className="fw-semibold mt-4 mb-3 text-center" style={{ color: '#08317a' }}>
+                <h4
+                  className="fw-semibold mt-4 mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
                   Grievance Redressal Committee
                 </h4>
-                <div dangerouslySetInnerHTML={{ __html: committeeData.grievanceRedressal.content }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: committeeData.grievanceRedressal.content,
+                  }}
+                />
                 <div className="table-responsive mt-4">
                   <table className="table table-hover table-bordered">
                     <thead className="table">
                       <tr>
-                        <th scope="col" className="text-center" style={{ width: '5%' }}>
+                        <th
+                          scope="col"
+                          className="text-center"
+                          style={{ width: "5%" }}
+                        >
                           Sno.
                         </th>
-                        <th scope="col" style={{ width: '35%' }}>
+                        <th scope="col" style={{ width: "35%" }}>
                           Name of the Committee Member
                         </th>
-                        <th scope="col" className="text-center" style={{ width: '15%' }}>
+                        <th
+                          scope="col"
+                          className="text-center"
+                          style={{ width: "15%" }}
+                        >
                           Profession
                         </th>
-                        <th scope="col" className="text-center" style={{ width: '15%' }}>
+                        <th
+                          scope="col"
+                          className="text-center"
+                          style={{ width: "15%" }}
+                        >
                           Phone No.
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Address
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      {committeeData.grievanceRedressal.members.map((member) => (
-                        <tr key={member.sno}>
-                          <td className="text-center">{member.sno}</td>
-                          <td dangerouslySetInnerHTML={{ __html: member.name }} />
-                          <td className="text-center">{member.profession}</td>
-                          <td className="text-center">{member.phone}</td>
-                          <td>{member.address}</td>
-                        </tr>
-                      ))}
+                      {committeeData.grievanceRedressal.members.map(
+                        (member) => (
+                          <tr key={member.sno}>
+                            <td className="text-center">{member.sno}</td>
+                            <td
+                              dangerouslySetInnerHTML={{ __html: member.name }}
+                            />
+                            <td className="text-center">{member.profession}</td>
+                            <td className="text-center">{member.phone}</td>
+                            <td>{member.address}</td>
+                          </tr>
+                        )
+                      )}
                     </tbody>
                   </table>
                 </div>
@@ -739,23 +931,35 @@ export default function Committees() {
             </div>
 
             {/* Anti Drug Committee */}
-            <div className="tab-pane fade" id="Anti" role="tabpanel" aria-labelledby="Anti-tab">
+            <div
+              className="tab-pane fade"
+              id="Anti"
+              role="tabpanel"
+              aria-labelledby="Anti-tab"
+            >
               <div className="container mt-4">
-                <h4 className="fw-semibold mt-4 mb-3 text-center" style={{ color: '#08317a' }}>
+                <h4
+                  className="fw-semibold mt-4 mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
                   Anti Drug Committee
                 </h4>
-                <div dangerouslySetInnerHTML={{ __html: committeeData.antiDrug.content }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: committeeData.antiDrug.content,
+                  }}
+                />
                 <div className="table-responsive">
                   <table className="table table-striped table-bordered">
                     <thead className="table">
                       <tr>
-                        <th scope="col" style={{ width: '10%' }}>
+                        <th scope="col" style={{ width: "10%" }}>
                           Sno.
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Category
                         </th>
-                        <th scope="col" style={{ width: '60%' }}>
+                        <th scope="col" style={{ width: "60%" }}>
                           Name of the member
                         </th>
                       </tr>
@@ -793,7 +997,14 @@ export default function Committees() {
         </div>
       </section>
 
-      <PlacementAlliance />
+      {/* Placement Alliances Section */}
+      <section
+        className="placement-alliances-section py-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <PlacementAlliances />
+      </section>
     </>
   );
 }
