@@ -118,7 +118,7 @@ export default function NewsSection() {
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src={`${BASE_URL.replace("/api", "")}/uploads/${item.news_image}`}
+                      src={`${item.news_image}`}
                       className="img-fluid rounded-start"
                       alt={item.title}
                     />
