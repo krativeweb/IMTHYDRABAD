@@ -82,7 +82,8 @@ export default function NewsSection() {
         <div className="faculty-hero text-center text-white py-5">
           <h2 className="display-5 fw-bold mb-2">News</h2>
           <p className="text-white">
-            Stay updated with the latest news and activities at IMT Hyderabad.
+             Highlighting milestones that define our progress. <br />
+Stay updated on our latest initiatives, achievements, collaborations, and academic advancements.
           </p>
         </div>
 
