@@ -36,10 +36,8 @@ export default function ApprovalsAccreditation() {
             Approvals & Accreditation
           </h2>
           <p className="position-relative text-white" style={{ zIndex: 2 }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            animi illum
-            <br />
-            facere fuga eaque ducimus, praesentium in distinctio
+           Our accreditations reflect our dedication to excellence, integrity, <br />
+and innovation in education.
           </p>
         </div>
 
