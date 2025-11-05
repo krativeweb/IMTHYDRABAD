@@ -1,22 +1,32 @@
 // src/sections/ResearchCarousel.jsx
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import axios from "axios";
 import "aos/dist/aos.css"; // Make sure you import AOS CSS
 import Link from "next/link";
 
 export default function ResearchCarousel() {
   const carouselRef = useRef(null);
+  const [researches, setResearches] = useState([]);
 
   useEffect(() => {
-    // Initialize AOS
-    if (window.AOS) {
-      window.AOS.init({
-        once: true,
-        duration: 1000,
-      });
-    }
+    // Fetch research data
+    const fetchResearch = async () => {
+      try {
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/research_infocus`
+        );
+        // Only take non-deleted items
+        setResearches(res.data.filter((item) => item.is_del === 0));
+      } catch (err) {
+        console.error("Failed to fetch research data:", err);
+      }
+    };
+    fetchResearch();
+  }, []);
 
+  useEffect(() => {
     // Initialize Bootstrap Carousel
     const initCarousel = () => {
       if (!carouselRef.current || !window.bootstrap) return false;
@@ -33,20 +43,18 @@ export default function ResearchCarousel() {
 
     if (initCarousel()) return;
 
-    // Poll until Bootstrap JS is ready (max 5s)
     let attempts = 0;
     const interval = setInterval(() => {
       attempts++;
-      if (initCarousel()) {
-        clearInterval(interval);
-      } else if (attempts > 50) {
+      if (initCarousel()) clearInterval(interval);
+      else if (attempts > 50) {
         console.warn("Bootstrap Carousel failed to initialize after 5s");
         clearInterval(interval);
       }
     }, 100);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [researches]);
 
   return (
     <section
@@ -79,109 +87,34 @@ export default function ResearchCarousel() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="row g-4 justify-content-center">
-                {/* Card 1 */}
-                <div
-                  className="col-lg-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
-                    <img
-                      src="/media/img/2.webp"
-                      className="img-fluid rounded mb-3"
-                      alt="IMT-CII Research"
-                    />
-                    <h5 className="research-org text-primary">IMT – CII</h5>
-                    <p className="research-title small">
-                      Impact of COVID pandemic on small and medium enterprises
-                      (SMEs)
-                    </p>
-                    <Link
-                      href="cgesg"
-                      className="link-warning fw-bold text-decoration-underline"
-                    >
-                      Read More
-                    </Link>
+                {researches.map((item, idx) => (
+                  <div
+                    key={item.id}
+                    className="col-lg-3 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay={100 + idx * 100}
+                  >
+                    <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
+                      <img
+                        src={item.team_image}
+                        className="img-fluid rounded mb-3"
+                        alt={item.title}
+                      />
+                      <h5 className="research-org text-primary">
+                        {item.title}
+                      </h5>
+                      <p className="research-title small">{item.description}</p>
+                      <Link
+                        href={`/${item.title
+                          .toLowerCase()
+                          .replace(/\s+/g, "")}`}
+                        className="link-warning fw-bold text-decoration-underline"
+                      >
+                        Read More
+                      </Link>
+                    </div>
                   </div>
-                </div>
-
-                {/* Card 2 */}
-                <div
-                  className="col-lg-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
-                    <img
-                      src="/media/img/3.webp"
-                      className="img-fluid rounded mb-3"
-                      alt="IMT-NABARD Research"
-                    />
-                    <h5 className="research-org text-primary">IMT – NABARD</h5>
-                    <p className="research-title small">
-                      Study on defaults in SHG-bank linkage program in Andhra
-                      Pradesh
-                    </p>
-                    <Link
-                      href="nabard"
-                      className="link-warning fw-bold text-decoration-underline"
-                    >
-                      Read More
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Card 3 */}
-                <div
-                  className="col-lg-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
-                    <img
-                      src="/media/img/5.webp"
-                      className="img-fluid rounded mb-3"
-                      alt="IMT-SCOPE Research"
-                    />
-                    <h5 className="research-org text-primary">IMT – SCOPE</h5>
-                    <p className="research-title small">
-                      Study on digital transformation in Indian Central Public
-                      Sector Undertaking
-                    </p>
-                    <Link
-                      href="scope"
-                      className="link-warning fw-bold text-decoration-underline"
-                    >
-                      Read More
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Card 4 */}
-                <div
-                  className="col-lg-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
-                    <img
-                      src="/media/img/4.webp"
-                      className="img-fluid rounded mb-3"
-                      alt="IMT-NPCI Research"
-                    />
-                    <h5 className="research-org text-primary">IMT – NPCI</h5>
-                    <p className="research-title small">
-                      Study on Adoption of Cashless Transaction Solutions by
-                      Small merchants
-                    </p>
-                    <Link
-                      href="npci"
-                      className="link-warning fw-bold text-decoration-underline"
-                    >
-                      Read More
-                    </Link>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -190,7 +123,7 @@ export default function ResearchCarousel() {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#researchCardCarousel"
+            data-bs-target="#researchCardCarouselss"
             data-bs-slide="prev"
           >
             <span className="carousel-control-prev-icon" aria-hidden="true" />
@@ -199,7 +132,7 @@ export default function ResearchCarousel() {
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#researchCardCarousel"
+            data-bs-target="#researchCardCarouselss"
             data-bs-slide="next"
           >
             <span className="carousel-control-next-icon" aria-hidden="true" />
