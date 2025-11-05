@@ -21,9 +21,16 @@ jobs:
           script: |
             cd ~/imt-hyderabad-test/public_html
             echo "Deploying at $(date)"
-            git pull origin main
+
+            # Always reset to the latest remote version (discard local edits)
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Install dependencies and rebuild
             npm install --omit=dev
             npm run build
-            pm2 restart imt-hyderabad-test
-            echo "Deploy complete!" 
 
+            # Restart the PM2 process
+            pm2 restart imt-hyderabad-test
+
+            echo "✅ Deploy complete!"
