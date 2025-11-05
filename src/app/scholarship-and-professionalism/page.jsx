@@ -185,7 +185,8 @@ export default function StandardsOfScholarship() {
             Standards Of Scholarship And Professionalism
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.
+            Recognizing merit, nurturing integrity. <br />
+Our scholarships reward excellence and encourage professionalism grounded in ethics, diligence, and leadership potential.
           </p>
         </div>
 
