@@ -144,8 +144,8 @@ export default function FacultyExchange() {
             Faculty Exchange
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-            <br /> facere fuga eaque ducimus, praesentium in distinctio
+           Capturing moments of learning, leadership, and life. <br />
+Our gallery reflects the vibrancy, energy, and achievements of our academic journey.
           </p>
         </div>
         <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
