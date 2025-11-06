@@ -279,7 +279,7 @@ Our privacy policy safeguards personal information with integrity, ensuring resp
                 </Link>
               </li>
               <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
-                Privicy Policy
+                Privacy Policy
               </li>
             </ol>
           </nav>
