@@ -40,8 +40,10 @@ const SummerInternships = () => {
           <div className="hero-content">
             <h2 className="display-5 fw-bold mb-2">Summer Internships</h2>
             <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-              <br /> facere fuga eaque ducimus, praesentium in distinctio
+             Learning through experience, leading through insight.
+            <br/>
+Our summer internships integrate classroom knowledge with real-world practice, building confidence and competence in every student.
+
             </p>
           </div>
         </div>
