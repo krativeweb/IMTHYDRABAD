@@ -115,9 +115,10 @@ export default function CommunityConnect() {
         >
           <h2 className="display-5 fw-bold mb-2">Community Connect</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum
-            <br />
-            facere fuga eaque ducimus, praesentium in distinctio
+           More than a campus, our institution is a collective of purpose.
+            <br/>
+Our community embodies collaboration, respect, and a shared vision of shaping ethical, empathetic leaders.
+
           </p>
         </div>
         <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
