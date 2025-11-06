@@ -90,7 +90,10 @@ export default function StudentLifePage() {
         >
           <h2 className="display-5 fw-bold mb-2">Student Life</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.
+            A community where students grow, collaborate, and lead.
+            <br/>
+We cultivate thinkers and doers prepared for a future shaped by innovation and empathy.
+
           </p>
         </div>
 
