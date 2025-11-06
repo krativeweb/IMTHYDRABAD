@@ -651,7 +651,7 @@ export default function PGDMProgramsSection() {
                                 }
 
                                   .tab-content {
-                                    padding: 0rem;
+                                    padding: 1.5rem;
                                 }
                             }
       `}</style>
