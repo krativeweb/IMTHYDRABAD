@@ -118,7 +118,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="fpm-program-hyderabad">
+                    <Link className="dropdown-item" href="/fpm-program-hyderabad">
                       Fellow Program in Management
                     </Link>
                   </li>
@@ -148,32 +148,32 @@ export default function Navbar() {
                       </Link>
                       <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                         <li>
-                          <Link className="item" href="pgdm-course-in-hyderabad">
+                          <Link className="item" href="/pgdm-course-in-hyderabad">
                             About PGDM
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="pgdm-general-management">
+                          <Link className="item" href="/pgdm-general-management">
                             PGDM
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="pgdm-finance-management">
+                          <Link className="item" href="/pgdm-finance-management">
                             PGDM (Finance)
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="pgdm-marketing-management">
+                          <Link className="item" href="/pgdm-marketing-management">
                             PGDM (Marketing)
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="pgdm-lscm">
+                          <Link className="item" href="/pgdm-lscm">
                             PGDM (LSCM)
                           </Link>
                         </li>
                         <li>
-                        <Link className="item" href="fpm-program-hyderabad">
+                        <Link className="item" href="/fpm-program-hyderabad">
                           Fellow Program in Management
                         </Link>
                       </li>
@@ -207,17 +207,17 @@ export default function Navbar() {
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                           <li>
-                            <Link className="item" href="faculties">
+                            <Link className="item" href="/faculties">
                               Faculty Directory
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="awards-and-recognisation">
+                            <Link className="item" href="/awards-and-recognisation">
                               Awards & Recognitions
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="conferences-workshops">
+                            <Link className="item" href="/conferences-workshops">
                               Workshop & Conference
                             </Link>
                           </li>
@@ -231,19 +231,19 @@ export default function Navbar() {
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                           <li>
-                            <Link className="item" href="research-archive">
+                            <Link className="item" href="/research-archive">
                               Research Archive
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="research-publication">
+                            <Link className="item" href="/research-publication">
                               Research Publication
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="item"
-                              href="sponsered-research-advisory"
+                              href="/sponsered-research-advisory"
                             >
                               Sponsored Research and Advisory
                             </Link>
@@ -258,17 +258,17 @@ export default function Navbar() {
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                           <li>
-                            <Link className="item" href="centre-cdt">
+                            <Link className="item" href="/centre-cdt">
                               Centre for Digital Transformation
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="centre-csr">
+                            <Link className="item" href="/centre-csr">
                               Centre for Sustainability
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="innovation-lab">
+                            <Link className="item" href="/innovation-lab">
                               Innovation Labs
                             </Link>
                           </li>
@@ -304,73 +304,73 @@ export default function Navbar() {
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                           <li>
-                            <Link className="item" href="mandatory-disclosure">
+                            <Link className="item" href="/mandatory-disclosure">
                               Mandatory Disclosure
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="committees">
+                            <Link className="item" href="/committees">
                               Committees
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="ombudsman">
+                            <Link className="item" href="/ombudsman">
                               Ombudsman
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="model-code-of-conduct">
+                            <Link className="item" href="/model-code-of-conduct">
                               Model Code Of Conduct
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="item"
-                              href="scholarship-and-professionalism"
+                              href="/scholarship-and-professionalism"
                             >
                               Standards Of Scholarship
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="refund-policy">
+                            <Link className="item" href="/refund-policy">
                               Refund Policy
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="accredations&approvals">
+                            <Link className="item" href="/accredations&approvals">
                               Approvals & Accreditation
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="feedback">
+                            <Link className="item" href="/feedback">
                               Feedback Faculties
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="item"
-                              href="online-grievance-redressal-mechanism"
+                              href="/online-grievance-redressal-mechanism"
                             >
                               Grievance Redressal
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="mom-bog">
+                            <Link className="item" href="/mom-bog">
                               MOM BOG
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="financial-statements">
+                            <Link className="item" href="/financial-statements">
                               Financial Statements
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="placementdata">
+                            <Link className="item" href="/placementdata">
                               Placement Data
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="tenders">
+                            <Link className="item" href="/tenders">
                               Tenders
                             </Link>
                           </li>
@@ -385,27 +385,27 @@ export default function Navbar() {
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                           <li>
-                            <Link className="item" href="about-imt-hyderabad">
+                            <Link className="item" href="/about-imt-hyderabad">
                               About Us
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="message-desk">
+                            <Link className="item" href="/message-desk">
                               Leadership & Governance
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="industry-relevance">
+                            <Link className="item" href="/industry-relevance">
                               Industry Relevance
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="campus">
+                            <Link className="item" href="/campus">
                               Campus
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="anualevents">
+                            <Link className="item" href="/anualevents">
                               Annual Events
                             </Link>
                           </li>
@@ -422,7 +422,7 @@ export default function Navbar() {
                           <li>
                             <Link
                               className="item"
-                              href="studying-at-imt-hyderabad"
+                              href="/studying-at-imt-hyderabad"
                             >
                               Studying at IMT Hyderabad
                             </Link>
@@ -430,51 +430,51 @@ export default function Navbar() {
                           <li>
                             <Link
                               className="item"
-                              href="international-associations"
+                              href="/international-associations"
                             >
                               International Associations
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="faculty-exchange">
+                            <Link className="item" href="/faculty-exchange">
                               Faculty Exchange
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="student-exchange">
+                            <Link className="item" href="/student-exchange">
                               Student Exchange
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="step-dubai">
+                            <Link className="item" href="/step-dubai">
                               Step @ IMT DUBAI
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="gip">
+                            <Link className="item" href="/gip">
                               Global Immersion
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="photo-gallery">
+                            <Link className="item" href="/photo-gallery">
                               Photo Gallery
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="news">
+                            <Link className="item" href="/news">
                               News
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="item"
-                              href="frequently-asked-questions"
+                              href="/frequently-asked-questions"
                             >
                               FAQs
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="point-contact-iro">
+                            <Link className="item" href="/point-contact-iro">
                               Point of Contact
                             </Link>
                           </li>
@@ -489,22 +489,22 @@ export default function Navbar() {
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                           <li>
-                            <Link className="item" href="executive-education">
+                            <Link className="item" href="/executive-education">
                               Executive Education
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="Careers">
+                            <Link className="item" href="/Careers">
                               Careers
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="placements">
+                            <Link className="item" href="/placements">
                               Placements
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="business-school-ranking">
+                            <Link className="item" href="/business-school-ranking">
                               Rankings
                             </Link>
                           </li>
@@ -519,7 +519,7 @@ export default function Navbar() {
                           <li>
                             <Link
                               className="item"
-                              href="learning-resource-center-lrc"
+                              href="/learning-resource-center-lrc"
                             >
                               LRC
                             </Link>
@@ -542,7 +542,7 @@ export default function Navbar() {
               {/* CONTACT */}
               <li className="nav-item">
                 <Link
-                  href="contact-us"
+                  href="/contact-us"
                   className="btn btn-warning border-dark rounded-pill mx-3"
                 >
                   CONTACT US
