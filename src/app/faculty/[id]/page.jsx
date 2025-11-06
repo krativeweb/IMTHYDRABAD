@@ -273,6 +273,9 @@ export default function FacultyProfile({ params }) {
           inset: 0;
           background: rgba(0, 0, 0, 0.3);
         }
+          .faculty-hero h2 {
+          margin-top: 150px;
+        }
         .faculty-hero h2,
         .faculty-hero p {
           position: relative;
