@@ -19,7 +19,7 @@ export default function CampusLifeGallery() {
     { img: "/media/img/z.webp", title: "CAMPUS PULSE", link: "/anualevents" },
     { img: "/media/news.jpg", title: "NEWSLETTERS", link: "/newsletters" },
     { img: "/media/media.jpg", title: "MEDIA", link: "/medias" },
-    { img: "/media/img/x.webp", title: "CAMPUS TOUR", link: "/campus-tour" },
+    { img: "/media/img/x.webp", title: "CAMPUS TOUR", link: "/Campus-Tour" },
   ];
 
   return (
