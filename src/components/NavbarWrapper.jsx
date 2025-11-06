@@ -18,9 +18,9 @@ export default function NavbarWrapper() {
   ];
 
   // Check if current page starts with any placement route
-  const isPlacementsPage = placementRoutes.some(route => 
-    pathname?.startsWith(route)
-  );
+ const isPlacementsPage = placementRoutes.some(
+   (route) => pathname === route || pathname.startsWith(`${route}/`)
+ );
 
   // Check if current page starts with /executive-education
   const isExecutiveEducationPage = pathname?.startsWith('/executive-education');
