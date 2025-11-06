@@ -604,7 +604,7 @@ Our placement ecosystem connects talent with leading organizations, ensuring str
       </section>
 
       {/* Alumni Thoughts Section */}
-      <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
+      {/* <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
         <div className="container text-center">
           <h6 className="subtitle text-center text-white" data-aos="fade-down" data-aos-delay="100">
             Our Alumni
@@ -623,7 +623,7 @@ Our placement ecosystem connects talent with leading organizations, ensuring str
             ))}
           </OwlCarousel>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
