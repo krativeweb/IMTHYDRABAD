@@ -538,7 +538,39 @@ export default function FacultyProfile({ params }) {
                 id="brief"
                 role="tabpanel"
               >
-                {faculty.brief}
+                <div>{faculty.brief}</div>
+
+                {/* Icon Section */}
+                <div className="d-flex gap-3 mt-3 flex-wrap">
+                  {[
+                    { icon: "bi bi-instagram" },
+                    { icon: "bi bi-twitter-x" },
+                    { icon: "fas fa-globe" },
+                    { icon: "bi bi-stripe" },
+                    { icon: "fa-regular fa-lightbulb" },
+                    { icon: "fa-regular fa-square-minus" },
+                    {
+                      icon: "fa-solid fa-a mx-1",
+                      secondIcon: "fa-solid fa-x me-1",
+                    },
+                    {
+                      icon: "fa-solid fa-b mx-1",
+                      secondIcon: "fa-solid fa-r me-1",
+                    },
+                  ].map((social, index) => (
+                    <a
+                      key={index}
+                      href="#!"
+                      onClick={(e) => e.preventDefault()} // prevent reload
+                      className="social-icon rounded-0"
+                    >
+                      <i className={social.icon}></i>
+                      {social.secondIcon && (
+                        <i className={social.secondIcon}></i>
+                      )}
+                    </a>
+                  ))}
+                </div>
               </div>
 
               {/* Education */}
