@@ -262,7 +262,9 @@ export default function PrivacyPolicySection() {
       <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
         <h2 className="display-5 fw-bold mb-2">Privicy Policy</h2>
         <p className="text-white">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, laboriosam.
+         Committed to protecting trust and transparency.<br/>
+Our privacy policy safeguards personal information with integrity, ensuring responsible data use and confidentiality across all platforms.
+
         </p>
       </div>
 
