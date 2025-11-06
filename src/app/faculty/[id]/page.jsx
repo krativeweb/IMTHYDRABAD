@@ -436,47 +436,66 @@ export default function FacultyProfile({ params }) {
               </ul>
 
               {/* Social Icons (only render when a link exists) */}
-              <div className="d-flex gap-3">
-                {faculty.social.linkedin && (
-                  <Link
-                    href={faculty.social.linkedin}
-                    className="social-icon"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i className="fab fa-linkedin-in"></i>
-                  </Link>
-                )}
-                {faculty.social.website && (
-                  <Link
-                    href={faculty.social.website}
-                    className="social-icon"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i className="fas fa-globe"></i>
-                  </Link>
-                )}
-                {faculty.social.scholar && (
-                  <Link
-                    href={faculty.social.scholar}
-                    className="social-icon"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i className="bi bi-google"></i>
-                  </Link>
-                )}
-                {faculty.social.researchGate && (
-                  <Link
-                    href={faculty.social.researchGate}
-                    className="social-icon"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i className="bi bi-search"></i>
-                  </Link>
-                )}
+                  <div className="d-flex gap-3">
+                {/* LinkedIn */}
+                <Link
+                  href={faculty?.social?.linkedin?.trim() || "#"}
+                  className={`social-icon ${
+                    !faculty?.social?.linkedin ? "disabled-icon" : ""
+                  }`}
+                  target={faculty?.social?.linkedin ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin-in"></i>
+                </Link>
+
+                {/* Website */}
+                <Link
+                  href={faculty?.social?.website?.trim() || "#"}
+                  className={`social-icon ${
+                    !faculty?.social?.website ? "disabled-icon" : ""
+                  }`}
+                  target={faculty?.social?.website ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                >
+                  <i className="fas fa-globe"></i>
+                </Link>
+
+                {/* Google Scholar */}
+                <Link
+                  href={faculty?.social?.scholar?.trim() || "#"}
+                  className={`social-icon ${
+                    !faculty?.social?.scholar ? "disabled-icon" : ""
+                  }`}
+                  target={faculty?.social?.scholar ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-google"></i>
+                </Link>
+
+                {/* ResearchGate */}
+                <Link
+                  href={faculty?.social?.researchGate?.trim() || "#"}
+                  className={`social-icon ${
+                    !faculty?.social?.researchGate ? "disabled-icon" : ""
+                  }`}
+                  target={faculty?.social?.researchGate ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-search"></i>
+                </Link>
+
+                {/* Anthropic (optional) */}
+                <Link
+                  href={faculty?.social?.anthropic?.trim() || "#"}
+                  className={`social-icon ${
+                    !faculty?.social?.anthropic ? "disabled-icon" : ""
+                  }`}
+                  target={faculty?.social?.anthropic ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-anthropic"></i>
+                </Link>
               </div>
             </div>
 
