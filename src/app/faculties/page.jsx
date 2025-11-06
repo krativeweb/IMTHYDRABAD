@@ -60,7 +60,7 @@ export default function Faculty() {
     { id: "all", label: "All" },
     { id: "IT & Analytics", label: "IT & Analytics" },
     { id: "Finance & Accounting", label: "Finance & Accounting" },
-    { id: "General Management", label: "General Management" },
+    { id: "General Management", label: "Strategy & General Management" },
     { id: "Economics & Public Policy", label: "Economics & Public Policy" },
     { id: "HRM", label: "Human Resource" },
     { id: "Marketing", label: "Marketing" },

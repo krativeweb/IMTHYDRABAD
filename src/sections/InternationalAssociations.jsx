@@ -134,7 +134,7 @@ export default function InternationalAssociations() {
       <style jsx>{`
         .parallax-section {
           position: relative;
-          background: url("/media/banners/international-bg.jpg") center/cover
+          background: url("/media/hero.webp") center/cover
             no-repeat;
         }
         .overlay {

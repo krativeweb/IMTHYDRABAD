@@ -19,6 +19,7 @@ export default function Footer() {
       {/* Preloader */}
       <div id="preloader" className={`preloader ${loaded ? "fade-out" : ""}`}>
         <Image
+         className="bg-white"
           src="/media/imtpilllogo.webp"
           alt="Website Logo"
           width={150}
@@ -120,7 +121,7 @@ export default function Footer() {
                       </div>
                       <div className="modal-body text-center">
                         <Image
-                          src="/media/qr.webp"
+                          src=""
                           alt="QR Code"
                           width={300}
                           height={300}
@@ -212,30 +213,34 @@ export default function Footer() {
                 <h6 className="text-white fw-bold">Accreditations</h6>
                 <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
                   <Image
-                    src="https://www.imthyderabad.edu.in/assets/images/about/nba.png"
+                   className="bg-white"
+                    src="/media/acc/nba.png"
                     alt="Accreditation 1"
                     width={40}
                     height={40}
                   />
                   <Image
-                    src="https://www.imthyderabad.edu.in/assets/images/about/sas.jpg"
+                   className="bg-white"
+                    src="/media/acc/saq.png"
                     alt="Accreditation 2"
                     width={40}
                     height={40}
                   />
                   <Image
-                    src="https://www.imthyderabad.edu.in/assets/images/about/aiu.png"
+                   className="bg-white"
+                    src="/media/acc/aiu-n.png"
                     alt="Accreditation 3"
                     width={40}
                     height={40}
                   />
                   <Image
-                    src="https://www.imthyderabad.edu.in/assets/images/aicte-logo.png"
+                    src="/media/acc/aicte.png"
                     alt="Accreditation 4"
                     width={40}
                     height={40}
                   />
                   <Image
+                   className="bg-white"
                     src="/media/aacsb-logo.webp"
                     alt="Accreditation 5"
                     width={40}

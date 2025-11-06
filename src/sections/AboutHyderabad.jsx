@@ -183,7 +183,7 @@ export default function AboutIMTHyderabad() {
               <div className="col-md-4">
                 <div className="founder-image position-relative">
                   <Image
-                    src="https://www.imthyderabad.edu.in/assets/images/about/shri-mahendra-nathold.jpg"
+                    src="/media/Shri-Mahendra-Nath.png"
                     alt="Shri Mahendra Nath"
                     width={400}
                     height={500}

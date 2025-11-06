@@ -6,7 +6,7 @@ export const clubData = {
          <ul>
            <li>IMT Hyderabad League (IHL) – Cricket, Football, Basketball, Volleyball, Table Tennis, Mini Marathon</li>
          </ul>`,
-    img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926300_Altius.png',
+    img: '/media/clubs&committes/1club.png',
     links: [
       { icon: "fab fa-instagram", url: "https://www.instagram.com/altius_imthyd/" },
       { icon: "fab fa-facebook", url: "https://www.facebook.com/AltiusIMTH/" }
@@ -28,7 +28,7 @@ export const clubData = {
          <ul><li>Open Mic Nights</li><li>Big Fight: Debate</li><li>Pantomath</li><li>League of Nations</li></ul>
          <h6>Initiatives in the pipeline</h6>
          <ul><li>Toastmasters</li><li>TTT: Terribly Tiny Tales</li></ul>`,
-    img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926183_Commwing_logo.png',
+    img: '/media/clubs&committes/2club.png',
     links: [
       { icon: "fab fa-instagram", url: "https://www.instagram.com/communication_wing/" },
       { icon: "fab fa-linkedin", url: "https://www.linkedin.com/company/communication-wing-imth/" }
@@ -39,7 +39,7 @@ export const clubData = {
     content: `<p>A PGDM programme doesn't stop at the classroom, especially when the Campus is as diverse as ours. Antragna - the cultural club of IMT Hyderabad is all about bringing out the latent cultural expression inside every student. Apart from celebrating major festivals, Antragna's objective is to promote cultural creativity across performing and visual arts. We facilitate festival celebrations, stage productions, street plays and other cultural showcases.</p>
          <h6>Objectives</h6>
          <p>To develop the spirit and attitude among students to explore experiential and innovative ways of learning the new-age business intricacies & strategies through culture and performance.</p>`,
-    img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675925912_Antragna_logo.png',
+    img: '/media/clubs&committes/3club.png',
     links: []
   },
   // Add the remaining clubs (4-8) with their data, img, and links similarly
@@ -58,7 +58,7 @@ export const committeeData = {
            <li><strong>Photography:</strong> Captures key campus moments in events.</li>
            <li><strong>Press Release:</strong> Shares stories and interviews with media outlets.</li>
          </ul>`,
-    img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675927010_MRC_Logo.jpeg',
+    img: '/media/clubs&committes/1comm.jpeg',
     mentor: { name: "Mentor Name", img: "https://imt.arawalihome.in/media/img/c.webp" },
     students: [
       { name: "Student 1", batch: "2023-25", img: "https://imt.arawalihome.in/media/img/b.webp" },

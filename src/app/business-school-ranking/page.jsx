@@ -228,7 +228,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
                   <img
-                    src="https://www.imthyderabad.edu.in/assets/images/about/r-nirf.png"
+                    src="/media/acc/r-nirf.png"
                     alt="NIRF Ranking"
                   />
                 </div>
@@ -243,7 +243,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
                   <img
-                    src="https://www.imthyderabad.edu.in/assets/images/about/r-ew.png"
+                    src="/media/acc/r-ew.png"
                     alt="Education World"
                   />
                 </div>
@@ -256,7 +256,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
                   <img
-                    src="https://www.imthyderabad.edu.in/assets/images/about/r-bw.png"
+                    src="/media/acc/r-bw.png"
                     alt="Business World"
                   />
                 </div>
@@ -269,7 +269,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
                   <img
-                    src="https://www.imthyderabad.edu.in/assets/images/about/r-360.png"
+                    src="/media/acc/r-360.png"
                     alt="Careers 360"
                   />
                 </div>

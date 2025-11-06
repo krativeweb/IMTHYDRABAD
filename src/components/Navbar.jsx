@@ -118,7 +118,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="/fpm-program-hyderabad">
+                    <Link className="dropdown-item" href="/fpm-admission">
                       Fellow Program in Management
                     </Link>
                   </li>

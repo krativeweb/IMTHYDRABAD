@@ -284,7 +284,7 @@ Our summer internships integrate classroom knowledge with real-world practice, b
                 <div className="col-12 col-md-8">
                   <div className="mb-3 text-center">
                     <h4 className="mb-2 section-subtitle">Table 5: Summary of Assessment in Internship Program 2025</h4>
-                    <img src="/images/internship-program-assessment.png" className="img-fluid" alt="Table 5: Summary of Assessment in Internship Program 2025" />
+                    <img src="/images/t3.jpg" className="img-fluid" alt="Table 5: Summary of Assessment in Internship Program 2025" />
                   </div>
                 </div>
               </div>

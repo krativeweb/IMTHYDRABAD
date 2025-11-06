@@ -57,7 +57,7 @@ export default function CampusLifeGallery() {
                     height={400}
                     className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="gallery-caption absolute bottom-0 left-0 w-full text-center bg-opacity-70 bg-black py-2">
+                  <div className="gallery-caption absolute bottom-0 left-0 w-full text-center bg-opacity-70 bg-warning py-2">
                     <h5 className="text-white text-lg font-semibold">
                       {item.title}
                     </h5>

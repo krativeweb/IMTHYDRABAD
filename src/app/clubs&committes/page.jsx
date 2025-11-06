@@ -13,7 +13,7 @@ export default function ClubsAndCommittees() {
          <ul>
            <li>IMT Hyderabad League (IHL) – Cricket, Football, Basketball, Volleyball, Table Tennis, Mini Marathon</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926300_Altius.png',
+      img: '/media/clubs&committes/1club.png',
       links: [
         { icon: 'fab fa-instagram', url: 'https://www.instagram.com/altius_imthyd/' },
         { icon: 'fab fa-facebook', url: 'https://www.facebook.com/AltiusIMTH/' },
@@ -35,7 +35,7 @@ export default function ClubsAndCommittees() {
          <ul><li>Open Mic Nights</li><li>Big Fight: Debate</li><li>Pantomath</li><li>League of Nations</li></ul>
          <h6>Initiatives in the pipeline</h6>
          <ul><li>Toastmasters</li><li>TTT: Terribly Tiny Tales</li></ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926183_Commwing_logo.png',
+      img: '/media/clubs&committes/2club.png',
       links: [
         { icon: 'fab fa-instagram', url: 'https://www.instagram.com/communication_wing/' },
         { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/company/communication-wing-imth/' },
@@ -46,7 +46,7 @@ export default function ClubsAndCommittees() {
       content: `<p>A PGDM programme doesn't stop at the classroom, especially when the Campus is as diverse as ours. Antragna - the cultural club of IMT Hyderabad is all about bringing out the latent cultural expression inside every student. Apart from celebrating major festivals, Antragna's objective is to promote cultural creativity across performing and visual arts. We facilitate festival celebrations, stage productions, street plays and other cultural showcases.</p>
          <h6>Objectives</h6>
          <p>To develop the spirit and attitude among students to explore experiential and innovative ways of learning the new-age business intricacies & strategies through culture and performance.</p>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675925912_Antragna_logo.png',
+      img: '/media/clubs&committes/3club.png',
       links: [],
     },
     4: {
@@ -71,7 +71,7 @@ export default function ClubsAndCommittees() {
          <p>Middle Row (L-R): Anush Kumar, Lavish Jain</p>
          <p>Lowest Row (L-R): Akshita Agarwal, Harsh Dhoot, Sakshi Mundhra, Sowmya Alur, Yash Shrivastava</p>
          <p><strong>Co-ordinators:</strong> Pranay Jain & Sowmya Alur</p>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675925791_ATHENA-LOGO.png',
+      img: '/media/clubs&committes/4club.png',
       links: [],
     },
     5: {
@@ -95,7 +95,7 @@ export default function ClubsAndCommittees() {
            <li>The Riddler’s Anarchy</li>
            <li>Mercazine (Annual Marketing Magazine)</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675925316_mantra.png',
+      img: '/media/clubs&committes/5club.png',
       links: [],
     },
     6: {
@@ -112,7 +112,7 @@ export default function ClubsAndCommittees() {
            <li>Six Sigma Green Belt Certification (in association with KPMG)</li>
            <li>SCM EXE Certification (in association with CII)</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675924750_imthyd-opuskriya.jpg',
+      img: '/media/clubs&committes/6club.jpg',
       links: [{ icon: 'fab fa-facebook', url: 'https://www.facebook.com/OpuskriyaIMT/' }],
     },
     7: {
@@ -125,7 +125,7 @@ export default function ClubsAndCommittees() {
            <li><strong>Ortus</strong> – storytelling platform with entrepreneur talks</li>
            <li><strong>TiE GRAD</strong> – entrepreneurial workshops in association with TiE</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675924282_imthyd-prarambh.jpg',
+      img: '/media/clubs&committes/7club.jpg',
       links: [
         { icon: 'fab fa-instagram', url: 'https://www.instagram.com/ecell_imthyderabad/' },
         { icon: 'fas fa-envelope', url: 'mailto:prarambh.ecell@imthyderabad.edu.in' },
@@ -151,7 +151,7 @@ export default function ClubsAndCommittees() {
            <li>Nazaria (single-light photography)</li>
            <li>Product Design Workshop (with Kilkaari & Co.)</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675861159_Tassavur_BlackHighRes.png',
+      img: '/media/clubs&committes/8club.png',
       links: [
         { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tassavurimthyd/' },
         { icon: 'fab fa-facebook', url: 'https://www.facebook.com/TassavurIMTHyd/' },
@@ -172,16 +172,16 @@ export default function ClubsAndCommittees() {
            <li><strong>Photography:</strong> Captures key campus moments in events.</li>
            <li><strong>Press Release:</strong> Shares stories and interviews with media outlets.</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675927010_MRC_Logo.jpeg',
-      mentor: { name: 'Mentor Name', img: 'https://imt.arawalihome.in/media/img/c.webp' },
+      img: '/media/clubs&committes/1comm.jpeg',
+      mentor: { name: 'Mentor Name', img: '/media/img/c.webp' },
       students: [
-        { name: 'Student 1', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 2', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 3', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 4', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 5', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 6', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 7', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
+        { name: 'Student 1', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 2', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 3', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 4', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 5', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 6', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 7', batch: '2024-26', img: '/media/c.webp' },
       ],
     },
     2: {
@@ -193,16 +193,16 @@ export default function ClubsAndCommittees() {
          <p>Mezzo maintains dining halls (capacity ~300), executive dining, and infrastructure.</p>
          <h6>Cafeteria (Adda)</h6>
          <p>Mezzo liaises with Adda staff, recommends menu items, and performs inventory checks to maintain hygiene and stock updates.</p>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926947_Mezzo_logo.png',
-      mentor: { name: 'Prof. Food Expert', img: 'https://imt.arawalihome.in/media/img/c.webp' },
+      img: '/media/clubs&committes/2comm.png',
+      mentor: { name: 'Prof. Food Expert', img: '/media/img/c.webp' },
       students: [
-        { name: 'Student 1', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 2', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 3', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 4', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 5', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 6', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 7', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
+        { name: 'Student 1', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 2', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 3', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 4', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 5', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 6', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 7', batch: '2024-26', img: '/media/c.webp' },
       ],
     },
     3: {
@@ -211,16 +211,16 @@ export default function ClubsAndCommittees() {
          <p>The organising committee plans yearly themes, contacts speakers, manages promotions, sponsorships and budgeting. Volunteers help with social media, logistics and event delivery.</p>
          <p>We follow TED's mission: "Ideas worth spreading" — bringing diverse perspectives to the local community.</p>
          <p><strong>Website:</strong> <a href="https://www.tedximthyderabad.com/" target="_blank">https://www.tedximthyderabad.com/</a></p>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926650_Tedx.png',
-      mentor: { name: 'Prof. Ideas', img: 'https://imt.arawalihome.in/media/img/c.webp' },
+      img: '/media/clubs&committes/3comm.png',
+      mentor: { name: 'Prof. Ideas', img: '/media/img/c.webp' },
       students: [
-        { name: 'Student 1', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 2', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 3', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 4', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 5', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 6', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 7', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
+        { name: 'Student 1', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 2', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 3', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 4', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 5', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 6', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 7', batch: '2024-26', img: '/media/c.webp' },
       ],
     },
     4: {
@@ -235,32 +235,32 @@ export default function ClubsAndCommittees() {
            <li><strong>CV Screening:</strong> Resume screening before placements.</li>
            <li><strong>Chapter Meets:</strong> City chapter meets across cities for alumni networking.</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926553_ARC_2BLOGO_2Bfinal_2Bfinal_2Bwhite.png',
-      mentor: { name: 'Prof. Network', img: 'https://imt.arawalihome.in/media/img/c.webp' },
+      img: '/media/clubs&committes/4comm.png',
+      mentor: { name: 'Prof. Network', img: '/media/img/c.webp' },
       students: [
-        { name: 'Student 1', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 2', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 3', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 4', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 5', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 6', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 7', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
+        { name: 'Student 1', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 2', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 3', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 4', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 5', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 6', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 7', batch: '2024-26', img: '/media/c.webp' },
       ],
     },
     5: {
       title: 'International Relations (IRC)',
       content: `<p><strong>Purpose:</strong> To establish IMT Hyderabad on the global stage by handling inbound/outbound student exchanges and short-term exchange programs (STEP).</p>
          <p>This committee connects IMT-H with partner institutions worldwide and supports exchange logistics and student coordination.</p>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926485_IRC_new.png',
-      mentor: { name: 'Prof. Global', img: 'https://imt.arawalihome.in/media/img/c.webp' },
+      img: '/media/clubs&committes/5comm.png',
+      mentor: { name: 'Prof. Global', img: '/media/img/c.webp' },
       students: [
-        { name: 'Student 1', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 2', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 3', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 4', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 5', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 6', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 7', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
+        { name: 'Student 1', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 2', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 3', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 4', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 5', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 6', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 7', batch: '2024-26', img: '/media/c.webp' },
       ],
     },
     6: {
@@ -272,16 +272,16 @@ export default function ClubsAndCommittees() {
            <li>Implement changes that deliver long-term student benefits</li>
            <li>Bridge communication between students and management for grievance resolution</li>
          </ul>`,
-      img: 'https://www.imthyderabad.edu.in/assets/admin/images/clubs_committee/1675926405_sc-logo.jpg',
-      mentor: { name: 'Prof. Leadership', img: 'https://imt.arawalihome.in/media/img/c.webp' },
+      img: '/media/clubs&committes/6comm.jpg',
+      mentor: { name: 'Prof. Leadership', img: '/media/img/c.webp' },
       students: [
-        { name: 'Student 1', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 2', batch: '2023-25', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 3', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 4', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 5', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 6', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
-        { name: 'Student 7', batch: '2024-26', img: 'https://imt.arawalihome.in/media/img/b.webp' },
+        { name: 'Student 1', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 2', batch: '2023-25', img: '/media/c.webp' },
+        { name: 'Student 3', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 4', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 5', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 6', batch: '2024-26', img: '/media/c.webp' },
+        { name: 'Student 7', batch: '2024-26', img: '/media/c.webp' },
       ],
     },
   };

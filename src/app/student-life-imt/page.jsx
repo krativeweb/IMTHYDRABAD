@@ -1,6 +1,7 @@
 // app/student-life/page.jsx
 'use client';
 
+import PlacementAlliance from '@/components/PlacementAlliance.jsx';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 
@@ -148,19 +149,34 @@ We cultivate thinkers and doers prepared for a future shaped by innovation and e
               <p className="text-light">Moments from campus life, events, and activities</p>
             </div>
             <div className="row g-4">
-              {[1,2,3,4,5,6,7,8].map(i => (
-                <div key={i} className="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay={100 + i * 50}>
-                  <div className="card border-0 shadow-sm overflow-hidden">
-                    <img
-                      src="/media/hero.webp"
-                      className="card-img-top img-fluid h-100"
-                      style={{ height: '200px !important' }}
-                      alt={`Event ${i}`}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+  {[
+    "/media/std-life/1.JPG",
+    "/media/std-life/2.JPG",
+    "/media/std-life/3.JPG",
+    "/media/std-life/4.JPG",
+    "/media/std-life/5.JPG",
+    "/media/std-life/6.JPG",
+    "/media/std-life/7.JPG",
+    "/media/std-life/8.JPG",
+  ].map((img, i) => (
+    <div
+      key={i}
+      className="col-6 col-md-4 col-lg-3"
+      data-aos="zoom-in"
+      data-aos-delay={100 + i * 50}
+    >
+      <div className="card border-0 shadow-sm overflow-hidden">
+        <img
+          src={img}
+          className="card-img-top img-fluid h-100"
+          style={{ height: "200px", objectFit: "cover" }}
+          alt={`Event ${i + 1}`}
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
           </div>
         </section>
 
@@ -184,11 +200,16 @@ We cultivate thinkers and doers prepared for a future shaped by innovation and e
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051319_r14.png" alt="Google" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051331_r39.png" alt="Microsoft" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051345_r12.png" alt="Amazon" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051576_r1.png" alt="Infosys" /></div>
-              <div className="item"><img src="https://www.imthyderabad.edu.in/assets/admin/images/banners/1672051590_r36.png" alt="TCS" /></div>
+              <div className="item"><img src="/media/placementimg/1.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/2.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/3.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/4.webp" alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/5.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/6.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/7.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/8.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/9.webp"  alt=".." /></div>
+              <div className="item"><img src="/media/placementimg/10.webp"  alt=".." /></div>
             </div>
           </div>
         </section>

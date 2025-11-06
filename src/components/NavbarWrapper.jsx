@@ -10,7 +10,6 @@ export default function NavbarWrapper() {
 
   // Define placement-related routes
   const placementRoutes = [
-    '/placement',
     '/placements',
     '/campus-recruitment',
     '/internship',

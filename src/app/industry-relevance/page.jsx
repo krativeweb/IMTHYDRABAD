@@ -89,7 +89,7 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
                   <div className="col-md-4 image-container-right">
                     <img
-                      src="https://www.imthyderabad.edu.in/assets/images/industry-moter.jpg"
+                      src="/media/IR/images/1.jpg"
                       alt="Industry Mentor-Mentee Program"
                       className="img-fluid rounded shadow clipped-img-1"
                       loading="lazy"
@@ -110,7 +110,7 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
                   <div className="col-md-4">
                     <img
-                      src="https://www.imthyderabad.edu.in/assets/images/UMA_6792.JPG"
+                      src="/media/IR/images/2.JPG"
                       alt="Leadership Series & MOP"
                       className="img-fluid rounded shadow clipped-img-2"
                       loading="lazy"
@@ -131,7 +131,7 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
                   <div className="col-md-4 image-container-right">
                     <img
-                      src="https://www.imthyderabad.edu.in/assets/images/111.JPG"
+                      src="/media/IR/images/3.JPG"
                       alt="Leadership Series & Practitioner Session"
                       className="img-fluid rounded shadow clipped-img-1"
                       loading="lazy"
@@ -152,7 +152,7 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
                   <div className="col-md-4">
                     <img
-                      src="https://www.imthyderabad.edu.in/assets/images/Pic%20-%201.jpg"
+                      src="/media/IR/images/4.jpg"
                       alt="Internship Program"
                       className="img-fluid rounded shadow clipped-img-2"
                       loading="lazy"
@@ -173,7 +173,7 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
                   <div className="col-md-4 image-container-right">
                     <img
-                      src="https://www.imthyderabad.edu.in/assets/images/IMG_1920.JPG"
+                      src="/media/IR/images/5.JPG"
                       alt="Industry-Oriented Courses"
                       className="img-fluid rounded shadow clipped-img-1"
                       loading="lazy"
@@ -194,7 +194,7 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
                   <div className="col-md-4">
                     <img
-                      src="https://www.imthyderabad.edu.in/assets/images/Pic%20-%202.jpg"
+                      src="/media/IR/images/6.jpg"
                       alt="Management Project"
                       className="img-fluid rounded shadow clipped-img-2"
                       loading="lazy"

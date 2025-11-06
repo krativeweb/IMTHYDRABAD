@@ -4,17 +4,17 @@ import Link from "next/link";
 export default function ConnectSection() {
   const connects = [
     {
-      img: "https://www.imthyderabad.edu.in/assets/images-demo/connect_img1.jpg",
+      img: "/media/IR/cc1.jpg",
       title: "Corporate Connect",
       link: "/corporate-connect",
     },
     {
-      img: "https://www.imthyderabad.edu.in/assets/images-demo/connect_img3.jpg",
+      img: "/media/IR/gc1.jpg",
       title: "Global Connect",
       link: "/studying-at-imt-hyderabad",
     },
     {
-      img: "https://www.imthyderabad.edu.in/assets/images-demo/communityconnet24.jpg",
+      img: "/media/IR/cc2.jpg",
       title: "Community Connect",
       link: "/community-connect",
     },

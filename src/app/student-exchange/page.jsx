@@ -335,7 +335,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/1.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -383,7 +383,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -436,7 +436,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/3.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -492,7 +492,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/4.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -546,7 +546,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/5.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -603,7 +603,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/6.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -664,7 +664,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/7.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -712,7 +712,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/8.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -769,7 +769,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/9.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -823,7 +823,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/10.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -884,7 +884,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/11.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -944,7 +944,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/12.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -993,7 +993,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/13.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1033,7 +1033,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/14.jpeg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1082,7 +1082,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/5.png" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1119,7 +1119,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1168,7 +1168,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1204,7 +1204,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1263,7 +1263,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1299,7 +1299,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1343,7 +1343,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1383,7 +1383,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1430,7 +1430,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1477,7 +1477,7 @@ export default function StudentExchangePage() {
                     >
                       <div className="tab-content">
                         <div>
-                          <img src="./images/nitin.jpg" alt="" />
+                          <img class="image-fluid" width={"100%"} src="/media/std-ex/2.jpg" alt="" />
                         </div>
                         <div
                           className="tab-pane fade show active mt-4 p-2"
@@ -1616,7 +1616,7 @@ export default function StudentExchangePage() {
                             <div className="row g-0">
                               <div className="col-md-4">
                                 <img
-                                  src="./images/jullie.png"
+                                  src="/media/std-ex/in1.png"
                                   className="img-fluid rounded-start"
                                   alt="Julliettee Laffittee"
                                 />
@@ -1679,7 +1679,7 @@ export default function StudentExchangePage() {
                             <div className="row g-0">
                               <div className="col-md-4">
                                 <img
-                                  src="./images/jullie.png"
+                                  src="/media/std-ex/in2.png"
                                   className="img-fluid rounded-start"
                                   alt="Tuharora Cabeal"
                                 />
@@ -1739,7 +1739,7 @@ export default function StudentExchangePage() {
                             <div className="row g-0">
                               <div className="col-md-4">
                                 <img
-                                  src="./images/jullie.png"
+                                  src="/media/std-ex/in3.png"
                                   className="img-fluid rounded-start"
                                   alt="Marine Karvadec"
                                 />
@@ -1799,7 +1799,7 @@ export default function StudentExchangePage() {
                             <div className="row g-0">
                               <div className="col-md-4">
                                 <img
-                                  src="./images/jullie.png"
+                                  src="/media/std-ex/in4.png"
                                   className="img-fluid rounded-start"
                                   alt="Stephane Portal"
                                 />
@@ -1879,7 +1879,7 @@ export default function StudentExchangePage() {
       <style jsx global>{`
         /* Gradient banner with subtle overlay */
         .faculty-hero {
-          background: url("./images/banner/international relations.jpg");
+          background: url("/media/std-ex/banner/international relations.jpg");
           position: relative;
           background-size: cover;
           height: 50vh;

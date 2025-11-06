@@ -167,7 +167,7 @@ Our community embodies collaboration, respect, and a shared vision of shaping et
           {/* Image */}
           <div className="text-center mb-4" data-aos="fade-up" data-aos-delay="350">
             <img
-              src="https://www.imthyderabad.edu.in/assets/images/community1.png"
+              src="/media/cc.png"
               className="img-fluid rounded-4"
               alt="Community Connect"
             />
