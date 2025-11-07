@@ -90,7 +90,7 @@ export default function NavbarTwo() {
       </div>
 
       {/* Navbar */}
-     <nav   ref={navbarRef}  className="navbar navbar-expand-lg navbar-light sticky-top mt-4">
+     <nav   ref={navbarRef}  className="navbar navbar-expand-lg navbar-light sticky-top" style={{ marginTop:'39px' }}>
     <div className="container shadow-sm">
       {/* Logo */}
       <a className="navbar-brand" href="/">
