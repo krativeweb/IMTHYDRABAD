@@ -1104,7 +1104,7 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
       {/* Upcoming Events Carousel */}
       <section className="video-carousel-section py-5">
         <div className="container-fluid">
-          <h2 className="text-center fw-bold mb-4 text-warning">Upcoming Events</h2>
+          <h2 className="text-center fw-bold mb-4 text-warning">Events</h2>
           <div id="youtube-carousel" className="owl-carousel owl-theme">
             {['1.webp', '2.webp', '3.webp', '4.webp'].map((img, index) => (
               <div className="item" key={index}>

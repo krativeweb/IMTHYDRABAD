@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
-
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 export default function NewsSection() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -104,6 +104,7 @@ Stay updated on our latest initiatives, achievements, collaborations, and academ
             </nav>
           </div>
         </div>
+        <InternationalAssociationStickyBtns/>
 
         {/* News Section */}
         <section>

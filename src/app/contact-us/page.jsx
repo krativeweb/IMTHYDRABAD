@@ -398,16 +398,16 @@ Reach out to engage, explore, and evolve with us.
 
                   <div className="col mt-2">
                     <div className="bg-light p-3 rounded-5 d-flex justify-content-evenly">
-                      <Link href="#" className="social-icon">
+                      <Link href="https://www.instagram.com/IMTHyderabad/" className="social-icon">
                         <i className="bi bi-instagram fs-4"></i>
                       </Link>
-                      <Link href="#" className="social-icon">
+                      <Link href="https://www.facebook.com/IMThyderabad/" className="social-icon">
                         <i className="bi bi-facebook fs-4"></i>
                       </Link>
-                      <Link href="#" className="social-icon">
+                      <Link href="https://x.com/IMTHyderabad" className="social-icon">
                         <i className="bi bi-twitter-x fs-4"></i>
                       </Link>
-                      <Link href="#" className="social-icon">
+                      <Link href="https://www.youtube.com/@IMTHyderabad" className="social-icon">
                         <i className="bi bi-youtube fs-4"></i>
                       </Link>
                     </div>

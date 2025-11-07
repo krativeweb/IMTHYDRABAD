@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import React, { useEffect } from 'react';
-
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 const StepDubaiContent = () => {
   useEffect(() => {
     // Initialize AOS only
@@ -69,7 +69,7 @@ Through the STEP Dubai program, we connect students with international business 
             </nav>
           </div>
         </div>
-
+<InternationalAssociationStickyBtns/>
         {/* Main Content */}
         <section className="py-5">
           <div className="container bg-white p-4 rounded-4 mb-4">

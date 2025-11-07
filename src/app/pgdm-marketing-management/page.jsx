@@ -86,21 +86,18 @@ export default function PGDMMarketingSection() {
           background: #ffc107;
           color: #000;
         }
+.custom-bullets {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #142a53;
+}
 
-        /* Custom Bullets */
-        .custom-bullets li {
-          position: relative;
-          padding-left: 25px;
-          margin-bottom: 10px;
-          list-style: none;
-        }
-        .custom-bullets li::before {
-          content: "✓";
-          position: absolute;
-          left: 0;
-          color: #ffc107;
-          font-weight: bold;
-        }
+.custom-bullets li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  text-align: justify;
+}
 
         /* Curriculum List */
         .curriculum-item {
@@ -297,7 +294,7 @@ Our Marketing program fuses creativity, analytics, and brand strategy to build f
               <div className="tab-content" id="pgdmTabContent">
                 {/* Curriculum Tab */}
                 <div className="tab-pane fade show active" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab">
-                  <p className="text-warning fw-bold">List of courses offered in the PGDM program include:</p>
+                  <h5 className="text-warning fw-bold">List of courses offered in the PGDM program include:</h5>
                   <div className="row">
                     {[
                       "Principles of Marketing",
@@ -322,8 +319,8 @@ Our Marketing program fuses creativity, analytics, and brand strategy to build f
                       "Special Project / Organization-Based Project in Marketing",
                     ].map((course, index) => (
                       <div key={index} className="col-md-4 mb-2 curriculum-item">
-                        <i className="fas fa-circle me-2"></i>
-                        {course}
+                        <li>{course}</li>
+
                       </div>
                     ))}
                   </div>

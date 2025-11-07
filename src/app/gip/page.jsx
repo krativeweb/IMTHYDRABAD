@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 export default function GlobalImmersionProgram() {
   // Data for 2024-25 sessions
 
@@ -155,7 +155,7 @@ Our global immersion programs blend international learning with cultural insight
             </nav>
           </div>
         </div>
-
+     <InternationalAssociationStickyBtns/>
         {/* Tab Navigation */}
         <section>
           <nav className="nav nav-pills justify-content-center flex-wrap gap-2">

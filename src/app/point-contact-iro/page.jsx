@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 export default function PointOfContactSection() {
   // Initialize AOS
   useEffect(() => {
@@ -144,7 +144,7 @@ Our International Relations Office facilitates partnerships, student mobility, a
           </nav>
         </div>
       </div>
-
+     <InternationalAssociationStickyBtns/>
       {/* Point of Contact Section */}
       <section className="point-of-contact py-4">
         <div className="container bg-white p-4 mb-4 rounded-4">

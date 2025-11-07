@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
@@ -67,6 +68,7 @@ const InternationalAssociations = () => {
             </p>
           </div>
         </div>
+        <InternationalAssociationStickyBtns/>
 
         {/* Breadcrumb */}
         <div className="breadcrumb p-4">

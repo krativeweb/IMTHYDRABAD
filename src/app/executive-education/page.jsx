@@ -10,6 +10,51 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 });
 
 export default function ExecutiveEducation() {
+  //recent programs 
+   const data = {
+    workshops: [
+      {
+        title:
+          "Finance and Accounting Excellence Program: Strategic Financial Management",
+        company: "Telangana State Road Transport Corporation",
+        programDirector: "Prof. (Dr.) A. Sarath Babu",
+        image: "/images/EDP-1.webp",
+      },
+      {
+        title: "Mastering People Management and Team Leadership",
+        company: "BHARAT Financial Inclusion Ltd",
+        programDirector: "Prof. (Dr.) Romina Mathew",
+        image: "/images/EDP-2.webp",
+      },
+      {
+        title: "CoroElite – Sales Excellence in Retail",
+        company: "Coromandel International Ltd.",
+        programDirector: "Prof. (Dr.) A. Sarath Babu",
+        image: "/images/EDP-3.webp",
+      },
+      {
+        title: "Mastering People Management & Team Leadership",
+        company: "BHARAT Financial Inclusion Ltd",
+        programDirector: "Prof. (Dr.) Pavan Kumar Balivada",
+        image: "/images/EDP-4.webp",
+      },
+      {
+        title: "Middle Management Development Program",
+        company: "Greenko Group",
+        programDirector:
+          "Prof. (Dr.) Pavan Kumar Balivada & Prof. (Dr.) A. Sarath Babu",
+        image: "/images/EDP-5.webp",
+      },
+      {
+        title:
+          "Leadership Training Program: Navigating High-Pressure Environments",
+        company: "Telangana State Road Transport Corporation",
+        programDirector: "Prof. Dhananjay Singh",
+        image: "/images/EDP-6.webp",
+      },
+    ],
+  };
+   const recentPrograms = data.workshops.slice(0, 3);
   // Data for EDP Calendar
   const edpCalendar = [
     {
@@ -118,63 +163,6 @@ export default function ExecutiveEducation() {
       dates: '25 – 28 Jun 2025',
     },
   ];
-
-  // Data for Recent Programs
-  const recentPrograms = [
-    {
-      title: 'Program Name 1',
-      company: 'ABC Corp',
-      director: 'Prof. John Doe',
-      image: '/media/hero.webp',
-    },
-    {
-      title: 'Program Name 2',
-      company: 'XYZ Ltd',
-      director: 'Prof. Jane Smith',
-      image: '/media/hero.webp',
-    },
-    {
-      title: 'Program Name 3',
-      company: 'LMN Inc',
-      director: 'Prof. Alan Brown',
-      image: '/media/hero.webp',
-    },
-  ];
-
-  // Data for Certificate Programs
-  const certificatePrograms = [
-    {
-      title: 'PG Certificate Program in Data Science & AI',
-      mode: 'Online / Hybrid',
-      duration: '6 Months',
-    },
-    {
-      title: 'PG Certificate Program in Financial Technologies',
-      mode: 'Online',
-      duration: '6 Months',
-    },
-    {
-      title: 'Sales and Marketing',
-      mode: 'Classroom / Online',
-      duration: '4 Months',
-    },
-    {
-      title: 'Strategic Digital Marketing',
-      mode: 'Online',
-      duration: '5 Months',
-    },
-    {
-      title: 'Compensation Management',
-      mode: 'Hybrid',
-      duration: '3 Months',
-    },
-    {
-      title: 'AI and Machine Learning',
-      mode: 'Online / Hybrid',
-      duration: '6 Months',
-    },
-  ];
-
   // Data for Future Leaders Program Content
   const flpContent = [
     {
@@ -434,44 +422,71 @@ this content in the subtext
       </section>
 
       {/* Recent Programs Section */}
-      <section id="recent-programs" className="py-5" style={{ backgroundColor: '#151e54' }}>
-        <div className="container" data-aos="fade-up" data-aos-delay="200">
-          <h2
-            className="text-center text-warning"
-            style={{ fontWeight: 700 }}
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Recent Programs
-          </h2>
-          <p className="text-center text-white" data-aos="fade-up" data-aos-delay="200">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, velit!
-          </p>
-          <div className="row g-4 mt-3">
-            {recentPrograms.map((program, index) => (
-              <div className="col-md-6 col-lg-4" key={index} data-aos="fade-up" data-aos-delay={200 + index * 100}>
-                <div className="card h-100 shadow-sm">
-                  <img src={program.image} className="card-img-top faculty-img" alt={program.title} />
-                  <div className="card-body">
-                    <h5 className="card-title fw-bold">{program.title}</h5>
-                    <p className="mb-1">
-                      <strong>Company:</strong> {program.company}
-                    </p>
-                    <p className="mb-0">
-                      <strong>Program Director:</strong> {program.director}
-                    </p>
-                  </div>
+       <section
+      id="recent-programs"
+      className="py-5"
+      style={{ backgroundColor: "#151e54" }}
+    >
+      <div className="container" data-aos="fade-up" data-aos-delay="200">
+        <h2
+          className="text-center text-warning"
+          style={{ fontWeight: 700 }}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Recent Programs
+        </h2>
+        <p
+          className="text-center text-white"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Explore our latest Executive Development and Leadership Workshops.
+        </p>
+
+        <div className="row g-4 mt-3">
+          {recentPrograms.map((program, index) => (
+            <div
+              className="col-md-6 col-lg-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={200 + index * 100}
+            >
+              <div className="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                <img
+                  src={program.image}
+                  className="card-img-top"
+                  alt={program.title}
+                  style={{ objectFit: "cover", height: "220px" }}
+                />
+                <div className="card-body">
+                  <h5 className="card-title fw-bold">{program.title}</h5>
+                  <p className="mb-1">
+                    <strong>Company:</strong> {program.company}
+                  </p>
+                  <p className="mb-0">
+                    <strong>Program Director:</strong> {program.programDirector}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
-          <div className="text-center mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <Link href="/edp-conducted" className="btn btn-warning px-4 rounded-pill border-dark">
-              View All Programs
-            </Link>
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+
+        <div
+          className="text-center mt-4"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <Link
+            href="/conferences-workshops"
+            className="btn btn-warning px-4 rounded-pill border-dark"
+          >
+            View All Programs
+          </Link>
+        </div>
+      </div>
+    </section>
 
       {/* EDP Calendar Section */}
       <section id="calendar" className="py-4">

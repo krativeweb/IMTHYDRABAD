@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 
 export default function PhotoGallerySection() {
   const [galleryItems, setGalleryItems] = useState([]);
@@ -67,7 +68,7 @@ export default function PhotoGallerySection() {
           </nav>
         </div>
       </div>
-
+<InternationalAssociationStickyBtns/>
       {/* Photo Gallery */}
       <section>
         <div
