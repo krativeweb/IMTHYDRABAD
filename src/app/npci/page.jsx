@@ -211,7 +211,7 @@ const NPCI = () => {
       {/* Styles */}
       <style jsx>{`
         .faculty-hero {
-          background: url("/media/img/4.webp") no-repeat center center;
+          background: url("/media/banners/npci.jpg") no-repeat center center;
           background-size: cover;
           height: 60vh !important;
           position: relative;

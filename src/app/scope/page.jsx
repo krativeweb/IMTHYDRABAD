@@ -161,7 +161,7 @@ const Scope = () => {
       {/* Styles */}
       <style jsx>{`
         .faculty-hero {
-          background: url("/media/img/5.webp") no-repeat center center;
+          background: url("/media/banners/scope.jpg") no-repeat center center;
           background-size: cover;
           height: 60vh !important;
           position: relative;

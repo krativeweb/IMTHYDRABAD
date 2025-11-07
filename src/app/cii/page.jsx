@@ -201,7 +201,7 @@ const CII = () => {
       {/* Styles */}
       <style jsx>{`
         .faculty-hero {
-          background: url("/media/img/2.webp") no-repeat center center;
+          background: url("/media/banners/cii.jpg") no-repeat center center;
           background-size: cover;
           height: 60vh !important;
           position: relative;
