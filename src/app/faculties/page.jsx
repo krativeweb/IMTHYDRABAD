@@ -85,7 +85,6 @@ export default function Faculty() {
 
     const currentDeptNormalized = currentDept
       .toLowerCase()
-      .replace(/&/g, "and")
       .trim();
 
     const searchWords = search.split(/\s+/).filter(Boolean);
