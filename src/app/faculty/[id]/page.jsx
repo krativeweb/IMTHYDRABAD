@@ -159,8 +159,8 @@ export default function FacultyProfile({ params }) {
 
         // Research interests are inside the same block – take the second half
         const researchInterests = extractListItems(
-          data.prof_teaching_interest || ""
-        ).slice(teachingInterests.length);
+          data.prof_research_interest || ""
+        );
 
         const { journalPapers, conferencePapers } = parsePublications(
           data.prof_publications || ""
@@ -358,7 +358,7 @@ export default function FacultyProfile({ params }) {
                 </li>
                 <li className="breadcrumb-item">
                   <Link
-                    href="/faculty"
+                    href="/faculties"
                     className="text-white fw-bold"
                     style={{ textDecoration: "none" }}
                   >
