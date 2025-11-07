@@ -212,7 +212,7 @@ export default function FacultyProfile({ params }) {
           data.prof_publications || ""
         );
 
-        const awards = parseAwards(data.prof_awards || "");
+        const awards = data.prof_awards || "";
 
         const otherActivities = extractSmartList(
           data.prof_other_activity || ""
@@ -319,7 +319,7 @@ export default function FacultyProfile({ params }) {
           inset: 0;
           background: rgba(0, 0, 0, 0.3);
         }
-          .faculty-hero h2 {
+        .faculty-hero h2 {
           margin-top: 150px;
         }
         .faculty-hero h2,
@@ -482,7 +482,7 @@ export default function FacultyProfile({ params }) {
               </ul>
 
               {/* Social Icons (only render when a link exists) */}
-                  <div className="d-flex gap-3">
+              <div className="d-flex gap-3">
                 {/* LinkedIn */}
                 <Link
                   href={faculty?.social?.linkedin?.trim() || "#"}
@@ -752,15 +752,12 @@ export default function FacultyProfile({ params }) {
               </div>
 
               {/* Awards & Honors */}
-              <div className="tab-pane fade" id="awards-honors" role="tabpanel">
-                <ul className="list-group list-group-flush">
-                  {faculty.awards.map((a, i) => (
-                    <li className="list-group-item" key={i}>
-                      <strong>{a.year} –</strong> {a.description}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <div
+                className="tab-pane fade"
+                id="awards-honors"
+                role="tabpanel"
+                dangerouslySetInnerHTML={{ __html: faculty.awards }}
+              ></div>
 
               {/* Service */}
               <div className="tab-pane fade" id="service" role="tabpanel">
@@ -789,13 +786,11 @@ export default function FacultyProfile({ params }) {
                     Other Professional Activities
                   </span>
                 </h5>
-                <ul className="list-group list-group-flush mt-3">
-                  {faculty.otherActivities.map((act, i) => (
-                    <li className="list-group-item" key={i}>
-                      {act}
-                    </li>
-                  ))}
-                </ul>
+
+                <div
+                  className="list-group list-group-flush mt-3"
+                  dangerouslySetInnerHTML={{ __html: faculty.otherActivities }}
+                ></div>
               </div>
             </div>
           </div>
