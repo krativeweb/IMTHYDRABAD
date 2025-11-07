@@ -25,8 +25,7 @@ export default function CasesArchive() {
     "2014-15",
     "2013-14",
     "2012-13",
-    "2011-12",
-    "2010-11",
+
   ];
 
   const sortedYears = [...journalYears].sort((a, b) => {
