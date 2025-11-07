@@ -18,6 +18,43 @@ const extractListItems = (htmlString) => {
     .map((li) => li.textContent?.trim())
     .filter(Boolean);
 };
+const extractSmartList = (htmlString) => {
+  const items = [];
+  if (!htmlString) return items;
+
+  const div = document.createElement("div");
+  div.innerHTML = DOMPurify.sanitize(htmlString);
+
+  // Case 1: Regular <li> items
+  div.querySelectorAll("li").forEach((li) => {
+    const text = li.textContent?.trim();
+    if (text) items.push(text);
+  });
+
+  // Case 2: <p><b>Label:</b> content</p> pattern
+  div.querySelectorAll("p").forEach((p) => {
+    const html = p.innerHTML.trim();
+    const text = p.textContent?.trim();
+
+    // Look for bold tag at the start
+    const boldMatch = html.match(/^<b[^>]*>(.+?)<\/b>[:\s]*/i);
+    if (boldMatch && text) {
+      const label = boldMatch[1].trim();
+      const rest = text.replace(label, "").replace(/^[:\s]+/, "").trim();
+      if (rest) {
+        items.push(`<strong>${label}:</strong> ${rest}`);
+      } else {
+        items.push(`<strong>${label}</strong>`);
+      }
+    }
+    // If no bold, but still meaningful text (fallback)
+    else if (text && !text.match(/^\s*$/)) {
+      items.push(text);
+    }
+  });
+
+  return items;
+};
 
 // -------------------------------------------------
 // Helper – education + service (both live inside the same HTML block)
@@ -115,19 +152,28 @@ const parseAwards = (htmlString) => {
   div.innerHTML = DOMPurify.sanitize(htmlString);
 
   div.querySelectorAll("p").forEach((p) => {
-    const txt = p.textContent?.trim();
-    if (txt && txt.includes("–")) {
-      const parts = txt.split("–");
-      const year = parts[0].trim();
-      const description = parts.slice(1).join("–").trim();
-      if (year && description) {
-        awards.push({ year, description: parse(description) });
+    const txt = p.textContent?.trim().replace(/\s+/g, " ");
+    if (txt) {
+      // Match variations like "2023- Text", "2023 – Text", "2023 — Text"
+      const match = txt.match(/^(\d{4})\s*[-–—]\s*(.+)$/);
+      if (match) {
+        awards.push({
+          year: match[1].trim(),
+          description: parse(match[2].trim()),
+        });
+      } else {
+        // fallback if no year found
+        awards.push({
+          year: "",
+          description: parse(txt),
+        });
       }
     }
   });
 
   return awards;
 };
+
 
 // -------------------------------------------------
 // Component
@@ -168,7 +214,7 @@ export default function FacultyProfile({ params }) {
 
         const awards = parseAwards(data.prof_awards || "");
 
-        const otherActivities = extractListItems(
+        const otherActivities = extractSmartList(
           data.prof_other_activity || ""
         );
 
