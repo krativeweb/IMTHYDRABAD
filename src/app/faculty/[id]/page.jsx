@@ -59,23 +59,11 @@ const extractSmartList = (htmlString) => {
 // -------------------------------------------------
 // Helper – education + service (both live inside the same HTML block)
 // -------------------------------------------------
-const splitEducationAndService = (htmlString = "") => {
-  if (!htmlString) {
-    return { educationHtml: "<ul></ul>", serviceHtml: "<ul></ul>" };
-  }
-
-  const div = document.createElement("div");
-  div.innerHTML = DOMPurify.sanitize(htmlString);
-
-  // Extract Education <ul>
-  const eduUl = div.querySelector("#Edu ul");
-  const educationHtml = eduUl ? eduUl.outerHTML : "<ul></ul>";
-
-  // Extract Service <ul>
-  const serviceUl = div.querySelector("#service ul");
-  const serviceHtml = serviceUl ? serviceUl.outerHTML : "<ul></ul>";
-
-  return { educationHtml, serviceHtml };
+const getEducationAndService = (eduHtml = "", servHtml = "") => {
+  return {
+    educationHtml: eduHtml || "<ul></ul>",
+    serviceHtml:   servHtml || "<ul></ul>",
+  };
 };
 
 // -------------------------------------------------
@@ -160,8 +148,9 @@ export default function FacultyProfile({ params }) {
       const data = res.data;
 
         // ----- Parse all HTML fields -----
- const { educationHtml, serviceHtml } = splitEducationAndService(
-  data.prof_education || data.prof_education_service || ""
+const { educationHtml, serviceHtml } = getEducationAndService(
+  data.prof_education || "<ul></ul>",
+  data.prof_service   || "<ul></ul>"
 );
 
         const teachingInterests = extractListItems(
