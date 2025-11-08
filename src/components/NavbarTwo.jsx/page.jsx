@@ -83,14 +83,14 @@ export default function NavbarTwo() {
   return (
     <>
       {/* Announcement Strip */}
-      <div ref={stripRef} className="announcement-strip">
+      {/* <div ref={stripRef} className="announcement-strip">
         <div className="announcement-text">
           Welcome to Executive Education Programs at IMTH
         </div>
-      </div>
+      </div> */}
 
       {/* Navbar */}
-     <nav   ref={navbarRef}  className="navbar navbar-expand-lg navbar-light sticky-top" style={{ marginTop:'39px' }}>
+     <nav   ref={navbarRef}  className="navbar navbar-expand-lg navbar-light sticky-top" >
     <div className="container shadow-sm">
       {/* Logo */}
       <a className="navbar-brand" href="/">
