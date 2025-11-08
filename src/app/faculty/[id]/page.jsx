@@ -59,96 +59,23 @@ const extractSmartList = (htmlString) => {
 // -------------------------------------------------
 // Helper – education + service (both live inside the same HTML block)
 // -------------------------------------------------
-const parseEducationAndService = (educationHtml = "", serviceHtml = "") => {
-  const education = [];
-  const service = [];
-
-  // Helper to parse a simple <ul><li>...</li></ul> string
-  const parseSimpleList = (html, isEducation = true) => {
-    if (!html) return;
-    const div = document.createElement("div");
-    div.innerHTML = DOMPurify.sanitize(html);
-
-    div.querySelectorAll("li").forEach((li) => {
-      const txt = li.textContent?.trim();
-      if (!txt) return;
-
-      if (isEducation) {
-        // Match: "Ph.D. from University (2012 – 2014)"
-        const m = txt.match(/(.+?)\s+from\s+(.+?)\s*\(([^)]+)\)/i);
-        if (m) {
-          education.push({
-            degree: m[1].trim(),
-            institution: m[2].trim(),
-            years: m[3].trim(),
-          });
-        } else {
-          education.push({ degree: txt, institution: "", years: "" });
-        }
-      } else {
-        // Service: "Aug 2016 – June 2025 Assistant Professor, Department, University"
-        const m = txt.match(/(.+?)\s*[-–—]\s*(.+?)\s+Assistant Professor[\s,]*(.+)/i);
-        if (m) {
-          service.push({
-            years: m[1].trim(),
-            role: "Assistant Professor",
-            institution: `${m[2].trim()}, ${m[3].trim()}`.replace(/,\s*,/g, ","),
-          });
-        } else {
-          // Fallback
-          service.push({ years: "", role: txt, institution: "" });
-        }
-      }
-    });
-  };
-
-  // Try old structure first (#menu5, #menu6)
-  const mainDiv = document.createElement("div");
-  mainDiv.innerHTML = DOMPurify.sanitize(educationHtml + serviceHtml);
-
-  const eduUl = mainDiv.querySelector("#menu5 ul");
-  const srvUl = mainDiv.querySelector("#menu6 ul");
-
-  if (eduUl || srvUl) {
-    // Old format with #menu5/#menu6
-    eduUl?.querySelectorAll("li").forEach((li) => {
-      const txt = li.textContent?.trim();
-      if (txt) {
-        const m = txt.match(/(.+?)\s*from\s*(.+?)\s*\((.+?)\)/);
-        if (m) {
-          education.push({
-            degree: m[1].trim(),
-            institution: m[2].trim(),
-            years: m[3].trim(),
-          });
-        } else {
-          education.push({ degree: txt, institution: "", years: "" });
-        }
-      }
-    });
-
-    srvUl?.querySelectorAll("li").forEach((li) => {
-      const txt = li.textContent?.trim();
-      if (txt) {
-        const m = txt.match(/(.+?)\s*Assistant Professor.+?(.+?),\s*(.+)/);
-        if (m) {
-          service.push({
-            years: m[1].trim(),
-            role: "Assistant Professor",
-            institution: `${m[2].trim()}, ${m[3].trim()}`,
-          });
-        } else {
-          service.push({ years: "", role: txt, institution: "" });
-        }
-      }
-    });
-  } else {
-    // New format: plain <ul> in separate fields
-    parseSimpleList(educationHtml, true);
-    parseSimpleList(serviceHtml, false);
+const splitEducationAndService = (htmlString = "") => {
+  if (!htmlString) {
+    return { educationHtml: "<ul></ul>", serviceHtml: "<ul></ul>" };
   }
 
-  return { education, service };
+  const div = document.createElement("div");
+  div.innerHTML = DOMPurify.sanitize(htmlString);
+
+  // Extract Education <ul>
+  const eduUl = div.querySelector("#Edu ul");
+  const educationHtml = eduUl ? eduUl.outerHTML : "<ul></ul>";
+
+  // Extract Service <ul>
+  const serviceUl = div.querySelector("#service ul");
+  const serviceHtml = serviceUl ? serviceUl.outerHTML : "<ul></ul>";
+
+  return { educationHtml, serviceHtml };
 };
 
 // -------------------------------------------------
@@ -233,9 +160,8 @@ export default function FacultyProfile({ params }) {
       const data = res.data;
 
         // ----- Parse all HTML fields -----
-    const { education, service } = parseEducationAndService(
-  data.prof_education || "",
-  data.prof_service || ""   // ← pass service HTML separately
+ const { educationHtml, serviceHtml } = splitEducationAndService(
+  data.prof_education || data.prof_education_service || ""
 );
 
         const teachingInterests = extractListItems(
@@ -282,13 +208,13 @@ export default function FacultyProfile({ params }) {
                 .replace(/\\u003E/g, ">")
             )
           ),
-          education,
+          educationHtml,
           teachingInterests,
           researchInterests,
           journalPapers,
           conferencePapers,
           awards,
-          service,
+          serviceHtml,
           otherActivities,
           social: {
             linkedin: data.prof_linkedin || "",
@@ -687,14 +613,10 @@ export default function FacultyProfile({ params }) {
                     Education
                   </span>
                 </h5>
-                <ul className="list-group list-group-flush mt-3">
-                  {faculty.education.map((edu, i) => (
-                    <li className="list-group-item" key={i}>
-                      <strong>{edu.degree}</strong> – {edu.institution} (
-                      {edu.years})
-                    </li>
-                  ))}
-                </ul>
+        <div
+    className="mt-3 list-group list-group-flush"
+    dangerouslySetInnerHTML={{ __html: faculty.educationHtml }}
+  />
               </div>
 
               {/* Teaching & Research Interests */}
@@ -805,13 +727,10 @@ export default function FacultyProfile({ params }) {
                     Service
                   </span>
                 </h5>
-                <ul className="list-group list-group-flush mt-3">
-                  {faculty.service.map((s, i) => (
-                    <li className="list-group-item" key={i}>
-                      {s.years}: {s.role}, {s.institution}
-                    </li>
-                  ))}
-                </ul>
+              <div
+    className="mt-3 list-group list-group-flush"
+    dangerouslySetInnerHTML={{ __html: faculty.serviceHtml }}
+  />
               </div>
 
               {/* Other Professional Activities */}
