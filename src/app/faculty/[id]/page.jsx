@@ -168,9 +168,12 @@ const { educationHtml, serviceHtml } = getEducationAndService(
 
         const awards = data.prof_awards || "";
 
-        const otherActivities = extractSmartList(
-          data.prof_other_activity || ""
-        );
+      const other_professional_activities = data.other_professional_activities || {
+  mdp: '',
+  outreach: '',
+  grants: '',
+  conferences: ''
+};
 
         // ----- Build the final object -----
         const formatted = {
@@ -204,7 +207,7 @@ const { educationHtml, serviceHtml } = getEducationAndService(
           conferencePapers,
           awards,
           serviceHtml,
-          otherActivities,
+     other_professional_activities,
           social: {
             linkedin: data.prof_linkedin || "",
             website: data.prof_website || "",
@@ -723,22 +726,114 @@ const { educationHtml, serviceHtml } = getEducationAndService(
               </div>
 
               {/* Other Professional Activities */}
-              <div
-                className="tab-pane fade"
-                id="other-professional-activities"
-                role="tabpanel"
-              >
-                <h5>
-                  <span className="badge bg-warning text-dark rounded-pill px-3 py-2">
-                    Other Professional Activities
-                  </span>
-                </h5>
+         {/* Other Professional Activities - 4 Sub Tabs */}
+{/* Other Professional Activities - 4 Sub Tabs (Same Style as Publications) */}
+<div className="tab-pane fade" id="other-professional-activities" role="tabpanel">
 
-                <div
-                  className="list-group list-group-flush mt-3"
-                  dangerouslySetInnerHTML={{ __html: faculty.otherActivities }}
-                ></div>
-              </div>
+
+  {/* Sub Navigation Pills */}
+  <ul className="nav nav-pills mb-4" role="tablist">
+    <li className="nav-item" role="presentation">
+      <button
+        className="nav-link active rounded-pill px-4"
+        id="mdp-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#mdp"
+        type="button"
+        role="tab"
+      >
+        MDP / FDP
+      </button>
+    </li>
+    <li className="nav-item" role="presentation">
+      <button
+        className="nav-link rounded-pill px-4"
+        id="outreach-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#outreach"
+        type="button"
+        role="tab"
+      >
+        Outreach Activities
+      </button>
+    </li>
+    <li className="nav-item" role="presentation">
+      <button
+        className="nav-link rounded-pill px-4"
+        id="grants-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#grants"
+        type="button"
+        role="tab"
+      >
+        Research Grants
+      </button>
+    </li>
+    <li className="nav-item" role="presentation">
+      <button
+        className="nav-link rounded-pill px-4"
+        id="conferences-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#conferences"
+        type="button"
+        role="tab"
+      >
+        Conferences
+      </button>
+    </li>
+  </ul>
+
+  {/* Sub Tab Content */}
+  <div className="tab-content">
+    {/* MDP / FDP */}
+    <div className="tab-pane fade show active" id="mdp" role="tabpanel">
+      {faculty.other_professional_activities?.mdp ? (
+        <div
+          className="list-group list-group-flush"
+          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.mdp }}
+        />
+      ) : (
+        <p className="text-muted fst-italic">No MDP/FDP activities listed.</p>
+      )}
+    </div>
+
+    {/* Outreach Activities */}
+    <div className="tab-pane fade" id="outreach" role="tabpanel">
+      {faculty.other_professional_activities?.outreach ? (
+        <div
+          className="list-group list-group-flush"
+          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.outreach }}
+        />
+      ) : (
+        <p className="text-muted fst-italic">No outreach activities listed.</p>
+      )}
+    </div>
+
+    {/* Research Grants */}
+    <div className="tab-pane fade" id="grants" role="tabpanel">
+      {faculty.other_professional_activities?.grants ? (
+        <div
+          className="list-group list-group-flush"
+          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.grants }}
+        />
+      ) : (
+        <p className="text-muted fst-italic">No research grants listed.</p>
+      )}
+    </div>
+
+    {/* Conferences */}
+    <div className="tab-pane fade" id="conferences" role="tabpanel">
+      {faculty.other_professional_activities?.conferences ? (
+        <div
+          className="list-group list-group-flush"
+          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.conferences }}
+        />
+      ) : (
+        <p className="text-muted fst-italic">No conference activities listed.</p>
+      )}
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
