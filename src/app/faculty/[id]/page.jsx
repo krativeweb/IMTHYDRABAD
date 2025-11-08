@@ -59,24 +59,61 @@ const extractSmartList = (htmlString) => {
 // -------------------------------------------------
 // Helper – education + service (both live inside the same HTML block)
 // -------------------------------------------------
-const parseEducationAndService = (htmlString) => {
+const parseEducationAndService = (educationHtml = "", serviceHtml = "") => {
   const education = [];
   const service = [];
 
-  if (!htmlString) return { education, service };
+  // Helper to parse a simple <ul><li>...</li></ul> string
+  const parseSimpleList = (html, isEducation = true) => {
+    if (!html) return;
+    const div = document.createElement("div");
+    div.innerHTML = DOMPurify.sanitize(html);
 
-  const div = document.createElement("div");
-  div.innerHTML = DOMPurify.sanitize(htmlString);
+    div.querySelectorAll("li").forEach((li) => {
+      const txt = li.textContent?.trim();
+      if (!txt) return;
 
-  const eduUl = div.querySelector("#menu5 ul");
-  const srvUl = div.querySelector("#menu6 ul");
+      if (isEducation) {
+        // Match: "Ph.D. from University (2012 – 2014)"
+        const m = txt.match(/(.+?)\s+from\s+(.+?)\s*\(([^)]+)\)/i);
+        if (m) {
+          education.push({
+            degree: m[1].trim(),
+            institution: m[2].trim(),
+            years: m[3].trim(),
+          });
+        } else {
+          education.push({ degree: txt, institution: "", years: "" });
+        }
+      } else {
+        // Service: "Aug 2016 – June 2025 Assistant Professor, Department, University"
+        const m = txt.match(/(.+?)\s*[-–—]\s*(.+?)\s+Assistant Professor[\s,]*(.+)/i);
+        if (m) {
+          service.push({
+            years: m[1].trim(),
+            role: "Assistant Professor",
+            institution: `${m[2].trim()}, ${m[3].trim()}`.replace(/,\s*,/g, ","),
+          });
+        } else {
+          // Fallback
+          service.push({ years: "", role: txt, institution: "" });
+        }
+      }
+    });
+  };
 
-  // ----- Education -----
-  if (eduUl) {
-    eduUl.querySelectorAll("li").forEach((li) => {
+  // Try old structure first (#menu5, #menu6)
+  const mainDiv = document.createElement("div");
+  mainDiv.innerHTML = DOMPurify.sanitize(educationHtml + serviceHtml);
+
+  const eduUl = mainDiv.querySelector("#menu5 ul");
+  const srvUl = mainDiv.querySelector("#menu6 ul");
+
+  if (eduUl || srvUl) {
+    // Old format with #menu5/#menu6
+    eduUl?.querySelectorAll("li").forEach((li) => {
       const txt = li.textContent?.trim();
       if (txt) {
-        // Example: "Ph.D. from Aligarh Muslim University, Aligarh, India (2012 – 2014)"
         const m = txt.match(/(.+?)\s*from\s*(.+?)\s*\((.+?)\)/);
         if (m) {
           education.push({
@@ -89,11 +126,8 @@ const parseEducationAndService = (htmlString) => {
         }
       }
     });
-  }
 
-  // ----- Service -----
-  if (srvUl) {
-    srvUl.querySelectorAll("li").forEach((li) => {
+    srvUl?.querySelectorAll("li").forEach((li) => {
       const txt = li.textContent?.trim();
       if (txt) {
         const m = txt.match(/(.+?)\s*Assistant Professor.+?(.+?),\s*(.+)/);
@@ -108,6 +142,10 @@ const parseEducationAndService = (htmlString) => {
         }
       }
     });
+  } else {
+    // New format: plain <ul> in separate fields
+    parseSimpleList(educationHtml, true);
+    parseSimpleList(serviceHtml, false);
   }
 
   return { education, service };
@@ -195,9 +233,10 @@ export default function FacultyProfile({ params }) {
       const data = res.data;
 
         // ----- Parse all HTML fields -----
-        const { education, service } = parseEducationAndService(
-          data.prof_education || ""
-        );
+    const { education, service } = parseEducationAndService(
+  data.prof_education || "",
+  data.prof_service || ""   // ← pass service HTML separately
+);
 
         const teachingInterests = extractListItems(
           data.prof_teaching_interest || ""
