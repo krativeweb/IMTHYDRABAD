@@ -7,134 +7,12 @@ import { notFound } from "next/navigation";
 import parse from "html-react-parser";
 import DOMPurify from "isomorphic-dompurify";
 import axios from "axios";
-// -------------------------------------------------
-// Helper – extract <li> text from an HTML string
-// -------------------------------------------------
-const extractListItems = (htmlString) => {
-  if (!htmlString) return [];
-  const div = document.createElement("div");
-  div.innerHTML = DOMPurify.sanitize(htmlString);
-  return Array.from(div.querySelectorAll("li"))
-    .map((li) => li.textContent?.trim())
-    .filter(Boolean);
-};
-const extractSmartList = (htmlString) => {
-  const items = [];
-  if (!htmlString) return items;
 
-  const div = document.createElement("div");
-  div.innerHTML = DOMPurify.sanitize(htmlString);
-
-  // Case 1: Regular <li> items
-  div.querySelectorAll("li").forEach((li) => {
-    const text = li.textContent?.trim();
-    if (text) items.push(text);
-  });
-
-  // Case 2: <p><b>Label:</b> content</p> pattern
-  div.querySelectorAll("p").forEach((p) => {
-    const html = p.innerHTML.trim();
-    const text = p.textContent?.trim();
-
-    // Look for bold tag at the start
-    const boldMatch = html.match(/^<b[^>]*>(.+?)<\/b>[:\s]*/i);
-    if (boldMatch && text) {
-      const label = boldMatch[1].trim();
-      const rest = text.replace(label, "").replace(/^[:\s]+/, "").trim();
-      if (rest) {
-        items.push(`<strong>${label}:</strong> ${rest}`);
-      } else {
-        items.push(`<strong>${label}</strong>`);
-      }
-    }
-    // If no bold, but still meaningful text (fallback)
-    else if (text && !text.match(/^\s*$/)) {
-      items.push(text);
-    }
-  });
-
-  return items;
-};
-
-// -------------------------------------------------
-// Helper – education + service (both live inside the same HTML block)
-// -------------------------------------------------
-const getEducationAndService = (eduHtml = "", servHtml = "") => {
-  return {
-    educationHtml: eduHtml || "<ul></ul>",
-    serviceHtml:   servHtml || "<ul></ul>",
-  };
-};
-
-// -------------------------------------------------
-// Helper – publications (journal + conference)
-// -------------------------------------------------
-const parsePublications = (htmlString) => {
-  const journalPapers = [];
-  const conferencePapers = [];
-
-  if (!htmlString) return { journalPapers, conferencePapers };
-
-  const div = document.createElement("div");
-  div.innerHTML = DOMPurify.sanitize(htmlString);
-
-  const jUl = div.querySelector("#menu3 ul");
-  const cUl = div.querySelector("#menu4 ul");
-
-  jUl?.querySelectorAll("li").forEach((li) => {
-    const citation = li.innerHTML.trim();
-    if (citation) journalPapers.push({ citation });
-  });
-
-  cUl?.querySelectorAll("li").forEach((li) => {
-    const citation = li.innerHTML.trim();
-    if (citation) conferencePapers.push({ citation });
-  });
-
-  return { journalPapers, conferencePapers };
-};
-
-// -------------------------------------------------
-// Helper – awards (each <p> contains "YEAR – text")
-// -------------------------------------------------
-const parseAwards = (htmlString) => {
-  const awards = [];
-  if (!htmlString) return awards;
-
-  const div = document.createElement("div");
-  div.innerHTML = DOMPurify.sanitize(htmlString);
-
-  div.querySelectorAll("p").forEach((p) => {
-    const txt = p.textContent?.trim().replace(/\s+/g, " ");
-    if (txt) {
-      // Match variations like "2023- Text", "2023 – Text", "2023 — Text"
-      const match = txt.match(/^(\d{4})\s*[-–—]\s*(.+)$/);
-      if (match) {
-        awards.push({
-          year: match[1].trim(),
-          description: parse(match[2].trim()),
-        });
-      } else {
-        // fallback if no year found
-        awards.push({
-          year: "",
-          description: parse(txt),
-        });
-      }
-    }
-  });
-
-  return awards;
-};
-
-
-// -------------------------------------------------
-// Component
 // -------------------------------------------------
 export default function FacultyProfile({ params }) {
   const [faculty, setFaculty] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState(false);
 
   // -----------------------------------------------------------------
   // Fetch data
@@ -142,89 +20,49 @@ export default function FacultyProfile({ params }) {
   useEffect(() => {
     const fetchFaculty = async () => {
       try {
-       const res = await axios.get(
-         `${process.env.NEXT_PUBLIC_BASE_URL}/faculties/${params.id}`
-       );
-      const data = res.data;
-
-        // ----- Parse all HTML fields -----
-const { educationHtml, serviceHtml } = getEducationAndService(
-  data.prof_education || "<ul></ul>",
-  data.prof_service   || "<ul></ul>"
-);
-
-        const teachingInterests = extractListItems(
-          data.prof_teaching_interest || ""
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/faculties/${params.id}`
         );
+        const data = res.data;
 
-        // Research interests are inside the same block – take the second half
-        const researchInterests = extractListItems(
-          data.prof_research_interest || ""
-        );
-
-        const { journalPapers, conferencePapers } = parsePublications(
-          data.prof_publications || ""
-        );
-
-        const awards = data.prof_awards || "";
-
-      const other_professional_activities = data.other_professional_activities || {
-  mdp: '',
-  outreach: '',
-  grants: '',
-  conferences: ''
-};
-
-        // ----- Build the final object -----
-        const formatted = {
+        setFaculty({
           name: `${data.prof_prefix || ""} ${data.prof_name || ""}`.trim(),
           designation: data.prof_designation || "",
           qualification: data.prof_qualification || "",
           functionalArea: data.prof_functional_area || "",
-          dateOfJoining: new Date(data.joining_date)
-            .toLocaleDateString("en-GB", {
+          dateOfJoining: new Date(data.joining_date).toLocaleDateString(
+            "en-GB",
+            {
               day: "2-digit",
               month: "long",
               year: "numeric",
-            })
-            .replace(/ /g, " "),
+            }
+          ),
           email: data.prof_email || "",
           phone:
             `+91 ${data.prof_mobile?.replace(/(\d{5})(\d{5})/, "$1 $2")}` || "",
-          image: data.prof_image || "",
-          qrCode: `${data.prof_qrcode}`,
-          brief: parse(
-            DOMPurify.sanitize(
-              (data.prof_description || "")
-                .replace(/\\u003C/g, "<")
-                .replace(/\\u003E/g, ">")
-            )
-          ),
-          educationHtml,
-          teachingInterests,
-          researchInterests,
-          journalPapers,
-          conferencePapers,
-          awards,
-          serviceHtml,
-     other_professional_activities,
+          image: data.prof_image || "/placeholder.jpg",
+          qrCode: data.prof_qrcode || "/qr-placeholder.png",
+          brief: data.prof_description || "",
+          teachingResearchHtml: data.prof_teaching_interest || "", // RAW HTML
+          publicationsHtml: data.prof_publications || "", // RAW HTML
+          educationHtml: data.prof_education || "", // RAW HTML
+          awardsHtml: data.prof_awards || "", // RAW HTML
+          serviceHtml: data.prof_service || "", // RAW HTML
+          otherActivitiesHtml: data.prof_other_activity || "", // RAW HTML
           social: {
             linkedin: data.prof_linkedin || "",
             website: data.prof_website || "",
             scholar: data.prof_scholar_link || "",
             researchGate: data.prof_research_gate || "",
           },
-        };
-
-        setFaculty(formatted);
+        });
       } catch (err) {
-        setError(err.message);
         notFound();
       } finally {
         setLoading(false);
       }
     };
-
     fetchFaculty();
   }, [params.id]);
 
@@ -233,11 +71,35 @@ const { educationHtml, serviceHtml } = getEducationAndService(
   // -----------------------------------------------------------------
   useEffect(() => {
     if (typeof window !== "undefined") {
-      import("aos").then((AOS) => {
-        AOS.init({ duration: 1000, once: true });
+      // Works for both Bootstrap 3 and 5
+      const tabLinks = document.querySelectorAll(
+        '[data-toggle="tab"], [data-bs-toggle="tab"]'
+      );
+      tabLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute("href"));
+          if (!target) return;
+
+          // Hide all tab contents within this local .tab-content
+          const parent = target.closest(".tab-content");
+          if (parent) {
+            parent.querySelectorAll(".tab-pane").forEach((p) => {
+              p.classList.remove("show", "active", "in");
+            });
+          }
+
+          // Show the selected one
+          target.classList.add("show", "active", "in");
+
+          // Update nav link active class
+          const siblings = link.closest("ul")?.querySelectorAll("li") || [];
+          siblings.forEach((li) => li.classList.remove("active"));
+          link.parentElement?.classList.add("active");
+        });
       });
     }
-  }, []);
+  }, [faculty]);
 
   // -----------------------------------------------------------------
   // Loading UI
@@ -531,7 +393,7 @@ const { educationHtml, serviceHtml } = getEducationAndService(
                 "Teaching & Research Interests",
                 "Publications",
                 "Awards & Honors",
-                "Service",
+
                 "Other Professional Activities",
               ].map((tab, i) => (
                 <li className="nav-item" key={i}>
@@ -599,16 +461,14 @@ const { educationHtml, serviceHtml } = getEducationAndService(
               </div>
 
               {/* Education */}
+              {/* Education (raw HTML with internal tab structure) */}
               <div className="tab-pane fade" id="education" role="tabpanel">
-                <h5>
-                  <span className="badge bg-warning text-dark rounded-pill px-3 py-2">
-                    Education
-                  </span>
-                </h5>
-        <div
-    className="mt-3 list-group list-group-flush"
-    dangerouslySetInnerHTML={{ __html: faculty.educationHtml }}
-  />
+                {/* Render raw HTML structure exactly as it is in DB */}
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(faculty.educationHtml),
+                  }}
+                />
               </div>
 
               {/* Teaching & Research Interests */}
@@ -619,89 +479,26 @@ const { educationHtml, serviceHtml } = getEducationAndService(
               >
                 <div className="row">
                   <div className="col-md-6 mb-4">
-                    <h5>
-                      <span className="badge bg-warning text-dark rounded-pill px-3 py-2">
-                        Teaching Interests
-                      </span>
-                    </h5>
-                    <ul className="mt-3">
-                      {faculty.teachingInterests.map((t, i) => (
-                        <li key={i}>{t}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="col-md-6">
-                    <h5>
-                      <span className="badge bg-warning text-dark rounded-pill px-3 py-2">
-                        Research Interests
-                      </span>
-                    </h5>
-                    <ul className="mt-3">
-                      {faculty.researchInterests.map((r, i) => (
-                        <li key={i}>{r}</li>
-                      ))}
-                    </ul>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: DOMPurify.sanitize(
+                          faculty.teachingResearchHtml
+                        ),
+                      }}
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Publications */}
               <div className="tab-pane fade" id="publications" role="tabpanel">
-                <ul className="nav nav-pills mb-3">
-                  <li className="nav-item">
-                    <button
-                      className="nav-link active"
-                      id="journals-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#journals"
-                    >
-                      Journal Papers
-                    </button>
-                  </li>
-                  <li className="nav-item">
-                    <button
-                      className="nav-link"
-                      id="conferences-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#conferences"
-                    >
-                      Conference Presentations
-                    </button>
-                  </li>
-                </ul>
+                {/* Nav Pills */}
 
-                <div className="tab-content">
-                  <div
-                    className="tab-pane fade show active"
-                    id="journals"
-                    role="tabpanel"
-                  >
-                    <ul className="list-group list-group-flush">
-                      {faculty.journalPapers.map((p, i) => (
-                        <li
-                          className="list-group-item"
-                          key={i}
-                          dangerouslySetInnerHTML={{ __html: p.citation }}
-                        />
-                      ))}
-                    </ul>
-                  </div>
-                  <div
-                    className="tab-pane fade"
-                    id="conferences"
-                    role="tabpanel"
-                  >
-                    <ul className="list-group list-group-flush">
-                      {faculty.conferencePapers.map((p, i) => (
-                        <li
-                          className="list-group-item"
-                          key={i}
-                          dangerouslySetInnerHTML={{ __html: p.citation }}
-                        />
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(faculty.publicationsHtml),
+                  }}
+                />
               </div>
 
               {/* Awards & Honors */}
@@ -709,131 +506,36 @@ const { educationHtml, serviceHtml } = getEducationAndService(
                 className="tab-pane fade"
                 id="awards-honors"
                 role="tabpanel"
-                dangerouslySetInnerHTML={{ __html: faculty.awards }}
+                dangerouslySetInnerHTML={{ __html: faculty.awardsHtml }}
               ></div>
 
               {/* Service */}
-              <div className="tab-pane fade" id="service" role="tabpanel">
+              {/* <div className="tab-pane fade" id="service" role="tabpanel">
                 <h5>
                   <span className="badge bg-warning text-dark rounded-pill px-3 py-2">
                     Service
                   </span>
                 </h5>
-              <div
-    className="mt-3 list-group list-group-flush"
-    dangerouslySetInnerHTML={{ __html: faculty.serviceHtml }}
-  />
-              </div>
+                <div
+                  className="mt-3 list-group list-group-flush"
+                  dangerouslySetInnerHTML={{ __html: faculty.serviceHtml }}
+                />
+              </div> */}
 
               {/* Other Professional Activities */}
-         {/* Other Professional Activities - 4 Sub Tabs */}
-{/* Other Professional Activities - 4 Sub Tabs (Same Style as Publications) */}
-<div className="tab-pane fade" id="other-professional-activities" role="tabpanel">
-
-
-  {/* Sub Navigation Pills */}
-  <ul className="nav nav-pills mb-4" role="tablist">
-    <li className="nav-item" role="presentation">
-      <button
-        className="nav-link active rounded-pill px-4"
-        id="mdp-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#mdp"
-        type="button"
-        role="tab"
-      >
-        MDP / FDP
-      </button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button
-        className="nav-link rounded-pill px-4"
-        id="outreach-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#outreach"
-        type="button"
-        role="tab"
-      >
-        Outreach Activities
-      </button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button
-        className="nav-link rounded-pill px-4"
-        id="grants-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#grants"
-        type="button"
-        role="tab"
-      >
-        Research Grants
-      </button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button
-        className="nav-link rounded-pill px-4"
-        id="conferences-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#conferences"
-        type="button"
-        role="tab"
-      >
-        Conferences
-      </button>
-    </li>
-  </ul>
-
-  {/* Sub Tab Content */}
-  <div className="tab-content">
-    {/* MDP / FDP */}
-    <div className="tab-pane fade show active" id="mdp" role="tabpanel">
-      {faculty.other_professional_activities?.mdp ? (
-        <div
-          className="list-group list-group-flush"
-          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.mdp }}
-        />
-      ) : (
-        <p className="text-muted fst-italic">No MDP/FDP activities listed.</p>
-      )}
-    </div>
-
-    {/* Outreach Activities */}
-    <div className="tab-pane fade" id="outreach" role="tabpanel">
-      {faculty.other_professional_activities?.outreach ? (
-        <div
-          className="list-group list-group-flush"
-          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.outreach }}
-        />
-      ) : (
-        <p className="text-muted fst-italic">No outreach activities listed.</p>
-      )}
-    </div>
-
-    {/* Research Grants */}
-    <div className="tab-pane fade" id="grants" role="tabpanel">
-      {faculty.other_professional_activities?.grants ? (
-        <div
-          className="list-group list-group-flush"
-          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.grants }}
-        />
-      ) : (
-        <p className="text-muted fst-italic">No research grants listed.</p>
-      )}
-    </div>
-
-    {/* Conferences */}
-    <div className="tab-pane fade" id="conferences" role="tabpanel">
-      {faculty.other_professional_activities?.conferences ? (
-        <div
-          className="list-group list-group-flush"
-          dangerouslySetInnerHTML={{ __html: faculty.other_professional_activities.conferences }}
-        />
-      ) : (
-        <p className="text-muted fst-italic">No conference activities listed.</p>
-      )}
-    </div>
-  </div>
-</div>
+              {/* Other Professional Activities - 4 Sub Tabs */}
+              {/* Other Professional Activities - 4 Sub Tabs (Same Style as Publications) */}
+              <div
+                className="tab-pane fade"
+                id="other-professional-activities"
+                role="tabpanel"
+              >
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(faculty.otherActivitiesHtml),
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
