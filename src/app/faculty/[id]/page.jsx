@@ -126,6 +126,22 @@ export default function FacultyProfile({ params }) {
     <>
       {/* ------------------------------------------------- CSS ------------------------------------------------- */}
       <style jsx global>{`
+        .nav-tabs .nav-link {
+          border-radius: 50px; /* rounded tabs */
+          transition: background 0.3s;
+        }
+
+        /* Active tab style */
+        .nav-tabs .nav-link.active {
+          background-color: #ffc107 !important; /* active background yellow */
+          color: black !important; /* text color */
+          border-color: #dee2e6 #dee2e6 #fff; /* maintain Bootstrap borders */
+        }
+
+        /* Optional: Hover effect */
+        .nav-tabs .nav-link:hover {
+          background-color: #ffc109; /* light yellow on hover */
+        }
         .faculty-hero {
           background: url("/media/banners/faculty.webp") !important;
           background-size: cover !important;
@@ -180,6 +196,30 @@ export default function FacultyProfile({ params }) {
         .nav-pills .nav-link.active {
           background: #ffc107;
           color: #000;
+        }
+        /* Apply black color to all tags inside your tab content, including DB HTML */
+        .tab-content,
+        .tab-content * {
+          color: black !important;
+        }
+
+        /* Optional: make links inside DB content black as well */
+        .tab-content a {
+          color: black !important;
+          text-decoration: none; /* optional */
+        }
+
+        /* Ensure nested lists inside DB content also inherit black */
+        .tab-content ul,
+        .tab-content ul li {
+          color: black !important;
+        }
+
+        /* Apply for spans, paragraphs, and divs as well */
+        .tab-content p,
+        .tab-content span,
+        .tab-content div {
+          color: black !important;
         }
       `}</style>
 
@@ -425,7 +465,7 @@ export default function FacultyProfile({ params }) {
                 id="brief"
                 role="tabpanel"
               >
-         <div
+                <div
                   dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(faculty.brief),
                   }}
