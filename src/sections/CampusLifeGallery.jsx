@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CampusLifeGallery() {
   const items = [
-    { img: "/media/img/g.webp", title: "BLOGS", link: "" },
+    { img: "/media/img/g.webp", title: "BLOGS", link: "https://digitalreach-projects.com/imt_blog" },
     {
       img: "/media/img/h.webp",
       title: "LRC",
