@@ -1,16 +1,17 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function ContactUs() {
   // Form state for handling input and submission
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+    category: "",
   });
   const [formErrors, setFormErrors] = useState({});
 
@@ -23,13 +24,13 @@ export default function ContactUs() {
   // Basic form validation
   const validateForm = () => {
     const errors = {};
-    if (!formData.firstName.trim()) errors.firstName = 'First name is required';
+    if (!formData.firstName.trim()) errors.firstName = "First name is required";
     if (!formData.email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = 'Please enter a valid email';
+      errors.email = "Please enter a valid email";
     }
-    if (!formData.message.trim()) errors.message = 'Message is required';
+    if (!formData.message.trim()) errors.message = "Message is required";
     return errors;
   };
 
@@ -42,16 +43,22 @@ export default function ContactUs() {
       return;
     }
     // Placeholder for form submission logic (e.g., API call)
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
     setFormErrors({});
-    alert('Message sent successfully!'); // Replace with actual submission logic
+    alert("Message sent successfully!"); // Replace with actual submission logic
   };
 
   // Initialize AOS
   useEffect(() => {
-    import('aos').then((AOS) => {
+    import("aos").then((AOS) => {
       AOS.init({
         duration: 1000,
         once: true,
@@ -185,8 +192,9 @@ export default function ContactUs() {
         >
           <h2 className="display-5 fw-bold mb-2">Contact-Us</h2>
           <p className="text-white">
-            Where every query matters and every connection begins a new opportunity. <br />
-Reach out to engage, explore, and evolve with us.
+            Where every query matters and every connection begins a new
+            opportunity. <br />
+            Reach out to engage, explore, and evolve with us.
           </p>
         </div>
         <div
@@ -318,6 +326,25 @@ Reach out to engage, explore, and evolve with us.
                       </div>
                     </div>
 
+                    <div className="row mt-3">
+                      <div className="col-md">
+                        <label htmlFor="category" className="form-label">
+                          Category :
+                        </label>
+                        <select
+                          id="category"
+                          name="category"
+                          className="form-select mt-2"
+                          value={formData.category || ""}
+                          onChange={handleInputChange}
+                        >
+                          <option value="">Select a category</option>
+                          <option value="cro">Cro</option>
+                          <option value="admissions">Admissions</option>
+                        </select>
+                      </div>
+                    </div>
+
                     <div className="mt-4">
                       <div className="form-floating">
                         <textarea
@@ -368,46 +395,69 @@ Reach out to engage, explore, and evolve with us.
                       </span>
                     </div>
                     <div className="bg-light p-3 rounded-5">
-                      <span className='fw-bold text-warning'>ADMISSION</span>
+                      <span className="fw-bold text-warning">ADMISSION</span>
                       <br />
                       <a href="mailto:admissions@imthyderabad.edu.in">
                         <b>PGDM Email</b> - admissions@imthyderabad.edu.in
-                      </a> <br />
-                       <a href="mailto:fpmadmissions@imthyderabad.edu.in">
+                      </a>{" "}
+                      <br />
+                      <a href="mailto:fpmadmissions@imthyderabad.edu.in">
                         <b>FPM Email</b> - fpmadmissions@imthyderabad.edu.in
                       </a>
                       <br />
-                      <span><b>Phone</b> - 08414 671657 / 08414 671600</span>
+                      <span>
+                        <b>Phone</b> - 08414 671657 / 08414 671600
+                      </span>
                       <br />
-                      <span><b>Mobile</b> - +91-939 142 4273 / +91-939 142 4275</span>
+                      <span>
+                        <b>Mobile</b> - +91-939 142 4273 / +91-939 142 4275
+                      </span>
                     </div>
                   </div>
                   <div className="col mb-4">
                     <div className="bg-light p-3 rounded-5">
-                     <span className='fw-bold text-warning'>CORPORATE RELATIONS GROUP</span>
+                      <span className="fw-bold text-warning">
+                        CORPORATE RELATIONS GROUP
+                      </span>
                       <br />
                       <a href="mailto:cro@imthyderabad.edu.in">
                         <b>Email</b> - cro@imthyderabad.edu.in
                       </a>
                       <br />
-                      <span><b>Phone</b> - 08414 671684 / 1698</span>
+                      <span>
+                        <b>Phone</b> - 08414 671684 / 1698
+                      </span>
                       <br />
-                      <span><b>Mobile</b> - +91 - 939 142 4224</span>
+                      <span>
+                        <b>Mobile</b> - +91 - 939 142 4224
+                      </span>
                     </div>
                   </div>
 
                   <div className="col mt-2">
                     <div className="bg-light p-3 rounded-5 d-flex justify-content-evenly">
-                      <Link href="https://www.instagram.com/IMTHyderabad/" className="social-icon">
+                      <Link
+                        href="https://www.instagram.com/IMTHyderabad/"
+                        className="social-icon"
+                      >
                         <i className="bi bi-instagram fs-4"></i>
                       </Link>
-                      <Link href="https://www.facebook.com/IMThyderabad/" className="social-icon">
+                      <Link
+                        href="https://www.facebook.com/IMThyderabad/"
+                        className="social-icon"
+                      >
                         <i className="bi bi-facebook fs-4"></i>
                       </Link>
-                      <Link href="https://x.com/IMTHyderabad" className="social-icon">
+                      <Link
+                        href="https://x.com/IMTHyderabad"
+                        className="social-icon"
+                      >
                         <i className="bi bi-twitter-x fs-4"></i>
                       </Link>
-                      <Link href="https://www.youtube.com/@IMTHyderabad" className="social-icon">
+                      <Link
+                        href="https://www.youtube.com/@IMTHyderabad"
+                        className="social-icon"
+                      >
                         <i className="bi bi-youtube fs-4"></i>
                       </Link>
                     </div>
