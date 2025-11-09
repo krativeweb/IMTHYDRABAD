@@ -1,25 +1,19 @@
 "use client";
 
-import Link from 'next/link';
-import React, { useEffect } from 'react';
+import Link from "next/link";
+import React, { useEffect } from "react";
 
 const IndustryRelevance = () => {
   useEffect(() => {
     // Initialize AOS after mount
-    const initAOS = async () => {
-      if (typeof window !== 'undefined') {
-        const AOS = (await import('aos')).default;
-        AOS.init({
-          duration: 1200,
-          once: true,
-        });
-      }
-    };
-    initAOS();
 
     // Initialize Owl Carousel if needed
-    if (typeof window !== 'undefined' && window.jQuery && window.jQuery.fn.owlCarousel) {
-      window.jQuery('#owl-demo').owlCarousel({
+    if (
+      typeof window !== "undefined" &&
+      window.jQuery &&
+      window.jQuery.fn.owlCarousel
+    ) {
+      window.jQuery("#owl-demo").owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -46,8 +40,9 @@ const IndustryRelevance = () => {
           <div className="hero-content">
             <h2 className="display-5 fw-bold mb-2">Industry Relevance</h2>
             <p className="text-white">
-             A campus where academia meets the pulse of industry. <br />
-Curricula shaped with industry insights ensure every graduate is future-ready and market-relevant.
+              A campus where academia meets the pulse of industry. <br />
+              Curricula shaped with industry insights ensure every graduate is
+              future-ready and market-relevant.
             </p>
           </div>
         </div>
@@ -58,11 +53,18 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Industry Relevance
                 </li>
               </ol>
@@ -76,10 +78,13 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
             <div className="text-center mb-5">
               <h2 className="section-title">Industry Relevance</h2>
               <p className="section-description">
-                IMT Hyderabad works to deploy the offerings students need to acquire industry certifications and
-                professional credits. IMT Hyderabad works to <strong>increase placement rates</strong> of graduating
-                students with advanced training in fundamental skills, best practices, and emerging technologies. IMT
-                Hyderabad possesses potential for greater student retention and improved student placement rates.
+                IMT Hyderabad works to deploy the offerings students need to
+                acquire industry certifications and professional credits. IMT
+                Hyderabad works to <strong>increase placement rates</strong> of
+                graduating students with advanced training in fundamental
+                skills, best practices, and emerging technologies. IMT Hyderabad
+                possesses potential for greater student retention and improved
+                student placement rates.
               </p>
             </div>
 
@@ -89,17 +94,21 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
                   <div className="col-md-4 image-container-right">
                     <img
-                      src="/media/IR/images/1.jpg"
+                      src="/media/IR/1.jpg"
                       alt="Industry Mentor-Mentee Program"
                       className="img-fluid rounded shadow clipped-img-1"
                       loading="lazy"
                     />
                   </div>
                   <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">Industry Mentor - Mentee Program 2020</h5>
+                    <h5 className="fw-bold text-warning mb-3">
+                      Industry Mentor - Mentee Program 2020
+                    </h5>
                     <p className="card-text">
-                      Industry Mentor Mentee Program (IM2P) enhances industry readiness and nurtures business leadership.
-                      Mentors help students develop interpersonal, critical thinking, and problem-solving skills.
+                      Industry Mentor Mentee Program (IM2P) enhances industry
+                      readiness and nurtures business leadership. Mentors help
+                      students develop interpersonal, critical thinking, and
+                      problem-solving skills.
                     </p>
                   </div>
                 </div>
@@ -110,17 +119,21 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
                   <div className="col-md-4">
                     <img
-                      src="/media/IR/images/2.JPG"
+                      src="/media/IR/2.JPG"
                       alt="Leadership Series & MOP"
                       className="img-fluid rounded shadow clipped-img-2"
                       loading="lazy"
                     />
                   </div>
                   <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">Leadership Series & MOP</h5>
+                    <h5 className="fw-bold text-warning mb-3">
+                      Leadership Series & MOP
+                    </h5>
                     <p className="card-text">
-                      MOP prepares students from diverse backgrounds, with workshops in leadership, teambuilding, and
-                      creativity. Leadership series ensures interaction with business leaders.
+                      MOP prepares students from diverse backgrounds, with
+                      workshops in leadership, teambuilding, and creativity.
+                      Leadership series ensures interaction with business
+                      leaders.
                     </p>
                   </div>
                 </div>
@@ -131,17 +144,21 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
                   <div className="col-md-4 image-container-right">
                     <img
-                      src="/media/IR/images/3.JPG"
+                      src="/media/IR/3.JPG"
                       alt="Leadership Series & Practitioner Session"
                       className="img-fluid rounded shadow clipped-img-1"
                       loading="lazy"
                     />
                   </div>
                   <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">Leadership Series & Practitioner&apos;s Session</h5>
+                    <h5 className="fw-bold text-warning mb-3">
+                      Leadership Series & Practitioner&apos;s Session
+                    </h5>
                     <p className="card-text">
-                      Industry experts form an integral part of the curriculum. 15-20% of courses are delivered by
-                      practitioners. Leadership series ensures regular interaction with students.
+                      Industry experts form an integral part of the curriculum.
+                      15-20% of courses are delivered by practitioners.
+                      Leadership series ensures regular interaction with
+                      students.
                     </p>
                   </div>
                 </div>
@@ -152,17 +169,20 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
                   <div className="col-md-4">
                     <img
-                      src="/media/IR/images/4.jpg"
+                      src="/media/IR/4.jpg"
                       alt="Internship Program"
                       className="img-fluid rounded shadow clipped-img-2"
                       loading="lazy"
                     />
                   </div>
                   <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">Internship Program</h5>
+                    <h5 className="fw-bold text-warning mb-3">
+                      Internship Program
+                    </h5>
                     <p className="card-text">
-                      The 14-week intensive internship forms the core of IMT H pedagogy. Faculty and company mentors
-                      supervise internships, providing real-world experience.
+                      The 14-week intensive internship forms the core of IMT H
+                      pedagogy. Faculty and company mentors supervise
+                      internships, providing real-world experience.
                     </p>
                   </div>
                 </div>
@@ -173,17 +193,20 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
                   <div className="col-md-4 image-container-right">
                     <img
-                      src="/media/IR/images/5.JPG"
+                      src="/media/IR/5.jpeg"
                       alt="Industry-Oriented Courses"
                       className="img-fluid rounded shadow clipped-img-1"
                       loading="lazy"
                     />
                   </div>
                   <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">Industry-Oriented Courses</h5>
+                    <h5 className="fw-bold text-warning mb-3">
+                      Industry-Oriented Courses
+                    </h5>
                     <p className="card-text">
-                      IMT Hyderabad offers specialized elective streams like Business Analytics, Investment Banking, and
-                      Digital Marketing. More streams will be introduced in the future.
+                      IMT Hyderabad offers specialized elective streams like
+                      Business Analytics, Investment Banking, and Digital
+                      Marketing. More streams will be introduced in the future.
                     </p>
                   </div>
                 </div>
@@ -194,17 +217,20 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
                 <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
                   <div className="col-md-4">
                     <img
-                      src="/media/IR/images/6.jpg"
+                      src="/media/IR/6.jpg"
                       alt="Management Project"
                       className="img-fluid rounded shadow clipped-img-2"
                       loading="lazy"
                     />
                   </div>
                   <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">Management Project (MP)</h5>
+                    <h5 className="fw-bold text-warning mb-3">
+                      Management Project (MP)
+                    </h5>
                     <p className="card-text">
-                      The Management Project spans two trimesters of the second year. Students gain higher expertise and
-                      develop collaboration skills extending beyond the classroom.
+                      The Management Project spans two trimesters of the second
+                      year. Students gain higher expertise and develop
+                      collaboration skills extending beyond the classroom.
                     </p>
                   </div>
                 </div>
@@ -218,10 +244,14 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
           <div className="container">
             <div className="card">
               <div className="card-body">
-                <h4 className="text-warning fw-bold text-center">Quality Policy</h4>
+                <h4 className="text-warning fw-bold text-center">
+                  Quality Policy
+                </h4>
                 <p>
-                  To continuously improve the quality of all our core and support activities through self-evaluation and
-                  total employee involvement so as to achieve maximum satisfaction of all stakeholders.
+                  To continuously improve the quality of all our core and
+                  support activities through self-evaluation and total employee
+                  involvement so as to achieve maximum satisfaction of all
+                  stakeholders.
                 </p>
               </div>
             </div>
@@ -240,7 +270,8 @@ Curricula shaped with industry insights ensure every graduate is future-ready an
 
         /* Hero Banner */
         .faculty-hero {
-          background: url('/media/banners/industryrelevance.webp') no-repeat center center;
+          background: url("/media/banners/industryrelevance.webp") no-repeat
+            center center;
           background-size: cover;
           height: 60vh;
           position: relative;
