@@ -1,16 +1,15 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React, { useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 export default function GlobalImmersionProgram() {
   // Data for 2024-25 sessions
 
-
   // Initialize AOS
   useEffect(() => {
-    import('aos').then((AOS) => {
+    import("aos").then((AOS) => {
       AOS.init({
         duration: 1000,
         once: true,
@@ -123,8 +122,9 @@ export default function GlobalImmersionProgram() {
             Global Immersion Program
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-           Preparing students for a world without borders. <br />
-Our global immersion programs blend international learning with cultural insight to create truly global leaders.
+            Preparing students for a world without borders. <br />
+            Our global immersion programs blend international learning with
+            cultural insight to create truly global leaders.
           </p>
         </div>
 
@@ -155,7 +155,7 @@ Our global immersion programs blend international learning with cultural insight
             </nav>
           </div>
         </div>
-     <InternationalAssociationStickyBtns/>
+        <InternationalAssociationStickyBtns />
         {/* Tab Navigation */}
         <section>
           <nav className="nav nav-pills justify-content-center flex-wrap gap-2">
@@ -198,81 +198,83 @@ Our global immersion programs blend international learning with cultural insight
               id="tab-menu1"
               role="tabpanel"
             >
-              <table className="table table-bordered">
-                <thead>
-                  <tr>
-                    <th width="10%">Date</th>
-                    <th width="40%">Topic</th>
-                    <th width="40%">Speaker</th>
-                    <th width="10%">Timing (IST)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>17-Feb-25</td>
-                    <td>
-                      AI and Gen AI Applied to Marketing: A BCG Perspective
-                    </td>
-                    <td>
-                      Ms. Paola F. Scarpa, Managing Director &amp; Partner,
-                      Boston Consulting Group (BCG), Italy
-                    </td>
-                    <td>6.30 pm</td>
-                  </tr>
-                  <tr>
-                    <td>23-Feb-25</td>
-                    <td>
-                      Eco-Business Blueprint: Building a Sustainable Future in
-                      Egypt by Indian Entrepreneurs
-                    </td>
-                    <td>
-                      Dr. Ibrahim El-Ghanam, Entrepreneurship and Leadership
-                      Consultant, Reyada Academy, Egypt
-                    </td>
-                    <td>6.30 pm</td>
-                  </tr>
-                  <tr>
-                    <td>25-Feb-25</td>
-                    <td>Ethics and Leadership in the era of AI</td>
-                    <td>
-                      Ms. Sandrine Richard, Senior Compliance Manager (Europe),
-                      Alliance Automotive Group, France
-                    </td>
-                    <td>6.30 pm</td>
-                  </tr>
-                  <tr>
-                    <td>26-Feb-25</td>
-                    <td>
-                      From Theory to Practice: Navigating Supply Chain
-                      Resilience in a Complex Global Environment
-                    </td>
-                    <td>
-                      Ms. Zera Zheng, Global Head of Business Resilience
-                      Consulting, A.P. Moller – Maersk, Netherlands
-                    </td>
-                    <td>6.30 pm</td>
-                  </tr>
-                  <tr>
-                    <td>27-Feb-25</td>
-                    <td>AI Regulation in the Age of Fragmentation</td>
-                    <td>
-                      Mr. Tommaso Giardini, Associate Director, Digital Policy
-                      Alert, Switzerland
-                    </td>
-                    <td>6.30 pm</td>
-                  </tr>
-                  <tr>
-                    <td>05-Mar-25</td>
-                    <td>Immersive Technologies and Jobs of the Future</td>
-                    <td>
-                      Dr. Thuong Hoang, Associate Head of School Research and
-                      Associate Professor, Emerging Technologies, Deakin
-                      University, Australia
-                    </td>
-                    <td>9:00 am</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="table-responsive mt-4">
+                <table className="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th width="10%">Date</th>
+                      <th width="40%">Topic</th>
+                      <th width="40%">Speaker</th>
+                      <th width="10%">Timing (IST)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>17-Feb-25</td>
+                      <td>
+                        AI and Gen AI Applied to Marketing: A BCG Perspective
+                      </td>
+                      <td>
+                        Ms. Paola F. Scarpa, Managing Director &amp; Partner,
+                        Boston Consulting Group (BCG), Italy
+                      </td>
+                      <td>6.30 pm</td>
+                    </tr>
+                    <tr>
+                      <td>23-Feb-25</td>
+                      <td>
+                        Eco-Business Blueprint: Building a Sustainable Future in
+                        Egypt by Indian Entrepreneurs
+                      </td>
+                      <td>
+                        Dr. Ibrahim El-Ghanam, Entrepreneurship and Leadership
+                        Consultant, Reyada Academy, Egypt
+                      </td>
+                      <td>6.30 pm</td>
+                    </tr>
+                    <tr>
+                      <td>25-Feb-25</td>
+                      <td>Ethics and Leadership in the era of AI</td>
+                      <td>
+                        Ms. Sandrine Richard, Senior Compliance Manager
+                        (Europe), Alliance Automotive Group, France
+                      </td>
+                      <td>6.30 pm</td>
+                    </tr>
+                    <tr>
+                      <td>26-Feb-25</td>
+                      <td>
+                        From Theory to Practice: Navigating Supply Chain
+                        Resilience in a Complex Global Environment
+                      </td>
+                      <td>
+                        Ms. Zera Zheng, Global Head of Business Resilience
+                        Consulting, A.P. Moller – Maersk, Netherlands
+                      </td>
+                      <td>6.30 pm</td>
+                    </tr>
+                    <tr>
+                      <td>27-Feb-25</td>
+                      <td>AI Regulation in the Age of Fragmentation</td>
+                      <td>
+                        Mr. Tommaso Giardini, Associate Director, Digital Policy
+                        Alert, Switzerland
+                      </td>
+                      <td>6.30 pm</td>
+                    </tr>
+                    <tr>
+                      <td>05-Mar-25</td>
+                      <td>Immersive Technologies and Jobs of the Future</td>
+                      <td>
+                        Dr. Thuong Hoang, Associate Head of School Research and
+                        Associate Professor, Emerging Technologies, Deakin
+                        University, Australia
+                      </td>
+                      <td>9:00 am</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <br />
               <p>
                 <img
