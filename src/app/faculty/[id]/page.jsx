@@ -425,7 +425,11 @@ export default function FacultyProfile({ params }) {
                 id="brief"
                 role="tabpanel"
               >
-                <div>{faculty.brief}</div>
+         <div
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(faculty.brief),
+                  }}
+                />
 
                 {/* Icon Section */}
                 <div className="d-flex gap-3 mt-3 flex-wrap">
