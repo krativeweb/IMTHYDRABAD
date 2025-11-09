@@ -75,7 +75,7 @@ const HappeningsPage = () => {
 
     fetchEvents();
     fetchAnnouncements();
-     fetchHappenings();
+    fetchHappenings();
     return () => {
       isMounted = false;
     };
@@ -188,6 +188,37 @@ const HappeningsPage = () => {
         .faculty-tabs .nav-pills .nav-link.active {
           background: #ffc107;
           color: #000000ff;
+        }
+        /* Limit height for the full tab area */
+        .tab-pane.fade.show.active.bg-white.p-4.rounded-4.text-black {
+          height: 80vh; /* adjust height as you wish */
+          overflow: hidden;
+        }
+
+        /* Left side (tabs) */
+        .col-md-3.mb-3 {
+          max-height: 80vh;
+          overflow-y: auto;
+          padding-right: 8px;
+          border-right: 2px solid #eee;
+        }
+
+        /* Right side (content) */
+        .col-md-9 {
+          max-height: 80vh;
+          overflow-y: auto;
+          padding-left: 10px;
+        }
+
+        /* Optional: nice scrollbar */
+        .col-md-3.mb-3::-webkit-scrollbar,
+        .col-md-9::-webkit-scrollbar {
+          width: 6px;
+        }
+        .col-md-3.mb-3::-webkit-scrollbar-thumb,
+        .col-md-9::-webkit-scrollbar-thumb {
+          background: #bbb;
+          border-radius: 10px;
         }
       `}</style>
 
