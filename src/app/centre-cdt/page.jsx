@@ -509,13 +509,13 @@ export default function CentreDigitalTransformation() {
         }
 
         /* List bullets */
-        ul.list-unstyled li:before {
-          content: "•";
-          color: #ffc107;
-          font-weight: bold;
-          position: absolute;
-          left: 0;
-        }
+        // ul.list-unstyled li:before {
+        //   content: "•";
+        //   color: #ffc107;
+        //   font-weight: bold;
+        //   position: absolute;
+        //   left: 0;
+        // }
 
         /* Card shadow on hover */
         .card:hover {
