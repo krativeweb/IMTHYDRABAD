@@ -248,9 +248,8 @@ const HappeningsPage = () => {
             Happenings Events & Announcements
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            animi illum
-            <br /> facere fuga eaque ducimus, praesentium in distinctio
+  A campus always alive with ideas and initiatives.<br/>
+From new appointments to dynamic events, our community thrives on engagement, inspiration, and progress.
           </p>
         </div>
 
