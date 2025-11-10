@@ -3,6 +3,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
+
 const HappeningsPage = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,6 +12,13 @@ const HappeningsPage = () => {
   const [announcements, setAnnouncements] = useState([]);
   const [happenings, setHappenings] = useState([]);
   // Handle external scripts in useEffect
+
+  function decodeHTMLEntities(str) {
+  if (!str) return "";
+  const txt = document.createElement("textarea");
+  txt.innerHTML = str;
+  return txt.value;
+}
   useEffect(() => {
     let isMounted = true; // Prevent state update after unmount
 
@@ -349,9 +358,11 @@ From new appointments to dynamic events, our community thrives on engagement, in
                             >
                               {item.title}
                             </h4>
-                         <div
+                <div
   className="mb-0"
-  dangerouslySetInnerHTML={{ __html: item.description }}
+  dangerouslySetInnerHTML={{
+    __html: decodeHTMLEntities(item.description)
+  }}
 ></div>
                           </div>
                         </div>
