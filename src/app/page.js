@@ -25,7 +25,7 @@ export default function Home() {
         }
       `}</style>
       {/* Announcement Strip */}
-      // <AnnouncementStrip />
+      <AnnouncementStrip />
 
       {/* Add body class for padding */}
 
