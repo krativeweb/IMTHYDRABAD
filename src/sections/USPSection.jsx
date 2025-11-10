@@ -6,8 +6,8 @@ export default function USPSection() {
       <div className="container">
         <div className="row text-center justify-content-center">
           <div className="col-6 col-md-2 usp-item" data-aos="fade-up">
-            <h2 className="usp-number">#1</h2>
-            <p>Private B-School Telangana</p>
+            <h2 className="usp-number">#01</h2>
+            <p>Top Private B-School in Telangana – CSR–GHRDC 2025</p>
           </div>
 
           <div
