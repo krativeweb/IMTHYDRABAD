@@ -411,7 +411,7 @@ From new appointments to dynamic events, our community thrives on engagement, in
                           </div>
                           <div>
                             <Link
-                              href={`/events/${event.id}`}
+                              href='#'
                               className="text-dark fw-semibold text-decoration-none"
                             >
                               {event.title || "Untitled Event"}
