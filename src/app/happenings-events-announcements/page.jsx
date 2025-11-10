@@ -9,6 +9,7 @@ const HappeningsPage = () => {
   const [error, setError] = useState(null);
   const [announcements, setAnnouncements] = useState([]);
   const [happenings, setHappenings] = useState([]);
+  const [activeTab, setActiveTab] = useState(0);
   // Handle external scripts in useEffect
   useEffect(() => {
     let isMounted = true; // Prevent state update after unmount
@@ -90,37 +91,50 @@ const HappeningsPage = () => {
   return (
     <>
       {/* Inline Styles */}
-      <style jsx>{`
-        /* Makes ANY active tab (main or sub) turn yellow (bg-warning) */
-        .nav-pills .nav-link.active {
-          background-color: var(
-            --bs-warning
-          ) !important; /* Bootstrap's built-in yellow */
-          color: var(--bs-dark) !important; /* Dark text for contrast */
-        }
+      <style jsx global>{`
+   /* Smooth scrollbar */
+  .sticky-top > div > div {
+    scrollbar-width: thin;
+    scrollbar-color: #ffc107 #f1f3f5;
+  }
+  .sticky-top > div > div::-webkit-scrollbar {
+    width: 6px;
+  }
+  .sticky-top > div > div::-webkit-scrollbar-track {
+    background: #f1f3f5;
+    border-radius: 10px;
+  }
+  .sticky-top > div > div::-webkit-scrollbar-thumb {
+    background: #ffc107;
+    border-radius: 10px;
+  }
 
-        .scrollable-columns {
-          max-height: 400px; /* fixed visible height */
-          overflow-y: auto; /* enable vertical scroll */
-          column-count: 2; /* number of columns */
-          column-gap: 1rem; /* space between columns */
-          padding-right: 10px;
-        }
+  /* Hover effects */
+  .hover-bg-gray:hover {
+    background-color: #e9ecef !important;
+  }
 
-        .scrollable-columns .nav-link {
-          display: inline-block; /* ensures proper column layout */
-          width: 100%;
-          margin-bottom: 0.5rem;
-        }
+  .transition-all {
+    transition: all 0.3s ease;
+  }
 
-        .date-box {
-          width: 80px;
-          height: 80px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+  /* Mobile: Remove sticky */
+  @media (max-width: 992px) {
+    .sticky-top {
+      position: static !important;
+      top: auto !important;
+      max-height: none !important;
+    }
+    .sticky-top > div {
+      height: auto !important;
+    }
+  }
+
+  /* Active tab glow */
+  .nav-link.active {
+    transform: translateX(4px);
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3) !important;
+  }
 
         /* Gradient banner with subtle overlay */
         .faculty-hero {
@@ -282,85 +296,104 @@ From new appointments to dynamic events, our community thrives on engagement, in
         </div>
 
         {/* Main Tab Content */}
-        <section>
-          <div className="container mb-4 mt-4">
-            <div
-              className="tab-pane fade show active bg-white p-4 rounded-4 text-black"
-              id="tab-out"
-              role="tabpanel"
-            >
-              <div className="row">
-                {/* Vertical Tabs */}
-                <div className="col-12 col-md-3 mb-3">
-                  <div
-                    className="nav flex-md-row nav-pills scrollable-columns"
-                    id="v-pills-tab"
-                    role="tablist"
-                    aria-orientation="horizontal"
-                  >
-                    {happenings.map((item, idx) => (
-                      <Link
-                        key={item.id}
-                        className={`nav-link rounded mt-2 text-black ${
-                          idx === 0 ? "active bg-light" : "bg-light"
-                        }`}
-                        id={`v-pills-std${idx + 1}-tab`}
-                        data-bs-toggle="pill"
-                        href={`#v-pills-std${idx + 1}`}
-                        role="tab"
-                      >
-                        {item.title.length > 50
-                          ? item.title.slice(0, 50) + "..."
-                          : item.title}
-                      </Link>
-                    ))}
-                  </div>
+  <section className="py-5 bg-light">
+  <div className="container">
+    <div className="row g-4">
+      {/* LEFT: Vertical Tabs (Scrollable + Sticky on Large Screens) */}
+      <div className="col-12 col-lg-4">
+        <div className="sticky-top" style={{ top: '2rem', maxHeight: 'calc(100vh - 4rem)', overflow: 'hidden' }}>
+          <div className="bg-white rounded-4 shadow-sm p-4 h-100" style={{ overflowY: 'auto' }}>
+            <h5 className="fw-bold text-primary mb-4">Recent Happenings</h5>
+            <div className="nav nav-pills flex-column gap-2">
+              {happenings.map((item, idx) => (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveTab(idx)}
+                  className={`nav-link text-start rounded-3 px-4 py-3 transition-all text-truncate ${
+                    activeTab === idx
+                      ? "active bg-warning text-dark fw-semibold shadow-sm"
+                      : "bg-light text-secondary hover-bg-gray"
+                  }`}
+                  style={{ 
+                    fontSize: '0.95rem',
+                    minHeight: '56px',
+                    border: 'none'
+                  }}
+                >
+                  <small className="d-block text-muted mb-1">
+                    {item.event_date && new Date(item.event_date).toLocaleDateString('en-IN', {
+                      day: 'numeric',
+                      month: 'short',
+                      year: 'numeric'
+                    })}
+                  </small>
+                  {item.title.length > 45
+                    ? item.title.slice(0, 45) + "..."
+                    : item.title}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* RIGHT: Content Area */}
+      <div className="col-12 col-lg-8">
+        <div className="bg-white rounded-4 shadow p-5">
+          {happenings.length === 0 ? (
+            <div className="text-center py-5">
+              <p className="text-muted fs-4">No happenings available.</p>
+            </div>
+          ) : (
+            <div className="animate__animated animate__fadeIn">
+              {/* Title */}
+              <h3 className="fw-bold text-primary mb-4">
+                {happenings[activeTab]?.title}
+              </h3>
+
+              {/* Date Badge */}
+              {happenings[activeTab]?.event_date && (
+                <span className="badge bg-warning text-dark fs-6 px-3 py-2 mb-4">
+                  {new Date(happenings[activeTab].event_date).toLocaleDateString('en-IN', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </span>
+              )}
+
+              {/* Image + Description */}
+              <div className="row align-items-start g-5 mt-3">
+                <div className="col-12 col-xl-5">
+                  <img
+                    src={happenings[activeTab]?.team_image || "/media/placeholder.jpg"}
+                    alt={happenings[activeTab]?.title}
+                    className="img-fluid rounded-4 shadow-lg w-100"
+                    style={{ 
+                      maxHeight: '400px', 
+                      objectFit: 'cover',
+                      border: '4px solid #fff'
+                    }}
+                    onError={(e) => e.target.src = "/media/placeholder.jpg"}
+                  />
                 </div>
-
-                {/* Right Content Area */}
-                <div className="col-12 col-md-9">
-                  <div className="tab-content" id="v-pills-tabContent">
-                    {happenings.map((item, idx) => (
-                      <div
-                        key={item.id}
-                        className={`tab-pane fade ${
-                          idx === 0 ? "show active" : ""
-                        }`}
-                        id={`v-pills-std${idx + 1}`}
-                      >
-                        <div className="row align-items-start mb-4">
-                          <div className="col-12 col-md-4 mb-3 mb-md-0">
-                            <img
-                              src={item.team_image}
-                              alt={item.title}
-                              className="img-fluid rounded shadow-sm w-150"
-                            />
-                          </div>
-                          <div className="col-12 col-md-8">
-                            <h4
-                              className="fw-bold mt-2 mb-2"
-                              style={{ color: "#08317a" }}
-                            >
-                              {item.title}
-                            </h4>
-                            <p className="mb-0">{item.description}</p>
-                          </div>
-                        </div>
-
-                        {/* Placeholder for additional content/images if needed */}
-                        <div className="row mb-5">
-                          <div className="col-12">
-                            {/* Additional text or images can be inserted here dynamically if available */}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                <div className="col-12 col-xl-7">
+                  <div 
+                    className="fs-5 text-dark lh-lg"
+                    dangerouslySetInnerHTML={{ 
+                      __html: decodeHTMLEntities(happenings[activeTab]?.description || "") 
+                    }}
+                  />
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Events Section */}
         <section className="py-4">
