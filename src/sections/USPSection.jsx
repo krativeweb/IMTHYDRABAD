@@ -15,8 +15,8 @@ export default function USPSection() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <h2 className="usp-number">#9</h2>
-            <p>Top 10 in South Indias</p>
+            <h2 className="usp-number">#09</h2>
+            <p>Top 10 B-Schools in South India – The Week 2025</p>
           </div>
 
           <div
@@ -24,8 +24,8 @@ export default function USPSection() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h2 className="usp-number">#17</h2>
-            <p>India’s Top 100 B-Schools</p>
+            <h2 className="usp-number">#15</h2>
+            <p>India’s Top 100 B-Schools – EW Ranking 2025</p>
           </div>
 
           <div
@@ -34,7 +34,7 @@ export default function USPSection() {
             data-aos-delay="300"
           >
             <h2 className="usp-number">#35</h2>
-            <p>Private B-Schools by Careers360</p>
+            <p>Leading B-Schools in South India – Fortune 2025</p>
           </div>
 
           <div
@@ -43,7 +43,7 @@ export default function USPSection() {
             data-aos-delay="400"
           >
             <h2 className="usp-number">#72</h2>
-            <p>NIRF India Ranking 2024</p>
+            <p>NIRF India Ranking 2024 – Management Category</p>
           </div>
         </div>
       </div>
