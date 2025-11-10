@@ -349,7 +349,10 @@ From new appointments to dynamic events, our community thrives on engagement, in
                             >
                               {item.title}
                             </h4>
-                            <p className="mb-0">{item.description}</p>
+                         <div
+  className="mb-0"
+  dangerouslySetInnerHTML={{ __html: item.description }}
+></div>
                           </div>
                         </div>
 
