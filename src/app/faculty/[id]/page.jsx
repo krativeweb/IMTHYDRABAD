@@ -522,7 +522,7 @@ export default function FacultyProfile({ params }) {
                 role="tabpanel"
               >
                 <div className="row">
-                  <div className="col-md-6 mb-4">
+                  <div className="col-md-12 mb-4">
                     <div
                       dangerouslySetInnerHTML={{
                         __html: DOMPurify.sanitize(
