@@ -82,7 +82,7 @@ export default function HappeningsSection() {
              <p
         className="card-text"
         dangerouslySetInnerHTML={{
-          __html: limitWordsHtml(happenings[0].description, 50), // limit to 50 words
+          __html: limitWordsHtml(happenings[0].description, 40), // limit to 50 words
         }}
       />
                   <Link href="#" className="btn btn-primary rounded-pill">
@@ -114,7 +114,7 @@ export default function HappeningsSection() {
                       <h5 className="card-title">{item.title}</h5>
                  <p
         className="card-text"
-        dangerouslySetInnerHTML={{ __html: limitWordsHtml(item.description, 50) }}
+        dangerouslySetInnerHTML={{ __html: limitWordsHtml(item.description, 40) }}
       />
 
                       <Link href="#" className="btn btn-primary rounded-pill">
