@@ -106,6 +106,12 @@ const HappeningsPage = () => {
           column-gap: 1rem; /* space between columns */
           padding-right: 10px;
         }
+          /* For screens wider than 1300px */
+@media (min-width: 1300px) {
+  .scrollable-columns {
+    max-height: 580px;
+  }
+}
 
         .scrollable-columns .nav-link {
           display: inline-block; /* ensures proper column layout */
