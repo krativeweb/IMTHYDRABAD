@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { useEffect } from 'react';
-
+import InternationalAssociationStickyBtns from "@/components/internationalassotianstickybtns.jsx";
 export default function StudyingPage() {
   // -----------------------------------------------------------------
   // Initialise AOS (once, client-side only)
@@ -54,7 +54,7 @@ We cultivate thinkers and doers prepared for a future shaped by innovation and e
             </nav>
           </div>
         </div>
-
+    <InternationalAssociationStickyBtns/>
         {/* ===== MAIN CONTENT ===== */}
         <div className="container py-3">
           {/* Header */}
