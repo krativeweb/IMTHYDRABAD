@@ -2,6 +2,24 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import DOMPurify from "isomorphic-dompurify";
+
+
+function limitWordsHtml(html, limit) {
+  // 1. Sanitize the HTML
+  const cleanHtml = DOMPurify.sanitize(html);
+
+  // 2. Decode entities
+  const txt = document.createElement("textarea");
+  txt.innerHTML = cleanHtml;
+  const decoded = txt.value;
+
+  // 3. Limit words
+  const words = decoded.split(" ");
+  const limitedText = words.length > limit ? words.slice(0, limit).join(" ") + "..." : decoded;
+
+  return limitedText;
+}
 
 export default function HappeningsSection() {
   const [happenings, setHappenings] = useState([]);
@@ -61,7 +79,12 @@ export default function HappeningsSection() {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{happenings[0].title}</h5>
-                  <p className="card-text">{happenings[0].description}</p>
+             <p
+        className="card-text"
+        dangerouslySetInnerHTML={{
+          __html: limitWordsHtml(happenings[0].description, 50), // limit to 50 words
+        }}
+      />
                   <Link href="#" className="btn btn-primary rounded-pill">
                     Read More
                   </Link>
@@ -89,10 +112,11 @@ export default function HappeningsSection() {
                     />
                     <div className="card-body">
                       <h5 className="card-title">{item.title}</h5>
-                 <p className="card-text">
-    {item.description.split(" ").slice(0, 20).join(" ")}
-    {item.description.split(" ").length > 20 ? "..." : ""}
-  </p>
+                 <p
+        className="card-text"
+        dangerouslySetInnerHTML={{ __html: limitWordsHtml(item.description, 50) }}
+      />
+
                       <Link href="#" className="btn btn-primary rounded-pill">
                         Read More
                       </Link>
