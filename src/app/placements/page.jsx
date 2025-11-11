@@ -409,7 +409,7 @@ Our placement ecosystem connects talent with leading organizations, ensuring str
               { number: "#1", text: "Private B-School Telangana", delay: 0 },
               { number: "#9", text: "Top 10 in South Indias", delay: 100 },
               { number: "#17", text: "India’s Top 100 B-Schools", delay: 200 },
-              { number: "#35", text: "Private B-Schools by Careers360", delay: 300 },
+              { number: "#13", text: "Private B-Schools by Careers360", delay: 300 },
               { number: "#72", text: "NIRF India Ranking 2024", delay: 400 },
             ].map((item, index) => (
               <div key={index} className="col-6 col-md-2 usp-item" data-aos="fade-up" data-aos-delay={item.delay}>
