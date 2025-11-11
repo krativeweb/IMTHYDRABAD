@@ -29,14 +29,12 @@ export default function RootLayout({ children }) {
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
           rel="stylesheet"
-            media="print"
-          onLoad="this.media='all'"
+       
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           rel="stylesheet"
-            media="print"
-          onLoad="this.media='all'"
+  
         ></link>
         {/* Owl Carousel */}
         <link
@@ -68,8 +66,7 @@ export default function RootLayout({ children }) {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-            media="print"
-          onLoad="this.media='all'"
+      
         />
 
         {/* ✅ Custom CSS (kept in /public/css/style.css) */}
