@@ -43,7 +43,7 @@ export default function USPSection() {
             data-aos-delay="400"
           >
             <h2 className="usp-number">#72</h2>
-            <p>NIRF India Ranking 2024 – Management Category</p>
+            <p>NIRF India Ranking 2025 – Management Category</p>
           </div>
         </div>
       </div>
