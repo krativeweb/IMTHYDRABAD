@@ -33,7 +33,7 @@ export default function USPSection() {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <h2 className="usp-number">#35</h2>
+            <h2 className="usp-number">#13</h2>
             <p>Leading B-Schools in South India – Fortune 2025</p>
           </div>
 
