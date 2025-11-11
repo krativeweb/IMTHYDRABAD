@@ -29,34 +29,47 @@ export default function RootLayout({ children }) {
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
           rel="stylesheet"
+            media="print"
+          onLoad="this.media='all'"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
           rel="stylesheet"
+            media="print"
+          onLoad="this.media='all'"
         ></link>
         {/* Owl Carousel */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            media="print"
+          onLoad="this.media='all'"
         />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            media="print"
+          onLoad="this.media='all'"
         />
         <link
           href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
           rel="stylesheet"
+            media="print"
+          onLoad="this.media='all'"
         ></link>
         {/* AOS */}
         <link
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"
+            
         />
 
         {/* FontAwesome */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            media="print"
+          onLoad="this.media='all'"
         />
 
         {/* ✅ Custom CSS (kept in /public/css/style.css) */}
