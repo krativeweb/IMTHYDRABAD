@@ -113,57 +113,61 @@ export default function PhotoGallerySection() {
       </section>
 
       {/* Styles */}
-      <style jsx global>{`
-        .faculty-hero {
-          background: url("/media/banners/photogallery.webp") center/cover
-            no-repeat;
-          position: relative;
-          height: 60vh;
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .faculty-hero {
+        background: url("/media/banners/photogallery.webp") center/cover no-repeat;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
+      .card {
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+      }
+      .card-body {
+        padding: 1rem;
+      }
+      .card-img-top {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        min-height: 226px;
+      }
+      .breadcrumb {
+        background-color: rgb(22, 57, 119);
+      }
+      .gallery-container {
+        background: #fff;
+        border-radius: 1rem;
+        padding: 1.5rem;
+      }
+      @media (max-width: 580px) {
+        .px-5.mx-5 {
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+          margin-left: 0.5rem !important;
+          margin-right: 0.5rem !important;
         }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
-        .card {
-          border-radius: 12px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          width: 100%;
-        }
-        .card-body {
-          padding: 1rem;
-        }
-        .card-img-top {
-          border-top-left-radius: 12px;
-          border-top-right-radius: 12px;
-          min-height: 226px;
-        }
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
-        .gallery-container {
-          background: #fff;
-          border-radius: 1rem;
-          padding: 1.5rem;
-        }
-        @media (max-width: 580px) {
-          .px-5.mx-5 {
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-            margin-left: 0.5rem !important;
-            margin-right: 0.5rem !important;
-          }
-        }
-      `}</style>
+      }
+    `,
+  }}
+/>
+
     </>
   );
 }

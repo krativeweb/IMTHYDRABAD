@@ -112,7 +112,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="dropdown-item"
-                      href="https://demoone.arawalihome.in/"
+                      href="/admission/pgdm"
                     >
                       PGDM
                     </Link>

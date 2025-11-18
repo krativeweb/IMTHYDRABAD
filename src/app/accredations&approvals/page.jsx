@@ -36,8 +36,9 @@ export default function ApprovalsAccreditation() {
             Approvals & Accreditation
           </h2>
           <p className="position-relative text-white" style={{ zIndex: 2 }}>
-           Our accreditations reflect our dedication to excellence, integrity, <br />
-and innovation in education.
+            Our accreditations reflect our dedication to excellence, integrity,{" "}
+            <br />
+            and innovation in education.
           </p>
         </div>
 
@@ -354,7 +355,10 @@ and innovation in education.
                             <tr key={year}>
                               <td>{year}</td>
                               <td>
-                                <Link href="#" className="btn btn-warning btn-sm">
+                                <Link
+                                  href="#"
+                                  className="btn btn-warning btn-sm"
+                                >
                                   Click Here
                                 </Link>
                               </td>
@@ -401,7 +405,10 @@ and innovation in education.
                             <tr key={year}>
                               <td>{year}</td>
                               <td>
-                                <Link href="#" className="btn btn-warning btn-sm">
+                                <Link
+                                  href="#"
+                                  className="btn btn-warning btn-sm"
+                                >
                                   Click Here
                                 </Link>
                               </td>
@@ -629,24 +636,28 @@ and innovation in education.
       </section>
 
       {/* Custom Styles */}
-      <style jsx>{`
-      :global(.nav-pills .nav-link.active) {
-          background-color: #ffc107 !important;
-          color: #212529 !important;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-          z-index: 1;
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 2;
-        }
-      `}</style>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+    .nav-pills .nav-link.active {
+        background-color: #ffc107 !important;
+        color: #212529 !important;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 2;
+      }
+    `,
+        }}
+      />
     </>
   );
 }

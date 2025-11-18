@@ -105,50 +105,55 @@ Through the STEP Dubai program, we connect students with international business 
       </section>
 
       {/* Scoped Styles */}
-      <style jsx>{`
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
+    <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
 
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .table {
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+
+      .table td {
+        vertical-align: middle;
+        font-size: 1rem;
+      }
+
+      .table a {
+        text-decoration: underline;
+        transition: color 0.3s;
+      }
+
+      .table a:hover {
+        color: #ffc107 !important;
+      }
+
+      @media (max-width: 768px) {
         .hero-content {
-          position: relative;
-          z-index: 2;
+          margin-top: 100px !important;
         }
-
+        .hero-content h2 {
+          font-size: 1.8rem;
+        }
         .table {
-          border-radius: 0.5rem;
-          overflow: hidden;
+          font-size: 0.9rem;
         }
+      }
+    `,
+  }}
+/>
 
-        .table td {
-          vertical-align: middle;
-          font-size: 1rem;
-        }
-
-        .table a {
-          text-decoration: underline;
-          transition: color 0.3s;
-        }
-
-        .table a:hover {
-          color: #ffc107 !important;
-        }
-
-        @media (max-width: 768px) {
-          .hero-content {
-            margin-top: 100px !important;
-          }
-          .hero-content h2 {
-            font-size: 1.8rem;
-          }
-          .table {
-            font-size: 0.9rem;
-          }
-        }
-      `}</style>
     </div>
   );
 };

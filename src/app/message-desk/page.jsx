@@ -29,39 +29,48 @@ export default function LeadershipSection() {
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
+    <style
+  dangerouslySetInnerHTML={{
+    __html: `
         .faculty-hero {
           background: url("/media/banners/faculty.webp");
           position: relative;
           background-size: cover;
           height: 60vh;
         }
+
         .faculty-hero::before {
           content: "";
           position: absolute;
           inset: 0;
           background: rgba(0, 0, 0, 0.3);
         }
+
         .faculty-hero h2,
         .faculty-hero p {
           position: relative;
           z-index: 1;
         }
+
         .faculty-hero h2 {
           margin-top: 150px;
         }
+
         .faculty-card {
           background: #f8f9fa;
           border: none;
           border-radius: 1.5rem;
         }
+
         .faculty-img {
           border-radius: 1.2rem;
           transition: transform 0.4s ease;
         }
+
         .faculty-img:hover {
           transform: scale(1.03);
         }
+
         .social-icon {
           display: inline-flex;
           width: 40px;
@@ -73,11 +82,13 @@ export default function LeadershipSection() {
           color: #ffffffff;
           transition: all 0.3s;
         }
+
         .social-icon:hover {
           background: #5390d9;
           color: #ffffffff;
           transform: translateY(-3px);
         }
+
         #leadership-section .nav-tabs .nav-link {
           border-radius: 50px;
           background: #e9ecef;
@@ -85,17 +96,21 @@ export default function LeadershipSection() {
           font-weight: 600;
           margin: 5px 5px;
           transition: all 0.3s ease;
-
         }
+
         #leadership-section .nav-tabs .nav-link.active {
           background: #ffc107;
           color: #000;
         }
+
         #leadership-section .nav-tabs .nav-link:hover {
           background: #ffc107;
           color: #000;
         }
-      `}</style>
+    `,
+  }}
+/>
+
 
       <section className="faculty-section">
         {/* Top Banner */}

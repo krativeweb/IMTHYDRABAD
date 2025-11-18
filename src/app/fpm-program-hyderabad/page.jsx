@@ -174,7 +174,9 @@ export default function FPMProgram() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Faculty Hero */
         .faculty-hero {
           background: url('/media/banners/internationalrelations.webp') !important;
@@ -240,7 +242,9 @@ export default function FPMProgram() {
         .table td, .table th {
           vertical-align: middle;
         }
-      `}</style>
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -248,7 +252,7 @@ export default function FPMProgram() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -258,32 +262,42 @@ export default function FPMProgram() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/internationalrelations.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
             FPM-Program
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-         Nurturing scholars who question, explore, and redefine management
-            thinking. 
-            <br/>
-            Our FPM program builds research excellence rooted in
-            rigor, relevance, and innovation.
+            Nurturing scholars who question, explore, and redefine management
+            thinking.
+            <br />
+            Our FPM program builds research excellence rooted in rigor,
+            relevance, and innovation.
           </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   FPM-Program
                 </li>
               </ol>
@@ -295,22 +309,34 @@ export default function FPMProgram() {
         <section className="py-5">
           <div className="container">
             <div className="bg-white p-4 rounded-4 mb-3" data-aos="fade-up">
-              <h2 className="fw-bold border-bottom pb-2 text-center" style={{ color: '#08317a' }}>
+              <h2
+                className="fw-bold border-bottom pb-2 text-center"
+                style={{ color: "#08317a" }}
+              >
                 PROGRAM OVERVIEW
               </h2>
               <p className="mt-3">
-                The Fellow Programme in Management at IMT Hyderabad is a full-time doctoral program designed for students,
-                working executives and academicians with strong academic orientation, to undertake rigorous and original
-                research. The program aims to develop outstanding scholars for careers in academia, research, and
-                consulting for the industry, government and social sector. The FPM is a four-year program during which
-                scholars will undergo rigorous coursework comprising general management subjects, core courses, and
-                advanced courses. After completing the Comprehensive Examination, scholars will be engaged in their
-                doctoral dissertations in the third and fourth year. The time duration may be extended up to seven years,
-                depending upon the progress report of the scholar. All full time scholars will receive a monthly stipend
-                that covers all costs in addition to being provided with a modest accommodation. IMT-H provides an
+                The Fellow Programme in Management at IMT Hyderabad is a
+                full-time doctoral program designed for students, working
+                executives and academicians with strong academic orientation, to
+                undertake rigorous and original research. The program aims to
+                develop outstanding scholars for careers in academia, research,
+                and consulting for the industry, government and social sector.
+                The FPM is a four-year program during which scholars will
+                undergo rigorous coursework comprising general management
+                subjects, core courses, and advanced courses. After completing
+                the Comprehensive Examination, scholars will be engaged in their
+                doctoral dissertations in the third and fourth year. The time
+                duration may be extended up to seven years, depending upon the
+                progress report of the scholar. All full time scholars will
+                receive a monthly stipend that covers all costs in addition to
+                being provided with a modest accommodation. IMT-H provides an
                 excellent ecosystem & facilities for pursuing research
               </p>
-              <div className="text-white p-3 fw-bold" style={{ backgroundColor: '#163977' }}>
+              <div
+                className="text-white p-3 fw-bold"
+                style={{ backgroundColor: "#163977" }}
+              >
                 FPM COURSE STRUCTURE
               </div>
               <div className="table-responsive mt-2">
@@ -322,11 +348,17 @@ export default function FPMProgram() {
                         Preparatory (Jun-Jul 4 weeks)
                       </th>
                       <th scope="col">SUBJECT</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                       <th scope="col">SUBJECT</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                       <th scope="col">SUBJECT</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                     </tr>
                     {courseStructure.preparatory.map((row, index) => (
                       <tr key={index}>
@@ -349,29 +381,56 @@ export default function FPMProgram() {
                         YEAR 1 Coursework (Total Credits for Year 1 =45)
                       </th>
                       <th scope="col">TERM I (Jul-Sep)</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                       <th scope="col">TERM II (Oct-Dec)</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                       <th scope="col">TERM III (Jan-Mar)</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                     </tr>
                     {courseStructure.year1[0].subjects.map((_, index) => (
                       <tr key={index} className="table-warning">
-                        <td>{courseStructure.year1[0].subjects[index]?.name || ''}</td>
-                        <td className="text-center">{courseStructure.year1[0].subjects[index]?.credits || ''}</td>
-                        <td>{courseStructure.year1[1].subjects[index]?.name || ''}</td>
-                        <td className="text-center">{courseStructure.year1[1].subjects[index]?.credits || ''}</td>
-                        <td>{courseStructure.year1[2].subjects[index]?.name || ''}</td>
-                        <td className="text-center">{courseStructure.year1[2].subjects[index]?.credits || ''}</td>
+                        <td>
+                          {courseStructure.year1[0].subjects[index]?.name || ""}
+                        </td>
+                        <td className="text-center">
+                          {courseStructure.year1[0].subjects[index]?.credits ||
+                            ""}
+                        </td>
+                        <td>
+                          {courseStructure.year1[1].subjects[index]?.name || ""}
+                        </td>
+                        <td className="text-center">
+                          {courseStructure.year1[1].subjects[index]?.credits ||
+                            ""}
+                        </td>
+                        <td>
+                          {courseStructure.year1[2].subjects[index]?.name || ""}
+                        </td>
+                        <td className="text-center">
+                          {courseStructure.year1[2].subjects[index]?.credits ||
+                            ""}
+                        </td>
                       </tr>
                     ))}
                     <tr>
                       <td>Total Credits for TERM I</td>
-                      <td className="text-center">{courseStructure.year1[0].totalCredits}</td>
+                      <td className="text-center">
+                        {courseStructure.year1[0].totalCredits}
+                      </td>
                       <td>Total Credits for TERM II</td>
-                      <td className="text-center">{courseStructure.year1[1].totalCredits}</td>
+                      <td className="text-center">
+                        {courseStructure.year1[1].totalCredits}
+                      </td>
                       <td>Total Credits for TERM III</td>
-                      <td className="text-center">{courseStructure.year1[2].totalCredits}</td>
+                      <td className="text-center">
+                        {courseStructure.year1[2].totalCredits}
+                      </td>
                     </tr>
                     {/* Year 2 Section */}
                     <tr>
@@ -379,37 +438,68 @@ export default function FPMProgram() {
                         YEAR 2 Coursework (Total Credits for Year 2 =36)
                       </th>
                       <th scope="col">TERM IV (3 Months)</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                       <th scope="col">TERM V (3 Months)</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                       <th scope="col">TERM VI (3 Months)</th>
-                      <th scope="col" className="text-center">CREDITS</th>
+                      <th scope="col" className="text-center">
+                        CREDITS
+                      </th>
                     </tr>
                     {courseStructure.year2[0].subjects.map((_, index) => (
                       <tr key={index} className="table-warning">
-                        <td>{courseStructure.year2[0].subjects[index]?.name || ''}</td>
-                        <td className="text-center">{courseStructure.year2[0].subjects[index]?.credits || ''}</td>
-                        <td>{courseStructure.year2[1].subjects[index]?.name || ''}</td>
-                        <td className="text-center">{courseStructure.year2[1].subjects[index]?.credits || ''}</td>
-                        <td>{courseStructure.year2[2].subjects[index]?.name || ''}</td>
-                        <td className="text-center">{courseStructure.year2[2].subjects[index]?.credits || ''}</td>
+                        <td>
+                          {courseStructure.year2[0].subjects[index]?.name || ""}
+                        </td>
+                        <td className="text-center">
+                          {courseStructure.year2[0].subjects[index]?.credits ||
+                            ""}
+                        </td>
+                        <td>
+                          {courseStructure.year2[1].subjects[index]?.name || ""}
+                        </td>
+                        <td className="text-center">
+                          {courseStructure.year2[1].subjects[index]?.credits ||
+                            ""}
+                        </td>
+                        <td>
+                          {courseStructure.year2[2].subjects[index]?.name || ""}
+                        </td>
+                        <td className="text-center">
+                          {courseStructure.year2[2].subjects[index]?.credits ||
+                            ""}
+                        </td>
                       </tr>
                     ))}
                     <tr className="table-warning">
                       <td></td>
                       <td></td>
-                      <td>{courseStructure.year2[1].subjects[4]?.name || ''}</td>
-                      <td className="text-center">{courseStructure.year2[1].subjects[4]?.credits || ''}</td>
+                      <td>
+                        {courseStructure.year2[1].subjects[4]?.name || ""}
+                      </td>
+                      <td className="text-center">
+                        {courseStructure.year2[1].subjects[4]?.credits || ""}
+                      </td>
                       <td></td>
                       <td></td>
                     </tr>
                     <tr>
                       <td>Total Credits for TERM IV</td>
-                      <td className="text-center">{courseStructure.year2[0].totalCredits}</td>
+                      <td className="text-center">
+                        {courseStructure.year2[0].totalCredits}
+                      </td>
                       <td>Total Credits for TERM V</td>
-                      <td className="text-center">{courseStructure.year2[1].totalCredits}</td>
+                      <td className="text-center">
+                        {courseStructure.year2[1].totalCredits}
+                      </td>
                       <td>{courseStructure.year2[2].ce}</td>
-                      <td className="text-center">{courseStructure.year2[2].pif}</td>
+                      <td className="text-center">
+                        {courseStructure.year2[2].pif}
+                      </td>
                     </tr>
                     <tr className="table-light">
                       <td colSpan="7" className="p-2 small">
@@ -426,13 +516,21 @@ export default function FPMProgram() {
         {/* Students on Roll Section */}
         <section className="mt-4 mb-5">
           <div className="container bg-white p-4 rounded-4">
-            <h2 className="text-center text-uppercase fw-bold mb-5" data-aos="fade-up">
+            <h2
+              className="text-center text-uppercase fw-bold mb-5"
+              data-aos="fade-up"
+            >
               Students on Roll
             </h2>
             {/* Row 1: Two students */}
             <div className="row mb-4">
               {students.slice(0, 2).map((student, index) => (
-                <div className="col-12 col-md-6 mb-3 mb-md-0" key={index} data-aos="fade-up" data-aos-delay={100 + index * 100}>
+                <div
+                  className="col-12 col-md-6 mb-3 mb-md-0"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={100 + index * 100}
+                >
                   <div className="card h-100 p-4">
                     <div className="row g-0">
                       <div className="col-md-4">
@@ -442,7 +540,7 @@ export default function FPMProgram() {
                           className="img-fluid rounded-start faculty-img"
                           width={224}
                           height={224}
-                          style={{ height: '14rem', objectFit: 'cover' }}
+                          style={{ height: "14rem", objectFit: "cover" }}
                         />
                       </div>
                       <div className="col-md-8">
@@ -454,17 +552,23 @@ export default function FPMProgram() {
                             <strong>Joining Year:</strong> {student.joiningYear}
                           </p>
                           <p className="card-text">
-                            <strong>Specialization:</strong> {student.specialization}
+                            <strong>Specialization:</strong>{" "}
+                            {student.specialization}
                           </p>
                           <p className="card-text">
-                            <strong>Qualification:</strong> {student.qualification}
+                            <strong>Qualification:</strong>{" "}
+                            {student.qualification}
                           </p>
                           <p className="card-text">
-                            <strong>Research Interests:</strong> {student.researchInterests}
+                            <strong>Research Interests:</strong>{" "}
+                            {student.researchInterests}
                           </p>
                           <p className="card-text">
-                            <strong>Email:</strong>{' '}
-                            <Link href={`mailto:${student.email}`} className="link-primary">
+                            <strong>Email:</strong>{" "}
+                            <Link
+                              href={`mailto:${student.email}`}
+                              className="link-primary"
+                            >
                               {student.email}
                             </Link>
                           </p>
@@ -479,7 +583,12 @@ export default function FPMProgram() {
             {/* Row 2: Two students */}
             <div className="row mb-4">
               {students.slice(2, 4).map((student, index) => (
-                <div className="col-12 col-md-6 mb-3 mb-md-0" key={index} data-aos="fade-up" data-aos-delay={100 + index * 100}>
+                <div
+                  className="col-12 col-md-6 mb-3 mb-md-0"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={100 + index * 100}
+                >
                   <div className="card h-100 p-4">
                     <div className="row g-0">
                       <div className="col-md-4">
@@ -489,7 +598,7 @@ export default function FPMProgram() {
                           className="img-fluid rounded-start faculty-img"
                           width={224}
                           height={224}
-                          style={{ height: '14rem', objectFit: 'cover' }}
+                          style={{ height: "14rem", objectFit: "cover" }}
                         />
                       </div>
                       <div className="col-md-8">
@@ -501,17 +610,23 @@ export default function FPMProgram() {
                             <strong>Joining Year:</strong> {student.joiningYear}
                           </p>
                           <p className="card-text">
-                            <strong>Specialization:</strong> {student.specialization}
+                            <strong>Specialization:</strong>{" "}
+                            {student.specialization}
                           </p>
                           <p className="card-text">
-                            <strong>Qualification:</strong> {student.qualification}
+                            <strong>Qualification:</strong>{" "}
+                            {student.qualification}
                           </p>
                           <p className="card-text">
-                            <strong>Research Interests:</strong> {student.researchInterests}
+                            <strong>Research Interests:</strong>{" "}
+                            {student.researchInterests}
                           </p>
                           <p className="card-text">
-                            <strong>Email:</strong>{' '}
-                            <Link href={`mailto:${student.email}`} className="link-primary">
+                            <strong>Email:</strong>{" "}
+                            <Link
+                              href={`mailto:${student.email}`}
+                              className="link-primary"
+                            >
                               {student.email}
                             </Link>
                           </p>
@@ -526,7 +641,12 @@ export default function FPMProgram() {
             {/* Row 3: One student */}
             <div className="row">
               {students.slice(4).map((student, index) => (
-                <div className="col-12 mb-3 mb-md-0" key={index} data-aos="fade-up" data-aos-delay={100 + index * 100}>
+                <div
+                  className="col-12 mb-3 mb-md-0"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={100 + index * 100}
+                >
                   <div className="card h-100 p-4">
                     <div className="row g-0">
                       <div className="col-md-4">
@@ -536,7 +656,7 @@ export default function FPMProgram() {
                           className="img-fluid rounded-start faculty-img"
                           width={256}
                           height={256}
-                          style={{ height: '16rem', objectFit: 'cover' }}
+                          style={{ height: "16rem", objectFit: "cover" }}
                         />
                       </div>
                       <div className="col-md-8">
@@ -548,17 +668,23 @@ export default function FPMProgram() {
                             <strong>Joining Year:</strong> {student.joiningYear}
                           </p>
                           <p className="card-text">
-                            <strong>Specialization:</strong> {student.specialization}
+                            <strong>Specialization:</strong>{" "}
+                            {student.specialization}
                           </p>
                           <p className="card-text">
-                            <strong>Qualification:</strong> {student.qualification}
+                            <strong>Qualification:</strong>{" "}
+                            {student.qualification}
                           </p>
                           <p className="card-text">
-                            <strong>Research Interests:</strong> {student.researchInterests}
+                            <strong>Research Interests:</strong>{" "}
+                            {student.researchInterests}
                           </p>
                           <p className="card-text">
-                            <strong>Email:</strong>{' '}
-                            <Link href={`mailto:${student.email}`} className="link-primary">
+                            <strong>Email:</strong>{" "}
+                            <Link
+                              href={`mailto:${student.email}`}
+                              className="link-primary"
+                            >
                               {student.email}
                             </Link>
                           </p>

@@ -542,458 +542,463 @@ export default function ClubsAndCommittees() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
-        /* Faculty Hero */
-        .faculty-hero {
-          background: url('/media/banners/annualevents.webp');
-          position: relative;
-          background-size: cover;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url('/media/banners/annualevents.webp');
+        position: relative;
+        background-size: cover;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Member Card Styles */
-        .member-card {
-          position: relative;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-          background: #fff;
-          transition: transform 0.3s ease;
-        }
-        .member-card:hover {
-          transform: translateY(-5px);
-        }
-        .member-card img {
-          width: 100%;
-          height: 250px;
-          object-fit: cover;
-          object-position: top center;
-        }
-        .member-info {
-          background: #08317a;
-          color: #fff;
-          text-align: center;
-          padding: 10px 5px;
-        }
-        .member-info h5 {
-          margin: 0;
-          font-size: 1rem;
-          font-weight: 600;
-        }
-        .member-info p {
-          margin: 0;
-          font-size: 0.8rem;
-          opacity: 0.8;
-        }
-        .mentor-wrapper {
-          max-width: 300px;
-          width: 100%;
-        }
-        .batch-badge {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          background: #ffc107;
-          color: #000;
-          padding: 3px 10px;
-          border-radius: 20px;
-          font-size: 0.75rem;
-          font-weight: bold;
-          z-index: 2;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        .student-slider-container {
-          position: relative;
-          padding: 0 50px;
-        }
-        .student-track-window {
-          overflow: hidden;
-          width: 100%;
-        }
-        .student-track {
-          display: flex;
-          transition: transform 0.5s ease-in-out;
-          gap: 20px;
-        }
+      /* Member Card Styles */
+      .member-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        background: #fff;
+        transition: transform 0.3s ease;
+      }
+      .member-card:hover {
+        transform: translateY(-5px);
+      }
+      .member-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: top center;
+      }
+      .member-info {
+        background: #08317a;
+        color: #fff;
+        text-align: center;
+        padding: 10px 5px;
+      }
+      .member-info h5 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .member-info p {
+        margin: 0;
+        font-size: 0.8rem;
+        opacity: 0.8;
+      }
+      .mentor-wrapper {
+        max-width: 300px;
+        width: 100%;
+      }
+      .batch-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ffc107;
+        color: #000;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        z-index: 2;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+
+      .student-slider-container {
+        position: relative;
+        padding: 0 50px;
+      }
+      .student-track-window {
+        overflow: hidden;
+        width: 100%;
+      }
+      .student-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 20px;
+      }
+      .student-card-wrapper {
+        flex-shrink: 0;
+        width: 100%;
+      }
+      @media (min-width: 992px) {
         .student-card-wrapper {
-          flex-shrink: 0;
-          width: 100%;
+          width: calc((100% - 40px) / 3);
         }
-        @media (min-width: 992px) {
-          .student-card-wrapper {
-            width: calc((100% - 40px) / 3);
-          }
-        }
-        .student-nav {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: 5;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          font-weight: bold;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .student-nav.prev-btn {
-          left: 0;
-        }
-        .student-nav.next-btn {
-          right: 0;
-        }
-        .student-nav:disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
-        }
+      }
+      .student-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .student-nav.prev-btn {
+        left: 0;
+      }
+      .student-nav.next-btn {
+        right: 0;
+      }
+      .student-nav:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
 
-        /* Image Card */
+      /* Image Card */
+      .image-card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        height: 160px;
+      }
+      .image-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      }
+      .image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .image-card.active {
+        border-bottom: 12px double #ffc107;
+        transition: all 0.3s ease-in-out;
+        background-color: #163977;
+      }
+      .card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 0 0 12px 12px;
+      }
+      .card-overlay h5 {
+        margin: 0;
+        font-size: 0.85rem;
+      }
+
+      /* Slider Container */
+      .slider-container {
+        position: relative;
+        margin-top: 30px;
+        user-select: none;
+      }
+      .cards-slider {
+        overflow: hidden;
+        width: 100%;
+        padding: 0 15px;
+      }
+      .cards-row {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 15px;
+      }
+      .card-wrapper {
+        flex-shrink: 0;
+      }
+
+      /* Bottom Controls */
+      .slider-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .nav-btn {
+        background: #ffc107;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.3s;
+      }
+      .nav-btn:hover {
+        background: #0056b3;
+      }
+      .nav-btn:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+      .dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ccc;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .dot.active {
+        background: #ffc107;
+        width: 25px;
+        border-radius: 5px;
+      }
+
+      /* Detail Card */
+      .detail-card {
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        margin-top: 30px;
+        display: none;
+      }
+
+      /* Responsive for Sliders */
+      @media (min-width: 992px) {
+        .clubs .card-wrapper {
+          width: calc((100% - 105px) / 8);
+        }
+        .committees .card-wrapper {
+          width: calc((100% - 75px) / 6);
+        }
         .image-card {
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          transition: all 0.3s ease;
-          cursor: pointer;
-          position: relative;
-          height: 160px;
+          height: 150px;
         }
-        .image-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-        .image-card img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .image-card.active {
-          border-bottom: 12px double #ffc107;
-          transition: all 0.3s ease-in-out;
-          background-color: #163977
-        }
-        .card-overlay {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: rgba(0, 0, 0, 0.7);
-          color: white;
-          padding: 8px 12px;
-          border-radius: 0 0 12px 12px;
-        }
-        .card-overlay h5 {
-          margin: 0;
-          font-size: 0.85rem;
-        }
-
-        /* Slider Container */
-        .slider-container {
-          position: relative;
-          margin-top: 30px;
-          user-select: none;
+        .slider-controls {
+          display: none !important;
         }
         .cards-slider {
-          overflow: hidden;
-          width: 100%;
-          padding: 0 15px;
-        }
-        .cards-row {
-          display: flex;
-          transition: transform 0.5s ease;
-          gap: 15px;
-        }
-        .card-wrapper {
-          flex-shrink: 0;
-        }
-
-        /* Bottom Controls */
-        .slider-controls {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 15px;
-          margin-top: 20px;
-        }
-        .nav-btn {
-          background: #ffc107;
-          color: white;
-          border: none;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          font-size: 18px;
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: background 0.3s;
-        }
-        .nav-btn:hover {
-          background: #0056b3;
-        }
-        .nav-btn:disabled {
-          background: #ccc;
-          cursor: not-allowed;
-        }
-        .dots {
-          display: flex;
-          justify-content: center;
-          gap: 8px;
-          list-style: none;
           padding: 0;
-          margin: 0;
         }
-        .dot {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background: #ccc;
-          cursor: pointer;
-          transition: background 0.3s;
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .card-wrapper {
+          width: calc((100% - 30px) / 3);
         }
-        .dot.active {
-          background: #ffc107;
-          width: 25px;
-          border-radius: 5px;
+        .image-card {
+          height: 140px;
         }
+      }
+      @media (max-width: 767.98px) {
+        .card-wrapper {
+          width: calc((100% - 15px) / 2);
+        }
+        .image-card {
+          height: 130px;
+        }
+        .cards-slider {
+          padding: 0 10px;
+        }
+      }
 
-        /* Detail Card */
-        .detail-card {
-          border-radius: 12px;
-          box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-          margin-top: 30px;
-          display: none;
-        }
-
-        /* Responsive for Sliders */
-        @media (min-width: 992px) {
-          .clubs .card-wrapper {
-            width: calc((100% - 105px) / 8);
-          }
-          .committees .card-wrapper {
-            width: calc((100% - 75px) / 6);
-          }
-          .image-card {
-            height: 150px;
-          }
-          .slider-controls {
-            display: none !important;
-          }
-          .cards-slider {
-            padding: 0;
-          }
-        }
-        @media (min-width: 768px) and (max-width: 991.98px) {
-          .card-wrapper {
-            width: calc((100% - 30px) / 3);
-          }
-          .image-card {
-            height: 140px;
-          }
-        }
-        @media (max-width: 767.98px) {
-          .card-wrapper {
-            width: calc((100% - 15px) / 2);
-          }
-          .image-card {
-            height: 130px;
-          }
-          .cards-slider {
-            padding: 0 10px;
-          }
-        }
-
-        /* Video Carousel Section */
-        .video-carousel-section {
-          background: #163977;
-        }
+      /* Video Carousel Section */
+      .video-carousel-section {
+        background: #163977;
+      }
+      .image-wrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .image-wrapper img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+      .owl-nav button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .owl-nav button:hover {
+        background: rgba(0,0,0,0.8);
+      }
+      @media (max-width: 768px) {
         .image-wrapper img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .image-wrapper img:hover {
-          transform: scale(1.05);
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-        .owl-nav button {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background: rgba(0,0,0,0.5);
-          color: #fff;
-          border: none;
-          padding: 5px 10px;
           border-radius: 5px;
         }
-        .owl-nav button:hover {
-          background: rgba(0,0,0,0.8);
-        }
-        @media (max-width: 768px) {
-          .image-wrapper img {
-            border-radius: 5px;
-          }
-        }
-        .video-wrapper {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          border-radius: 12px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        .video-wrapper iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.3s ease;
-        }
-        .video-wrapper iframe:hover {
-          transform: scale(1.03);
-        }
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-          position: absolute;
-          top: 40%;
-          background-color: rgba(0,0,0,0.5);
-          color: #fff;
-          border: none;
-          padding: 10px 15px;
-          border-radius: 50%;
-        }
-        .owl-carousel .owl-nav button.owl-prev {
-          left: -25px;
-        }
-        .owl-carousel .owl-nav button.owl-next {
-          right: -25px;
-        }
-        .owl-theme .owl-dots .owl-dot {
-          display: inline-block;
-          zoom: 1;
-        }
-        .owl-carousel .owl-nav button.owl-next,
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel button.owl-dot {
-          background: 0 0;
-          color: white;
-          border: none;
-          padding: 0 !important;
-          font: inherit;
-          background-color: #163977 !important;
-        }
+      }
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      .video-wrapper iframe:hover {
+        transform: scale(1.03);
+      }
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 40%;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+      }
+      .owl-carousel .owl-nav button.owl-prev {
+        left: -25px;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        right: -25px;
+      }
+      .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+      }
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel button.owl-dot {
+        background: 0 0;
+        color: white;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        background-color: #163977 !important;
+      }
 
-        /* Events Calendar Section */
-        .events-calendar-section {
-          background: #163977;
-          color: #fff;
-        }
-        .event-card {
-          display: flex;
-          align-items: center;
-          background: #d4d4d4;
-          border-radius: 12px;
-          padding: 15px;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .event-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-        .event-date {
-          text-align: center;
-          background: #ffb433;
-          color: #163977;
-          border-radius: 12px;
-          padding: 10px;
-          width: 60px;
-          margin-right: 15px;
-          flex-shrink: 0;
-        }
-        .event-date .day {
-          font-size: 22px;
-          font-weight: bold;
-          display: block;
-        }
-        .event-date .month {
-          font-size: 14px;
-          text-transform: uppercase;
-        }
-        .event-info .event-title {
-          font-size: 18px;
-          color: #163977;
-          font-weight: bold;
-          margin-bottom: 5px;
-        }
-        .event-info .event-time,
-        .event-info .event-location {
-          font-size: 14px;
-          margin-bottom: 3px;
-        }
-        .event-info .view-details {
-          margin-top: 5px;
-          font-size: 12px;
-          padding: 3px 8px;
-        }
+      /* Events Calendar Section */
+      .events-calendar-section {
+        background: #163977;
+        color: #fff;
+      }
+      .event-card {
+        display: flex;
+        align-items: center;
+        background: #d4d4d4;
+        border-radius: 12px;
+        padding: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      }
+      .event-date {
+        text-align: center;
+        background: #ffb433;
+        color: #163977;
+        border-radius: 12px;
+        padding: 10px;
+        width: 60px;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+      .event-date .day {
+        font-size: 22px;
+        font-weight: bold;
+        display: block;
+      }
+      .event-date .month {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .event-info .event-title {
+        font-size: 18px;
+        color: #163977;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .event-info .event-time,
+      .event-info .event-location {
+        font-size: 14px;
+        margin-bottom: 3px;
+      }
+      .event-info .view-details {
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 3px 8px;
+      }
 
-        /* Faculty Card and Tabs */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
-        .nav-pills .nav-link.active {
-          background: #ffc107 !important;
-          color: #333 !important;
-          transition: all 0.3s !important;
-        }
-        .nav-pills .nav-link {
-          border-radius: 30px;
-          background-color: #e9ecef;
-          color: #333;
-        }
-      `}</style>
+      /* Faculty Card and Tabs */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
+      .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #333 !important;
+        transition: all 0.3s !important;
+      }
+      .nav-pills .nav-link {
+        border-radius: 30px;
+        background-color: #e9ecef;
+        color: #333;
+      }
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -1001,7 +1006,7 @@ export default function ClubsAndCommittees() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -1011,25 +1016,40 @@ export default function ClubsAndCommittees() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/annualevents.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
-          <h2 className="display-5 fw-bold mb-2">Explore Student Life at IMT Hyderabad</h2>
-          <p className="text-white">Where learning continues beyond classrooms. <br />
-Student clubs and committees foster leadership, teamwork, and real-world problem-solving through collaboration and creativity.</p>
+          <h2 className="display-5 fw-bold mb-2">
+            Explore Student Life at IMT Hyderabad
+          </h2>
+          <p className="text-white">
+            Where learning continues beyond classrooms. <br />
+            Student clubs and committees foster leadership, teamwork, and
+            real-world problem-solving through collaboration and creativity.
+          </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link style={{ textDecoration: 'none' }} href="/" className="text-white fw-bold">
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    href="/"
+                    className="text-white fw-bold"
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Clubs & Committees
                 </li>
               </ol>
@@ -1042,19 +1062,49 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
       <section id="executive-education" className="py-5">
         <div className="container" data-aos="fade-up" data-aos-delay="200">
           <div className="card p-4">
-            <h2 className="section-title text-center" style={{ color: '#08317a' }} data-aos="fade-up" data-aos-delay="200">
+            <h2
+              className="section-title text-center"
+              style={{ color: "#08317a" }}
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               STUDENT LIFE @ IMT
             </h2>
             <div className="row justify-content-center mt-3">
               <div className="col-lg-12 text-justify">
                 <p className="mb-4">
-                  "I always knew looking back on the years would make me laugh, but I never knew looking back on the days would make me cry."
+                  "I always knew looking back on the years would make me laugh,
+                  but I never knew looking back on the days would make me cry."
                 </p>
                 <p className="mb-4">
-                  Life at IMT Hyderabad is always filled with events - they say life starts at 5 in the morning and ends at 5. With the changing outlook in management education, the theories are made and solved every now and then, where the businesses are going global, where the geographies are not just defined with dotted lines, the need of the hour is to keep up with pace. Understanding the same, B-Schools around the world are striving to incorporate all these in their students. So if everyone is following the same trend worldwide, then how is life at IMT Hyderabad different from the others?
+                  Life at IMT Hyderabad is always filled with events - they say
+                  life starts at 5 in the morning and ends at 5. With the
+                  changing outlook in management education, the theories are
+                  made and solved every now and then, where the businesses are
+                  going global, where the geographies are not just defined with
+                  dotted lines, the need of the hour is to keep up with pace.
+                  Understanding the same, B-Schools around the world are
+                  striving to incorporate all these in their students. So if
+                  everyone is following the same trend worldwide, then how is
+                  life at IMT Hyderabad different from the others?
                 </p>
                 <p className="mb-4">
-                  Well, the answer lies at IMT Hyderabad on one hand when the student is prepared to cater to the need of the hour, it also incorporates within the student the forgotten lesson of humanity. In an environment where students are perceived to be the most important stakeholder, and in almost every occasion the students are given a fair chance to voice their opinions, bring out the sense of involvement, responsibility and pride within the student. Here, life is not only saturated to the black prints on crisp paper bound books. The lively campus of IMT Hyderabad believes in events with the regular lectures in the form of activities by the students, and of course for the students. On one hand when there is enormous pressure of assignments, class tests etc, the other hand has limitless fun, friends - made for life, soothing chords of guitar and of course a sense of belonging that the students make at IMT Hyderabad far from their sunny native lands.
+                  Well, the answer lies at IMT Hyderabad on one hand when the
+                  student is prepared to cater to the need of the hour, it also
+                  incorporates within the student the forgotten lesson of
+                  humanity. In an environment where students are perceived to be
+                  the most important stakeholder, and in almost every occasion
+                  the students are given a fair chance to voice their opinions,
+                  bring out the sense of involvement, responsibility and pride
+                  within the student. Here, life is not only saturated to the
+                  black prints on crisp paper bound books. The lively campus of
+                  IMT Hyderabad believes in events with the regular lectures in
+                  the form of activities by the students, and of course for the
+                  students. On one hand when there is enormous pressure of
+                  assignments, class tests etc, the other hand has limitless
+                  fun, friends - made for life, soothing chords of guitar and of
+                  course a sense of belonging that the students make at IMT
+                  Hyderabad far from their sunny native lands.
                 </p>
               </div>
             </div>
@@ -1065,7 +1115,12 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
       {/* Clubs Section */}
       <section className="py-5">
         <div className="container">
-          <h2 className="section-title text-center" style={{ color: '#08317a' }} data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="section-title text-center"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             CLUBS @ IMT
           </h2>
           <div className="slider-container clubs">
@@ -1076,7 +1131,7 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
                     <div className="image-card" data-card={key}>
                       <img src={club.img} alt={club.title} />
                       <div className="card-overlay">
-                        <h5>{club.title.split(' – ')[0]}</h5>
+                        <h5>{club.title.split(" – ")[0]}</h5>
                       </div>
                     </div>
                   </div>
@@ -1084,12 +1139,20 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
               </div>
             </div>
             <div className="slider-controls">
-              <button className="nav-btn prev-btn" id="prevBtnClubs">&lt;</button>
+              <button className="nav-btn prev-btn" id="prevBtnClubs">
+                &lt;
+              </button>
               <ul className="dots" id="dotsClubs"></ul>
-              <button className="nav-btn next-btn" id="nextBtnClubs">&gt;</button>
+              <button className="nav-btn next-btn" id="nextBtnClubs">
+                &gt;
+              </button>
             </div>
           </div>
-          <div className="card detail-card" style={{ color: '#08317a' }} ref={detailCardClubsRef}>
+          <div
+            className="card detail-card"
+            style={{ color: "#08317a" }}
+            ref={detailCardClubsRef}
+          >
             <div className="card-body">
               <h4 className="card-title text-center" ref={detailTitleClubsRef}>
                 Club Details
@@ -1106,10 +1169,14 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
         <div className="container-fluid">
           <h2 className="text-center fw-bold mb-4 text-warning">Events</h2>
           <div id="youtube-carousel" className="owl-carousel owl-theme">
-            {['1.webp', '2.webp', '3.webp', '4.webp'].map((img, index) => (
+            {["1.webp", "2.webp", "3.webp", "4.webp"].map((img, index) => (
               <div className="item" key={index}>
                 <div className="image-wrapper">
-                  <img src={`/media/events/${img}`} alt={`Image ${index + 1}`} className="img-fluid" />
+                  <img
+                    src={`/media/events/${img}`}
+                    alt={`Image ${index + 1}`}
+                    className="img-fluid"
+                  />
                 </div>
               </div>
             ))}
@@ -1120,7 +1187,12 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
       {/* Committees Section */}
       <section className="py-5">
         <div className="container">
-          <h2 className="section-title text-center" style={{ color: '#08317a' }} data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="section-title text-center"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             COMMITTEES @ IMT
           </h2>
           <div className="slider-container committees">
@@ -1139,40 +1211,69 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
               </div>
             </div>
             <div className="slider-controls">
-              <button className="nav-btn prev-btn" id="prevBtnCommittee">&lt;</button>
+              <button className="nav-btn prev-btn" id="prevBtnCommittee">
+                &lt;
+              </button>
               <ul className="dots" id="dotsCommittee"></ul>
-              <button className="nav-btn next-btn" id="nextBtnCommittee">&gt;</button>
+              <button className="nav-btn next-btn" id="nextBtnCommittee">
+                &gt;
+              </button>
             </div>
           </div>
-          <div className="card detail-card" style={{ color: '#08317a' }} ref={detailCardCommitteeRef}>
+          <div
+            className="card detail-card"
+            style={{ color: "#08317a" }}
+            ref={detailCardCommitteeRef}
+          >
             <div className="card-body">
-              <h4 className="card-title text-center" ref={detailTitleCommitteeRef}>
+              <h4
+                className="card-title text-center"
+                ref={detailTitleCommitteeRef}
+              >
                 Committee Details
               </h4>
               <p className="card-text" ref={detailContentCommitteeRef}></p>
               <div className="mentor-section text-center mt-5">
-                <h4 className="text-center text-uppercase fw-bold mb-4" style={{ color: '#08317a' }}>
+                <h4
+                  className="text-center text-uppercase fw-bold mb-4"
+                  style={{ color: "#08317a" }}
+                >
                   Our Mentor
                 </h4>
-                <div ref={mentorContainerRef} className="d-flex justify-content-center"></div>
+                <div
+                  ref={mentorContainerRef}
+                  className="d-flex justify-content-center"
+                ></div>
               </div>
               <div className="student-section mt-5">
-                <h4 className="text-center text-uppercase fw-bold mb-4" style={{ color: '#08317a' }}>
+                <h4
+                  className="text-center text-uppercase fw-bold mb-4"
+                  style={{ color: "#08317a" }}
+                >
                   Student Members
                 </h4>
                 <div className="student-slider-container">
-                  <button className="student-nav prev-btn btn btn-warning" ref={studentPrevRef}>
+                  <button
+                    className="student-nav prev-btn btn btn-warning"
+                    ref={studentPrevRef}
+                  >
                     &lt;
                   </button>
                   <div className="student-track-window">
                     <div className="student-track" ref={studentTrackRef}></div>
                   </div>
-                  <button className="student-nav next-btn btn btn-warning" ref={studentNextRef}>
+                  <button
+                    className="student-nav next-btn btn btn-warning"
+                    ref={studentNextRef}
+                  >
                     &gt;
                   </button>
                 </div>
               </div>
-              <div ref={detailLinksCommitteeRef} className="mt-4 text-center"></div>
+              <div
+                ref={detailLinksCommitteeRef}
+                className="mt-4 text-center"
+              ></div>
             </div>
           </div>
         </div>
@@ -1181,7 +1282,9 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
       {/* Events Calendar Section */}
       <section className="events-calendar-section py-5">
         <div className="container">
-          <h2 className="text-center fw-bold mb-4 text-warning">Events Calendar</h2>
+          <h2 className="text-center fw-bold mb-4 text-warning">
+            Events Calendar
+          </h2>
           <div className="row g-4">
             <div className="col-md-4 col-sm-6">
               <div className="event-card">
@@ -1193,7 +1296,9 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
                   <h5 className="event-title">Tech Workshop</h5>
                   <p className="event-time">10:00 AM - 1:00 PM</p>
                   <p className="event-location">Auditorium, Block A</p>
-                  <button className="btn btn-warning btn-sm view-details">View Details</button>
+                  <button className="btn btn-warning btn-sm view-details">
+                    View Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -1207,7 +1312,9 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
                   <h5 className="event-title">Art Exhibition</h5>
                   <p className="event-time">2:00 PM - 5:00 PM</p>
                   <p className="event-location">Gallery Hall</p>
-                  <button className="btn btn-warning btn-sm view-details">View Details</button>
+                  <button className="btn btn-warning btn-sm view-details">
+                    View Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -1221,7 +1328,9 @@ Student clubs and committees foster leadership, teamwork, and real-world problem
                   <h5 className="event-title">Music Concert</h5>
                   <p className="event-time">6:00 PM - 9:00 PM</p>
                   <p className="event-location">Open Ground</p>
-                  <button className="btn btn-warning btn-sm view-details">View Details</button>
+                  <button className="btn btn-warning btn-sm view-details">
+                    View Details
+                  </button>
                 </div>
               </div>
             </div>

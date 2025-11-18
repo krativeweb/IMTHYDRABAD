@@ -124,63 +124,67 @@ export default function WorkshopsConferences() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
-        /* Hero Section */
-        .faculty-hero {
-          background: url('/media/banners/industryrelevance.webp') center/cover no-repeat;
-          position: relative;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      /* Hero Section */
+      .faculty-hero {
+        background: url('/media/banners/industryrelevance.webp') center/cover no-repeat;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Nav Pills */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #08317a;
-          margin: 5px;
-          transition: all 0.3s;
-          padding: 10px 20px;
-          font-size: 1rem;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000;
-        }
+      /* Nav Pills */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #08317a;
+        margin: 5px;
+        transition: all 0.3s;
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000;
+      }
 
-        /* Card Styling */
-        .card {
-          transition: transform 0.3s ease;
-        }
-        .card:hover {
-          transform: translateY(-5px);
-        }
-        .card-img-top {
-          height: 200px;
-          object-fit: cover;
-        }
-        .btn-warning {
-          background-color: #ffc107;
-          border-color: #ffc107;
-        }
-        .btn-warning:hover {
-          background-color: #e0a800;
-          border-color: #e0a800;
-        }
-      `}</style>
+      /* Card Styling */
+      .card {
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .btn-warning {
+        background-color: #ffc107;
+        border-color: #ffc107;
+      }
+      .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #e0a800;
+      }
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -188,7 +192,7 @@ export default function WorkshopsConferences() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -198,27 +202,37 @@ export default function WorkshopsConferences() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/industryrelevance.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Workshops & Conferences</h2>
           <p className="text-white">
             Creating platforms for dialogue, discovery, and development. <br />
-Our workshops and conferences bring academia and industry together to exchange insights and shape future business thought.
+            Our workshops and conferences bring academia and industry together
+            to exchange insights and shape future business thought.
           </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold text-decoration-none">
+                  <Link
+                    href="/"
+                    className="text-white fw-bold text-decoration-none"
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Workshops & Conferences
                 </li>
               </ol>
@@ -230,15 +244,20 @@ Our workshops and conferences bring academia and industry together to exchange i
       {/* Workshops & Conferences Section */}
       <section id="workshop-conference" className="py-5 faculty-tabs">
         <div className="container" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="text-center fw-bold mb-4" style={{ color: '#08317a' }}>
+          <h2 className="text-center fw-bold mb-4" style={{ color: "#08317a" }}>
             Workshops & Conferences
           </h2>
           <p className="text-center mb-5">
-            Explore our recent workshops and conferences designed to inspire and educate professionals across domains.
+            Explore our recent workshops and conferences designed to inspire and
+            educate professionals across domains.
           </p>
 
           {/* Tabs Navigation */}
-          <ul className="nav nav-pills justify-content-center mb-4 flex-wrap" id="workshopTab" role="tablist">
+          <ul
+            className="nav nav-pills justify-content-center mb-4 flex-wrap"
+            id="workshopTab"
+            role="tablist"
+          >
             <li className="nav-item m-1" role="presentation">
               <button
                 className="nav-link active fw-bold"
@@ -272,19 +291,32 @@ Our workshops and conferences bring academia and industry together to exchange i
           {/* Tabs Content */}
           <div className="tab-content" id="workshopTabContent">
             {/* Workshops Tab */}
-            <div className="tab-pane fade show active" id="workshop" role="tabpanel" aria-labelledby="workshop-tab">
+            <div
+              className="tab-pane fade show active"
+              id="workshop"
+              role="tabpanel"
+              aria-labelledby="workshop-tab"
+            >
               <div className="row g-4">
                 {data.workshops.map((workshop, index) => (
                   <div className="col-md-4" key={index}>
                     <div className="card h-100 shadow-sm border-0">
-                      <img src={workshop.image} className="card-img-top rounded-top" alt={workshop.alt} />
+                      <img
+                        src={workshop.image}
+                        className="card-img-top rounded-top"
+                        alt={workshop.alt}
+                      />
                       <div className="card-body">
                         <h5 className="card-title fw-bold">{workshop.title}</h5>
                         <p className="card-text">
                           <strong>Company:</strong> {workshop.company} <br />
-                          <strong>Program Director:</strong> {workshop.programDirector}
+                          <strong>Program Director:</strong>{" "}
+                          {workshop.programDirector}
                         </p>
-                        <Link href="#" className="btn btn-warning text-dark fw-bold mt-2">
+                        <Link
+                          href="#"
+                          className="btn btn-warning text-dark fw-bold mt-2"
+                        >
                           Read More
                         </Link>
                       </div>
@@ -295,22 +327,34 @@ Our workshops and conferences bring academia and industry together to exchange i
             </div>
 
             {/* Conferences Tab */}
-            <div className="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="conference-tab">
+            <div
+              className="tab-pane fade"
+              id="conference"
+              role="tabpanel"
+              aria-labelledby="conference-tab"
+            >
               <div className="row g-4 mt-3">
                 {data.conferences.map((conference, index) => (
                   <div className="col-md-4" key={index}>
                     <div className="card h-100 shadow-sm border-0">
                       <div className="card-body">
-                        <h5 className="card-title fw-bold">{conference.title}</h5>
+                        <h5 className="card-title fw-bold">
+                          {conference.title}
+                        </h5>
                         <p className="card-text">
                           <strong>Date:</strong> {conference.date} <br />
-                          <strong>Conference:</strong> {conference.conference} <br />
+                          <strong>Conference:</strong> {conference.conference}{" "}
+                          <br />
                           <strong>Theme:</strong> {conference.theme} <br />
-                          <strong>Support / Collaborations:</strong> {conference.support} <br />
+                          <strong>Support / Collaborations:</strong>{" "}
+                          {conference.support} <br />
                           <strong>Journal:</strong> {conference.journal} <br />
                           <strong>Brochure:</strong> {conference.brochure}
                         </p>
-                        <Link href="#" className="btn btn-warning text-dark fw-bold mt-2">
+                        <Link
+                          href="#"
+                          className="btn btn-warning text-dark fw-bold mt-2"
+                        >
                           Read More
                         </Link>
                       </div>

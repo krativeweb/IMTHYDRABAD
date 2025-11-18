@@ -334,327 +334,329 @@ export default function PGDMProgramsSection() {
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
-        /* General Table Styles */
-        .table thead th {
-          background-color: #08317a !important;
-          color: #fff;
-          font-weight: 600;
-        }
-        .table td {
-          vertical-align: middle;
-        }
-        .table a.btn {
-          background-color: #ffc107;
-          color: #000;
-          border: none;
-          transition: all 0.3s ease;
-        }
-        .table a.btn:hover {
-          background-color: #e0a800;
-          color: #fff;
-        }
+     <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* General Table Styles */
+      .table thead th {
+        background-color: #08317a !important;
+        color: #fff;
+        font-weight: 600;
+      }
+      .table td {
+        vertical-align: middle;
+      }
+      .table a.btn {
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+        transition: all 0.3s ease;
+      }
+      .table a.btn:hover {
+        background-color: #e0a800;
+        color: #fff;
+      }
 
-        /* Faculty Hero */
-        .faculty-hero {
-          background: url("/media/banners/pgdm.webp") center/cover no-repeat;
-          position: relative;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url("/media/banners/pgdm.webp") center/cover no-repeat;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Faculty Card */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107 !important;
-          color: #000000ff !important;
-        }
-        .faculty-tabs .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
+      /* Faculty Card */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #000000ff !important;
+      }
+      .faculty-tabs .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
 
-        /* Tabs Styles */
-        .tabs-container {
-          padding: 1.5rem;
-          border-radius: 12px;
-          margin-bottom: 2rem;
-        }
+      /* Tabs Styles */
+      .tabs-container {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+      }
+      .tab-button {
+        border: none;
+        border-radius: 50px;
+        padding: 12px 28px;
+        margin: 0 8px 12px;
+        color: #000;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+      .tab-button:hover {
+        background: #d0d0d0;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .tab-button.active {
+        background: #ffc107;
+        color: #000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      .tab-content {
+        background: white;
+        border-radius: 12px;
+        padding: 2.5rem;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        border: 1px solid #eee;
+      }
+
+      /* Content Styles */
+      .content-section h4 {
+        color: #004a80;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.8rem;
+        border-bottom: 2px solid #e9ecef;
+      }
+      .content-section h5 {
+        color: #0066cc;
+        margin: 1.5rem 0 1rem;
+      }
+
+      /* Specialization Cards */
+      .specialization-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      .specialization-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+      }
+      .specialization-card h5 {
+        background: #004a80;
+        color: white;
+        padding: 12px;
+        margin: 0;
+        border-radius: 10px 10px 0 0;
+      }
+      .specialization-card ul {
+        padding: 1.5rem;
+        list-style-type: none;
+      }
+      .specialization-card li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+      .specialization-card li:before {
+        content: "•";
+        color: #004a80;
+        font-weight: bold;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+      }
+
+      /* Program Structure Tables */
+      .program-structure-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+      .program-structure-table th {
+        background-color: #004a80;
+        color: white;
+        padding: 12px 15px;
+        text-align: left;
+      }
+      .program-structure-table td {
+        padding: 10px 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .program-structure-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      /* Accordion Styles */
+      .accordion-button {
+        background: #f8f9fa;
+        font-weight: 600;
+        color: #004a80;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        margin-bottom: 8px;
+      }
+      .accordion-button:not(.collapsed) {
+        background: #e9f0fa;
+        color: #004a80;
+        box-shadow: none;
+      }
+      .accordion-item {
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Placements Section */
+      .placement-card {
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 10px;
+        background: #f8f9fa;
+        transition: all 0.3s ease;
+      }
+      .placement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .placement-card h6 {
+        color: #004a80;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .placement-card h2 {
+        font-size: 2.2rem;
+        color: #0066cc;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      /* Video Carousel Section */
+      .video-carousel-section {
+        background: #163977;
+      }
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      .video-wrapper iframe:hover {
+        transform: scale(1.03);
+      }
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 40%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+      }
+      .owl-carousel .owl-nav button.owl-prev {
+        left: -25px;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        right: -25px;
+      }
+      .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+      }
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel button.owl-dot {
+        background: 0 0;
+        color: white;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        background-color: #163977 !important;
+      }
+
+      .mx-1 {
+        margin-top: 9px;
+      }
+
+      @media (max-width: 768px) {
         .tab-button {
-          border: none;
-          border-radius: 50px;
-          padding: 12px 28px;
-          margin: 0 8px 12px;
-          color: #000;
-          font-weight: 600;
-          transition: all 0.3s ease;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+          width: 100%;
+          max-width: 280px;
+          margin: 0.5rem auto;
         }
-        .tab-button:hover {
-          background: #d0d0d0;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .tab-button.active {
-          background: #ffc107;
-          color: #000;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        .tabs-container {
+          padding: 1rem;
         }
         .tab-content {
-          background: white;
-          border-radius: 12px;
-          padding: 2.5rem;
-          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-          border: 1px solid #eee;
-        }
-
-        /* Content Styles */
-        .content-section h4 {
-          color: #004a80;
-          margin-bottom: 1.5rem;
-          padding-bottom: 0.8rem;
-          border-bottom: 2px solid #e9ecef;
-        }
-        .content-section h5 {
-          color: #0066cc;
-          margin: 1.5rem 0 1rem;
-        }
-
-        /* Specialization Cards */
-        .specialization-card {
-          border: 1px solid #e0e0e0;
-          border-radius: 10px;
-          height: 100%;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-        .specialization-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-        }
-        .specialization-card h5 {
-          background: #004a80;
-          color: white;
-          padding: 12px;
-          margin: 0;
-          border-radius: 10px 10px 0 0;
-        }
-        .specialization-card ul {
           padding: 1.5rem;
-          list-style-type: none;
         }
-        .specialization-card li {
-          margin-bottom: 0.8rem;
-          padding-left: 1.5rem;
-          position: relative;
-        }
-        .specialization-card li:before {
-          content: "•";
-          color: #004a80;
-          font-weight: bold;
-          font-size: 24px;
-          position: absolute;
-          left: 0;
-        }
-
-        /* Program Structure Tables */
-        .program-structure-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin: 1.5rem 0;
-        }
-        .program-structure-table th {
-          background-color: #004a80;
-          color: white;
-          padding: 12px 15px;
-          text-align: left;
-        }
-        .program-structure-table td {
-          padding: 10px 15px;
-          border-bottom: 1px solid #e0e0e0;
-        }
-        .program-structure-table tr:last-child td {
-          border-bottom: none;
-        }
-
-        /* Accordion Styles */
-        .accordion-button {
-          background: #f8f9fa;
-          font-weight: 600;
-          color: #004a80;
-          border: 1px solid #e0e0e0;
-          border-radius: 8px;
-          margin-bottom: 8px;
-        }
-        .accordion-button:not(.collapsed) {
-          background: #e9f0fa;
-          color: #004a80;
-          box-shadow: none;
-        }
-        .accordion-item {
-          border: none;
-          border-radius: 8px;
-          margin-bottom: 12px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Placements Section */
         .placement-card {
-          text-align: center;
-          padding: 1.5rem;
-          border-radius: 10px;
-          background: #f8f9fa;
-          transition: all 0.3s ease;
+          margin-bottom: 1.5rem;
         }
-        .placement-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .placement-card h6 {
-          color: #004a80;
-          font-weight: 600;
-          margin-bottom: 0.5rem;
-        }
-        .placement-card h2 {
-          font-size: 2.2rem;
-          color: #0066cc;
-          margin: 0;
-          font-weight: 700;
-        }
+      }
 
-        /* Video Carousel Section */
-        .video-carousel-section {
-          background: #163977;
-        }
-        .video-wrapper {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          border-radius: 12px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .video-wrapper iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
+      @media (max-width: 576px) {
+        .tab-button {
           width: 100%;
-          height: 100%;
-          transition: transform 0.3s ease;
+          max-width: 100%;
         }
-        .video-wrapper iframe:hover {
-          transform: scale(1.03);
+        .section-header h1 {
+          font-size: 2rem;
         }
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-          position: absolute;
-          top: 40%;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: #fff;
-          border: none;
-          padding: 10px 15px;
-          border-radius: 50%;
+        .tab-content {
+          padding: 1.5rem;
         }
-        .owl-carousel .owl-nav button.owl-prev {
-          left: -25px;
-        }
-        .owl-carousel .owl-nav button.owl-next {
-          right: -25px;
-        }
-        .owl-theme .owl-dots .owl-dot {
-          display: inline-block;
-          zoom: 1;
-        }
-        .owl-carousel .owl-nav button.owl-next,
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel button.owl-dot {
-          background: 0 0;
-          color: white;
-          border: none;
-          padding: 0 !important;
-          font: inherit;
-          background-color: #163977 !important;
-        }
-          .mx-1 {
-          margin-top: 9px;
-        }
-                @media (max-width: 768px) {
-                                .tab-button {
-                                    width: 100%;
-                                    max-width: 280px;
-                                    margin: 0.5rem auto;
-                                }
-                                
-                                .tabs-container {
-                                    padding: 1rem;
-                                }
-                                
-                                .tab-content {
-                                    padding: 1.5rem;
-                                }
-                                
-                                .placement-card {
-                                    margin-bottom: 1.5rem;
-                                }
-                            }
-                            
-                            @media (max-width: 576px) {
-                                .tab-button {
-                                    width: 100%;
-                                    max-width: 100%;
-                                }
-                                
-                                .section-header h1 {
-                                    font-size: 2rem;
-                                }
+      }
+    `,
+  }}
+/>
 
-                                  .tab-content {
-                                    padding: 1.5rem;
-                                }
-                            }
-      `}</style>
 
       {/* Top Banner */}
       <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">

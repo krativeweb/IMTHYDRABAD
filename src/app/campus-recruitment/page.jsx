@@ -22,7 +22,8 @@ export default function CampusPlacements() {
           <h2 className="display-5 fw-bold mb-2">Campus Placements</h2>
           <p className="text-white">
             An institution where preparation meets performance. <br />
-Our campus placements reflect rigorous training, industry relevance, and a track record of successful career launches.
+            Our campus placements reflect rigorous training, industry relevance,
+            and a track record of successful career launches.
           </p>
         </div>
 
@@ -562,141 +563,145 @@ Our campus placements reflect rigorous training, industry relevance, and a track
       </section>
 
       {/* === ORIGINAL CSS (Tabs, Hover, Profile Image, Tables) === */}
-      <style jsx>{`
-        /* Gradient banner with subtle overlay */
-        .faculty-hero {
-          background: url("./media/hero.webp");
-          position: relative;
-          background-size: cover;
-          height: 50vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      /* Gradient banner with subtle overlay */
+      .faculty-hero {
+        background: url("./media/hero.webp");
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* UPDATED: Enhanced Wide Card Styles */
+      /* UPDATED: Enhanced Wide Card Styles */
+      .placement-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 0 !important;
+      }
+      .placement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+      }
+      .placement-card img {
+        transition: transform 0.3s ease;
+      }
+      .placement-card:hover img {
+        transform: scale(1.02);
+      }
+
+      @media (min-width: 1200px) {
+        .container-fluid {
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+        }
+      }
+      @media (max-width: 768px) {
         .placement-card {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          margin: 0 !important; /* Zero margins */
+          max-height: 60vh;
+          border-radius: 1rem !important;
         }
-        .placement-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+        .container-fluid {
+          padding-left: 0.5rem !important;
+          padding-right: 0.5rem !important;
         }
-        .placement-card img {
-          transition: transform 0.3s ease;
-        }
-        .placement-card:hover img {
-          transform: scale(1.02);
-        }
+      }
 
-        /* Force minimal side spacing on large screens */
-        @media (min-width: 1200px) {
-          .container-fluid {
-            padding-left: 1.5rem !important;
-            padding-right: 1.5rem !important;
-          }
-        }
-        @media (max-width: 768px) {
-          .placement-card {
-            max-height: 60vh;
-            border-radius: 1rem !important; /* Softer rounding on mobile */
-          }
-          .container-fluid {
-            padding-left: 0.5rem !important;
-            padding-right: 0.5rem !important;
-          }
-        }
+      /* Card styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Card styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Image glow & hover effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Image glow & hover effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Social icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Social icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #000000ff !important;
+      }
+      .small-placeholder::placeholder {
+        font-size: 0.85rem;
+      }
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        border-radius: 50rem !important;
+        background: #ffc107 !important;
+        color: #333 !important;
+        transition: all 0.3s !important;
+      }
+      .nav-pills .nav-link {
+        border-radius: var(--bs-nav-pills-border-radius);
+        background-color: #e9ecef;
+        border-radius: 30px;
+        color: #333;
+      }
 
-        /* Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107 !important;
-          color: #000000ff !important;
-        }
-        .small-placeholder::placeholder {
-          font-size: 0.85rem; /* adjust size as needed */
-        }
-        .nav-pills .nav-link.active,
-        .nav-pills .show > .nav-link {
-          border-radius: 50rem !important;
-          background: #ffc107 !important;
-          color: #333 !important;
-          transition: all 0.3s !important;
-        }
-        .nav-pills .nav-link {
-          border-radius: var(--bs-nav-pills-border-radius);
-          background-color: #e9ecef;
-          border-radius: 30px;
-          color: #333;
-        }
-        /* Adjusted Image Margin */
-        .profile-img {
-          float: left;
-          margin: 0 1.5rem 0.5rem 0; /* Reduced bottom margin */
-          width: 150px;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 0.75rem;
-          border: 2px solid #0d0d0dff;
-          box-shadow: 0 5px 15px rgba(56, 54, 51, 0.3);
-        }
+      /* Adjusted Image Margin */
+      .profile-img {
+        float: left;
+        margin: 0 1.5rem 0.5rem 0;
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0.75rem;
+        border: 2px solid #0d0d0dff;
+        box-shadow: 0 5px 15px rgba(56, 54, 51, 0.3);
+      }
 
-        /* Removed Top Margin from First Paragraph */
-        .inv-txt:first-of-type {
-          margin-top: 0;
-        }
-      `}</style>
+      /* Removed Top Margin from First Paragraph */
+      .inv-txt:first-of-type {
+        margin-top: 0;
+      }
+    `,
+        }}
+      />
     </>
   );
 }

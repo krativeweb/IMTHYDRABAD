@@ -49,136 +49,141 @@ export default function PGDMFinanceSection() {
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
-        /* Faculty Hero */
-        .faculty-hero {
-          background: url("/media/banners/pgdmfinance.webp") center/cover no-repeat;
-          position: relative;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url("/media/banners/pgdmfinance.webp") center/cover no-repeat;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Faculty Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #08317a;
-          margin: 5px;
-          transition: all 0.3s;
-          padding: 10px 20px;
-          font-size: 1rem;
-          font-weight: bold;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000;
-        }
+      /* Faculty Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #08317a;
+        margin: 5px;
+        transition: all 0.3s;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000;
+      }
 
-        /* Custom Bullets */
-        .custom-bullets li {
-          position: relative;
-          padding-left: 25px;
-          margin-bottom: 10px;
-          list-style: none;
-        }
-        .custom-bullets li::before {
-          content: "✓";
-          position: absolute;
-          left: 0;
-          color: #ffc107;
-          font-weight: bold;
-        }
+      /* Custom Bullets */
+      .custom-bullets li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        list-style: none;
+      }
+      .custom-bullets li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #ffc107;
+        font-weight: bold;
+      }
 
-        /* Curriculum List */
-        .curriculum-item {
-          color: #142a53;
-        }
-        .curriculum-item i {
-          font-size: 8px;
-          margin-right: 8px;
-        }
+      /* Curriculum List */
+      .curriculum-item {
+        color: #142a53;
+      }
+      .curriculum-item i {
+        font-size: 8px;
+        margin-right: 8px;
+      }
 
-        /* Video Carousel Section */
-        .video-carousel-section {
-          background: #163977;
-        }
-        .video-wrapper {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          border-radius: 12px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .video-wrapper iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.3s ease;
-        }
-        .video-wrapper iframe:hover {
-          transform: scale(1.03);
-        }
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-          position: absolute;
-          top: 40%;
-          background-color: rgba(0, 0, 0, 0.5);
-          color: #fff;
-          border: none;
-          padding: 10px 15px;
-          border-radius: 50%;
-        }
-        .owl-carousel .owl-nav button.owl-prev {
-          left: -25px;
-        }
-        .owl-carousel .owl-nav button.owl-next {
-          right: -25px;
-        }
-        .owl-theme .owl-dots .owl-dot {
-          display: inline-block;
-          zoom: 1;
-        }
-        .owl-carousel .owl-nav button.owl-next,
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel button.owl-dot {
-          background: 0 0;
-          color: white;
-          border: none;
-          padding: 0 !important;
-          font: inherit;
-          background-color: #163977 !important;
-        }
+      /* Video Carousel Section */
+      .video-carousel-section {
+        background: #163977;
+      }
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      .video-wrapper iframe:hover {
+        transform: scale(1.03);
+      }
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 40%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+      }
+      .owl-carousel .owl-nav button.owl-prev {
+        left: -25px;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        right: -25px;
+      }
+      .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+      }
+      .owl-carousel .owl-nav button.owl-next,
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel button.owl-dot {
+        background: 0 0;
+        color: white;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        background-color: #163977 !important;
+      }
 
-        /* Card Styling */
-        .card {
-          border-radius: 12px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card-body {
-          padding: 2rem;
-        }
+      /* Card Styling */
+      .card {
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card-body {
+        padding: 2rem;
+      }
 
-        /* Breadcrumb */
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
-      `}</style>
+      /* Breadcrumb */
+      .breadcrumb {
+        background-color: rgb(22, 57, 119);
+      }
+    `,
+  }}
+/>
+
 
       {/* Top Banner */}
       <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">

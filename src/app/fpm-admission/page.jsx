@@ -302,7 +302,9 @@ export default function FpmAdmission() {
                       </button>
                     </li>
                   </ul>
-                  <style>{`
+                  <style
+                    dangerouslySetInnerHTML={{
+                      __html: `
         /* Inline-style alternative for Bootstrap control */
         .nav-pills .nav-link {
           background-color: #e0e0e0 !important;
@@ -320,7 +322,9 @@ export default function FpmAdmission() {
         .nav-pills .nav-link:hover {
           opacity: 0.85;
         }
-      `}</style>
+    `,
+                    }}
+                  />
 
                   <div class="tab-content" id="specializationTabContent">
                     <div
@@ -990,7 +994,9 @@ export default function FpmAdmission() {
       </div>
 
       {/* STYLES */}
-      <style jsx>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Table styling */
         .table thead th {
           background-color: #08317a !important;
@@ -1024,6 +1030,7 @@ export default function FpmAdmission() {
           background-color: #f2cf21ff;
           color: white;
         }
+
         /* Tabs */
         .nav-pills .nav-link {
           border-radius: 30px;
@@ -1031,6 +1038,7 @@ export default function FpmAdmission() {
           color: #333;
           transition: all 0.3s;
         }
+
         .nav-pills .nav-link.active {
           background: #ffc107 !important;
           color: #000000 !important;
@@ -1039,6 +1047,7 @@ export default function FpmAdmission() {
         table {
           font-size: 14px;
         }
+
         /* Specialization Tabs */
         .specialization-tabs .nav-pills .nav-link {
           border-radius: 50px;
@@ -1066,7 +1075,9 @@ export default function FpmAdmission() {
             font-size: 12px;
           }
         }
-      `}</style>
+    `,
+        }}
+      />
     </>
   );
 }

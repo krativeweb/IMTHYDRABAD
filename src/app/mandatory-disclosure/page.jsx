@@ -9515,7 +9515,9 @@ const MandatoryDisclosure = () => {
           <PlacementAlliances />
         </section>
       </section>
-      <style jsx>{`
+    <style
+  dangerouslySetInnerHTML={{
+    __html: `
         .swiper-slide .item {
           background: #ffffff;
           padding: 30px;
@@ -9530,6 +9532,7 @@ const MandatoryDisclosure = () => {
           max-height: 80px;
           object-fit: contain;
         }
+
         .custom-card {
           transition: background-color 0.3s ease, transform 0.3s ease;
           cursor: pointer;
@@ -9539,6 +9542,7 @@ const MandatoryDisclosure = () => {
           border: 1px solid #03255f;
           transform: translateY(-5px);
         }
+
         .faculty-hero {
           background: url("./media/hero.webp");
           position: relative;
@@ -9559,11 +9563,13 @@ const MandatoryDisclosure = () => {
         .faculty-hero h2 {
           margin-top: 130px;
         }
+
         .faculty-card {
           background: #f8f9fa;
           border: none;
           border-radius: 1.5rem;
         }
+
         .faculty-img {
           border-radius: 1.2rem;
           transition: transform 0.4s ease;
@@ -9571,6 +9577,7 @@ const MandatoryDisclosure = () => {
         .faculty-img:hover {
           transform: scale(1.03);
         }
+
         .social-icon {
           display: inline-flex;
           width: 40px;
@@ -9587,13 +9594,16 @@ const MandatoryDisclosure = () => {
           color: #ffffffff;
           transform: translateY(-3px);
         }
+
         .faculty-tabs .nav-pills .nav-link.active {
           background: #ffc107 !important;
           color: #000000ff !important;
         }
+
         .small-placeholder::placeholder {
           font-size: 0.85rem;
         }
+
         .nav-pills .nav-link.active,
         .nav-pills .show > .nav-link {
           border-radius: 50rem !important;
@@ -9601,17 +9611,20 @@ const MandatoryDisclosure = () => {
           color: #333 !important;
           transition: all 0.3s !important;
         }
+
         .nav-pills .nav-link {
           border-radius: 30px;
           background-color: #e9ecef;
           color: #333;
         }
+
         h3,
         h4,
         h5,
         h6 {
           font-weight: bold !important;
         }
+
         .table-responsive.align-center {
           display: block;
           overflow-x: auto;
@@ -9620,6 +9633,7 @@ const MandatoryDisclosure = () => {
           margin-right: auto;
           max-width: 100%;
         }
+
         .table {
           width: 100%;
           border-collapse: collapse;
@@ -9629,6 +9643,7 @@ const MandatoryDisclosure = () => {
           font-family: Arial, sans-serif;
           font-size: 14px;
         }
+
         .table td,
         .table th {
           border: 1px solid #e6e6e6;
@@ -9636,17 +9651,21 @@ const MandatoryDisclosure = () => {
           vertical-align: top;
           line-height: 1.4;
         }
+
         .table td p,
         .table th p {
           margin: 0;
           padding: 0;
         }
+
         .table.table-striped tbody tr:nth-child(odd) {
           background-color: #fafafa;
         }
+
         .table tbody tr:hover {
           background-color: #f5f7fa;
         }
+
         @media (max-width: 576px) {
           .table td,
           .table th {
@@ -9654,9 +9673,11 @@ const MandatoryDisclosure = () => {
             font-size: 13px;
           }
         }
+
         .table-bordered {
           border: 1px solid #cfcfcf;
         }
+
         .table-bordered td,
         .table-bordered th {
           border: 1px solid #dcdcdc;
@@ -9674,11 +9695,9 @@ const MandatoryDisclosure = () => {
           text-align: center;
           transition: transform 0.3s;
         }
-
         .swiper-item:hover {
           transform: translateY(-5px);
         }
-
         .swiper-item img {
           max-height: 80px;
           object-fit: contain;
@@ -9701,13 +9720,16 @@ const MandatoryDisclosure = () => {
         .placement-swiper .swiper-button-prev:after {
           font-size: 20px;
         }
+
         .text-overflow p {
           word-wrap: break-word;
-          /* overflow-wrap: break-word; */
           word-break: break-all;
           white-space: normal;
         }
-      `}</style>
+    `,
+  }}
+/>
+
     </>
   );
 };

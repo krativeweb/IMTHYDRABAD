@@ -40,8 +40,9 @@ export default function AboutIMTHyderabad() {
             className="position-relative text-white"
             style={{ zIndex: 2, fontSize: "1.1rem" }}
           >
-            Driven by purpose, defined by excellence. <br />
-A leading management institute shaping responsible leaders through innovation, research, and holistic education.
+            Driven by purpose, defined by excellence. <br />A leading management
+            institute shaping responsible leaders through innovation, research,
+            and holistic education.
           </p>
         </div>
 
@@ -305,7 +306,7 @@ A leading management institute shaping responsible leaders through innovation, r
         </div>
       </section>
 
-         <section className="py-5">
+      <section className="py-5">
         <div className="container">
           <div className="card border-0 shadow-sm rounded-3 p-4">
             <h3
@@ -415,23 +416,27 @@ A leading management institute shaping responsible leaders through innovation, r
       </section>
 
       {/* Custom Styles */}
-      <style jsx>{`
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-          z-index: 1;
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 2;
-        }
-        .text-justify {
-          text-align: justify;
-        }
-      `}</style>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 2;
+      }
+      .text-justify {
+        text-align: justify;
+      }
+    `,
+        }}
+      />
     </>
   );
 }

@@ -169,51 +169,56 @@ export default function NavbarTwo() {
       </button>
 
       {/* Inline Styles */}
-      <style jsx global>{`
-        .navbar-toggler {
-  border-color: #ffffffff;
-}
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+      <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .navbar-toggler {
+        border-color: #ffffffff;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
 
-/* Announcement strip */
-.announcement-strip {
-  width: 100%;
-  background: #ffc107;
-  color: #000;
-  padding: 8px 0;
-  overflow: hidden;
-  position: relative;   /* not sticky */
-  z-index: 1031;
-  text-align: center;
-}
-.announcement-text {
-  display: inline-block;
-  white-space: nowrap;
-  padding-left: 100%;
-  animation: scroll-left 15s linear infinite;
-}
-@keyframes scroll-left {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
+      /* Announcement strip */
+      .announcement-strip {
+        width: 100%;
+        background: #ffc107;
+        color: #000;
+        padding: 8px 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 1031;
+        text-align: center;
+      }
+      .announcement-text {
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 100%;
+        animation: scroll-left 15s linear infinite;
+      }
+      @keyframes scroll-left {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+      }
 
-/* Navbar positions */
-.navbar {
-  position: fixed;
-  top: 0px;        /* sits below strip initially */
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  transition: top 0.3s ease;
-}
+      /* Navbar positions */
+      .navbar {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        transition: top 0.3s ease;
+      }
 
-/* When page scrolled past strip */
-.navbar.navbar-scrolled {
-  top: 0;
-}
-      `}</style>
+      /* When page scrolled past strip */
+      .navbar.navbar-scrolled {
+        top: 0;
+      }
+    `,
+  }}
+/>
+
     </>
   );
 }

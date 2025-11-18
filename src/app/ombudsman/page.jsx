@@ -51,98 +51,103 @@ export default function OmbudsmanSection() {
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
-        .faculty-hero {
-          background: url("/media/banners/aboutus.webp") center/cover no-repeat;
-          position: relative;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107 !important;
-          color: #000000ff !important;
-        }
-        .small-placeholder::placeholder {
-          font-size: 0.85rem;
-        }
-        .nav-pills .nav-link.active,
-        .nav-pills .show > .nav-link {
-          border-radius: 50rem !important;
-          background: #ffc107 !important;
-          color: #333 !important;
-          transition: all 0.3s !important;
-        }
-        .nav-pills .nav-link {
-          border-radius: var(--bs-nav-pills-border-radius);
-          background-color: #e9ecef;
-          border-radius: 30px;
-          color: #333;
-        }
-        .owl-carousel .item {
-          background: #ffffff;
-          padding: 30px;
-          border-radius: 8px;
-          text-align: center;
-          transition: transform 0.3s;
-        }
-        .owl-carousel .item:hover {
-          transform: translateY(-5px);
-        }
-        .owl-carousel .item img {
-          max-height: 80px;
-          object-fit: contain;
-        }
-        .custom-card {
-          transition: background-color 0.3s ease, transform 0.3s ease;
-          cursor: pointer;
-        }
-        .custom-card:hover {
-          background-color: #ffc107;
-          border: 1px solid #03255f;
-          transform: translateY(-5px);
-        }
-      `}</style>
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .faculty-hero {
+        background: url("/media/banners/aboutus.webp") center/cover no-repeat;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #000000ff !important;
+      }
+      .small-placeholder::placeholder {
+        font-size: 0.85rem;
+      }
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        border-radius: 50rem !important;
+        background: #ffc107 !important;
+        color: #333 !important;
+        transition: all 0.3s !important;
+      }
+      .nav-pills .nav-link {
+        border-radius: var(--bs-nav-pills-border-radius);
+        background-color: #e9ecef;
+        border-radius: 30px;
+        color: #333;
+      }
+      .owl-carousel .item {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .owl-carousel .item:hover {
+        transform: translateY(-5px);
+      }
+      .owl-carousel .item img {
+        max-height: 80px;
+        object-fit: contain;
+      }
+      .custom-card {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+      }
+      .custom-card:hover {
+        background-color: #ffc107;
+        border: 1px solid #03255f;
+        transform: translateY(-5px);
+      }
+    `,
+  }}
+/>
+
 
       <section className="faculty-section">
         {/* Top Banner */}

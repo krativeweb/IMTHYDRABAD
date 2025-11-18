@@ -37,8 +37,9 @@ export default function AnnualEvents() {
             Annual Events
           </h2>
           <p className="position-relative text-white" style={{ zIndex: 2 }}>
-           Celebrating the spirit of learning and leadership. <br />
-Our annual events bring together ideas, innovation, and community in vibrant academic and cultural engagement.
+            Celebrating the spirit of learning and leadership. <br />
+            Our annual events bring together ideas, innovation, and community in
+            vibrant academic and cultural engagement.
           </p>
         </div>
 
@@ -165,20 +166,24 @@ Our annual events bring together ideas, innovation, and community in vibrant aca
       </section>
 
       {/* Custom Styles */}
-      <style jsx>{`
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-          z-index: 1;
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 2;
-        }
-      `}</style>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 2;
+      }
+    `,
+        }}
+      />
     </>
   );
 }

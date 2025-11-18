@@ -215,29 +215,121 @@ We cultivate thinkers and doers prepared for a future shaped by innovation and e
         </section>
 
         {/* ===== STYLES (unchanged) ===== */}
-        <style jsx>{`
-          #student-life-gallery .card{transition:transform .3s ease,box-shadow .3s ease;cursor:pointer}
-          #student-life-gallery .card:hover{transform:translateY(-5px) scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,.15)}
-          #student-life-gallery .card-body{padding:.5rem}
-          .custom-card{transition:background-color .3s ease,transform .3s ease;cursor:pointer}
-          .custom-card:hover{background:#ffc107;transform:translateY(-5px)}
-          .owl-carousel .item{background:#fff;padding:30px;border-radius:8px;text-align:center;transition:transform .3s}
-          .owl-carousel .item:hover{transform:translateY(-5px)}
-          .owl-carousel .item img{max-height:80px;object-fit:contain}
-          .faculty-hero{background:url('/media/hero.webp');position:relative;background-size:cover;height:50vh}
-          .faculty-hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.3)}
-          .faculty-hero h2,.faculty-hero p{position:relative;z-index:1}
-          .faculty-hero h2{margin-top:150px}
-          .faculty-card{background:#f8f9fa;border:none;border-radius:1.5rem}
-          .faculty-img{border-radius:1.2rem;transition:transform .4s ease}
-          .faculty-img:hover{transform:scale(1.03)}
-          .social-icon{display:inline-flex;width:40px;height:40px;border-radius:50%;justify-content:center;align-items:center;background:#ffc107;color:#fff;transition:all .3s}
-          .social-icon:hover{background:#5390D9;color:#fff;transform:translateY(-3px)}
-          .faculty-tabs .nav-pills .nav-link.active{background:#ffc107!important;color:#000!important}
-          .small-placeholder::placeholder{font-size:.85rem}
-          .nav-pills .nav-link.active,.nav-pills .show>.nav-link{border-radius:50rem!important;background:#ffc107!important;color:#333!important;transition:all .3s!important}
-          .nav-pills .nav-link{border-radius:var(--bs-nav-pills-border-radius);background:#e9ecef;border-radius:30px;color:#333}
-        `}</style>
+<style
+  dangerouslySetInnerHTML={{
+    __html: `
+      #student-life-gallery .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      #student-life-gallery .card:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      }
+      #student-life-gallery .card-body {
+        padding: 0.5rem;
+      }
+
+      .custom-card {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+      }
+      .custom-card:hover {
+        background: #ffc107;
+        transform: translateY(-5px);
+      }
+
+      .owl-carousel .item {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .owl-carousel .item:hover {
+        transform: translateY(-5px);
+      }
+      .owl-carousel .item img {
+        max-height: 80px;
+        object-fit: contain;
+      }
+
+      .faculty-hero {
+        background: url('/media/hero.webp');
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
+
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
+
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
+
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #fff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390D9;
+        color: #fff;
+        transform: translateY(-3px);
+      }
+
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #000 !important;
+      }
+      .small-placeholder::placeholder {
+        font-size: 0.85rem;
+      }
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        border-radius: 50rem !important;
+        background: #ffc107 !important;
+        color: #333 !important;
+        transition: all 0.3s !important;
+      }
+      .nav-pills .nav-link {
+        border-radius: var(--bs-nav-pills-border-radius);
+        background: #e9ecef;
+        border-radius: 30px;
+        color: #333;
+      }
+    `,
+  }}
+/>
+
       </section>
     </>
   );

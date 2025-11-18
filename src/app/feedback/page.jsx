@@ -17,7 +17,9 @@ export default function FeedbackFacility() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Faculty Hero */
         .faculty-hero {
           background: url('/media/banners/placement.webp') !important;
@@ -117,7 +119,9 @@ export default function FeedbackFacility() {
           background-color: #e0a800;
           color: #fff;
         }
-      `}</style>
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -125,7 +129,7 @@ export default function FeedbackFacility() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -135,9 +139,9 @@ export default function FeedbackFacility() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/placement.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
@@ -145,19 +149,30 @@ export default function FeedbackFacility() {
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
             Listening to grow stronger together. <br />
-We value constructive feedback from students, faculty, and stakeholders to enhance quality and enrich experiences
+            We value constructive feedback from students, faculty, and
+            stakeholders to enhance quality and enrich experiences
           </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Feedback Facility for Students and Faculty
                 </li>
               </ol>
@@ -171,7 +186,7 @@ We value constructive feedback from students, faculty, and stakeholders to enhan
             <div className="card p-4">
               <h2
                 className="section-title text-center"
-                style={{ color: '#08317a' }}
+                style={{ color: "#08317a" }}
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
@@ -180,8 +195,13 @@ We value constructive feedback from students, faculty, and stakeholders to enhan
               <div className="row justify-content-center mt-3">
                 <div className="col-lg-12 text-justify">
                   <p>
-                    Feedback Facility for Students and Faculty in AICTE Web Portal:{' '}
-                    <Link href="https://www.aicte.gov.in/feedback/index.php" target="_blank" className="link-primary">
+                    Feedback Facility for Students and Faculty in AICTE Web
+                    Portal:{" "}
+                    <Link
+                      href="https://www.aicte.gov.in/feedback/index.php"
+                      target="_blank"
+                      className="link-primary"
+                    >
                       Click Here
                     </Link>
                   </p>

@@ -57,68 +57,73 @@ export default function Navbar() {
   return (
     <>
       {/* ============ STYLES ============ */}
-      <style jsx>{`
-        /* Toggler */
-        .navbar-toggler {
-          border-color: #ffffffff;
-        }
-        .navbar-toggler-icon {
-          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Toggler */
+      .navbar-toggler {
+        border-color: #ffffffff;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffc107' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
 
-        /* Announcement strip */
-        .announcement-strip {
-          width: 100%;
-          background: #ffc107;
-          color: #000;
-          padding: 8px 0;
-          overflow: hidden;
-          position: relative;
-          z-index: 1031;
-          text-align: center;
-        }
-        .announcement-text {
-          display: inline-block;
-          white-space: nowrap;
-          padding-left: 100%;
-          animation: scroll-left 15s linear infinite;
-        }
-        @keyframes scroll-left {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-100%); }
-        }
+      /* Announcement strip */
+      .announcement-strip {
+        width: 100%;
+        background: #ffc107;
+        color: #000;
+        padding: 8px 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 1031;
+        text-align: center;
+      }
+      .announcement-text {
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 100%;
+        animation: scroll-left 15s linear infinite;
+      }
+      @keyframes scroll-left {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+      }
 
-        /* Navbar */
-        .navbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 9999;
-          transition: top 0.3s ease;
-        }
-        .navbar.navbar-scrolled {
-          top: 0;
-        }
+      /* Navbar */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        transition: top 0.3s ease;
+      }
+      .navbar.navbar-scrolled {
+        top: 0;
+      }
 
-        /* Collapse */
-        .navbar-collapse {
-          overflow: hidden;
-          transition: height 0.35s ease;
-        }
+      /* Collapse */
+      .navbar-collapse {
+        overflow: hidden;
+        transition: height 0.35s ease;
+      }
 
-        /* Back to top */
-        #btn-back-to-top {
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          display: none;
-          z-index: 9999;
-        }
-        #btn-back-to-top.show {
-          display: block;
-        }
-      `}</style>
+      /* Back to top */
+      #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index: 9999;
+      }
+      #btn-back-to-top.show {
+        display: block;
+      }
+    `,
+  }}
+/>
+
 
       {/* ============ ANNOUNCEMENT STRIP ============ */}
   

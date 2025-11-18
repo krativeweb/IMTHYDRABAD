@@ -1,0 +1,97 @@
+"use client";
+
+import { useEffect } from "react";
+import Script from "next/script";
+export default function BannerSlider() {
+
+
+  return (
+    <div className="banner-slider slick-arrows-style1" id="admission">
+      <div className="banner-slide">
+        <img
+          src="/admission/images/hero.jpg"
+          alt=""
+          width="100%"
+          height={966}
+          className="img-fluid"
+          style={{ objectFit: "cover", height: "140vh" }}
+        />
+
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(1, 3, 28, 0.53)",
+            zIndex: 0,
+          }}
+        ></div>
+
+        <div className="banner-caption">
+          <div className="info mb-4 custom-margin">
+           <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .custom-margin {
+        margin-top: 0%;
+      }
+      @media (max-width: 576px) {
+        .custom-margin {
+          margin-top: 105px !important;
+        }
+      }
+    `,
+  }}
+/>
+
+
+            <div className="container">
+              <div className="row align-items-center">
+                {/* Left Column */}
+                <div className="col-lg-8 col-md-12 d-block">
+                  <div className="banner-text_1 ttm-textcolor-white text-start res-1199-mt-0 pt-4">
+                    <div className="mb-15">
+                      <h1
+                        className="slideInUp animated"
+                        style={{ fontSize: "3rem" }}
+                      >
+                        <span className="text-warning">
+                          IMT Hyderabad Admissions 2026
+                        </span>
+                      </h1>
+                      <p style={{ fontSize: "1.6rem" }}>
+                        Applications Open for Two-Year PGDM Program
+                      </p>
+                      <a
+                        href="https://admissions.imt.edu/login.htm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-warning mt-3 py-3 px-3 rounded-pill border-white"
+                      >
+                        Candidate Login
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column: Form */}
+                <div className="col-lg-4 col-md-12" id="form">
+                  <div className="bg-white rounded shadow">
+                    {/* <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/imthyderabad/ee-form-widget/form-1/widget.js"></script> */}
+                    <div id="ee-form-1"></div>
+                    <Script
+                      src="https://eequeuestorage.blob.core.windows.net/staticfiles/imthyderabad/ee-form-widget/form-1/widget.js"
+                      strategy="beforeInteractive"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -488,7 +488,9 @@ export default function CorporateConnect() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Faculty Hero */
         .faculty-hero {
           background: url('/media/banners/programs.webp');
@@ -583,10 +585,13 @@ export default function CorporateConnect() {
             padding-right: 0.5rem !important;
           }
         }
-            .mx-1 {
+
+        .mx-1 {
           margin-top: 10px;
         }
-      `}</style>
+      `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -594,7 +599,7 @@ export default function CorporateConnect() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -604,25 +609,38 @@ export default function CorporateConnect() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/programs.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Corporate Connect</h2>
-          <p className="text-white">Building bridges between academia and industry. <br />
-Our corporate connect programs foster collaboration, mentorship, and practical exposure for future-ready management professionals.</p>
+          <p className="text-white">
+            Building bridges between academia and industry. <br />
+            Our corporate connect programs foster collaboration, mentorship, and
+            practical exposure for future-ready management professionals.
+          </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link style={{ textDecoration: 'none' }} href="/" className="text-white fw-bold">
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    href="/"
+                    className="text-white fw-bold"
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Corporate Connect
                 </li>
               </ol>
@@ -634,12 +652,23 @@ Our corporate connect programs foster collaboration, mentorship, and practical e
       {/* Corporate Connect Section */}
       <section id="Corporate-Connect" className="py-5 faculty-tabs">
         <div className="container">
-          <h2 className="section-title text-center mb-4" style={{ color: '#08317a' }} data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="section-title text-center mb-4"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Corporate Connect
           </h2>
 
           {/* Tabs Navigation */}
-          <ul className="nav nav-pills justify-content-center mb-4" id="Corporate-ConnectTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+          <ul
+            className="nav nav-pills justify-content-center mb-4"
+            id="Corporate-ConnectTabs"
+            role="tablist"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <li className="nav-item mx-1" role="presentation">
               <button
                 className="nav-link active"
@@ -686,19 +715,38 @@ Our corporate connect programs foster collaboration, mentorship, and practical e
           <hr />
 
           {/* Tabs Content */}
-          <div className="tab-content card bg-light p-4" id="Corporate-ConnectTabsContent" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="tab-content card bg-light p-4"
+            id="Corporate-ConnectTabsContent"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             {/* Panel Discussion Tab */}
-            <div className="tab-pane fade show active" id="Panel" role="tabpanel" aria-labelledby="Panel-tab">
-              <h4 className="fw-semibold mb-4 text-center" style={{ color: '#08317a' }}>
+            <div
+              className="tab-pane fade show active"
+              id="Panel"
+              role="tabpanel"
+              aria-labelledby="Panel-tab"
+            >
+              <h4
+                className="fw-semibold mb-4 text-center"
+                style={{ color: "#08317a" }}
+              >
                 Panel Discussion
               </h4>
 
               {/* Inner Tabs Navigation */}
-              <ul className="nav nav-pills justify-content-center mb-4" id="flpInnerTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+              <ul
+                className="nav nav-pills justify-content-center mb-4"
+                id="flpInnerTabs"
+                role="tablist"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 {Object.keys(data.panelDiscussions).map((year, index) => (
                   <li className="nav-item mx-1" role="presentation" key={year}>
                     <button
-                      className={`nav-link ${index === 0 ? 'active' : ''}`}
+                      className={`nav-link ${index === 0 ? "active" : ""}`}
                       id={`flp-${year}-tab`}
                       data-bs-toggle="pill"
                       data-bs-target={`#flp-${year}`}
@@ -715,48 +763,70 @@ Our corporate connect programs foster collaboration, mentorship, and practical e
 
               {/* Inner Tabs Content */}
               <div className="tab-content" id="flpInnerTabsContent">
-                {Object.entries(data.panelDiscussions).map(([year, discussions], index) => (
-                  <div
-                    className={`tab-pane fade ${index === 0 ? 'show active' : ''}`}
-                    id={`flp-${year}`}
-                    role="tabpanel"
-                    aria-labelledby={`flp-${year}-tab`}
-                    key={year}
-                  >
-                    {discussions.map((discussion, idx) => (
-                      <div key={idx}>
-                        <h4 className="fw-semibold mb-4 text-center text-warning">{discussion.title}</h4>
-                        <div className="text-muted fw-semibold mb-2">Speakers</div>
-                        <ul className="list-group list-group-flush">
-                          {discussion.speakers.map((speaker, sIdx) => (
-                            <li className="list-group-item" key={sIdx}>
-                              {speaker}
-                            </li>
-                          ))}
-                        </ul>
-                        <div className="text-muted fw-semibold">
-                          <p>Date: {discussion.date}</p>
+                {Object.entries(data.panelDiscussions).map(
+                  ([year, discussions], index) => (
+                    <div
+                      className={`tab-pane fade ${
+                        index === 0 ? "show active" : ""
+                      }`}
+                      id={`flp-${year}`}
+                      role="tabpanel"
+                      aria-labelledby={`flp-${year}-tab`}
+                      key={year}
+                    >
+                      {discussions.map((discussion, idx) => (
+                        <div key={idx}>
+                          <h4 className="fw-semibold mb-4 text-center text-warning">
+                            {discussion.title}
+                          </h4>
+                          <div className="text-muted fw-semibold mb-2">
+                            Speakers
+                          </div>
+                          <ul className="list-group list-group-flush">
+                            {discussion.speakers.map((speaker, sIdx) => (
+                              <li className="list-group-item" key={sIdx}>
+                                {speaker}
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="text-muted fw-semibold">
+                            <p>Date: {discussion.date}</p>
+                          </div>
+                          {idx < discussions.length - 1 && <br />}
                         </div>
-                        {idx < discussions.length - 1 && <br />}
-                      </div>
-                    ))}
-                  </div>
-                ))}
+                      ))}
+                    </div>
+                  )
+                )}
               </div>
             </div>
 
             {/* Leadership Series Tab */}
-            <div className="tab-pane fade" id="firsttime" role="tabpanel" aria-labelledby="firsttime-tab">
-              <h4 className="fw-semibold mb-4 text-center" style={{ color: '#08317a' }}>
+            <div
+              className="tab-pane fade"
+              id="firsttime"
+              role="tabpanel"
+              aria-labelledby="firsttime-tab"
+            >
+              <h4
+                className="fw-semibold mb-4 text-center"
+                style={{ color: "#08317a" }}
+              >
                 Leadership Series
               </h4>
 
               {/* Inner Tabs Navigation */}
-              <ul className="nav nav-pills justify-content-center mb-4" id="leadershipTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+              <ul
+                className="nav nav-pills justify-content-center mb-4"
+                id="leadershipTabs"
+                role="tablist"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 {Object.keys(data.leadershipSeries).map((year, index) => (
                   <li className="nav-item mx-1" role="presentation" key={year}>
                     <button
-                      className={`nav-link ${index === 0 ? 'active' : ''}`}
+                      className={`nav-link ${index === 0 ? "active" : ""}`}
                       id={`menu-${year}-tab`}
                       data-bs-toggle="pill"
                       data-bs-target={`#menu-${year}`}
@@ -773,48 +843,70 @@ Our corporate connect programs foster collaboration, mentorship, and practical e
 
               {/* Inner Tabs Content */}
               <div className="tab-content" id="leadershipTabsContent">
-                {Object.entries(data.leadershipSeries).map(([year, series], index) => (
-                  <div
-                    className={`tab-pane fade ${index === 0 ? 'show active' : ''}`}
-                    id={`menu-${year}`}
-                    role="tabpanel"
-                    aria-labelledby={`menu-${year}-tab`}
-                    key={year}
-                  >
-                    {series.map((item, idx) => (
-                      <div key={idx}>
-                        <h4 className="fw-semibold mb-4 text-center text-warning">{item.title}</h4>
-                        <div className="text-muted fw-semibold mb-2">Speakers</div>
-                        <ul className="list-group list-group-flush">
-                          {item.speakers.map((speaker, sIdx) => (
-                            <li className="list-group-item" key={sIdx}>
-                              {speaker}
-                            </li>
-                          ))}
-                        </ul>
-                        <div className="text-muted fw-semibold">
-                          <p>Date: {item.date}</p>
+                {Object.entries(data.leadershipSeries).map(
+                  ([year, series], index) => (
+                    <div
+                      className={`tab-pane fade ${
+                        index === 0 ? "show active" : ""
+                      }`}
+                      id={`menu-${year}`}
+                      role="tabpanel"
+                      aria-labelledby={`menu-${year}-tab`}
+                      key={year}
+                    >
+                      {series.map((item, idx) => (
+                        <div key={idx}>
+                          <h4 className="fw-semibold mb-4 text-center text-warning">
+                            {item.title}
+                          </h4>
+                          <div className="text-muted fw-semibold mb-2">
+                            Speakers
+                          </div>
+                          <ul className="list-group list-group-flush">
+                            {item.speakers.map((speaker, sIdx) => (
+                              <li className="list-group-item" key={sIdx}>
+                                {speaker}
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="text-muted fw-semibold">
+                            <p>Date: {item.date}</p>
+                          </div>
+                          {idx < series.length - 1 && <br />}
                         </div>
-                        {idx < series.length - 1 && <br />}
-                      </div>
-                    ))}
-                  </div>
-                ))}
+                      ))}
+                    </div>
+                  )
+                )}
               </div>
             </div>
 
             {/* Guest Lectures Tab */}
-            <div className="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
-              <h4 className="fw-semibold mb-4 text-center" style={{ color: '#08317a' }}>
+            <div
+              className="tab-pane fade"
+              id="certificate"
+              role="tabpanel"
+              aria-labelledby="certificate-tab"
+            >
+              <h4
+                className="fw-semibold mb-4 text-center"
+                style={{ color: "#08317a" }}
+              >
                 Guest Lectures
               </h4>
 
               {/* Inner Tabs Navigation */}
-              <ul className="nav nav-pills justify-content-center mb-4" id="Guest-Tabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+              <ul
+                className="nav nav-pills justify-content-center mb-4"
+                id="Guest-Tabs"
+                role="tablist"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 {Object.keys(data.guestLectures).map((year, index) => (
                   <li className="nav-item mx-1" role="presentation" key={year}>
                     <button
-                      className={`nav-link ${index === 0 ? 'show active' : ''}`}
+                      className={`nav-link ${index === 0 ? "show active" : ""}`}
                       id={`date-${year}-tab`}
                       data-bs-toggle="pill"
                       data-bs-target={`#date-${year}`}
@@ -831,33 +923,41 @@ Our corporate connect programs foster collaboration, mentorship, and practical e
 
               {/* Inner Tabs Content */}
               <div className="tab-content" id="GuestTabsContent">
-                {Object.entries(data.guestLectures).map(([year, lectures], index) => (
-                  <div
-                    className={`tab-pane fade ${index === 0 ? 'show active' : ''}`}
-                    id={`date-${year}`}
-                    role="tabpanel"
-                    aria-labelledby={`date-${year}-tab`}
-                    key={year}
-                  >
-                    {lectures.map((lecture, idx) => (
-                      <div key={idx}>
-                        <h4 className="fw-semibold mb-4 text-center text-warning">{lecture.title}</h4>
-                        <div className="text-muted fw-semibold mb-2">Speakers</div>
-                        <ul className="list-group list-group-flush">
-                          {lecture.speakers.map((speaker, sIdx) => (
-                            <li className="list-group-item" key={sIdx}>
-                              {speaker}
-                            </li>
-                          ))}
-                        </ul>
-                        <div className="text-muted fw-semibold">
-                          <p>Date: {lecture.date}</p>
+                {Object.entries(data.guestLectures).map(
+                  ([year, lectures], index) => (
+                    <div
+                      className={`tab-pane fade ${
+                        index === 0 ? "show active" : ""
+                      }`}
+                      id={`date-${year}`}
+                      role="tabpanel"
+                      aria-labelledby={`date-${year}-tab`}
+                      key={year}
+                    >
+                      {lectures.map((lecture, idx) => (
+                        <div key={idx}>
+                          <h4 className="fw-semibold mb-4 text-center text-warning">
+                            {lecture.title}
+                          </h4>
+                          <div className="text-muted fw-semibold mb-2">
+                            Speakers
+                          </div>
+                          <ul className="list-group list-group-flush">
+                            {lecture.speakers.map((speaker, sIdx) => (
+                              <li className="list-group-item" key={sIdx}>
+                                {speaker}
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="text-muted fw-semibold">
+                            <p>Date: {lecture.date}</p>
+                          </div>
+                          {idx < lectures.length - 1 && <br />}
                         </div>
-                        {idx < lectures.length - 1 && <br />}
-                      </div>
-                    ))}
-                  </div>
-                ))}
+                      ))}
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>

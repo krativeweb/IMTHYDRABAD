@@ -1876,100 +1876,99 @@ export default function StudentExchangePage() {
       </section>
 
       {/* SCOPED STYLES */}
-      <style jsx global>{`
-        /* Gradient banner with subtle overlay */
-        .faculty-hero {
-          background: url("/media/std-ex/banner/international relations.jpg");
-          position: relative;
-          background-size: cover;
-          height: 50vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+     <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Gradient banner with subtle overlay */
+      .faculty-hero {
+        background: url("/media/std-ex/banner/international relations.jpg");
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Card styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Card styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Image glow & hover effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Image glow & hover effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Social icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Social icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000ff;
-        }
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
 
-        .nav-pills .nav-link.active {
-          background-color: var(--bs-warning) !important;
-          /* Bootstrap's built-in yellow */
-          color: var(--bs-dark) !important;
-          /* Dark text for contrast */
-        }
-        .scrollable-columns {
-          max-height: 400px;
-          /* fixed visible height */
-          overflow-y: auto;
-          /* enable vertical scroll */
-          column-count: 2;
-          /* number of columns */
-          column-gap: 1rem;
-          /* space between columns */
-          padding-right: 10px;
-        }
+      .nav-pills .nav-link.active {
+        background-color: var(--bs-warning) !important;
+        color: var(--bs-dark) !important;
+      }
 
-        .scrollable-columns .nav-link {
-          display: inline-block;
-          /* ensures proper column layout */
-          width: 100%;
-          margin-bottom: 0.5rem;
-        }
-      `}</style>
+      .scrollable-columns {
+        max-height: 400px;
+        overflow-y: auto;
+        column-count: 2;
+        column-gap: 1rem;
+        padding-right: 10px;
+      }
+
+      .scrollable-columns .nav-link {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    `,
+  }}
+/>
+
     </>
   );
 }

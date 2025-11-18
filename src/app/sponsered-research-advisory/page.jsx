@@ -218,55 +218,60 @@ Our sponsored research initiatives address real-world challenges through industr
     
 
       {/* === CSS (Scoped with <style jsx>) === */}
-      <style jsx>{`
-        /* Hero Section */
-        .faculty-hero {
-          position: relative;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
+    <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Hero Section */
+      .faculty-hero {
+        position: relative;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Tabs Styling */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #08317a;
+        margin: 0 10px;
+        transition: all 0.3s;
+        padding: 10px 25px;
+        font-size: 1rem;
+      }
+
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #000 !important;
+      }
+
+      /* Card */
+      .card {
+        border-radius: 1rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
         .hero-content {
-          position: relative;
-          z-index: 2;
+          margin-top: 100px !important;
         }
+        .nav-pills .nav-link {
+          margin: 5px !important;
+          font-size: 0.9rem;
+          padding: 8px 16px;
+        }
+      }
+    `,
+  }}
+/>
 
-        /* Tabs Styling */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #08317a;
-          margin: 0 10px;
-          transition: all 0.3s;
-          padding: 10px 25px;
-          font-size: 1rem;
-        }
-
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107 !important;
-          color: #000 !important;
-        }
-
-        /* Card */
-        .card {
-          border-radius: 1rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-          .hero-content {
-            margin-top: 100px !important;
-          }
-          .nav-pills .nav-link {
-            margin: 5px !important;
-            font-size: 0.9rem;
-            padding: 8px 16px;
-          }
-        }
-      `}</style>
     </div>
   );
 };

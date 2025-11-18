@@ -151,7 +151,9 @@ export default function EDPConducted() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Faculty Hero */
         .faculty-hero {
           background: url('/media/hero.webp');
@@ -237,7 +239,9 @@ export default function EDPConducted() {
           background-color: #e0a800;
           border-color: #e0a800;
         }
-      `}</style>
+      `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -245,7 +249,7 @@ export default function EDPConducted() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -255,28 +259,40 @@ export default function EDPConducted() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/hero.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
             EDP Conducted
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi illum <br /> facere fuga eaque ducimus, praesentium in distinctio
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            animi illum <br /> facere fuga eaque ducimus, praesentium in
+            distinctio
           </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   EDP Conducted
                 </li>
               </ol>
@@ -329,7 +345,7 @@ export default function EDPConducted() {
                     ))}
                   </select>
                 </div>
-                <div className="col-md-2" style={{ marginTop: '30px' }}>
+                <div className="col-md-2" style={{ marginTop: "30px" }}>
                   <button
                     className="bg-warning px-4 py-2 rounded-pill border-0"
                     onClick={handleSearch}
@@ -345,11 +361,18 @@ export default function EDPConducted() {
         {/* EDP Cards */}
         <div className="container mt-4">
           {filteredData.length === 0 ? (
-            <p className="text-center">No programs found for the selected filters.</p>
+            <p className="text-center">
+              No programs found for the selected filters.
+            </p>
           ) : (
             <div className="row">
               {filteredData.map((program) => (
-                <div className="col-md-4 p-4 d-flex" key={program.id} data-aos="fade-up" data-aos-delay={program.id * 100}>
+                <div
+                  className="col-md-4 p-4 d-flex"
+                  key={program.id}
+                  data-aos="fade-up"
+                  data-aos-delay={program.id * 100}
+                >
                   <div className="card p-2 rounded-4 h-100">
                     <div className="card-body">
                       <div className="img">

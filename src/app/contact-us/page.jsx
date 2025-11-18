@@ -69,105 +69,111 @@ export default function ContactUs() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
-        /* Faculty Hero */
-        .faculty-hero {
-          background: url('/media/banners/contactus.webp');
-          position: relative;
-          background-size: cover;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url('/media/banners/contactus.webp');
+        position: relative;
+        background-size: cover;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Card styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Card styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Image glow & hover effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Image glow & hover effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Social icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #052349ff;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Social icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #052349ff;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Tabs (not used, included for consistency) */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000ff;
-        }
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
 
-        /* Form and card styling */
-        .card {
-          border-radius: 0.75rem;
+      /* Form & Card styling */
+      .card {
+        border-radius: 0.75rem;
+      }
+      .form-control.is-invalid {
+        border-color: #dc3545;
+      }
+      .invalid-feedback {
+        display: none;
+      }
+      .form-control.is-invalid ~ .invalid-feedback {
+        display: block;
+      }
+      .input-group-text {
+        background-color: #e9ecef;
+      }
+      .rounded-5 {
+        border-radius: 1.5rem !important;
+      }
+      .bi {
+        color: #08317a;
+      }
+      .bi:hover {
+        color: #ffc107;
+      }
+
+      @media (max-width: 580px) {
+        .btn-submit {
+          width: 100% !important;
         }
-        .form-control.is-invalid {
-          border-color: #dc3545;
-        }
-        .invalid-feedback {
-          display: none;
-        }
-        .form-control.is-invalid ~ .invalid-feedback {
-          display: block;
-        }
-        .input-group-text {
-          background-color: #e9ecef;
-        }
-        .rounded-5 {
-          border-radius: 1.5rem !important;
-        }
-        .bi {
-          color: #08317a;
-        }
-        .bi:hover {
-          color: #ffc107;
-        }
-          @media (max-width: 580px) {
-    .btn-submit {
-      width: 100% !important;
-    }
-      `}</style>
+      }
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>

@@ -372,133 +372,138 @@ export default function Committees() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
-        /* Faculty Hero */
-        .faculty-hero {
-          background: url('/media/banners/faculty.webp');
-          position: relative;
-          background-size: cover;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url('/media/banners/faculty.webp');
+        position: relative;
+        background-size: cover;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Card styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Card styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Image glow & hover effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Image glow & hover effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Social icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Social icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Nav Pills */
-        .nav-pills .nav-link.active,
-        .nav-pills .show > .nav-link {
-          border-radius: 50rem !important;
-          background: #ffc107 !important;
-          color: #333 !important;
-          transition: all 0.3s !important;
-        }
-        .nav-pills .nav-link {
-          border-radius: 30px;
-          background-color: #e9ecef;
-          color: #333;
-        }
+      /* Nav Pills */
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        border-radius: 50rem !important;
+        background: #ffc107 !important;
+        color: #333 !important;
+        transition: all 0.3s !important;
+      }
+      .nav-pills .nav-link {
+        border-radius: 30px;
+        background-color: #e9ecef;
+        color: #333;
+      }
 
-        /* Owl Carousel */
-        .owl-carousel .item {
-          background: #ffffff;
-          padding: 30px;
-          border-radius: 8px;
-          text-align: center;
-          transition: transform 0.3s;
-        }
-        .owl-carousel .item:hover {
-          transform: translateY(-5px);
-        }
-        .owl-carousel .item img {
-          max-height: 80px;
-          object-fit: contain;
-        }
+      /* Owl Carousel */
+      .owl-carousel .item {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .owl-carousel .item:hover {
+        transform: translateY(-5px);
+      }
+      .owl-carousel .item img {
+        max-height: 80px;
+        object-fit: contain;
+      }
 
-        /* Custom Card */
-        .custom-card {
-          transition: background-color 0.3s ease, transform 0.3s ease;
-          cursor: pointer;
-        }
-        .custom-card:hover {
-          background-color: #ffc107;
-          border: 1px solid #03255f;
-          transform: translateY(-5px);
-        }
+      /* Custom Card */
+      .custom-card {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+      }
+      .custom-card:hover {
+        background-color: #ffc107;
+        border: 1px solid #03255f;
+        transform: translateY(-5px);
+      }
 
-        /* Table Styling */
-        .table-responsive {
-          margin-top: 1rem;
-        }
-        .table th,
-        .table td {
-          vertical-align: middle;
-        }
-        .thead-dark {
-          background-color: #08317a;
-          color: white;
-        }
-        .table-striped tbody tr:nth-of-type(odd) {
-          background-color: rgba(0, 0, 0, 0.05);
-        }
-        .table-hover tbody tr:hover {
-          background-color: rgba(0, 0, 0, 0.075);
-        }
-        .table-bordered {
-          border: 1px solid #dee2e6;
-        }
-        .table-bordered th,
-        .table-bordered td {
-          border: 1px solid #dee2e6;
-        }
-         .mx-1 {
-          margin-top: 10px;
-        }
-      `}</style>
+      /* Table Styling */
+      .table-responsive {
+        margin-top: 1rem;
+      }
+      .table th,
+      .table td {
+        vertical-align: middle;
+      }
+      .thead-dark {
+        background-color: #08317a;
+        color: white;
+      }
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+      .table-hover tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+      }
+      .table-bordered {
+        border: 1px solid #dee2e6;
+      }
+      .table-bordered th,
+      .table-bordered td {
+        border: 1px solid #dee2e6;
+      }
+
+      .mx-1 {
+        margin-top: 10px;
+      }
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -506,7 +511,7 @@ export default function Committees() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -516,25 +521,38 @@ export default function Committees() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/faculty.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Committees</h2>
-          <p className="text-white">Governed by transparency, guided by integrity. <br />
-Our committees ensure academic quality, accountability, and ethical decision-making across every function.</p>
+          <p className="text-white">
+            Governed by transparency, guided by integrity. <br />
+            Our committees ensure academic quality, accountability, and ethical
+            decision-making across every function.
+          </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link style={{ textDecoration: 'none' }} href="/" className="text-white fw-bold">
+                  <Link
+                    style={{ textDecoration: "none" }}
+                    href="/"
+                    className="text-white fw-bold"
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Committees
                 </li>
               </ol>
@@ -546,12 +564,23 @@ Our committees ensure academic quality, accountability, and ethical decision-mak
       {/* Committees Section */}
       <section id="committees" className="py-5">
         <div className="container">
-          <h2 className="section-title text-center mb-4" style={{ color: '#08317a' }} data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="section-title text-center mb-4"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Committees
           </h2>
 
           {/* Tabs Navigation */}
-          <ul className="nav nav-pills justify-content-center mb-4" id="CommitteesTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+          <ul
+            className="nav nav-pills justify-content-center mb-4"
+            id="CommitteesTabs"
+            role="tablist"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <li className="nav-item mx-1" role="presentation">
               <button
                 className="nav-link active"
@@ -612,15 +641,34 @@ Our committees ensure academic quality, accountability, and ethical decision-mak
           <hr />
 
           {/* Tabs Content */}
-          <div className="tab-content card bg-light p-4" id="CommitteesTabsContent" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="tab-content card bg-light p-4"
+            id="CommitteesTabsContent"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             {/* Anti-Ragging */}
-            <div className="tab-pane fade show active" id="long" role="tabpanel" aria-labelledby="long-tab">
-              <h4 className="fw-semibold mb-4 text-center" style={{ color: '#08317a' }}>
+            <div
+              className="tab-pane fade show active"
+              id="long"
+              role="tabpanel"
+              aria-labelledby="long-tab"
+            >
+              <h4
+                className="fw-semibold mb-4 text-center"
+                style={{ color: "#08317a" }}
+              >
                 Anti-Ragging
               </h4>
 
               {/* Inner Tabs Navigation */}
-              <ul className="nav nav-pills justify-content-center mb-4" id="flpInnerTabs" role="tablist" data-aos="zoom-in" data-aos-delay="200">
+              <ul
+                className="nav nav-pills justify-content-center mb-4"
+                id="flpInnerTabs"
+                role="tablist"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 <li className="nav-item mx-1" role="presentation">
                   <button
                     className="nav-link active"
@@ -654,87 +702,125 @@ Our committees ensure academic quality, accountability, and ethical decision-mak
               {/* Inner Tabs Content */}
               <div className="tab-content" id="flpInnerTabsContent">
                 {/* Policy */}
-                <div className="tab-pane fade show active" id="flp-overview" role="tabpanel" aria-labelledby="flp-overview-tab">
-                  <div dangerouslySetInnerHTML={{ __html: committeeData.antiRagging.policy.content }} />
+                <div
+                  className="tab-pane fade show active"
+                  id="flp-overview"
+                  role="tabpanel"
+                  aria-labelledby="flp-overview-tab"
+                >
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: committeeData.antiRagging.policy.content,
+                    }}
+                  />
                 </div>
 
                 {/* Committee */}
-                <div className="tab-pane fade" id="flp-objectives" role="tabpanel" aria-labelledby="flp-objectives-tab">
+                <div
+                  className="tab-pane fade"
+                  id="flp-objectives"
+                  role="tabpanel"
+                  aria-labelledby="flp-objectives-tab"
+                >
                   <div className="container">
                     <div className="table-responsive">
                       <table className="table table-bordered">
                         <thead className="thead-dark">
                           <tr>
-                            <th scope="col" style={{ width: '10%' }}>
+                            <th scope="col" style={{ width: "10%" }}>
                               Sno.
                             </th>
                             <th scope="col">Name of the Committee Member</th>
                             <th scope="col">Designation</th>
-                            <th scope="col" style={{ width: '15%' }}>
+                            <th scope="col" style={{ width: "15%" }}>
                               Phone No.
                             </th>
-                            <th scope="col" style={{ width: '15%' }}>
+                            <th scope="col" style={{ width: "15%" }}>
                               Landline No.
                             </th>
                           </tr>
                         </thead>
                         <tbody>
-                          {committeeData.antiRagging.committee.members.map((member) => (
-                            <tr key={member.sno}>
-                              <td>{member.sno}</td>
-                              <td>{member.name}</td>
-                              <td>{member.designation}</td>
-                              <td>{member.phone}</td>
-                              <td>{member.landline}</td>
-                            </tr>
-                          ))}
+                          {committeeData.antiRagging.committee.members.map(
+                            (member) => (
+                              <tr key={member.sno}>
+                                <td>{member.sno}</td>
+                                <td>{member.name}</td>
+                                <td>{member.designation}</td>
+                                <td>{member.phone}</td>
+                                <td>{member.landline}</td>
+                              </tr>
+                            )
+                          )}
                         </tbody>
                       </table>
                     </div>
-                    <div className="mt-4" dangerouslySetInnerHTML={{ __html: committeeData.antiRagging.committee.responsibilities }} />
+                    <div
+                      className="mt-4"
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          committeeData.antiRagging.committee.responsibilities,
+                      }}
+                    />
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Internal Complaints Committee */}
-            <div className="tab-pane fade" id="firsttime" role="tabpanel" aria-labelledby="firsttime-tab">
+            <div
+              className="tab-pane fade"
+              id="firsttime"
+              role="tabpanel"
+              aria-labelledby="firsttime-tab"
+            >
               <div className="container mt-4">
-                <h4 className="fw-semibold mt-4 mb-3 text-center" style={{ color: '#08317a' }}>
+                <h4
+                  className="fw-semibold mt-4 mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
                   Internal Complaints Committee
                 </h4>
-                <div dangerouslySetInnerHTML={{ __html: committeeData.internalComplaints.content }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: committeeData.internalComplaints.content,
+                  }}
+                />
                 <div className="table-responsive mt-4">
                   <table className="table table-striped table-bordered">
                     <thead className="table">
                       <tr>
-                        <th scope="col" style={{ width: '5%' }}>
+                        <th scope="col" style={{ width: "5%" }}>
                           Sno.
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Name of the Committee Member
                         </th>
-                        <th scope="col" style={{ width: '20%' }}>
+                        <th scope="col" style={{ width: "20%" }}>
                           Profession
                         </th>
-                        <th scope="col" style={{ width: '15%' }}>
+                        <th scope="col" style={{ width: "15%" }}>
                           Phone
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Address
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      {committeeData.internalComplaints.members.map((member) => (
-                        <tr key={member.sno}>
-                          <td>{member.sno}</td>
-                          <td dangerouslySetInnerHTML={{ __html: member.name }} />
-                          <td>{member.profession}</td>
-                          <td>{member.phone}</td>
-                          <td>{member.address}</td>
-                        </tr>
-                      ))}
+                      {committeeData.internalComplaints.members.map(
+                        (member) => (
+                          <tr key={member.sno}>
+                            <td>{member.sno}</td>
+                            <td
+                              dangerouslySetInnerHTML={{ __html: member.name }}
+                            />
+                            <td>{member.profession}</td>
+                            <td>{member.phone}</td>
+                            <td>{member.address}</td>
+                          </tr>
+                        )
+                      )}
                     </tbody>
                   </table>
                 </div>
@@ -742,43 +828,71 @@ Our committees ensure academic quality, accountability, and ethical decision-mak
             </div>
 
             {/* Grievance Redressal Committee */}
-            <div className="tab-pane fade" id="Grievance" role="tabpanel" aria-labelledby="Grievance-tab">
+            <div
+              className="tab-pane fade"
+              id="Grievance"
+              role="tabpanel"
+              aria-labelledby="Grievance-tab"
+            >
               <div className="container mt-4">
-                <h4 className="fw-semibold mt-4 mb-3 text-center" style={{ color: '#08317a' }}>
+                <h4
+                  className="fw-semibold mt-4 mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
                   Grievance Redressal Committee
                 </h4>
-                <div dangerouslySetInnerHTML={{ __html: committeeData.grievanceRedressal.content }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: committeeData.grievanceRedressal.content,
+                  }}
+                />
                 <div className="table-responsive mt-4">
                   <table className="table table-hover table-bordered">
                     <thead className="table">
                       <tr>
-                        <th scope="col" className="text-center" style={{ width: '5%' }}>
+                        <th
+                          scope="col"
+                          className="text-center"
+                          style={{ width: "5%" }}
+                        >
                           Sno.
                         </th>
-                        <th scope="col" style={{ width: '35%' }}>
+                        <th scope="col" style={{ width: "35%" }}>
                           Name of the Committee Member
                         </th>
-                        <th scope="col" className="text-center" style={{ width: '15%' }}>
+                        <th
+                          scope="col"
+                          className="text-center"
+                          style={{ width: "15%" }}
+                        >
                           Profession
                         </th>
-                        <th scope="col" className="text-center" style={{ width: '15%' }}>
+                        <th
+                          scope="col"
+                          className="text-center"
+                          style={{ width: "15%" }}
+                        >
                           Phone No.
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Address
                         </th>
                       </tr>
                     </thead>
                     <tbody>
-                      {committeeData.grievanceRedressal.members.map((member) => (
-                        <tr key={member.sno}>
-                          <td className="text-center">{member.sno}</td>
-                          <td dangerouslySetInnerHTML={{ __html: member.name }} />
-                          <td className="text-center">{member.profession}</td>
-                          <td className="text-center">{member.phone}</td>
-                          <td>{member.address}</td>
-                        </tr>
-                      ))}
+                      {committeeData.grievanceRedressal.members.map(
+                        (member) => (
+                          <tr key={member.sno}>
+                            <td className="text-center">{member.sno}</td>
+                            <td
+                              dangerouslySetInnerHTML={{ __html: member.name }}
+                            />
+                            <td className="text-center">{member.profession}</td>
+                            <td className="text-center">{member.phone}</td>
+                            <td>{member.address}</td>
+                          </tr>
+                        )
+                      )}
                     </tbody>
                   </table>
                 </div>
@@ -786,23 +900,35 @@ Our committees ensure academic quality, accountability, and ethical decision-mak
             </div>
 
             {/* Anti Drug Committee */}
-            <div className="tab-pane fade" id="Anti" role="tabpanel" aria-labelledby="Anti-tab">
+            <div
+              className="tab-pane fade"
+              id="Anti"
+              role="tabpanel"
+              aria-labelledby="Anti-tab"
+            >
               <div className="container mt-4">
-                <h4 className="fw-semibold mt-4 mb-3 text-center" style={{ color: '#08317a' }}>
+                <h4
+                  className="fw-semibold mt-4 mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
                   Anti Drug Committee
                 </h4>
-                <div dangerouslySetInnerHTML={{ __html: committeeData.antiDrug.content }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: committeeData.antiDrug.content,
+                  }}
+                />
                 <div className="table-responsive">
                   <table className="table table-striped table-bordered">
                     <thead className="table">
                       <tr>
-                        <th scope="col" style={{ width: '10%' }}>
+                        <th scope="col" style={{ width: "10%" }}>
                           Sno.
                         </th>
-                        <th scope="col" style={{ width: '30%' }}>
+                        <th scope="col" style={{ width: "30%" }}>
                           Category
                         </th>
-                        <th scope="col" style={{ width: '60%' }}>
+                        <th scope="col" style={{ width: "60%" }}>
                           Name of the member
                         </th>
                       </tr>
@@ -841,8 +967,12 @@ Our committees ensure academic quality, accountability, and ethical decision-mak
       </section>
 
       {/* Placement Alliances Section */}
-      <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
-        <PlacementAlliances/>
+      <section
+        className="placement-alliances-section py-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <PlacementAlliances />
       </section>
     </>
   );

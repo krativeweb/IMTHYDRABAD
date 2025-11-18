@@ -292,81 +292,86 @@ Our Innovation Lab empowers students to experiment, prototype, and bring transfo
     </section>
 
       {/* === PRESERVE ALL ORIGINAL CSS === */}
-      <style jsx global>{`
-        /* Active tab yellow */
-        .nav-pills .nav-link.active {
-          background-color: var(--bs-warning) !important;
-          color: var(--bs-dark) !important;
-        }
+<style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Active tab yellow */
+      .nav-pills .nav-link.active {
+        background-color: var(--bs-warning) !important;
+        color: var(--bs-dark) !important;
+      }
 
-        /* Gradient banner with subtle overlay */
-        .faculty-hero {
-          background: url("./media/hero.jpg");
-          position: relative;
-          background-size: cover;
-          height: 50vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      /* Gradient banner with subtle overlay */
+      .faculty-hero {
+        background: url("./media/hero.jpg");
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Card styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Card styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Image glow & hover effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Image glow & hover effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Social icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Social icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000ff;
-        }
-      `}</style>
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
+    `,
+  }}
+/>
+
     </>
   );
 }

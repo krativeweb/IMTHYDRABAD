@@ -259,259 +259,148 @@ const IndustryRelevance = () => {
         </section>
       </section>
 
-      <style jsx>{`
-        .industry-relevance-page {
-          width: 100%;
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Makes ANY active tab (main or sub) turn yellow (bg-warning) */
+      .nav-pills .nav-link.active {
+        background-color: var(--bs-warning) !important;
+        color: var(--bs-dark) !important;
+      }
+
+      .scrollable-columns {
+        max-height: 400px;
+        overflow-y: auto;
+        column-count: 2;
+        column-gap: 1rem;
+        padding-right: 10px;
+      }
+
+      /* For screens wider than 1300px */
+      @media (min-width: 1300px) {
+        .scrollable-columns {
+          max-height: 580px;
         }
+      }
 
-        .faculty-section {
-          width: 100%;
-        }
+      .scrollable-columns .nav-link {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
 
-        /* Hero Banner */
-        .faculty-hero {
-          background: url("/media/banners/industryrelevance.webp") no-repeat
-            center center;
-          background-size: cover;
-          height: 60vh;
-          position: relative;
-        }
+      .date-box {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .hero-overlay {
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-          z-index: 1;
-        }
+      /* Gradient banner with subtle overlay */
+      .faculty-hero {
+        background: url("/media/banners/aboutus.webp");
+        position: relative;
+        background-size: cover;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        .hero-content {
-          position: relative;
-          z-index: 2;
-          padding-top: 150px;
-        }
+      /* Card styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Breadcrumb */
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
+      /* Image glow & hover effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Section Styles */
-        .section-title {
-          font-size: 2rem;
-          font-weight: 700;
-          color: #08317a;
-          margin-bottom: 1.5rem;
-          position: relative;
-          padding-bottom: 0.5rem;
-        }
+      /* Social icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        .section-title::after {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 3px;
-          background: #ffc107;
-        }
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
 
-        .section-description {
-          max-width: 900px;
-          line-height: 1.8;
-          color: #333;
-          margin: 0 auto;
-        }
+      /* Limit height for the full tab area */
+      .tab-pane.fade.show.active.bg-white.p-4.rounded-4.text-black {
+        height: 80vh;
+        overflow: hidden;
+      }
 
-        /* Card Styles */
-        .card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Left side (tabs) */
+      .col-md-3.mb-3 {
+        max-height: 80vh;
+        overflow-y: auto;
+        padding-right: 8px;
+        border-right: 2px solid #eee;
+      }
 
-        .card-text {
-          line-height: 1.7;
-          color: #333;
-        }
+      /* Right side (content) */
+      .col-md-9 {
+        max-height: 80vh;
+        overflow-y: auto;
+        padding-left: 10px;
+      }
 
-        /* Image Styles */
-        .clipped-img-1 {
-          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-          height: 30vh;
-          object-fit: cover;
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
+      /* Optional: nice scrollbar */
+      .col-md-3.mb-3::-webkit-scrollbar,
+      .col-md-9::-webkit-scrollbar {
+        width: 6px;
+      }
+      .col-md-3.mb-3::-webkit-scrollbar-thumb,
+      .col-md-9::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 10px;
+      }
+    `,
+  }}
+/>
 
-        .clipped-img-1:hover,
-        .clipped-img-2:hover {
-          transform: scale(1.03);
-        }
-
-        .clipped-img-2 {
-          clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
-          height: 30vh;
-          object-fit: cover;
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-
-        .image-container-right {
-          text-align: end;
-        }
-
-        /* Social Icons (unused but included for future use) */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffff;
-          transition: all 0.3s;
-        }
-
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffff;
-          transform: translateY(-3px);
-        }
-
-        /* Tabs (unused but included for future use) */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000;
-        }
-
-        /* Rankings (unused but included for future use) */
-        .rankings-card {
-          background: #fff;
-          border-radius: 1rem;
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
-          padding: 1.75rem;
-          margin-bottom: 2rem;
-          border: 1px solid #e9ecef;
-        }
-
-        .ranking-header {
-          font-size: 1.3rem;
-          font-weight: 600;
-          color: #08317a;
-          margin: 1.5rem 0 0.75rem;
-          padding-bottom: 0.5rem;
-          border-bottom: 2px solid #eee;
-        }
-
-        .ranking-list li {
-          padding: 0.5rem 0;
-          font-size: 0.95rem;
-        }
-
-        .institution-rank {
-          font-weight: 700;
-          color: #ffc107;
-          min-width: 40px;
-          display: inline-block;
-        }
-
-        .section-bg {
-          background-color: #151f54;
-          padding: 3rem 0;
-          border-radius: 15px;
-          margin: 2rem 0;
-        }
-
-        .ranking-logo-card {
-          background: white;
-          border-radius: 12px;
-          border: 1px solid rgba(255, 255, 255, 0.15);
-          padding: 1.5rem;
-          transition: all 0.3s ease;
-          height: 100%;
-        }
-
-        .logo-container {
-          height: 120px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto;
-          max-width: 200px;
-        }
-
-        .logo-container img {
-          max-height: 100%;
-          max-width: 100%;
-          object-fit: contain;
-          filter: brightness(0.9);
-          transition: all 0.3s ease;
-        }
-
-        /* Mobile View Adjustments */
-        @media (max-width: 767px) {
-          .clipped-img-1,
-          .clipped-img-2 {
-            height: 20vh;
-            clip-path: none;
-            object-fit: cover;
-          }
-
-          .card.d-flex.flex-row,
-          .card.d-flex.flex-row-reverse {
-            flex-direction: column !important;
-            text-align: center;
-          }
-
-          .card .col-md-4,
-          .card .col-md-8 {
-            max-width: 100%;
-          }
-
-          .card .col-md-4 {
-            margin-bottom: 15px;
-          }
-
-          .image-container-right {
-            text-align: center;
-          }
-
-          .section-title {
-            font-size: 1.7rem;
-          }
-
-          .ranking-header {
-            font-size: 1.2rem;
-          }
-
-          .ranking-list li {
-            font-size: 0.9rem;
-          }
-
-          .logo-container {
-            height: 100px;
-          }
-        }
-
-        @media (max-width: 576px) {
-          .section-title {
-            font-size: 1.5rem;
-          }
-
-          .logo-container {
-            height: 80px;
-            max-width: 150px;
-          }
-        }
-      `}</style>
     </div>
   );
 };

@@ -18,8 +18,9 @@ export default function Rankings() {
             Top Business Schools Rankings
           </h2>
           <p className="text-white">
-           Recognized nationally for excellence and innovation. <br />
-Our consistent rankings reflect academic quality, strong outcomes, and our growing reputation in management education.
+            Recognized nationally for excellence and innovation. <br />
+            Our consistent rankings reflect academic quality, strong outcomes,
+            and our growing reputation in management education.
           </p>
         </div>
 
@@ -227,10 +228,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
-                  <img
-                    src="/media/acc/r-nirf.png"
-                    alt="NIRF Ranking"
-                  />
+                  <img src="/media/acc/r-nirf.png" alt="NIRF Ranking" />
                 </div>
                 <div className="logo-title-dark">
                   National Institutional Ranking Framework
@@ -242,10 +240,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
-                  <img
-                    src="/media/acc/r-ew.png"
-                    alt="Education World"
-                  />
+                  <img src="/media/acc/r-ew.png" alt="Education World" />
                 </div>
                 <div className="logo-title-dark">Education World Rankings</div>
               </div>
@@ -255,10 +250,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
-                  <img
-                    src="/media/acc/r-bw.png"
-                    alt="Business World"
-                  />
+                  <img src="/media/acc/r-bw.png" alt="Business World" />
                 </div>
                 <div className="logo-title-dark">Businessworld Rankings</div>
               </div>
@@ -268,10 +260,7 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className="ranking-logo-card text-center">
                 <div className="logo-container">
-                  <img
-                    src="/media/acc/r-360.png"
-                    alt="Careers 360"
-                  />
+                  <img src="/media/acc/r-360.png" alt="Careers 360" />
                 </div>
                 <div className="logo-title-dark">Careers 360 Rankings</div>
               </div>
@@ -281,200 +270,198 @@ Our consistent rankings reflect academic quality, strong outcomes, and our growi
       </section>
 
       {/* === ORIGINAL CSS (No Truncation) === */}
-      <style jsx>{`
-        .faculty-hero {
-          background: url("./media/hero.webp");
-          position: relative;
-          background-size: cover;
-          height: 50vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      .faculty-hero {
+        background: url("./media/hero.webp");
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Card styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Image glow & hover effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Social icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000ff;
-        }
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
 
-        body {
-          color: #333;
-          line-height: 1.6;
-        }
+      body {
+        color: #333;
+        line-height: 1.6;
+      }
 
-        .section-title {
-          font-size: 2rem;
-          font-weight: 700;
-          color: var(--imt-primary);
-          margin-bottom: 1.5rem;
-          position: relative;
-          padding-bottom: 0.5rem;
-        }
+      .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--imt-primary);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
 
-        .section-title::after {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 3px;
-          background: var(--imt-secondary);
-        }
+      .section-title::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: var(--imt-secondary);
+      }
 
-        .rankings-card {
-          background: #fff;
-          border-radius: 1rem;
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
-          padding: 1.75rem;
-          margin-bottom: 2rem;
+      .rankings-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+        padding: 1.75rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e9ecef;
+      }
 
-          border: 1px solid #e9ecef;
-        }
+      .ranking-header {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--imt-primary);
+        margin: 1.5rem 0 0.75rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #eee;
+      }
 
-        .ranking-header {
-          font-size: 1.3rem;
-          font-weight: 600;
-          color: var(--imt-primary);
-          margin: 1.5rem 0 0.75rem;
-          padding-bottom: 0.5rem;
-          border-bottom: 2px solid #eee;
-        }
+      .ranking-list li {
+        padding: 0.5rem 0;
+        font-size: 0.95rem;
+      }
 
-        .ranking-list li {
-          padding: 0.5rem 0;
-          font-size: 0.95rem;
-        }
+      .institution-rank {
+        font-weight: 700;
+        color: var(--imt-secondary);
+        min-width: 40px;
+        display: inline-block;
+      }
 
-        .institution-rank {
-          font-weight: 700;
-          color: var(--imt-secondary);
-          min-width: 40px;
-          display: inline-block;
-        }
+      .section-bg {
+        background-color: #151f54;
+        padding: 3rem 0;
+        border-radius: 15px;
+        margin: 2rem 0;
+      }
 
-        .section-bg {
-          background-color: #151f54;
-          padding: 3rem 0;
-          border-radius: 15px;
-          margin: 2rem 0;
-        }
+      .ranking-logo-card {
+        background: white;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        height: 100%;
+      }
 
-        .ranking-logo-card {
-          background: white;
-          border-radius: 12px;
-          border: 1px solid rgba(255, 255, 255, 0.15);
-          padding: 1.5rem;
-          transition: all 0.3s ease;
-          height: 100%;
-        }
+      .logo-container {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 200px;
+      }
+
+      .logo-container img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        filter: brightness(0.9);
+        transition: all 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
         .logo-container {
-          height: 120px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto;
-          max-width: 200px;
+          height: 100px;
         }
-
-        .logo-container img {
-          max-height: 100%;
-          max-width: 100%;
-          object-fit: contain;
-          filter: brightness(0.9);
-          transition: all 0.3s ease;
+        .section-title {
+          font-size: 1.5rem;
         }
+      }
 
-        @media (max-width: 768px) {
-          .logo-container {
-            height: 100px;
-          }
-
-          .section-title {
-            font-size: 1.5rem;
-          }
+      @media (max-width: 576px) {
+        .logo-container {
+          height: 80px;
+          max-width: 150px;
         }
-
-        @media (max-width: 576px) {
-          .logo-container {
-            height: 80px;
-            max-width: 150px;
-          }
-
-          .section-title {
-            font-size: 1.3rem;
-          }
+        .section-title {
+          font-size: 1.3rem;
         }
+      }
 
-        @media (max-width: 768px) {
-          .section-title {
-            font-size: 1.7rem;
-          }
-          .ranking-header {
-            font-size: 1.2rem;
-          }
-          .ranking-list li {
-            font-size: 0.9rem;
-          }
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 1.7rem;
         }
+        .ranking-header {
+          font-size: 1.2rem;
+        }
+        .ranking-list li {
+          font-size: 0.9rem;
+        }
+      }
 
-        @media (max-width: 576px) {
-          .section-title {
-            font-size: 1.5rem;
-          }
+      @media (max-width: 576px) {
+        .section-title {
+          font-size: 1.5rem;
         }
-      `}</style>
+      }
+    `,
+        }}
+      />
     </>
   );
 }

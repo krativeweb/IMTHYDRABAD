@@ -160,80 +160,85 @@ const Nabard = () => {
         </section>
       </section>
 
-      <style jsx>{`
-        .faculty-hero {
-          background: url("/media/banners/nabard.jpg") no-repeat center center;
-          background-size: cover;
-          height: 60vh !important;
-          position: relative;
-        }
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .faculty-hero {
+        background: url("/media/banners/nabard.jpg") no-repeat center center;
+        background-size: cover;
+        height: 60vh !important;
+        position: relative;
+      }
 
-        .hero-overlay {
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.4);
-          z-index: 1;
-        }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
 
-        .hero-content {
-          position: relative;
-          z-index: 2;
-          padding-top: 150px;
-        }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        padding-top: 150px;
+      }
 
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
+      .breadcrumb {
+        background-color: rgb(22, 57, 119);
+      }
 
+      .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #08317a;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+
+      .section-title::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: #ffc107;
+      }
+
+      .section-description {
+        max-width: 900px;
+        line-height: 1.8;
+        color: #333;
+        margin: 0 auto;
+      }
+
+      .card {
+        background: #f8f9fa;
+        border-radius: 1.5rem;
+      }
+
+      .card ul {
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 767px) {
         .section-title {
-          font-size: 2rem;
-          font-weight: 700;
-          color: #08317a;
-          margin-bottom: 1.5rem;
-          position: relative;
-          padding-bottom: 0.5rem;
+          font-size: 1.6rem;
         }
+        .faculty-hero {
+          height: 40vh;
+        }
+      }
+    `,
+  }}
+/>
 
-        .section-title::after {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 3px;
-          background: #ffc107;
-        }
-
-        .section-description {
-          max-width: 900px;
-          line-height: 1.8;
-          color: #333;
-          margin: 0 auto;
-        }
-
-        .card {
-          background: #f8f9fa;
-          border-radius: 1.5rem;
-        }
-
-        .card ul {
-          padding-left: 1.5rem;
-          margin-top: 0.5rem;
-        }
-
-        .card ul li {
-          margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 767px) {
-          .section-title {
-            font-size: 1.6rem;
-          }
-          .faculty-hero {
-            height: 40vh;
-          }
-        }
-      `}</style>
     </div>
   );
 };

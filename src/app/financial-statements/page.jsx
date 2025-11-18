@@ -67,7 +67,9 @@ export default function FinancialStatements() {
 
   return (
     <>
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         .faculty-hero {
           background: url("/media/banners/aboutus.webp") center/cover no-repeat;
           position: relative;
@@ -100,7 +102,8 @@ export default function FinancialStatements() {
           background-color: #e0a800;
           color: #fff;
         }
-          .faculty-hero {
+
+        .faculty-hero {
           background: url("/media/banners/aboutus.webp") center/cover no-repeat;
           position: relative;
           height: 60vh;
@@ -167,27 +170,43 @@ export default function FinancialStatements() {
           border-radius: 30px;
           color: #333;
         }
-      `}</style>
+    `,
+        }}
+      />
 
       {/* ✅ Hero Section */}
       <section className="faculty-section">
-        <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
+        <div
+          className="faculty-hero text-center text-white py-5"
+          data-aos="fade-up"
+        >
           <h2 className="display-5 fw-bold mb-2">Financial Statements</h2>
           <p className="text-white">
-            Transparent and accountable governance through publicly available audited statements.
+            Transparent and accountable governance through publicly available
+            audited statements.
           </p>
         </div>
 
-        <div className="breadcrumb p-4" style={{ backgroundColor: "rgb(22, 57, 119)" }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: "none" }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Financial Statements
                 </li>
               </ol>
@@ -199,7 +218,12 @@ export default function FinancialStatements() {
       {/* ✅ Tabs Section */}
       <section className="py-5">
         <div className="container">
-          <ul className="nav nav-pills justify-content-center mb-4" id="financialTab" role="tablist" data-aos="zoom-in">
+          <ul
+            className="nav nav-pills justify-content-center mb-4"
+            id="financialTab"
+            role="tablist"
+            data-aos="zoom-in"
+          >
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link active fw-semibold"
@@ -232,7 +256,12 @@ export default function FinancialStatements() {
 
           <div className="tab-content" id="financialTabContent">
             {/* Income & Expenditure */}
-            <div className="tab-pane fade show active" id="income" role="tabpanel" data-aos="fade-up">
+            <div
+              className="tab-pane fade show active"
+              id="income"
+              role="tabpanel"
+              data-aos="fade-up"
+            >
               <div className="card shadow-sm p-4">
                 <div className="table-responsive mt-3">
                   <table className="table table-bordered text-center align-middle">
@@ -247,7 +276,11 @@ export default function FinancialStatements() {
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-sm" target="_blank">
+                            <Link
+                              href={item.link}
+                              className="btn btn-sm"
+                              target="_blank"
+                            >
                               Click Here
                             </Link>
                           </td>
@@ -260,7 +293,12 @@ export default function FinancialStatements() {
             </div>
 
             {/* Balance Sheet */}
-            <div className="tab-pane fade" id="balance" role="tabpanel" data-aos="fade-up">
+            <div
+              className="tab-pane fade"
+              id="balance"
+              role="tabpanel"
+              data-aos="fade-up"
+            >
               <div className="card shadow-sm p-4">
                 <div className="table-responsive mt-3">
                   <table className="table table-bordered text-center align-middle">
@@ -275,7 +313,11 @@ export default function FinancialStatements() {
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-sm" target="_blank">
+                            <Link
+                              href={item.link}
+                              className="btn btn-sm"
+                              target="_blank"
+                            >
                               Click Here
                             </Link>
                           </td>

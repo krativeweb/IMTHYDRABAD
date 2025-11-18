@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import PlacementsNavbar from '@/components/PlacementsNavbar';
 import NavbarTwo from './NavbarTwo.jsx/page'; // Adjust path if needed
-
+import NavbarFour from './NavbarFour';
 export default function NavbarWrapper() {
   const pathname = usePathname();
 
@@ -28,6 +28,12 @@ export default function NavbarWrapper() {
   if (isExecutiveEducationPage) {
     return <NavbarTwo />;
   }
+    const isPGDMPage = pathname === "/admission/pgdm";
+
+    // Priority: PGDM > Executive Education > Placements > Default
+    if (isPGDMPage) {
+      return null;
+    }
 
   if (isPlacementsPage) {
     return <PlacementsNavbar />;

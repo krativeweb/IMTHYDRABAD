@@ -50,7 +50,9 @@ export default function FacultyExchange() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Faculty Hero */
         .faculty-hero {
           background: url('/media/banners/internationalrelations.webp') !important;
@@ -118,7 +120,9 @@ export default function FacultyExchange() {
           background: #ffc107 !important;
           color: #000000 !important;
         }
-      `}</style>
+    `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -126,7 +130,7 @@ export default function FacultyExchange() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -136,48 +140,64 @@ export default function FacultyExchange() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/internationalrelations.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
             Faculty Exchange
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-           Capturing moments of learning, leadership, and life. <br />
-Our gallery reflects the vibrancy, energy, and achievements of our academic journey.
+            Capturing moments of learning, leadership, and life. <br />
+            Our gallery reflects the vibrancy, energy, and achievements of our
+            academic journey.
           </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Faculty Exchange
                 </li>
               </ol>
             </nav>
           </div>
         </div>
-<InternationalAssociationStickyBtns/>
+        <InternationalAssociationStickyBtns />
         {/* Faculty Exchange Tabs */}
         <section>
-          <nav className="nav nav-pills justify-content-center flex-wrap gap-2 mt-5 mb-5" data-aos="zoom-in">
+          <nav
+            className="nav nav-pills justify-content-center flex-wrap gap-2 mt-5 mb-5"
+            data-aos="zoom-in"
+          >
             {facultyData.map((faculty) => (
               <Link
                 key={faculty.id}
-                className={`nav-link rounded-pill bg-white text-black ${faculty.id === 'ng' ? 'active' : ''}`}
+                className={`nav-link rounded-pill bg-white text-black ${
+                  faculty.id === "ng" ? "active" : ""
+                }`}
                 data-bs-toggle="tab"
                 href={`#tab-${faculty.id}`}
                 role="tab"
                 aria-controls={`tab-${faculty.id}`}
-                aria-selected={faculty.id === 'ng'}
+                aria-selected={faculty.id === "ng"}
               >
                 {faculty.name}
               </Link>
@@ -189,7 +209,9 @@ Our gallery reflects the vibrancy, energy, and achievements of our academic jour
             {facultyData.map((faculty, index) => (
               <div
                 key={faculty.id}
-                className={`tab-pane fade ${faculty.id === 'ng' ? 'show active' : ''} bg-white p-4 rounded-4 text-black mb-4`}
+                className={`tab-pane fade ${
+                  faculty.id === "ng" ? "show active" : ""
+                } bg-white p-4 rounded-4 text-black mb-4`}
                 id={`tab-${faculty.id}`}
                 role="tabpanel"
                 data-aos="fade-up"
@@ -204,12 +226,15 @@ Our gallery reflects the vibrancy, energy, and achievements of our academic jour
                         className="img-fluid rounded-start p-3 faculty-img"
                         width={300}
                         height={300}
-                        style={{ objectFit: 'cover' }}
+                        style={{ objectFit: "cover" }}
                       />
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
-                        <h5 className="card-title fw-bold" style={{ color: '#08317a' }}>
+                        <h5
+                          className="card-title fw-bold"
+                          style={{ color: "#08317a" }}
+                        >
                           {faculty.title}
                         </h5>
                         <br />

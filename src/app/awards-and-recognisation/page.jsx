@@ -17,7 +17,8 @@ export default function AwardsRecognitions() {
           <h2 className="display-5 fw-bold mb-2">Awards and Recognitions</h2>
           <p className="text-white">
             Excellence acknowledged, credibility earned. <br />
-Every award reflects our commitment to quality education, impactful research, and leadership that inspires trust.
+            Every award reflects our commitment to quality education, impactful
+            research, and leadership that inspires trust.
           </p>
         </div>
 
@@ -707,312 +708,206 @@ Every award reflects our commitment to quality education, impactful research, an
       </section>
 
       {/* === ALL ORIGINAL CSS === */}
-      <style jsx>{`
-
-      .faculty-hero h2{
-      margin-top: 150px;
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      .faculty-hero h2 {
+        margin-top: 150px;
       }
-        /* Tabs */
-        #offerings .nav-pills .nav-link {
-          border-radius: 999px;
-          padding: 0.6rem 1.2rem;
-          font-weight: 600;
-          color: #333;
-          background: #eaeaea;
-        }
-        #offerings .nav-pills .nav-link.active {
-          background: #314a7c;
-          color: #fff;
-        }
 
-        /* Short duration background */
-        #short {
-          padding: 30px 0;
-          border-radius: 12px;
-        }
+      #offerings .nav-pills .nav-link {
+        border-radius: 999px;
+        padding: 0.6rem 1.2rem;
+        font-weight: 600;
+        color: #333;
+        background: #eaeaea;
+      }
+      #offerings .nav-pills .nav-link.active {
+        background: #314a7c;
+        color: #fff;
+      }
 
-        /* Program cards */
+      #short {
+        padding: 30px 0;
+        border-radius: 12px;
+      }
+
+      .program-card {
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      .program-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+      }
+
+      .program-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .program-body {
+        padding: 20px;
+      }
+      .program-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: #000;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+      .program-body p {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        color: #1f2328;
+      }
+      .program-body strong {
+        color: #000;
+      }
+
+      .read-more-btn {
+        align-self: flex-start;
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+        border-radius: 25px;
+        padding: 8px 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+      }
+      .read-more-btn:hover {
+        background-color: #ffb400;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
         .program-card {
-          background-color: #fff;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-          transition: all 0.3s ease;
-          height: 100%;
+          margin-bottom: 20px;
         }
-        .program-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
-        }
+      }
 
-        /* Image */
-        .program-img {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-        }
+      .program-card {
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .program-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+      }
 
-        /* Body content */
-        .program-body {
-          padding: 20px;
-        }
-        .program-title {
-          font-weight: 600;
-          font-size: 1.05rem;
-          color: #000;
-          margin-bottom: 15px;
-          line-height: 1.4;
-        }
-        .program-body p {
-          margin-bottom: 8px;
-          font-size: 0.95rem;
-          color: #1f2328;
-        }
-        .program-body strong {
-          color: #000;
-        }
+      .program-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
 
-        /* Yellow button */
-        /* .program-btn {
-  background-color: #ffbf00ff;
-  color: #000;
-  border: none;
-  border-radius: 25px;
-  padding: 8px 20px;
-  font-weight: 600;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-.program-btn:hover {
-  background-color: #f4ab02ff;
-  cursor: pointer;
-} */
+      .program-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+      }
 
-        .read-more-btn {
-          align-self: flex-start;
-          background-color: #ffc107;
-          color: #000;
-          border: none;
-          border-radius: 25px;
-          padding: 8px 20px; /* <--- change padding for size */
-          font-size: 0.8rem; /* <--- change font size */
-          font-weight: 600;
-          margin-top: 10px;
-          transition: background-color 0.3s ease;
-        }
-        .read-more-btn:hover {
-          background-color: #ffb400;
-          cursor: pointer;
-        }
+      .program-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: #000;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-          .program-card {
-            margin-bottom: 20px;
-          }
-        }
+      .program-body p {
+        font-size: 0.95rem;
+        color: #1f2328;
+        margin-bottom: 0;
+      }
 
-        /* Ensure all cards are same height and consistent */
-        .program-card {
-          background-color: #fff;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-          transition: all 0.3s ease;
-          height: 100%; /* Let cards stretch to equal height */
-          display: flex; /* Flexbox layout for equal height body */
-          flex-direction: column;
-        }
-
-        /* Add hover animation */
-        .program-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
-        }
-
-        /* Image style (top section) */
+      @media (max-width: 768px) {
         .program-card img {
-          width: 100%;
-          height: 200px; /* Fixed height for all images */
-          object-fit: cover;
+          height: 180px;
         }
+      }
 
-        /* Card body (bottom section) */
-        .program-body {
-          flex-grow: 1; /* Let this fill remaining height */
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding: 20px;
-        }
+      .program-card {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .program-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+      }
 
-        /* Title and text */
-        .program-title {
-          font-weight: 600;
-          font-size: 1.05rem;
-          color: #000;
-          margin-bottom: 10px;
-          line-height: 1.4;
-        }
+      .program-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
 
-        .program-body p {
-          font-size: 0.95rem;
-          color: #1f2328;
-          margin-bottom: 0;
-        }
+      .program-body {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-        /* Responsive layout */
-        @media (max-width: 768px) {
-          .program-card img {
-            height: 180px;
-          }
-        }
-        /* Read More */
-        /* Card base */
-        .program-card {
-          background: #fff;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-          transition: all 0.3s ease;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-        .program-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
-        }
+      .program-text {
+        font-size: 0.95rem;
+        color: #1f2328;
+        line-height: 1.6;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        transition: all 0.3s ease;
+      }
+      .program-text.expanded {
+        -webkit-line-clamp: unset;
+        overflow: visible;
+      }
 
-        /* Image */
-        .program-img {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-        }
+      .read-more-btn {
+        align-self: flex-start;
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+        border-radius: 25px;
+        padding: 6px 14px;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+      }
+      .read-more-btn:hover {
+        background-color: #ffb400;
+        cursor: pointer;
+      }
 
-        /* Card body */
-        .program-body {
-          flex-grow: 1;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-        }
-
-        /* Title */
-        .program-title {
-          font-weight: 600;
-          font-size: 1.05rem;
-          color: #000;
-          margin-bottom: 10px;
-        }
-
-        /* Paragraph */
-        .program-text {
-          font-size: 0.95rem;
-          color: #1f2328;
-          line-height: 1.5;
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 4; /* Show only 4 lines */
-          -webkit-box-orient: vertical;
-          transition: all 0.3s ease;
-        }
-
-        /* Expanded state */
-        .program-text.expanded {
-          -webkit-line-clamp: unset;
-          overflow: visible;
-        }
-
-        /* Read more button */
-        .read-more-btn {
-          align-self: flex-start;
-          background-color: #ffc107;
-          color: #000;
-          border: none;
-          border-radius: 25px;
-          padding: 6px 14px;
-          font-weight: 600;
-          margin-top: 10px;
-          transition: background-color 0.3s ease;
-        }
-        .read-more-btn:hover {
-          background-color: #ffb400;
-          cursor: pointer;
-        }
-
-        /* Award for faculty */
-        /* Card layout */
-        .program-card {
-          background-color: #fff;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-          transition: all 0.3s ease;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-        .program-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
-        }
-
-        /* Image styling */
-        .program-img {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-        }
-
-        /* Body layout */
-        .program-body {
-          padding: 20px;
-          flex-grow: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-
-        /* Truncated text (3 lines) */
-        .program-text {
-          font-size: 0.95rem;
-          color: #1f2328;
-          line-height: 1.6;
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 3; /* Show only 3 lines */
-          -webkit-box-orient: vertical;
-          transition: all 0.3s ease;
-        }
-
-        /* Expanded text when user clicks */
-        .program-text.expanded {
-          -webkit-line-clamp: unset;
-          overflow: visible;
-        }
-
-        /* Read More button */
-        .read-more-btn {
-          align-self: flex-start;
-          background-color: #ffc107;
-          color: #000;
-          border: none;
-          border-radius: 25px;
-          padding: 6px 14px;
-          font-weight: 600;
-          margin-top: 10px;
-          transition: background-color 0.3s ease;
-        }
-        .read-more-btn:hover {
-          background-color: #ffb400;
-          cursor: pointer;
-        }
-              .mx-1 {
-          margin-top: 9px;
-        }
-      `}</style>
+      .mx-1 {
+        margin-top: 9px;
+      }
+    `,
+        }}
+      />
     </>
   );
 }

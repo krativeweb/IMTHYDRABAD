@@ -234,7 +234,9 @@ export default function ExecutiveEducation() {
   return (
     <>
       {/* Embedded CSS */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         /* Faculty Hero */
         .faculty-hero {
           background: url('/media/banners/executiveeducation.webp');
@@ -335,10 +337,13 @@ export default function ExecutiveEducation() {
           background-color: #151e54;
           color: #ffc107;
         }
-            .mx-1 {
+
+        .mx-1 {
           margin-top: 10px;
         }
-      `}</style>
+      `,
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -346,7 +351,7 @@ export default function ExecutiveEducation() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-TPXCPVN"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
 
@@ -356,31 +361,42 @@ export default function ExecutiveEducation() {
           className="faculty-hero text-center text-white py-5"
           style={{
             background: "url('/media/banners/executiveeducation.webp')",
-            position: 'relative',
-            backgroundSize: 'cover',
-            height: '60vh',
+            position: "relative",
+            backgroundSize: "cover",
+            height: "60vh",
           }}
         >
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
             Executive Education
           </h2>
           <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-             Empowering professionals to lead with confidence in a changing business facet.
-          <br/>
-Executive learning that blends strategy, leadership, and innovation. 
-this content in the subtext
+            Empowering professionals to lead with confidence in a changing
+            business facet.
+            <br />
+            Executive learning that blends strategy, leadership, and innovation.
+            this content in the subtext
           </p>
         </div>
-        <div className="breadcrumb p-4" style={{ backgroundColor: 'rgb(22, 57, 119)' }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold" style={{ textDecoration: 'none' }}>
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Executive Education
                 </li>
               </ol>
@@ -395,7 +411,7 @@ this content in the subtext
           <div className="card p-4">
             <h2
               className="section-title text-center"
-              style={{ color: '#08317a' }}
+              style={{ color: "#08317a" }}
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -404,16 +420,43 @@ this content in the subtext
             <div className="row justify-content-center mt-3">
               <div className="col-lg-12 text-justify">
                 <p className="mb-4">
-                  Executive Education has been and continues to be a valuable enterprise. There is a continued need for reskilling as the employment landscape and technology evolve. This reskilling reduces skill gaps and leads to improved ROI, employee satisfaction and retention, all of which cultivate company growth. There is a continuous need for working professionals to upgrade their qualifications to keep up with the industry’s growing skill demand driven by automation.
+                  Executive Education has been and continues to be a valuable
+                  enterprise. There is a continued need for reskilling as the
+                  employment landscape and technology evolve. This reskilling
+                  reduces skill gaps and leads to improved ROI, employee
+                  satisfaction and retention, all of which cultivate company
+                  growth. There is a continuous need for working professionals
+                  to upgrade their qualifications to keep up with the industry’s
+                  growing skill demand driven by automation.
                 </p>
                 <p className="mb-4">
-                  While the demand for digital workforce and technical skills in Big Data Analytics, Artificial Intelligence, and Internet of Things is going to rise, the demand for functional skills in negotiation, problem solving and assessment will also increase. The changing macro environment driven by the COVID pandemic calls for a more specialised approach, improvements to the quality of offerings, and the creation of relevant, robust programmes. We at <strong>IMT Hyderabad</strong> are conscious of this changing environment and have adopted online formats for greater flexibility and customization in our programme offerings.
+                  While the demand for digital workforce and technical skills in
+                  Big Data Analytics, Artificial Intelligence, and Internet of
+                  Things is going to rise, the demand for functional skills in
+                  negotiation, problem solving and assessment will also
+                  increase. The changing macro environment driven by the COVID
+                  pandemic calls for a more specialised approach, improvements
+                  to the quality of offerings, and the creation of relevant,
+                  robust programmes. We at <strong>IMT Hyderabad</strong> are
+                  conscious of this changing environment and have adopted online
+                  formats for greater flexibility and customization in our
+                  programme offerings.
                 </p>
                 <p className="mb-4">
-                  IMT Hyderabad designs and delivers open and customized, industry-relevant programs to address the training needs of working executives. Our Executive Education helps working executives acquire industry-relevant skills with a focus on imparting conceptual, technical, and people-management capabilities. Our rich portfolio of executive learning and development programs includes high-impact, solutions-oriented courses ranging from three days to eleven months in length.
+                  IMT Hyderabad designs and delivers open and customized,
+                  industry-relevant programs to address the training needs of
+                  working executives. Our Executive Education helps working
+                  executives acquire industry-relevant skills with a focus on
+                  imparting conceptual, technical, and people-management
+                  capabilities. Our rich portfolio of executive learning and
+                  development programs includes high-impact, solutions-oriented
+                  courses ranging from three days to eleven months in length.
                 </p>
                 <p>
-                  These programs are custom-designed to meet both organizational and individual development goals and are delivered using a pedagogical blend of case studies, videos, movies, simulation games, and lectures.
+                  These programs are custom-designed to meet both organizational
+                  and individual development goals and are delivered using a
+                  pedagogical blend of case studies, videos, movies, simulation
+                  games, and lectures.
                 </p>
               </div>
             </div>
@@ -422,217 +465,220 @@ this content in the subtext
       </section>
 
       {/* Recent Programs Section */}
-       <section
-      id="recent-programs"
-      className="py-5"
-      style={{ backgroundColor: "#151e54" }}
-    >
-      <div className="container" data-aos="fade-up" data-aos-delay="200">
-        <h2
-          className="text-center text-warning"
-          style={{ fontWeight: 700 }}
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          Recent Programs
-        </h2>
-        <p
-          className="text-center text-white"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          Explore our latest Executive Development and Leadership Workshops.
-        </p>
+      <section
+        id="recent-programs"
+        className="py-5"
+        style={{ backgroundColor: "#151e54" }}
+      >
+        <div className="container" data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="text-center text-warning"
+            style={{ fontWeight: 700 }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Recent Programs
+          </h2>
+          <p
+            className="text-center text-white"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Explore our latest Executive Development and Leadership Workshops.
+          </p>
 
-        <div className="row g-4 mt-3">
-          {recentPrograms.map((program, index) => (
-            <div
-              className="col-md-6 col-lg-4"
-              key={index}
-              data-aos="fade-up"
-              data-aos-delay={200 + index * 100}
-            >
-              <div className="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
-                <img
-                  src={program.image}
-                  className="card-img-top"
-                  alt={program.title}
-                  style={{ objectFit: "cover", height: "220px" }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">{program.title}</h5>
-                  <p className="mb-1">
-                    <strong>Company:</strong> {program.company}
-                  </p>
-                  <p className="mb-0">
-                    <strong>Program Director:</strong> {program.programDirector}
-                  </p>
+          <div className="row g-4 mt-3">
+            {recentPrograms.map((program, index) => (
+              <div
+                className="col-md-6 col-lg-4"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={200 + index * 100}
+              >
+                <div className="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                  <img
+                    src={program.image}
+                    className="card-img-top"
+                    alt={program.title}
+                    style={{ objectFit: "cover", height: "220px" }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title fw-bold">{program.title}</h5>
+                    <p className="mb-1">
+                      <strong>Company:</strong> {program.company}
+                    </p>
+                    <p className="mb-0">
+                      <strong>Program Director:</strong>{" "}
+                      {program.programDirector}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div
-          className="text-center mt-4"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <Link
-            href="/conferences-workshops"
-            className="btn btn-warning px-4 rounded-pill border-dark"
+          <div
+            className="text-center mt-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
           >
-            View All Programs
-          </Link>
+            <Link
+              href="/conferences-workshops"
+              className="btn btn-warning px-4 rounded-pill border-dark"
+            >
+              View All Programs
+            </Link>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* EDP Calendar Section */}
       <section id="calendar" className="py-4">
-  <div className="container" data-aos="fade-up" data-aos-delay="200">
-    <div className="card p-3">
-      <h2
-        className="section-title text-center mb-4"
-        style={{ color: '#08317a', fontWeight: 700 }}
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        EDP Calendar (July – December 2025)
-      </h2>
+        <div className="container" data-aos="fade-up" data-aos-delay="200">
+          <div className="card p-3">
+            <h2
+              className="section-title text-center mb-4"
+              style={{ color: "#08317a", fontWeight: 700 }}
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              EDP Calendar (July – December 2025)
+            </h2>
 
-      <div className="table-responsive shadow-sm rounded">
-        <table className="table table-bordered table-striped table-hover align-middle mb-0">
-          <thead className="table text-center">
-            <tr>
-              <th scope="col">Function</th>
-              <th scope="col">Programs</th>
-              <th scope="col">Program Director</th>
-              <th scope="col">Duration</th>
-              <th scope="col">Dates</th>
-              <th scope="col">Know More</th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              {
-                function: 'Marketing',
-                program: 'Customer Orientation and Sales Effectiveness',
-                director: 'Prof (Dr) Pranay Sindhu',
-                duration: '2 Days',
-                dates: '4 - 5 July’25',
-              },
-              {
-                function: 'Information Technology',
-                program: 'Block Chain Management',
-                director: 'Prof (Dr) R Mahesh',
-                duration: '3 Days',
-                dates: '17 - 19 July’25',
-              },
-              {
-                function: 'Operations',
-                program: 'The Science of Operations Management',
-                director: 'Prof (Dr) Kalyana C Chejarla',
-                duration: '4 Days',
-                dates: '25 - 26 July & 1 - 2 August’25',
-              },
-              {
-                function: 'Finance',
-                program: 'Business Valuation',
-                director: 'Prof (Dr) Nikhil Rastogi',
-                duration: '2 Days',
-                dates: '8 - 9 August’25',
-              },
-              {
-                function: 'Strategy',
-                program: 'Decision Making in Uncertain Environment',
-                director: 'Prof (Dr) Kalyana C Chejarla',
-                duration: '3 Days',
-                dates: '21 - 23 August’25',
-              },
-              {
-                function: 'Marketing',
-                program: 'Sales Management - Shaping Future Sales Leaders',
-                director: 'Prof Dhananjay Singh',
-                duration: '2 Days',
-                dates: '29 - 30 August’25',
-              },
-              {
-                function: 'Operations',
-                program: 'Lean Management and Process Improvement',
-                director: 'Prof (Dr) Kalyana C Chejarla',
-                duration: '3 Days',
-                dates: '11 - 13 September’25',
-              },
-              {
-                function: 'General Management',
-                program: 'Strategy and Leadership in VUCA World',
-                director: 'Prof (Dr) Romina Mathew',
-                duration: '5 Days',
-                dates: '23 - 27 September’25',
-              },
-              {
-                function: 'Finance',
-                program: 'Finance for Non-Finance Executives',
-                director: 'Prof (Dr) A Sarath Babu',
-                duration: '2 Days',
-                dates: '9 – 10 October’25',
-              },
-              {
-                function: 'Human Resource Management',
-                program: 'Leadership and Personal Effectiveness',
-                director: 'Prof (Dr) Romina Mathew',
-                duration: '2 Days',
-                dates: '23 – 24 October’25',
-              },
-              {
-                function: 'Finance',
-                program: 'Financial Modelling Using Excel',
-                director: 'Prof (Dr) VC Chakrapani',
-                duration: '2 Days',
-                dates: '14 - 15 November’25',
-              },
-              {
-                function: 'Human Resource Management',
-                program: 'Emotional Intelligence for Leadership Effectiveness',
-                director: 'Prof (Dr) Romina Mathew',
-                duration: '2 Days',
-                dates: '21 - 22 November’25',
-              },
-              {
-                function: 'Marketing',
-                program: 'Strategic Digital Marketing',
-                director: 'Prof (Dr) Pranay Sindhu',
-                duration: '3 Days',
-                dates: '3 - 5 December’25',
-              },
-              {
-                function: 'Human Resource Management',
-                program: 'Effective Communication for Managers and Leaders',
-                director: 'Prof (Dr) Romina Mathew',
-                duration: '3 Days',
-                dates: '22 - 24 December’25',
-              },
-            ].map((program, index) => (
-              <tr key={index}>
-                <td>{program.function}</td>
-                <td>{program.program}</td>
-                <td>{program.director}</td>
-                <td>{program.duration}</td>
-                <td>{program.dates}</td>
-                <td className="text-center">-</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
+            <div className="table-responsive shadow-sm rounded">
+              <table className="table table-bordered table-striped table-hover align-middle mb-0">
+                <thead className="table text-center">
+                  <tr>
+                    <th scope="col">Function</th>
+                    <th scope="col">Programs</th>
+                    <th scope="col">Program Director</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Dates</th>
+                    <th scope="col">Know More</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    {
+                      function: "Marketing",
+                      program: "Customer Orientation and Sales Effectiveness",
+                      director: "Prof (Dr) Pranay Sindhu",
+                      duration: "2 Days",
+                      dates: "4 - 5 July’25",
+                    },
+                    {
+                      function: "Information Technology",
+                      program: "Block Chain Management",
+                      director: "Prof (Dr) R Mahesh",
+                      duration: "3 Days",
+                      dates: "17 - 19 July’25",
+                    },
+                    {
+                      function: "Operations",
+                      program: "The Science of Operations Management",
+                      director: "Prof (Dr) Kalyana C Chejarla",
+                      duration: "4 Days",
+                      dates: "25 - 26 July & 1 - 2 August’25",
+                    },
+                    {
+                      function: "Finance",
+                      program: "Business Valuation",
+                      director: "Prof (Dr) Nikhil Rastogi",
+                      duration: "2 Days",
+                      dates: "8 - 9 August’25",
+                    },
+                    {
+                      function: "Strategy",
+                      program: "Decision Making in Uncertain Environment",
+                      director: "Prof (Dr) Kalyana C Chejarla",
+                      duration: "3 Days",
+                      dates: "21 - 23 August’25",
+                    },
+                    {
+                      function: "Marketing",
+                      program:
+                        "Sales Management - Shaping Future Sales Leaders",
+                      director: "Prof Dhananjay Singh",
+                      duration: "2 Days",
+                      dates: "29 - 30 August’25",
+                    },
+                    {
+                      function: "Operations",
+                      program: "Lean Management and Process Improvement",
+                      director: "Prof (Dr) Kalyana C Chejarla",
+                      duration: "3 Days",
+                      dates: "11 - 13 September’25",
+                    },
+                    {
+                      function: "General Management",
+                      program: "Strategy and Leadership in VUCA World",
+                      director: "Prof (Dr) Romina Mathew",
+                      duration: "5 Days",
+                      dates: "23 - 27 September’25",
+                    },
+                    {
+                      function: "Finance",
+                      program: "Finance for Non-Finance Executives",
+                      director: "Prof (Dr) A Sarath Babu",
+                      duration: "2 Days",
+                      dates: "9 – 10 October’25",
+                    },
+                    {
+                      function: "Human Resource Management",
+                      program: "Leadership and Personal Effectiveness",
+                      director: "Prof (Dr) Romina Mathew",
+                      duration: "2 Days",
+                      dates: "23 – 24 October’25",
+                    },
+                    {
+                      function: "Finance",
+                      program: "Financial Modelling Using Excel",
+                      director: "Prof (Dr) VC Chakrapani",
+                      duration: "2 Days",
+                      dates: "14 - 15 November’25",
+                    },
+                    {
+                      function: "Human Resource Management",
+                      program:
+                        "Emotional Intelligence for Leadership Effectiveness",
+                      director: "Prof (Dr) Romina Mathew",
+                      duration: "2 Days",
+                      dates: "21 - 22 November’25",
+                    },
+                    {
+                      function: "Marketing",
+                      program: "Strategic Digital Marketing",
+                      director: "Prof (Dr) Pranay Sindhu",
+                      duration: "3 Days",
+                      dates: "3 - 5 December’25",
+                    },
+                    {
+                      function: "Human Resource Management",
+                      program:
+                        "Effective Communication for Managers and Leaders",
+                      director: "Prof (Dr) Romina Mathew",
+                      duration: "3 Days",
+                      dates: "22 - 24 December’25",
+                    },
+                  ].map((program, index) => (
+                    <tr key={index}>
+                      <td>{program.function}</td>
+                      <td>{program.program}</td>
+                      <td>{program.director}</td>
+                      <td>{program.duration}</td>
+                      <td>{program.dates}</td>
+                      <td className="text-center">-</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Offerings Section */}
-          <section id="offering" className="py-5">
+      <section id="offering" className="py-5">
         <div className="container">
           <h2
             className="section-title text-center  mb-4"
@@ -1119,238 +1165,241 @@ this content in the subtext
               {/* /tab-content */}
             </div>
             {/* First Time Manager */}
-           {/* First Time Manager Program */}
-<div
-  className="tab-pane fade"
-  id="firsttime"
-  role="tabpanel"
-  aria-labelledby="firsttime-tab"
->
-  <h4 className="fw-semibold mt-4 mb-3 text-center">
-    First Time Manager Program
-  </h4>
-  <h6 className="text-center mb-4 text-warning">
-    Empowering Emerging Leaders for Managerial Success
-  </h6>
+            {/* First Time Manager Program */}
+            <div
+              className="tab-pane fade"
+              id="firsttime"
+              role="tabpanel"
+              aria-labelledby="firsttime-tab"
+            >
+              <h4 className="fw-semibold mt-4 mb-3 text-center">
+                First Time Manager Program
+              </h4>
+              <h6 className="text-center mb-4 text-warning">
+                Empowering Emerging Leaders for Managerial Success
+              </h6>
 
-  {/* Inner Tabs */}
-  <ul
-    className="nav nav-pills justify-content-center mb-4"
-    id="ftmInnerTabs"
-    role="tablist"
-  >
-    <li className="nav-item mx-1" role="presentation">
-      <button
-        className="nav-link active"
-        id="ftm-overview-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#ftm-overview"
-        type="button"
-        role="tab"
-        aria-controls="ftm-overview"
-        aria-selected="true"
-      >
-        Program Overview
-      </button>
-    </li>
-    <li className="nav-item mx-1" role="presentation">
-      <button
-        className="nav-link"
-        id="ftm-features-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#ftm-features"
-        type="button"
-        role="tab"
-        aria-controls="ftm-features"
-        aria-selected="false"
-      >
-        Key Features
-      </button>
-    </li>
-    <li className="nav-item mx-1" role="presentation">
-      <button
-        className="nav-link"
-        id="ftm-pedagogy-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#ftm-pedagogy"
-        type="button"
-        role="tab"
-        aria-controls="ftm-pedagogy"
-        aria-selected="false"
-      >
-        Pedagogy & Evaluation
-      </button>
-    </li>
-    <li className="nav-item mx-1" role="presentation">
-      <button
-        className="nav-link"
-        id="ftm-who-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#ftm-who"
-        type="button"
-        role="tab"
-        aria-controls="ftm-who"
-        aria-selected="false"
-      >
-        Who Should Attend
-      </button>
-    </li>
-    <li className="nav-item mx-1" role="presentation">
-      <button
-        className="nav-link"
-        id="ftm-contact-tab"
-        data-bs-toggle="pill"
-        data-bs-target="#ftm-contact"
-        type="button"
-        role="tab"
-        aria-controls="ftm-contact"
-        aria-selected="false"
-      >
-        Contact
-      </button>
-    </li>
-  </ul>
+              {/* Inner Tabs */}
+              <ul
+                className="nav nav-pills justify-content-center mb-4"
+                id="ftmInnerTabs"
+                role="tablist"
+              >
+                <li className="nav-item mx-1" role="presentation">
+                  <button
+                    className="nav-link active"
+                    id="ftm-overview-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#ftm-overview"
+                    type="button"
+                    role="tab"
+                    aria-controls="ftm-overview"
+                    aria-selected="true"
+                  >
+                    Program Overview
+                  </button>
+                </li>
+                <li className="nav-item mx-1" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="ftm-features-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#ftm-features"
+                    type="button"
+                    role="tab"
+                    aria-controls="ftm-features"
+                    aria-selected="false"
+                  >
+                    Key Features
+                  </button>
+                </li>
+                <li className="nav-item mx-1" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="ftm-pedagogy-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#ftm-pedagogy"
+                    type="button"
+                    role="tab"
+                    aria-controls="ftm-pedagogy"
+                    aria-selected="false"
+                  >
+                    Pedagogy & Evaluation
+                  </button>
+                </li>
+                <li className="nav-item mx-1" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="ftm-who-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#ftm-who"
+                    type="button"
+                    role="tab"
+                    aria-controls="ftm-who"
+                    aria-selected="false"
+                  >
+                    Who Should Attend
+                  </button>
+                </li>
+                <li className="nav-item mx-1" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="ftm-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#ftm-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="ftm-contact"
+                    aria-selected="false"
+                  >
+                    Contact
+                  </button>
+                </li>
+              </ul>
 
-  {/* Inner Tabs Content */}
-  <div className="tab-content" id="ftmInnerTabsContent">
-    {/* Overview */}
-    <div
-      className="tab-pane fade show active"
-      id="ftm-overview"
-      role="tabpanel"
-      aria-labelledby="ftm-overview-tab"
-    >
-      <p>
-        The <strong>First Time Manager Program</strong> by the Institute of
-        Management Technology, Hyderabad (IMT Hyderabad) is designed to prepare
-        professionals stepping into managerial roles for the first time. The
-        program bridges the gap between being an individual contributor and
-        becoming an effective team leader, equipping participants with the
-        essential skills, tools, and mindset needed to lead with confidence and
-        impact.
-      </p>
-      <p>
-        It focuses on helping current and aspiring managers develop core
-        leadership competencies essential for success in dynamic business
-        environments. Through an engaging blend of theory and practical
-        learning, participants gain insights into:
-      </p>
-      <ul>
-        <li>Ownership and Accountability</li>
-        <li>Planning and Prioritization</li>
-        <li>Finance for Non-Finance Professionals</li>
-        <li>Building Workplace Relationships</li>
-        <li>Conflict Management</li>
-        <li>Feedback and Communication</li>
-        <li>Driving Results</li>
-        <li>Presentation and People Management Skills</li>
-      </ul>
-      <p>
-        The program provides actionable frameworks and experiential learning to
-        strengthen decision-making, enhance interpersonal effectiveness, and
-        improve team outcomes.
-      </p>
-    </div>
+              {/* Inner Tabs Content */}
+              <div className="tab-content" id="ftmInnerTabsContent">
+                {/* Overview */}
+                <div
+                  className="tab-pane fade show active"
+                  id="ftm-overview"
+                  role="tabpanel"
+                  aria-labelledby="ftm-overview-tab"
+                >
+                  <p>
+                    The <strong>First Time Manager Program</strong> by the
+                    Institute of Management Technology, Hyderabad (IMT
+                    Hyderabad) is designed to prepare professionals stepping
+                    into managerial roles for the first time. The program
+                    bridges the gap between being an individual contributor and
+                    becoming an effective team leader, equipping participants
+                    with the essential skills, tools, and mindset needed to lead
+                    with confidence and impact.
+                  </p>
+                  <p>
+                    It focuses on helping current and aspiring managers develop
+                    core leadership competencies essential for success in
+                    dynamic business environments. Through an engaging blend of
+                    theory and practical learning, participants gain insights
+                    into:
+                  </p>
+                  <ul>
+                    <li>Ownership and Accountability</li>
+                    <li>Planning and Prioritization</li>
+                    <li>Finance for Non-Finance Professionals</li>
+                    <li>Building Workplace Relationships</li>
+                    <li>Conflict Management</li>
+                    <li>Feedback and Communication</li>
+                    <li>Driving Results</li>
+                    <li>Presentation and People Management Skills</li>
+                  </ul>
+                  <p>
+                    The program provides actionable frameworks and experiential
+                    learning to strengthen decision-making, enhance
+                    interpersonal effectiveness, and improve team outcomes.
+                  </p>
+                </div>
 
-    {/* Key Features */}
-    <div
-      className="tab-pane fade"
-      id="ftm-features"
-      role="tabpanel"
-      aria-labelledby="ftm-features-tab"
-    >
-      <ul>
-        <li>
-          <strong>Duration:</strong> 5 months, designed for flexible learning
-          and application at the workplace
-        </li>
-        <li>
-          <strong>Industry-Integrated Learning:</strong> Sessions facilitated by
-          IMT faculty and seasoned industry mentors
-        </li>
-        <li>
-          <strong>Company Mentorship:</strong> Ensures alignment with
-          organizational goals
-        </li>
-        <li>
-          <strong>Experiential Pedagogy:</strong> Role plays, group exercises,
-          simulations, and case discussions
-        </li>
-        <li>
-          <strong>Action Learning Projects:</strong> Hands-on assignments to
-          apply learning directly to real business challenges
-        </li>
-      </ul>
-    </div>
+                {/* Key Features */}
+                <div
+                  className="tab-pane fade"
+                  id="ftm-features"
+                  role="tabpanel"
+                  aria-labelledby="ftm-features-tab"
+                >
+                  <ul>
+                    <li>
+                      <strong>Duration:</strong> 5 months, designed for flexible
+                      learning and application at the workplace
+                    </li>
+                    <li>
+                      <strong>Industry-Integrated Learning:</strong> Sessions
+                      facilitated by IMT faculty and seasoned industry mentors
+                    </li>
+                    <li>
+                      <strong>Company Mentorship:</strong> Ensures alignment
+                      with organizational goals
+                    </li>
+                    <li>
+                      <strong>Experiential Pedagogy:</strong> Role plays, group
+                      exercises, simulations, and case discussions
+                    </li>
+                    <li>
+                      <strong>Action Learning Projects:</strong> Hands-on
+                      assignments to apply learning directly to real business
+                      challenges
+                    </li>
+                  </ul>
+                </div>
 
-    {/* Pedagogy & Evaluation */}
-    <div
-      className="tab-pane fade"
-      id="ftm-pedagogy"
-      role="tabpanel"
-      aria-labelledby="ftm-pedagogy-tab"
-    >
-      <p>
-        Learning in this program is deeply experiential. Participants engage in
-        real-world case discussions, reflection exercises, and 360-degree
-        feedback assessments to track progress. Assignments, group projects, and
-        self-assessment tools ensure a sustained transfer of learning to the
-        workplace.
-      </p>
-    </div>
+                {/* Pedagogy & Evaluation */}
+                <div
+                  className="tab-pane fade"
+                  id="ftm-pedagogy"
+                  role="tabpanel"
+                  aria-labelledby="ftm-pedagogy-tab"
+                >
+                  <p>
+                    Learning in this program is deeply experiential.
+                    Participants engage in real-world case discussions,
+                    reflection exercises, and 360-degree feedback assessments to
+                    track progress. Assignments, group projects, and
+                    self-assessment tools ensure a sustained transfer of
+                    learning to the workplace.
+                  </p>
+                </div>
 
-    {/* Who Should Attend */}
-    <div
-      className="tab-pane fade"
-      id="ftm-who"
-      role="tabpanel"
-      aria-labelledby="ftm-who-tab"
-    >
-      <ul>
-        <li>Professionals transitioning into managerial roles</li>
-        <li>Aspiring team leaders and supervisors</li>
-        <li>
-          Early-career managers seeking to enhance leadership effectiveness
-        </li>
-      </ul>
-    </div>
+                {/* Who Should Attend */}
+                <div
+                  className="tab-pane fade"
+                  id="ftm-who"
+                  role="tabpanel"
+                  aria-labelledby="ftm-who-tab"
+                >
+                  <ul>
+                    <li>Professionals transitioning into managerial roles</li>
+                    <li>Aspiring team leaders and supervisors</li>
+                    <li>
+                      Early-career managers seeking to enhance leadership
+                      effectiveness
+                    </li>
+                  </ul>
+                </div>
 
-    {/* Contact */}
-    <div
-      className="tab-pane fade"
-      id="ftm-contact"
-      role="tabpanel"
-      aria-labelledby="ftm-contact-tab"
-    >
-      <p>
-        <strong>Prof. (Dr.) A. Sarath Babu</strong>
-        <br />
-        Associate Professor & Chairperson – Executive Education
-        <br />
-        {" "}
-        <a href="mailto:sarathbabu@imthyderabad.edu.in">
-          sarathbabu@imthyderabad.edu.in
-        </a>{" "}
-        | +91 9160501754
-      </p>
-      <p>
-        <strong>Ms. Susan Thomas</strong>
-        <br />
-        Manager – Executive Education
-        <br />
-        {" "}
-        <a href="mailto:exedu@imthyderabad.edu.in">
-          exedu@imthyderabad.edu.in
-        </a>{" "}
-        /{" "}
-        <a href="mailto:susanthomas@imthyderabad.edu.in">
-          susanthomas@imthyderabad.edu.in
-        </a>{" "}
-        | +91 9971802773
-      </p>
-    </div>
-  </div>
-</div>
+                {/* Contact */}
+                <div
+                  className="tab-pane fade"
+                  id="ftm-contact"
+                  role="tabpanel"
+                  aria-labelledby="ftm-contact-tab"
+                >
+                  <p>
+                    <strong>Prof. (Dr.) A. Sarath Babu</strong>
+                    <br />
+                    Associate Professor & Chairperson – Executive Education
+                    <br />{" "}
+                    <a href="mailto:sarathbabu@imthyderabad.edu.in">
+                      sarathbabu@imthyderabad.edu.in
+                    </a>{" "}
+                    | +91 9160501754
+                  </p>
+                  <p>
+                    <strong>Ms. Susan Thomas</strong>
+                    <br />
+                    Manager – Executive Education
+                    <br />{" "}
+                    <a href="mailto:exedu@imthyderabad.edu.in">
+                      exedu@imthyderabad.edu.in
+                    </a>{" "}
+                    /{" "}
+                    <a href="mailto:susanthomas@imthyderabad.edu.in">
+                      susanthomas@imthyderabad.edu.in
+                    </a>{" "}
+                    | +91 9971802773
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Certificate Programs */}
             <div
@@ -1466,12 +1515,24 @@ this content in the subtext
       </section>
 
       {/* Clients Section */}
-      <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
+      <section
+        className="placement-alliances-section py-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="container text-center">
-          <h6 className="subtitle text-center text-warning" data-aos="fade-down" data-aos-delay="100">
+          <h6
+            className="subtitle text-center text-warning"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
             Our Clients
           </h6>
-          <h2 className="section-title mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <h2
+            className="section-title mb-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             Our Distinguished Clients
           </h2>
           <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
@@ -1502,8 +1563,15 @@ this content in the subtext
       </section>
 
       {/* Contact Strip */}
-      <section className="py-3" style={{ backgroundColor: 'rgb(21, 30, 84)', color: 'white' }}>
-        <h4 className="text-center fw-bold text-warning" data-aos="zoom-in" data-aos-delay="200">
+      <section
+        className="py-3"
+        style={{ backgroundColor: "rgb(21, 30, 84)", color: "white" }}
+      >
+        <h4
+          className="text-center fw-bold text-warning"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           Contact Details
         </h4>
         <div
@@ -1513,18 +1581,27 @@ this content in the subtext
         >
           <div data-aos="fade-up" data-aos-delay="200">
             <strong className="text-warning">Email ID :</strong>
-            <Link href="mailto:exedu@imthyderabad.edu.in" className="text-light text-decoration-none ms-1">
+            <Link
+              href="mailto:exedu@imthyderabad.edu.in"
+              className="text-light text-decoration-none ms-1"
+            >
               exedu@imthyderabad.edu.in
             </Link>
           </div>
           <div className="vr d-none d-md-block"></div>
           <div data-aos="fade-up" data-aos-delay="200">
             <strong className="text-warning">Phone :</strong>
-            <Link href="tel:9971802773" className="text-light text-decoration-none ms-1">
+            <Link
+              href="tel:9971802773"
+              className="text-light text-decoration-none ms-1"
+            >
               9971802773
-            </Link>{' '}
+            </Link>{" "}
             /
-            <Link href="tel:9160501754" className="text-light text-decoration-none">
+            <Link
+              href="tel:9160501754"
+              className="text-light text-decoration-none"
+            >
               9160501754
             </Link>
           </div>

@@ -144,244 +144,215 @@ export default function PlacementsSection() {
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
-.faculty-hero {
-  background: url('./media/hero.webp');
-  position: relative;
-  background-size:cover ;
-  height:50vh;
-}
-.faculty-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-}
-.faculty-hero h2,
-.faculty-hero p {
-   
-  position: relative;
-  z-index: 1;
-}
-.faculty-hero h2{
+   <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .faculty-hero {
+        background: url('./media/hero.webp');
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 170px;
+      }
 
- margin-top:170px;
-}
+      .placement-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 0 !important;
+      }
+      .placement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+      }
+      .placement-card img {
+        transition: transform 0.3s ease;
+      }
+      .placement-card:hover img {
+        transform: scale(1.02);
+      }
 
-/* UPDATED: Enhanced Wide Card Styles */
-.placement-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 !important; /* Zero margins */
-}
-.placement-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
-}
-.placement-card img {
-    transition: transform 0.3s ease;
-}
-.placement-card:hover img {
-    transform: scale(1.02);
-}
-
-/* Force minimal side spacing on large screens */
-@media (min-width: 1200px) {
-    .container-fluid {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-@media (max-width: 768px) {
-    .placement-card {
-        max-height: 60vh;
-        border-radius: 1rem !important; /* Softer rounding on mobile */
-    }
-    .container-fluid {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-}
-
-/* Card styling */
-.faculty-card {
-  background: #f8f9fa;
-  border: none;
-  border-radius: 1.5rem;
-}
-
-/* Image glow & hover effect */
-.faculty-img {
-  border-radius: 1.2rem;
-  transition: transform 0.4s ease;
-}
-.faculty-img:hover {
-  transform: scale(1.03);
-}
-
-/* Social icons */
-.social-icon {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  background: #ffc107;
-  color: #ffffffff;
-  transition: all 0.3s;
-}
-.social-icon:hover {
-  background: #5390D9;
-  color: #ffffffff;
-  transform: translateY(-3px);
-}
-
-/* Tabs */
-.faculty-tabs .nav-pills .nav-link {
-  border-radius: 50rem;
-  background: #e9ecef;
-  color: #333;
-  transition: all 0.3s;
-}
-.faculty-tabs .nav-pills .nav-link.active {
-  background: #ffc107;
-  color: #000000ff;
-}
-/* ===== Director's Message (Magazine Wrap Style) ===== */
-
-.directors-message .message-wrapper {
-  background: #fff;
-  border-radius: 1.2rem;
-  padding: 2rem 2.5rem;
-  line-height: 1.8;
-}
-
-.directors-message h2 {
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: -0.5px;
-  position: relative;
-}
-
-.directors-message h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 60px;
-  height: 3px;
-  background: #ffc107;
-}
-
-/* Floating Director Image */
-.director-img {
-  width: 180px;
-  height: auto;
-  border-radius: 1rem;
-  object-fit: cover;
-  shape-outside: circle(50%);
-  clip-path: circle(50%);
-  float: left;
-  margin-right: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Drop shadow & hover tone */
-.director-img:hover {
-  filter: brightness(1.05);
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-/* Paragraph styling */
-
-
-/* Responsive fixes */
-@media (max-width: 768px) {
-  .director-img {
-    float: none;
-    display: block;
-    margin: 0 auto 1.5rem auto;
-    width: 150px;
-    clip-path: none;
-    shape-outside: none;
-  }
-  .directors-message h2 {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-}
-    .owl-carousel .item {
-    background: #bfd2e5ff;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  .owl-carousel .item:hover {
-    transform: translateY(-5px);
-  }
-  .owl-carousel .item img {
-    max-height: 80px;
-    object-fit: contain;
-  }
-      .owl-carousel .item {
-      background: #f8f9fa;
-      padding: 30px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .owl-carousel .item img {
-      max-height: 80px;
-      object-fit: contain;
-    }
-           .placement-alliances-section {
-          background-color: #151e54;
+      @media (min-width: 1200px) {
+        .container-fluid {
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
         }
-          /* === Sticky Buttons === */
-.sticky-buttons {
-  position: fixed;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+      }
+      @media (max-width: 768px) {
+        .placement-card {
+          max-height: 60vh;
+          border-radius: 1rem !important;
+        }
+        .container-fluid {
+          padding-left: 0.5rem !important;
+          padding-right: 0.5rem !important;
+        }
+      }
 
-.sticky-btn {
-  background-color: #ffc107;
-  color: #000;
-  padding: 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 50px 0 0 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-.sticky-btn:hover {
-  background-color: #0f2d61;
-  color: #fff;
-  // transform: rotate(180deg) translateX(-3px);
-}
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390D9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-/* Mobile View */
-@media (max-width: 768px) {
-  .sticky-buttons {
-    right: 5px;
-    gap: 6px;
-  }
-  .sticky-btn {
-    padding: 6px 10px;
-    font-size: 10px;
-    border-radius: 30px 0 0 30px;
-  }
-}
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
 
-      `}</style>
+      .directors-message .message-wrapper {
+        background: #fff;
+        border-radius: 1.2rem;
+        padding: 2rem 2.5rem;
+        line-height: 1.8;
+      }
+      .directors-message h2 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        letter-spacing: -0.5px;
+        position: relative;
+      }
+      .directors-message h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 60px;
+        height: 3px;
+        background: #ffc107;
+      }
+      .director-img {
+        width: 180px;
+        height: auto;
+        border-radius: 1rem;
+        object-fit: cover;
+        shape-outside: circle(50%);
+        clip-path: circle(50%);
+        float: left;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .director-img:hover {
+        filter: brightness(1.05);
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+        .director-img {
+          float: none;
+          display: block;
+          margin: 0 auto 1.5rem auto;
+          width: 150px;
+          clip-path: none;
+          shape-outside: none;
+        }
+        .directors-message h2 {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+      }
+
+      .owl-carousel .item {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .owl-carousel .item:hover {
+        transform: translateY(-5px);
+      }
+      .owl-carousel .item img {
+        max-height: 80px;
+        object-fit: contain;
+      }
+
+      .placement-alliances-section {
+        background-color: #151e54;
+      }
+
+      .sticky-buttons {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .sticky-btn {
+        background-color: #ffc107;
+        color: #000;
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 50px 0 0 50px;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      .sticky-btn:hover {
+        background-color: #0f2d61;
+        color: #fff;
+      }
+      @media (max-width: 768px) {
+        .sticky-buttons {
+          right: 5px;
+          gap: 6px;
+        }
+        .sticky-btn {
+          padding: 6px 10px;
+          font-size: 10px;
+          border-radius: 30px 0 0 30px;
+        }
+      }
+    `,
+  }}
+/>
+
 
       {/* Top Banner */}
        <div

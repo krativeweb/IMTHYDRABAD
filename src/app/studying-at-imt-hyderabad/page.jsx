@@ -972,34 +972,136 @@ We cultivate thinkers and doers prepared for a future shaped by innovation and e
         </div>
 
         {/* ===== ALL ORIGINAL STYLES (preserved 1:1) ===== */}
-        <style jsx>{`
-          body { background-color:#f5f7fa; color:#333; font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
-          .container { max-width:1200px; }
-          .tabs-container { padding:1.5rem; border-radius:12px; margin-bottom:2rem; }
-          .tab-button {
-            border:none; border-radius:50px; padding:12px 28px; margin:0 8px 12px;
-            background:#e0e0e0; color:#000; font-weight:600; transition:all .3s ease;
-            box-shadow:0 2px 5px rgba(0,0,0,.05);
-          }
-          .tab-button:hover { background:#d0d0d0; transform:translateY(-2px); box-shadow:0 4px 10px rgba(0,0,0,.1); }
-          .tab-button.active { background:#FFC107; color:#000; box-shadow:0 4px 12px rgba(0,0,0,.15); }
-          .tab-content { background:white; border-radius:12px; padding:2.5rem; box-shadow:0 8px 30px rgba(0,0,0,.08); border:1px solid #eee; }
+  <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      body {
+        background-color: #f5f7fa;
+        color: #333;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-          .faculty-hero { background:url('/media/hero.webp'); position:relative; background-size:cover; height:50vh; }
-          .faculty-hero::before { content:""; position:absolute; inset:0; background:rgba(0,0,0,.3); }
-          .faculty-hero h2,.faculty-hero p { position:relative; z-index:1; }
-          .faculty-hero h2 { margin-top:150px; }
+      .container {
+        max-width: 1200px;
+      }
 
-          .faculty-card { background:#f8f9fa; border:none; border-radius:1.5rem; }
-          .faculty-img { border-radius:1.2rem; transition:transform .4s ease; }
-          .faculty-img:hover { transform:scale(1.03); }
-          .social-icon { display:inline-flex; width:40px; height:40px; border-radius:50%; justify-content:center; align-items:center; background:#ffc107; color:#fff; transition:all .3s; }
-          .social-icon:hover { background:#5390D9; color:#fff; transform:translateY(-3px); }
-          .faculty-tabs .nav-pills .nav-link.active { background:#ffc107!important; color:#000!important; }
-          .small-placeholder::placeholder { font-size:.85rem; }
-          .nav-pills .nav-link.active,.nav-pills .show>.nav-link { border-radius:50rem!important; background:#ffc107!important; color:#333!important; transition:all .3s!important; }
-          .nav-pills .nav-link { border-radius:var(--bs-nav-pills-border-radius); background:#e9ecef; border-radius:30px; color:#333; }
-        `}</style>
+      .tabs-container {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+      }
+
+      .tab-button {
+        border: none;
+        border-radius: 50px;
+        padding: 12px 28px;
+        margin: 0 8px 12px;
+        background: #e0e0e0;
+        color: #000;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+
+      .tab-button:hover {
+        background: #d0d0d0;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .tab-button.active {
+        background: #FFC107;
+        color: #000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+
+      .tab-content {
+        background: white;
+        border-radius: 12px;
+        padding: 2.5rem;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        border: 1px solid #eee;
+      }
+
+      .faculty-hero {
+        background: url('/media/hero.webp');
+        position: relative;
+        background-size: cover;
+        height: 50vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
+
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
+
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
+
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #fff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390D9;
+        color: #fff;
+        transform: translateY(-3px);
+      }
+
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107 !important;
+        color: #000 !important;
+      }
+
+      .small-placeholder::placeholder {
+        font-size: 0.85rem;
+      }
+
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        border-radius: 50rem !important;
+        background: #ffc107 !important;
+        color: #333 !important;
+        transition: all 0.3s !important;
+      }
+
+      .nav-pills .nav-link {
+        border-radius: var(--bs-nav-pills-border-radius);
+        background: #e9ecef;
+        border-radius: 30px;
+        color: #333;
+      }
+    `,
+  }}
+/>
+
       </section>
     </>
   );

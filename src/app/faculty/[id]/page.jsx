@@ -125,23 +125,24 @@ export default function FacultyProfile({ params }) {
   return (
     <>
       {/* ------------------------------------------------- CSS ------------------------------------------------- */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         .nav-tabs .nav-link {
-          border-radius: 50px; /* rounded tabs */
+          border-radius: 50px;
           transition: background 0.3s;
         }
 
-        /* Active tab style */
         .nav-tabs .nav-link.active {
-          background-color: #ffc107 !important; /* active background yellow */
-          color: black !important; /* text color */
-          border-color: #dee2e6 #dee2e6 #fff; /* maintain Bootstrap borders */
+          background-color: #ffc107 !important;
+          color: black !important;
+          border-color: #dee2e6 #dee2e6 #fff;
         }
 
-        /* Optional: Hover effect */
         .nav-tabs .nav-link:hover {
-          background-color: #ffc109; /* light yellow on hover */
+          background-color: #ffc109;
         }
+
         .faculty-hero {
           background: url("/media/banners/faculty.webp") !important;
           background-size: cover !important;
@@ -162,10 +163,12 @@ export default function FacultyProfile({ params }) {
           position: relative;
           z-index: 1;
         }
+
         .faculty-card {
           background: #f8f9fa;
           border-radius: 1.5rem;
         }
+
         .faculty-img {
           border-radius: 1.2rem;
           transition: transform 0.4s ease;
@@ -173,6 +176,7 @@ export default function FacultyProfile({ params }) {
         .faculty-img:hover {
           transform: scale(1.03);
         }
+
         .social-icon {
           display: inline-flex;
           width: 40px;
@@ -188,6 +192,7 @@ export default function FacultyProfile({ params }) {
           background: #5390d9;
           transform: translateY(-3px);
         }
+
         .nav-pills .nav-link {
           border-radius: 50rem;
           background: #e9ecef;
@@ -197,31 +202,30 @@ export default function FacultyProfile({ params }) {
           background: #ffc107;
           color: #000;
         }
-        /* Apply black color to all tags inside your tab content, including DB HTML */
+
         .tab-content,
         .tab-content * {
           color: black !important;
         }
 
-        /* Optional: make links inside DB content black as well */
         .tab-content a {
           color: black !important;
-          text-decoration: none; /* optional */
+          text-decoration: none;
         }
 
-        /* Ensure nested lists inside DB content also inherit black */
         .tab-content ul,
         .tab-content ul li {
           color: black !important;
         }
 
-        /* Apply for spans, paragraphs, and divs as well */
         .tab-content p,
         .tab-content span,
         .tab-content div {
           color: black !important;
         }
-      `}</style>
+      `,
+        }}
+      />
 
       {/* ------------------------------------------------- Google Tag Manager ------------------------------------------------- */}
       <noscript>

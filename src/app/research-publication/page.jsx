@@ -809,100 +809,106 @@ export default function ResearchPublication() {
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
-        .faculty-hero {
-          background: url("/media/banners/researcharchive.webp") center/cover no-repeat, #f0f0f0;
-          position: relative;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+<style
+  dangerouslySetInnerHTML={{
+    __html: `
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url("/media/banners/researcharchive.webp") center/cover no-repeat, #f0f0f0;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Breadcrumb */
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
-        .breadcrumb-item a {
-          text-decoration: none;
-        }
+      /* Breadcrumb */
+      .breadcrumb {
+        background-color: rgb(22, 57, 119);
+      }
+      .breadcrumb-item a {
+        text-decoration: none;
+      }
 
-        /* Card Styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Card Styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Image Glow & Hover Effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Image Glow & Hover Effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Social Icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390D9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Social Icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390D9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
 
-        /* Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000ff;
-        }
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
 
-        /* Section Headers */
-        .section-header {
-          background-color: #163977;
-          color: white;
-          padding: 0.5rem 1rem;
-          border-radius: 0.25rem;
-          font-weight: bold;
-          margin-bottom: 1rem;
-        }
+      /* Section Headers */
+      .section-header {
+        background-color: #163977;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
 
-        /* Content Sections */
-        .content-section {
-          background: #fff;
-          padding: 1.5rem;
-          border: 1px solid #ddd;
-          border-radius: 0.25rem;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-      `}</style>
+      /* Content Sections */
+      .content-section {
+        background: #fff;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    `,
+  }}
+/>
+
 
       {/* Faculty Hero Section */}
       <section className="faculty-section">

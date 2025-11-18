@@ -74,92 +74,97 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
       </noscript>
 
       {/* Styles */}
-      <style jsx global>{`
-        .table-responsive {
-          border-radius: 0.5rem;
-          overflow-x: auto;
-          -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-        }
-        .faculty-hero {
-          background: url("/media/banners/researcharchive.webp") center/cover
-              no-repeat,
-            #f0f0f0;
-          position: relative;
-          height: 60vh;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+<style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .table-responsive {
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
 
-        /* Breadcrumb */
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
-        .breadcrumb-item a {
-          text-decoration: none;
-        }
+      /* Faculty Hero */
+      .faculty-hero {
+        background: url("/media/banners/researcharchive.webp") center/cover no-repeat, #f0f0f0;
+        position: relative;
+        height: 60vh;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        /* Card Styling */
-        .faculty-card {
-          background: #f8f9fa;
-          border: none;
-          border-radius: 1.5rem;
-        }
+      /* Breadcrumb */
+      .breadcrumb {
+        background-color: rgb(22, 57, 119);
+      }
+      .breadcrumb-item a {
+        text-decoration: none;
+      }
 
-        /* Image Glow & Hover Effect */
-        .faculty-img {
-          border-radius: 1.2rem;
-          transition: transform 0.4s ease;
-        }
-        .faculty-img:hover {
-          transform: scale(1.03);
-        }
+      /* Card Styling */
+      .faculty-card {
+        background: #f8f9fa;
+        border: none;
+        border-radius: 1.5rem;
+      }
 
-        /* Social Icons */
-        .social-icon {
-          display: inline-flex;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          background: #ffc107;
-          color: #ffffffff;
-          transition: all 0.3s;
-        }
-        .social-icon:hover {
-          background: #5390d9;
-          color: #ffffffff;
-          transform: translateY(-3px);
-        }
+      /* Image Glow & Hover Effect */
+      .faculty-img {
+        border-radius: 1.2rem;
+        transition: transform 0.4s ease;
+      }
+      .faculty-img:hover {
+        transform: scale(1.03);
+      }
 
-        /* Tabs */
-        .faculty-tabs .nav-pills .nav-link {
-          border-radius: 50rem;
-          background: #e9ecef;
-          color: #333;
-          transition: all 0.3s;
-        }
-        .faculty-tabs .nav-pills .nav-link.active {
-          background: #ffc107;
-          color: #000000ff;
-        }
-        .nav-pills .nav-link.active {
-          background-color: var(--bs-warning) !important;
-          color: var(--bs-dark) !important;
-        }
-      `}</style>
+      /* Social Icons */
+      .social-icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background: #ffc107;
+        color: #ffffffff;
+        transition: all 0.3s;
+      }
+      .social-icon:hover {
+        background: #5390d9;
+        color: #ffffffff;
+        transform: translateY(-3px);
+      }
+
+      /* Tabs */
+      .faculty-tabs .nav-pills .nav-link {
+        border-radius: 50rem;
+        background: #e9ecef;
+        color: #333;
+        transition: all 0.3s;
+      }
+      .faculty-tabs .nav-pills .nav-link.active {
+        background: #ffc107;
+        color: #000000ff;
+      }
+      .nav-pills .nav-link.active {
+        background-color: var(--bs-warning) !important;
+        color: var(--bs-dark) !important;
+      }
+    `,
+  }}
+/>
+
 
       {/* Faculty Hero Section */}
       <div

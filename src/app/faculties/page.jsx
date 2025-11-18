@@ -107,7 +107,9 @@ export default function Faculty() {
       {/* ------------------------------------------------------- */}
       {/* GLOBAL STYLES (copy-paste from your original) */}
       {/* ------------------------------------------------------- */}
-      <style jsx global>{`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         .faculty-hero {
           background: url("/media/banners/faculty.webp") center/cover no-repeat !important;
           position: relative;
@@ -168,7 +170,9 @@ export default function Faculty() {
           align-items: center;
           height: 40vh;
         }
-      `}</style>
+      `,
+        }}
+      />
 
       {/* HERO */}
       <section className="faculty-section">
@@ -237,7 +241,9 @@ export default function Faculty() {
           {departments.map((dept) => (
             <li className="nav-item mx-1 py-2" key={dept.id}>
               <button
-                className={`nav-link ${currentDept === dept.id ? "active" : ""}`}
+                className={`nav-link ${
+                  currentDept === dept.id ? "active" : ""
+                }`}
                 onClick={() => setCurrentDept(dept.id)}
               >
                 {dept.label}

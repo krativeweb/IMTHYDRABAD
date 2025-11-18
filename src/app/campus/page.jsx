@@ -18,7 +18,10 @@ export default function Campus() {
         >
           <h2 className="display-5 fw-bold mb-2">Campus</h2>
           <p className="text-white">
-           The IMT Hyderabad campus is a vibrant, eco-friendly, and modern learning environment <br />fostering innovation, collaboration, and holistic student development.
+            The IMT Hyderabad campus is a vibrant, eco-friendly, and modern
+            learning environment <br />
+            fostering innovation, collaboration, and holistic student
+            development.
           </p>
         </div>
 
@@ -221,63 +224,67 @@ export default function Campus() {
       </section>
 
       {/* === ORIGINAL CSS (Slanted Images + Mobile Responsive) === */}
-      <style jsx>{`
-        .faculty-hero {
-          position: relative;
-        }
-        .faculty-hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
-        .faculty-hero h2,
-        .faculty-hero p {
-          position: relative;
-          z-index: 1;
-        }
-        .faculty-hero h2 {
-          margin-top: 150px;
-        }
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+      .faculty-hero {
+        position: relative;
+      }
+      .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .faculty-hero h2 {
+        margin-top: 150px;
+      }
 
-        .clipped-img-1 {
-          clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
-          height: 30vh;
-          object-fit: cover;
-        }
+      .clipped-img-1 {
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+        height: 30vh;
+        object-fit: cover;
+      }
 
+      .clipped-img-2 {
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+        height: 30vh;
+        object-fit: cover;
+      }
+
+      /* Mobile View Adjustments */
+      @media (max-width: 767px) {
+        .clipped-img-1,
         .clipped-img-2 {
-          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-          height: 30vh;
-          object-fit: cover;
+          height: 20vh;
+          clip-path: none;
+          border-radius: 0.75rem;
         }
 
-        /* Mobile View Adjustments */
-        @media (max-width: 767px) {
-          .clipped-img-1,
-          .clipped-img-2 {
-            height: 20vh;
-            clip-path: none;
-            border-radius: 0.75rem;
-          }
-
-          .card.d-flex.flex-row,
-          .card.d-flex.flex-row-reverse {
-            flex-direction: column !important;
-            text-align: center;
-          }
-
-          .card .col-md-4,
-          .card .col-md-8 {
-            max-width: 100%;
-            padding: 0;
-          }
-
-          .card .col-md-4 {
-            margin-bottom: 15px;
-          }
+        .card.d-flex.flex-row,
+        .card.d-flex.flex-row-reverse {
+          flex-direction: column !important;
+          text-align: center;
         }
-      `}</style>
+
+        .card .col-md-4,
+        .card .col-md-8 {
+          max-width: 100%;
+          padding: 0;
+        }
+
+        .card .col-md-4 {
+          margin-bottom: 15px;
+        }
+      }
+    `,
+        }}
+      />
     </>
   );
 }

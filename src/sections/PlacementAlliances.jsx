@@ -120,69 +120,74 @@ export default function PlacementAlliances() {
         </div>
       </div>
 
-      <style jsx>{`
-        .embla {
-          overflow: hidden;
-          width: 100%;
-        }
-        .embla__container {
-          display: flex;
-          touch-action: pan-y;
-        }
+     <style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .embla {
+        overflow: hidden;
+        width: 100%;
+      }
+      .embla__container {
+        display: flex;
+        touch-action: pan-y;
+      }
+      .embla__slide {
+        flex: 0 0 25%; /* 4 slides on desktop */
+        min-width: 0;
+        padding: 0 8px;
+        box-sizing: border-box;
+      }
+
+      .logo-box {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 16px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+      }
+      .logo-box:hover {
+        transform: translateY(-5px);
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 1400px) {
         .embla__slide {
-          flex: 0 0 25%; /* 4 slides on desktop */
-          min-width: 0;
-          padding: 0 8px;
-          box-sizing: border-box;
+          flex: 0 0 25%;
         }
-
+      }
+      @media (max-width: 1200px) {
+        .embla__slide {
+          flex: 0 0 33.333%;
+        }
+      }
+      @media (max-width: 992px) {
+        .embla__slide {
+          flex: 0 0 33.333%;
+        }
+      }
+      @media (max-width: 768px) {
+        .embla__slide {
+          flex: 0 0 50%;
+        }
+      }
+      @media (max-width: 576px) {
+        .embla__slide {
+          flex: 0 0 100%;
+          padding: 0 12px;
+        }
         .logo-box {
-          background: white;
-          border-radius: 8px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-          padding: 16px;
-          height: 100px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: transform 0.3s ease;
+          height: 80px;
+          padding: 12px;
         }
-        .logo-box:hover {
-          transform: translateY(-5px);
-        }
+      }
+    `,
+  }}
+/>
 
-        /* RESPONSIVE */
-        @media (max-width: 1400px) {
-          .embla__slide {
-            flex: 0 0 25%;
-          } /* 4 */
-        }
-        @media (max-width: 1200px) {
-          .embla__slide {
-            flex: 0 0 33.333%;
-          } /* 3 */
-        }
-        @media (max-width: 992px) {
-          .embla__slide {
-            flex: 0 0 33.333%;
-          } /* 3 */
-        }
-        @media (max-width: 768px) {
-          .embla__slide {
-            flex: 0 0 50%;
-          } /* 2 */
-        }
-        @media (max-width: 576px) {
-          .embla__slide {
-            flex: 0 0 100%; /* 1 slide */
-            padding: 0 12px;
-          }
-          .logo-box {
-            height: 80px;
-            padding: 12px;
-          }
-        }
-      `}</style>
     </section>
   );
 }

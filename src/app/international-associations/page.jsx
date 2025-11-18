@@ -137,81 +137,84 @@ const InternationalAssociations = () => {
         </section>
 
       </section>
+<style
+  dangerouslySetInnerHTML={{
+    __html: `
+      .faculty-hero {
+        background: url("./media/banners/internationalrelations.webp") no-repeat center center;
+        background-size: cover;
+        height: 60vh;
+        position: relative;
+      }
 
-      <style jsx>{`
-        .faculty-hero {
-          background: url("./media/banners/internationalrelations.webp") no-repeat
-            center center;
-          background-size: cover;
-          height: 60vh;
-          position: relative;
-        }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
 
-        .hero-overlay {
-          position: absolute;
-          inset: 0;
-          background: rgba(0, 0, 0, 0.3);
-        }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        padding-top: 150px;
+      }
 
-        .hero-content {
-          position: relative;
-          z-index: 2;
-          padding-top: 150px;
-        }
+      .breadcrumb {
+        background-color: rgb(22, 57, 119);
+      }
 
-        .breadcrumb {
-          background-color: rgb(22, 57, 119);
-        }
+      .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #08317a;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
 
-        .section-title {
-          font-size: 2rem;
-          font-weight: 700;
-          color: #08317a;
-          position: relative;
-          padding-bottom: 0.5rem;
-        }
+      .section-title::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: #ffc107;
+      }
 
-        .section-title::after {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 3px;
-          background: #ffc107;
-        }
+      .custom-card {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        background: #f8f9fa;
+        border-radius: 1.5rem;
+      }
 
-        .custom-card {
-          transition: background-color 0.3s ease, transform 0.3s ease;
-          background: #f8f9fa;
-          border-radius: 1.5rem;
-        }
+      .custom-card:hover {
+        background-color: #ffc107;
+        border: 1px solid #03255f;
+        transform: translateY(-5px);
+      }
 
-        .custom-card:hover {
-          background-color: #ffc107;
-          border: 1px solid #03255f;
-          transform: translateY(-5px);
-        }
+      .placement-swiper .swiper-button-next,
+      .placement-swiper .swiper-button-prev {
+        color: #08317a;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
 
-        .placement-swiper .swiper-button-next,
-        .placement-swiper .swiper-button-prev {
-          color: #08317a;
-          background: rgba(255, 255, 255, 0.8);
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-        }
+      .swiper-item img {
+        max-height: 80px;
+        object-fit: contain;
+      }
 
-        .swiper-item img {
-          max-height: 80px;
-          object-fit: contain;
-        }
+      .contact-links-section {
+        background-color: rgb(21, 30, 84);
+        color: white;
+      }
+    `,
+  }}
+/>
 
-        .contact-links-section {
-          background-color: rgb(21, 30, 84);
-          color: white;
-        }
-      `}</style>
     </div>
   );
 };
