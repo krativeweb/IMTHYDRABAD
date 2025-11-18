@@ -307,29 +307,23 @@ export default function AboutIMTHyderabad() {
       </section>
 
       {/* Custom Styles */}
- <style
-  dangerouslySetInnerHTML={{
-    __html: `
-      .faculty-hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.3);
-        z-index: 1;
-      }
-      .faculty-hero h2,
-      .faculty-hero p {
-        position: relative;
-        z-index: 2;
-      }
-      .text-justify {
-        text-align: justify;
-      }
-    `,
-  }}
-/>
-
-
+      <style jsx>{`
+        .faculty-hero::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.3);
+          z-index: 1;
+        }
+        .faculty-hero h2,
+        .faculty-hero p {
+          position: relative;
+          z-index: 2;
+        }
+        .text-justify {
+          text-align: justify;
+        }
+      `}</style>
     </>
   );
 }

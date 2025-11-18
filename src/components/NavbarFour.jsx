@@ -69,7 +69,7 @@ export default function NavbarFour() {
 
             {/* Contact Button */}
             <a
-              href="/contact-us"
+              href="https://imt.arawalihome.in/contact-us"
               className="btn btn-warning border-dark rounded-pill mx-3"
             >
               CONTACT US

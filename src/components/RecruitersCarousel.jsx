@@ -80,28 +80,23 @@ export default function PlacementAlliances() {
         </div>
       </div>
 
-     <style
-  dangerouslySetInnerHTML={{
-    __html: `
-      @media (max-width: 1100px) {
-        .embla__slide {
-          min-width: 33.3333% !important;
+      <style jsx>{`
+        @media (max-width: 1100px) {
+          .embla__slide {
+            min-width: 33.3333% !important;
+          }
         }
-      }
-      @media (max-width: 777px) {
-        .embla__slide {
-          min-width: 50% !important;
+        @media (max-width: 777px) {
+          .embla__slide {
+            min-width: 50% !important;
+          }
         }
-      }
-      @media (max-width: 590px) {
-        .embla__slide {
-          min-width: 100% !important;
+        @media (max-width: 590px) {
+          .embla__slide {
+            min-width: 100% !important;
+          }
         }
-      }
-    `,
-  }}
-/>
-
+      `}</style>
     </section>
   );
 }

@@ -9,7 +9,7 @@ export default function BannerSlider() {
     <div className="banner-slider slick-arrows-style1" id="admission">
       <div className="banner-slide">
         <img
-          src="/admission/images/hero.jpg"
+          src="./images/hero.jpg"
           alt=""
           width="100%"
           height={966}
@@ -31,21 +31,16 @@ export default function BannerSlider() {
 
         <div className="banner-caption">
           <div className="info mb-4 custom-margin">
-           <style
-  dangerouslySetInnerHTML={{
-    __html: `
-      .custom-margin {
-        margin-top: 0%;
-      }
-      @media (max-width: 576px) {
-        .custom-margin {
-          margin-top: 105px !important;
-        }
-      }
-    `,
-  }}
-/>
-
+            <style jsx>{`
+              .custom-margin {
+                margin-top: 0%;
+              }
+              @media (max-width: 576px) {
+                .custom-margin {
+                  margin-top: 105px !important;
+                }
+              }
+            `}</style>
 
             <div className="container">
               <div className="row align-items-center">

@@ -131,89 +131,85 @@ export default function InternationalAssociations() {
       </div>
 
       {/* ------------------------------------------------- CSS ------------------------------------------------- */}
- <style
-  dangerouslySetInnerHTML={{
-    __html: `
-      .parallax-section {
-        position: relative;
-        background: url("/media/hero.webp") center/cover no-repeat;
-      }
-      .overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 0;
-      }
-      .container > * {
-        position: relative;
-        z-index: 1;
-      }
-
-      .embla {
-        overflow: hidden;
-        width: 100%;
-      }
-      .embla__container {
-        display: flex;
-        touch-action: pan-y;
-      }
-      .embla__slide {
-        flex: 0 0 25%; /* 4 per view */
-        min-width: 0;
-        padding: 0 8px;
-        box-sizing: border-box;
-      }
-
-      .item {
-        height: 130px;
-        background: white;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        overflow: hidden;
-      }
-      .img-wrapper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        max-width: 180px;
-        max-height: 100px;
-      }
-
-      .item:hover {
-        transform: translateY(-5px);
-      }
-
-      /* RESPONSIVE */
-      @media (max-width: 1024px) {
-        .embla__slide {
-          flex: 0 0 33.333%;
+      <style jsx>{`
+        .parallax-section {
+          position: relative;
+          background: url("/media/hero.webp") center/cover
+            no-repeat;
         }
-      }
-      @media (max-width: 768px) {
-        .embla__slide {
-          flex: 0 0 50%;
+        .overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 0;
         }
-      }
-      @media (max-width: 480px) {
-        .embla__slide {
-          flex: 0 0 100%;
+        .container > * {
+          position: relative;
+          z-index: 1;
         }
+
+        .embla {
+          overflow: hidden;
+          width: 100%;
+        }
+        .embla__container {
+          display: flex;
+          touch-action: pan-y;
+        }
+        .embla__slide {
+          flex: 0 0 25%; /* 4 per view */
+          min-width: 0;
+          padding: 0 8px;
+          box-sizing: border-box;
+        }
+
         .item {
-          height: 100px;
+          height: 130px;
+          background: white;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.3s ease;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
         }
         .img-wrapper {
-          max-width: 140px;
-          max-height: 80px;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          max-width: 180px;
+          max-height: 100px;
         }
-      }
-    `,
-  }}
-/>
 
+        .item:hover {
+          transform: translateY(-5px);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+          .embla__slide {
+            flex: 0 0 33.333%;
+          }
+        }
+        @media (max-width: 768px) {
+          .embla__slide {
+            flex: 0 0 50%;
+          }
+        }
+        @media (max-width: 480px) {
+          .embla__slide {
+            flex: 0 0 100%;
+          }
+          .item {
+            height: 100px;
+          }
+          .img-wrapper {
+            max-width: 140px;
+            max-height: 80px;
+          }
+        }
+      `}</style>
     </section>
   );
 }

@@ -59,28 +59,24 @@ export default function PlacementAlliance() {
 
   return (
     <>
-     <style
-  dangerouslySetInnerHTML={{
-    __html: `
-      .owl-carousel .item {
-        background: #ffffff;
-        padding: 30px;
-        border-radius: 8px;
-        text-align: center;
-        transition: transform 0.3s;
-      }
-      .owl-carousel .item:hover {
-        transform: translateY(-5px);
-      }
-      .owl-carousel .item img {
-        max-height: 80px;
-        object-fit: contain;
-        width: auto;
-        margin: 0 auto;
-      }
-    `,
-  }}
-/>
+      <style jsx global>{`
+        .owl-carousel .item {
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 8px;
+          text-align: center;
+          transition: transform 0.3s;
+        }
+        .owl-carousel .item:hover {
+          transform: translateY(-5px);
+        }
+        .owl-carousel .item img {
+          max-height: 80px;
+          object-fit: contain;
+          width: auto;
+          margin: 0 auto;
+        }
+      `}</style>
 
       <section
         className="placement-alliances-section py-4"
