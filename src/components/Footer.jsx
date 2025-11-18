@@ -200,39 +200,62 @@ export default function Footer() {
                 <h6 className="text-white fw-bold">Accreditations</h6>
                 <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
                   <Image
-                   className="bg-white"
+                   className=""
                     src="/media/acc/nba.png"
                     alt="Accreditation 1"
-                    width={40}
-                    height={40}
+                    width={80}
+                    height={80}
                   />
                   <Image
-                   className="bg-white"
+                   className=""
                     src="/media/acc/saq.png"
                     alt="Accreditation 2"
-                    width={60}
-                    height={60}
+                    width={80}
+                    height={80}
                   />
                   <Image
-                   className="bg-white"
+                   className=""
                     src="/media/acc/aiu-n.png"
                     alt="Accreditation 3"
-                    width={60}
+                    width={80}
                     height={60}
                   />
                   <Image
                     src="/media/acc/aicte.png"
                     alt="Accreditation 4"
-                    width={60}
-                    height={60}
+                    width={80}
+                    height={80}
                   />
+               
+                </div>
+              </div>
+
+                 <div className="membership mt-4">
+                <h6 className="text-white fw-bold">Member</h6>
+                <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
+             
                   <Image
-                   className="bg-white"
+                   className=""
                     src="/media/aacsb-logo.webp"
                     alt="Accreditation 5"
-                    width={60}
-                    height={60}
+                    width={80}
+                    height={80}
                   />
+                       <Image
+                   className=""
+                    src="/media/acc/ITU Acd Member Logo.jpg"
+                    alt="Accreditation 5"
+                    width={80}
+                    height={80}
+                  />
+                  <Image
+                   className=""
+                    src="/media/acc/Shastri Logo.jpg"
+                    alt="Accreditation 5"
+                    width={80}
+                    height={80}
+                  />
+                  
                 </div>
               </div>
             </div>

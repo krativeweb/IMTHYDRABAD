@@ -162,24 +162,24 @@ Our Innovation Lab empowers students to experiment, prototype, and bring transfo
                     details:
                       "Assistant Professor & Area Chairperson, General Management",
                   },
-                  {
-                    name: "Prof. (Dr.) Arun Kumar Biswal",
-                    img: "./media/center-csr/il2.webp",
-                    role: "Assistant Professor & Area Chairperson",
-                    details: "Operations Management",
-                  },
-                  {
-                    name: "Prof. (Dr.) B Pavan Kumar",
-                    img: "./media/center-csr/il3.webp",
-                    role: "Assistant Professor & Area Chairperson",
-                    details: "Human Resource",
-                  },
-                  {
-                    name: "Prof. (Dr.) Krishna Dixit",
-                    img: "./images/csr1.webp",
-                    role: "Assistant Professor",
-                    details: "General Management",
-                  },
+                  // {
+                  //   name: "Prof. (Dr.) Arun Kumar Biswal",
+                  //   img: "./media/center-csr/il2.webp",
+                  //   role: "Assistant Professor & Area Chairperson",
+                  //   details: "Operations Management",
+                  // },
+                  // {
+                  //   name: "Prof. (Dr.) B Pavan Kumar",
+                  //   img: "./media/center-csr/il3.webp",
+                  //   role: "Assistant Professor & Area Chairperson",
+                  //   details: "Human Resource",
+                  // },
+                  // {
+                  //   name: "Prof. (Dr.) Krishna Dixit",
+                  //   img: "./images/csr1.webp",
+                  //   role: "Assistant Professor",
+                  //   details: "General Management",
+                  // },
                 ].map((person, index) => (
                   <div key={index} className="col-12 col-md-6 mb-3">
                     <div className="card h-100 p-4">

@@ -1107,6 +1107,82 @@ Faculty and scholars publish in global journals, contributing insights that shap
             </ul>
           </div>
         </div>
+
+        <div className="container-fluid border-bottom text-center mt-5 pt-4" data-aos="fade-up">
+  <h3 className="fw-bold text-warning">Publications 2025-26</h3>
+</div>
+
+<div className="container my-4" data-aos="fade-up">
+  <div className="content-section">
+
+    {/* Journal Publications */}
+    <div className="section-header">Journal Publications 2025-26</div>
+    <ul className="list-unstyled">
+      <li className="mb-3">
+        <b>A Sarath Babu</b>, Ritesh Kumar Dubey, Santanu Mandal, Prince Bhatia, “
+        <a href="https://www.uowoajournals.org/aabfj/article/id/1733/" target="_blank" rel="noopener noreferrer">
+          Anecdote of Asymmetry: Analysis of Dependence Structure, Hedging Strategies Between Green Financial Assets and Green Crypto Assets
+        </a>”,
+        <i>Australasian Accounting, Business and Finance Journal</i>. Category: B
+        <p className="mt-2">
+          <b>Abstract:</b> Cryptocurrency (crypto) markets have changed the investment landscape for many; however, they have started feeling the heat of the growing climate change awareness and are being prompted to shift towards green financial assets or clean/green cryptos. Climate change and sustainability have become an essential part of every discussion for businesses and investors. This study attempts to discover the connectedness between green financial assets and green cryptos. This paper builds upon a novel approach of copula analysis to shed light on the tail dependencies of the two asset classes. The findings provide interesting insights for investors to consider these two classes for portfolio diversification benefits or their hedging strategies, especially during a crisis period like COVID-19. The results indicate that the two asset classes exhibit distinct interdependencies, provide diversification and risk management opportunities, and behave differently during a crisis, and therefore present hedging and diversification opportunities to investors despite both asset classes being green.
+        </p>
+      </li>
+    </ul>
+
+    {/* BAC: Magazine */}
+    <div className="section-header">BAC: Magazine 2025-26</div>
+    <ul className="list-unstyled">
+      <li className="mb-3">
+        <b>Sourabh Bhattacharya</b>, Janvi, “
+        <a href="https://www.supplychaintribe.com/article/genai-and-the-future-of-logistics-predictive-adaptive-intelligent" target="_blank" rel="noopener noreferrer">
+          GenAI and the Future of Logistics Predictive, Adaptive, Intelligent
+        </a>”,
+        <i>Supply Chain Tribe by Celerity</i>. Category: B
+      </li>
+    </ul>
+
+    {/* Article in BAC */}
+    <div className="section-header">Article in BAC 2025-26</div>
+    <ul className="list-unstyled">
+      <li className="mb-3">
+        <b>Steven Raj Padakandla</b>, Ritesh Kumar Singh, “
+        <a href="https://www.moneycontrol.com/news/opinion/india-redefines-global-green-finance-amid-us-withdrawal-13638934.html#google_vignette" target="_blank" rel="noopener noreferrer">
+          India redefines global green finance amid US withdrawal
+        </a>”,
+        <i>Money Control</i>. Category: B
+      </li>
+    </ul>
+
+    {/* Book Chapters */}
+    <div className="section-header">Book Chapters 2025-26</div>
+    <ul className="list-unstyled">
+      <li className="mb-3">
+        <b>K M Baharul Islam</b>, Khalilullah Mohammed Baharul Islam, Asif Khan, Archan Mitra, “
+        <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003532293-2/human-factors-ergonomics-contemporary-business-khalilullah-mohammed-baharul-islam-asif-khan-archan-mitra" target="_blank" rel="noopener noreferrer">
+          Human Factors and Ergonomics in Contemporary Business
+        </a>”,
+        <i>Handbook of Human Factors and Ergonomics in Contemporary Business</i>, CRC Press
+      </li>
+      <li className="mb-3">
+        <b>K M Baharul Islam</b>, “
+        <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003492085-8/tales-love-passion-murder-history-baharul-islam?context=ubx&refId=884ad7b9-0548-4b2c-8fd8-c8ad00d51342" target="_blank" rel="noopener noreferrer">
+          Tales of Love, Passion, Murder, and History
+        </a>”,
+        <i>Popular Culture in South Asian Context</i>, Routledge India
+      </li>
+      <li className="mb-0">
+        <b>K M Baharul Islam</b>, Archan Mitra, Asif Khan & Rajesh Sisodia, “
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-94468-0_16#citeas" target="_blank" rel="noopener noreferrer">
+          Decentralization Dialogues: A Bibliometric Exploration of Governance and Civic Dynamics in South Asia
+        </a>”,
+        <i>Making Democratic Decentralization Work in South Asia. South Asian Public Administration</i>, Springer
+      </li>
+    </ul>
+
+  </div>
+</div>
+
       </section>
     </>
   );

@@ -279,7 +279,7 @@ export default function CentreSustainabilityCSR() {
                     {
                       name: "Dr. Sriharsha Reddy",
                       img: "/media/center-csr/4.webp",
-                      title1: "Dean & Professor",
+                      title1: "Dean (New Initiatives)",
                       title2: "IMT Hyderabad",
                       link: "/faculties",
                     },
@@ -334,12 +334,12 @@ export default function CentreSustainabilityCSR() {
                       title1: "Chairperson, Centre for Sustainability and CSR",
                       title2: "Operational Management",
                     },
-                    {
-                      name: "Dr. Tulika Sharma",
-                      img: "/media/center-csr/6.webp",
-                      title1: "Assistant Professor",
-                      title2: "General Management",
-                    },
+                    // {
+                    //   name: "Dr. Tulika Sharma",
+                    //   img: "/media/center-csr/6.webp",
+                    //   title1: "Assistant Professor",
+                    //   title2: "General Management",
+                    // },
                     {
                       name: "Dr. Kalyan C Chejarla",
                       img: "/media/center-csr/7.webp",
