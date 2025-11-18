@@ -7,6 +7,8 @@ import AOSInit from "@/components/AOSInit";
 import Script from "next/script";
 import InitScripts from "@/components/InitScripts";
 import NavbarWrapper from "@/components/NavbarWrapper";
+import GoogleTagManager from "@/components/Analytics/GoogleTagManager";
+import ClarityScript from "@/components/Analytics/ClarityScript";
 import ConditionalHeadAndScripts, {
   ConditionalFooterAndExtras,
 } from "./ConditionalLayoutClient";
@@ -27,8 +29,28 @@ export default function RootLayout({ children }) {
         {/* Minimal required meta tags */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-site-verification"
+          content="Pj9TR1mJn2yGb757lYXOqtgVymre8cK7STLaLLETt98"
+        />
+
+        {/* Bing Webmaster Tools */}
+        <meta name="msvalidate.01" content="56D96AD8B0551D1F20D444BB7B6B6BE0" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVZVXG6M1M"></script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HVZVXG6M1M');
+      `,
+    }}
+  />
       </head>
       <body>
+        <GoogleTagManager />
+        <ClarityScript />
         <ConditionalHeadAndScripts>
           <NavbarWrapper />
           <main>{children}</main>
