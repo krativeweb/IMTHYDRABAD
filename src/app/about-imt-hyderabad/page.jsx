@@ -305,6 +305,115 @@ A leading management institute shaping responsible leaders through innovation, r
         </div>
       </section>
 
+         <section className="py-5">
+        <div className="container">
+          <div className="card border-0 shadow-sm rounded-3 p-4">
+            <h3
+              className="mb-4 text-center text-warning fw-bold"
+              style={{ color: "#08317a" }}
+            >
+              Accreditation
+            </h3>
+            <p
+              className="mb-3"
+              style={{ lineHeight: 1.8, color: "#333", textAlign: "justify" }}
+            >
+              IMT Hyderabad strives to improve the quality of the management
+              programs it offers on par with global standards. This is achieved
+              by obtaining accreditations from reputed national and
+              international accreditation bodies. At the national level,
+              management programs of IMT Hyderabad are accredited by the
+              National Board of Accreditation (NBA), a body of the All India
+              Council of Technical Education (AICTE), and AACSB Member. At the
+              international level, programs of IMT Hyderabad are accredited by
+              the Association of Management Development Institutions in South
+              Asia (AMDISA) for complying with South Asian Quality Standards
+              (SAQS).
+            </p>
+            <p
+              className="mb-4"
+              style={{ lineHeight: 1.8, color: "#333", textAlign: "justify" }}
+            >
+              Future accreditation goals towards which IMT Hyderabad is marching
+              include obtaining international accreditations like the
+              Association to Advance Collegiate Schools of Business (AACSB),
+              EFMD Quality Improvement System (EQUIS), and Association of MBAs
+              (AMBA).
+            </p>
+
+            {/* Accreditations & Approvals Logos */}
+            <div className="mb-5">
+              <h5
+                className="mb-3 text-warning fw-bold"
+                style={{ color: "#08317a" }}
+              >
+                Accreditations & Approvals :
+              </h5>
+              <div className="row text-center align-items-center g-4">
+                {[
+                  {
+                    src: "/media/acc/nba.png",
+                    alt: "Accreditation 1",
+                  },
+                  {
+                    src: "/media/acc/saq.png",
+                    alt: "Accreditation 2",
+                  },
+                  {
+                    src: "/media/acc/aiu-n.png",
+                    alt: "Accreditation 3",
+                  },
+                  {
+                    src: "/media/acc/aicte.png",
+                    alt: "Accreditation 4",
+                  },
+                ].map((logo, index) => (
+                  <div className="col-6 col-md-3" key={index}>
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="img-fluid"
+                      style={{ maxHeight: "80px" }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Memberships Logos */}
+            <div>
+              <h5
+                className="mb-3 text-warning fw-bold"
+                style={{ color: "#08317a" }}
+              >
+                Memberships :
+              </h5>
+              <div className="row text-center align-items-center g-4">
+                {[
+                  {
+                    src: "/media/acc/aacsb-logo.png",
+                    alt: "Membership 1",
+                  },
+                  {
+                    src: "/media/acc/EFMD-NewLogo2013-HR_colours.png",
+                    alt: "Membership 2",
+                  },
+                ].map((logo, index) => (
+                  <div className="col-6 col-md-3" key={index}>
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="img-fluid"
+                      style={{ maxHeight: "80px" }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Custom Styles */}
       <style jsx>{`
         .faculty-hero::before {
