@@ -196,20 +196,7 @@ export default function Footer() {
 
             {/* Get Connected / Accreditations */}
             <div className="col-lg-4 col-md-6 footer-subscribe">
-              <h4>Get Connected</h4>
-              <p className="text-light">
-                Stay updated with the latest news, research, and programs from
-                IMT Hyderabad. Join our community of learners and professionals
-                to never miss an update.
-              </p>
-              <Link
-                href="contact-us"
-                className="join-btn mt-2 btn btn-warning border-white"
-              >
-                Enquire Now
-              </Link>
-
-              <div className="accreditations mt-4">
+             <div className="accreditations">
                 <h6 className="text-white fw-bold">Accreditations</h6>
                 <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
                   <Image
@@ -223,28 +210,28 @@ export default function Footer() {
                    className="bg-white"
                     src="/media/acc/saq.png"
                     alt="Accreditation 2"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <Image
                    className="bg-white"
                     src="/media/acc/aiu-n.png"
                     alt="Accreditation 3"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <Image
                     src="/media/acc/aicte.png"
                     alt="Accreditation 4"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                   <Image
                    className="bg-white"
                     src="/media/aacsb-logo.webp"
                     alt="Accreditation 5"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                   />
                 </div>
               </div>
