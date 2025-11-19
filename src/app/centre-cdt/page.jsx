@@ -475,7 +475,40 @@ export default function CentreDigitalTransformation() {
                               Department of Analytics & IT
                             </p>
                             <Link
-                              href=""
+                              href="/faculties"
+                              className="btn bg-warning text-white px-3 py-2 rounded-4"
+                            >
+                              View Profile
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   {/* Faculty 5 */}
+                  <div className="col-12 col-md-6 mb-4">
+                    <div className="card h-100 p-4">
+                      <div className="row g-0">
+                        <div className="col-md-5">
+                          <Image
+                            src="/media/faculties/22.webp"
+                            alt="Prof Sachin Chaubey"
+                            className="img-fluid rounded-start"
+                            width={300}
+                            height={224}
+                            style={{ height: "14rem", objectFit: "cover" }}
+                          />
+                        </div>
+                        <div className="col-md-7">
+                          <div className="card-body">
+                            <p className="fw-bold fs-5">Prof Sachin Chaubey</p>
+                            <p>
+                              Faculty Associate
+                              <br />
+                             IT & Analytics
+                            </p>
+                            <Link
+                              href="/faculties"
                               className="btn bg-warning text-white px-3 py-2 rounded-4"
                             >
                               View Profile
