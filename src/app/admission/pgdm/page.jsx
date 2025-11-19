@@ -61,6 +61,10 @@ export default function IMTHyderabad() {
       <style
         dangerouslySetInnerHTML={{
           __html: `
+
+           body{
+      overflow-x:hidden !important;
+      }
       .apply-now-btn {
         position: fixed;
         z-index: 9999;
