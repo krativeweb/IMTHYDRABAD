@@ -65,6 +65,13 @@ export default function IMTHyderabad() {
            body{
       overflow-x:hidden !important;
       }
+      .ttm-bg-layer, .ttm-col-wrapper-bg-layer-inner, .ttm-titlebar-wrapper .ttm-titlebar-wrapper-bg-layer {
+    position: absolute;
+    height: 100%;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+}
       .apply-now-btn {
         position: fixed;
         z-index: 9999;
