@@ -1761,6 +1761,7 @@ export default function GlobalImmersionProgram() {
                   </li>
                 </ul>
               </div>
+              <div class="table-responsive">
               <table className="table table-bordered">
                 <thead>
                   <tr>
@@ -1840,6 +1841,7 @@ export default function GlobalImmersionProgram() {
                   </tr>
                 </tbody>
               </table>
+              </div>
               <p className="title_p">
                 <b>Doing Business in a foreign country</b>
               </p>
