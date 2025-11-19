@@ -162,6 +162,20 @@ Our Innovation Lab empowers students to experiment, prototype, and bring transfo
                     details:
                       "Assistant Professor & Area Chairperson, General Management",
                   },
+                   {
+                    name: "Prof Ahmad Faraz Khan",
+                    img: "./media/faculties/1.webp",
+                    role: "Co-Chairperson – Innovation Lab",
+                    details:
+                      "Associate Professor,Strategy & General Management",
+                  },
+                   {
+                    name: "Prof Sathish Kannan",
+                    img: "./media/faculties/25.webp",
+                    role: "Adjunct Faculty – Innovation Lab",
+                    details:
+                      "Marketing",
+                  },
                   // {
                   //   name: "Prof. (Dr.) Arun Kumar Biswal",
                   //   img: "./media/center-csr/il2.webp",
@@ -211,6 +225,7 @@ Our Innovation Lab empowers students to experiment, prototype, and bring transfo
                     </div>
                   </div>
                 ))}
+
               </div>
             </div>
           )}
