@@ -358,6 +358,12 @@ export default function CentreSustainabilityCSR() {
                       title1: "Sustainability and CSR Professional",
                       title2: "Startup Mentor and Guide",
                     },
+                     {
+                      name: "Prof Irfan Ahmed Shah",
+                      img: "/media/faculties/7.webp",
+                      title1: "Assistant Professor & Area Chairperson",
+                      title2: " Economics & Public Policy",
+                    },
                   ].map((m, i) => (
                     <div className="col-12 col-md-6 mb-4" key={i}>
                       <div className="card h-100 p-4">
