@@ -15,6 +15,7 @@ import ConditionalHeadAndScripts, {
 export const metadata = {
   title: "IMT Hyderabad: Best PGDM Colleges/B Schools in Hyderabad, Telangana",
   description: "Top PGDM college in Hyderabad, Telangana",
+   keywords: ["IMT Hyderabad", "Institute of Management Technology"],
   icons: {
     icon: "/imthyd-logo.jpg",
     shortcut: "/imthyd-logo.jpg",
