@@ -9,7 +9,7 @@ export default function BannerSlider() {
     <div className="banner-slider slick-arrows-style1" id="admission">
       <div className="banner-slide">
         <img
-          src="./images/hero.jpg"
+          src="/admission/images/hero.jpg"
           alt=""
           width="100%"
           height={966}
