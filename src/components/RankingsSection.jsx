@@ -66,7 +66,7 @@ export default function RankingsSection() {
                         <h4 className="ttm-fid-inner">
                           <span className="numinate text-warning"> #72 </span>
                         </h4>
-                        <h3 className="ttm-fid-title">NIRF 2024 – Mgmt</h3>
+                        <h3 className="ttm-fid-title">NIRF Ranking - 2025</h3>
                       </div>
                     </div>
                   </div>

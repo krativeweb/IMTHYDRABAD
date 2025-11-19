@@ -238,7 +238,7 @@ export default function PGDMProgramsSection() {
     {
       dept: "finance-accounting",
       name: "Prof (Dr) Sriharsha Reddy K",
-      title: "Dean & Professor",
+      title: "Dean (New Initiatives) & Professor",
       img: "/media/faculties/29.webp",
       email: "sneha@imt.edu",
     },

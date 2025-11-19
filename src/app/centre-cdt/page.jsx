@@ -321,7 +321,7 @@ export default function CentreDigitalTransformation() {
                         <div className="col-md-7">
                           <div className="card-body">
                             <p className="fw-bold fs-4">Dr. Sriharsha Reddy</p>
-                            <p>Dean (New Initiatives), IMT Hyderabad</p>
+                            <p>Dean (New Initiatives) & Professor, IMT Hyderabad</p>
                             <Link
                               href="/faculties"
                               className="btn bg-warning text-white px-3 py-2 rounded-4"

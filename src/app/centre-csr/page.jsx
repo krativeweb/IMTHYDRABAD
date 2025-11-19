@@ -279,7 +279,7 @@ export default function CentreSustainabilityCSR() {
                     {
                       name: "Dr. Sriharsha Reddy",
                       img: "/media/center-csr/4.webp",
-                      title1: "Dean (New Initiatives)",
+                      title1: "Dean (New Initiatives) & Professor",
                       title2: "IMT Hyderabad",
                       link: "/faculties",
                     },

@@ -197,7 +197,7 @@ export default function Footer() {
             {/* Get Connected / Accreditations */}
             <div className="col-lg-4 col-md-6 footer-subscribe">
              <div className="accreditations">
-                <h6 className="text-white fw-bold">Accreditations</h6>
+                <h6 className="text-white fw-bold">Accreditations & Approvals</h6>
                 <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
                   <Image
                    className=""

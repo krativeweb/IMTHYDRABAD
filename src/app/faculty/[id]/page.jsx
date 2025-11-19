@@ -309,7 +309,7 @@ export default function FacultyProfile({ params }) {
                 className="fw-bold mb-3"
                 style={{ color: "rgb(22, 57, 119)" }}
               >
-                <i>{faculty.name}</i>
+                {faculty.name}
               </h3>
               <ul className="list-unstyled mb-4">
                 <li>
