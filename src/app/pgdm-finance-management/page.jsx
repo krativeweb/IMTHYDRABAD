@@ -294,6 +294,20 @@ Our Finance program prepares analytical leaders who drive growth, manage risk, a
                 CAREER OPPORTUNITIES
               </button>
             </li>
+              <li className="nav-item m-1" role="presentation">
+              <button
+                className="nav-link fw-bold"
+                id="competency-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#competency"
+                type="button"
+                role="tab"
+                aria-controls="competency"
+                aria-selected="false"
+              >
+                COMPETENCY GOAL 
+              </button>
+            </li>
           </ul>
 
           {/* Tabs Content */}
@@ -395,6 +409,74 @@ Our Finance program prepares analytical leaders who drive growth, manage risk, a
                       <strong>Investment Banking:</strong> Equity Research Analyst, Asset Valuation Associate
                     </li>
                   </ul>
+                </div>
+    {/* compentency */}
+                 <div className="tab-pane fade" id="competency" role="tabpanel" aria-labelledby="competency-tab">
+                  <div class="container my-5">
+                    <div class="row">
+                      <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title">1. Business Acumen</h3>
+                                    <ul class="list-unstyled">
+                                        <li>1.1. Demonstrate In-depth and
+                                          contemporary knowledge of business
+                                          functions</li>
+                                        <li>  1.2. Integrate the principles of
+                                          finance with different functional areas
+                                          to solve global business problems</li>
+                                    </ul>
+                                    
+                                    <h6 class="card-subtitle mb-2  mt-3">Goal Description:</h6>
+                                    <p class="card-text">Graduating students should demonstrate proficiency in applying core business concepts and integrate knowledge from various business disciplines to analyze and solve global business challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title ">2. Leadership</h3>
+                            
+                                    <ul class="list-unstyled">
+                                        <li> 2.1. Demonstrate interpersonal
+                                         skills to communicate ideas and
+                                         resolve conflicts effectively.
+                                         </li>
+                                        <li>2.2. Develop acumen to make
+                                           effective financial decisions in
+                                           complex and ambiguous scenarios</li>
+                                    </ul>
+                                    
+                                    <h6 class="card-subtitle mb-2  mt-3">Goal Description:</h6>
+                                    <p class="card-text">Graduating students should have the capacity to lead and inspire others and the capability to make strategic decisions</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title ">3. Responsibility</h3>
+                                    <ul class="list-unstyled">
+                                        <li>3.1. Demonstrate sensitivity
+                                          towards environmental and social
+                                          implications of business decisions.</li>
+                                        <li>3.2. Develop responsible and
+                                         sustainable business strategies with
+                                         due consideration to all key internal
+                                         and external stakeholders
+                                         </li>
+                                    </ul>
+                                    
+                                    <h6 class="card-subtitle mb-2  mt-3">Goal Description:</h6>
+                                    <p class="card-text">Graduating students should be committed to responsible and sustainable business practices that balance stakeholder priorities</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                   </div>
                 </div>
               </div>
             </div>
