@@ -40,10 +40,10 @@ export default function InternationalAssociations() {
         const url = `${
           base.endsWith("/") ? base.slice(0, -1) : base
         }/int_association`;
-        console.log("Fetching international associations →", url);
+        // console.log("Fetching international associations →", url);
 
         const { data } = await axios.get(url, { timeout: 8000 });
-        console.log("API response →", data);
+        // console.log("API response →", data);
 
         // Keep only non-deleted items
         const active = data.filter((item) => item.is_del === 0);
