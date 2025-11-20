@@ -421,7 +421,7 @@ The ISCM specialization develops expertise in operations, logistics, and supply 
                                       <tr>
                                           <th scope="col">Competency Goal</th>
                                           <th className="text-center" scope="col">Goal Description</th>
-                                          <th className="text-center"scope="col">PGDM</th>
+                                          <th className="text-center"scope="col">PGDM (LSCM)</th>
                                       </tr>
                                   </thead>
                                   <tbody>
