@@ -208,17 +208,17 @@ export default function Footer() {
                   />
                   <Image
                    className=""
-                    src="/media/acc/saq.png"
+                    src="/media/acc/sas.jpg"
                     alt="Accreditation 2"
                     width={80}
                     height={80}
                   />
                   <Image
                    className=""
-                    src="/media/acc/aiu-n.png"
+                    src="/media/acc/aiu.png"
                     alt="Accreditation 3"
                     width={80}
-                    height={60}
+                    height={80}
                   />
                   <Image
                     src="/media/acc/aicte.png"
@@ -238,21 +238,21 @@ export default function Footer() {
                    className=""
                     src="/media/aacsb-logo.webp"
                     alt="Accreditation 5"
-                    width={80}
+                    width={120}
                     height={80}
                   />
                        <Image
                    className=""
                     src="/media/acc/ITU Acd Member Logo.jpg"
                     alt="Accreditation 5"
-                    width={80}
+                    width={75}
                     height={80}
                   />
                   <Image
                    className=""
-                    src="/media/acc/Shastri Logo.jpg"
+                    src="/media/acc/Shastri Logo.png"
                     alt="Accreditation 5"
-                    width={80}
+                    width={140}
                     height={80}
                   />
                   
