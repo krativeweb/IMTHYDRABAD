@@ -414,7 +414,7 @@ Our Marketing program fuses creativity, analytics, and brand strategy to build f
                                       <tr>
                                           <th scope="col">Competency Goal</th>
                                           <th className="text-center" scope="col">Goal Description</th>
-                                          <th className="text-center"scope="col">PGDM</th>
+                                          <th className="text-center"scope="col">PGDM  (Marketing)</th>
                                       </tr>
                                   </thead>
                                   <tbody>
