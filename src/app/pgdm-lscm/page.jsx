@@ -411,73 +411,55 @@ The ISCM specialization develops expertise in operations, logistics, and supply 
                     <li>Operations, Logistics, and SCM Managers with End User companies such as manufacturers, retailers, ecommerce companies etc.</li>
                   </ul>
                 </div>
-                 {/* compentency */}
-                 <div className="tab-pane fade" id="competency" role="tabpanel" aria-labelledby="competency-tab">
-                  <div class="container my-5">
-                    <div class="row">
-                      <div class="col-md-4 mb-4">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title">1. Business Acumen</h3>
-                                    <ul class="list-unstyled">
-                                        <li>1.1 Acquire LSCM
-                                          functional skills and expertise</li>
-                                        <li>  1.2 Deploy global
-                                        benchmarks and scenarios for
-                                        LSCM</li>
-                                    </ul>
-                                    
-                                    <h6 class="card-subtitle mb-2  mt-3">Goal Description:</h6>
-                                    <p class="card-text">Graduating students should demonstrate proficiency in applying core business concepts and integrate knowledge from various business disciplines to analyze and solve global business challenges</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title ">2. Leadership</h3>
-                            
-                                    <ul class="list-unstyled">
-                                        <li>  2.1 Leverage emerging
-                                            technology for a leading LSCM
-                                            performance
-
-                                         </li>
-                                        <li>2.2 Extract, process,
-                                            analyze LSCM data for insights
-                                            and decision making
-                                            </li>
-                                    </ul>
-                                    
-                                    <h6 class="card-subtitle mb-2  mt-3">Goal Description:</h6>
-                                    <p class="card-text">Graduating students should have the capacity to lead and inspire others and the capability to make strategic decisions</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="card-title ">3. Responsibility</h3>
-                                    <ul class="list-unstyled">
-                                        <li> 3.1 Understand and apply
-                                            ESG concepts in LSCM domain
-
-                                          </li>
-                                        <li> 3.2 Design responsibleLSCM
-                                           </li>
-                                    </ul>
-                                    
-                                    <h6 class="card-subtitle mb-2  mt-3">Goal Description:</h6>
-                                    <p class="card-text">Graduating students should be committed to responsible and sustainable business practices that balance stakeholder priorities</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div>
-                   </div>
-                </div>
+               
+                  {/* compentency */}
+                <div className="tab-pane fade" id="competency" role="tabpanel" aria-labelledby="competency-tab">
+                      <div class="container my-5">
+                          <div class="table-responsive">
+                              <table class="table table-bordered table-striped">
+                                  <thead class="thead-dark">
+                                      <tr>
+                                          <th scope="col">Competency Goal</th>
+                                          <th className="text-center" scope="col">Goal Description</th>
+                                          <th className="text-center"scope="col">PGDM</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="align-middle"><strong>CG 1. Business Acumen</strong></td>
+                                          <td class="align-middle">Graduating students should demonstrate proficiency in applying core business concepts and integrate knowledge from various business disciplines to analyze and solve global business challenges.</td>
+                                          <td>
+                                              <ul class="list-unstyled mb-0">
+                                                  <li><strong>PLO 1.1.</strong> Acquire LSCM functional skills and expertise </li>
+                                                  <li><strong>PLO 1.2.</strong> Deploy global benchmarks and scenarios for LSCM </li>
+                                              </ul>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td class="align-middle"><strong>CG 2. Leadership</strong></td>
+                                          <td class="align-middle">Graduating students should have the capacity to lead and inspire others and the capability to make strategic decisions</td>
+                                          <td>
+                                              <ul class="list-unstyled mb-0">
+                                                  <li><strong>PLO 2.1.</strong>  Leverage emerging technology for a leading LSCM performance</li>
+                                                  <li><strong>PLO 2.2.</strong>  Extract, process, analyze LSCM data for insights and decision making</li>
+                                              </ul>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td class="align-middle"><strong>CG 3. Responsibility</strong></td>
+                                          <td class="align-middle">Graduating students should be committed to responsible and sustainable business practices that balance stakeholder priorities</td>
+                                          <td>
+                                              <ul class="list-unstyled mb-0">
+                                                  <li><strong>PLO 3.1.</strong>  Understand and apply ESG concepts in LSCM domain</li>
+                                                  <li><strong>PLO 3.2.</strong>   Design responsible LSCM</li>
+                                              </ul>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
               </div>
             </div>
           </div>
