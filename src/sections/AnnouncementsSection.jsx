@@ -84,7 +84,7 @@ export default function AnnouncementsSection() {
             dangerouslySetInnerHTML={{ __html: item.description }}
           />
           <Link
-            href="#"
+            href={index === 0 ? "/admission/pgdm" : "#"}
             className="btn btn-warning border-dark rounded-pill"
           >
             Read More
