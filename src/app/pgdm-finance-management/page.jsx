@@ -419,7 +419,7 @@ Our Finance program prepares analytical leaders who drive growth, manage risk, a
                                       <tr>
                                           <th scope="col">Competency Goal</th>
                                           <th className="text-center" scope="col">Goal Description</th>
-                                          <th className="text-center"scope="col">PGDM</th>
+                                          <th className="text-center"scope="col">PGDM (Finance)</th>
                                       </tr>
                                   </thead>
                                   <tbody>
