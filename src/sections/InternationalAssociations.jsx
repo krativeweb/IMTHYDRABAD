@@ -202,7 +202,7 @@ export default function InternationalAssociations() {
             flex: 0 0 100%;
           }
           .item {
-            height: 100px;
+            height: 140px;
           }
           .img-wrapper {
             max-width: 140px;
