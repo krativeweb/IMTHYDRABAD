@@ -71,7 +71,7 @@ export default function AnnouncementsSection() {
 
   <div className="row g-4">
   {/* First two big cards */}
-  {announcements.slice(0, 2).map((item) => (
+  {announcements.slice(0, 2).map((item,index) => (
     <div key={item.id} className="col-md-6">
       <div className="card border-0 shadow-sm d-flex flex-md-row align-items-center h-100">
         <div className="card-body">
