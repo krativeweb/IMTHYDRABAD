@@ -178,7 +178,7 @@ export default function PlacementAlliances() {
             padding: 0 12px;
           }
           .logo-box {
-            height: 80px;
+            height: 140px;
             padding: 12px;
           }
         }
