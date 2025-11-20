@@ -319,6 +319,9 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                 role="tabpanel"
               >
                 <p className="">
+                  Ritesh Kumar Singh &amp; Steven Raj Padakandla, "India redefines global green finance amid US withdrawal", Money Control 29 October 2025
+                 <br />
+                  <br />
                   Ritesh Kumar Singh &amp; Steven Raj Padakandla, "Government
                   purchases don’t need atmanirbharta; foreign firms are
                   required", Money Control 22 May 2025 <br />
@@ -829,6 +832,27 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                   </tr>
                 </thead>
                 <tbody>
+                   <tr>
+                    <td>Khalilullah Mohammed Baharul Islam, Asif Khan, Archan Mitra</td>
+                    <td>Handbook of Human Factors and Ergonomics in Contemporary Business</td>
+                    <td> Human Factors and Ergonomics in Contemporary Business</td>
+                    <td>CRC Press</td>
+                    <td>2025-26</td>
+                  </tr>
+                   <tr>
+                    <td>K M Baharul Islam</td>
+                    <td>Popular Culture in South Asian Context</td>
+                    <td>Tales of Love, Passion, Murder, and History</td>
+                    <td>Routledge India</td>
+                    <td>2025-26</td>
+                  </tr>
+                   <tr>
+                    <td>K. M. Baharul Islam, Archan Mitra, Asif Khan & Rajesh Sisodia </td>
+                    <td>Making Democratic Decentralization Work in South Asia. South Asian Public Administration</td>
+                    <td>Decentralization Dialogues: A Bibliometric Exploration of Governance and Civic Dynamics in South Asia</td>
+                    <td>Springer</td>
+                    <td>2025-26</td>
+                  </tr>
                   <tr>
                     <td>Krishna Dixit</td>
                     <td>Knowledge Management in International Business</td>
@@ -1084,13 +1108,22 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <th>SNo</th>
                     <th>Author Name</th>
                     <th>Title of the article</th>
-                    <th>Published</th>
+                    <th>Publisher</th>
                     <th>Year</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
+                    <td>Sourabh Bhattacharya</td>
+                    <td>
+                    GenAI and the Future of Logistics Predictive, Adaptive, Intelligent
+                    </td>
+                    <td>Supply Chain Tribe by Celerity</td>
+                    <td>2025-26</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
                     <td>Sai Teja V.V(IMT student), Dr. Kalyana C. Chejarla</td>
                     <td>
                       Pure vs. hybrid EV makers: What does it take to win the
@@ -1100,7 +1133,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2024-25</td>
                   </tr>
                   <tr>
-                    <td>2</td>
+                    <td>3</td>
                     <td>Tumpa Dey</td>
                     <td>
                       Leadership Lessons from Life the Life of Bruce Springsteen
@@ -1109,7 +1142,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2020-21</td>
                   </tr>
                   <tr>
-                    <td>3</td>
+                    <td>4</td>
                     <td>Steven Raj Padakandla &amp; Niranjan Sahoo</td>
                     <td>
                       India’s China FDA Gamble Protectionism will not make India
@@ -1119,7 +1152,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2019-20</td>
                   </tr>
                   <tr>
-                    <td>4</td>
+                    <td>5</td>
                     <td>Steven Raj &amp; Ritesh Kumar Singh</td>
                     <td>
                       The Biggest Obstacle to India's Government Growth is the
@@ -1129,7 +1162,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2019-20</td>
                   </tr>
                   <tr>
-                    <td>5</td>
+                    <td>6</td>
                     <td>Ritesh Kumar Dubey &amp; Anubhav Tiwari</td>
                     <td>
                       Producing Research Creating an Academic Industry
@@ -1142,7 +1175,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2019-20</td>
                   </tr>
                   <tr>
-                    <td>6</td>
+                    <td>7</td>
                     <td>Kalyana C.Chejarla</td>
                     <td>
                       Pharmaceutical Supply Chain Vulnerabilities: Role of
@@ -1155,7 +1188,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2019-20</td>
                   </tr>
                   <tr>
-                    <td>7</td>
+                    <td>8</td>
                     <td>Steven Raj Padakandla &amp; Ritesh Kumar Singh</td>
                     <td>
                       As Tensions Rise Between India and the US, Are We Reaching
@@ -1165,7 +1198,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2019-20</td>
                   </tr>
                   <tr>
-                    <td>8</td>
+                    <td>9</td>
                     <td>Steven Raj</td>
                     <td>
                       What Problems Will Modi Government Tackle in Its First 100
@@ -1175,7 +1208,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2018-19</td>
                   </tr>
                   <tr>
-                    <td>9</td>
+                    <td>10</td>
                     <td>Surajit Ghosh Dastidar</td>
                     <td>
                       An Academician’s Dilemma: the Jump Into Data Science
@@ -1184,7 +1217,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2018-19</td>
                   </tr>
                   <tr>
-                    <td>10</td>
+                    <td>11</td>
                     <td>Surajit Ghosh Dastidar</td>
                     <td>
                       Pharma and Healthcare Analytics is going to be the next
@@ -1194,7 +1227,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2018-19</td>
                   </tr>
                   <tr>
-                    <td>11</td>
+                    <td>12</td>
                     <td>Steven Raj</td>
                     <td>
                       What Foreign investors need to know about India's General
@@ -1204,21 +1237,21 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2018-19</td>
                   </tr>
                   <tr>
-                    <td>12</td>
+                    <td>13</td>
                     <td>Shabnam Priyadasrshini</td>
                     <td>Postive Side of Organization Politics</td>
                     <td>Business Manager, HR Magazine</td>
                     <td>2018-19</td>
                   </tr>
                   <tr>
-                    <td>13</td>
+                    <td>14</td>
                     <td>Dhananjay Singh</td>
                     <td>Selecting the right MBA specialization</td>
                     <td>Careers360</td>
                     <td>2018-19</td>
                   </tr>
                   <tr>
-                    <td>14</td>
+                    <td>15</td>
                     <td>
                       Nikhil Rastogi &amp; Chakarapani Chaturvedula and Nupur
                       Pavan Bang
@@ -1228,14 +1261,14 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2017-18</td>
                   </tr>
                   <tr>
-                    <td>15</td>
+                    <td>16</td>
                     <td>Dhananjay Singh</td>
                     <td>The Power of MBA is Still Intact</td>
                     <td>Careers360</td>
                     <td>2017-18</td>
                   </tr>
                   <tr>
-                    <td>16</td>
+                    <td>17</td>
                     <td>Debendra P Kar</td>
                     <td>
                       HR Analytics: the next frontier for Workplace
@@ -1245,84 +1278,84 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2017-18</td>
                   </tr>
                   <tr>
-                    <td>17</td>
+                    <td>18</td>
                     <td>Debendra P Kar</td>
                     <td>Factors of Workplace Empowerment</td>
                     <td>Business Manager, HR Magazine</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>18</td>
+                    <td>19</td>
                     <td>Nikhil Rastogi</td>
                     <td>Why do we need Life Insirance</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>19</td>
+                    <td>20</td>
                     <td>Nikhil Rastogi</td>
                     <td>Achieving Financial Goals</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>20</td>
+                    <td>21</td>
                     <td>Nikhil Rastogi</td>
                     <td>Income life-cycle and Risk Appetite</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>21</td>
+                    <td>22</td>
                     <td>Nikhil Rastogi</td>
                     <td>Emergency Fund: Goal No.1</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>22</td>
+                    <td>23</td>
                     <td>Nikhil Rastogi</td>
                     <td>Retirement Goal Planning</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>23</td>
+                    <td>24</td>
                     <td>Nikhil Rastogi</td>
                     <td>Portfolio Rebalancing 101</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>24</td>
+                    <td>25</td>
                     <td>Nikhil Rastogi</td>
                     <td>Investing Biases: Mental Accounting and Sunk Costs</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>25</td>
+                    <td>26</td>
                     <td>Nikhil Rastogi</td>
                     <td>Anchoring Bias</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>26</td>
+                    <td>27</td>
                     <td>Nikhil Rastogi</td>
                     <td>The “Dopamine” Factor</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>27</td>
+                    <td>28</td>
                     <td>Nikhil Rastogi</td>
                     <td>Effect of Demonetization on Stock Prices</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>28</td>
+                    <td>29</td>
                     <td>Nikhil Rastogi</td>
                     <td>
                       Asset Allocation of Indian households before and after
@@ -1332,7 +1365,7 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>29</td>
+                    <td>30</td>
                     <td>Nikhil Rastogi</td>
                     <td>
                       How much are you worth: Preparing your own Balance Sheet
@@ -1341,28 +1374,28 @@ const activeYear = sortedYears.find((year) => grouped[year]) || sortedYears[0];
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>30</td>
+                    <td>31</td>
                     <td>Nikhil Rastogi</td>
                     <td>Bank Fixed Deposits: The Illusion of Safety</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>31</td>
+                    <td>32</td>
                     <td>Nikhil Rastogi</td>
                     <td>Preventing the Herd Behaviour0 in Investment</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>32</td>
+                    <td>33</td>
                     <td>Nikhil Rastogi</td>
                     <td>Finding great investment opportunity</td>
                     <td>Fundzpark</td>
                     <td>2016-17</td>
                   </tr>
                   <tr>
-                    <td>33</td>
+                    <td>34</td>
                     <td>Nikhil Rastogi</td>
                     <td>Meeting Financial Goals</td>
                     <td>Fundzpark</td>
