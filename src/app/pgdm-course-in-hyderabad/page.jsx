@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-
+import Faculties from "@/app/faculties/page"
 // Dynamically import OwlCarousel to avoid SSR issues
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
 
@@ -334,9 +334,9 @@ export default function PGDMProgramsSection() {
       </noscript>
 
       {/* Styles */}
-     <style
-  dangerouslySetInnerHTML={{
-    __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
       /* General Table Styles */
       .table thead th {
         background-color: #08317a !important;
@@ -623,6 +623,9 @@ export default function PGDMProgramsSection() {
       .mx-1 {
         margin-top: 9px;
       }
+        .pgdm-course{
+        display:none;
+        }
 
       @media (max-width: 768px) {
         .tab-button {
@@ -641,6 +644,7 @@ export default function PGDMProgramsSection() {
         }
       }
 
+
       @media (max-width: 576px) {
         .tab-button {
           width: 100%;
@@ -653,31 +657,45 @@ export default function PGDMProgramsSection() {
           padding: 1.5rem;
         }
       }
-    `,
-  }}
-/>
 
+    `,
+        }}
+      />
 
       {/* Top Banner */}
-      <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
+      <div
+        className="faculty-hero text-center text-white py-5"
+        data-aos="fade-up"
+      >
         <h2 className="display-5 fw-bold mb-2">About-PGDM-Programs</h2>
         <p className="text-white">
           A program built for dynamic business leadership. <br />
-Our PGDM equips students with analytical depth, strategic agility, and ethical grounding for a rapidly evolving world.
+          Our PGDM equips students with analytical depth, strategic agility, and
+          ethical grounding for a rapidly evolving world.
         </p>
       </div>
 
       {/* Breadcrumb */}
-      <div className="breadcrumb p-4" style={{ backgroundColor: "rgb(22, 57, 119)" }}>
+      <div
+        className="breadcrumb p-4"
+        style={{ backgroundColor: "rgb(22, 57, 119)" }}
+      >
         <div className="container-fluid">
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb bg-transparent p-0 m-0">
               <li className="breadcrumb-item">
-                <Link href="/" className="text-white fw-bold" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/"
+                  className="text-white fw-bold"
+                  style={{ textDecoration: "none" }}
+                >
                   Home
                 </Link>
               </li>
-              <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+              <li
+                className="breadcrumb-item active text-warning fw-bold"
+                aria-current="page"
+              >
                 About-PGDM-Programs
               </li>
             </ol>
@@ -688,33 +706,80 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
       {/* Introduction Section */}
       <div className="container py-3">
         <div className="section-header">
-          <h2 className="section-title text-center mb-4" style={{ color: "#08317a" }} data-aos="fade-up" data-aos-delay="200">
+          <h2
+            className="section-title text-center mb-4"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             About-PGDM-Programs
           </h2>
         </div>
         <section id="executive-education" className="py-5">
           <div className="container" data-aos="fade-up" data-aos-delay="200">
             <div className="card p-4">
-              <h2 className="section-title text-center" style={{ color: "#08317a" }} data-aos="fade-up" data-aos-delay="200">
+              <h2
+                className="section-title text-center"
+                style={{ color: "#08317a" }}
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 Introduction
               </h2>
               <div className="row justify-content-center mt-3">
                 <div className="col-lg-12 text-justify">
                   <p>
-                    IMT Hyderabad, a leading B School in India, offers programs in the area of Management at post graduate level and doctorial level. IMT Hyderabad is accredited by South Asian Quality Systems (SAQS) & National Board of Accreditation (NBA) and committed to nurture socially responsible business leaders through quality management education.
+                    IMT Hyderabad, a leading B School in India, offers programs
+                    in the area of Management at post graduate level and
+                    doctorial level. IMT Hyderabad is accredited by South Asian
+                    Quality Systems (SAQS) & National Board of Accreditation
+                    (NBA) and committed to nurture socially responsible business
+                    leaders through quality management education.
                   </p>
                   <p>
-                    Excellence, innovation and responsible leadership have always remained basic tenets guiding all the processes at IMT Hyderabad. The mission of IMT Hyderabad is to promote academic excellence, to enhance industry readiness through learner centric pedagogy and industry inspired curriculum and to instill social conscientiousness.
+                    Excellence, innovation and responsible leadership have
+                    always remained basic tenets guiding all the processes at
+                    IMT Hyderabad. The mission of IMT Hyderabad is to promote
+                    academic excellence, to enhance industry readiness through
+                    learner centric pedagogy and industry inspired curriculum
+                    and to instill social conscientiousness.
                   </p>
                   <p>
-                    Industry relevant curriculum, participant centered learning, practitioner sessions, long duration internship program, International student exchange program, global immersion, social immersion, community connect, leadership series, psychometric assessment, wide range of elective choices are some of the salient features of curriculum design at IMT Hyderabad. In pursuit of academic excellence, IMT Hyderabad provides curricular and extracurricular inputs through live projects, simulations, showcases, industrial visits, skillathons, leadership lab, sports fest, management fest, debate clubs, cultural clubs and many more.
+                    Industry relevant curriculum, participant centered learning,
+                    practitioner sessions, long duration internship program,
+                    International student exchange program, global immersion,
+                    social immersion, community connect, leadership series,
+                    psychometric assessment, wide range of elective choices are
+                    some of the salient features of curriculum design at IMT
+                    Hyderabad. In pursuit of academic excellence, IMT Hyderabad
+                    provides curricular and extracurricular inputs through live
+                    projects, simulations, showcases, industrial visits,
+                    skillathons, leadership lab, sports fest, management fest,
+                    debate clubs, cultural clubs and many more.
                   </p>
-                  <h5 style={{ color: "#08317a" }}>Program Education Objectives (PEOs)</h5>
+                  <h5 style={{ color: "#08317a" }}>
+                    Program Education Objectives (PEOs)
+                  </h5>
                   <ul>
-                    <li><b>PEO1:</b> Apply the theories of management science to understand and solve Industry problems effectively and being efficient always.</li>
-                    <li><b>PEO2:</b> Use the skills gained through practice oriented learning that equip the students to be industry ready.</li>
-                    <li><b>PEO3:</b> Ability to adapt to the dynamic business environment using skills learned through industry projects and assignments.</li>
-                    <li><b>PEO4:</b> Function with an orientation to ethical practices and societal well-being.</li>
+                    <li>
+                      <b>PEO1:</b> Apply the theories of management science to
+                      understand and solve Industry problems effectively and
+                      being efficient always.
+                    </li>
+                    <li>
+                      <b>PEO2:</b> Use the skills gained through practice
+                      oriented learning that equip the students to be industry
+                      ready.
+                    </li>
+                    <li>
+                      <b>PEO3:</b> Ability to adapt to the dynamic business
+                      environment using skills learned through industry projects
+                      and assignments.
+                    </li>
+                    <li>
+                      <b>PEO4:</b> Function with an orientation to ethical
+                      practices and societal well-being.
+                    </li>
                   </ul>
                   <h5 style={{ color: "#08317a" }}>Program Goals</h5>
                   <ul>
@@ -726,10 +791,24 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                     <li>Social responsibility</li>
                   </ul>
                   <p>
-                    The PGDM program structure is based on the trimester system, where each trimester is on an average of 12 weeks. The intervening period between the first and second year is the summer term of about 12 weeks duration. During the summer term students can opt for Internship (IP) or Student Exchange Program (SEP) or pursue management thesis and seminars (MTS). MTS is designed for those who want to build a career in research fields.
+                    The PGDM program structure is based on the trimester system,
+                    where each trimester is on an average of 12 weeks. The
+                    intervening period between the first and second year is the
+                    summer term of about 12 weeks duration. During the summer
+                    term students can opt for Internship (IP) or Student
+                    Exchange Program (SEP) or pursue management thesis and
+                    seminars (MTS). MTS is designed for those who want to build
+                    a career in research fields.
                   </p>
                   <p>
-                    The PGDM Programs at IMT Hyderabad address the varied aspirations of the students by offering a large variety of electives. It follows the cafeteria approach wherein a student has the flexibility to choose electives based on their career aspirations. All the PGDM students are required to take 12 elective courses in addition to 3 core elective course. First year course are common for all the programs and the elective courses are offered in the second year.
+                    The PGDM Programs at IMT Hyderabad address the varied
+                    aspirations of the students by offering a large variety of
+                    electives. It follows the cafeteria approach wherein a
+                    student has the flexibility to choose electives based on
+                    their career aspirations. All the PGDM students are required
+                    to take 12 elective courses in addition to 3 core elective
+                    course. First year course are common for all the programs
+                    and the elective courses are offered in the second year.
                   </p>
                 </div>
               </div>
@@ -742,7 +821,11 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
       <section className="py-4">
         <div className="container">
           <div className="tabs-container">
-            <ul className="nav nav-pills justify-content-center flex-wrap" id="pgdmTabs" role="tablist">
+            <ul
+              className="nav nav-pills justify-content-center flex-wrap"
+              id="pgdmTabs"
+              role="tablist"
+            >
               <li className="nav-item" role="presentation">
                 <button
                   className="tab-button active"
@@ -833,11 +916,26 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
           {/* Tab Content */}
           <div className="tab-content" id="pgdmTabContent">
             {/* LEAP Tab */}
-            <div className="tab-pane fade show active" id="leap" role="tabpanel" aria-labelledby="leap-tab">
+            <div
+              className="tab-pane fade show active"
+              id="leap"
+              role="tabpanel"
+              aria-labelledby="leap-tab"
+            >
               <div className="content-section">
                 <h4>Leadership Engagement & Academic Program (LEAP)</h4>
                 <p>
-                  LEAP is a value-added Business Leadership Program offered by IMTH to all the students in line with its' vision of <b>nurturing socially responsible business leaders</b>. LEAP is embedded in the existing program architecture offered by IMTH. The purpose of LEAP is to nurture communication skills, cognitive & interpersonal skills, contemporary digital skills and develop business acumen & social consciousness among students of IMTH. LEAP outcomes are achieved through select core & elective courses, labs, workshops, social immersion, projects, leadership series & symposium and one to one coaching by industry mentors.
+                  LEAP is a value-added Business Leadership Program offered by
+                  IMTH to all the students in line with its' vision of{" "}
+                  <b>nurturing socially responsible business leaders</b>. LEAP
+                  is embedded in the existing program architecture offered by
+                  IMTH. The purpose of LEAP is to nurture communication skills,
+                  cognitive & interpersonal skills, contemporary digital skills
+                  and develop business acumen & social consciousness among
+                  students of IMTH. LEAP outcomes are achieved through select
+                  core & elective courses, labs, workshops, social immersion,
+                  projects, leadership series & symposium and one to one
+                  coaching by industry mentors.
                 </p>
                 <div className="accordion" id="leapAccordion">
                   <div className="accordion-item">
@@ -853,9 +951,21 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         One to One Mentoring by Industry Leaders
                       </button>
                     </h2>
-                    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#leapAccordion">
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#leapAccordion"
+                    >
                       <div className="accordion-body">
-                        Industry Mentor Mentee Program (IM2P) is initiated by IMTH to enhance industry readiness and nurture business leadership among students. Industry mentors will help students to hone their interpersonal skills, critical thinking and problem-solving skills in real situations. Through this program, final year students will be able to appreciate roles, responsibilities, and challenges of a particular career path in specific industry.
+                        Industry Mentor Mentee Program (IM2P) is initiated by
+                        IMTH to enhance industry readiness and nurture business
+                        leadership among students. Industry mentors will help
+                        students to hone their interpersonal skills, critical
+                        thinking and problem-solving skills in real situations.
+                        Through this program, final year students will be able
+                        to appreciate roles, responsibilities, and challenges of
+                        a particular career path in specific industry.
                       </div>
                     </div>
                   </div>
@@ -872,9 +982,17 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         Global Immersion
                       </button>
                     </h2>
-                    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#leapAccordion">
+                    <div
+                      id="collapseTwo"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#leapAccordion"
+                    >
                       <div className="accordion-body">
-                        Students will be given opportunity to pursue global immersion programs with IMT Dubai and 44+ partner institutes across continents for a duration of one week to a trimester.
+                        Students will be given opportunity to pursue global
+                        immersion programs with IMT Dubai and 44+ partner
+                        institutes across continents for a duration of one week
+                        to a trimester.
                       </div>
                     </div>
                   </div>
@@ -891,9 +1009,18 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         Hands on Workshops in Emerging Areas
                       </button>
                     </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#leapAccordion">
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#leapAccordion"
+                    >
                       <div className="accordion-body">
-                        IMTH offers hands on workshops during first year of the program in the emerging areas such as programming using python, blockchain technologies, advanced spreadsheet modelling, personal branding, leadership lab, creativity innovation workshop and design thinking.
+                        IMTH offers hands on workshops during first year of the
+                        program in the emerging areas such as programming using
+                        python, blockchain technologies, advanced spreadsheet
+                        modelling, personal branding, leadership lab, creativity
+                        innovation workshop and design thinking.
                       </div>
                     </div>
                   </div>
@@ -910,9 +1037,19 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         Distinguished Speaker Series
                       </button>
                     </h2>
-                    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#leapAccordion">
+                    <div
+                      id="collapseFour"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#leapAccordion"
+                    >
                       <div className="accordion-body">
-                        CXOs from leading corporates are invited to share their business building experience with students and update them about the happenings in the corporate world. Students learn about the challenges that these leaders had to face while achieving their goal, which gives them the motivation to think out-of the box solutions.
+                        CXOs from leading corporates are invited to share their
+                        business building experience with students and update
+                        them about the happenings in the corporate world.
+                        Students learn about the challenges that these leaders
+                        had to face while achieving their goal, which gives them
+                        the motivation to think out-of the box solutions.
                       </div>
                     </div>
                   </div>
@@ -929,9 +1066,23 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         Industry Immersion
                       </button>
                     </h2>
-                    <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#leapAccordion">
+                    <div
+                      id="collapseFive"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingFive"
+                      data-bs-parent="#leapAccordion"
+                    >
                       <div className="accordion-body">
-                        During the intervening summer term between the first and second years, students undergo a 12 week faculty-supervised internship in an organization to apply the knowledge they have acquired during the first year of their program and bridge the perceived gap between theory and practice. The IP enables students to experience the rigors of the professional environment, both in terms of form and substance. It provides them with opportunities to learn and practice business knowledge and professional behavior.
+                        During the intervening summer term between the first and
+                        second years, students undergo a 12 week
+                        faculty-supervised internship in an organization to
+                        apply the knowledge they have acquired during the first
+                        year of their program and bridge the perceived gap
+                        between theory and practice. The IP enables students to
+                        experience the rigors of the professional environment,
+                        both in terms of form and substance. It provides them
+                        with opportunities to learn and practice business
+                        knowledge and professional behavior.
                       </div>
                     </div>
                   </div>
@@ -948,9 +1099,23 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         Social Immersion
                       </button>
                     </h2>
-                    <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#leapAccordion">
+                    <div
+                      id="collapseSix"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="headingSix"
+                      data-bs-parent="#leapAccordion"
+                    >
                       <div className="accordion-body">
-                        The community outreach initiatives at IMT Hyderabad started off in 2011 by PAHEL a volunteer student cell. The Community Connect Cell was established in 2018, with the objective of sensitizing the students towards the society so as to bring about positive change in the communities and address real life societal challenges. The Cell has envisaged its activities under the following four headings of Abhiyaan, Nirmaan, Sahayam and Sambbad towards fulfilment of its Daaitva (Responsibility).
+                        The community outreach initiatives at IMT Hyderabad
+                        started off in 2011 by PAHEL a volunteer student cell.
+                        The Community Connect Cell was established in 2018, with
+                        the objective of sensitizing the students towards the
+                        society so as to bring about positive change in the
+                        communities and address real life societal challenges.
+                        The Cell has envisaged its activities under the
+                        following four headings of Abhiyaan, Nirmaan, Sahayam
+                        and Sambbad towards fulfilment of its Daaitva
+                        (Responsibility).
                       </div>
                     </div>
                   </div>
@@ -959,10 +1124,19 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
             </div>
 
             {/* Specializations Tab */}
-            <div className="tab-pane fade" id="specializations" role="tabpanel" aria-labelledby="specializations-tab">
+            <div
+              className="tab-pane fade"
+              id="specializations"
+              role="tabpanel"
+              aria-labelledby="specializations-tab"
+            >
               <div className="content-section">
                 <h4>Specializations</h4>
-                <p>IMT Hyderabad offers a wide range of elective courses, allowing students to specialize in their area of interest. Students can choose from the following domains:</p>
+                <p>
+                  IMT Hyderabad offers a wide range of elective courses,
+                  allowing students to specialize in their area of interest.
+                  Students can choose from the following domains:
+                </p>
                 <div className="row">
                   <div className="col-lg-4 col-md-6 mb-4">
                     <div className="specialization-card">
@@ -976,7 +1150,10 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         <li>Public Policy and Management</li>
                         <li>Global Markets and Geopolitics</li>
                         <li>Social and Economic Networks</li>
-                        <li>Special Project / Organization-Based Project in Economics and Strategy</li>
+                        <li>
+                          Special Project / Organization-Based Project in
+                          Economics and Strategy
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -998,7 +1175,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         <li>International HRM</li>
                         <li>HR Analytics</li>
                         <li>Leadership & Organizational Effectiveness</li>
-                        <li>Special Project / Organization-Based Project in HRM</li>
+                        <li>
+                          Special Project / Organization-Based Project in HRM
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1023,7 +1202,10 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         <li>Strategic Marketing Management</li>
                         <li>Rural Marketing</li>
                         <li>Marketing Metrics</li>
-                        <li>Special Project / Organization-Based Project in Marketing</li>
+                        <li>
+                          Special Project / Organization-Based Project in
+                          Marketing
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1039,7 +1221,10 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         <li>Web & Text Analytics</li>
                         <li>Block chain for Managers</li>
                         <li>Artificial Intelligence and Deep Learning</li>
-                        <li>Special Project / Organization-Based Project in Analytics and Information Technology</li>
+                        <li>
+                          Special Project / Organization-Based Project in
+                          Analytics and Information Technology
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1059,7 +1244,10 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         <li>Project Finance</li>
                         <li>Investment Banking</li>
                         <li>Risk Analytics</li>
-                        <li>Special Project / Organization-Based Project in Finance and Accounting</li>
+                        <li>
+                          Special Project / Organization-Based Project in
+                          Finance and Accounting
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1073,13 +1261,18 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                         <li>Service Operations Management</li>
                         <li>Supply Chain Analytics</li>
                         <li>Retail Supply Chain Management</li>
-                        <li>International Logistics & Supply Chain Management</li>
+                        <li>
+                          International Logistics & Supply Chain Management
+                        </li>
                         <li>New Product Development</li>
                         <li>Supplier Relationship Management</li>
                         <li>Technology and Operations Strategy</li>
                         <li>Business Process Management</li>
                         <li>Multi-Criteria Decision Making</li>
-                        <li>Special Project / Organization-Based Project in Operations Management</li>
+                        <li>
+                          Special Project / Organization-Based Project in
+                          Operations Management
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -1088,14 +1281,21 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
             </div>
 
             {/* Program Structure Tab */}
-            <div className="tab-pane fade" id="structure" role="tabpanel" aria-labelledby="structure-tab">
+            <div
+              className="tab-pane fade"
+              id="structure"
+              role="tabpanel"
+              aria-labelledby="structure-tab"
+            >
               <div className="content-section">
                 <h4>Program Structure</h4>
                 <h5>Year 1</h5>
                 <div className="row">
                   <div className="col-md-4 mb-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Term I (July - September)</div>
+                      <div className="card-header bg-warning text-white">
+                        Term I (July - September)
+                      </div>
                       <div className="card-body">
                         <table className="program-structure-table">
                           <tbody>
@@ -1134,7 +1334,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                   </div>
                   <div className="col-md-4 mb-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Term II (October – December)</div>
+                      <div className="card-header bg-warning text-white">
+                        Term II (October – December)
+                      </div>
                       <div className="card-body">
                         <table className="program-structure-table">
                           <tbody>
@@ -1177,7 +1379,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                   </div>
                   <div className="col-md-4 mb-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Term III (January - March)</div>
+                      <div className="card-header bg-warning text-white">
+                        Term III (January - March)
+                      </div>
                       <div className="card-body">
                         <table className="program-structure-table">
                           <tbody>
@@ -1222,7 +1426,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                 <div className="row">
                   <div className="col-md-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Summer Term (April - June)</div>
+                      <div className="card-header bg-warning text-white">
+                        Summer Term (April - June)
+                      </div>
                       <div className="card-body">
                         <ul className="list-unstyled">
                           <li>Internship Program</li>
@@ -1237,7 +1443,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                 <div className="row">
                   <div className="col-md-4 mb-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Term IV (July - September)</div>
+                      <div className="card-header bg-warning text-white">
+                        Term IV (July - September)
+                      </div>
                       <div className="card-body">
                         <table className="program-structure-table">
                           <tbody>
@@ -1276,7 +1484,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                   </div>
                   <div className="col-md-4 mb-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Term V (October – December)</div>
+                      <div className="card-header bg-warning text-white">
+                        Term V (October – December)
+                      </div>
                       <div className="card-body">
                         <table className="program-structure-table">
                           <tbody>
@@ -1315,7 +1525,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                   </div>
                   <div className="col-md-4 mb-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Term VI (January - March)</div>
+                      <div className="card-header bg-warning text-white">
+                        Term VI (January - March)
+                      </div>
                       <div className="card-body">
                         <table className="program-structure-table">
                           <tbody>
@@ -1344,7 +1556,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                 <div className="row">
                   <div className="col-md-4">
                     <div className="card">
-                      <div className="card-header bg-warning text-white">Audit Courses</div>
+                      <div className="card-header bg-warning text-white">
+                        Audit Courses
+                      </div>
                       <div className="card-body">
                         <ul className="list-unstyled">
                           <li>Mock Interviews</li>
@@ -1356,19 +1570,37 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                   </div>
                 </div>
                 <div className="mt-4 p-3 bg-light rounded">
-                  <p><strong>Note:</strong></p>
+                  <p>
+                    <strong>Note:</strong>
+                  </p>
                   <ul>
                     <li>1 Credit equals 10 classroom contact hours.</li>
-                    <li>C – core courses, E – elective courses, MP – Management Project</li>
-                    <li>To major in a discipline, 6 elective courses (minimum) should be chosen; 4 elective courses (minimum) should be chosen to minor in a discipline.</li>
-                    <li>For PGDM (Finance) and PGDM (Marketing) students, it is mandatory to choose 6 elective courses in Finance and Marketing respectively.</li>
+                    <li>
+                      C – core courses, E – elective courses, MP – Management
+                      Project
+                    </li>
+                    <li>
+                      To major in a discipline, 6 elective courses (minimum)
+                      should be chosen; 4 elective courses (minimum) should be
+                      chosen to minor in a discipline.
+                    </li>
+                    <li>
+                      For PGDM (Finance) and PGDM (Marketing) students, it is
+                      mandatory to choose 6 elective courses in Finance and
+                      Marketing respectively.
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
 
             {/* Academic Calendar Tab */}
-            <div className="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+            <div
+              className="tab-pane fade"
+              id="calendar"
+              role="tabpanel"
+              aria-labelledby="calendar-tab"
+            >
               <div className="content-section">
                 <h4>Academic Calendar</h4>
                 <div className="table-responsive">
@@ -1389,7 +1621,8 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
                             rel="noopener"
                             className="btn btn-warning"
                           >
-                            <i className="fas fa-download me-2"></i>Download Calendar
+                            <i className="fas fa-download me-2"></i>Download
+                            Calendar
                           </Link>
                         </td>
                       </tr>
@@ -1400,7 +1633,12 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
             </div>
 
             {/* Placements Tab */}
-            <div className="tab-pane fade" id="placements" role="tabpanel" aria-labelledby="placements-tab">
+            <div
+              className="tab-pane fade"
+              id="placements"
+              role="tabpanel"
+              aria-labelledby="placements-tab"
+            >
               <div className="content-section">
                 <h4>Placement Highlights</h4>
                 <div className="row">
@@ -1454,76 +1692,13 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
             </div>
 
             {/* Faculty Tab */}
-            <div className="tab-pane fade" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
-              <div className="content-section">
-                <section className="container my-5 faculty-tabs">
-                  <div className="mb-4">
-                    <input
-                      type="text"
-                      id="facultySearch"
-                      className="form-control"
-                      placeholder="Search faculty by name..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                    />
-                  </div>
-                  <ul className="nav nav-pills justify-content-center mb-4" id="deptTabs">
-                    {["all", "it-analytics", "finance-accounting", "general-management", "human-resource", "marketing", "operations-management"].map((dept) => (
-                      <li key={dept} className="nav-item mx-1">
-                        <button
-                          className={`nav-link ${currentDept === dept ? "active" : ""}`}
-                          onClick={() => setCurrentDept(dept)}
-                          data-bs-toggle="pill"
-                          data-bs-target={`#${dept}`}
-                        >
-                          {dept === "all" ? "All" : dept.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="tab-content" id="facultyTabsContent">
-                    {["all", "it-analytics", "finance-accounting", "general-management", "human-resource", "marketing", "operations-management"].map((tab) => (
-                      <div key={tab} className={`tab-pane fade ${tab === currentDept ? "show active" : ""}`} id={tab}>
-                        <div className="row g-4">
-                          {filteredFaculty
-                            .filter((faculty) => currentDept === "all" || faculty.dept === currentDept)
-                            .map((faculty, index) => (
-                              <div key={index} className="col-sm-6 col-lg-4 faculty-card-wrap" data-dept={faculty.dept} data-name={faculty.name}>
-                                <div className="card faculty-card shadow h-100 p-3 text-center">
-                                  <img
-                                    style={{ height: "340px" }}
-                                    src={faculty.img}
-                                    alt={faculty.name}
-                                    className="faculty-img img-fluid mb-3"
-                                  />
-                                  <h5 className="fw-bold">{faculty.name}</h5>
-                                  <p className="text-muted">{faculty.title}</p>
-                                  <div>
-                                    <Link href="#" className="social-icon me-2">
-                                      <i className="bi bi-linkedin"></i>
-                                    </Link>
-                                    <Link href={`mailto:${faculty.email}`} className="social-icon">
-                                      <i className="bi bi-envelope"></i>
-                                    </Link>
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                        </div>
-                      </div>
-                    ))}
-                    <div className="card mt-3">
-                      <p
-                        id="noResultsMsg"
-                        className="text-center fw-bold text-danger mt-4"
-                        style={{ display: filteredFaculty.length === 0 ? "block" : "none" }}
-                      >
-                        Sorry, no such record found.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
+            <div
+              className="tab-pane fade"
+              id="faculty"
+              role="tabpanel"
+              aria-labelledby="faculty-tab"
+            >
+              <Faculties />
             </div>
           </div>
         </div>
@@ -1532,7 +1707,9 @@ Our PGDM equips students with analytical depth, strategic agility, and ethical g
       {/* YouTube Video Carousel Section */}
       <section className="video-carousel-section py-5">
         <div className="container-fluid">
-          <h2 className="text-center fw-bold mb-4 text-warning">LEARN ABOUT THE PROGRAM</h2>
+          <h2 className="text-center fw-bold mb-4 text-warning">
+            LEARN ABOUT THE PROGRAM
+          </h2>
           <OwlCarousel className="owl-theme" {...carouselOptions}>
             {[
               "CMLanyWFTME",
