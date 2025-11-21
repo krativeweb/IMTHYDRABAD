@@ -2,8 +2,42 @@
 
 import { useEffect } from "react";
 import Script from "next/script";
-export default function BannerSlider() {
 
+export default function BannerSlider() {
+ useEffect(() => {
+   // Load CSS
+   if (!document.getElementById("__formWidgetCss")) {
+     const css = document.createElement("link");
+     css.id = "__formWidgetCss";
+     css.rel = "stylesheet";
+     css.href =
+       "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/css/stylesheet.min.css";
+     document.head.appendChild(css);
+   }
+
+   // Load JS
+   const script = document.createElement("script");
+   script.src =
+     "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/js/eeFormWidget.min.js";
+   script.async = true;
+
+   script.onload = async () => {
+     console.log("Widget script loaded");
+
+     if (typeof eeFormWidget !== "undefined") {
+       const widget = new eeFormWidget();
+       await widget.init("imthyderabad", "form-1", "ee-form-1");
+     } else {
+       console.error("eeFormWidget not found!");
+     }
+   };
+
+   document.head.appendChild(script);
+
+   return () => {
+     // Cleanup if needed
+   };
+ }, []);
 
   return (
     <div className="banner-slider slick-arrows-style1" id="admission">
@@ -76,10 +110,6 @@ export default function BannerSlider() {
                   <div className="bg-white rounded shadow">
                     {/* <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/imthyderabad/ee-form-widget/form-1/widget.js"></script> */}
                     <div id="ee-form-1"></div>
-                    <Script
-                      src="https://eequeuestorage.blob.core.windows.net/staticfiles/imthyderabad/ee-form-widget/form-1/widget.js"
-                      strategy="beforeInteractive"
-                    />
                   </div>
                 </div>
               </div>
