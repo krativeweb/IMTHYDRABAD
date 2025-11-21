@@ -175,7 +175,7 @@ export default function Faculty() {
       />
 
       {/* HERO */}
-      <section className="faculty-section">
+      <section className="faculty-section pgdm-course">
         <div className="faculty-hero text-center text-white py-5">
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
             Faculties of IMT HYDERABAD
