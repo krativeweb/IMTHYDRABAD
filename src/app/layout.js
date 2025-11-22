@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
       <head>
         {/* Minimal required meta tags */}
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="google-site-verification"
           content="Pj9TR1mJn2yGb757lYXOqtgVymre8cK7STLaLLETt98"
