@@ -13,7 +13,7 @@ import ConditionalHeadAndScripts, {
   ConditionalFooterAndExtras,
 } from "./ConditionalLayoutClient";
 export const metadata = {
-  title: "IMT Hyderabad: Best PGDM Colleges/B Schools in Hyderabad, Telangana",
+  title: "IMT Hyderabad – Best PGDM College in Hyderabad",
   description: "Top PGDM college in Hyderabad, Telangana",
    keywords: ["IMT Hyderabad", "Institute of Management Technology"],
   icons: {
