@@ -28,7 +28,7 @@ export default function NavbarWrapper() {
   if (isExecutiveEducationPage) {
     return <NavbarTwo />;
   }
-    const isPGDMPage = pathname === "/admission/pgdm";
+    const isPGDMPage = pathname === "/admissions/pgdm";
 
     // Priority: PGDM > Executive Education > Placements > Default
     if (isPGDMPage) {
