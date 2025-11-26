@@ -112,7 +112,7 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="dropdown-item"
-                      href="/admission/pgdm"
+                      href="/admissions/pgdm"
                     >
                       PGDM
                     </Link>
