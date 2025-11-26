@@ -114,7 +114,7 @@ export default function Navbar() {
                       className="dropdown-item"
                       href="/admissions/pgdm"
                     >
-                      PGDM
+                      PGDM  
                     </Link>
                   </li>
                   <li>
