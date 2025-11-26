@@ -4,7 +4,7 @@ import Script from "next/script";
 import InitScripts from "@/components/InitScripts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-const PGDM_PAGE = "/admission/pgdm";
+const PGDM_PAGE = "/admissions/pgdm";
 
 export default function ConditionalHeadAndScripts({ children }) {
   const pathname = usePathname();
