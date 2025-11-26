@@ -26,6 +26,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
 
+              rm -rf node_modules package-lock.json .next
             # Install dependencies and rebuild
             npm install --omit=dev
             npm run build
