@@ -37,7 +37,7 @@ export default function ProgramsSection() {
           >
             <div className="card h-100 shadow border-0 text-center program-card">
               <img
-                src="https://www.imthyderabad.edu.in/imt/images/pgdmg.jpg"
+                src="/media/img/b.webp"
                 className="card-img-top"
                 alt="PGDM"
               />
@@ -59,7 +59,7 @@ export default function ProgramsSection() {
           >
             <div className="card h-100 shadow border-0 text-center program-card">
               <img
-                src="https://www.imthyderabad.edu.in/imt/images/pgdmf.jpg"
+                src="/media/img/d.webp"
                 className="card-img-top"
                 alt="PGDM Finance"
               />
@@ -81,7 +81,7 @@ export default function ProgramsSection() {
           >
             <div className="card h-100 shadow border-0 text-center program-card">
               <img
-                src="https://www.imthyderabad.edu.in/imt/images/pgdmm.jpg"
+                src="/media/img/c.webp"
                 className="card-img-top"
                 alt="PGDM Marketing"
               />
@@ -105,7 +105,7 @@ export default function ProgramsSection() {
           >
             <div className="card h-100 shadow border-0 text-center program-card">
               <img
-                src="https://www.imthyderabad.edu.in/imt/images/pgdm-logistics-updated.png"
+                src="/media/img/a.webp"
                 className="card-img-top"
                 alt="PGDM Logistics & Supply Chain Management"
               />
