@@ -239,6 +239,13 @@ height: 80vh;
         background: #bbb;
         border-radius: 10px;
       }
+      @media (max-width: 767.98px) {
+  .tab-pane.fade.show.active.bg-white.p-4.rounded-4.text-black {
+    height: 90vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+}
     `,
   }}
 />
