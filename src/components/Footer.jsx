@@ -92,14 +92,14 @@ export default function Footer() {
                 </p>
 
                 {/* QR Code Modal Trigger */}
-                <button
+                {/* <button
                   type="button"
                   className="btn btn-warning rounded-pill border-white"
                   data-bs-toggle="modal"
                   data-bs-target="#qrModal"
                 >
                   View QR Code
-                </button>
+                </button> */}
 
                 {/* QR Code Modal */}
                 <div
@@ -274,3 +274,4 @@ export default function Footer() {
     </>
   );
 }
+
