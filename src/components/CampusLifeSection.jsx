@@ -11,7 +11,6 @@ export default function CampusLifeSection() {
   });
 
   const slides = [
-    "https://www.imthyderabad.edu.in/imt/images/11.jpg",
     "/admission/media/l1.png",
     "/admission/media/l2.png",
     "/admission/media/l3.png",
