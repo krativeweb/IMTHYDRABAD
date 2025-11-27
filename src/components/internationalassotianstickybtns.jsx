@@ -25,7 +25,7 @@ export default function InternationalAssociationStickyBtns() {
         </a>
 
         <a
-          href="https://www.imthyderabad.edu.in/assets/images/Directions-to-IMT-Hyderabad.jpg" // Replace with actual Google Maps link
+          href="https://www.imthyderabad.edu.in/images/Directions-to-IMT-Hyderabad.jpg" // Replace with actual Google Maps link
           target="_blank"
           rel="noreferrer"
           className="sticky-btn"
@@ -77,4 +77,5 @@ export default function InternationalAssociationStickyBtns() {
     </>
   );
 }
+
 
