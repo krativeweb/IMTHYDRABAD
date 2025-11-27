@@ -130,7 +130,7 @@ export default function PlacementAlliances() {
                       maxWidth: "100%",
                       height: "auto",
                     }}
-                    priority={i < 3}
+                    priority={index < 3}
                     />
                   </div>
                 </div>
