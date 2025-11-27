@@ -208,8 +208,10 @@ const HappeningsPage = () => {
 
       /* Limit height for the full tab area */
       .tab-pane.fade.show.active.bg-white.p-4.rounded-4.text-black {
-        height: 80vh;
-        overflow: hidden;
+height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
       }
 
       /* Left side (tabs) */
