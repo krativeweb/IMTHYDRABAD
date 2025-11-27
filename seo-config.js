@@ -7,12 +7,21 @@ const SEO = {
     canonical: "https://www.imthyderabad.edu.in/",
   },
 
-  "/about": {
-    title: "About IMT Hyderabad",
+  "/faculty/": {
+    title: "Faculty of management studies | IMT Hyderabad",
     description:
-      "Discover IMT Hyderabad’s mission, vision, legacy, and academic values that drive the institute.",
-    keywords: "About IMT Hyderabad, MBA college Hyderabad",
-    canonical: "https://www.imthyderabad.edu.in/about",
+      "Explore Faculty of Management Studies at IMT Hyderabad known for academic excellence, innovative learning, global exposure, and strong placement opportunities.",
+    keywords: "faculty of management studies",
+    canonical: "https://www.imthyderabad.edu.in/faculty",
+  },
+
+
+   "/faculties": {
+    title: "Faculty of management studies | IMT Hyderabad",
+    description:
+      "Explore Faculty of Management Studies at IMT Hyderabad known for academic excellence, innovative learning, global exposure, and strong placement opportunities.",
+    keywords: "faculty of management studies",
+    canonical: "https://www.imthyderabad.edu.in/faculty",
   },
 
   // Add more pages here...
