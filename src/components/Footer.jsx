@@ -153,7 +153,7 @@ export default function Footer() {
                       <Link href="placements">Placements</Link>
                     </li>
                     <li>
-                      <Link href="faculty-exchange">Alumni</Link>
+                      <Link href="https://alumni.imthyderabad.edu.in">Alumni</Link>
                     </li>
                     <li>
                       <Link href="Campus-Tour">Campus Tour</Link>
@@ -274,4 +274,5 @@ export default function Footer() {
     </>
   );
 }
+
 
