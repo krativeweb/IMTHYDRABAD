@@ -12,10 +12,11 @@ import ClarityScript from "@/components/Analytics/ClarityScript";
 import ConditionalHeadAndScripts, {
   ConditionalFooterAndExtras,
 } from "./ConditionalLayoutClient";
+import SeoTags from "@/components/SeoTags"; // add to imports
+
+
+
 export const metadata = {
-  title: "IMT Hyderabad – Best PGDM College in Hyderabad",
-  description: "Top PGDM college in Hyderabad, Telangana",
-   keywords: ["IMT Hyderabad", "Institute of Management Technology"],
   icons: {
     icon: "/imthyd-logo.jpg",
     shortcut: "/imthyd-logo.jpg",
@@ -47,6 +48,8 @@ export default function RootLayout({ children }) {
       `,
     }}
   />
+
+  <SeoTags />
       </head>
       <body>
         <GoogleTagManager />
