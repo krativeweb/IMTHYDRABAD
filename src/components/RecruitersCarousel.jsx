@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-
+import Image from "next/image";
 export default function PlacementAlliances() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -120,11 +120,17 @@ export default function PlacementAlliances() {
               >
                 <div className="featured-imagebox featured-imagebox-course style1">
                   <div className="ttm-post-thumbnail featured-thumbnail text-center">
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      className="img-fluid"
-                      style={{ maxHeight: "100px", margin: "0 auto" }}
+                    <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={140}
+                    height={80}
+                    style={{
+                      objectFit: "contain",
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
+                    priority={i < 3}
                     />
                   </div>
                 </div>
