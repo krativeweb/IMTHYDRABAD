@@ -85,7 +85,7 @@ export default function HappeningsSection() {
           __html: limitWordsHtml(happenings[0].description, 30), // limit to 50 words
         }}
       />
-                  <Link href="#" className="btn btn-primary rounded-pill">
+                  <Link href="/happenings-events-announcements" className="btn btn-primary rounded-pill">
                     Read More
                   </Link>
                 </div>
@@ -117,7 +117,7 @@ export default function HappeningsSection() {
         dangerouslySetInnerHTML={{ __html: limitWordsHtml(item.description, 30) }}
       />
 
-                      <Link href="#" className="btn btn-primary rounded-pill">
+                      <Link href="/happenings-events-announcements" className="btn btn-primary rounded-pill">
                         Read More
                       </Link>
                     </div>
@@ -130,7 +130,7 @@ export default function HappeningsSection() {
 
         <div className="text-center mt-4">
           <Link
-            href="happenings-events-announcements"
+            href="/happenings-events-announcements"
             className="btn btn-warning px-4 rounded-pill border-dark"
           >
             View All Happenings
