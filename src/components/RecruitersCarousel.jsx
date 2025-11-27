@@ -97,7 +97,7 @@ export default function PlacementAlliances() {
 
         {/* EMBLA CAROUSEL */}
         <div className="embla" ref={emblaRef}>
-          <div className="embla__container">
+          <div className="embla__container mt-4">
             {logos.map((logo, i) => (
               <div key={i} className="embla__slide">
                 <div className="logo-box">
