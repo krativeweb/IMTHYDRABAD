@@ -1,11 +1,11 @@
 import { getMetadata } from "@/utils/getMetadata";
-import AboutIMTHyderabadClient from "@/seo-page/About";
+import AdmissionClient from "@/seo-page/Admission";
 
 // 🟢 Apply faculty page SEO for ALL faculty profiles
 export async function generateMetadata() {
-  return getMetadata("/about-imt-hyderabad");
+  return getMetadata("/admissions/pgdm");
 }
 
-export default function Faculty() {
-  return <AboutIMTHyderabadClient />;
+export default function Admission() {
+  return <AdmissionClient />;
 }
