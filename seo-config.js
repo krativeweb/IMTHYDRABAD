@@ -61,6 +61,13 @@ const SEO = {
     keywords: "Innovation Lab",
     canonical: "https://www.imthyderabad.edu.in/innovation-lab",
   },
+    "/awards-and-recognisation": {
+    title: "Awards and Recognitions | IMT Hyderabad",
+    description:
+      "IMT Hyderabad Awards and Recognitions highlight faculty and student achievements, academic excellence, industry impact, and contributions to management education.",
+    keywords: "Awards and Recognitions",
+    canonical: "https://www.imthyderabad.edu.in/awards-and-recognisation",
+  },
 };
 
 export default SEO;
