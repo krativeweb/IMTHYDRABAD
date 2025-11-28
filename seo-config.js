@@ -40,6 +40,13 @@ const SEO = {
     keywords: "Research Archives",
     canonical: "https://www.imthyderabad.edu.in/research-archive",
   },
+    "/centre-csr": {
+    title: "Centre for Sustainability and CSR | IMT Hyderabad",
+    description:
+      "Explore IMT Hyderabad’s Centre for Sustainability and CSR, fostering research, innovation, and impactful initiatives for responsible management and society.",
+    keywords: "Sustainability and CSR",
+    canonical: "https://www.imthyderabad.edu.in/centre-csr",
+  },
 };
 
 export default SEO;
