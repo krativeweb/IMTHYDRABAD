@@ -82,6 +82,13 @@ const SEO = {
     keywords: "pgdm colleges in india",
     canonical: "https://www.imthyderabad.edu.in/admissions/pgdm",
   },
+    "/fpm-admission": {
+    title: "Fellow Prgram In Management | IMT Colleges | IMT Hyderabad",
+    description:
+      "Explore top IMT Colleges offering world-class management programs, industry exposure, and a corporate learning environment for future business leaders.",
+    keywords: "IMT Colleges",
+    canonical: "https://www.imthyderabad.edu.in/fpm-admission",
+  },
 };
 
 export default SEO;
