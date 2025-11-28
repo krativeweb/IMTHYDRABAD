@@ -54,6 +54,13 @@ const SEO = {
     keywords: "Digital Transformation",
     canonical: "https://www.imthyderabad.edu.in/centre-cdt",
   },
+    "/innovation-lab": {
+    title: "Innovation Lab | IMT Hyderabad",
+    description:
+      "IMT Hyderabad Innovation Lab fosters creativity, research, and entrepreneurship through cutting-edge projects, collaboration, and impactful innovations.",
+    keywords: "Innovation Lab",
+    canonical: "https://www.imthyderabad.edu.in/innovation-lab",
+  },
 };
 
 export default SEO;
