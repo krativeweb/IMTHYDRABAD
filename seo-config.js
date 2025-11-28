@@ -24,6 +24,15 @@ const SEO = {
     canonical: "https://www.imthyderabad.edu.in/faculty",
   },
 
+    "/research-publication": {
+    title: "Research publications | IMT Hyderabad",
+    description:
+      "Discover research publications at IMT Hyderabad showcasing innovative studies, impactful insights, and academic excellence across management and allied fields.",
+    keywords: "Research publications",
+    canonical: "https://www.imthyderabad.edu.in/research-publication",
+  },
+
+
   // Add more pages here...
   // "/admissions": { ... },
   // "/contact": { ... },
