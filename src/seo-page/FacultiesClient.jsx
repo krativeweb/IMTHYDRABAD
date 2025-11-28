@@ -329,4 +329,5 @@ export default function Faculty() {
       </section>
     </>
   );
-}
+} 
+
