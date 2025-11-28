@@ -68,6 +68,13 @@ const SEO = {
     keywords: "Awards and Recognitions",
     canonical: "https://www.imthyderabad.edu.in/awards-and-recognisation",
   },
+    "/about-imt-hyderabad": {
+    title: "Top PGDM Colleges in Hyderabad | IMT Hyderabad ",
+    description:
+      "Explore the top PGDM colleges in Hyderabad that offer excellent faculty, industry-ready curriculum and high placement rates. Find your ideal management institute today.",
+    keywords: "Top pgdm colleges in hyderabad",
+    canonical: "https://www.imthyderabad.edu.in/about-imt-hyderabad",
+  },
 };
 
 export default SEO;
