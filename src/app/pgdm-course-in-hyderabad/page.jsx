@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import Faculties from "@/app/faculties/page"
+import Faculties from "@/seo-page/FacultiesClient";
 // Dynamically import OwlCarousel to avoid SSR issues
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
 
