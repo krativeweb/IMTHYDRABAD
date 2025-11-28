@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import Link from "next/link";
 export default function NavbarFour() {
   return (
     
@@ -68,12 +68,12 @@ export default function NavbarFour() {
             </ul>
 
             {/* Contact Button */}
-            <a
-              href="https://imt.arawalihome.in/contact-us"
+            <Link
+              href="/contact-us"
               className="btn btn-warning border-dark rounded-pill mx-3"
             >
               CONTACT US
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
