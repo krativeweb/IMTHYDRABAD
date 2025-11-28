@@ -12,17 +12,28 @@ import ClarityScript from "@/components/Analytics/ClarityScript";
 import ConditionalHeadAndScripts, {
   ConditionalFooterAndExtras,
 } from "./ConditionalLayoutClient";
-import SeoTags from "@/components/SeoTags"; // add to imports
+import { getMetadata } from "@/utils/getMetadata";
 
 
 
-export const metadata = {
-  icons: {
-    icon: "/imthyd-logo.jpg",
-    shortcut: "/imthyd-logo.jpg",
-    apple: "/imthyd-logo.jpg",
-  },
-};
+export async function generateMetadata() {
+  const fallbackSEO = getMetadata("/");
+
+  return {
+    ...fallbackSEO,
+    icons: {
+      icon: "/imthyd-logo.jpg",
+      shortcut: "/imthyd-logo.jpg",
+      apple: "/imthyd-logo.jpg",
+    },
+    verification: {
+      google: "Pj9TR1mJn2yGb757lYXOqtgVymre8cK7STLaLLETt98",
+      other: {
+        "msvalidate.01": "56D96AD8B0551D1F20D444BB7B6B6BE0",
+      },
+    },
+  };
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -30,13 +41,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Minimal required meta tags */}
         <meta charSet="UTF-8" />
-        <meta
-          name="google-site-verification"
-          content="Pj9TR1mJn2yGb757lYXOqtgVymre8cK7STLaLLETt98"
-        />
-
-        {/* Bing Webmaster Tools */}
-        <meta name="msvalidate.01" content="56D96AD8B0551D1F20D444BB7B6B6BE0" />
+   
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVZVXG6M1M"></script>
   <script
     dangerouslySetInnerHTML={{
@@ -49,7 +54,7 @@ export default function RootLayout({ children }) {
     }}
   />
 
-  <SeoTags />
+ 
       </head>
       <body>
         <GoogleTagManager />
