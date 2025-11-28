@@ -75,6 +75,13 @@ const SEO = {
     keywords: "Top pgdm colleges in hyderabad",
     canonical: "https://www.imthyderabad.edu.in/about-imt-hyderabad",
   },
+    "/admissions/pgdm": {
+    title: "Admission | IMT Hyderabad | PGDM Colleges in India",
+    description:
+      "Apply for admission at IMT Hyderabad, one of the top PGDM colleges in India, offering industry-driven management programs with strong placements and alumni network.",
+    keywords: "pgdm colleges in india",
+    canonical: "https://www.imthyderabad.edu.in/admissions/pgdm",
+  },
 };
 
 export default SEO;
