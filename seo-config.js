@@ -33,9 +33,13 @@ const SEO = {
   },
 
 
-  // Add more pages here...
-  // "/admissions": { ... },
-  // "/contact": { ... },
+  "/research-archive": {
+    title: "Research Archives | IMT Hyderabad",
+    description:
+      "Explore IMT Hyderabad Research Archives featuring impactful studies, scholarly work, innovative projects, and academic contributions in management fields.",
+    keywords: "Research Archives",
+    canonical: "https://www.imthyderabad.edu.in/research-archive",
+  },
 };
 
 export default SEO;
