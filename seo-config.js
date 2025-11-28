@@ -47,6 +47,13 @@ const SEO = {
     keywords: "Sustainability and CSR",
     canonical: "https://www.imthyderabad.edu.in/centre-csr",
   },
+    "/centre-cdt": {
+    title: "Centre for Digital Transformation | IMT Hyderabad",
+    description:
+      "Explore IMT Hyderabad’s Centre for Digital Transformation, driving research, innovation, and learning in technology, AI, analytics, and digital business.",
+    keywords: "Digital Transformation",
+    canonical: "https://www.imthyderabad.edu.in/centre-cdt",
+  },
 };
 
 export default SEO;
