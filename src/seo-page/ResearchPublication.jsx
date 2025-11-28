@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
   
 export default function ResearchPublication() {
-  // Initialize AOS
+  // Initialize AOS  
   useEffect(() => {
     if (typeof window !== "undefined") {
       import("aos").then((AOS) => {
@@ -1115,3 +1115,4 @@ Faculty and scholars publish in global journals, contributing insights that shap
   );
 
 }
+
