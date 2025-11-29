@@ -71,6 +71,7 @@ export default function NavbarFour() {
             <Link
               href="https://admissions.imt.edu/login.htm"
               className="btn btn-warning border-dark rounded-pill mx-3"
+              target="_blank"
             >
               Candidate Login
             </Link>
