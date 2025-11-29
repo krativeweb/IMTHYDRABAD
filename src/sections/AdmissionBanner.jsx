@@ -93,14 +93,7 @@ export default function BannerSlider() {
                       <p style={{ fontSize: "1.6rem" }}>
                         Applications Open for Two-Year PGDM Program
                       </p>
-                      <a
-                        href="https://admissions.imt.edu/login.htm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-warning mt-3 py-3 px-3 rounded-pill border-white"
-                      >
-                        Candidate Login
-                      </a>
+                     
                     </div>
                   </div>
                 </div>
