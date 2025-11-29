@@ -10,7 +10,7 @@ export default function NavbarFour() {
       <nav className="navbar navbar-expand-lg navbar-light sticky-top">
         <div className="container shadow-sm">
           {/* Logo */}
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="#">
             <Image
               src="/admission/media/imtpilllogo.png"
               alt="Logo"
