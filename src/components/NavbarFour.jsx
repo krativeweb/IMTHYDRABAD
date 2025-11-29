@@ -69,10 +69,10 @@ export default function NavbarFour() {
 
             {/* Contact Button */}
             <Link
-              href="/contact-us"
+              href="https://admissions.imt.edu/login.htm"
               className="btn btn-warning border-dark rounded-pill mx-3"
             >
-              CONTACT US
+              Candidate Login
             </Link>
           </div>
         </div>
