@@ -149,6 +149,14 @@ const SEO = {
     keywords: "EDP Conducted",
     canonical: "https://www.imthyderabad.edu.in/conferences-workshops",
   },
+
+  "/placements": {
+    title: "Placement | IMT Hyderabad | Business Schools In India",
+    description:
+      "Discover top Business Schools in India offering world-class management programs, industry exposure, and career growth opportunities for future leaders.",
+    keywords: "Business Schools In India",
+    canonical: "https://www.imthyderabad.edu.in/placements",
+  },
 };
 
 export default SEO;
