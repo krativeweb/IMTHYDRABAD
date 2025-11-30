@@ -6,6 +6,6 @@ export async function generateMetadata() {
   return getMetadata("/pgdm-course-in-hyderabad");
 }
 
-export default function Faculty() {
+export default function PgdmCourse() {
   return <PgdmCourseClient />;
 }

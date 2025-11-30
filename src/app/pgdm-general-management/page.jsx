@@ -6,6 +6,6 @@ export async function generateMetadata() {
   return getMetadata("/pgdm-general-management");
 }
 
-export default function Faculty() {
+export default function PgdmGeneral() {
   return <PgdmGeneralClient />;
 }

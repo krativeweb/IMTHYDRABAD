@@ -6,6 +6,6 @@ export async function generateMetadata() {
   return getMetadata("/pgdm-finance-management");
 }
 
-export default function Faculty() {
+export default function PgdmFinanc() {
   return <PgdmFinanceClient />;
 }

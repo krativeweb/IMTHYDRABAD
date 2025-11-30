@@ -111,6 +111,14 @@ const SEO = {
     keywords: " PGDM Finance , PG Diploma in finance",
     canonical: "https://www.imthyderabad.edu.in/pgdm-finance-management",
   },
+
+  "/pgdm-marketing-management": {
+    title: "PGDM Marketing | IMT Hyderabad | PGDM In Marketing Management",
+    description:
+      "Boost your career with PGDM Marketing and PGDM in Marketing Management programs designed to develop strategic, analytical, and leadership skills for global success.",
+    keywords: "PGDM Marketing, PGDM in marketing management",
+    canonical: "https://www.imthyderabad.edu.in/pgdm-marketing-management",
+  },
 };
 
 export default SEO;
