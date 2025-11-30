@@ -5,15 +5,15 @@ import InitScripts from "@/components/InitScripts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 const PGDM_PAGE = "/admissions/pgdm";
-
+const THANK_YOU_PAGE = "/admissions/pgdm-thankyou";
 export default function ConditionalHeadAndScripts({ children }) {
   const pathname = usePathname();
   const isPGDMPage = pathname === PGDM_PAGE;
-
+  const isThankYouPage = pathname === THANK_YOU_PAGE;
   return (
     <>
       {/* Global / Conditional CSS */}
-      {!isPGDMPage && (
+      {!isPGDMPage && !isThankYouPage && (
         <>
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -60,17 +60,16 @@ export default function ConditionalHeadAndScripts({ children }) {
 
           {/* ✅ Custom CSS (kept in /public/css/style.css) */}
           <link rel="stylesheet" href="/css/style.css" />
-          <Header/>
+          <Header />
         </>
       )}
-
 
       {children}
 
       {/* Conditional JS */}
-      {!isPGDMPage && (
+      {!isPGDMPage && !isThankYouPage && (
         <>
-        <Footer/>
+          <Footer />
           <Script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             strategy="beforeInteractive"
@@ -92,7 +91,7 @@ export default function ConditionalHeadAndScripts({ children }) {
             strategy="afterInteractive"
           />
           <Script src="/js/main.js" strategy="afterInteractive" />
-                  <InitScripts />
+          <InitScripts />
         </>
       )}
     </>
