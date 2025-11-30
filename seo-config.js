@@ -141,6 +141,14 @@ const SEO = {
     keywords: "Future leaders program",
     canonical: "https://www.imthyderabad.edu.in/executive-education",
   },
+
+  "/conferences-workshops": {
+    title: "EDP Conducted | IMT Hyderabad",
+    description:
+      "Explore the diverse EDP conducted at IMT Hyderabad, designed to elevate leadership and management skills for professionals across various sectors.",
+    keywords: "EDP Conducted",
+    canonical: "https://www.imthyderabad.edu.in/conferences-workshops",
+  },
 };
 
 export default SEO;
