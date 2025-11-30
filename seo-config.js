@@ -134,6 +134,13 @@ const SEO = {
     keywords: "Sponsered Research Advisory",
     canonical: "https://www.imthyderabad.edu.in/sponsered-research-advisory",
   },
+  "/executive-education": {
+    title: "Future leaders program | IMT Hyderabad",
+    description:
+      "Empower your career with IMT Hyderabad’s Future Leaders Program, build leadership skills, drive change, and become the next-generation leader in business.",
+    keywords: "Future leaders program",
+    canonical: "https://www.imthyderabad.edu.in/executive-education",
+  },
 };
 
 export default SEO;
