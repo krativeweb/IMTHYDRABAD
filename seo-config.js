@@ -119,6 +119,21 @@ const SEO = {
     keywords: "PGDM Marketing, PGDM in marketing management",
     canonical: "https://www.imthyderabad.edu.in/pgdm-marketing-management",
   },
+  "/pgdm-lscm": {
+    title: "supply chain and logistics management diploma | IMT Hyderabad",
+    description:
+      "Boost your career with a Supply Chain and Logistics Management Diploma. Learn operations, inventory, and global trade skills for industry success.",
+    keywords: "supply chain and logistics management diploma",
+    canonical: "https://www.imthyderabad.edu.in/pgdm-lscm",
+  },
+
+  "/sponsered-research-advisory": {
+    title: "Sponsered Research Advisory| IMT Hyderabad",
+    description:
+      "Boost your institution’s impact with IMT Hyderabad’s Sponsored Research Advisory, expert guidance, strategic insights, and collaborative projects to drive meaningful outcomes.",
+    keywords: "Sponsered Research Advisory",
+    canonical: "https://www.imthyderabad.edu.in/sponsered-research-advisory",
+  },
 };
 
 export default SEO;
