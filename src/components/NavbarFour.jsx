@@ -14,8 +14,8 @@ export default function NavbarFour() {
             <Image
               src="/admission/media/imtpilllogo.png"
               alt="Logo"
-              width={240}
-              height={85}
+              width={260}
+              height={90}
               style={{
                 height: "85px",
                 marginLeft: "-9px",
