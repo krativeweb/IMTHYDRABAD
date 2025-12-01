@@ -10,23 +10,20 @@ const settings = {
   infinite: true,
   autoplay: true,
   autoplaySpeed: 4000,
-  slidesToShow: 1, // Default for mobile-first!
+  slidesToShow: 3, // Desktop default
   slidesToScroll: 1,
-  mobileFirst: true, // 👈 CRITICAL FIX
 
   responsive: [
     {
-      breakpoint: 768, // Tablet and up
+      breakpoint: 992, // Below desktop
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 992, // Desktop and up
+      breakpoint: 768, // Below tablet
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 1,
       },
     },
   ],
