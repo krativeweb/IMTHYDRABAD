@@ -1,22 +1,32 @@
 "use client";
-
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function TestimonialsSection() {
   const settings = {
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    dots: true,
     arrows: false,
-    autoplay: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 870,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        breakpoint: 992,  // lg and below
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
       },
       {
-        breakpoint: 525,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        breakpoint: 768,  // md and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
       },
     ],
   };
@@ -45,51 +55,54 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="ttm-row testimonial-section_2 clearfix">
+    <section className="ttm-row testimonial-section_2 clearfix py-16 bg-gray-50">
       <div className="container">
-        {/* row */}
-        <div className="row">
+        {/* Section Title */}
+        <div className="row text-center mb-12">
           <div className="col-lg-12">
-            {/* section title */}
             <div className="section-title title-style-center_text">
               <div className="title-header">
-                <h2 className="title">Student Testimonials</h2>
-                <h5 className="mt-3">
+                <h2 className="title text-4xl font-bold text-gray-900">
+                  Student Testimonials
+                </h2>
+                <h5 className="mt-4 text-lg text-gray-600">
                   Hear from our students about their transformative journeys.
                 </h5>
               </div>
-              <div className="heading-seperator">
-                <span></span>
+              <div className="heading-seperator mt-6">
+                <span className="block w-24 h-1 bg-orange-500 mx-auto"></span>
               </div>
             </div>
-            {/* section title end */}
           </div>
         </div>
 
-        {/* Slider */}
-        <Slider {...settings} className="row">
+        {/* Slider - Fully Responsive */}
+        <Slider {...settings}>
           {testimonials.map((t, index) => (
-            <div key={index} className="ttm-box-col-wrapper col-lg-12">
-              <div
-                className="testimonials ttm-testimonial-box-view-style2"
-                style={{ height: "100%" }}
-              >
-                <div className="testimonial-content border">
-                  <div className="testimonial-avatar">
-                    <div className="testimonial-img">
+            <div key={index} className="px-3">
+              {"{"}
+              {/* This padding (px-3) replaces Bootstrap gutters */}
+              <div className="testimonials ttm-testimonial-box-view-style2 h-full">
+                <div className="testimonial-content border rounded-lg shadow-lg bg-white p-8 h-full flex flex-col">
+                  <div className="testimonial-avatar mb-6 text-center">
+                    <div className="testimonial-img inline-block rounded-full overflow-hidden border-4 border-orange-500">
                       <img
-                        width="80"
-                        height="80"
-                        className="img-center lazyload"
+                        width="100"
+                        height="100"
+                        className="rounded-full object-cover"
                         src={t.img}
-                        alt="testimonial-img"
+                        alt={t.name}
                       />
                     </div>
                   </div>
-                  <div className="testimonial-caption">
-                    <h5>{t.name}</h5>
+                  <div className="testimonial-caption text-center mb-4">
+                    <h5 className="text-xl font-semibold text-gray-900">
+                      {t.name}
+                    </h5>
                   </div>
-                  <blockquote>{t.text}</blockquote>
+                  <blockquote className="text-gray-700 text-base leading-relaxed flex-1">
+                    "{t.text}"
+                  </blockquote>
                 </div>
               </div>
             </div>
