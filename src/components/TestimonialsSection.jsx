@@ -1,25 +1,21 @@
 "use client";
 
-import Slider from "react-slick";
+import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function TestimonialsSection() {
-  const settings = {
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    responsive: [
-      {
-        breakpoint: 870,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
-      },
-      {
-        breakpoint: 525,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
-      },
-    ],
-  };
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "start",
+      slidesToScroll: 1,
+    },
+    [Autoplay({ delay: 4000, stopOnInteraction: false })]
+  );
+
+  // Media query hook to detect mobile
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 870;
 
   const testimonials = [
     {
@@ -66,35 +62,55 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
-        {/* Slider */}
-        <Slider {...settings}>
-          {testimonials.map((t, index) => (
-            <div key={index} className="ttm-box-col-wrapper">
+        {/* Embla Carousel */}
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div
+            className="flex"
+            style={{
+              gap: "30px",
+              // Responsive slides visible
+              ...(isMobile
+                ? { marginLeft: "calc((100% - (100vw - 40px)) / 2)" } // rough centering on mobile
+                : {}),
+            }}
+          >
+            {testimonials.map((t, index) => (
               <div
-                className="testimonials ttm-testimonial-box-view-style2"
-                style={{ height: "100%" }}
+                key={index}
+                className="ttm-box-col-wrapper"
+                style={{
+                  flex: isMobile ? "0 0 100%" : "0 0 calc(33.333% - 20px)",
+                  minWidth: 0,
+                }}
               >
-                <div className="testimonial-content border">
-                  <div className="testimonial-avatar">
-                    <div className="testimonial-img">
-                      <img
-                        width="80"
-                        height="80"
-                        className="img-center lazyload"
-                        src={t.img}
-                        alt="testimonial-img"
-                      />
+                <div
+                  className="testimonials ttm-testimonial-box-view-style2"
+                  style={{ height: "100%" }}
+                >
+                  <div className="testimonial-content border">
+                    <div className="testimonial-avatar">
+                      <div className="testimonial-img">
+                        <Image
+                          src={t.img}
+                          alt={t.name}
+                          width={80}
+                          height={80}
+                          className="rounded-full object-cover"
+                        />
+                      </div>
                     </div>
+                    <div className="testimonial-caption">
+                      <h5>{t.name}</h5>
+                    </div>
+                    <blockquote className="italic text-gray-700">
+                      {t.text}
+                    </blockquote>
                   </div>
-                  <div className="testimonial-caption">
-                    <h5>{t.name}</h5>
-                  </div>
-                  <blockquote>{t.text}</blockquote>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
