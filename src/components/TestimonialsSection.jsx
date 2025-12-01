@@ -1,13 +1,17 @@
 "use client";
 
-import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 export default function TestimonialsSection() {
   const [emblaRef] = useEmblaCarousel(
-    { loop: true, align: "start" },
-    [Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })]
+    {
+      loop: true,
+      align: "start",
+      containScroll: "trimSnaps",
+    },
+    [Autoplay({ delay: 4000, stopOnInteraction: false })]
   );
 
   const testimonials = [
@@ -34,11 +38,12 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="ttm-row testimonial-section_2 clearfix">
+    <section className="ttm-row testimonial-section_2 clearfix py-16">
       <div className="container">
-        {/* Section Title */}
-        <div className="row">
-          <div className="col-lg-12">
+
+        {/* Title */}
+        <div className="row mb-10">
+          <div className="col-lg-12 text-center">
             <div className="section-title title-style-center_text">
               <div className="title-header">
                 <h2 className="title">Student Testimonials</h2>
@@ -46,41 +51,40 @@ export default function TestimonialsSection() {
                   Hear from our students about their transformative journeys.
                 </h5>
               </div>
-              <div className="heading-seperator">
+              <div className="heading-seperator mx-auto">
                 <span></span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Embla Carousel + Inline CSS via dangerouslySetInnerHTML */}
-        <div ref={emblaRef} className="embla">
+        {/* EMBLA CAROUSEL - WORKS ON MOBILE */}
+        <div className="embla" ref={emblaRef}>
           <div className="embla__container">
             {testimonials.map((t, index) => (
               <div key={index} className="embla__slide">
-                <div className="ttm-box-col-wrapper">
-                  <div
-                    className="testimonials ttm-testimonial-box-view-style2"
-                    style={{ height: "100%" }}
-                  >
-                    <div className="testimonial-content border">
-                      <div className="testimonial-avatar">
-                        <div className="testimonial-img">
-                          <Image
-                            src={t.img}
-                            alt={t.name}
-                            width={80}
-                            height={80}
-                            className="img-fluid rounded-full object-cover"
-                          />
+                <div className="px-4">
+                  <div className="ttm-box-col-wrapper">
+                    <div className="testimonials ttm-testimonial-box-view-style2 h-full">
+                      <div className="testimonial-content border rounded-lg shadow-lg bg-white p-8">
+                        <div className="testimonial-avatar text-center mb-6">
+                          <div className="testimonial-img inline-block">
+                            <Image
+                              src={t.img}
+                              alt={t.name}
+                              width={80}
+                              height={80}
+                              className="rounded-full object-cover mx-auto border-4 border-white shadow"
+                            />
+                          </div>
                         </div>
+                        <div className="testimonial-caption text-center mb-4">
+                          <h5 className="font-bold text-lg">{t.name}</h5>
+                        </div>
+                        <blockquote className="text-gray-600 italic text-center leading-relaxed">
+                          "{t.text}"
+                        </blockquote>
                       </div>
-                      <div className="testimonial-caption">
-                        <h5>{t.name}</h5>
-                      </div>
-                      <blockquote className="italic text-gray-700">
-                        {t.text}
-                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -89,42 +93,39 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
-        {/* All required Embla styles injected once using dangerouslySetInnerHTML */}
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .embla {
-                overflow: hidden;
-                width: 100%;
-              }
-              .embla__container {
-                display: flex;
-                gap: 30px;
-                margin-left: -15px;
-              }
-              .embla__slide {
-                flex: 0 0 100%;
-                min-width: 0;
-                padding-left: 15px;
-              }
+        {/* CRITICAL: This CSS fixes blank mobile issue */}
+        <style jsx global>{`
+          .embla {
+            overflow: hidden;
+            width: 100%;
+          }
+          .embla__container {
+            display: flex;
+            touch-action: pan-y pinch-zoom; /* fixes mobile swipe */
+          }
+          .embla__slide {
+            flex: 0 0 100%;
+            min-width: 0;
+          }
 
-              /* Desktop: Show 3 slides */
-              @media (min-width: 871px) {
-                .embla__slide {
-                  flex: 0 0 calc(33.333% - 20px) !important;
-                }
-              }
+          /* Desktop: Show 3 cards */
+          @media (min-width: 768px) {
+            .embla__slide {
+              flex: 0 0 33.333%;
+            }
+          }
 
-              /* Optional: nice center alignment on mobile */
-              @media (max-width: 870px) {
-                .embla__container {
-                  gap: 20px;
-                  justify-content: center;
-                }
-              }
-            `,
-          }}
-        />
+          /* Mobile: Center the card */
+          @media (max-width: 767px) {
+            .embla__container {
+              justify-content: flex-start;
+            }
+            .embla__slide > div {
+              max-width: 380px;
+              margin: 0 auto;
+            }
+          }
+        `}</style>
       </div>
     </section>
   );
