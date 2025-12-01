@@ -6,16 +6,9 @@ import Autoplay from "embla-carousel-autoplay";
 
 export default function TestimonialsSection() {
   const [emblaRef] = useEmblaCarousel(
-    {
-      loop: true,
-      align: "start",
-      slidesToScroll: 1,
-    },
-    [Autoplay({ delay: 4000, stopOnInteraction: false })]
+    { loop: true, align: "start" },
+    [Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })]
   );
-
-  // Media query hook to detect mobile
-  const isMobile = typeof window !== "undefined" && window.innerWidth <= 870;
 
   const testimonials = [
     {
@@ -43,10 +36,9 @@ export default function TestimonialsSection() {
   return (
     <section className="ttm-row testimonial-section_2 clearfix">
       <div className="container">
-        {/* row */}
+        {/* Section Title */}
         <div className="row">
           <div className="col-lg-12">
-            {/* section title */}
             <div className="section-title title-style-center_text">
               <div className="title-header">
                 <h2 className="title">Student Testimonials</h2>
@@ -58,59 +50,81 @@ export default function TestimonialsSection() {
                 <span></span>
               </div>
             </div>
-            {/* section title end */}
           </div>
         </div>
 
-        {/* Embla Carousel */}
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div
-            className="flex"
-            style={{
-              gap: "30px",
-              // Responsive slides visible
-              ...(isMobile
-                ? { marginLeft: "calc((100% - (100vw - 40px)) / 2)" } // rough centering on mobile
-                : {}),
-            }}
-          >
+        {/* Embla Carousel + Inline CSS via dangerouslySetInnerHTML */}
+        <div ref={emblaRef} className="embla">
+          <div className="embla__container">
             {testimonials.map((t, index) => (
-              <div
-                key={index}
-                className="ttm-box-col-wrapper"
-                style={{
-                  flex: isMobile ? "0 0 100%" : "0 0 calc(33.333% - 20px)",
-                  minWidth: 0,
-                }}
-              >
-                <div
-                  className="testimonials ttm-testimonial-box-view-style2"
-                  style={{ height: "100%" }}
-                >
-                  <div className="testimonial-content border">
-                    <div className="testimonial-avatar">
-                      <div className="testimonial-img">
-                        <Image
-                          src={t.img}
-                          alt={t.name}
-                          width={80}
-                          height={80}
-                          className="rounded-full object-cover"
-                        />
+              <div key={index} className="embla__slide">
+                <div className="ttm-box-col-wrapper">
+                  <div
+                    className="testimonials ttm-testimonial-box-view-style2"
+                    style={{ height: "100%" }}
+                  >
+                    <div className="testimonial-content border">
+                      <div className="testimonial-avatar">
+                        <div className="testimonial-img">
+                          <Image
+                            src={t.img}
+                            alt={t.name}
+                            width={80}
+                            height={80}
+                            className="img-fluid rounded-full object-cover"
+                          />
+                        </div>
                       </div>
+                      <div className="testimonial-caption">
+                        <h5>{t.name}</h5>
+                      </div>
+                      <blockquote className="italic text-gray-700">
+                        {t.text}
+                      </blockquote>
                     </div>
-                    <div className="testimonial-caption">
-                      <h5>{t.name}</h5>
-                    </div>
-                    <blockquote className="italic text-gray-700">
-                      {t.text}
-                    </blockquote>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* All required Embla styles injected once using dangerouslySetInnerHTML */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .embla {
+                overflow: hidden;
+                width: 100%;
+              }
+              .embla__container {
+                display: flex;
+                gap: 30px;
+                margin-left: -15px;
+              }
+              .embla__slide {
+                flex: 0 0 100%;
+                min-width: 0;
+                padding-left: 15px;
+              }
+
+              /* Desktop: Show 3 slides */
+              @media (min-width: 871px) {
+                .embla__slide {
+                  flex: 0 0 calc(33.333% - 20px) !important;
+                }
+              }
+
+              /* Optional: nice center alignment on mobile */
+              @media (max-width: 870px) {
+                .embla__container {
+                  gap: 20px;
+                  justify-content: center;
+                }
+              }
+            `,
+          }}
+        />
       </div>
     </section>
   );
