@@ -170,8 +170,7 @@ Our International Relations Office facilitates partnerships, student mobility, a
                   <p>Chairperson – International Relations</p>
                   <strong>Address:</strong>
                   <p>
-                    Institute of Management Technology, Survey No 38, Cherlaguda Village Shamshabad Mandal, Ranga Reddy
-                    District Hyderabad – 501 218
+                   38, Cherlaguda, Shamshabad, Hyderabad-501218,India
                   </p>
                   <strong>Email:</strong>
                   <p>
