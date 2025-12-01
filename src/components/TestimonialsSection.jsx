@@ -67,9 +67,9 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Slider */}
-        <Slider {...settings} className="row">
+        <Slider {...settings}>
           {testimonials.map((t, index) => (
-            <div key={index} className="ttm-box-col-wrapper col-lg-12">
+            <div key={index} className="ttm-box-col-wrapper">
               <div
                 className="testimonials ttm-testimonial-box-view-style2"
                 style={{ height: "100%" }}
