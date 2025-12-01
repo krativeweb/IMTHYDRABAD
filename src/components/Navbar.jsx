@@ -303,11 +303,11 @@ export default function Navbar() {
                           Mandatory Disclosure
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
-                          <li>
+                          {/* <li>
                             <Link className="item" href="/mandatory-disclosure">
                               Mandatory Disclosure
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link className="item" href="/committees">
                               Committees
