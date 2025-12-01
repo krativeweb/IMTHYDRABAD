@@ -1,88 +1,68 @@
 "use client";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function TestimonialsSection() {
-const settings = {
-  dots: true,
-  arrows: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  slidesToShow: 3, // Desktop default
-  slidesToScroll: 1,
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "center",
+      skipSnaps: false,
+      slidesToScroll: 1,
+    },
+    [Autoplay({ delay: 4000 })]
+  );
 
-  responsive: [
-    {
-      breakpoint: 992, // Below desktop
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 768, // Below tablet
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-};
   const testimonials = [
     {
       name: "Anchal Dugar",
       img: "/admission/testimonial/Aanchaldugar.jpg",
-      text: `With a corporate background at Deloitte, I chose IMT Hyderabad to strengthen my expertise at the intersection of business and technology. The curriculum, industry exposure, and collaborative culture have given me clarity and confidence to pursue impactful opportunities in the tech-business space.`,
+      text: `With a corporate background at Deloitte, I chose IMT Hyderabad to strengthen my expertise...`,
     },
     {
       name: "Abhishek Kumar",
       img: "/admission/testimonial/abishekkumar.jpg",
-      text: `Choosing IMT Hyderabad has been rewarding, with a curriculum that fosters growth both academically and beyond. Through active involvement in committees, I’ve contributed to events, sponsorships, and guiding new students, integrating my diverse academic background into real-world challenges.`,
+      text: `Choosing IMT Hyderabad has been rewarding, with a curriculum that fosters growth...`,
     },
     {
       name: "Kashish Javed",
       img: "/admission/testimonial/kashishjaved.jpg",
-      text: `IMT Hyderabad has been a transformative journey, offering opportunities for growth, collaboration, and learning. From leading social media initiatives to exploring management's human side, it has shaped me both personally and professionally.`,
+      text: `IMT Hyderabad has been a transformative journey, offering opportunities for growth...`,
     },
     {
       name: "Priyanshu Naugariya",
       img: "/admission/testimonial/priyanshu.jpg",
-      text: `Choosing Logistics and Supply Chain Management at IMT Hyderabad was transformative. The combination of industry-relevant knowledge, practical exposure through internships, and leadership development made my experience both academically and personally enriching.`,
+      text: `Choosing Logistics and Supply Chain Management at IMT Hyderabad was transformative...`,
     },
   ];
 
   return (
-    <section className="ttm-row testimonial-section_2 clearfix py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50">
       <div className="container">
-        {/* Section Title */}
-        <div className="row text-center mb-12">
-          <div className="col-lg-12">
-            <div className="section-title title-style-center_text">
-              <div className="title-header">
-                <h2 className="title text-4xl font-bold text-gray-900">
-                  Student Testimonials
-                </h2>
-                <h5 className="mt-4 text-lg text-gray-600">
-                  Hear from our students about their transformative journeys.
-                </h5>
-              </div>
-              <div className="heading-seperator mt-6">
-                <span className="block w-24 h-1 bg-orange-500 mx-auto"></span>
-              </div>
-            </div>
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900">Student Testimonials</h2>
+          <h5 className="mt-4 text-lg text-gray-600">
+            Hear from our students about their transformative journeys.
+          </h5>
+          <div className="mt-6">
+            <span className="block w-24 h-1 bg-orange-500 mx-auto"></span>
           </div>
         </div>
 
-        {/* Slider - Fully Responsive */}
-        <Slider {...settings}>
-          {testimonials.map((t, index) => (
-            <div key={index} className="px-3">
-              {"{"}
-              {/* This padding (px-3) replaces Bootstrap gutters */}
-              <div className="testimonials ttm-testimonial-box-view-style2 h-full">
-                <div className="testimonial-content border rounded-lg shadow-lg bg-white p-8 h-full flex flex-col">
-                  <div className="testimonial-avatar mb-6 text-center">
-                    <div className="testimonial-img inline-block rounded-full overflow-hidden border-4 border-orange-500">
+        {/* Embla Slider */}
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex">
+            {testimonials.map((t, index) => (
+              <div
+                key={index}
+                className="relative flex-[0_0_100%] px-3 
+                md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
+              >
+                <div className="border rounded-lg shadow-lg bg-white p-8 h-full flex flex-col">
+                  <div className="text-center mb-6">
+                    <div className="inline-block rounded-full overflow-hidden border-4 border-orange-500">
                       <img
                         width="100"
                         height="100"
@@ -92,19 +72,18 @@ const settings = {
                       />
                     </div>
                   </div>
-                  <div className="testimonial-caption text-center mb-4">
-                    <h5 className="text-xl font-semibold text-gray-900">
-                      {t.name}
-                    </h5>
-                  </div>
-                  <blockquote className="text-gray-700 text-base leading-relaxed flex-1">
-                    "{t.text}"
+                  <h5 className="text-xl font-semibold text-gray-900 text-center mb-4">
+                    {t.name}
+                  </h5>
+                  <blockquote className="text-gray-700 text-base leading-relaxed flex-1 text-center">
+                    “{t.text}”
                   </blockquote>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
