@@ -71,7 +71,7 @@ export default function Navbar() {
             <Image
               src="/media/imtpilllogo.webp"
               alt="Logo"
-              width={260} // 2x retina
+              width={270} // 2x retina
               height={90}
               style={{ margin: "2px" }}
             />
