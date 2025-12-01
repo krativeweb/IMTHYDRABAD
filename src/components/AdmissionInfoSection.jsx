@@ -84,20 +84,40 @@ export default function AdmissionInfoSection() {
                           </p>
                           <p className="card-text text-muted mb-2">
                             <strong className="text-dark">
-                              Merit Based Scholarship:
+                              Merit-Based Scholarship:
                             </strong>
-                            Candidates scoring
-                            <strong className="text-dark">
-                              90 percentile or above
-                            </strong>
-                            in CAT/XAT OR
-                            <strong className="text-dark">650+ in GMAT</strong>
-                            will receive a
+                            Candidates are eligible for a
                             <strong className="text-dark">
                               40% scholarship
                             </strong>
-                            on the academic fee.
+                            on the academic fee if they meet any of the
+                            following criteria:
+                            <br />
+                            <strong className="text-dark">CAT/XAT:</strong>{" "}
+                            Score 90 percentile or above
+                            <br />
+                            <strong className="text-dark">
+                              GMAT (Focus Edition):
+                            </strong>{" "}
+                            Score 645 or above
+                            <br />
+                            <strong className="text-dark">
+                              GMAT (10th Edition):
+                            </strong>{" "}
+                            Score 700 or above
+                           
+                            <br />
+                            <strong className="text-dark">
+                              The Late Shri Mahendra Nath Merit-cum-Means
+                              Scholarship:
+                            </strong>
+                            Awarded to second-year students who demonstrate
+                            exceptional academic performance during their first
+                            year. Selection is based on academic results,
+                            socio-economic background, overall conduct, and
+                            commitment to learning and community engagement.
                           </p>
+
                           <p className="card-text text-muted mb-0">
                             <em>
                               <strong className="text-dark">Note:</strong> The
