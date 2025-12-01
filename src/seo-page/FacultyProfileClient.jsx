@@ -144,7 +144,7 @@ export default function FacultyProfile({ params }) {
         }
 
         .faculty-hero {
-          background: url("/media/banners/faculty.webp") !important;
+          background: url("/media/banners/faculty-details.webp") !important;
           background-size: cover !important;
           height: 60vh;
           position: relative;
@@ -591,3 +591,4 @@ export default function FacultyProfile({ params }) {
     </>
   );
 }
+
