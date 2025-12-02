@@ -176,6 +176,11 @@ export default function Navbar() {
                         <Link className="item" href="/fpm-program-hyderabad">
                           Fellow Program in Management
                         </Link>
+                               <li>
+                            <Link className="item" href="/executive-education">
+                              Executive Education
+                            </Link>
+                          </li>
                       </li>
                       </ul>
                     </li>
@@ -488,11 +493,7 @@ export default function Navbar() {
                           Others
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
-                          <li>
-                            <Link className="item" href="/executive-education">
-                              Executive Education
-                            </Link>
-                          </li>
+                     
                           <li>
                             <Link className="item" href="/Careers">
                               Careers
