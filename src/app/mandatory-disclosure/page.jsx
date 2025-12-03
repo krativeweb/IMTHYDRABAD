@@ -49,6 +49,7 @@ const MandatoryDisclosure = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
+                  {/* Assuming 'Link' is defined in the JSX context */}
                   <Link
                     style={{ textDecoration: "none" }}
                     href="/"
@@ -92,9 +93,9 @@ const MandatoryDisclosure = () => {
                       <p>Address </p>
                     </td>
                     <td>
-                      <p>Survey No. 38, Cherlaguda Village</p>
-                      <p>Shashabad Mandal</p>
-                      <p>RR Dist. Hyderabad – 501218</p>
+                      <p>38, Cherlaguda,</p>
+                      <p>Shashabad</p>
+                      <p>Hyderabad – 501218</p>
                     </td>
                   </tr>
                   <tr>
@@ -116,7 +117,7 @@ const MandatoryDisclosure = () => {
                       <p>Mobile</p>
                     </td>
                     <td>
-                      <p>9849528676</p>
+                      <p>8392811111</p>
                     </td>
                   </tr>
                   <tr>
@@ -201,10 +202,10 @@ const MandatoryDisclosure = () => {
                       <p>Name of the Director</p>
                     </td>
                     <td>
-                      <p>Dr. K M Baharul Islam</p>
-                      <p>Survey No. 38, Cherlaguda Village</p>
-                      <p>Shashabad Mandal</p>
-                      <p>RR Dist. Hyderabad – 501218</p>
+                      <p>Prof (Dr) K M Baharul Islam</p>
+                      <p>38, Cherlaguda,</p>
+                      <p>Shashabad</p>
+                      <p>Hyderabad – 501218</p>
                     </td>
                   </tr>
                   <tr>
@@ -226,7 +227,7 @@ const MandatoryDisclosure = () => {
                       <p>Mobile</p>
                     </td>
                     <td>
-                      <p>9849528676</p>
+                      <p>8392811111</p>
                     </td>
                   </tr>
                   <tr>
@@ -260,7 +261,7 @@ const MandatoryDisclosure = () => {
                     <td>
                       <ul>
                         <li>
-                          <p>NA - </p>
+                          <p>NA -</p>
                         </li>
                       </ul>
                     </td>
@@ -294,7 +295,7 @@ const MandatoryDisclosure = () => {
                       <p>Vice President – Shri. Dipankar Chatterji</p>
                       <p>Vice President – Smt. Simran Nath</p>
                       <br />
-                      <p>Members – </p>
+                      <p>Members –</p>
                       <ul>
                         <li>
                           <p>
@@ -304,26 +305,23 @@ const MandatoryDisclosure = () => {
                         </li>
                         <li>
                           <p>
+                            Dr. Partha Ray, Director, National Institute of Bank
+                            Management, Pune
+                          </p>
+                        </li>
+                        <li>
+                          <p>
                             Shri S.S. Mundra, Former Deputy Governor, Reserve
                             Bank of India
                           </p>
                         </li>
                         <li>
-                          <p>
-                            Mr. Ishaat Hussain, Former Director, Tata Sons
-                            Limited
-                          </p>
+                          <p>Mr. Ishaat Hussain, Director, Tata Sons Limited</p>
                         </li>
                         <li>
                           <p>
                             Prof. Subhash Bhatnagar, Former Professor, IIM
                             Ahmedabad
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Dr. Partha Ray, Director, National Institute of Bank
-                            Management, Pune
                           </p>
                         </li>
                       </ul>
@@ -341,6 +339,12 @@ const MandatoryDisclosure = () => {
                       <ul>
                         <li>
                           <p>
+                            Dr. Partha Ray, Director, National Institute of Bank
+                            Management, Pune
+                          </p>
+                        </li>
+                        <li>
+                          <p>
                             Prof. Mithileshwar Jha, Former Professor IIM,
                             Bangalore
                           </p>
@@ -349,12 +353,6 @@ const MandatoryDisclosure = () => {
                           <p>
                             Prof. Subhash Bhatnagar, Former Professor, IIM
                             Ahmedabad
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Dr. Partha Ray, Director, National Institute of Bank
-                            Management, Pune
                           </p>
                         </li>
                       </ul>
@@ -383,6 +381,7 @@ const MandatoryDisclosure = () => {
                       <p>Organizational chart and processes</p>
                     </td>
                     <td>
+                      <p>Organizational Structure (Academics)</p>
                       <img
                         src="./images/t1.webp"
                         alt="Organisation Chart Academics"
@@ -392,6 +391,7 @@ const MandatoryDisclosure = () => {
                       />
                       <br />
                       <br />
+                      <p>Organizational Structure (Administration)</p>
                       <img
                         src="./images/t2.webp"
                         alt="Organisation Chart Administration"
@@ -459,7 +459,7 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>
                         Yes, Student feedback is collected twice in every
-                        trimester to assess the faculty performance.{" "}
+                        trimester to assess the faculty performance.
                       </p>
                     </td>
                   </tr>
@@ -517,44 +517,41 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>1</p>
+                      <p>1.</p>
                     </td>
                     <td>
-                      <p>Dr. K. Sriharsha Reddy</p>
+                      <p>Prof (Dr) K M Baharul Islam</p>
                     </td>
                     <td>
                       <p>Director</p>
                     </td>
                     <td>
-                      <p>9849528676</p>
+                      <p>8392811111</p>
                     </td>
                     <td>
-                      <p>08414-671661</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>2</p>
-                    </td>
-                    <td>
-                      <p>Prof. Nikhil Rastogi</p>
-                    </td>
-                    <td>
-                      <p>
-                        Chairperson-Disciplinary &amp; Academic Counselling
-                        Committee
-                      </p>
-                    </td>
-                    <td>
-                      <p>7306874901</p>
-                    </td>
-                    <td>
-                      <p>08414-671670</p>
+                      <p>08414671661</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>3</p>
+                      <p>2.</p>
+                    </td>
+                    <td>
+                      <p>Prof. Romina Mathew</p>
+                    </td>
+                    <td>
+                      <p>Chairperson- Disciplinary</p>
+                    </td>
+                    <td>
+                      <p>9246295292</p>
+                    </td>
+                    <td>
+                      <p>08414671689</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>3.</p>
                     </td>
                     <td>
                       <p>Prof. Vinay Kumar K</p>
@@ -566,84 +563,103 @@ const MandatoryDisclosure = () => {
                       <p>8639342389</p>
                     </td>
                     <td>
-                      <p>08414-671688</p>
+                      <p>08414671688</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>4</p>
-                    </td>
-                    <td>
-                      <p>Prof. Tumpa Dey</p>
-                    </td>
-                    <td>
-                      <p>Warden - Girls Hostel</p>
-                    </td>
-                    <td>
-                      <p>9000195605</p>
-                    </td>
-                    <td>
-                      <p>08414-671695</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>5</p>
+                      <p>4.</p>
                     </td>
                     <td>
                       <p>Prof. Pushpesh Pant</p>
                     </td>
                     <td>
-                      <p>Warden - Boys Hostel</p>
+                      <p>Warden- Boys Hostel</p>
                     </td>
                     <td>
                       <p>8827218443</p>
                     </td>
                     <td>
-                      <p>08414-671602</p>
+                      <p>08414671602</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>6</p>
+                      <p>5.</p>
                     </td>
                     <td>
-                      <p>Mr. Kavi Bhushan Pandey</p>
+                      <p>Prof. Irfan Ahmad Shah</p>
                     </td>
                     <td>
-                      <p>Manager - Administration and Maintenance</p>
+                      <p>Warden- Boys Hostel</p>
                     </td>
                     <td>
-                      <p>9000114443</p>
+                      <p>9567452826</p>
                     </td>
                     <td>
-                      <p>08414-671683</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>7</p>
-                    </td>
-                    <td>
-                      <p>Ms. K. Padama Sundari</p>
-                    </td>
-                    <td>
-                      <p>Incharge-HR</p>
-                    </td>
-                    <td>
-                      <p>9959968904</p>
-                    </td>
-                    <td>
-                      <p>08414-671661</p>
+                      <p>08414671601</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>8</p>
+                      <p>6.</p>
                     </td>
                     <td>
-                      <p>Dr. Mamatha Raghuveer Achanta </p>
-                      <p>(NGO Representative)</p>
+                      <p>Prof. Sanchari Guha Niyogi</p>
+                    </td>
+                    <td>
+                      <p>Warden- Girls Hostel</p>
+                    </td>
+                    <td>
+                      <p>8584968955</p>
+                    </td>
+                    <td>
+                      <p>08414671625</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>7.</p>
+                    </td>
+                    <td>
+                      <p>Mr. Raj Kumar Meena</p>
+                    </td>
+                    <td>
+                      <p>Chief Admin. Officer</p>
+                    </td>
+                    <td>
+                      <p>9582805564</p>
+                    </td>
+                    <td>
+                      <p>08414671683</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>8.</p>
+                    </td>
+                    <td>
+                      <p>Ms. Jaya Vamshi</p>
+                    </td>
+                    <td>
+                      <p>Asst. Manager-HR</p>
+                    </td>
+                    <td>
+                      <p>9885770267</p>
+                    </td>
+                    <td>
+                      <p>08414671656</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>9.</p>
+                    </td>
+                    <td>
+                      <p>
+                        Dr. Mamatha Rahuveer Achanta <br />
+                        (NGO representative)
+                      </p>
                     </td>
                     <td>
                       <p>Social Worker</p>
@@ -652,24 +668,7 @@ const MandatoryDisclosure = () => {
                       <p>9849418592</p>
                     </td>
                     <td>
-                      <p />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>9</p>
-                    </td>
-                    <td>
-                      <p>Mr. P. Ramchander Rao</p>
-                    </td>
-                    <td>
-                      <p>ACP-Shamshabad Police Station</p>
-                    </td>
-                    <td>
-                      <p>9490617481</p>
-                    </td>
-                    <td>
-                      <p> </p>
+                      <p>-</p>
                     </td>
                   </tr>
                   <tr>
@@ -677,88 +676,113 @@ const MandatoryDisclosure = () => {
                       <p>10</p>
                     </td>
                     <td>
-                      <p>Mr. A. Ravindra Seshu</p>
-                      <p> (Media Representative)</p>
+                      <p>Mr. K. Srinivasa Rao</p>
                     </td>
                     <td>
-                      <p>Senior Reporter, Khammam District</p>
+                      <p>ACP - Shamshabad Police Station</p>
+                    </td>
+                    <td>
+                      <p>9490617481</p>
+                    </td>
+                    <td>
+                      <p>-</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>11.</p>
+                    </td>
+                    <td>
+                      <p>
+                        Mr. A. Ravindra Seshu <br />
+                        (Media Representative)
+                      </p>
+                    </td>
+                    <td>
+                      <p>Senior Reporter, Khammam Dist.</p>
                     </td>
                     <td>
                       <p>9063718675</p>
                     </td>
                     <td>
-                      <p> </p>
+                      <p>-</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>11</p>
+                      <p>12.</p>
                     </td>
                     <td>
-                      <p> Parent Representative</p>
+                      <p>Parent Representative</p>
                     </td>
                     <td>
                       <p>Hyderabad</p>
                     </td>
                     <td>
-                      <p> 9391424271</p>
+                      <p>9391424271</p>
                     </td>
                     <td>
-                      <p> </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>12</p>
-                    </td>
-                    <td>
-                      <p>Mr. Ram Sankar</p>
-                      <p>(Sr. Student Representative)</p>
-                    </td>
-                    <td>
-                      <p>IMT, Hyderabad</p>
-                    </td>
-                    <td>
-                      <p>9600948962</p>
-                    </td>
-                    <td>
-                      <p> </p>
+                      <p>-</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>13</p>
+                      <p>13.</p>
                     </td>
                     <td>
-                      <p>Ms. Vanshika Maheswari</p>
-                      <p>(Sr. Student Representative)</p>
+                      <p>
+                        Mr. Ekansh Uniyal <br />
+                        (Sr. Student Representative)
+                      </p>
                     </td>
                     <td>
-                      <p>IMT, Hyderabad</p>
+                      <p>IMT Hyderabad</p>
                     </td>
                     <td>
-                      <p>7011930882</p>
+                      <p>7020132115</p>
                     </td>
                     <td>
-                      <p> </p>
+                      <p>-</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>14</p>
+                      <p>14.</p>
                     </td>
                     <td>
-                      <p>Mr. Jerry James</p>
-                      <p>(Jr. Student Representative)</p>
+                      <p>
+                        Ms. Priya Arya <br />
+                        (Sr. Student Representative)
+                      </p>
                     </td>
                     <td>
-                      <p>IMT, Hyderabad</p>
+                      <p>IMT Hyderabad</p>
                     </td>
                     <td>
-                      <p>7356673254</p>
+                      <p>9810302199</p>
                     </td>
                     <td>
-                      <p> </p>
+                      <p>-</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>15.</p>
+                    </td>
+                    <td>
+                      <p>
+                        Mr. Shailendra Gautam <br />
+                        (Jr. Student Representative)
+                      </p>
+                    </td>
+                    <td>
+                      <p>IMT Hyderabad</p>
+                    </td>
+                    <td>
+                      <p>7078587873</p>
+                    </td>
+                    <td>
+                      <p>-</p>
                     </td>
                   </tr>
                 </tbody>
@@ -776,7 +800,7 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>
                         Students can communicate their grievances to the
-                        leadership at IMT through intranet (mails and ERP)
+                        leadership at IMT through the intranet (mails and ERP)
                       </p>
                     </td>
                   </tr>
@@ -823,13 +847,15 @@ const MandatoryDisclosure = () => {
                       <p>1</p>
                     </td>
                     <td>
-                      <p>Prof. Tulika Sharma - Chairperson</p>
+                      <p>
+                        Prof. Nikhil Rastogi, (Professor-Finance) – Chairperson
+                      </p>
                     </td>
                     <td>
                       <p>Teaching</p>
                     </td>
                     <td>
-                      <p>9160511828</p>
+                      <p>7306874901</p>
                     </td>
                     <td>
                       <p>IMT, Hyderabad</p>
@@ -840,13 +866,15 @@ const MandatoryDisclosure = () => {
                       <p>2</p>
                     </td>
                     <td>
-                      <p>Prof. C.Chakrapani - Dean (Academics)</p>
+                      <p>
+                        Prof. Akhila V , (Asst. Professor-HRM),Co-Chairperson
+                      </p>
                     </td>
                     <td>
                       <p>Teaching</p>
                     </td>
                     <td>
-                      <p>9849652207</p>
+                      <p>7842701485</p>
                     </td>
                     <td>
                       <p>IMT, Hyderabad</p>
@@ -857,13 +885,13 @@ const MandatoryDisclosure = () => {
                       <p>3</p>
                     </td>
                     <td>
-                      <p>Prof. K Vinay Kumar</p>
+                      <p>Prof. Musarrat Shaheen, (Asst. Professor-HRM)</p>
                     </td>
                     <td>
                       <p>Teaching</p>
                     </td>
                     <td>
-                      <p>8639342389</p>
+                      <p>8978219231</p>
                     </td>
                     <td>
                       <p>IMT, Hyderabad</p>
@@ -874,13 +902,13 @@ const MandatoryDisclosure = () => {
                       <p>4</p>
                     </td>
                     <td>
-                      <p>Prof. Tumpa Dey</p>
+                      <p>Ms. Jaya Vamshi</p>
                     </td>
                     <td>
-                      <p>Teaching</p>
+                      <p>Non-Teaching</p>
                     </td>
                     <td>
-                      <p>9000195605</p>
+                      <p>9885770267</p>
                     </td>
                     <td>
                       <p>IMT, Hyderabad</p>
@@ -891,30 +919,13 @@ const MandatoryDisclosure = () => {
                       <p>5</p>
                     </td>
                     <td>
-                      <p>Ms. K. Padma Sundari</p>
-                    </td>
-                    <td>
-                      <p>Non-Teaching</p>
-                    </td>
-                    <td>
-                      <p>9959968904</p>
-                    </td>
-                    <td>
-                      <p>IMT, Hyderabad</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>6</p>
-                    </td>
-                    <td>
-                      <p>Prof. Mamatha Raghuveer Achanta</p>
+                      <p>Dr. Mamatha Raghuveer Achanta (NGO Representative)</p>
                     </td>
                     <td>
                       <p>Social Worker</p>
                     </td>
                     <td>
-                      <p>9849418592</p>
+                      <p>9849418591</p>
                     </td>
                     <td>
                       <p>Begumpet, Hyderabad</p>
@@ -934,21 +945,14 @@ const MandatoryDisclosure = () => {
                       <p>Establishment of Internal Complaint Committee (ICC)</p>
                     </td>
                     <td>
-                      <p>Prof. Vinay Kumar Kalakbandi - PGP Chairperson</p>
-                      <p>Prof. Tumpa Dey, Chairperson</p>
-                      <p>
-                        Prof. Tulika Sharma, (Assistant Professor), General
-                        Management{" "}
-                      </p>
-                      <p>Dr. Mamatha Raghuveer Achanta, Social Worker</p>
-                      <p>Mrs. K. Sita Mahalakshmi, Advocate</p>
-                      <p>Ms. K Padma Sundari, Non-Teaching</p>
-                      <p>Ms. Uma Maheswari N, Sr. Student Representative</p>
-                      <p>
-                        Ms. Aksharita Vaidehi Jayanti, Jr. Student
-                        Representative
-                      </p>
-                      <p>Ms. Shivangi Mohan, Jr. Student Representative</p>
+                      <p>Prof. Aindrilla Chatterjee-Chairperson</p>
+                      <p>Prof. Akhila V, Co-Chairperson</p>
+                      <p>Prof. Pushpesh Pant</p>
+                      <p>Dr. Mamatha Raghuveer Achanta</p>
+                      <p>Mrs. K. Sita Mahalakshmi</p>
+                      <p>Mr. Akash -(Sr. Student Representative)</p>
+                      <p>Ms. Ashmita Banda - (Sr. Student Representative)</p>
+                      <p>Ms. Jaysree SS - (Jr. Student Representative)</p>
                     </td>
                   </tr>
                   <tr>
@@ -1014,6 +1018,12 @@ const MandatoryDisclosure = () => {
                           <p>PGDM (Marketing)</p>
                         </li>
                         <li>
+                          <p>PGDM (IT)</p>
+                        </li>
+                        <li>
+                          <p>PGDM (LSCM)</p>
+                        </li>
+                        <li>
                           <p>Fellowship Program in Management</p>
                         </li>
                       </ol>
@@ -1039,7 +1049,7 @@ const MandatoryDisclosure = () => {
                       <p>Total number of Courses</p>
                     </td>
                     <td>
-                      <p>4</p>
+                      <p>6</p>
                     </td>
                   </tr>
                   <tr>
@@ -1050,7 +1060,7 @@ const MandatoryDisclosure = () => {
                       <p>No. of Courses for which applied for Accreditation</p>
                     </td>
                     <td>
-                      <p>3 </p>
+                      <p>3</p>
                       <br />
                     </td>
                   </tr>
@@ -1063,12 +1073,12 @@ const MandatoryDisclosure = () => {
                         Status of Accreditation – Preliminary / Applied for SAR
                         and results awaited / Applied for SAR and visits
                         completed / Results of the visits awaited / Rejected /
-                        Approved{" "}
+                        Approved
                       </p>
                     </td>
                     <td>
                       <p>
-                        Approved for PGDM, PGDM (Finance) and PGDM (Marketing),{" "}
+                        Approved for PGDM, PGDM (Finance) and PGDM (Marketing)
                       </p>
                       <br />
                       <p> </p>
@@ -1116,7 +1126,7 @@ const MandatoryDisclosure = () => {
                       <p>Fee</p>
                     </td>
                     <td>
-                      <p>14,50,000/-</p>
+                      <p>15,00,000/-</p>
                     </td>
                   </tr>
                   <tr>
@@ -1156,23 +1166,6 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>Avg. Salary in Rs.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>2019-21</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                    <td>
-                      <p>1300000</p>
-                    </td>
-                    <td>
-                      <p>600000</p>
-                    </td>
-                    <td>
-                      <p> 734195</p>
                     </td>
                   </tr>
                   <tr>
@@ -1189,7 +1182,7 @@ const MandatoryDisclosure = () => {
                       <p>750000</p>
                     </td>
                     <td>
-                      <p> 958597</p>
+                      <p>958597</p>
                     </td>
                   </tr>
                   <tr>
@@ -1206,7 +1199,41 @@ const MandatoryDisclosure = () => {
                       <p>850000</p>
                     </td>
                     <td>
-                      <p> 1181754</p>
+                      <p>1181754</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2022-24</p>
+                    </td>
+                    <td>
+                      <p>PGDM</p>
+                    </td>
+                    <td>
+                      <p>2555000</p>
+                    </td>
+                    <td>
+                      <p>855000</p>
+                    </td>
+                    <td>
+                      <p>1194222</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2023-25</p>
+                    </td>
+                    <td>
+                      <p>PGDM</p>
+                    </td>
+                    <td>
+                      <p></p>
+                    </td>
+                    <td>
+                      <p></p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                 </tbody>
@@ -1244,7 +1271,7 @@ const MandatoryDisclosure = () => {
                       <p>Fee</p>
                     </td>
                     <td>
-                      <p>14,50,000/-</p>
+                      <p>15,00,000/-</p>
                     </td>
                   </tr>
                   <tr>
@@ -1288,36 +1315,19 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>2019-21</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                    <td>
-                      <p> 2000000</p>
-                    </td>
-                    <td>
-                      <p>600000</p>
-                    </td>
-                    <td>
-                      <p> 767775</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
                       <p>2020-22</p>
                     </td>
                     <td>
-                      <p>PGDM (Finance)</p>
+                      <p>PGDM (Financial Management)</p>
                     </td>
                     <td>
-                      <p> 2350000</p>
+                      <p>2350000</p>
                     </td>
                     <td>
                       <p>700000</p>
                     </td>
                     <td>
-                      <p> 946128</p>
+                      <p>946128</p>
                     </td>
                   </tr>
                   <tr>
@@ -1325,7 +1335,7 @@ const MandatoryDisclosure = () => {
                       <p>2021-23</p>
                     </td>
                     <td>
-                      <p>PGDM (Finance)</p>
+                      <p>PGDM (Financial Management)</p>
                     </td>
                     <td>
                       <p>2500000</p>
@@ -1334,7 +1344,41 @@ const MandatoryDisclosure = () => {
                       <p>850000</p>
                     </td>
                     <td>
-                      <p> 1261685</p>
+                      <p>1261685</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2022-24</p>
+                    </td>
+                    <td>
+                      <p>PGDM (Finance)</p>
+                    </td>
+                    <td>
+                      <p>2555000</p>
+                    </td>
+                    <td>
+                      <p>855000</p>
+                    </td>
+                    <td>
+                      <p>1139186</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2023-25</p>
+                    </td>
+                    <td>
+                      <p>PGDM (Finance)</p>
+                    </td>
+                    <td>
+                      <p></p>
+                    </td>
+                    <td>
+                      <p></p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                 </tbody>
@@ -1372,7 +1416,7 @@ const MandatoryDisclosure = () => {
                       <p>Fee</p>
                     </td>
                     <td>
-                      <p>14,50,000/-</p>
+                      <p>15,00,000/-</p>
                     </td>
                   </tr>
                   <tr>
@@ -1412,23 +1456,6 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>Avg. Salary in Rs.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>2019-21</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                    <td>
-                      <p> 805072</p>
-                    </td>
-                    <td>
-                      <p> 600000</p>
-                    </td>
-                    <td>
-                      <p> 696246</p>
                     </td>
                   </tr>
                   <tr>
@@ -1462,7 +1489,41 @@ const MandatoryDisclosure = () => {
                       <p>884053</p>
                     </td>
                     <td>
-                      <p> 1097261</p>
+                      <p>1097261</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2022-24</p>
+                    </td>
+                    <td>
+                      <p>PGDM (Marketing)</p>
+                    </td>
+                    <td>
+                      <p>2105000</p>
+                    </td>
+                    <td>
+                      <p>805000</p>
+                    </td>
+                    <td>
+                      <p>1241132</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>2023-25</p>
+                    </td>
+                    <td>
+                      <p>PGDM (Marketing)</p>
+                    </td>
+                    <td>
+                      <p></p>
+                    </td>
+                    <td>
+                      <p></p>
+                    </td>
+                    <td>
+                      <p></p>
                     </td>
                   </tr>
                 </tbody>
@@ -1501,394 +1562,227 @@ const MandatoryDisclosure = () => {
                       <p>PGDM</p>
                     </td>
                   </tr>
+                  {/* Note: The original source list under item 7 continues for many entries. I'll include the full list from item 26 of your input below this placeholder section. */}
                   <tr>
                     <td>
-                      <p>2</p>
+                      <p>37</p>
                     </td>
                     <td colSpan={2}>
-                      <p>Prof. (Dr.) SOURABH BHATTACHARYA</p>
+                      <p>Prof ROHIT G</p>
                     </td>
                     <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>3</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) DEBADUTTA K PANDA</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>4</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) SURAJIT GHOSH DASTIDAR</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>5</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) KALYANA C CHEJARLA</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>6</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) TUMPA DEY</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>7</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) B PAVAN KUMAR</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>8</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) STEVEN RAJ PADAKANDLA</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>9</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) TULIKA SHARMA</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>10</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) MANOJ DAS</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>11</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) R MAHESH</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>12</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) VINAY KUMAR K</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>13</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) INDRANIL GHOSH</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>14</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) SHAON SEN</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>15</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) AMITH VIKRAM</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>16</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) BHAVANA RATHORE</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>17</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) ANANDA RAO SUVVARI</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>18</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) AINDRILA CHATTERJEE</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>19</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Mr. KANNAN SATHISH KUMAR</p>
-                    </td>
-                    <td>
-                      <p>PGDM</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>20</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) K SRIHARSHA REDDY</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>21</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) VENKATA CHAKRAPANI C</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>22</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) NIKHIL RASTOGI</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>23</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) SARATH BABU A</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>24</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) AVISHEK BHANDARI</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>25</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) ARUN KUMAR BISWAL</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>26</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) SAIKAT BANERJEE</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>27</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) NEETHU MOHAMMED</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>28</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) AARIZ FAIZAN JAVED</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Finance)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>29</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) NITIN GUPTA</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>30</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. DEVIPRASAD GHOSH</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>31</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. SHABNAM PRIYADARSHINI</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>32</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) ESHA SAHA</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>33</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. RAHUL PRAMANI</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>34</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Prof. (Dr.) PUSHPESH PANT</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>35</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Mr. A VINOD KUMAR</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>36</p>
-                    </td>
-                    <td colSpan={2}>
-                      <p>Dr. MAMATA VEGUNTA</p>
-                    </td>
-                    <td>
-                      <p>PGDM (Marketing)</p>
+                      <p>OPM</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+            {/* Full Faculty List from Item 7 (based on Item 26 in source) */}
+            <div className="table-responsive align-center">
+              <table className="table table-striped">
+                <tbody>
+                  {/* Headers repeated for clarity, referencing original source data point 26 */}
+                  <tr>
+                    <td>
+                      <p>Sno</p>
+                    </td>
+                    <td>
+                      <p>Area</p>
+                    </td>
+                    <td>
+                      <p>Faculty Name</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>ANALYTICS &amp; INFORMATION TECHNOLOGY</td>
+                    <td>Prof (Dr) SURAJIT GHOSH DASTIDAR</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>ANALYTICS &amp; INFORMATION TECHNOLOGY</td>
+                    <td>Prof (Dr) INDRANIL GHOSH</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>ANALYTICS &amp; INFORMATION TECHNOLOGY</td>
+                    <td>Prof SACHIN CHOUBEY</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>FINANCE &amp; ACCOUNTING</td>
+                    <td>Prof (Dr) K SRI HARSHA REDDY</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>FINANCE &amp; ACCOUNTING</td>
+                    <td>Prof (Dr) C VENKATA CHAKRAPANI</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>FINANCE &amp; ACCOUNTING</td>
+                    <td>Prof (Dr) NIKHIL RASTOGI</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>FINANCE &amp; ACCOUNTING</td>
+                    <td>Prof (Dr) SARATH BABU A</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>FINANCE &amp; ACCOUNTING</td>
+                    <td>Prof (Dr) PURNIMA KHEMANI</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>FINANCE &amp; ACCOUNTING</td>
+                    <td>Prof ROHAN KUMAR MISHRA</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>STRATEGY &amp; GENERAL MANAGEMENT</td>
+                    <td>Prof (Dr) K M BAHARUL ISLAM</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>STRATEGY &amp; GENERAL MANAGEMENT</td>
+                    <td>Prof (Dr) AINDRILA CHATTERJEE</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>STRATEGY &amp; GENERAL MANAGEMENT</td>
+                    <td>Prof (Dr) AHMAD FARAZ KHAN</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>STRATEGY &amp; GENERAL MANAGEMENT</td>
+                    <td>Prof (Dr) DEBARATI DHAR</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>ECONOMICS &amp; PUBLIC POLICY</td>
+                    <td>Prof (Dr) IRFAN AHMAD SHAH</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>ECONOMICS &amp; PUBLIC POLICY</td>
+                    <td>Prof (Dr) STEVEN RAJ PADAKANDLA</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>ECONOMICS &amp; PUBLIC POLICY</td>
+                    <td>Prof (Dr) SIVADASAN T.M</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>ECONOMICS &amp; PUBLIC POLICY</td>
+                    <td>Prof BASIT ABDULLAH</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>HUMAN RESOURCE MANAGEMENT</td>
+                    <td>Prof (Dr) ROMINA MATHEW</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>HUMAN RESOURCE MANAGEMENT</td>
+                    <td>Prof (Dr) AKHILA VELDANDI</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>HUMAN RESOURCE MANAGEMENT</td>
+                    <td>Prof (Dr) RONA ELIZABETH KURIAN</td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>HUMAN RESOURCE MANAGEMENT</td>
+                    <td>Prof (Dr) KIRANMAI PENDYALA DUTT</td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>HUMAN RESOURCE MANAGEMENT</td>
+                    <td>Prof (Dr) MUSARRAT SHAHEEN</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>HUMAN RESOURCE MANAGEMENT</td>
+                    <td>Prof (Dr) MAMATA VEGUNTA</td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>MARKETING</td>
+                    <td>Prof (Dr) NITIN GUPTA</td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>MARKETING</td>
+                    <td>Prof (Dr) R MAHESH</td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>MARKETING</td>
+                    <td>Prof (Dr) SHAON SEN</td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>MARKETING</td>
+                    <td>Prof (Dr) PRANAY SINDHU</td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>MARKETING</td>
+                    <td>Prof (Dr) NISHTHA RAI</td>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>MARKETING</td>
+                    <td>Prof DHANANJAY SINGH</td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>MARKETING</td>
+                    <td>Prof VINOD KUMAR</td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td>MARKETING</td>
+                    <td>Mr SATHISH KUMAR KANNAN</td>
+                  </tr>
+                  <tr>
+                    <td>32</td>
+                    <td>OPERATIONS MANAGEMENT</td>
+                    <td>Prof (Dr) SOURABH BHATTACHARYA</td>
+                  </tr>
+                  <tr>
+                    <td>33</td>
+                    <td>OPERATIONS MANAGEMENT</td>
+                    <td>Prof (Dr) KALYANA C CHEJARLA</td>
+                  </tr>
+                  <tr>
+                    <td>34</td>
+                    <td>OPERATIONS MANAGEMENT</td>
+                    <td>Prof (Dr) VINAY KUMAR K</td>
+                  </tr>
+                  <tr>
+                    <td>35</td>
+                    <td>OPERATIONS MANAGEMENT</td>
+                    <td>Prof (Dr) SANCHARI GUHA NIYOGI</td>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td>OPERATIONS MANAGEMENT</td>
+                    <td>Prof (Dr) PUSHPESH PANT</td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>OPERATIONS MANAGEMENT</td>
+                    <td>Prof ROHIT G</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <div className="table-responsive align-center">
               <table className="table table-striped">
                 <tbody>
@@ -1900,7 +1794,7 @@ const MandatoryDisclosure = () => {
                       <p>Permanent Faculty</p>
                     </td>
                     <td>
-                      <p>33</p>
+                      <p>37</p>
                     </td>
                   </tr>
                   <tr>
@@ -1911,7 +1805,7 @@ const MandatoryDisclosure = () => {
                       <p>Adjunct Faculty</p>
                     </td>
                     <td>
-                      <p>3</p>
+                      <p>-</p>
                     </td>
                   </tr>
                   <tr>
@@ -1922,7 +1816,7 @@ const MandatoryDisclosure = () => {
                       <p>Permanent Faculty: Student Ratio</p>
                     </td>
                     <td>
-                      <p>1:14.55</p>
+                      <p>1:19</p>
                     </td>
                   </tr>
                 </tbody>
@@ -1932,329 +1826,383 @@ const MandatoryDisclosure = () => {
               <table className="table table-striped">
                 <tbody>
                   <tr>
-                    <td>
-                      <p>8</p>
-                    </td>
-                    <td>
-                      <p>Profile of Director</p>
-                    </td>
-                    <td>
-                      <br />
-                    </td>
+                    <td>8</td>
+                    <td>Profile of Director</td>
+                    <td></td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol>
-                        <li>
-                          <p>Name</p>
-                        </li>
+                        <li>Name</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>Dr. K. Sriharsha Reddy</p>
-                    </td>
+                    <td>Prof (Dr) K M Baharul Islam</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={2}>
-                        <li>
-                          <p>Date of Birth</p>
-                        </li>
+                        <li>Date of Birth</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>22-08-1977</p>
-                    </td>
+                    <td>17/10/1969</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={3}>
-                        <li>
-                          <p>Unique Id</p>
-                        </li>
+                        <li>Unique ID</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>-</p>
-                    </td>
+                    <td></td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={4}>
-                        <li>
-                          <p>Education Qualifications</p>
-                        </li>
+                        <li>Education Qualifications</li>
                       </ol>
                     </td>
                     <td>
-                      <p>MBA, Ph.D</p>
+                      D.Litt., PhD (Double), MBA, LLM (UK), MA, B.Ed. Post-Doc
+                      (AIT Bangkok)
                     </td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={5}>
-                        <li>
-                          <p>Work Experience</p>
-                        </li>
+                        <li>Work Experience</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>23 Yrs</p>
-                    </td>
+                    <td></td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
-                        <li>
-                          <p>Teaching</p>
-                        </li>
+                        <li>Teaching</li>
                       </ul>
                     </td>
-                    <td>
-                      <p>21 Yrs</p>
-                    </td>
+                    <td>31 Years</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
-                        <li>
-                          <p>Research</p>
-                        </li>
+                        <li>Research</li>
                       </ul>
                     </td>
-                    <td>
-                      <p>16 Yrs</p>
-                    </td>
+                    <td>31 Years</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
-                        <li>
-                          <p>Industry</p>
-                        </li>
+                        <li>Industry</li>
                       </ul>
                     </td>
-                    <td>
-                      <p>2 Yrs</p>
-                    </td>
+                    <td></td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
-                        <li>
-                          <p>Others</p>
-                        </li>
+                        <li>Others</li>
                       </ul>
                     </td>
-                    <td>
-                      <p>-</p>
-                    </td>
+                    <td>UN Assignment - 10 years</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={6}>
-                        <li>
-                          <p>Area of Specialization</p>
-                        </li>
+                        <li>Area of Specialization</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>Finance &amp; Accounting</p>
-                    </td>
+                    <td>Corporate Law</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={7}>
                         <li>
-                          <p>
-                            Courses taught at Diploma / Post Diploma / Under
-                            Graduate / Post Graduate / Post Graduate Diploma
-                            Level
-                          </p>
+                          Courses taught at Diploma / UG / PG / PG Diploma
                         </li>
                       </ol>
                     </td>
                     <td>
-                      <p>
-                        Portfolio Management, Wealth Management, Financial
-                        Accounting and Management Accounting
-                      </p>
+                      Corporate Law
+                      <br />
+                      Negotiation, Arbitration and Conciliation
+                      <br />
+                      Legal Aspects of Business
+                      <br />
+                      Media & Entertainment Business
+                      <br />
+                      Public Policy & Governance
+                      <br />
+                      Gender Issues
                     </td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={8}>
-                        <li>
-                          <p>Research guidance</p>
-                        </li>
+                        <li>Research guidance</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>-</p>
-                    </td>
+                    <td></td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
                         <li>
-                          <p>
-                            No. of papers published in National / International
-                            Journals/Conferences
-                          </p>
+                          No. of papers published in National/International
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <p>21</p>
+                      Books: 15 • Chapters: 16
+                      <br />
+                      Journal Papers: 20 • Conf Papers: 126
                     </td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
-                        <li>
-                          <p>Master</p>
-                        </li>
+                        <li>Master</li>
                       </ul>
                     </td>
-                    <td>
-                      <p>MBA </p>
-                    </td>
+                    <td>10</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ul>
-                        <li>
-                          <p>Ph.D.</p>
-                        </li>
+                        <li>Ph.D.</li>
                       </ul>
                     </td>
-                    <td>
-                      <p> </p>
-                    </td>
+                    <td>05</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={9}>
-                        <li>
-                          <p>Projects Carrier out</p>
-                        </li>
+                        <li>Projects Carried Out</li>
                       </ol>
                     </td>
-                    <td>
-                      <p> 4 research projects</p>
-                    </td>
+                    <td>15</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={10}>
-                        <li>
-                          <p>Patents</p>
-                        </li>
+                        <li>Patents</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>-</p>
-                    </td>
+                    <td>-</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={11}>
-                        <li>
-                          <p>Technology Transfer</p>
-                        </li>
+                        <li>Technology Transfer</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>-</p>
-                    </td>
+                    <td>-</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={12}>
-                        <li>
-                          <p>Research Publications</p>
-                        </li>
+                        <li>Research Publications</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>2</p>
-                    </td>
+                    <td>36</td>
                   </tr>
+
                   <tr>
-                    <td>
-                      <br />
-                    </td>
+                    <td></td>
                     <td>
                       <ol start={13}>
-                        <li>
-                          <p>No. of Books published with details</p>
-                        </li>
+                        <li>No. of Books published with details</li>
                       </ol>
                     </td>
-                    <td>
-                      <p>2 Books </p>
+                    <td>15</td>
+                  </tr>
+
+                  {/* Section Title */}
+                  <tr>
+                    <td colSpan={3}>
+                      <strong>Details of the Books:</strong>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+            {/* SEPARATE BOOKS TABLE */}
+            <div className="table-responsive mt-3">
+              <table className="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Sl.</th>
+                    <th>Title</th>
+                    <th>Name of Co-author(s)</th>
+                    <th>Publisher and ISBN</th>
+                    <th>Year</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      Sustainable Development Goals and Interreligious Dialogue
+                    </td>
+                    <td>Dr Swati Chakrabarty</td>
+                    <td>Knowledge Press, ISBN: 978-81-960068-1-5</td>
+                    <td>2023</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      Migrant Muse: The Third Space in Assamese Literature
+                    </td>
+                    <td>Nil</td>
+                    <td>IIAS, Shimla, ISBN: 978-93-82396-85-7</td>
+                    <td>2023</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      Literature from North-East India: Beyond the
+                      Centre-Periphery Debate
+                    </td>
+                    <td>Nil</td>
+                    <td>Routledge (UK), ISBN: 9781032425689</td>
+                    <td>2022</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Business Communication, New Edition</td>
+                    <td>Arthur H. Bell, Dayle M. Smith</td>
+                    <td>Wiley, ISBN: 9789354642388</td>
+                    <td>2022</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      Environmental Impact Assessment: Precept and Practice
+                    </td>
+                    <td>MZM Nomani</td>
+                    <td>Routledge (CRC Press), ISBN: 9781032055824</td>
+                    <td>2022</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      Public Policy Agenda: Decrypting Sustainability for India
+                    </td>
+                    <td>Raushan A</td>
+                    <td>Bloomsbury, ISBN: 978-93-85936-16-6</td>
+                    <td>2016</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>
+                      International Perspectives on Comparative Education Policy
+                    </td>
+                    <td>N Iftekhar</td>
+                    <td>Bloomsbury, ISBN: 978-9384898823</td>
+                    <td>2015</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>New Directions in Media</td>
+                    <td>N Roy</td>
+                    <td>Bloomsbury, ISBN: 978-9384898816</td>
+                    <td>2015</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Resource Book on Women’s Rights (Ed)</td>
+                    <td>Nil</td>
+                    <td>Allied Publishers, India, ISBN: 978-81-8424-910-1</td>
+                    <td>2014</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Defending Traditional Knowledge Rights</td>
+                    <td>Nil</td>
+                    <td>VDM Pub, Germany, ISBN: 978-3-639-37724-8</td>
+                    <td>2011</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>
+                      Community-Based Water Resources Management in Northeast
+                      India
+                    </td>
+                    <td>CK Jain, SK Sarma</td>
+                    <td>Allied Publishers, India, ISBN: 978-81-8424-696-4</td>
+                    <td>2011</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>National ICT Policy & Plans for the Gambia</td>
+                    <td>Nil</td>
+                    <td>UN-ECA, Addis Ababa</td>
+                    <td>2004</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>e-Government Strategy for The Gambia</td>
+                    <td>Nil</td>
+                    <td>UN-ECA, Addis Ababa</td>
+                    <td>2004</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Social Justice & Other Issues</td>
+                    <td>B Acharjee</td>
+                    <td>REC Silchar India Publication</td>
+                    <td>1998</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>English for Science & Technology</td>
+                    <td>Nil</td>
+                    <td>Shaddhanjali Publications</td>
+                    <td>1998</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <div className="table-responsive align-center">
               <table className="table table-striped">
                 <tbody>
@@ -2280,7 +2228,7 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>14.5 Lakhs for two years</p>
+                      <p>15.00 Lakhs for two years</p>
                     </td>
                   </tr>
                   <tr>
@@ -2295,10 +2243,10 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>1st Installment –</p>
-                      <p>2nd Installment – 03-Oct-23</p>
-                      <p>3rd Installment – 02-Feb-24</p>
-                      <p>4th Installment – 21-Jun-24</p>
-                      <p>5th Installment – 28-Oct-24</p>
+                      <p>2nd Installment – 01-Oct-25</p>
+                      <p>3rd Installment – 02-Feb-26</p>
+                      <p>4th Installment – 19-Jun-26</p>
+                      <p>5th Installment – 23-Oct-26</p>
                       <br />
                     </td>
                   </tr>
@@ -2326,449 +2274,158 @@ const MandatoryDisclosure = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td rowSpan={71}>
-                                <p>5 Male Scholarship</p>
-                              </td>
-                              <td>
-                                <p>Aashvi Jain</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Aditi Mehta</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Akanksha Sinha</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Akanksha Gupta</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Amrita Paul</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Ankita Sorkhel</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Anoushka Shandilya</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Anukriti Srivastava</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Arusha Maken</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Ayushi Poddar</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Baishali Nandi</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Bhavna Singh</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Bhavya Sharma</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Divya Juneja</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Divya Nagi</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Gattamaneni Shashi Suma</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Gunjan Poply</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Harshita Parihar</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Ishita Chowdhury</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Kamya Kishore</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Kanchan Asnani</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Kavya Kasibhatta</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Keerthana S</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Kiranmayee Vandamsetty</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Lavanya Thakur</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Moulina Bandyopadhyay</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Muskan Malhotra</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Muskan Nahata</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Nithya Sree</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Nitika Tiwari</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Nitya Singh</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Parul Singh</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Preeti Tanwani</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Princy Bhojwani</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Puspa Rani</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Radha Kansal</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Reetika Saha</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Riya Awasthi</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Riya Kheria</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Riya Singh</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Saghaya Krithima</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Saisha Sandeep Ayachit</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sakshi Rastogi</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sanjeevani Bathri</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sapna Gupta</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shamika Mathur</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shibbudevi Hariprasad Tiwari</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shilpa Sharma</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shreya Suman</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shrishti Tolani</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shristi Kumari</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shubhangi Kumar</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Simran Kak</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sneha Reddy Mogiligidda</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sreaya S R</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sreedivya D</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Srishti Singh</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Suditi Prasad</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sugandha Bansal</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Supriya Kumari</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Swathi Kamaraj</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Swati Kumari</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Tanu Valecha</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Taruna Dutta</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Tejasvi Saini</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Uma Maheswari N</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Vanshika Khandelwal</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Vanshika Maheshwari</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Vedanti Prashant Mangalkar</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Veeturi Durga Hari Chandana</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Vishakha Roy</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td rowSpan={17}>
-                                <p>40% scholarship</p>
-                              </td>
-                              <td>
-                                <p>Abhishek Mishra</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Bhavya Kalia</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Datta Parjanya Saketh Prabhala</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Denish Agarwal</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Gautam Maken</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Harshit Nair</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Himanshu</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Jatin Upadhyay</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Kisan Rai</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Kumar Ashutosh Gupta</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Prasad Dhanyakumar Barmecha</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Ravi Chandra Maddali</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Sai Krishna Sathvik Chakka</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Saurabh Singh Ujjain</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Shriya Agrawal</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Subodh Mohapatro</p>
-                              </td>
-                            </tr>
-                            <tr>
                               <td>
-                                <p>Swashata Roy</p>
+                                <p>20% Female Scholarship</p>
+                              </td>
+                              <td>
+                                <p>Aanchal Dugar</p>
+                                <p>Aishwarya Keshavrao Ponugoti</p>
+                                <p>Akanksha Jain</p>
+                                <p>Amalarose Saju</p>
+                                <p>Ambika Sharma</p>
+                                <p>Anamika Shukla</p>
+                                <p>Anchal Gupta</p>
+                                <p>Angela Maria Vinod</p>
+                                <p>Anjali Bhadra</p>
+                                <p>Ankita Jain</p>
+                                <p>Ankita Singh</p>
+                                <p>Anubha Smriti</p>
+                                <p>Anushi Kaushik</p>
+                                <p>Anushka Singh</p>
+                                <p>Ashmita Banda</p>
+                                <p>Avantika Singh</p>
+                                <p>Avleen Kaur Kohli</p>
+                                <p>Bhavika Rawat</p>
+                                <p>Bipasha Guha</p>
+                                <p>Blessy Milind Patti</p>
+                                <p>C Phalguni</p>
+                                <p>Chanchal Kamal Khatri</p>
+                                <p>Deepthi Devan Pisharady</p>
+                                <p>Deepthi P</p>
+                                <p>Deepti Tiwari</p>
+                                <p>Dimple Hazarika</p>
+                                <p>Dudekula Ayesha Bee</p>
+                                <p>Falak</p>
+                                <p>Gauri Jagota</p>
+                                <p>Gauri Maheshwari</p>
+                                <p>Gauri Singh</p>
+                                <p>Gurupriya Kummetha</p>
+                                <p>Hansi Rathi</p>
+                                <p>Harsh Sharma</p>
+                                <p>Henna Bhat</p>
+                                <p>Ishika Sinha</p>
+                                <p>Jyotika Suman</p>
+                                <p>Kajal</p>
+                                <p>Kanak Sharma</p>
+                                <p>Kanchan Dewangan</p>
+                                <p>Kashish</p>
+                                <p>Kashish Pravin Umredkar</p>
+                                <p>Kasturi Ghosh</p>
+                                <p>Ketaki Sanjay Bedekar</p>
+                                <p>Khushi Thakkar</p>
+                                <p>Khusi Jain</p>
+                                <p>Madhura Suhas Kulkarni</p>
+                                <p>Mahima Arora</p>
+                                <p>Maitreyee Mandloi</p>
+                                <p>Malavika Satheesan</p>
+                                <p>Maneesha Chaturvedi</p>
+                                <p>Mansi Arora</p>
+                                <p>Megha Bararia</p>
+                                <p>Megha Sharma</p>
+                                <p>Megha Shee</p>
+                                <p>Naga Sai Srimedha Suraparaju</p>
+                                <p>Nandini Rathi</p>
+                                <p>Navami Krishna</p>
+                                <p>Navya Sree Macha Venkata</p>
+                                <p>Nayana Choudhury</p>
+                                <p>Neha Kadian</p>
+                                <p>Palak Sharma</p>
+                                <p>Parnika Agrawal</p>
+                                <p>Payal Shivkumar Saini</p>
+                                <p>Pooja Purohit</p>
+                                <p>Prachi Bhalla</p>
+                                <p>Prachi Shukla</p>
+                                <p>Pragya Sharma</p>
+                                <p>Pritikana Banerjee</p>
+                                <p>Priya Arya</p>
+                                <p>Priyanshi Singhal</p>
+                                <p>Rashi Sharma</p>
+                                <p>Razia Khatun</p>
+                                <p>Rimsha Hasan</p>
+                                <p>Rithika Rathi</p>
+                                <p>Ritu Pritam Hemnani</p>
+                                <p>Ruchika Dalmia</p>
+                                <p>Rupal Agrawal</p>
+                                <p>Rupal Parakh</p>
+                                <p>Saakshi Thakur</p>
+                                <p>Saei Kiran Kandre</p>
+                                <p>Sakshi Shrivastava</p>
+                                <p>Sakshi Shukla</p>
+                                <p>Samipta Jaiswal</p>
+                                <p>Samriddhi Mohta</p>
+                                <p>Samyukta Raghunathan</p>
+                                <p>Sanika Manish Lole</p>
+                                <p>Sanskriti Mishra</p>
+                                <p>Sanskriti Pandey</p>
+                                <p>Sanskruti Sarang Dabde</p>
+                                <p>Sanya Jain</p>
+                                <p>Sejal Agarwal</p>
+                                <p>Shania Crasto</p>
+                                <p>Sheersaa Bhaduri</p>
+                                <p>Shipra Jain</p>
+                                <p>Shivangi Semwal</p>
+                                <p>Shivani Mohanty</p>
+                                <p>Shivani Sathaye</p>
+                                <p>Shraddha Chaudhary</p>
+                                <p>Shreeparna Kar</p>
+                                <p>Shrijal Sharma</p>
+                                <p>Shrishti Sah</p>
+                                <p>Shruti Mishra</p>
+                                <p>Shuchi Bhatnagar</p>
+                                <p>Shweta Kumari</p>
+                                <p>Siddamreddy Jyothika</p>
+                                <p>Silky Sah</p>
+                                <p>Sirisha Peddemul</p>
+                                <p>Sneha Sultania</p>
+                                <p>Sneha Thakur</p>
+                                <p>Snigdha Sarkar</p>
+                                <p>Sonali Jena</p>
+                                <p>Sonalika Mujawadia</p>
+                                <p>Sreelekha Sengupta</p>
+                                <p>Srinidhi Chakilam</p>
+                                <p>Srishti Ghosh</p>
+                                <p>Sruti Soumya Nanda</p>
+                                <p>Suhani Sanjay Dumre</p>
+                                <p>Sujana Kolepalli</p>
+                                <p>Sujata Singh Chauhan</p>
+                                <p>Swarnagiri Chethana</p>
+                                <p>Swati Bisht</p>
+                                <p>Swati Choudhary</p>
+                                <p>Tanisha Chaudhary</p>
+                                <p>Uma Thakur</p>
+                                <p>Vaishnavi Tewatia</p>
+                                <p>Varsha Ramwani</p>
+                                <p>Varsha S</p>
+                                <p>Varsha Sarikonda</p>
+                                <p>Varsha Venugopalan</p>
+                                <p>Vrinda Dwivedi</p>
+                                <p>Vrunda Rajeshbhai Vadalia</p>
+                                <p>Yamini Shekhawat</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>40% Merit Scholarship</p>
+                              </td>
+                              <td>
+                                <p>Anantha Himasree</p>
+                                <p>Arisha Ali Rahi</p>
+                                <p>Bhulakshmi Karri</p>
+                                <p>Ganji Bhuvana Chandra</p>
+                                <p>Garima Sharma</p>
+                                <p>Ishpreet Kaur Harbeer Bhatia</p>
+                                <p>Mohammad Asim</p>
+                                <p>Shivam Yadav</p>
                               </td>
                             </tr>
                           </tbody>
@@ -2788,17 +2445,22 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>Five Scholarships are offered by the institute</p>
+                      <p>The institute offers four Scholarships</p>
                       <ul>
                         <li>
-                          <p>IMT Hyderabad Merit Scholarship – 40?e Waiver</p>
-                        </li>
-                        <li>
-                          <p>IMT Hyderabad Female Scholarship – 5?e Waiver</p>
+                          <p>
+                            IMT Hyderabad Merit Scholarship – 40% Fee Waiver
+                          </p>
                         </li>
                         <li>
                           <p>
-                            IMT TWS* Scholarship – 100?e Waiver for 5 candidates
+                            IMT Hyderabad Female Scholarship – 20% Fee Waiver
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            IMT TFW* Scholarship – 100% Fee Waiver for 5
+                            candidates
                           </p>
                         </li>
                         <li>
@@ -2834,7 +2496,7 @@ const MandatoryDisclosure = () => {
                       <p>Estimated cost of Boarding and Lodging in Hostels</p>
                     </td>
                     <td>
-                      <p>INR 1, 68, 000/- </p>
+                      <p>INR 1, 68, 000/-</p>
                     </td>
                   </tr>
                 </tbody>
@@ -2876,20 +2538,24 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
+                      <p>Batch 2025 – 27</p>
+                      <p>PGDM – 159</p>
+                      <p>PGDM (Finance) - 67</p>
+                      <p>PGDM (Marketing) – 50</p>
+                      <p>PGDM (IT) – 17</p>
+                      <p>PGDM (LSCM) - 8</p>
+                      <br />
+                      <p>Batch 2024 – 26</p>
+                      <p>PGDM – 194</p>
+                      <p>PGDM (Finance) - 76</p>
+                      <p>PGDM (Marketing) – 67</p>
+                      <p>PGDM (IT) – 28</p>
+                      <p>PGDM (LSCM) - 34</p>
+                      <br />
                       <p>Batch 2023 – 25</p>
-                      <p>PGDM – 189</p>
-                      <p>PGDM (Finance) - 63</p>
-                      <p>PGDM Marketing – 60</p>
-                      <br />
-                      <p>Batch 2022 – 24</p>
-                      <p>PGDM – 131</p>
-                      <p>PGDM (Finance) - 42</p>
-                      <p>PGDM Marketing – 60</p>
-                      <br />
-                      <p>Batch 2021 – 23</p>
-                      <p>PGDM – 119</p>
-                      <p>PGDM (Financial Management) - 39</p>
-                      <p>PGDM Marketing – 30</p>
+                      <p>PGDM – 185</p>
+                      <p>PGDM (Finance) - 61</p>
+                      <p>PGDM (Marketing) – 59</p>
                       <br />
                     </td>
                   </tr>
@@ -2939,31 +2605,27 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>CAT</p>
                       <br />
-                      <p>INDIAN INSTITUTE OF MANAGEMENT – KOZHIKODE</p>
-                      <p>IimK Campus P.</p>
-                      <p>IIM Rd, Kunnamangalam,</p>
-                      <p>Kerala 673570</p>
+                      <p>INDIAN INSTITUTE OF MANAGEMENT –Calcutta,</p>
+                      <p>Calcutta, Diamond Harbour Road, Joka</p>
+                      <p>Kolkata-700104.</p>
                       <p>
-                        URL:{" "}
-                        <Link href="https://www.iimk.ac.in/">
-                          https://www.iimk.ac.in/
+                        URL:
+                        <Link href="https://www.iimcal.ac.in/">
+                          https://www.iimcal.ac.in/
                         </Link>
                       </p>
                       <br />
                       <p>XAT</p>
                       <br />
                       <p>
-                        XLRI Xavier School of Management
-                        <br />
-                        C. H. Area (East)
-                        <br />
-                        Jamshedpur - 831001
-                        <br />
+                        XLRI Xavier School of Management <br />
+                        C. H. Area (East) <br />
+                        Jamshedpur - 831001 <br />
                         Jharkhand, India
                       </p>
                       <p>
-                        URL:{" "}
-                        <Link href="http://www.xatonline.in/">
+                        URL:
+                        <Link href="http://www.xatonline.in">
                           http://www.xatonline.in
                         </Link>
                       </p>
@@ -2972,14 +2634,12 @@ const MandatoryDisclosure = () => {
                       <p>GMAT</p>
                       <br />
                       <p>
-                        GMAC/GMGC India Office*
-                        <br />
-                        Gurugram, India
-                        <br />
+                        GMAC/GMGC India Office* <br />
+                        Gurugram, India <br />
                         Phone: +91 124 4945270
                       </p>
                       <p>
-                        URL:{" "}
+                        URL:
                         <Link href="https://www.gmac.com/">
                           https://www.gmac.com/
                         </Link>
@@ -2994,7 +2654,8 @@ const MandatoryDisclosure = () => {
                       <p>
                         Number of seats allotted to different Test qualified
                         candidate separately (AIEEE / CET (State conducted test
-                        / University tests / GPAT / Association conducted test)
+                        / University tests / CMAT / GPAT / Association conducted
+                        test)
                       </p>
                     </td>
                     <td>
@@ -3025,7 +2686,7 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <br />
-                      <p>March 31, 2023</p>
+                      <p>March 05, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3036,7 +2697,7 @@ const MandatoryDisclosure = () => {
                       <p>Last date of submission of applications</p>
                     </td>
                     <td>
-                      <p>March 31, 2023</p>
+                      <p>March 05, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3047,7 +2708,7 @@ const MandatoryDisclosure = () => {
                       <p>Dates for announcing final results</p>
                     </td>
                     <td>
-                      <p>Jun 12, 2023</p>
+                      <p>April 19, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3061,7 +2722,7 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>March 13, 2023</p>
+                      <p>March 22, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3071,11 +2732,11 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>
                         Date for acceptance by the candidate (time given shall
-                        in no ase be less than 15 days)
+                        in no case be less than 15 days)
                       </p>
                     </td>
                     <td>
-                      <p>Jun 15, 2023</p>
+                      <p>April 10, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3086,7 +2747,7 @@ const MandatoryDisclosure = () => {
                       <p>Last date for closing of admission</p>
                     </td>
                     <td>
-                      <p>June 30, 2023</p>
+                      <p>June 30, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3097,7 +2758,7 @@ const MandatoryDisclosure = () => {
                       <p>Starting of the Academic session</p>
                     </td>
                     <td>
-                      <p>July 03, 2023</p>
+                      <p>July 01, 2025</p>
                     </td>
                   </tr>
                   <tr>
@@ -3166,16 +2827,12 @@ const MandatoryDisclosure = () => {
                       <p>
                         Test score Percentile (best score in CAT/XAT/GMAT) – 35%
                       </p>
-                      <br />
-                      <p>Critical Thinking Test –5% </p>
                       <p>
                         Academic score &amp; Quality of graduating
                         institute/university/college – 25%
                       </p>
-                      <br />
                       <p>Work experience (duration &amp; quality) – 10%</p>
-                      <p>Personal Interview – 25%</p>
-                      <p> </p>
+                      <p>Critical Thinking test--5%</p>
                       <p>Personal Interview – 25%</p>
                     </td>
                   </tr>
@@ -3202,32 +2859,34 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
+                      <p>2025-27</p>
+                      <p>CAT - &gt;= 80 Percentile</p>
+                      <p>XAT - &gt;= 80 Percentile</p>
+                      <p>GMAT - &gt;= 615 Score</p>
+                      <br />
+                      <p>2024-26</p>
+                      <p>CAT - &gt;= 75 Percentile</p>
+                      <p>XAT - &gt;= 75 Percentile</p>
+                      <p>CMAT - &gt;= 90 Percentile</p>
+                      <p>GMAT - &gt;= 550 Score</p>
+                      <br />
                       <p>2023 – 25</p>
                       <p>CAT - &gt;= 75 Percentile</p>
                       <p>XAT - &gt;= 75 Percentile</p>
                       <p>CMAT - &gt;= 90 Percentile</p>
                       <p>GMAT - &gt;= 550 Score</p>
                       <br />
-                      <br />
                       <p>2022 – 24</p>
                       <p>CAT - &gt;= 70 Percentile</p>
                       <p>XAT - &gt;= 70 Percentile</p>
-                      <p>CMAT - &gt;= Rank 1–5100</p>
+                      <p>CMAT - &gt;= Rank 1-5100</p>
                       <p>GMAT - &gt;= 550 Score</p>
-                      <br />
                       <br />
                       <p>2021 – 23</p>
                       <p>CAT - &gt;= 70 Percentile</p>
                       <p>XAT - &gt;= 70 Percentile</p>
                       <p>CMAT - &gt;= 90 Percentile</p>
-                      <p>GMAT - &gt;= 500 Score</p>
-                      <br />
-                      <p>2020 – 22</p>
-                      <p>CAT - &gt;= 70 Percentile</p>
-                      <p>XAT - &gt;= 70 Percentile</p>
-                      <p>CMAT - &gt;= 90 Percentile</p>
-                      <p>GMAT - &gt;= 500 Score</p>
-                      <br />
+                      <p>GMAT - &gt;= 550 Score</p>
                     </td>
                   </tr>
                 </tbody>
@@ -3395,9 +3054,9 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>4 (Lab-1 60 Capacity,</p>
-                      <p> Lab-2 40, Capacity </p>
-                      <p> Lab-3 100 Capacity and</p>
-                      <p> Lab-4 30 Capacity)</p>
+                      <p>Lab-2 40, Capacity</p>
+                      <p>Lab-3 100 Capacity and</p>
+                      <p>Lab-4 30 Capacity)</p>
                     </td>
                   </tr>
                   <tr>
@@ -3420,7 +3079,7 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>
-                        Barrier Free built environment for disable and elderly
+                        Barrier Free built environment for disabled and elderly
                         persons
                       </p>
                     </td>
@@ -3488,11 +3147,11 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>Books: 14725; </p>
-                      <p>Titles: 9622; </p>
-                      <p>National Journals – 44</p>
-                      <p>International Journals – 24</p>
-                      <p>Business Magazines (Print) : 24</p>
+                      <p>Books: 15829.</p>
+                      <p>Titles: 10123.</p>
+                      <p>National Journals – 62</p>
+                      <p>International Journals – 14</p>
+                      <p>Business Magazines (Print) : 25</p>
                     </td>
                   </tr>
                   <tr>
@@ -3508,7 +3167,8 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>
                         Having access of 12500+ journals through subscribed
-                        databases like EBSCO; Proquest; DelNet etc.{" "}
+                        databases like EBSCO- Business Source ultimate; Emerald,
+                        Science Direct , DelNet etc.
                       </p>
                     </td>
                   </tr>
@@ -3526,8 +3186,50 @@ const MandatoryDisclosure = () => {
                         /e-magazines in the area of Marketing, Finance, Human
                         Resources, Operations, General Management etc. All these
                         can be accessible through our IP based as well as remote
-                        access ie anywhere, anytime.{" "}
+                        access ie anywhere, anytime.
                       </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <br />
+                    </td>
+                    <td>
+                      <p>Research Tools &amp; e -learning, databases</p>
+                    </td>
+                    <td>
+                      <p>
+                        Having access to Grammarly, Scopus, Turnitin. Also
+                        having Coursera subscription - e- learning platform
+                        covering 10000+ courses. Besides we have access to rich
+                        collection of databases like EMIS, CMIE- Prowess,
+                        Capitaline etc.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <br />
+                    </td>
+                    <td>
+                      <p>Case studies</p>
+                    </td>
+                    <td>
+                      <p>
+                        Harvard case studies with access to Third partner
+                        schools like Darden, ISB, IIM etc.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <br />
+                    </td>
+                    <td>
+                      <p>Terminals</p>
+                    </td>
+                    <td>
+                      <p>1) Bloomberg 2)LSEG</p>
                     </td>
                   </tr>
                 </tbody>
@@ -3556,8 +3258,8 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>
-                        500 Mbps , 1:1 Dedicated , ISP :JIO and Backup
-                        Connection 50 Mbps (RF), ISP (TATA)
+                        1000nMbps, 1:1 Dedicated, ISP: JIO and Backup Connection
+                        50 Mbps (RF), ISP (TATA)
                       </p>
                     </td>
                   </tr>
@@ -3570,14 +3272,14 @@ const MandatoryDisclosure = () => {
                     </td>
                     <td>
                       <p>
-                        358 Desktops &amp; Laptops configuration details are as
-                        follows
+                        The configuration details for 384 desktops and laptops
+                        are as follows.
                       </p>
                       <ol>
                         <li>
                           <p>
-                            Dell OptiPlex3050 MT /i3 / 4GB RAM/1TB HDD/19” TFT
-                            Monitor/KB/Mouse- Desktops= 221 Numbers
+                            Dell OptiPlex3050 MT /i3 / 8GB RAM/1TB HDD/19” TFT
+                            Monitor/KB/Mouse- Desktops 221 Numbers
                           </p>
                         </li>
                         <li>
@@ -3588,7 +3290,7 @@ const MandatoryDisclosure = () => {
                         </li>
                         <li>
                           <p>
-                            HP 280 G2 / i3 / 4GB RAM/ 500GB HDD/18.5” TFT
+                            HP 280 G2 / i3 / 8GB RAM/ 500GB HDD/18.5” TFT
                             Monitor/ KB/ Mouse Desktops=35 Numbers
                           </p>
                         </li>
@@ -3606,32 +3308,14 @@ const MandatoryDisclosure = () => {
                         </li>
                         <li>
                           <p>
-                            HP 250 G7,i5/8GB RAM/ 1TB SATA HDD/14” Screen-4
-                            Numbers
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            HP 240 G6,i5/8GB RAM/1 TB SATA HDD /14” Screen- 7
-                            Numbers
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            HP 240 G4, i5/ 8 GB RAM/ 500 GB SATA HDD/14” Screen-
-                            25 Numbers
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Dell Latitude 3490 i5/8GB RAM/ 1 TB SATA HDD/14”
-                            Screen-8 Numbers.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
                             HP 440 G9,i5/8GB RAM/512 GB SSD HDD/13.3” Screen- 10
                             Numbers
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            HP 440 G10, i5/8GB RAM/512 GB NVME HDD/14” Screen-16
+                            Numbers.
                           </p>
                         </li>
                       </ol>
@@ -3643,10 +3327,10 @@ const MandatoryDisclosure = () => {
                       <br />
                     </td>
                     <td>
-                      <p>Total number of System connected by LAN</p>
+                      <p>Total number of Systems connected by LAN</p>
                     </td>
                     <td>
-                      <p>368 Numbers with Internet connection .</p>
+                      <p>340 Numbers with an Internet connection.</p>
                     </td>
                   </tr>
                   <tr>
@@ -3654,7 +3338,7 @@ const MandatoryDisclosure = () => {
                       <br />
                     </td>
                     <td>
-                      <p>Total number of system connected by WAN</p>
+                      <p>Total number of systems connected by WAN</p>
                     </td>
                     <td>
                       <p>1 (Firewall)</p>
@@ -3671,7 +3355,7 @@ const MandatoryDisclosure = () => {
                       <p>
                         SPSS Statistics, SPSS AMOS, Microsoft Project
                         Professional, Microsoft SQL Server Standard Edition,
-                        Microsoft Visual Studio Enterprise Edition etc.
+                        Microsoft Visual Studio Enterprise Edition, etc.
                       </p>
                     </td>
                   </tr>
@@ -3683,10 +3367,10 @@ const MandatoryDisclosure = () => {
                       <p>Special purpose facilities available</p>
                     </td>
                     <td>
-                      <p>Security purpose : CCTV Cameras Installed </p>
+                      <p>Security purpose: CCTV Cameras Installed</p>
                       <p>
-                        Laptops &amp;Mobile internet access purpose : Wi-Fi
-                        devices Installed.
+                        Laptops &amp;Mobile internet access purpose: Wi-Fi
+                        devices installed.
                       </p>
                     </td>
                   </tr>
@@ -3761,7 +3445,7 @@ const MandatoryDisclosure = () => {
                       <p>Cricket Ground</p>
                       <p>Football Ground</p>
                       <p>Basketball Court</p>
-                      <p>Tennis Court </p>
+                      <p>Tennis Court</p>
                       <p>Table Tennis</p>
                       <p>Caroms</p>
                       <p>Chess and Gymnasium</p>
@@ -3778,7 +3462,7 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>Seminar Hall</p>
                       <p>Auditorium</p>
-                      <p>Amphi Theater </p>
+                      <p>Amphi Theater</p>
                     </td>
                   </tr>
                   <tr>
@@ -3811,7 +3495,7 @@ const MandatoryDisclosure = () => {
                       <br />
                     </td>
                     <td>
-                      <p>Academic Calendar of the University</p>
+                      <p>Academic Calendar for the Academic Year 2025-26</p>
                     </td>
                   </tr>
                 </tbody>
@@ -3823,7 +3507,7 @@ const MandatoryDisclosure = () => {
                   <tr>
                     <td colSpan={4}>
                       <p>
-                        <b>Academic Calendar for the Academic Year 2023-24</b>
+                        <b>Academic Calendar for the Academic Year 2025-26</b>
                       </p>
                     </td>
                   </tr>
@@ -3854,13 +3538,13 @@ const MandatoryDisclosure = () => {
                       <p>Student Reporting and Registration</p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>17, 18 June 2023</p>
+                      <p>16, 17 Jun 2025</p>
                     </td>
                     <td>
-                      <p>Saturday, Sunday</p>
+                      <p>Monday, Tuesday</p>
                     </td>
                   </tr>
                   <tr>
@@ -3868,80 +3552,10 @@ const MandatoryDisclosure = () => {
                       <p>Abhyuday - Orientation Program</p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>19 June 2023 to 30 June 2023</p>
-                    </td>
-                    <td>
-                      <p>Monday to Friday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Commencement of classes</p>
-                    </td>
-                    <td>
-                      <p>2023-25</p>
-                    </td>
-                    <td>
-                      <p>03-Jul-2023</p>
-                    </td>
-                    <td>
-                      <p>Monday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Student Registration and Commencement of Classes</p>
-                    </td>
-                    <td>
-                      <p>2022-24</p>
-                    </td>
-                    <td>
-                      <p>03-Jul-2023</p>
-                    </td>
-                    <td>
-                      <p>Monday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Last day for substitution of courses</p>
-                    </td>
-                    <td>
-                      <p>2022-24</p>
-                    </td>
-                    <td>
-                      <p>10-Jul-2023</p>
-                    </td>
-                    <td>
-                      <p>Monday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Mid Term Feedback</p>
-                    </td>
-                    <td>
-                      <p>2023-25 &amp; 2022-24</p>
-                    </td>
-                    <td>
-                      <p>02-Aug-2023</p>
-                    </td>
-                    <td>
-                      <p>Wednesday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Mid Term Examinations Week</p>
-                    </td>
-                    <td>
-                      <p>2023-25 &amp; 2022-24</p>
-                    </td>
-                    <td>
-                      <p>9 Aug 2023 to 11 August 2023</p>
+                      <p>18 Jun 2025 to 27 Jun 2025</p>
                     </td>
                     <td>
                       <p>Wednesday to Friday</p>
@@ -3949,16 +3563,86 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Work Shop -1</p>
+                      <p>Student Registration</p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2024-26</p>
                     </td>
                     <td>
-                      <p>12 Aug 2023 to 13 August 2023</p>
+                      <p>01-Jul-2025</p>
                     </td>
                     <td>
-                      <p>Saturday to Sunday</p>
+                      <p>Tuesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Commencement of classes</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>02-Jul-2025</p>
+                    </td>
+                    <td>
+                      <p>Wednesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Last day for substitution of courses</p>
+                    </td>
+                    <td>
+                      <p>2024-26</p>
+                    </td>
+                    <td>
+                      <p>09-Jul-2025</p>
+                    </td>
+                    <td>
+                      <p>Wednesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Reexamination Week</p>
+                    </td>
+                    <td>
+                      <p>2024-26</p>
+                    </td>
+                    <td>
+                      <p>08 Jul 2025 to 11-Jul-2025</p>
+                    </td>
+                    <td>
+                      <p>Tuesday to Friday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Mid Term Feedback</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>05-Aug-2025</p>
+                    </td>
+                    <td>
+                      <p>Tuesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Mid Term Examinations Week</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>11 Aug 2025 to 13 Aug 2025</p>
+                    </td>
+                    <td>
+                      <p>Monday to Wednesday</p>
                     </td>
                   </tr>
                   <tr>
@@ -3969,35 +3653,7 @@ const MandatoryDisclosure = () => {
                       <p>Holiday</p>
                     </td>
                     <td>
-                      <p>15-Aug-2023</p>
-                    </td>
-                    <td>
-                      <p>Tuesday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>End Term Feedback</p>
-                    </td>
-                    <td>
-                      <p>2023-25 &amp; 2022-24</p>
-                    </td>
-                    <td>
-                      <p>12-Sep-2023</p>
-                    </td>
-                    <td>
-                      <p>Tuesday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Last day for class work </p>
-                    </td>
-                    <td>
-                      <p>2023-25 &amp; 2022-24</p>
-                    </td>
-                    <td>
-                      <p>15-Sep-2023</p>
+                      <p>15-Aug-2025</p>
                     </td>
                     <td>
                       <p>Friday</p>
@@ -4005,16 +3661,72 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Vinayaka Chaviti</p>
+                      <p>Work Shop -1</p>
+                    </td>
+                    <td>
+                      <p>2025-27</p>
+                    </td>
+                    <td>
+                      <p>16 Aug 2025 to 17 Aug 2025</p>
+                    </td>
+                    <td>
+                      <p>Saturday to Sunday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Batch Address by Director</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>18 Aug 2025 to 22 Aug 2025</p>
+                    </td>
+                    <td>
+                      <p>Monday to Friday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Ganesh Chaturdhi</p>
                     </td>
                     <td>
                       <p>Holiday</p>
                     </td>
                     <td>
-                      <p>18-Sep-2023</p>
+                      <p>27-Aug-2025</p>
                     </td>
                     <td>
-                      <p>Monday</p>
+                      <p>Wednesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>End Term Feedback</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>09-Sep-2025</p>
+                    </td>
+                    <td>
+                      <p>Tuesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Last day for class work</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>18-Sep-2025</p>
+                    </td>
+                    <td>
+                      <p>Thursday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4022,13 +3734,13 @@ const MandatoryDisclosure = () => {
                       <p>Comprehensive Exams Week</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>19 Sep 2023 to 23 Sep 2023</p>
+                      <p>22 Sep 2025 to 27 Sep 2025</p>
                     </td>
                     <td>
-                      <p>Tuesday to Saturday</p>
+                      <p>Monday to Saturday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4036,13 +3748,55 @@ const MandatoryDisclosure = () => {
                       <p>Term Break</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>25 Sep 2023 to 2 Oct 2023</p>
+                      <p>29 Sep 2025 to 03 Oct 2025</p>
                     </td>
                     <td>
-                      <p>Monday to Monday</p>
+                      <p>Monday to Friday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Faculty Strategic Retreat</p>
+                    </td>
+                    <td>
+                      <p>Strategic Retreat</p>
+                    </td>
+                    <td>
+                      <p>29 Sep 2025 to 01 Oct 2025</p>
+                    </td>
+                    <td>
+                      <p>Monday to Wednesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Gandhi Jayanti</p>
+                    </td>
+                    <td>
+                      <p>Holiday</p>
+                    </td>
+                    <td>
+                      <p>02-Oct-2025</p>
+                    </td>
+                    <td>
+                      <p>Thursday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Vijayadasami</p>
+                    </td>
+                    <td>
+                      <p>Holiday</p>
+                    </td>
+                    <td>
+                      <p>03-Oct-2025</p>
+                    </td>
+                    <td>
+                      <p>Friday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4074,24 +3828,10 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>03-Oct-2023</p>
-                    </td>
-                    <td>
-                      <p>Tuesday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Last day for substitution of Courses</p>
-                    </td>
-                    <td>
-                      <p>2022-24</p>
-                    </td>
-                    <td>
-                      <p>09-Oct-2023</p>
+                      <p>06-Oct-2025</p>
                     </td>
                     <td>
                       <p>Monday</p>
@@ -4099,16 +3839,72 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Vijayadasami</p>
+                      <p>Last day for substitution of Courses</p>
+                    </td>
+                    <td>
+                      <p>2024-26</p>
+                    </td>
+                    <td>
+                      <p>13-Oct-2025</p>
+                    </td>
+                    <td>
+                      <p>Monday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Reexamination Week</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>14 Oct 2025 to 17 Oct 2025</p>
+                    </td>
+                    <td>
+                      <p>Tuesday to Friday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Deepavali</p>
                     </td>
                     <td>
                       <p>Holiday</p>
                     </td>
                     <td>
-                      <p>23 Oct 2023 to 24 Oct 2023</p>
+                      <p>20-Oct-2025</p>
                     </td>
                     <td>
-                      <p>Monday to Tuesday</p>
+                      <p>Monday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Result Declaration (Term-I &amp; IV)</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>24-Oct-2025</p>
+                    </td>
+                    <td>
+                      <p>Friday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Periodos</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>25 Oct 2025 to 26 Oct 2025</p>
+                    </td>
+                    <td>
+                      <p>Saturday to Sunday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4116,10 +3912,24 @@ const MandatoryDisclosure = () => {
                       <p>Mid Term Feedback</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>01-Nov-2023</p>
+                      <p>04-Nov-2025</p>
+                    </td>
+                    <td>
+                      <p>Tuesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Guru Nanak Jayanti</p>
+                    </td>
+                    <td>
+                      <p>Holiday</p>
+                    </td>
+                    <td>
+                      <p>05-Nov-2025</p>
                     </td>
                     <td>
                       <p>Wednesday</p>
@@ -4130,13 +3940,13 @@ const MandatoryDisclosure = () => {
                       <p>Mid Term Examinations Week</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>8 Nov 2023 to 10 Nov 2023</p>
+                      <p>10 Nov 2025 to 12 Nov 2025</p>
                     </td>
                     <td>
-                      <p>Monday to Saturday</p>
+                      <p>Monday to Wednesday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4144,24 +3954,10 @@ const MandatoryDisclosure = () => {
                       <p>Work Shop -2</p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>18 Nov 2023 to 19 Nov 2023</p>
-                    </td>
-                    <td>
-                      <p>Saturday to Sunday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Impelz </p>
-                    </td>
-                    <td>
-                      <p>2023-25 &amp; 2022-24</p>
-                    </td>
-                    <td>
-                      <p>25 Nov 2023 to 26 Nov 2023</p>
+                      <p>15 Nov 2025 to 16 Nov 2025</p>
                     </td>
                     <td>
                       <p>Saturday to Sunday</p>
@@ -4169,30 +3965,30 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Gurunanak Birthday</p>
+                      <p>Batch Address by Director</p>
                     </td>
                     <td>
-                      <p>Holiday</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>27-Nov-2023</p>
+                      <p>17 Nov 2025 to 21 Nov 2025</p>
                     </td>
                     <td>
-                      <p>Monday</p>
+                      <p>Monday to Friday</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>TEDX</p>
+                      <p>Impelz</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>02-Dec-2023</p>
+                      <p>22 Nov 2025 to 23 Nov 2025</p>
                     </td>
                     <td>
-                      <p>Saturday</p>
+                      <p>Saturday to Sunday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4200,10 +3996,10 @@ const MandatoryDisclosure = () => {
                       <p>End Term Feedback</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>12-Dec-2023</p>
+                      <p>09-Dec-2025</p>
                     </td>
                     <td>
                       <p>Tuesday</p>
@@ -4211,13 +4007,13 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Last day for class work </p>
+                      <p>Last day for class work</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>15-Dec-2023</p>
+                      <p>19-Dec-2025</p>
                     </td>
                     <td>
                       <p>Friday</p>
@@ -4228,13 +4024,27 @@ const MandatoryDisclosure = () => {
                       <p>Comprehensive Exams Week</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>18 Dec 2023 to 22 Dec 2023</p>
+                      <p>22 Dec 2025 to 27 Dec 2025</p>
                     </td>
                     <td>
-                      <p>Monday to Friday</p>
+                      <p>Monday to Saturday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Christmas</p>
+                    </td>
+                    <td>
+                      <p>Holiday</p>
+                    </td>
+                    <td>
+                      <p>25-Dec-2025</p>
+                    </td>
+                    <td>
+                      <p>Thursday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4242,13 +4052,13 @@ const MandatoryDisclosure = () => {
                       <p>Term Break</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>25 Dec 2023 to 1 Jan 2024</p>
+                      <p>29 Dec 2025 to 02 Jan 2026</p>
                     </td>
                     <td>
-                      <p>Monday to Monday</p>
+                      <p>Monday to Friday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4280,24 +4090,10 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>02-Jan-2024</p>
-                    </td>
-                    <td>
-                      <p>Tuesday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Last day for substitution of Courses</p>
-                    </td>
-                    <td>
-                      <p>2022-24</p>
-                    </td>
-                    <td>
-                      <p>08-Jan-2024</p>
+                      <p>05-Jan-2026</p>
                     </td>
                     <td>
                       <p>Monday</p>
@@ -4305,30 +4101,100 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Periodos</p>
+                      <p>Last day for substitution of Courses</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2024-26</p>
                     </td>
                     <td>
-                      <p>19 Jan 2024 to 20 Jan 2024</p>
+                      <p>12-Jan-2026</p>
                     </td>
                     <td>
-                      <p>Friday to Saturday</p>
+                      <p>Monday</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>Republic Day </p>
+                      <p>Sankranti</p>
                     </td>
                     <td>
                       <p>Holiday</p>
                     </td>
                     <td>
-                      <p>26-Jan-2024</p>
+                      <p>14-Jan-2026</p>
                     </td>
                     <td>
-                      <p>Friday</p>
+                      <p>Wednesday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Reexamination Week</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>15 Jan 2026 to 17 Jan 2026</p>
+                    </td>
+                    <td>
+                      <p>Thursday to Saturday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Result Declaration (Term-II &amp; V)</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>22-Jan-2026</p>
+                    </td>
+                    <td>
+                      <p>Thursday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>TED'x</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>24-Jan-2026</p>
+                    </td>
+                    <td>
+                      <p>Saturday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Republic Day</p>
+                    </td>
+                    <td>
+                      <p>Holiday</p>
+                    </td>
+                    <td>
+                      <p>26-Jan-2026</p>
+                    </td>
+                    <td>
+                      <p>Monday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>ACE Connect</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>31 Jan 2026 to 1 Feb 2026</p>
+                    </td>
+                    <td>
+                      <p>Saturday to Sunday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4336,10 +4202,10 @@ const MandatoryDisclosure = () => {
                       <p>Mid Term Feedback</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>30-Jan-2024</p>
+                      <p>03-Feb-2026</p>
                     </td>
                     <td>
                       <p>Tuesday</p>
@@ -4350,13 +4216,27 @@ const MandatoryDisclosure = () => {
                       <p>Mid Term Examinations Week</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>5 Feb 2024 to 7 Feb 2024</p>
+                      <p>4 Feb 2026 to 6 Feb 2026</p>
                     </td>
                     <td>
-                      <p>Monday to Wednesday</p>
+                      <p>Wednesday to Friday</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Batch Address by Director</p>
+                    </td>
+                    <td>
+                      <p>2025-27 &amp; 2024-26</p>
+                    </td>
+                    <td>
+                      <p>09 Feb 2026 to 13 Feb 2026</p>
+                    </td>
+                    <td>
+                      <p>Monday to Friday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4364,10 +4244,10 @@ const MandatoryDisclosure = () => {
                       <p>Work Shop -3</p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>10 Feb 2024 to 11 Feb 2024</p>
+                      <p>14 Feb 2026 to 15 Feb 2026</p>
                     </td>
                     <td>
                       <p>Saturday to Sunday</p>
@@ -4375,16 +4255,16 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>ACE Connect</p>
+                      <p>Elective Brieffing</p>
                     </td>
                     <td>
-                      <p>2023-25 &amp; 2022-24</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>17 Feb 2024 to 18 Feb 2024</p>
+                      <p>04 Mar 2026 to 06 Mar 2026</p>
                     </td>
                     <td>
-                      <p>Saturday to Sunday</p>
+                      <p>Wednesday to Friday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4392,10 +4272,10 @@ const MandatoryDisclosure = () => {
                       <p>End Term Feedback</p>
                     </td>
                     <td>
-                      <p>2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>27-Feb-2024</p>
+                      <p>10-Mar-2026</p>
                     </td>
                     <td>
                       <p>Tuesday</p>
@@ -4403,13 +4283,13 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>Last day for class work </p>
+                      <p>Last day for class work</p>
                     </td>
                     <td>
-                      <p>2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>01-Mar-2024</p>
+                      <p>13-Mar-2026</p>
                     </td>
                     <td>
                       <p>Friday</p>
@@ -4420,55 +4300,13 @@ const MandatoryDisclosure = () => {
                       <p>Comprehensive Exams Week</p>
                     </td>
                     <td>
-                      <p>2022-24</p>
+                      <p>2025-27 &amp; 2024-26</p>
                     </td>
                     <td>
-                      <p>4 Mar 2024 to 8 Mar 2024</p>
+                      <p>16 Mar 2026 to 21 Mar 2026</p>
                     </td>
                     <td>
-                      <p>Monday to Friday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>End Term Feedback</p>
-                    </td>
-                    <td>
-                      <p>2023-25</p>
-                    </td>
-                    <td>
-                      <p>12-Mar-2024</p>
-                    </td>
-                    <td>
-                      <p>Tuesday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Last day for class work </p>
-                    </td>
-                    <td>
-                      <p>2023-25</p>
-                    </td>
-                    <td>
-                      <p>15-Mar-2024</p>
-                    </td>
-                    <td>
-                      <p>Friday</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Comprehensive Exams Week</p>
-                    </td>
-                    <td>
-                      <p>2023-25</p>
-                    </td>
-                    <td>
-                      <p>18 Mar 2024 to 22 Mar 2024</p>
-                    </td>
-                    <td>
-                      <p>Monday to Friday</p>
+                      <p>Monday to Saturday</p>
                     </td>
                   </tr>
                   <tr>
@@ -4476,19 +4314,19 @@ const MandatoryDisclosure = () => {
                       <p>Term Break</p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>25-Mar-2024 to 31-Mar-2024</p>
+                      <p>23-Mar-2026 to 27-Mar-2026</p>
                     </td>
                     <td>
-                      <p>Monday to Sunday</p>
+                      <p>Monday to Friday</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p>
-                        <b>Summer Term </b>
+                        <b>Summer Term</b>
                       </p>
                     </td>
                     <td>
@@ -4514,10 +4352,10 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>01-Apr-2024</p>
+                      <p>30-Mar-2026</p>
                     </td>
                     <td>
                       <p>Monday</p>
@@ -4530,10 +4368,10 @@ const MandatoryDisclosure = () => {
                       </p>
                     </td>
                     <td>
-                      <p>2023-25</p>
+                      <p>2025-27</p>
                     </td>
                     <td>
-                      <p>21-Jun-2024</p>
+                      <p>19-Jun-2026</p>
                     </td>
                     <td>
                       <p>Friday</p>
@@ -4544,7 +4382,7 @@ const MandatoryDisclosure = () => {
                       <p>
                         <b>
                           Note : * As per the prevailing rules of MHRD and
-                          AICTE, Academic Calendar timelines may change.{" "}
+                          AICTE, Academic Calendar timelines may change .
                         </b>
                       </p>
                     </td>
@@ -4561,7 +4399,7 @@ const MandatoryDisclosure = () => {
                       <br />
                     </td>
                     <td>
-                      <p>Teaching Load of Each Faculty</p>
+                      <p>Teaching Load of each Faculty</p>
                     </td>
                   </tr>
                 </tbody>
@@ -4571,8 +4409,8 @@ const MandatoryDisclosure = () => {
               <table className="table table-striped">
                 <tbody>
                   <tr>
-                    <td colSpan={5}>
-                      <p>Faculty Work Load : AY 2022-23</p>
+                    <td colSpan={4}>
+                      <p>Faculty Work Load : AY 2023-24</p>
                     </td>
                   </tr>
                   <tr>
@@ -4600,7 +4438,7 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) SURAJIT GHOSH DASTIDAR</p>
                     </td>
                     <td>
-                      <p>155</p>
+                      <p>140</p>
                     </td>
                   </tr>
                   <tr>
@@ -4614,12 +4452,26 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) INDRANIL GHOSH</p>
                     </td>
                     <td>
-                      <p>155</p>
+                      <p>135</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <p>3</p>
+                    </td>
+                    <td>
+                      <p>ANALYTICS &amp; INFORMATION TECHNOLOGY</p>
+                    </td>
+                    <td>
+                      <p>Prof. AARIZ FAIZAN JAVED</p>
+                    </td>
+                    <td>
+                      <p>150</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>4</p>
                     </td>
                     <td>
                       <p>ANALYTICS &amp; INFORMATION TECHNOLOGY</p>
@@ -4633,30 +4485,16 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>4</p>
-                    </td>
-                    <td>
-                      <p>ANALYTICS &amp; INFORMATION TECHNOLOGY</p>
-                    </td>
-                    <td>
-                      <p>Prof. (Dr.) AARIZ FAIZAN JAVED</p>
-                    </td>
-                    <td>
-                      <p>50</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
                       <p>5</p>
                     </td>
                     <td>
                       <p>FINANCE &amp; ACCOUNTING</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) VENKATA CHAKRAPANI C </p>
+                      <p>Prof. (Dr.) VENKATA CHAKRAPANI C</p>
                     </td>
                     <td>
-                      <p>140</p>
+                      <p>165</p>
                     </td>
                   </tr>
                   <tr>
@@ -4670,7 +4508,7 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) NIKHIL RASTOGI</p>
                     </td>
                     <td>
-                      <p>145</p>
+                      <p>170</p>
                     </td>
                   </tr>
                   <tr>
@@ -4684,7 +4522,7 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) SARATH BABU A</p>
                     </td>
                     <td>
-                      <p>155</p>
+                      <p>165</p>
                     </td>
                   </tr>
                   <tr>
@@ -4695,10 +4533,10 @@ const MandatoryDisclosure = () => {
                       <p>FINANCE &amp; ACCOUNTING</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) AMIT VIKRAM</p>
+                      <p>Prof. (Dr.)K. SRIHARSHA REDDY</p>
                     </td>
                     <td>
-                      <p>130</p>
+                      <p>30</p>
                     </td>
                   </tr>
                   <tr>
@@ -4709,10 +4547,10 @@ const MandatoryDisclosure = () => {
                       <p>FINANCE &amp; ACCOUNTING</p>
                     </td>
                     <td>
-                      <p>Mr. RAHUL PRAMANI</p>
+                      <p>Prof. (Dr.) SOMYA ARORA</p>
                     </td>
                     <td>
-                      <p>140</p>
+                      <p>60</p>
                     </td>
                   </tr>
                   <tr>
@@ -4720,13 +4558,13 @@ const MandatoryDisclosure = () => {
                       <p>10</p>
                     </td>
                     <td>
-                      <p>GENERAL MANAGEMENT</p>
+                      <p>FINANCE &amp; ACCOUNTING</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) DEBADUTTA K PANDA</p>
+                      <p>Prof. PURNIMA KHEMANI</p>
                     </td>
                     <td>
-                      <p>50</p>
+                      <p>155</p>
                     </td>
                   </tr>
                   <tr>
@@ -4740,7 +4578,7 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) STEVEN RAJ PADAKANDLA</p>
                     </td>
                     <td>
-                      <p>80</p>
+                      <p>145</p>
                     </td>
                   </tr>
                   <tr>
@@ -4754,7 +4592,7 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) TULIKA SHARMA</p>
                     </td>
                     <td>
-                      <p>140</p>
+                      <p>155</p>
                     </td>
                   </tr>
                   <tr>
@@ -4765,10 +4603,10 @@ const MandatoryDisclosure = () => {
                       <p>GENERAL MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) AVISHEK BHANDARI</p>
+                      <p>Prof. (Dr.) SAIKAT BANERJEE</p>
                     </td>
                     <td>
-                      <p>50</p>
+                      <p>55</p>
                     </td>
                   </tr>
                   <tr>
@@ -4779,10 +4617,10 @@ const MandatoryDisclosure = () => {
                       <p>GENERAL MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) SAIKAT BANERJEE</p>
+                      <p>Prof. (Dr.) AINDRILA CHATTERJEE</p>
                     </td>
                     <td>
-                      <p>145</p>
+                      <p>140</p>
                     </td>
                   </tr>
                   <tr>
@@ -4793,10 +4631,10 @@ const MandatoryDisclosure = () => {
                       <p>GENERAL MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) S ANANDA RAO</p>
+                      <p>Prof. (Dr.) ANANDA RAO S</p>
                     </td>
                     <td>
-                      <p>80</p>
+                      <p>75</p>
                     </td>
                   </tr>
                   <tr>
@@ -4804,13 +4642,13 @@ const MandatoryDisclosure = () => {
                       <p>16</p>
                     </td>
                     <td>
-                      <p>GENERAL MANAGEMENT</p>
+                      <p>HUMAN RESOURCE MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) AINDRILA CHATTERJEE</p>
+                      <p>Prof. (Dr.) ROMINA MATHEW</p>
                     </td>
                     <td>
-                      <p>30</p>
+                      <p>165</p>
                     </td>
                   </tr>
                   <tr>
@@ -4821,10 +4659,10 @@ const MandatoryDisclosure = () => {
                       <p>HUMAN RESOURCE MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) ROMINA MATHEW</p>
+                      <p>Prof. (Dr.) TUMPA DEY</p>
                     </td>
                     <td>
-                      <p>155</p>
+                      <p>210</p>
                     </td>
                   </tr>
                   <tr>
@@ -4835,10 +4673,10 @@ const MandatoryDisclosure = () => {
                       <p>HUMAN RESOURCE MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) SHABNAM PRIYADARSHINI</p>
+                      <p>Prof. (Dr.) NEETU MOHAMMED</p>
                     </td>
                     <td>
-                      <p>150</p>
+                      <p>85</p>
                     </td>
                   </tr>
                   <tr>
@@ -4849,7 +4687,7 @@ const MandatoryDisclosure = () => {
                       <p>HUMAN RESOURCE MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) TUMPA DEY</p>
+                      <p>Prof. (Dr.) B. PAVAN KUMAR</p>
                     </td>
                     <td>
                       <p>165</p>
@@ -4858,48 +4696,6 @@ const MandatoryDisclosure = () => {
                   <tr>
                     <td>
                       <p>20</p>
-                    </td>
-                    <td>
-                      <p>HUMAN RESOURCE MANAGEMENT</p>
-                    </td>
-                    <td>
-                      <p>Prof. (Dr.) NEETU MOHAMMED</p>
-                    </td>
-                    <td>
-                      <p>175</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>21</p>
-                    </td>
-                    <td>
-                      <p>HUMAN RESOURCE MANAGEMENT</p>
-                    </td>
-                    <td>
-                      <p>Prof. (Dr.) B. PAVAN KUMAR</p>
-                    </td>
-                    <td>
-                      <p>190</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>22</p>
-                    </td>
-                    <td>
-                      <p>HUMAN RESOURCE MANAGEMENT</p>
-                    </td>
-                    <td>
-                      <p>Dr. MAMATA VEGUNTA</p>
-                    </td>
-                    <td>
-                      <p>-</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>23</p>
                     </td>
                     <td>
                       <p>MARKETING</p>
@@ -4913,21 +4709,21 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>24</p>
+                      <p>21</p>
                     </td>
                     <td>
                       <p>MARKETING</p>
                     </td>
                     <td>
-                      <p>Prof. DEVI PRASAD GHOSH </p>
+                      <p>Prof. DEVI PRASAD GHOSH</p>
                     </td>
                     <td>
-                      <p>170</p>
+                      <p>150</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>25</p>
+                      <p>22</p>
                     </td>
                     <td>
                       <p>MARKETING</p>
@@ -4936,12 +4732,12 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) MANOJ DAS</p>
                     </td>
                     <td>
-                      <p>175</p>
+                      <p>80</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>26</p>
+                      <p>23</p>
                     </td>
                     <td>
                       <p>MARKETING</p>
@@ -4950,40 +4746,40 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) SHAON SEN</p>
                     </td>
                     <td>
-                      <p>190</p>
+                      <p>140</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>27</p>
+                      <p>24</p>
                     </td>
                     <td>
                       <p>MARKETING</p>
                     </td>
                     <td>
-                      <p>Mr. SATISH KUMAR KANNAN</p>
+                      <p>Prof. (Dr.) PRANAY SINDHU</p>
                     </td>
                     <td>
-                      <p>75</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>28</p>
-                    </td>
-                    <td>
-                      <p>MARKETING</p>
-                    </td>
-                    <td>
-                      <p>Mr. A VINOD KUMAR</p>
-                    </td>
-                    <td>
-                      <p>70</p>
+                      <p>150</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>29</p>
+                      <p>25</p>
+                    </td>
+                    <td>
+                      <p>OPERATIONS MANAGEMENT</p>
+                    </td>
+                    <td>
+                      <p>Prof. (Dr.) PUSHPESH PANT</p>
+                    </td>
+                    <td>
+                      <p>135</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>26</p>
                     </td>
                     <td>
                       <p>OPERATIONS MANAGEMENT</p>
@@ -4992,26 +4788,26 @@ const MandatoryDisclosure = () => {
                       <p>Prof. (Dr.) SOURABH BHATTACHARYA</p>
                     </td>
                     <td>
-                      <p>110</p>
+                      <p>145</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>30</p>
+                      <p>27</p>
                     </td>
                     <td>
                       <p>OPERATIONS MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. KALYANA C CHEJARLA</p>
+                      <p>Prof. (Dr.)KALYANA C CHEJARLA</p>
                     </td>
                     <td>
-                      <p>185</p>
+                      <p>140</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>31</p>
+                      <p>28</p>
                     </td>
                     <td>
                       <p>OPERATIONS MANAGEMENT</p>
@@ -5025,7 +4821,7 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>32</p>
+                      <p>29</p>
                     </td>
                     <td>
                       <p>OPERATIONS MANAGEMENT</p>
@@ -5039,30 +4835,30 @@ const MandatoryDisclosure = () => {
                   </tr>
                   <tr>
                     <td>
-                      <p>33</p>
+                      <p>30</p>
                     </td>
                     <td>
                       <p>OPERATIONS MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. PUSHPESH PANT</p>
+                      <p>Prof. (Dr.) SRICHARAN</p>
                     </td>
                     <td>
-                      <p>105</p>
+                      <p>60</p>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>34</p>
+                      <p>31</p>
                     </td>
                     <td>
                       <p>OPERATIONS MANAGEMENT</p>
                     </td>
                     <td>
-                      <p>Prof. (Dr.) BHAWANA RATHORE</p>
+                      <p>Prof. PRAVEEN PURAM</p>
                     </td>
                     <td>
-                      <p>30</p>
+                      <p>75</p>
                     </td>
                   </tr>
                 </tbody>
@@ -5121,26 +4917,26 @@ const MandatoryDisclosure = () => {
                             </tr>
                             <tr>
                               <td>
+                                <p>2025-27</p>
+                              </td>
+                              <td>
+                                <p>301</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>2024-26</p>
+                              </td>
+                              <td>
+                                <p>399</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
                                 <p>2023-25</p>
                               </td>
                               <td>
-                                <p>312</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>2022-24</p>
-                              </td>
-                              <td>
-                                <p>233</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>2021-23</p>
-                              </td>
-                              <td>
-                                <p>188</p>
+                                <p>305</p>
                               </td>
                             </tr>
                           </tbody>
@@ -5201,13 +4997,13 @@ const MandatoryDisclosure = () => {
                       <p>S. No</p>
                     </td>
                     <td>
-                      <p>Faculty </p>
+                      <p>Faculty</p>
                     </td>
                     <td>
                       <p>Tittle</p>
                     </td>
                     <td>
-                      <p>Research Grant/ Project Funded by </p>
+                      <p>Research Grant/ Project Funded by</p>
                     </td>
                     <td>
                       <p>Starting Date</p>
@@ -5236,10 +5032,10 @@ const MandatoryDisclosure = () => {
                       <p>Center for General Education Society</p>
                     </td>
                     <td>
-                      <p>December 2020</p>
+                      <p>Dec 20</p>
                     </td>
                     <td>
-                      <p>October 2021</p>
+                      <p>Oct 21</p>
                     </td>
                     <td>
                       <p>21,20,000</p>
@@ -5258,7 +5054,7 @@ const MandatoryDisclosure = () => {
                     <td>
                       <p>
                         Design and Implementation of Activity Based Costing at
-                        ACG Capsules Pvt Ltd{" "}
+                        ACG Capsules Pvt Ltd
                       </p>
                     </td>
                     <td>
@@ -5300,7 +5096,7 @@ const MandatoryDisclosure = () => {
                       <p>Completed on June 2018</p>
                     </td>
                     <td>
-                      <p> 5,17500</p>
+                      <p>5,17500</p>
                     </td>
                   </tr>
                   <tr>
@@ -5329,29 +5125,13 @@ const MandatoryDisclosure = () => {
                       <p>Completed on May 2017</p>
                     </td>
                     <td>
-                      <p> 4,99,100</p>
+                      <p>4,99,100</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="table-responsive align-center">
-              <table className="table table-striped">
-                <tbody>
-                  <tr>
-                    <td>
-                      <p>18</p>
-                    </td>
-                    <td>
-                      <p>
-                        Publications (if any) out of research in last three
-                        years out of masters projects{" "}
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+
             <div
               className="container text-overflow"
               style={{ backgroundColor: "#ffff" }}
@@ -5361,6 +5141,855 @@ const MandatoryDisclosure = () => {
                   IMT Hyderabad -Research Publications for the last three years
                 </strong>
               </p>
+
+              <h5>2024-2025</h5>
+              <ol>
+                <li>
+                  <p>
+                    Deepak Srivastav, Praveen Puram, Rudra Sensarma, Anand
+                    Gurumurthy, Does salary disparity affect team performance in
+                    cricket? Evidence from the Indian Premier League, IIMB
+                    Management Review, Volume 37, Issue 2, 2025, 100568, ISSN
+                    0970-3896,{" "}
+                    <a href="https://doi.org/10.1016/j.iimb.2025.100568">
+                      https://doi.org/10.1016/j.iimb.2025.100568
+                    </a>
+                    .
+                  </p>
+                </li>
+              </ol>
+              <ol start="2">
+                <li>
+                  <p>
+                    Pant, P., Yadav, R., Niyas KP, M., Dadsena, K. K., Pratap,
+                    S., &amp; Sachan, A. (2025). Fake news detection for
+                    sustainable supply chain management using deceptive tones:
+                    an application of ML, NLP and Explainable AI. Enterprise
+                    Information Systems, 19(9).{" "}
+                    <a href="https://doi.org/10.1080/17517575.2025.2510350">
+                      https://doi.org/10.1080/17517575.2025.2510350
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="3">
+                <li>
+                  <p>
+                    Pant, P., &amp; Sharma, T. (2025). CSR–Performance
+                    Relationship Paradox: The Moderating Effect of Organization
+                    Structure. Global Business Review, 0(0).{" "}
+                    <a href="https://doi.org/10.1177/09721509251345582">
+                      https://doi.org/10.1177/09721509251345582
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="4">
+                <li>
+                  <p>
+                    “Impact of Knowledge Transfer and Sharing on Sustainable
+                    Family Business Performance: The Moderating Role of Digital
+                    Transformation”, Volume 91Issue 5The Electronic Journal of
+                    Information Systems in Developing Countries, September 11,
+                    2025,{" "}
+                    <a href="https://doi.org/10.1002/isd2.70016">
+                      https://doi.org/10.1002/isd2.70016
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="5">
+                <li>
+                  <p>
+                    Dixit, K.; Kumar, P.; Aashish, K.; Zohair, M. Leveraging
+                    Social and Intellectual Capital for Social Entrepreneurship:
+                    A Model for Sustainable Business Practices in an Uncertain
+                    Environment. J. Risk Financial Manag. 2025, 18, 46.{" "}
+                    <a href="https://doi.org/10.3390/jrfm18020046">
+                      https://doi.org/10.3390/jrfm18020046
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="6">
+                <li>
+                  <p>
+                    Basu, M., &amp; Kurian, R. E. (2025). Board composition and
+                    firm internationalization: Are emerging market multinational
+                    enterprises unique? Corporate Ownership &amp; Control,
+                    22(2), 84–93.{" "}
+                    <a href="https://doi.org/10.22495/cocv22i2art8">
+                      https://doi.org/10.22495/cocv22i2art8
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="7">
+                <li>
+                  <p>
+                    Ben Krishna, Praveen Puram, “ The impact of trust-based
+                    challenges on user satisfaction in food sharing platforms: A
+                    text mining approach”, Technological Forecasting and Social
+                    Change, Volume 216, 2025, 124159, ISSN 0040-1625,{" "}
+                    <a href="https://doi.org/10.1016/j.techfore.2025.124159">
+                      https://doi.org/10.1016/j.techfore.2025.124159
+                    </a>
+                    .
+                  </p>
+                </li>
+              </ol>
+              <ol start="8">
+                <li>
+                  <p>
+                    Sindhu P, Bharti K (2025;), "What motivates customers to
+                    purchase from social commerce pages? A means-end chain
+                    approach". Information Technology &amp; People, Vol.
+                    ahead-of-print No. ahead-of-print.{" "}
+                    <a href="https://doi.org/10.1108/ITP-10-2022-0735">
+                      https://doi.org/10.1108/ITP-10-2022-0735
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="9">
+                <li>
+                  <p>
+                    Pant, P., Yadav, R. and Vats, A. (2025), "Interplay between
+                    CSR, female director, promoter ownership and firm
+                    performance: a resource orchestration theory perspective",
+                    Managerial Finance, Published: 27 Feb 2025{" "}
+                    <a href="https://doi.org/10.1108/MF-11-2024-0846">
+                      https://doi.org/10.1108/MF-11-2024-0846
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="10">
+                <li>
+                  <p>
+                    Malhotra, Gunjan &amp; Ramalingam, Mahesh. (2025). Unlocking
+                    omnichannel capabilities to understand consumer retention:
+                    unravelling cross-channel integration and consumer
+                    empowerment. Benchmarking: An International Journal,
+                    Published: 28 Feb 2025{" "}
+                    <a href="https://www.emerald.com/insight/content/doi/10.1108/bij-04-2024-0264/full/html">
+                      https://www.emerald.com/insight/content/doi/10.1108/bij-04-2024-0264/full/html
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="11">
+                <li>
+                  <p>
+                    Mandal, S., Babu, S., &amp; Raman, R. (2025). Gen Zs and
+                    millennials’ orientation towards AI tools: an index
+                    approach. Technology Analysis &amp; Strategic Management,
+                    1–21, Published: 7 Feb 2025.{" "}
+                    <a href="https://doi.org/10.1080/09537325.2025.2459189">
+                      https://doi.org/10.1080/09537325.2025.2459189
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="12">
+                <li>
+                  <p>
+                    Ghosh, I., Megaravalli, A.V., Abedin, M.Z. et al. Prediction
+                    and decoding of metaverse coin dynamics: a granular quest
+                    using MODWT-Facebook’s prophet-TBATS and XAI methodology.
+                    Ann Oper Res (2025), Published: 28 Jan 2025{" "}
+                    <a href="https://doi.org/10.1007/s10479-025-06491-1">
+                      https://doi.org/10.1007/s10479-025-06491-1
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="13">
+                <li>
+                  <p>
+                    Tarei, Pradeep &amp; Kumar, Rajan &amp; Gumte, Kapil.
+                    (2024). Is driving an electric two-wheeler (E2W) safe?
+                    Analysing safety risk factors of E2W considering the quality
+                    and reliability criteria. International Journal of Quality
+                    &amp; Reliability Management, Published: 13 Nov 2024{" "}
+                    <a href="https://www.emerald.com/insight/content/doi/10.1108/ijqrm-06-2024-0197/full/html">
+                      https://www.emerald.com/insight/content/doi/10.1108/ijqrm-06-2024-0197/full/html
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="14">
+                <li>
+                  <p>
+                    Das, M., Ramalingam, M., &amp; Goyal, K. (2024). Fear-Driven
+                    Surge: Food Delivery Apps in a Changing World. Journal of
+                    Global Marketing, 37(5), 417–439, Published: 29 Oct 2024.{" "}
+                    <a href="https://doi.org/10.1080/08911762.2024.2417658">
+                      https://doi.org/10.1080/08911762.2024.2417658
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="15">
+                <li>
+                  <p>
+                    Das, P., Chintaluri, M.G., Mandal, S., Babu, S., Kotni,
+                    V.V.P. and Raman, R. (2024), "Exploring the enablers of
+                    virtual tourism experiences for Gen Z", Journal of Advances
+                    in Management Research, Published: 25 Oct 2024{" "}
+                    <a href="https://doi.org/10.1108/JAMR-07-2023-0192">
+                      https://doi.org/10.1108/JAMR-07-2023-0192
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="16">
+                <li>
+                  <p>
+                    Bhattacharya, S., Pant, P., &amp; Areti, S. H. (2024).
+                    Blockchain in Closed-Loop Supply Chain: A Systematic Review
+                    and Future Research Agenda. Vision, Published: 19 Oct 2024.{" "}
+                    <a href="https://doi.org/10.1177/09722629241281866">
+                      https://doi.org/10.1177/09722629241281866
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="17">
+                <li>
+                  <p>
+                    Chatterjee, A., Chauradia, A.J. &amp; Pedada, K. Rural women
+                    microentrepreneurs, consumer acquisition, and value
+                    delivery: Evidence from a quasi-experiment in rural India.
+                    J. of the Acad. Mark. Sci. 53, 213–231 (2025), Published: 23
+                    Sep 2024.{" "}
+                    <a href="https://doi.org/10.1007/s11747-024-01053-6">
+                      https://doi.org/10.1007/s11747-024-01053-6
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="18">
+                <li>
+                  <p>
+                    Pramanik, P., Jana, R.K. and Ghosh, I. (2024), "Enablers of
+                    new business density: a comparison between developed and
+                    developing countries using deep learning and explainable
+                    AI", Benchmarking: An International Journal, Published: 27
+                    Aug 2024.{" "}
+                    <a href="https://doi.org/10.1108/BIJ-11-2023-0830">
+                      https://doi.org/10.1108/BIJ-11-2023-0830
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="19">
+                <li>
+                  <p>
+                    Mitrajit Biswas, Tumpa Dey, Bhupendra Kumar Gautam, George
+                    Abraham, Varun Goel(2024). Leveraging AI In Marketing, HR
+                    And Finance: Interdisciplinary Approaches to Optimizing
+                    Organizational Performance, 44(3), 1342-1349, Published: 31
+                    Jul 2024{" "}
+                    <a href="https://bpasjournals.com/library-science/index.php/journal/article/view/551">
+                      https://bpasjournals.com/library-science/index.php/journal/article/view/551
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="20">
+                <li>
+                  <p>
+                    Indranil Ghosh, Arijit De, Maritime Fuel Price Prediction of
+                    European Ports using Least Square Boosting and Facebook
+                    Prophet: Additional Insights from Explainable Artificial
+                    Intelligence, Transportation Research Part E: Logistics and
+                    Transportation Review, Volume 189, 2024, 103686, Published:
+                    23 Jul 2024.{" "}
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1366554524002771">
+                      https://www.sciencedirect.com/science/article/pii/S1366554524002771
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <h5>Case Studies: 2024-2025</h5>
+              <ol>
+                <li>
+                  <p>
+                    Nitin Gupta, EKA Mobility's Dilemma: Generating Favourable
+                    Attitudes Towards Its e-CVs, Case Centre, Published: 9 May
+                    2025,{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=206155">
+                      https://www.thecasecentre.org/products/view?id=206155
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="2">
+                <li>
+                  <p>
+                    Vinay Kumar Kalakbandi, Supr Daily’s last mile nightmare and
+                    the Insanely Good aftermath, Sage Business Cases, Published:
+                    14 Jan 2025.{" "}
+                    <a href="https://sk.sagepub.com/cases/supr-dailys-last-mile-nightmare-and-the-insanelygood-aftermath">
+                      https://sk.sagepub.com/cases/supr-dailys-last-mile-nightmare-and-the-insanelygood-aftermath
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="3">
+                <li>
+                  <p>
+                    Surajit Ghosh Dastidar, Mayora: launching Coffee Joy,
+                    Emerald Emerging Case, Published: 15 Nov 2024.{" "}
+                    <a href="https://www.emerald.com/insight/content/doi/10.1108/eemcs-10-2023-0412/full/html#case-tab">
+                      https://www.emerald.com/insight/content/doi/10.1108/eemcs-10-2023-0412/full/html#case-tab
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="4">
+                <li>
+                  <p>
+                    Kalyana Chejarla, Value Chain Analysis: Evolving Dynamics of
+                    the Telecommunications Industry, Sage Business Cases,
+                    Published: 15 Oct 2024.{" "}
+                    <a href="https://sk.sagepub.com/data-decisions/value-analysis-evolving-dynamics-telecommunications-industry">
+                      https://sk.sagepub.com/data-decisions/value-analysis-evolving-dynamics-telecommunications-industry
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="5">
+                <li>
+                  <p>
+                    Surajit Ghosh Dastidar, NextSkill 360: Teaching Coding
+                    Without Computers, Ivey Publishing, Published: 15 Oct 2024.{" "}
+                    <a href="https://www.iveypublishing.ca/s/product/nextskill-360-teaching-coding-without-computers/01tOF000005r2ATYAY">
+                      https://www.iveypublishing.ca/s/product/nextskill-360-teaching-coding-without-computers/01tOF000005r2ATYAY
+                    </a>
+                  </p>
+                </li>
+              </ol>
+
+              <h5>2023-2024</h5>
+              <ol>
+                <li>
+                  <p>
+                    Puram, P., Roy, S. &amp; Gurumurthy, A. Understanding the
+                    challenges affecting food-sharing apps’ usage: insights
+                    using a text-mining and interpretable machine learning
+                    approach. Ann Oper Res (2024).{" "}
+                    <a href="https://doi.org/10.1007/s10479-024-06130-1">
+                      https://doi.org/10.1007/s10479-024-06130-1
+                    </a>
+                    , Published: 27 Jun 2024
+                  </p>
+                </li>
+              </ol>
+              <ol start="2">
+                <li>
+                  <p>
+                    Tumpa Dey, WHAT IS WORKPLACE INCIVILITY AND WHY DOES IT
+                    HAPPEN?, Asian And Pacific Economic Review, Published: 27
+                    Jun 2024{" "}
+                    <a href="https://asparev.net/index.php/APE/article/view/75">
+                      https://asparev.net/index.php/APE/article/view/75
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="3">
+                <li>
+                  <p>
+                    Paritosh Pramanik, Rabin K. Jana, Indranil Ghosh, AI
+                    readiness enablers in developed and developing economies:
+                    Findings from the XGBoost regression and explainable AI
+                    framework, Technological Forecasting and Social Change,
+                    Volume 205, 2024, 123482, Published 14 Jun 2024{" "}
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0040162524002786">
+                      https://www.sciencedirect.com/science/article/pii/S0040162524002786
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="4">
+                <li>
+                  <p>
+                    Monisha Meher, Tumpa Dey, Tulika Sharma and Pavan Kr.
+                    Balivada, Perception of Organizational Justice: The role of
+                    dehumanization, abusive supervision and Incivility, Academy
+                    of Marketing Studies Journal, Published : 20 Aug 2024.{" "}
+                    <a href="https://www.abacademies.org/articles/perception-of-organizational-justice-the-role-of-dehumanization-abusive-supervision-and-incivility.pdf">
+                      https://www.abacademies.org/articles/perception-of-organizational-justice-the-role-of-dehumanization-abusive-supervision-and-incivility.pdf
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="5">
+                <li>
+                  <p>
+                    Dixit, K., Manna, R., &amp; Singh, A. (2024). The effects of
+                    CEO duality, board size, and informal social networks on
+                    sustainable innovation and firm performance. Corporate
+                    Ownership &amp; Control, 21(2), 165–177. Published: 4 June
+                    2024{" "}
+                    <a href="https://doi.org/10.22495/cocv21i2art13">
+                      https://doi.org/10.22495/cocv21i2art13
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="6">
+                <li>
+                  <p>
+                    Ghosh, I., Chaudhuri, T.D., Sarkar, S., Mukhopadhyay, S. and
+                    Roy, A. (2025), "Macroeconomic shocks, market uncertainty
+                    and speculative bubbles: a decomposition-based predictive
+                    model of Indian stock markets", China Finance Review
+                    International, Vol. 15 No. 1, pp. 166-201, Published: 31 May
+                    2024{" "}
+                    <a href="https://doi.org/10.1108/CFRI-09-2023-0237">
+                      https://doi.org/10.1108/CFRI-09-2023-0237
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="7">
+                <li>
+                  <p>
+                    Shaon Sen, Influence of External and Situational Stimulus
+                    Factors on Impulse Buying : A Stimulus-Organism- Response
+                    Framework, Indian Journal of Marketing, Published: 15 May
+                    2024.{" "}
+                    <a href="https://indianjournalofmarketing.com/index.php/ijom/article/view/173830">
+                      https://indianjournalofmarketing.com/index.php/ijom/article/view/173830
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="8">
+                <li>
+                  <p>
+                    Deshmukh, S., Kumar Balivada, P., Tyagi, V., Singh, I.,
+                    Kumar Garg, K., &amp; Gupta, S. (2024). Customer journey and
+                    experience in the banking sector: a comprehensive analysis
+                    and future scope. Academy of Marketing Studies Journal,
+                    28(S4), 1-9, Published: 4 Apr 2024{" "}
+                    <a href="https://www.abacademies.org/articles/influence-of-human-resource-management-practices-on-employee-job-satisfaction-with-special-reference-to-small-scale-manufacturing-16569.html">
+                      https://www.abacademies.org/articles/influence-of-human-resource-management-practices-on-employee-job-satisfaction-with-special-reference-to-small-scale-manufacturing-16569.html
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="9">
+                <li>
+                  <p>
+                    Nayak, N., Pant, P., Sarmah, S.P. and Tulshan, R. (2024),
+                    "Development of in-country logistics performance index for
+                    emerging economies: a case of Indian states", International
+                    Journal of Productivity and Performance Management, Vol. 73
+                    No. 9, pp. 2926-2950, Published: 28 Mar 2024{" "}
+                    <a href="https://doi.org/10.1108/IJPPM-03-2023-0122">
+                      https://doi.org/10.1108/IJPPM-03-2023-0122
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="10">
+                <li>
+                  <p>
+                    Indranil Ghosh, Esteban Alfaro-Cortés, Matías Gámez, Noelia
+                    García-Rubio, Reflections of public perception of
+                    Russia-Ukraine conflict and Metaverse on the financial
+                    outlook of Metaverse coins: Fresh evidence from Reddit
+                    sentiment analysis, International Review of Financial
+                    Analysis, Volume 93, 2024, 103215, Published 15 Mar 2024{" "}
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1057521924001479">
+                      https://www.sciencedirect.com/science/article/pii/S1057521924001479
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="11">
+                <li>
+                  <p>
+                    Rastogi, Nikhil and Satish Kumar. “Does bankruptcy law
+                    affect the relation between leverage and firm performance?”
+                    Indian Growth and Development Review (2024), Published: 14
+                    Mar 2024{" "}
+                    <a href="https://www.emerald.com/insight/content/doi/10.1108/IGDR-10-2022-0122/full/html">
+                      https://www.emerald.com/insight/content/doi/10.1108/IGDR-10-2022-0122/full/html
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="12">
+                <li>
+                  <p>
+                    Sourabh Bhattacharya, Kannan Govindan, Surajit Ghosh
+                    Dastidar, Preeti Sharma, Applications of artificial
+                    intelligence in closed-loop supply chains: Systematic
+                    literature review and future research agenda, Transportation
+                    Research Part E: Logistics and Transportation Review, Volume
+                    184, 2024, 103455, Published: 27 Feb 2024{" "}
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1366554524000450?via%3Dihub">
+                      https://www.sciencedirect.com/science/article/pii/S1366554524000450?via%3Dihub
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="13">
+                <li>
+                  <p>
+                    Chejarla, K.C., Vaidya, O.S, A hybrid multi-criteria
+                    decision-making approach for longitudinal data. OPSEARCH 61,
+                    1013–1060 (2024), Published: 4 Feb 2024{" "}
+                    <a href="https://doi.org/10.1007/s12597-023-00736-y">
+                      https://doi.org/10.1007/s12597-023-00736-y
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="14">
+                <li>
+                  <p>
+                    Krishna Kumar Dadsena, Pushpesh Pant, Sanjoy Kumar Paul,
+                    Saurabh Pratap, Overcoming strategies for supply chain
+                    digitization barriers: Implications for sustainable
+                    development goals, Business Strategy and the Environment,
+                    Volume 33, Issue 5 July 2024 Pages 3887-391,{" "}
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1002/bse.3681">
+                      https://onlinelibrary.wiley.com/doi/10.1002/bse.3681
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="15">
+                <li>
+                  <p>
+                    Indranil Ghosh, Rabin K. Jana, Roubaud David, Oksana
+                    Grebinevych, Peter Wanke, Yong Tan, Modelling financial
+                    stress during the COVID-19 pandemic: Prediction and deeper
+                    insights, International Review of Economics &amp; Finance,
+                    Volume 91, 2024, Pages 680-698, Published: 18 Jan 2024{" "}
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S1059056024000376">
+                      https://www.sciencedirect.com/science/article/abs/pii/S1059056024000376
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="16">
+                <li>
+                  <p>
+                    Ghosh, I., Jana, R.K. and Sharma, D.K. (2024), "A novel
+                    granular decomposition based predictive modeling framework
+                    for cryptocurrencies' prices forecasting", China Finance
+                    Review International, Vol. 14 No. 4, pp. 759-790. Published:
+                    8 Jan 2024{" "}
+                    <a href="https://doi.org/10.1108/CFRI-03-2023-0072">
+                      https://doi.org/10.1108/CFRI-03-2023-0072
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="17">
+                <li>
+                  <p>
+                    Pant, Pushpesh and Krantiraditya Dhalmahapatra. “Blockchain
+                    Based Supply Chain Financing: Research Trends and Future
+                    Research Directions.” International Journal of Business
+                    Information Systems (2024):{" "}
+                    <a href="DOI:10.1504/ijbis.2024.10065273">
+                      DOI:10.1504/ijbis.2024.10065273
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="18">
+                <li>
+                  <p>
+                    Dr. Aniruddha DAS &amp; Dr. Amith Vikram MEGARAVALLI &amp;
+                    Dr. A. Sarath BABU, 2023. "What drives the oversubscription
+                    of IPO’s: evidence from Indian Stock Market," Theoretical
+                    and Applied Economics, vol. 0(4(637), W), pages 47-62,
+                    Published: Jan 2024{" "}
+                    <a href="https://www.ectap.ro/what-drives-the-oversubscription-of-iposevidence-from-indian-stock-market-dr-aniruddha-das_dr-amith-vikram-megaravalli_dr-a-sarath-babu/a1699/">
+                      https://www.ectap.ro/what-drives-the-oversubscription-of-iposevidence-from-indian-stock-market-dr-aniruddha-das_dr-amith-vikram-megaravalli_dr-a-sarath-babu/a1699/
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="19">
+                <li>
+                  <p>
+                    Indranil Ghosh, Rabin K. Jana, Clean energy stock price
+                    forecasting and response to macroeconomic variables: A novel
+                    framework using Facebook's Prophet, NeuralProphet and
+                    explainable AI, Technological Forecasting and Social Change,
+                    Volume 200, 2024, 123148, Published: 28 Dec 2023{" "}
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0040162523008338">
+                      https://www.sciencedirect.com/science/article/abs/pii/S0040162523008338
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="20">
+                <li>
+                  <p>
+                    Indranil Ghosh, Esteban Alfaro-Cortés, Matías Gámez, Noelia
+                    García-Rubio, Modeling hydro, nuclear, and renewable
+                    electricity generation in India: An atom search
+                    optimization-based EEMD-DBSCAN framework and explainable AI,
+                    Heliyon, Volume 10, Issue 1, 2024, e23434, Published: 10 Dec
+                    2023.{" "}
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2405844023106426?via%3Dihub">
+                      https://www.sciencedirect.com/science/article/pii/S2405844023106426?via%3Dihub
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="21">
+                <li>
+                  <p>
+                    Ramalingam, Mahesh, and Manoj Das. 2023. “From Clicks to
+                    Cuisine: Unveiling the Impact of Attitude and Positive Word
+                    of Mouth in Food Delivery App Usage.” Journal of
+                    International Food &amp; Agribusiness Marketing 37 (1):
+                    116–46, Published: 23 Nov 2023{" "}
+                    <a href="doi:10.1080/08974438.2023.2284922">
+                      doi:10.1080/08974438.2023.2284922
+                    </a>
+                    .
+                  </p>
+                </li>
+              </ol>
+              <ol start="22">
+                <li>
+                  <p>
+                    Mohammed, Neethu and Issac, Abraham Cyril (2023) "Are You So
+                    Good That They Cannot Ignore You? Effect of Coworker Support
+                    on Knowledge Sharing Through an Affective Events Theory
+                    Perspective," American Business Review: Vol. 26: No. 2,
+                    Article 1, Published: 14 Nov 2023{" "}
+                    <a href="DOI: 10.37625/abr.26.2.269-287">
+                      DOI: 10.37625/abr.26.2.269-287
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="23">
+                <li>
+                  <p>
+                    Pant, P., Dutta, S. and Sarmah, S.P. (2023), "Structural
+                    supply chain complexity index and construct validity: a
+                    data-driven empirical approach", International Journal of
+                    Emerging Markets, Published: 6 Nov 2023.{" "}
+                    <a href="https://doi.org/10.1108/IJOEM-01-2023-0086">
+                      https://doi.org/10.1108/IJOEM-01-2023-0086
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="24">
+                <li>
+                  <p>
+                    Panda, D.K., Ramalingam, M. Managerial networking behavior
+                    for grant acquisition in nonprofits: an application of the
+                    behavioral reasoning theory (BRT). Int Rev Public Nonprofit
+                    Mark 21, 371–393 (2024), Published: 20 Oct 2023,{" "}
+                    <a href="https://doi.org/10.1007/s12208-023-00387-1">
+                      https://doi.org/10.1007/s12208-023-00387-1
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="25">
+                <li>
+                  <p>
+                    Panda, D., Bhardwaj, R., Sharma, T. et al. Small and Medium
+                    Enterprises (SMEs) Navigating Through the Covid Pandemic in
+                    India: an Examination Through the Systems Approach. Syst
+                    Pract Action Res 37, 483–498 (2024), Published: 9 Oct 2023,{" "}
+                    <a href="https://doi.org/10.1007/s11213-023-09664-w">
+                      https://doi.org/10.1007/s11213-023-09664-w
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="26">
+                <li>
+                  <p>
+                    K. Jana, Rabin, Indranil Ghosh, and P. N. Ram Kumar. 2023.
+                    “An Explainable AI-Enabled Granular Ensemble Machine
+                    Learning Framework to Demystify Fertilizer Price Movements.”
+                    Journal of the Operational Research Society 75 (8): 1569–86,
+                    Published: 27 Sep 2023
+                  </p>
+                </li>
+              </ol>
+              <ol start="27">
+                <li>
+                  <p>
+                    Riya Sugla and Shaon Sen, Influence of Social and Economic
+                    Factors on Impulse Buying: A Research Framework, BIMTECH
+                    Business Perspectives, 4(1) 43–56, 2023.{" "}
+                    <a href="https://bsp.bimtech.ac.in/pages/table-of-contents/fulltext/?id=5&amp;title=Influence+of+Social+and+Economic+Factors+on+Impulse+Buying:+A+Research+Framework">
+                      https://bsp.bimtech.ac.in/pages/table-of-contents/fulltext/?id=5&amp;title=Influence+of+Social+and+Economic+Factors+on+Impulse+Buying:+A+Research+Framework
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="28">
+                <li>
+                  <p>
+                    Pant, P., Sarmah, S. P., &amp; Ramesh, K. T. (2023). Supply
+                    Base Risk and Buying Firm Performance: An Empirical Evidence
+                    from Emerging Economy. Global Business Review, Published: 24
+                    Jul 2023.{" "}
+                    <a href="https://doi.org/10.1177/09721509231181190">
+                      https://doi.org/10.1177/09721509231181190
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <h5>Case Studies: 2023-2024</h5>
+              <ol>
+                <li>
+                  <p>
+                    Surajit Ghosh Dastidar, Mayora: Positioning Kopiko, Case
+                    Centre, Published; 24 Jun 2024.{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=199215">
+                      https://www.thecasecentre.org/products/view?id=199215
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="2">
+                <li>
+                  <p>
+                    Romina Mathew, Layoffs at Better.com: For Better or for
+                    Worse, Case Centre, Published: 11 Apr 2024.{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=197489">
+                      https://www.thecasecentre.org/products/view?id=197489
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="3">
+                <li>
+                  <p>
+                    Kalyana C Chejarla, CenturyPly Laminates: Redesigning the
+                    Supply Chain, Ivey Publishing, Published: 11 Apr 2024.{" "}
+                    <a href="https://www.iveypublishing.ca/s/product/centuryply-laminates-redesigning-the-supply-chain/01tOF000003OjqHYAS">
+                      https://www.iveypublishing.ca/s/product/centuryply-laminates-redesigning-the-supply-chain/01tOF000003OjqHYAS
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="4">
+                <li>
+                  <p>
+                    Sourabh Bhattacharya, Royal Home-Food: Handling a Delivery
+                    Challenge (A), Case Centre, Published: 27 Mar 2024.{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=197238">
+                      https://www.thecasecentre.org/products/view?id=197238
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="5">
+                <li>
+                  <p>
+                    Sourabh Bhattacharya, Royal Home-Food: Handling a Delivery
+                    Challenge (B), Case Centre, Published: 27 Mar 2024.{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=197240">
+                      https://www.thecasecentre.org/products/view?id=197240
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="6">
+                <li>
+                  <p>
+                    Nitin Gupta, Tata Motors: Challenges for the Electric
+                    Vehicle Market Leader, Ivey Publishing, Published: 12 Jan
+                    2024.{" "}
+                    <a href="https://www.iveypublishing.ca/s/product/tata-motors-challenges-for-the-electric-vehicle-market-leader/01tOF000002MnwzYAC">
+                      https://www.iveypublishing.ca/s/product/tata-motors-challenges-for-the-electric-vehicle-market-leader/01tOF000002MnwzYAC
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="7">
+                <li>
+                  <p>
+                    Nitin Gupta, Tata’s Air India: Brand Repositioning and
+                    Revitalization Challenges, Ivey Publishing, Published: 8 Jan
+                    2024.{" "}
+                    <a href="https://www.iveypublishing.ca/s/product/tatas-air-india-brand-repositioning-and-revitalization-challenges/01tOF000002Gya9YAC">
+                      https://www.iveypublishing.ca/s/product/tatas-air-india-brand-repositioning-and-revitalization-challenges/01tOF000002Gya9YAC
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="8">
+                <li>
+                  <p>
+                    Surajit Ghosh Dastidar, Shearling: tackling competition,
+                    Emerald Emerging Case, Published: 8 Jan 2024.{" "}
+                    <a href="https://www.emerald.com/insight/content/doi/10.1108/EEMCS-11-2022-0408/full/html">
+                      https://www.emerald.com/insight/content/doi/10.1108/EEMCS-11-2022-0408/full/html
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="9">
+                <li>
+                  <p>
+                    Surajit Ghosh Dastidar, Bounce: Competing in Bike Rental
+                    Market, Emerald Emerging Case, Published: 1 Nov 2023.{" "}
+                    <a href="https://doi.org/10.1108/EEMCS-11-2022-0407">
+                      https://doi.org/10.1108/EEMCS-11-2022-0407
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="10">
+                <li>
+                  <p>
+                    Nikhil Rastogi, Piramal Enterprises Ltd: Unlocking Value
+                    through Demerger, Case Centre, Published: 4 Sep 2023.{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=193012">
+                      https://www.thecasecentre.org/products/view?id=193012
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="11">
+                <li>
+                  <p>
+                    Kalyana C Chejarla, ElasticRun: Pathways to Growth, Ivey
+                    Publishing, Published 2 August-2023.{" "}
+                    <a href="https://www.iveypublishing.ca/s/product/elasticrun-pathways-to-growth/01t5c00000CBPwNAAX">
+                      https://www.iveypublishing.ca/s/product/elasticrun-pat-hways-to-growth/01t5c00000CBPwNAAX
+                    </a>
+                  </p>
+                </li>
+              </ol>
+              <ol start="12">
+                <li>
+                  <p>
+                    Pavan Kumar Balivada, Tulika Sharma, KMR Laxmi Foundation:
+                    Strategic CSR Wing of KMR Group, Case Centre, Published: 7
+                    July 2023.{" "}
+                    <a href="https://www.thecasecentre.org/products/view?id=191366">
+                      https://www.thecasecentre.org/products/view?id=191366
+                    </a>
+                  </p>
+                </li>
+              </ol>
+
               <h5>2022-2023</h5>
               <ol>
                 <li>
@@ -5369,66 +5998,81 @@ const MandatoryDisclosure = () => {
                     Sector Development and Retail Sector Growth- Association,
                     Spillover and Causality during Pre Covid and Coved Regmies”
                     FACTA UNIVERSITATIS Series: Economics and Organization, Vol.
-                    19, No 4, 2022, pp. 229 - 251
-                    https://doi.org/10.22190/FUEO220110017C
+                    19, No 4, 2022, pp. 229 - 251{" "}
+                    <a href="https://doi.org/10.22190/FUEO220110017C">
+                      https://doi.org/10.22190/FUEO220110017C
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={2}>
+              <ol start="2">
                 <li>
                   <p>
                     Rabin K Jana &amp; Indranil Ghosh, (2022), “Time-varying
                     relationship between geopolitical uncertainty and
                     agricultural investment” Finance Research Letters, available
-                    online 20 Nov 2021
-                    https://www.sciencedirect.com/science/article/abs/pii/S1544612322006973
+                    online 20 Nov 2021{" "}
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S1544612322006973">
+                      https://www.sciencedirect.com/science/article/abs/pii/S1544612322006973
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={3}>
+              <ol start="3">
                 <li>
-                  Indranil Ghosh, Esteban Alfaro-Cortes, Matiz Gamez &amp;
-                  Noelia Garfa (2022), “Do travel uncertainty and invasion
-                  rhetoric spur Metaverse financial asset? Gauging the role of
-                  media influence” Finance Research Letters, version of record,
-                  26 Oct 2022, Vol 51 January 2023
-                  https://doi.org/10.1016/j.frl.2022.103434
+                  <p>
+                    Indranil Ghosh, Esteban Alfaro-Cortes, Matiz Gamez &amp;
+                    Noelia Garfa (2022), “Do travel uncertainty and invasion
+                    rhetoric spur Metaverse financial asset? Gauging the role of
+                    media influence” Finance Research Letters, version of
+                    record, 26 Oct 2022, Vol 51 January 2023{" "}
+                    <a href="https://doi.org/10.1016/j.frl.2022.103434">
+                      https://doi.org/10.1016/j.frl.2022.103434
+                    </a>
+                  </p>
                 </li>
               </ol>
-              <ol start={4}>
+              <ol start="4">
                 <li>
                   <p>
                     Parvesh Kumar Padamwar, Vinay Kumar Kalakbandi &amp; Jagrook
                     Dawra (2022), Deliberation does not make attraction effect
                     disappear: The role of induced cognitive reflection. Journal
-                    of Business Research Version of Record 12 October 2022
-                    https://doi.org/10.1016/j.jbusres.2022.113335
+                    of Business Research Version of Record 12 October 2022{" "}
+                    <a href="https://doi.org/10.1016/j.jbusres.2022.113335">
+                      https://doi.org/10.1016/j.jbusres.2022.113335
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={5}>
+              <ol start="5">
                 <li>
                   <p>
                     Sourabh Bhattacharya &amp; Vinay Kumar Kalakbandi (2022),
                     Barriers to Circular Supply Chain: the case of unorganized
                     tire retreading in India. International Journal of Logistic
-                    Management https://doi.org/10.1108/IJLM-04-2022-0162 Nov 3
-                    2022
+                    Management{" "}
+                    <a href="https://doi.org/10.1108/IJLM-04-2022-0162">
+                      https://doi.org/10.1108/IJLM-04-2022-0162
+                    </a>{" "}
+                    Nov 3 2022
                   </p>
                 </li>
               </ol>
-              <ol start={6}>
+              <ol start="6">
                 <li>
                   <p>
                     Kalyana C Chejarla, &amp; Omkarprasad S Vaidya (2022), “Ease
                     of Doing Business: Performance comparison of G20 countries
                     using Grey MCDM” International Journal of Information
-                    Technology &amp; Decision Making
-                    https://doi.org/10.1142/S021962202250078X
+                    Technology &amp; Decision Making{" "}
+                    <a href="https://doi.org/10.1142/S021962202250078X">
+                      https://doi.org/10.1142/S021962202250078X
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={7}>
+              <ol start="7">
                 <li>
                   <p>
                     Indranil Ghosh, Manas K Sanyal &amp; Dragon Pamucar (2022),
@@ -5437,70 +6081,84 @@ const MandatoryDisclosure = () => {
                     Learning, PSO based Ensemble Machine Learning and
                     Explainable AI” International Journal of Information
                     Technology and Decision Making Online Published 24 September
-                    2022 https://doi.org/10.1142/S0219622022500602
+                    2022{" "}
+                    <a href="https://doi.org/10.1142/S0219622022500602">
+                      https://doi.org/10.1142/S0219622022500602
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={8}>
+              <ol start="8">
                 <li>
                   <p>
                     Manoj Das, &amp; Mahesh Ramalingam, (2022), Why do you look
                     familiar? Exploring the role of Employee-Customer
                     identification in adopting the service offering,
                     International Journal of Bank Marketing, article published
-                    date 8 Sept 2022 https://doi.org/10.1108/IJBM-01-2022-0049
+                    date 8 Sept 2022{" "}
+                    <a href="https://doi.org/10.1108/IJBM-01-2022-0049">
+                      https://doi.org/10.1108/IJBM-01-2022-0049
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={9}>
+              <ol start="9">
                 <li>
                   <p>
                     Pradeep Rathore, Esha Saha, Sayan Chakraborty, Aviral Kumar
                     Tiwari, (2022), Assessing the impact of consumer perceived
                     CSR on consumer attitude and purchase behaviour in retail
                     segment: a stakeholder theory perspective Society and
-                    Business Review
-                    https://www.emerald.com/insight/content/doi/10.1108/SBR-10-2021-0207/full/html
+                    Business Review{" "}
+                    <a href="https://www.emerald.com/insight/content/doi/10.1108/SBR-10-2021-0207/full/html">
+                      https://www.emerald.com/insight/content/doi/10.1108/SBR-10-2021-0207/full/html
+                    </a>{" "}
                     18 August 2022
                   </p>
                 </li>
               </ol>
-              <ol start={10}>
+              <ol start="10">
                 <li>
                   <p>
                     Esha Saha &amp; Pradeep Rathore (2022), Discovering hidden
                     patterns among medicines prescribed to patients using
                     Association Rule Mining Technique. International Journal of
-                    Healthcare Management.
-                    https://www.tandfonline.com/eprint/YHJ9WWVD4NWTYMSCEKEY/full?target=10.1080/20479700.2022.2099335
+                    Healthcare Management.{" "}
+                    <a href="https://www.tandfonline.com/eprint/YHJ9WWVD4NWTYMSCEKEY/full?target=10.1080/20479700.2022.2099335">
+                      https://www.tandfonline.com/eprint/YHJ9WWVD4NWTYMSCEKEY/full?target=10.1080/20479700.2022.2099335
+                    </a>{" "}
                     Publication on 14 July 2022
                   </p>
                 </li>
               </ol>
-              <ol start={11}>
+              <ol start="11">
                 <li>
                   <p>
                     Indranil Ghosh, &amp; Tamal Dutta Chaudhuri (2022),
                     “Integrating Navier-Stokes Equation and Neoteric
                     iForest-BorutaStap- Facebook's prophet Framework for Stock
                     Market Prediction: An Application in Indian Context Expert
-                    Systems with Applications
-                    https://doi.org/10.1016/j.eswa.2022.118391 Version of Record
-                    12 August 2022
+                    Systems with Applications{" "}
+                    <a href="https://doi.org/10.1016/j.eswa.2022.118391">
+                      https://doi.org/10.1016/j.eswa.2022.118391
+                    </a>{" "}
+                    Version of Record 12 August 2022
                   </p>
                 </li>
               </ol>
-              <h5>Cases:</h5>
+              <h5>Cases: 2022-2023</h5>
               <ol>
                 <li>
                   <p>
                     Surajit Ghosh Dastidar, “Tazzo Bikes: Tackling Competition”
-                    Emerald Emerging Market Case Studies Vol 12 No 4
-                    https://doi.org/10.1108/EEMCS-06-2021-0208
+                    Emerald Emerging Market Case Studies Vol 12 No 4{" "}
+                    <a href="https://doi.org/10.1108/EEMCS-06-2021-0208">
+                      https://doi.org/10.1108/EEMCS-06-2021-0208
+                    </a>
                   </p>
                 </li>
               </ol>
-              <ol start={2}>
+              <ol start="2">
                 <li>
                   <p>
                     Sourabh Bhattacharya &amp; Kalyana Chejarla (2022), “The
@@ -5508,16 +6166,16 @@ const MandatoryDisclosure = () => {
                   </p>
                 </li>
               </ol>
-              <ol start={3}>
+              <ol start="3">
                 <li>
                   <p>
-                    Vinay Kumar Kalakabandi, &amp; Sarath Babu, “Pikku Kidswear:
+                    Vinay Kumar Kalakbandi, &amp; Sarath Babu, “Pikku Kidswear:
                     Developing an ABC Model” The Case Centre. Ref No 122-0115-1
                     &amp; 122-0115-8
                   </p>
                 </li>
               </ol>
-              <ol start={4}>
+              <ol start="4">
                 <li>
                   <p>
                     Chakrapani Chaturvedula (2022), Titan Company Limited:
@@ -5526,7 +6184,7 @@ const MandatoryDisclosure = () => {
                   </p>
                 </li>
               </ol>
-              <ol start={5}>
+              <ol start="5">
                 <li>
                   <p>
                     Nikhil Rastogi (2022), Lackey Capital: Evaluation of Term
@@ -5535,7 +6193,7 @@ const MandatoryDisclosure = () => {
                   </p>
                 </li>
               </ol>
-              <ol start={6}>
+              <ol start="6">
                 <li>
                   <p>
                     Nitin Gupta (2022), ZIPAIR’s Peculiar Brand Elements Issue.
@@ -5543,16 +6201,16 @@ const MandatoryDisclosure = () => {
                   </p>
                 </li>
               </ol>
-              <ol start={7}>
+              <ol start="7">
                 <li>
                   <p>
-                    Vinay Kumar Kalakabandi, Sneha Kadam, Mohit Jetti,
+                    Vinay Kumar Kalakbandi, Sneha Kadam, Mohit Jetti,
                     “Nukkad-the teaf’e” The Case Centre. Ref No 622-003-1 &amp;
                     622-003-7 26
                   </p>
                 </li>
               </ol>
-              <ol start={8}>
+              <ol start="8">
                 <li>
                   <p>
                     Surajit Ghosh Dastidar, Forecasting Railways Passenger
@@ -5561,7 +6219,7 @@ const MandatoryDisclosure = () => {
                   </p>
                 </li>
               </ol>
-              <ol start={9}>
+              <ol start="9">
                 <li>
                   <p>
                     Surajit Ghosh Dastidar &amp; Rajiv Kumra, Vaccine on Wheel
@@ -5570,7 +6228,8 @@ const MandatoryDisclosure = () => {
                   </p>
                 </li>
               </ol>
-              <h5>2021-2022</h5>
+
+              {/* <h5>2021-2022</h5>
               <ol>
                 <li>
                   <p>
@@ -7457,9 +8116,1832 @@ const MandatoryDisclosure = () => {
                     Strategy, Volume 6, No 1, January 2017
                   </p>
                 </li>
-              </ol>
+              </ol> */}
             </div>
             <div className="table-responsive align-center">
+    <table className="table table-striped">
+        <tbody>
+            <tr>
+                <td>
+                    <br />
+                </td>
+                <td>
+                    <p>Industry Linkage</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+      </div>
+      <div className="table-responsive" align="center">
+          <table className="table table-striped">
+              <tbody>
+                  <tr>
+                      <td colSpan={10}>
+                          <p>
+                              Panel Discussions at IMT Hyderabad from June 2013 to
+                              25-06-2024
+                          </p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>S.No</p>
+                      </td>
+                      <td>
+                          <p>Theme</p>
+                      </td>
+                      <td>
+                          <p>Date</p>
+                      </td>
+                      <td>
+                          <p>Name</p>
+                      </td>
+                      <td>
+                          <p>Company</p>
+                      </td>
+                      <td>
+                          <p>Designation</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>1</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Industry expectations from Management students</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>25-06-2024</p>
+                      </td>
+                      <td>
+                          <p>Ms.Sharbari</p>
+                      </td>
+                      <td>
+                          <p>Micron Technology</p>
+                      </td>
+                      <td>
+                          <p>University Relations Recruiter</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Kshitij</p>
+                      </td>
+                      <td>
+                          <p>Grant Thornton Bharat LLP</p>
+                      </td>
+                      <td>
+                          <p>People &amp; Culture</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Kunal Choudhury</p>
+                      </td>
+                      <td>
+                          <p>Alvarez &amp; Marsal</p>
+                      </td>
+                      <td>
+                          <p>Associate Director HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Harshitha Sriramaneni</p>
+                      </td>
+                      <td>
+                          <p>Mass Mutual</p>
+                      </td>
+                      <td>
+                          <p>Head of partner Oparations &amp;Shared services</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Krishna Chaitanya</p>
+                      </td>
+                      <td>
+                          <p>Tech Mahindra</p>
+                      </td>
+                      <td>
+                          <p>Management Trainee</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>2</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Making the best out of your B-school journey(Valedictory Panel Discussion)</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>30-Jun-23</p>
+                      </td>
+                      <td>
+                          <p>Mr. Tarun Kumar</p>
+                      </td>
+                      <td>
+                          <p>Tech Mahindra</p>
+                      </td>
+                      <td>
+                          <p>Head, Associate Services (HR shared services)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr. Arnab Banerjee</p>
+                      </td>
+                      <td>
+                          <p>Micron Technology</p>
+                      </td>
+                      <td>
+                          <p>Director, Supply Chain, Smart Manufacturing &amp; AI</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Emmanuel Gosula</p>
+                      </td>
+                      <td>
+                          <p>EPAM Systems</p>
+                      </td>
+                      <td>
+                          <p>Head of APAC RD</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Siddharth Shukla</p>
+                      </td>
+                      <td>
+                          <p>PepsiCo GBS Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>India Lead Campus Recruiting &amp; Employer Branding at PepsiCo GBS Hyderabad, (EX-Morgan Stanley &amp; PwC, India)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={7}>
+                          <p>3</p>
+                      </td>
+                      <td rowSpan={7}>
+                          <p>Net-Zero 2023: Indian Industry Initiatives and Implications (4I)</p>
+                      </td>
+                      <td rowSpan={7}>
+                          <p>19-Aug-23</p>
+                      </td>
+                      <td>
+                          <p>Aravind Appi Raj</p>
+                      </td>
+                      <td>
+                          <p>Exide Energy Solutions Limited</p>
+                      </td>
+                      <td>
+                          <p>Head–Environment Health and Safety</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Ekta Kumar</p>
+                      </td>
+                      <td>
+                          <p>SustainablEdge (An Independent ESG &amp; CSR Advisory Firm)</p>
+                      </td>
+                      <td>
+                          <p>Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Rajeev Chourey</p>
+                      </td>
+                      <td>
+                          <p>CARE group of hospital</p>
+                      </td>
+                      <td>
+                          <p>VP (Operations &amp; Quality, ESG officer) CARE group of hospitals</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Makarand Barhanpurkar</p>
+                      </td>
+                      <td>
+                          <p>ITC Limited</p>
+                      </td>
+                      <td>
+                          <p>Head Manufacturing and Projects</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Swapnil Joshi</p>
+                      </td>
+                      <td>
+                          <p>Infosys Sustainability and Design Group</p>
+                      </td>
+                      <td>
+                          <p>Director and Industry Principal</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Viveck Verma</p>
+                      </td>
+                      <td>
+                          <p>Upsurge</p>
+                      </td>
+                      <td>
+                          <p>Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Prathyusha Parakala</p>
+                      </td>
+                      <td>
+                          <p>Dr Reddys</p>
+                      </td>
+                      <td>
+                          <p>Program Manager - Sustainability</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>4</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Making the best out of your B-School Journey”</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>01-Jul-22</p>
+                      </td>
+                      <td>
+                          <p>Mr. Ashish Bhalla</p>
+                      </td>
+                      <td>
+                          <p>HCL Technologies Ltd</p>
+                      </td>
+                      <td>
+                          <p>Head – Campus Relations</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Vinay Agrawal</p>
+                      </td>
+                      <td>
+                          <p>Tech Mahindra</p>
+                      </td>
+                      <td>
+                          <p>Head – Business HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Sahil Nayar</p>
+                      </td>
+                      <td>
+                          <p>KPMG</p>
+                      </td>
+                      <td>
+                          <p>Human Resources</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Mohammaed Hasan</p>
+                      </td>
+                      <td>
+                          <p>Genpact</p>
+                      </td>
+                      <td>
+                          <p>Assistant Vice President –Talent Acquisition Leader</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Venkatesh Palabatla</p>
+                      </td>
+                      <td>
+                          <p>Nava Bharat Ventures Limited - India</p>
+                      </td>
+                      <td>
+                          <p>Group Chief Human Resource Officer</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={3}>
+                          <p>5</p>
+                      </td>
+                      <td rowSpan={3}>
+                          <p>Corporate Expectations from Management Graduates</p>
+                      </td>
+                      <td rowSpan={3}>
+                          <p>13-May-2022</p>
+                      </td>
+                      <td>
+                          <p>Mr. Kunal Choudhury</p>
+                      </td>
+                      <td>
+                          <p>Bain &amp; Company</p>
+                      </td>
+                      <td>
+                          <p>Early Careers Hiring</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Jayshankar D</p>
+                      </td>
+                      <td>
+                          <p>Britannia</p>
+                      </td>
+                      <td>
+                          <p>Regional Sales Manager - Breads division</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Ankoor Banerjee</p>
+                      </td>
+                      <td>
+                          <p>Cognizant</p>
+                      </td>
+                      <td>
+                          <p>GenC hiring</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>6</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>The Making of a Post Pandemic Professional</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>28-May-21</p>
+                      </td>
+                      <td>
+                          <p>Soham Wagh</p>
+                      </td>
+                      <td>
+                          <p>GlaxoSmithKline</p>
+                      </td>
+                      <td>
+                          <p>Pharmaceutical Sales and Marketing Professional</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Priya Rajani</p>
+                      </td>
+                      <td>
+                          <p>Citi</p>
+                      </td>
+                      <td>
+                          <p>Director, North America Corporate Client Strategy Head</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mandar Borkar</p>
+                      </td>
+                      <td>
+                          <p>INDOCO REMEDIES LTD</p>
+                      </td>
+                      <td>
+                          <p>CFO &amp; Senior Vice President (Finance, IT &amp; Distribution)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Vibhuti Lall</p>
+                      </td>
+                      <td>
+                          <p>Advance Auto Parts</p>
+                      </td>
+                      <td>
+                          <p>India Site HR Leader</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Vinay Trivedi</p>
+                      </td>
+                      <td>
+                          <p>Tone Tag</p>
+                      </td>
+                      <td>
+                          <p>Head Human Resources</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>7</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Employment challenges post covid19</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>18-Jul-20</p>
+                      </td>
+                      <td>
+                          <p>Jaspreet Singh</p>
+                      </td>
+                      <td>
+                          <p>Randstad Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>Vice President - Professionals Search &amp; Selection and Perm+</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Kundan Kumar</p>
+                      </td>
+                      <td>
+                          <p>GlaxoSmithKline Pharmaceutical(Malaysia)</p>
+                      </td>
+                      <td>
+                          <p>HR Lead</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Debashish Gosh</p>
+                      </td>
+                      <td>
+                          <p>Berkadia (A Berkshire Hathaway and Jefferies Financial Services Co)</p>
+                      </td>
+                      <td>
+                          <p>Vice President and India HR Head</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dinesh Menon</p>
+                      </td>
+                      <td>
+                          <p>Signode India Limited</p>
+                      </td>
+                      <td>
+                          <p>Head - HR, Metals Business</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ramesh G</p>
+                      </td>
+                      <td>
+                          <p>Olam India</p>
+                      </td>
+                      <td>
+                          <p>General Manager - HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>8</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Developing Entrepreneurial Orientation in the Uncertain World – Strategies for Survival</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>04-Jul-20</p>
+                      </td>
+                      <td>
+                          <p>Mr. Vinay Kumar</p>
+                      </td>
+                      <td>
+                          <p>Datawise</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Rajesh Padinjaremadam</p>
+                      </td>
+                      <td>
+                          <p>Rapid Value</p>
+                      </td>
+                      <td>
+                          <p>CEO &amp; Co-Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Prasan Shah</p>
+                      </td>
+                      <td>
+                          <p>Stone Plus Enterprises Pvt Ltd</p>
+                      </td>
+                      <td>
+                          <p>CEO and Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Anurag Palla</p>
+                      </td>
+                      <td>
+                          <p>Stuzee</p>
+                      </td>
+                      <td>
+                          <p>Entreprenuer</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>9</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Navigating through Covid 19 situation - Perspective from business leaders</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>20-Jun-20</p>
+                      </td>
+                      <td>
+                          <p>Dr. JC Wandemberg</p>
+                      </td>
+                      <td>
+                          <p>Sustainable Systems International</p>
+                      </td>
+                      <td>
+                          <p>President &amp; Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Hari Thalapalli</p>
+                      </td>
+                      <td>
+                          <p>Call Health</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Vijay Sivaram</p>
+                      </td>
+                      <td>
+                          <p>QuessCorp</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Hitesh Kakkar</p>
+                      </td>
+                      <td>
+                          <p>CPM India</p>
+                      </td>
+                      <td>
+                          <p>COO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>10</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Digital Imperatives for Businesses</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>06-Jun-20</p>
+                      </td>
+                      <td>
+                          <p>Mr.Sairam Vedam</p>
+                      </td>
+                      <td>
+                          <p>Innominds</p>
+                      </td>
+                      <td>
+                          <p>Global CMO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Anand Srivastava</p>
+                      </td>
+                      <td>
+                          <p>Landis+Gyr</p>
+                      </td>
+                      <td>
+                          <p>General Manager-Marketing</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Jyothsna Kuchimanchi</p>
+                      </td>
+                      <td>
+                          <p>Cognizant</p>
+                      </td>
+                      <td>
+                          <p>Sr.Director, Strategy and Consulting</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Viren Mehta</p>
+                      </td>
+                      <td>
+                          <p>JLL</p>
+                      </td>
+                      <td>
+                          <p>Sr,Director and Head Transactions</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>11</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Challenges in Developing Leadership</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>24-Jan-20</p>
+                      </td>
+                      <td>
+                          <p>Mr.Arnab Banerjee</p>
+                      </td>
+                      <td>
+                          <p>Infosys Limited</p>
+                      </td>
+                      <td>
+                          <p>Principal Consultant, Enterprise Application Services</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Deepak Gupta</p>
+                      </td>
+                      <td>
+                          <p>KARVY Group</p>
+                      </td>
+                      <td>
+                          <p>CHRO &amp; Vice President Human Resources</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Narayan Rao</p>
+                      </td>
+                      <td>
+                          <p>NCC Ltd</p>
+                      </td>
+                      <td>
+                          <p>Vice President (HR)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Richie J Joseph</p>
+                      </td>
+                      <td>
+                          <p></p>
+                      </td>
+                      <td>
+                          <p>Leadership Development Consultant</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>12</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Corporate expectation from management graduates</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>28-Jun-19</p>
+                      </td>
+                      <td>
+                          <p>Mr. Arka C</p>
+                      </td>
+                      <td>
+                          <p>Open Text</p>
+                      </td>
+                      <td>
+                          <p>Sr. Director-HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Pradeep Kumar K,</p>
+                      </td>
+                      <td>
+                          <p>Coromandel International</p>
+                      </td>
+                      <td>
+                          <p>VP-HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Ayn Wesely, State Street Corporate Services (Mumbai) Pvt. Ltd,</p>
+                      </td>
+                      <td>
+                          <p>India Transition &amp; Project Management</p>
+                      </td>
+                      <td>
+                          <p>AVP</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Prashant Girey,</p>
+                      </td>
+                      <td>
+                          <p>Airtel</p>
+                      </td>
+                      <td>
+                          <p>Head – Sales &amp; Marketing</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Vivek Gautam, Business</p>
+                      </td>
+                      <td>
+                          <p>UHG</p>
+                      </td>
+                      <td>
+                          <p>Analyst</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={8}>
+                          <p>13</p>
+                      </td>
+                      <td rowSpan={8}>
+                          <p>Contemporary Challenges in Pharma and Healthcare Sector Panel 1: Leading Diversity Panel 2: New Paradigm in Digital Marketing &amp; Analytics</p>
+                      </td>
+                      <td rowSpan={8}>
+                          <p>11-Jan-19</p>
+                      </td>
+                      <td>
+                          <p>Mr. Ram</p>
+                      </td>
+                      <td>
+                          <p>L&amp;D Hetero Drugs</p>
+                      </td>
+                      <td>
+                          <p>Sr. GM,</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Parasuraman</p>
+                      </td>
+                      <td>
+                          <p>Dr. Reddys Lab</p>
+                      </td>
+                      <td>
+                          <p>Global Head, R&amp;D,</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Mahendra Pratap Singh</p>
+                      </td>
+                      <td>
+                          <p>Napier</p>
+                      </td>
+                      <td>
+                          <p>Global Head(HR)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr. B. Aparna Reddy</p>
+                      </td>
+                      <td>
+                          <p>Therapiva &amp; Laxai Life Sciences</p>
+                      </td>
+                      <td>
+                          <p>Chief People Officer,</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Phani Mitra</p>
+                      </td>
+                      <td>
+                          <p>Dr. Reddys Lab</p>
+                      </td>
+                      <td>
+                          <p>VP, Analytics &amp; Strategy</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Rajesh Kr. Singh</p>
+                      </td>
+                      <td>
+                          <p>Hinduja Tech</p>
+                      </td>
+                      <td>
+                          <p>GM</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Sankara V. Krishna Prasad</p>
+                      </td>
+                      <td>
+                          <p>Cito Healthcare</p>
+                      </td>
+                      <td>
+                          <p>Founder &amp; CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Soham Wagh</p>
+                      </td>
+                      <td>
+                          <p>GlaxoSmithKline</p>
+                      </td>
+                      <td>
+                          <p>Global Marketing Lead</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>14</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Managing Disruptive Technologies</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>21-Dec-18</p>
+                      </td>
+                      <td>
+                          <p>Jayesh Ranjan</p>
+                      </td>
+                      <td>
+                          <p>Government</p>
+                      </td>
+                      <td>
+                          <p>IT Secretary</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Kurt Stockli</p>
+                      </td>
+                      <td>
+                          <p>President</p>
+                      </td>
+                      <td>
+                          <p>Glenmark</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Vijay Chandru</p>
+                      </td>
+                      <td>
+                          <p>Director</p>
+                      </td>
+                      <td>
+                          <p>Strand Life Sciences</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ashok Das</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                      <td>
+                          <p>SunMoksha</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Nixon Patel</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                      <td>
+                          <p>Quantum Labs</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>15</p>
+                      </td>
+                      <td>
+                          <p>Making difficult conversations easy with EI</p>
+                      </td>
+                      <td>
+                          <p>30-Nov-18</p>
+                      </td>
+                      <td>
+                          <p>Ms. Urvashi Baid</p>
+                      </td>
+                      <td>
+                          <p>CCI- Indian Women Networ</p>
+                      </td>
+                      <td>
+                          <p></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>16</p>
+                      </td>
+                      <td>
+                          <p>Fundamentals of HR being applied in the industry setup</p>
+                      </td>
+                      <td>
+                          <p>19-Nov-18</p>
+                      </td>
+                      <td>
+                          <p>Mr. Mahendra Pratap Singh</p>
+                      </td>
+                      <td>
+                          <p>Global Head – HR,</p>
+                      </td>
+                      <td>
+                          <p>Napier Healthcare</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>17</p>
+                      </td>
+                      <td>
+                          <p>Successful Career: Investment Bankers’ Perspectives</p>
+                      </td>
+                      <td>
+                          <p>06-Oct-18</p>
+                      </td>
+                      <td>
+                          <p>Mr. Hemant Sethia</p>
+                      </td>
+                      <td>
+                          <p>Vice President</p>
+                      </td>
+                      <td>
+                          <p>Credit Suisse Services (India) Private Limited</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>18</p>
+                      </td>
+                      <td>
+                          <p>Overview of Indian Pharmaceutical Industry</p>
+                      </td>
+                      <td>
+                          <p>01-Aug-18</p>
+                      </td>
+                      <td>
+                          <p>Mr. Naveen Kumar</p>
+                      </td>
+                      <td>
+                          <p>Group Head,</p>
+                      </td>
+                      <td>
+                          <p>CARE Ratings Ltd</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>19</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Trends in Business Analytics</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>27-Jul-18</p>
+                      </td>
+                      <td>
+                          <p>Mr Ramesh Kumar Koona</p>
+                      </td>
+                      <td>
+                          <p>Cygnesia Animations Pvt. Ltd.</p>
+                      </td>
+                      <td>
+                          <p>Founder and Director</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Sharat Konatham</p>
+                      </td>
+                      <td>
+                          <p>HEDNext</p>
+                      </td>
+                      <td>
+                          <p>Co founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Sridhar Sheshadri</p>
+                      </td>
+                      <td>
+                          <p>Spotflock</p>
+                      </td>
+                      <td>
+                          <p>Founder &amp; CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. N M Sharma</p>
+                      </td>
+                      <td>
+                          <p>Phygital Insights Pvt. Ltd</p>
+                      </td>
+                      <td>
+                          <p>Founder &amp; CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Ravi Munukutla</p>
+                      </td>
+                      <td>
+                          <p></p>
+                      </td>
+                      <td>
+                          <p>Independent Consultant (Data Analytics)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>20</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Corporate expectations from Management Graduates</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>29-Jun-18</p>
+                      </td>
+                      <td>
+                          <p>Mr. Pragathi Kumar</p>
+                      </td>
+                      <td>
+                          <p>AT&amp;T</p>
+                      </td>
+                      <td>
+                          <p>Director HR - International HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Dinesh Kumar Murugesan</p>
+                      </td>
+                      <td>
+                          <p>DSM Chemicals</p>
+                      </td>
+                      <td>
+                          <p>Country Head - HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Vani Manukonda</p>
+                      </td>
+                      <td>
+                          <p>HARSCO</p>
+                      </td>
+                      <td>
+                          <p>Director - Human Resources</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Venkatesh Palabatla</p>
+                      </td>
+                      <td>
+                          <p>GMR Group</p>
+                      </td>
+                      <td>
+                          <p>Head - HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={6}>
+                          <p>21</p>
+                      </td>
+                      <td rowSpan={6}>
+                          <p>TrailBlazers</p>
+                      </td>
+                      <td rowSpan={6}>
+                          <p>25-Nov-17</p>
+                      </td>
+                      <td>
+                          <p>Dr. Anil K Khandelwal</p>
+                      </td>
+                      <td>
+                          <p>Bank of Baroda</p>
+                      </td>
+                      <td>
+                          <p>Thought Leader, Author, Member- Banks Board Bureau and Former CMD</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Jayanthi Sampathkumar</p>
+                      </td>
+                      <td>
+                          <p>Microsoft</p>
+                      </td>
+                      <td>
+                          <p>Guinness World Record Holder and Principal Engineering Manager</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Murali Subramanian</p>
+                      </td>
+                      <td>
+                          <p>Innovacx</p>
+                      </td>
+                      <td>
+                          <p>Former Group VP at Oracle Corporation; CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Aruna Preetam</p>
+                      </td>
+                      <td>
+                          <p>TechMahindra</p>
+                      </td>
+                      <td>
+                          <p>Global Compensation &amp; Benefits Leader</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Rekha Narendra</p>
+                      </td>
+                      <td>
+                          <p>Kantar</p>
+                      </td>
+                      <td>
+                          <p>HR Director ,Global Delivery Centres &amp; OT</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. L Prabhakar</p>
+                      </td>
+                      <td>
+                          <p>ITC Ltd.</p>
+                      </td>
+                      <td>
+                          <p>VP-HR Agribusiness Division</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>22</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Women in Supply Chain</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>15-Dec-17</p>
+                      </td>
+                      <td>
+                          <p>Ms. Divya Medar</p>
+                      </td>
+                      <td>
+                          <p>Snackerstreet Pvt. Ltd</p>
+                      </td>
+                      <td>
+                          <p>Chef Director</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Malathi Sridhar</p>
+                      </td>
+                      <td>
+                          <p>Dr.Reddy’s laboratories, Generics division</p>
+                      </td>
+                      <td>
+                          <p>Heading External Manufacturing Operations</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Lathaa Subramanian</p>
+                      </td>
+                      <td>
+                          <p>Inogent Laboratories Ltd (A GVK-BIO Company)</p>
+                      </td>
+                      <td>
+                          <p>Associate Director- SCM</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Shobha Dixit</p>
+                      </td>
+                      <td>
+                          <p>ALPLA India Pvt. Ltd</p>
+                      </td>
+                      <td>
+                          <p>Director</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Tanuja Abburi</p>
+                      </td>
+                      <td>
+                          <p>NTT Data</p>
+                      </td>
+                      <td>
+                          <p>Senior Director, HR,</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>23</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Dilemma of a Management Graduate</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>23-Jun-17</p>
+                      </td>
+                      <td>
+                          <p>Dr. Murali Padmanabhan</p>
+                      </td>
+                      <td>
+                          <p>Virtusa Polaris</p>
+                      </td>
+                      <td>
+                          <p>Sr Vice President - Global Head of Talent Development and India Head- Human Resources</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Sriram S.R.</p>
+                      </td>
+                      <td>
+                          <p>Director-HR</p>
+                      </td>
+                      <td>
+                          <p>Arcesium (D.E.Shaw)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Shameel Sharma</p>
+                      </td>
+                      <td>
+                          <p>Managing Director</p>
+                      </td>
+                      <td>
+                          <p>Kantar Group</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Neha Richharia</p>
+                      </td>
+                      <td>
+                          <p>Associate Director-HR</p>
+                      </td>
+                      <td>
+                          <p>Cognizant Technology Solutions</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Nihit Kumar Sharma</p>
+                      </td>
+                      <td>
+                          <p>Associate VP</p>
+                      </td>
+                      <td>
+                          <p>UBS AG</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>24</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>Industry expectations from management graduates</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>24-Jun-16</p>
+                      </td>
+                      <td>
+                          <p>Mr.Debashis Das</p>
+                      </td>
+                      <td>
+                          <p>Milagrow Human Tech &amp; President IMT Alumni Association</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Shuddhasattwa Das</p>
+                      </td>
+                      <td>
+                          <p>Gandour India</p>
+                      </td>
+                      <td>
+                          <p>National HR Head</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Krishna Prasad Omkar</p>
+                      </td>
+                      <td>
+                          <p>SumTotal Systems (Global Leader in HCM Application Development)</p>
+                      </td>
+                      <td>
+                          <p>Director HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Kiran Prasad Ivaturi</p>
+                      </td>
+                      <td>
+                          <p>ACT( Atria Convergence Technologies)</p>
+                      </td>
+                      <td>
+                          <p>GM &amp; Head HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Rajitha Singh</p>
+                      </td>
+                      <td>
+                          <p>Broadridge Financial Services</p>
+                      </td>
+                      <td>
+                          <p>Head HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={5}>
+                          <p>25</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>TrailBlazers:Learning from the Best</p>
+                      </td>
+                      <td rowSpan={5}>
+                          <p>18-Dec-16</p>
+                      </td>
+                      <td>
+                          <p>Ms.Meera Shenoy</p>
+                      </td>
+                      <td>
+                          <p>Youth4Jobs</p>
+                      </td>
+                      <td>
+                          <p>Social change maker, Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.S P Reddy</p>
+                      </td>
+                      <td>
+                          <p>EnGenius</p>
+                      </td>
+                      <td>
+                          <p>Invester &amp; Philanthropist, Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Karunakara M Reddy</p>
+                      </td>
+                      <td>
+                          <p>Smaat India &amp; WalkForWater</p>
+                      </td>
+                      <td>
+                          <p>Founder</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Srikanth Bolla</p>
+                      </td>
+                      <td>
+                          <p>Bollant Industries</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.P.Madhava Reddy</p>
+                      </td>
+                      <td>
+                          <p></p>
+                      </td>
+                      <td>
+                          <p>Social Media Awareness crusader</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={8}>
+                          <p>26</p>
+                      </td>
+                      <td rowSpan={8}>
+                          <p>Covering Public Policy and Business Management Imperatives and Challenges</p>
+                      </td>
+                      <td rowSpan={8}>
+                          <p>16-Dec-15</p>
+                      </td>
+                      <td>
+                          <p>Dr.P.K.Mohanty</p>
+                      </td>
+                      <td>
+                          <p>Former Chief Secretary, Government of A.P</p>
+                      </td>
+                      <td>
+                          <p>I.A.S (retired)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr.K.Lakshminarayana</p>
+                      </td>
+                      <td>
+                          <p>Director, Andhra Pradesh Skill Development Corporation</p>
+                      </td>
+                      <td>
+                          <p>I.A.S (retired)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Shri.Mohammed Abid</p>
+                      </td>
+                      <td>
+                          <p>Tata Institute of Social Sciences, Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>I.A.S</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr.M.Gopinath Reddy</p>
+                      </td>
+                      <td>
+                          <p>CESS Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>Head, Division for Sustainable Development Studies</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Tanmay Das</p>
+                      </td>
+                      <td>
+                          <p>KSK Energy Ventrues, Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>Director</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Chirantan Chatteree</p>
+                      </td>
+                      <td>
+                          <p>Virtusa, Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>Director</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr.Alok Mishra</p>
+                      </td>
+                      <td>
+                          <p>University of Hyderabad</p>
+                      </td>
+                      <td>
+                          <p></p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr.Harish Srivastsava</p>
+                      </td>
+                      <td>
+                          <p>Ramky Foundation</p>
+                      </td>
+                      <td>
+                          <p>Head, Planning &amp; Communication</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>27</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Women in Manufacturing</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>16-Sep-15</p>
+                      </td>
+                      <td>
+                          <p>Ms. Alpa Gupta Mishra</p>
+                      </td>
+                      <td>
+                          <p>Tata Projects</p>
+                      </td>
+                      <td>
+                          <p>General Manager of Future Ready Team</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms. Geeta Jyothi</p>
+                      </td>
+                      <td>
+                          <p>ITW Chemin a US MNC into manufacturing of Specialty Chemicals</p>
+                      </td>
+                      <td>
+                          <p>Senior Manager</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Krishna Sai</p>
+                      </td>
+                      <td>
+                          <p>Dr. Reddy’s Lab</p>
+                      </td>
+                      <td>
+                          <p>Director, HR-FTO</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr. Sourabh Bhattacharya</p>
+                      </td>
+                      <td>
+                          <p>IMT Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>Professor of Operations Management</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>28</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Industry expectations from management graduates.</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>26-Jun-15</p>
+                      </td>
+                      <td>
+                          <p>Mr. Padmanabhan S</p>
+                      </td>
+                      <td>
+                          <p>Dr Reddy Laboratories</p>
+                      </td>
+                      <td>
+                          <p>Director, HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Vipul Singh</p>
+                      </td>
+                      <td>
+                          <p>ADP</p>
+                      </td>
+                      <td>
+                          <p>Head, HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Swaraj Mishra</p>
+                      </td>
+                      <td>
+                          <p>FactSet Research Systems India (Pvt) Limited</p>
+                      </td>
+                      <td>
+                          <p>Associate Director, HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr. Rajiv Oza</p>
+                      </td>
+                      <td>
+                          <p>Biological E Ltd</p>
+                      </td>
+                      <td>
+                          <p>VP &amp; Global Head, HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={3}>
+                          <p>29</p>
+                      </td>
+                      <td rowSpan={3}>
+                          <p>Industry Expectations from B-School Graduates</p>
+                      </td>
+                      <td rowSpan={3}>
+                          <p>15-Mar-14</p>
+                      </td>
+                      <td>
+                          <p>Dr.Kiranmayi Pendyala</p>
+                      </td>
+                      <td>
+                          <p>Advanced Micro Devices (AMD)</p>
+                      </td>
+                      <td>
+                          <p>Head HR-India</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Venkat Tulasi</p>
+                      </td>
+                      <td>
+                          <p>CSC India</p>
+                      </td>
+                      <td>
+                          <p>Vendor Manager</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Dr.Srinagesh Chatarajupalli</p>
+                      </td>
+                      <td>
+                          <p>Infosys</p>
+                      </td>
+                      <td>
+                          <p>Principal and Hyderabad STP, ETA Manager</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>30</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>Grooming Next-Gen Leaders-Challengers &amp; Imperatives</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>30-Aug-13</p>
+                      </td>
+                      <td>
+                          <p>Ms.Uma Rao</p>
+                      </td>
+                      <td>
+                          <p>Mars India</p>
+                      </td>
+                      <td>
+                          <p>Director-HR (people &amp; Organization)</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Preeti S Bhargava</p>
+                      </td>
+                      <td>
+                          <p>India Bulls</p>
+                      </td>
+                      <td>
+                          <p>AVP Learning and Development</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Krishna Kishore</p>
+                      </td>
+                      <td>
+                          <p>GreenKO</p>
+                      </td>
+                      <td>
+                          <p>VP-HR &amp; IR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.K V Pratap</p>
+                      </td>
+                      <td>
+                          <p>Mahindra satyam, Hyderabad</p>
+                      </td>
+                      <td>
+                          <p>Sr.Consultant</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td rowSpan={4}>
+                          <p>31</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>What students should focus on in the two years at B-School</p>
+                      </td>
+                      <td rowSpan={4}>
+                          <p>28-Jun-13</p>
+                      </td>
+                      <td>
+                          <p>Mr.Chirantan Chatteree</p>
+                      </td>
+                      <td>
+                          <p>Virtusa</p>
+                      </td>
+                      <td>
+                          <p>Director &amp; Client Partner</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Geeta Rao Goti</p>
+                      </td>
+                      <td>
+                          <p>Husys Consulting Pvt Ltd</p>
+                      </td>
+                      <td>
+                          <p>Director</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Ms.Nirmala Garg</p>
+                      </td>
+                      <td>
+                          <p>Sutherland Global Services</p>
+                      </td>
+                      <td>
+                          <p>VP- HR</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <p>Mr.Vijaya Pasupulati</p>
+                      </td>
+                      <td>
+                          <p>Winzest Eductech Private Limited (Moderator)</p>
+                      </td>
+                      <td>
+                          <p>CEO</p>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <div className="table-responsive" align="center">
+          <table className="table table-striped">
+              <tbody>
+                  <tr>
+                      <td>
+                          <br />
+                      </td>
+                      <td>
+                          <ul>
+                              <li>
+                                  <p>MoUs with Industries (Minimum 3)</p>
+                              </li>
+                          </ul>
+                      </td>
+                      <td>
+                          <p>Yes</p>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+            {/* <div className="table-responsive align-center">
               <table className="table table-striped">
                 <tbody>
                   <tr>
@@ -9502,7 +11984,7 @@ const MandatoryDisclosure = () => {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -9515,9 +11997,9 @@ const MandatoryDisclosure = () => {
           <PlacementAlliances />
         </section>
       </section>
-    <style
-  dangerouslySetInnerHTML={{
-    __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         .swiper-slide .item {
           background: #ffffff;
           padding: 30px;
@@ -9727,9 +12209,8 @@ const MandatoryDisclosure = () => {
           white-space: normal;
         }
     `,
-  }}
-/>
-
+        }}
+      />
     </>
   );
 };
