@@ -2708,7 +2708,7 @@ const MandatoryDisclosure = () => {
                       <p>Dates for announcing final results</p>
                     </td>
                     <td>
-                      <p>April 19, 2025</p>
+                      <p>June 19, 2025</p>
                     </td>
                   </tr>
                   <tr>
