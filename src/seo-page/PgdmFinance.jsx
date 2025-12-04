@@ -54,7 +54,7 @@ export default function PGDMFinanceSection() {
           __html: `
       /* Faculty Hero */
       .faculty-hero {
-        background: url("/media/banners/pgdmfinance.webp") center/cover no-repeat;
+        background: url("/media/banners/pgdmmarketing.webp") center/cover no-repeat;
         position: relative;
         height: 60vh;
       }
