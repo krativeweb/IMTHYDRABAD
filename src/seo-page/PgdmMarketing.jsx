@@ -538,10 +538,10 @@ export default function PGDMMarketingSection() {
                   role="tabpanel"
                   aria-labelledby="competency-tab"
                 >
-                  <div class="container my-5">
-                    <div class="table-responsive">
-                      <table class="table table-bordered table-striped">
-                        <thead class="thead-dark">
+                  <div className="container my-5">
+                    <div className="table-responsive">
+                      <table className="table table-bordered table-striped">
+                        <thead className="thead-dark">
                           <tr>
                             <th scope="col">Competency Goal</th>
                             <th className="text-center" scope="col">
@@ -554,17 +554,17 @@ export default function PGDMMarketingSection() {
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="align-middle">
+                            <td className="align-middle">
                               <strong>CG 1. Business Acumen</strong>
                             </td>
-                            <td class="align-middle">
+                            <td className="align-middle">
                               Graduating students should demonstrate proficiency
                               in applying core business concepts and integrate
                               knowledge from various business disciplines to
                               analyze and solve global business challenges.
                             </td>
                             <td>
-                              <ul class="list-unstyled mb-0">
+                              <ul className="list-unstyled mb-0">
                                 <li>
                                   <strong>PLO 1.1.</strong>Demonstrate In-depth
                                   and contemporary knowledge of business
@@ -580,16 +580,16 @@ export default function PGDMMarketingSection() {
                             </td>
                           </tr>
                           <tr>
-                            <td class="align-middle">
+                            <td className="align-middle">
                               <strong>CG 2. Leadership</strong>
                             </td>
-                            <td class="align-middle">
+                            <td className="align-middle">
                               Graduating students should have the capacity to
                               lead and inspire others and the capability to make
                               strategic decisions
                             </td>
                             <td>
-                              <ul class="list-unstyled mb-0">
+                              <ul className="list-unstyled mb-0">
                                 <li>
                                   <strong>PLO 2.1.</strong> Demonstrate
                                   interpersonal skills to communicate ideas and
@@ -604,16 +604,16 @@ export default function PGDMMarketingSection() {
                             </td>
                           </tr>
                           <tr>
-                            <td class="align-middle">
+                            <td className="align-middle">
                               <strong>CG 3. Responsibility</strong>
                             </td>
-                            <td class="align-middle">
+                            <td className="align-middle">
                               Graduating students should be committed to
                               responsible and sustainable business practices
                               that balance stakeholder priorities
                             </td>
                             <td>
-                              <ul class="list-unstyled mb-0">
+                              <ul className="list-unstyled mb-0">
                                 <li>
                                   <strong>PLO 3.1.</strong> Demonstrate
                                   sensitivity towards environmental and social
