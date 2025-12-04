@@ -550,6 +550,109 @@ export default function Careers() {
                           Institute of Management Technology Hyderabad invites
                           applications for the following non-teaching positions:
                         </p>
+                        <div className="mb-5">
+                          <h5>
+                            Assistant Manager / Manager – Corporate Relations
+                            &amp; Placements
+                          </h5>
+
+                          {/* Function */}
+                          <p className="mb-3">
+                            <b>Function:</b>
+                          </p>
+                          <p className="mb-3">
+                            The Manager – Corporate Relations plays a key role
+                            in building and maintaining relationships between
+                            IMT Hyderabad and the corporate sector, ensuring
+                            strong placement relationships and industry
+                            engagement.
+                          </p>
+
+                          {/* Job Description */}
+                          <p className="mb-3">
+                            <b>Job Description:</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Explore opportunities for student placements by
+                                monitoring summer &amp; final recruitments by
+                                corporates and convincing them to visit the
+                                campus.
+                              </li>
+                              <li>
+                                Continuously improve placement record in terms
+                                of recruiters, job profiles, compensation, and
+                                corporate brand.
+                              </li>
+                              <li>
+                                Provide timely inputs such as corporate
+                                contacts, process dates, communication, job
+                                descriptions, and offer documents.
+                              </li>
+                              <li>
+                                Keep Head – Corporate Relations and management
+                                updated on placement status.
+                              </li>
+                              <li>
+                                Collect feedback from corporates and proactively
+                                implement improvements.
+                              </li>
+                              <li>
+                                Support events involving corporate presence such
+                                as panel discussions, conferences, practitioner
+                                sessions, and convocation.
+                              </li>
+                              <li>
+                                Onboard new recruiters offering competitive CTC
+                                packages aligned with IMT standards.
+                              </li>
+                              <li>
+                                Maintain strong alumni relationships to support
+                                placement initiatives.
+                              </li>
+                            </ul>
+                          </div>
+
+                          {/* Key Skills */}
+                          <p className="mb-3">
+                            <b>Key Skills:</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>Corporate relationship building</li>
+                              <li>
+                                Strong communication and presentation skills
+                              </li>
+                              <li>
+                                Understanding and empathy towards student needs
+                              </li>
+                              <li>
+                                Inter-departmental coordination and teamwork
+                              </li>
+                              <li>Timely and effective reporting</li>
+                            </ul>
+                          </div>
+
+                          {/* Qualification */}
+                          <p className="mb-3">
+                            <b>Qualification:</b>
+                          </p>
+                          <p className="mb-3">
+                            Graduation in any discipline. Post-Graduation in
+                            Management will be given preference.
+                          </p>
+
+                          {/* Salary */}
+                          <p className="mb-3">
+                            <b>Salary, Allowances &amp; Benefits:</b>
+                          </p>
+                          <p>
+                            As per IMT norms corresponding with qualifications,
+                            experience, and interview performance. Salary will
+                            not be a constraint for deserving candidates.
+                          </p>
+                        </div>
 
                         {/* Executive – Inventory & Administration */}
                         <div className="mb-5">
