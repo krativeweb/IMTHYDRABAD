@@ -32,6 +32,7 @@ const MandatoryDisclosure = () => {
             position: "relative",
             backgroundSize: "cover",
             height: "50vh",
+              backgroundPosition: "center !important"
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Mandatory Disclosure</h2>
@@ -12030,6 +12031,7 @@ const MandatoryDisclosure = () => {
           position: relative;
           background-size: cover;
           height: 60vh !important;
+            background-position: center !important;
         }
         .faculty-hero::before {
           content: "";

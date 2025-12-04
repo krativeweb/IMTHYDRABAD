@@ -59,6 +59,7 @@ export default function FacultyExchange() {
           position: relative;
           background-size: cover !important;
           height: 60vh;
+            background-position: center !important;
         }
         .faculty-hero::before {
           content: '';
@@ -143,6 +144,7 @@ export default function FacultyExchange() {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
+              backgroundPosition: "center !important"
           }}
         >
           <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">

@@ -145,6 +145,7 @@ const InternationalAssociations = () => {
         background-size: cover;
         height: 60vh;
         position: relative;
+          background-position: center !important;
       }
 
       .hero-overlay {

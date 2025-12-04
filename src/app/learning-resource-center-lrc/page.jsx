@@ -565,6 +565,7 @@ Our Learning Resource Centre integrates digital depth with academic richness for
         background-size: cover;
         height: 60vh;
         position: relative;
+          background-position: center !important;
       }
 
       .hero-overlay {

@@ -248,6 +248,7 @@ const CII = () => {
         background-size: cover;
         height: 60vh !important;
         position: relative;
+          background-position: center !important;
       }
 
       .hero-overlay {

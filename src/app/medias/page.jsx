@@ -63,6 +63,7 @@ export default function MediaSection() {
           position: relative;
           background-size: cover;
           height: 60vh;
+            background-position: center !important;
         }
 
         .faculty-hero::before {

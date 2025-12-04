@@ -148,6 +148,7 @@ export default function FacultyProfile({ params }) {
           background-size: cover !important;
           height: 60vh;
           position: relative;
+            background-position: center !important;
         }
         .faculty-hero::before {
           content: "";

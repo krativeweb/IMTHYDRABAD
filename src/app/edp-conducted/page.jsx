@@ -160,6 +160,7 @@ export default function EDPConducted() {
           position: relative;
           background-size: cover;
           height: 60vh;
+            background-position: center !important;
         }
         .faculty-hero::before {
           content: '';
@@ -261,6 +262,7 @@ export default function EDPConducted() {
             background: "url('/media/hero.webp')",
             position: "relative",
             backgroundSize: "cover",
+            backgroundPosition: "center !important",
             height: "60vh",
           }}
         >

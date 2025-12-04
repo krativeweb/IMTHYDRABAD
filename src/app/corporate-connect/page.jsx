@@ -497,6 +497,7 @@ export default function CorporateConnect() {
           position: relative;
           background-size: cover;
           height: 60vh;
+            background-position: center !important;
         }
         .faculty-hero::before {
           content: '';
@@ -612,6 +613,7 @@ export default function CorporateConnect() {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
+              backgroundPosition: "center !important"
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Corporate Connect</h2>

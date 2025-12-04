@@ -42,6 +42,7 @@ export default function FAQ() {
         position: relative;
         background-size: cover !important;
         height: 60vh;
+          background-position: center !important;
       }
       .faculty-hero::before {
         content: "";

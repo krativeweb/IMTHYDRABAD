@@ -515,6 +515,7 @@ Our summer internships integrate classroom knowledge with real-world practice, b
         background-size: cover;
         height: 60vh;
         position: relative;
+          background-position: center !important;
       }
 
       .hero-overlay {

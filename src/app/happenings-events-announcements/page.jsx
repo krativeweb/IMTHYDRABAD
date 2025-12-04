@@ -144,6 +144,7 @@ const HappeningsPage = () => {
         position: relative;
         background-size: cover;
         height: 60vh;
+          background-position: center !important;
       }
       .faculty-hero::before {
         content: "";
@@ -271,6 +272,7 @@ height: 80vh;
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
+              backgroundPosition: "center !important"
           }}
         >
           <h2 className="display-5 fw-bold mb-2">

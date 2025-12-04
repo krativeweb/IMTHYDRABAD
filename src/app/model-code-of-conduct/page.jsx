@@ -49,6 +49,7 @@ export default function ModelCodeSection() {
         background: url("/media/banners/pgdmfinance.webp") center/cover no-repeat;
         position: relative;
         height: 60vh;
+          background-position: center !important;
       }
       .faculty-hero::before {
         content: "";

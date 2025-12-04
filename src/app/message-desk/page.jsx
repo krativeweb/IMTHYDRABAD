@@ -37,6 +37,7 @@ export default function LeadershipSection() {
           position: relative;
           background-size: cover;
           height: 60vh;
+            background-position: center !important;
         }
 
         .faculty-hero::before {

@@ -74,6 +74,7 @@ export default function FinancialStatements() {
           background: url("/media/banners/aboutus.webp") center/cover no-repeat;
           position: relative;
           height: 60vh;
+            background-position: center !important;
         }
         .faculty-hero::before {
           content: "";
