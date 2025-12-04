@@ -194,7 +194,7 @@ export default function PGDMLSCMSection() {
         className="faculty-hero text-center text-white py-5"
         data-aos="fade-up"
       >
-        <h2 className="display-5 fw-bold mb-2">PGDM LSCSM</h2>
+        <h2 className="display-5 fw-bold mb-2">PGDM LSCM</h2>
         <p className="text-white">
           Building problem-solvers for a connected and efficient world. <br />
           The ISCM specialization develops expertise in operations, logistics,
