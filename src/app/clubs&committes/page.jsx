@@ -1,37 +1,43 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useEffect, useRef } from 'react';
+import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function ClubsAndCommittees() {
   // Data embedded in the same file
   const clubData = {
     1: {
-      title: 'ALTIUS – THE SPORTS CLUB OF IMT-HYDERABAD',
+      title: "ALTIUS – THE SPORTS CLUB OF IMT-HYDERABAD",
       content: `<p><strong>Team Altius</strong> aims at bringing together people from different cultures and mindsets with the spirit of Sportsmanship. Altius has always tried to play a role in establishing a proper work-life balance in studies and sports which refreshes the minds of students, to continue the zeal for sports and to raise a bar in the years to come.</p>
          <h6>Flagship Events</h6>
          <ul>
            <li>IMT Hyderabad League (IHL) – Cricket, Football, Basketball, Volleyball, Table Tennis, Mini Marathon</li>
          </ul>`,
-      img: '/media/clubs&committes/1club.png',
-      
+      img: "/media/clubs&committes/1club.png",
+
       links: [
-        { icon: 'fab fa-instagram', url: 'https://www.instagram.com/altius_imthyd/' },
-        { icon: 'fab fa-facebook', url: 'https://www.facebook.com/AltiusIMTH/' },
+        {
+          icon: "fab fa-instagram",
+          url: "https://www.instagram.com/altius_imthyd/",
+        },
+        {
+          icon: "fab fa-facebook",
+          url: "https://www.facebook.com/AltiusIMTH/",
+        },
       ],
-       mentor: { img: './media/clubs&committes/data/Altius/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/Altius/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Altius/1.jpg' },
-        {  img: './media/clubs&committes/data/Altius/2.jpg' },
-        {  img: './media/clubs&committes/data/Altius/3.jpg' },
-        {  img: './media/clubs&committes/data/Altius/4.jpg' },
-        {  img: './media/clubs&committes/data/Altius/5.jpg' },
-        {  img: './media/clubs&committes/data/Altius/6.jpg' },
-        {  img: './media/clubs&committes/data/Altius/7.jpg' },
+        { img: "./media/clubs&committes/data/Altius/1.webp" },
+        { img: "./media/clubs&committes/data/Altius/2.webp" },
+        { img: "./media/clubs&committes/data/Altius/3.webp" },
+        { img: "./media/clubs&committes/data/Altius/4.webp" },
+        { img: "./media/clubs&committes/data/Altius/5.webp" },
+        { img: "./media/clubs&committes/data/Altius/6.webp" },
+        { img: "./media/clubs&committes/data/Altius/7.webp" },
       ],
     },
     2: {
-      title: 'Communication Wing',
+      title: "Communication Wing",
       content: `<p>The <strong>Communication Wing</strong> is an amalgamation of the different skills that are needed to enhance one's communication. From writing to public speaking, we ensure that there is a fun aspect to effective interaction, as well as to eliminate the fear that people hold when it comes to communicating thoughts and ideas publically.</p>
          <h6>Objective</h6>
          <p>To build and improve effective communication and social skills & enhance the productivity and creative abilities of fellow IMT-ians by means of various innovative events, platforms, and exposure.</p>
@@ -46,42 +52,48 @@ export default function ClubsAndCommittees() {
          <ul><li>Open Mic Nights</li><li>Big Fight: Debate</li><li>Pantomath</li><li>League of Nations</li></ul>
          <h6>Initiatives in the pipeline</h6>
          <ul><li>Toastmasters</li><li>TTT: Terribly Tiny Tales</li></ul>`,
-      img: '/media/clubs&committes/2club.png',
+      img: "/media/clubs&committes/2club.png",
       links: [
-        { icon: 'fab fa-instagram', url: 'https://www.instagram.com/communication_wing/' },
-        { icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/company/communication-wing-imth/' },
+        {
+          icon: "fab fa-instagram",
+          url: "https://www.instagram.com/communication_wing/",
+        },
+        {
+          icon: "fab fa-linkedin",
+          url: "https://www.linkedin.com/company/communication-wing-imth/",
+        },
       ],
-      mentor: { img: './media/clubs&committes/data/CommWing/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/CommWing/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/CommWing/1.jpg' },
-        {  img: './media/clubs&committes/data/CommWing/2.jpg' },
-        {  img: './media/clubs&committes/data/CommWing/3.jpg' },
-        {  img: './media/clubs&committes/data/CommWing/1.jpg' },
-        {  img: './media/clubs&committes/data/CommWing/5.jpg' },
-        {  img: './media/clubs&committes/data/CommWing/6.jpg' },
-        {  img: './media/clubs&committes/data/CommWing/7.jpg' },
+        { img: "./media/clubs&committes/data/CommWing/1.webp" },
+        { img: "./media/clubs&committes/data/CommWing/2.webp" },
+        { img: "./media/clubs&committes/data/CommWing/3.webp" },
+        { img: "./media/clubs&committes/data/CommWing/1.webp" },
+        { img: "./media/clubs&committes/data/CommWing/5.webp" },
+        { img: "./media/clubs&committes/data/CommWing/6.webp" },
+        { img: "./media/clubs&committes/data/CommWing/7.webp" },
       ],
     },
     3: {
-      title: 'Antragna',
+      title: "Antragna",
       content: `<p>A PGDM programme doesn't stop at the classroom, especially when the Campus is as diverse as ours. Antragna - the cultural club of IMT Hyderabad is all about bringing out the latent cultural expression inside every student. Apart from celebrating major festivals, Antragna's objective is to promote cultural creativity across performing and visual arts. We facilitate festival celebrations, stage productions, street plays and other cultural showcases.</p>
          <h6>Objectives</h6>
          <p>To develop the spirit and attitude among students to explore experiential and innovative ways of learning the new-age business intricacies & strategies through culture and performance.</p>`,
-      img: '/media/clubs&committes/3club.png',
+      img: "/media/clubs&committes/3club.png",
       links: [],
-        mentor: { img: './media/clubs&committes/data/Antragna/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/Antragna/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Antragna/1.jpg' },
-        {  img: './media/clubs&committes/data/Antragna/2.jpg' },
-        {  img: './media/clubs&committes/data/Antragna/3.jpeg' },
-        {  img: './media/clubs&committes/data/Antragna/4.jpeg' },
-        {  img: './media/clubs&committes/data/Antragna/5.jpg' },
-        {  img: './media/clubs&committes/data/Antragna/6.png' },
-        {  img: './media/clubs&committes/data/Antragna/7.jpg' },
+        { img: "./media/clubs&committes/data/Antragna/1.webp" },
+        { img: "./media/clubs&committes/data/Antragna/2.webp" },
+        { img: "./media/clubs&committes/data/Antragna/3.webp" },
+        { img: "./media/clubs&committes/data/Antragna/4.webp" },
+        { img: "./media/clubs&committes/data/Antragna/5.webp" },
+        { img: "./media/clubs&committes/data/Antragna/6.webp" },
+        { img: "./media/clubs&committes/data/Antragna/7.webp" },
       ],
     },
     4: {
-      title: 'Athena',
+      title: "Athena",
       content: `<p><strong>Athena</strong> is a student-driven club that provides a platform for exploring strategy and business thinking. It collaborates with corporates to bring live projects, bridging academics and industry expectations.</p>
          <h6>Events & Initiatives</h6>
          <ul>
@@ -102,21 +114,21 @@ export default function ClubsAndCommittees() {
          <p>Middle Row (L-R): Anush Kumar, Lavish Jain</p>
          <p>Lowest Row (L-R): Akshita Agarwal, Harsh Dhoot, Sakshi Mundhra, Sowmya Alur, Yash Shrivastava</p>
          <p><strong>Co-ordinators:</strong> Pranay Jain & Sowmya Alur</p>`,
-      img: '/media/clubs&committes/4club.png',
+      img: "/media/clubs&committes/4club.png",
       links: [],
-       mentor: { img: './media/clubs&committes/data/Athena/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/Athena/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Athena/1.jpeg' },
-        {  img: './media/clubs&committes/data/Athena/2.jpeg' },
-        {  img: './media/clubs&committes/data/Athena/3.jpeg' },
-        {  img: './media/clubs&committes/data/Athena/4.jpeg' },
-        {  img: './media/clubs&committes/data/Athena/5.jpeg' },
-        {  img: './media/clubs&committes/data/Athena/6.jpeg' },
-        {  img: './media/clubs&committes/data/Athena/7.jpeg' },
+        { img: "./media/clubs&committes/data/Athena/1.webp" },
+        { img: "./media/clubs&committes/data/Athena/2.webp" },
+        { img: "./media/clubs&committes/data/Athena/3.webp" },
+        { img: "./media/clubs&committes/data/Athena/4.webp" },
+        { img: "./media/clubs&committes/data/Athena/5.webp" },
+        { img: "./media/clubs&committes/data/Athena/6.webp" },
+        { img: "./media/clubs&committes/data/Athena/7.webp" },
       ],
     },
     5: {
-      title: 'Mercatus Mantra',
+      title: "Mercatus Mantra",
       content: `<p><strong>Objective:</strong> To bring people together and explore marketing aspects that make one industry-fit, using unique and engaging initiatives.</p>
          <p><strong>About the Club:</strong> Mercatus Mantra applies marketing concepts to practical events and runs year-round initiatives to teach branding, pricing, positioning, and marketing strategy.</p>
          <h6>What we intend to achieve</h6>
@@ -136,21 +148,21 @@ export default function ClubsAndCommittees() {
            <li>The Riddler’s Anarchy</li>
            <li>Mercazine (Annual Marketing Magazine)</li>
          </ul>`,
-      img: '/media/clubs&committes/5club.png',
+      img: "/media/clubs&committes/5club.png",
       links: [],
-       mentor: { img: './media/clubs&committes/data/Mercatus/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/Mercatus/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Mercatus/1.jpg' },
-        {  img: './media/clubs&committes/data/Mercatus/2.jpg' },
-        {  img: './media/clubs&committes/data/Mercatus/3.jpg' },
-        {  img: './media/clubs&committes/data/Mercatus/4.jpg' },
-        {  img: './media/clubs&committes/data/Mercatus/5.jpg' },
-        {  img: './media/clubs&committes/data/Mercatus/6.jpg' },
-        {  img: './media/clubs&committes/data/Mercatus/7.jpg' },
+        { img: "./media/clubs&committes/data/Mercatus/1.webp" },
+        { img: "./media/clubs&committes/data/Mercatus/2.webp" },
+        { img: "./media/clubs&committes/data/Mercatus/3.webp" },
+        { img: "./media/clubs&committes/data/Mercatus/4.webp" },
+        { img: "./media/clubs&committes/data/Mercatus/5.webp" },
+        { img: "./media/clubs&committes/data/Mercatus/6.webp" },
+        { img: "./media/clubs&committes/data/Mercatus/7.webp" },
       ],
     },
     6: {
-      title: 'Opuskriya',
+      title: "Opuskriya",
       content: `<p>Opuskriya is the Operations Club of IMT-Hyderabad. Its objective is to provide a platform for interaction between students and industry leaders in Operations Management. The club organises operations-based case study events and business simulations.</p>
          <h6>Flagship & Major Events</h6>
          <ul>
@@ -163,21 +175,26 @@ export default function ClubsAndCommittees() {
            <li>Six Sigma Green Belt Certification (in association with KPMG)</li>
            <li>SCM EXE Certification (in association with CII)</li>
          </ul>`,
-      img: '/media/clubs&committes/6club.jpg',
-      links: [{ icon: 'fab fa-facebook', url: 'https://www.facebook.com/OpuskriyaIMT/' }],
-      mentor: { img: './media/clubs&committes/data/Opuskriya/all.jpg' },
+      img: "/media/clubs&committes/6club.jpg",
+      links: [
+        {
+          icon: "fab fa-facebook",
+          url: "https://www.facebook.com/OpuskriyaIMT/",
+        },
+      ],
+      mentor: { img: "./media/clubs&committes/data/Opuskriya/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Opuskriya/6.jpeg' },
-        {  img: './media/clubs&committes/data/Opuskriya/2.jpeg' },
-        {  img: './media/clubs&committes/data/Opuskriya/5.jpeg' },
-        {  img: './media/clubs&committes/data/Opuskriya/4.jpg' },
-        {  img: './media/clubs&committes/data/Opuskriya/1.jpg' },
-        {  img: './media/clubs&committes/data/Opuskriya/3.jpg' },
-        {  img: './media/clubs&committes/data/Opuskriya/7.jpeg' },
+        { img: "./media/clubs&committes/data/Opuskriya/6.webp" },
+        { img: "./media/clubs&committes/data/Opuskriya/2.webp" },
+        { img: "./media/clubs&committes/data/Opuskriya/5.webp" },
+        { img: "./media/clubs&committes/data/Opuskriya/4.webp" },
+        { img: "./media/clubs&committes/data/Opuskriya/1.webp" },
+        { img: "./media/clubs&committes/data/Opuskriya/3.webp" },
+        { img: "./media/clubs&committes/data/Opuskriya/7.webp" },
       ],
     },
     7: {
-      title: 'Prarambh',
+      title: "Prarambh",
       content: `<p>Prarambh (E-Cell) promotes entrepreneurial spirit via events that foster innovation and startup skills.</p>
          <h6>Events</h6>
          <ul>
@@ -186,25 +203,34 @@ export default function ClubsAndCommittees() {
            <li><strong>Ortus</strong> – storytelling platform with entrepreneur talks</li>
            <li><strong>TiE GRAD</strong> – entrepreneurial workshops in association with TiE</li>
          </ul>`,
-      img: '/media/clubs&committes/7club.jpg',
+      img: "/media/clubs&committes/7club.jpg",
       links: [
-        { icon: 'fab fa-instagram', url: 'https://www.instagram.com/ecell_imthyderabad/' },
-        { icon: 'fas fa-envelope', url: 'mailto:prarambh.ecell@imthyderabad.edu.in' },
-        { icon: 'fab fa-facebook', url: 'https://www.facebook.com/ecell.imthyd/' },
+        {
+          icon: "fab fa-instagram",
+          url: "https://www.instagram.com/ecell_imthyderabad/",
+        },
+        {
+          icon: "fas fa-envelope",
+          url: "mailto:prarambh.ecell@imthyderabad.edu.in",
+        },
+        {
+          icon: "fab fa-facebook",
+          url: "https://www.facebook.com/ecell.imthyd/",
+        },
       ],
-       mentor: { img: './media/clubs&committes/data/Prarambh/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/Prarambh/1.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
-        {  img: './media/clubs&committes/data/Prarambh/1.jpg' },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
+        { img: "./media/clubs&committes/data/Prarambh/all.webp" },
       ],
     },
     8: {
-      title: 'Tassavur',
+      title: "Tassavur",
       content: `<p><strong>Objective:</strong> Tassavur (Imagination) was formed in 2018 to give a platform for creative expression — art, photography, filmmaking, poetry and more.</p>
          <h6>How we work</h6>
          <p>We create a warm environment through events that channel ideas into tangible creative outcomes.</p>
@@ -222,27 +248,33 @@ export default function ClubsAndCommittees() {
            <li>Nazaria (single-light photography)</li>
            <li>Product Design Workshop (with Kilkaari & Co.)</li>
          </ul>`,
-      img: '/media/clubs&committes/8club.png',
+      img: "/media/clubs&committes/8club.png",
       links: [
-        { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tassavurimthyd/' },
-        { icon: 'fab fa-facebook', url: 'https://www.facebook.com/TassavurIMTHyd/' },
+        {
+          icon: "fab fa-instagram",
+          url: "https://www.instagram.com/tassavurimthyd/",
+        },
+        {
+          icon: "fab fa-facebook",
+          url: "https://www.facebook.com/TassavurIMTHyd/",
+        },
       ],
-       mentor: { img: './media/clubs&committes/data/Tassavur/all.jpg' },
+      mentor: { img: "./media/clubs&committes/data/Tassavur/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Tassavur/1.jpg' },
-        {  img: './media/clubs&committes/data/Tassavur/2.jpg' },
-        {  img: './media/clubs&committes/data/Tassavur/3.jpg' },
-        {  img: './media/clubs&committes/data/Tassavur/4.jpg' },
-        {  img: './media/clubs&committes/data/Tassavur/5.jpg' },
-        {  img: './media/clubs&committes/data/Tassavur/2.jpg' },
-        {  img: './media/clubs&committes/data/Tassavur/4.jpg' },
+        { img: "./media/clubs&committes/data/Tassavur/1.webp" },
+        { img: "./media/clubs&committes/data/Tassavur/2.webp" },
+        { img: "./media/clubs&committes/data/Tassavur/3.webp" },
+        { img: "./media/clubs&committes/data/Tassavur/4.webp" },
+        { img: "./media/clubs&committes/data/Tassavur/5.webp" },
+        { img: "./media/clubs&committes/data/Tassavur/2.webp" },
+        { img: "./media/clubs&committes/data/Tassavur/4.webp" },
       ],
     },
   };
 
   const committeeData = {
     1: {
-      title: 'Media Relations Committee',
+      title: "Media Relations Committee",
       content: `<p>The Media Relations Committee (MRC) is responsible for communicating campus news externally. Known as the "face of IMT-H", MRC publishes content and coordinates campus activities via six teams.</p>
          <h6>The 6 cohorts & roles</h6>
          <ul>
@@ -253,20 +285,20 @@ export default function ClubsAndCommittees() {
            <li><strong>Photography:</strong> Captures key campus moments in events.</li>
            <li><strong>Press Release:</strong> Shares stories and interviews with media outlets.</li>
          </ul>`,
-      img: '/media/clubs&committes/1comm.jpeg',
-         mentor: { img: './media/clubs&committes/data/MRC/all.jpeg' },
+      img: "/media/clubs&committes/1comm.jpeg",
+      mentor: { img: "./media/clubs&committes/data/MRC/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/MRC/1.jpg' },
-        {  img: './media/clubs&committes/data/MRC/2.jpeg' },
-        {  img: './media/clubs&committes/data/MRC/3.jpg' },
-        {  img: './media/clubs&committes/data/MRC/4.jpeg' },
-        {  img: './media/clubs&committes/data/MRC/5.jpg' },
-        {  img: './media/clubs&committes/data/MRC/6.jpeg' },
-        {  img: './media/clubs&committes/data/MRC/7.jpg' },
+        { img: "./media/clubs&committes/data/MRC/1.webp" },
+        { img: "./media/clubs&committes/data/MRC/2.webp" },
+        { img: "./media/clubs&committes/data/MRC/3.webp" },
+        { img: "./media/clubs&committes/data/MRC/4.webp" },
+        { img: "./media/clubs&committes/data/MRC/5.webp" },
+        { img: "./media/clubs&committes/data/MRC/6.webp" },
+        { img: "./media/clubs&committes/data/MRC/7.webp" },
       ],
     },
     2: {
-      title: 'Mezzo',
+      title: "Mezzo",
       content: `<p>Mezzo ensures nutritious food and a well-managed dining experience at IMT-H.</p>
          <h6>Mess</h6>
          <p>Mezzo manages meal quality (two members taste each meal daily), conducts inventory audits, and ensures hygiene. The mess staffing includes cooks, employees and supervisors; Mezzo acts as intermediary between students and kitchen staff.</p>
@@ -274,38 +306,38 @@ export default function ClubsAndCommittees() {
          <p>Mezzo maintains dining halls (capacity ~300), executive dining, and infrastructure.</p>
          <h6>Cafeteria (Adda)</h6>
          <p>Mezzo liaises with Adda staff, recommends menu items, and performs inventory checks to maintain hygiene and stock updates.</p>`,
-      img: '/media/clubs&committes/2comm.png',
-       mentor: { img: './media/clubs&committes/data/MEZZO/all.jpg' },
+      img: "/media/clubs&committes/2comm.png",
+      mentor: { img: "./media/clubs&committes/data/MEZZO/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/MEZZO/1.jpg' },
-        {  img: './media/clubs&committes/data/MEZZO/2.jpg' },
-        {  img: './media/clubs&committes/data/MEZZO/3.jpg' },
-        {  img: './media/clubs&committes/data/MEZZO/4.jpg' },
-        {  img: './media/clubs&committes/data/MEZZO/5.jpeg' },
-        {  img: './media/clubs&committes/data/MEZZO/6.jpeg' },
-        {  img: './media/clubs&committes/data/MEZZO/7.jpeg' },
+        { img: "./media/clubs&committes/data/MEZZO/1.webp" },
+        { img: "./media/clubs&committes/data/MEZZO/2.webp" },
+        { img: "./media/clubs&committes/data/MEZZO/3.webp" },
+        { img: "./media/clubs&committes/data/MEZZO/4.webp" },
+        { img: "./media/clubs&committes/data/MEZZO/5.webp" },
+        { img: "./media/clubs&committes/data/MEZZO/6.webp" },
+        { img: "./media/clubs&committes/data/MEZZO/7.webp" },
       ],
     },
     3: {
-      title: 'TEDx',
+      title: "TEDx",
       content: `<p><strong>Objective:</strong> To spread ideas via short powerful talks across Technology, Entertainment and Design.</p>
          <p>The organising committee plans yearly themes, contacts speakers, manages promotions, sponsorships and budgeting. Volunteers help with social media, logistics and event delivery.</p>
          <p>We follow TED's mission: "Ideas worth spreading" — bringing diverse perspectives to the local community.</p>
          <p><strong>Website:</strong> <a href="https://www.tedximthyderabad.com/" target="_blank">https://www.tedximthyderabad.com/</a></p>`,
-      img: '/media/clubs&committes/3comm.png',
-       mentor: { img: './media/clubs&committes/data/Tedx/all.jpg' },
+      img: "/media/clubs&committes/3comm.png",
+      mentor: { img: "./media/clubs&committes/data/Tedx/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/Tedx/1.jpg' },
-        {  img: './media/clubs&committes/data/Tedx/2.jpg' },
-        {  img: './media/clubs&committes/data/Tedx/3.jpg' },
-        {  img: './media/clubs&committes/data/Tedx/4.jpg' },
-        {  img: './media/clubs&committes/data/Tedx/3.jpg' },
-        {  img: './media/clubs&committes/data/Tedx/2.jpg' },
-        {  img: './media/clubs&committes/data/Tedx/1.jpg' },
+        { img: "./media/clubs&committes/data/Tedx/1.webp" },
+        { img: "./media/clubs&committes/data/Tedx/2.webp" },
+        { img: "./media/clubs&committes/data/Tedx/3.webp" },
+        { img: "./media/clubs&committes/data/Tedx/4.webp" },
+        { img: "./media/clubs&committes/data/Tedx/3.webp" },
+        { img: "./media/clubs&committes/data/Tedx/2.webp" },
+        { img: "./media/clubs&committes/data/Tedx/1.webp" },
       ],
     },
     4: {
-      title: 'Alumni Relations Committee',
+      title: "Alumni Relations Committee",
       content: `<p>The Alumni Relations Committee (ARC) builds a bridge between alumni and IMT Hyderabad, collaborating with other IMT campuses for unity and alumni engagement.</p>
          <h6>Key Initiatives</h6>
          <ul>
@@ -316,36 +348,36 @@ export default function ClubsAndCommittees() {
            <li><strong>CV Screening:</strong> Resume screening before placements.</li>
            <li><strong>Chapter Meets:</strong> City chapter meets across cities for alumni networking.</li>
          </ul>`,
-      img: '/media/clubs&committes/4comm.png',
-       mentor: { img: './media/clubs&committes/data/ARC/all.jpg' },
+      img: "/media/clubs&committes/4comm.png",
+      mentor: { img: "./media/clubs&committes/data/ARC/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/ARC/1.jpg' },
-        {  img: './media/clubs&committes/data/ARC/2.jpg' },
-        {  img: './media/clubs&committes/data/ARC/3.jpg' },
-        {  img: './media/clubs&committes/data/ARC/4.jpg' },
-        {  img: './media/clubs&committes/data/ARC/5.jpg' },
-        {  img: './media/clubs&committes/data/ARC/6.jpg' },
-        {  img: './media/clubs&committes/data/ARC/7.jpg' },
+        { img: "./media/clubs&committes/data/ARC/1.webp" },
+        { img: "./media/clubs&committes/data/ARC/2.webp" },
+        { img: "./media/clubs&committes/data/ARC/3.webp" },
+        { img: "./media/clubs&committes/data/ARC/4.webp" },
+        { img: "./media/clubs&committes/data/ARC/5.webp" },
+        { img: "./media/clubs&committes/data/ARC/6.webp" },
+        { img: "./media/clubs&committes/data/ARC/7.webp" },
       ],
     },
     5: {
-      title: 'International Relations (IRC)',
+      title: "International Relations (IRC)",
       content: `<p><strong>Purpose:</strong> To establish IMT Hyderabad on the global stage by handling inbound/outbound student exchanges and short-term exchange programs (STEP).</p>
          <p>This committee connects IMT-H with partner institutions worldwide and supports exchange logistics and student coordination.</p>`,
-      img: '/media/clubs&committes/5comm.png',
-      mentor: { img: './media/clubs&committes/data/IRC/all.png' },
+      img: "/media/clubs&committes/5comm.png",
+      mentor: { img: "./media/clubs&committes/data/IRC/all.webp" },
       students: [
-        {  img: './media/clubs&committes/data/IRC/1.png' },
-        {  img: './media/clubs&committes/data/IRC/2.png' },
-        {  img: './media/clubs&committes/data/IRC/3.jpg' },
-        {  img: './media/clubs&committes/data/IRC/4.jpg' },
-        {  img: './media/clubs&committes/data/IRC/5.jpg' },
-        {  img: './media/clubs&committes/data/IRC/6.jpg' },
-        {  img: './media/clubs&committes/data/IRC/7.jpg' },
+        { img: "./media/clubs&committes/data/IRC/1.webp" },
+        { img: "./media/clubs&committes/data/IRC/2.webp" },
+        { img: "./media/clubs&committes/data/IRC/3.webp" },
+        { img: "./media/clubs&committes/data/IRC/4.webp" },
+        { img: "./media/clubs&committes/data/IRC/5.webp" },
+        { img: "./media/clubs&committes/data/IRC/6.webp" },
+        { img: "./media/clubs&committes/data/IRC/7.webp" },
       ],
     },
     6: {
-      title: 'Student Council',
+      title: "Student Council",
       content: `<p>The Student Council ensures student welfare, maintains discipline, and acts as a communication bridge between students and management to resolve grievances.</p>
          <h6>Objectives</h6>
          <ul>
@@ -353,334 +385,349 @@ export default function ClubsAndCommittees() {
            <li>Implement changes that deliver long-term student benefits</li>
            <li>Bridge communication between students and management for grievance resolution</li>
          </ul>`,
-      img: '/media/clubs&committes/6comm.jpg',
-       mentor: { img: './media/clubs&committes/data/Student/1.jpg' },
+      img: "/media/clubs&committes/6comm.jpg",
+      mentor: { img: "./media/clubs&committes/data/Student/1.webp" },
       students: [
-        {  img: './media/c.webp' },
-        {  img: './media/c.webp' },
-        {  img: './media/c.webp' },
-        {  img: './media/c.webp' },
-        {  img: './media/c.webp' },
-        {  img: './media/c.webp' },
-        {  img: './media/c.webp' },
+        { img: "./media/c.webp" },
+        { img: "./media/c.webp" },
+        { img: "./media/c.webp" },
+        { img: "./media/c.webp" },
+        { img: "./media/c.webp" },
+        { img: "./media/c.webp" },
+        { img: "./media/c.webp" },
       ],
     },
   };
 
-// Clubs slider refs
-const clubsRowRef = useRef(null);
-const detailCardClubsRef = useRef(null);
-const detailTitleClubsRef = useRef(null);
-const detailContentClubsRef = useRef(null);
-const detailLinksClubsRef = useRef(null);
+  // Clubs slider refs
+  const clubsRowRef = useRef(null);
+  const detailCardClubsRef = useRef(null);
+  const detailTitleClubsRef = useRef(null);
+  const detailContentClubsRef = useRef(null);
+  const detailLinksClubsRef = useRef(null);
 
-// NEW — Clubs mentor + students refs
-const mentorContainerClubsRef = useRef(null);
-const studentTrackClubsRef = useRef(null);
-const studentPrevClubsRef = useRef(null);
-const studentNextClubsRef = useRef(null);
+  // NEW — Clubs mentor + students refs
+  const mentorContainerClubsRef = useRef(null);
+  const studentTrackClubsRef = useRef(null);
+  const studentPrevClubsRef = useRef(null);
+  const studentNextClubsRef = useRef(null);
 
-// Committees slider refs
-const committeesRowRef = useRef(null);
-const detailCardCommitteeRef = useRef(null);
-const detailTitleCommitteeRef = useRef(null);
-const detailContentCommitteeRef = useRef(null);
-const detailLinksCommitteeRef = useRef(null);
+  // Committees slider refs
+  const committeesRowRef = useRef(null);
+  const detailCardCommitteeRef = useRef(null);
+  const detailTitleCommitteeRef = useRef(null);
+  const detailContentCommitteeRef = useRef(null);
+  const detailLinksCommitteeRef = useRef(null);
 
-// Committees mentor + students refs
-const mentorContainerRef = useRef(null);
-const studentTrackRef = useRef(null);
-const studentPrevRef = useRef(null);
-const studentNextRef = useRef(null);
+  // Committees mentor + students refs
+  const mentorContainerRef = useRef(null);
+  const studentTrackRef = useRef(null);
+  const studentPrevRef = useRef(null);
+  const studentNextRef = useRef(null);
 
-// ---------------------------------------------------------
-// AOS + Owl Carousel
-// ---------------------------------------------------------
-useEffect(() => {
-  import("jquery").then(($) => {
-    window.$ = window.jQuery = $.default;
+  // ---------------------------------------------------------
+  // AOS + Owl Carousel
+  // ---------------------------------------------------------
+  useEffect(() => {
+    import("jquery").then(($) => {
+      window.$ = window.jQuery = $.default;
 
-    import("owl.carousel").then(() => {
-      window.$("#youtube-carousel").owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 3 },
-        },
+      import("owl.carousel").then(() => {
+        window.$("#youtube-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+          },
+        });
       });
     });
-  });
 
-  import("aos").then((AOS) =>
-    AOS.init({ duration: 1200, once: true })
-  );
-}, []);
+    import("aos").then((AOS) => AOS.init({ duration: 1200, once: true }));
+  }, []);
 
-// ---------------------------------------------------------
-// STUDENT SLIDER LOGIC — Committees
-// ---------------------------------------------------------
-useEffect(() => {
-  let committeeIdx = 0;
+  // ---------------------------------------------------------
+  // STUDENT SLIDER LOGIC — Committees
+  // ---------------------------------------------------------
+  useEffect(() => {
+    let committeeIdx = 0;
 
-  const updateCommitteeSlider = () => {
-    if (!studentTrackRef.current || !studentTrackRef.current.children.length) return;
+    const updateCommitteeSlider = () => {
+      if (!studentTrackRef.current || !studentTrackRef.current.children.length)
+        return;
 
-    const visible = window.innerWidth >= 992 ? 3 : 1;
-    const total = studentTrackRef.current.children.length;
-    const maxIdx = Math.max(0, total - visible);
+      const visible = window.innerWidth >= 992 ? 3 : 1;
+      const total = studentTrackRef.current.children.length;
+      const maxIdx = Math.max(0, total - visible);
 
-    committeeIdx = Math.min(Math.max(committeeIdx, 0), maxIdx);
+      committeeIdx = Math.min(Math.max(committeeIdx, 0), maxIdx);
 
-    const w = studentTrackRef.current.children[0].getBoundingClientRect().width;
-    const gap = 20;
+      const w =
+        studentTrackRef.current.children[0].getBoundingClientRect().width;
+      const gap = 20;
 
-    studentTrackRef.current.style.transform = `translateX(-${committeeIdx * (w + gap)}px)`;
+      studentTrackRef.current.style.transform = `translateX(-${
+        committeeIdx * (w + gap)
+      }px)`;
 
-    studentPrevRef.current.disabled = committeeIdx === 0;
-    studentNextRef.current.disabled = committeeIdx === maxIdx;
-  };
-
-  // -------------------------------------------------------
-  // MAIN SLIDER INITIALIZER
-  // -------------------------------------------------------
-  const initMainSlider = ({
-    rowRef,
-    prevBtnId,
-    nextBtnId,
-    dotsId,
-    totalCards,
-    desktopVis,
-    dataObj,
-    detailRefs,
-    onOpen,
-  }) => {
-    const row = rowRef.current;
-    if (!row) return;
-
-    const prevBtn = document.getElementById(prevBtnId);
-    const nextBtn = document.getElementById(nextBtnId);
-    const dots = document.getElementById(dotsId);
-
-    let curPage = 0;
-    let totalPages = 1;
-
-    const calcPages = () => {
-      const items = window.innerWidth >= 992 ? desktopVis : window.innerWidth >= 768 ? 3 : 2;
-      totalPages = Math.ceil(totalCards / items);
-      curPage = Math.min(curPage, totalPages - 1);
+      studentPrevRef.current.disabled = committeeIdx === 0;
+      studentNextRef.current.disabled = committeeIdx === maxIdx;
     };
 
-    const render = () => {
-      row.style.transform = `translateX(calc(-${curPage} * (100% + 15px)))`;
+    // -------------------------------------------------------
+    // MAIN SLIDER INITIALIZER
+    // -------------------------------------------------------
+    const initMainSlider = ({
+      rowRef,
+      prevBtnId,
+      nextBtnId,
+      dotsId,
+      totalCards,
+      desktopVis,
+      dataObj,
+      detailRefs,
+      onOpen,
+    }) => {
+      const row = rowRef.current;
+      if (!row) return;
 
-      prevBtn.disabled = curPage === 0;
-      nextBtn.disabled = curPage >= totalPages - 1;
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const dots = document.getElementById(dotsId);
 
-      dots.innerHTML = "";
-      for (let i = 0; i < totalPages; i++) {
-        const li = document.createElement("li");
-        li.className = `dot ${i === curPage ? "active" : ""}`;
-        li.onclick = () => {
-          curPage = i;
-          render();
-        };
-        dots.appendChild(li);
-      }
-    };
+      let curPage = 0;
+      let totalPages = 1;
 
-    const handleOpen = (id, cardEl) => {
-      const item = dataObj[id];
-      if (!item) return;
+      const calcPages = () => {
+        const items =
+          window.innerWidth >= 992
+            ? desktopVis
+            : window.innerWidth >= 768
+            ? 3
+            : 2;
+        totalPages = Math.ceil(totalCards / items);
+        curPage = Math.min(curPage, totalPages - 1);
+      };
 
-      row.querySelectorAll(".image-card").forEach((c) => c.classList.remove("active"));
-      cardEl.classList.add("active");
+      const render = () => {
+        row.style.transform = `translateX(calc(-${curPage} * (100% + 15px)))`;
 
-      detailRefs.card.style.display = "block";
-      detailRefs.title.innerHTML = item.title;
-      detailRefs.content.innerHTML = item.content;
-      detailRefs.links.innerHTML = "";
+        prevBtn.disabled = curPage === 0;
+        nextBtn.disabled = curPage >= totalPages - 1;
 
-      if (item.links) {
-        item.links.forEach((l) => {
-          detailRefs.links.innerHTML += `
+        dots.innerHTML = "";
+        for (let i = 0; i < totalPages; i++) {
+          const li = document.createElement("li");
+          li.className = `dot ${i === curPage ? "active" : ""}`;
+          li.onclick = () => {
+            curPage = i;
+            render();
+          };
+          dots.appendChild(li);
+        }
+      };
+
+      const handleOpen = (id, cardEl) => {
+        const item = dataObj[id];
+        if (!item) return;
+
+        row
+          .querySelectorAll(".image-card")
+          .forEach((c) => c.classList.remove("active"));
+        cardEl.classList.add("active");
+
+        detailRefs.card.style.display = "block";
+        detailRefs.title.innerHTML = item.title;
+        detailRefs.content.innerHTML = item.content;
+        detailRefs.links.innerHTML = "";
+
+        if (item.links) {
+          item.links.forEach((l) => {
+            detailRefs.links.innerHTML += `
             <a href="${l.url}" class="btn btn-sm btn-outline-warning me-2" target="_blank">
               <i class="${l.icon}"></i>
             </a>`;
-        });
-      }
+          });
+        }
 
-      if (onOpen) onOpen(item);
-    };
+        if (onOpen) onOpen(item);
+      };
 
-    row.querySelectorAll(".image-card").forEach((card) => {
-      card.onclick = () => handleOpen(card.dataset.card, card);
-    });
+      row.querySelectorAll(".image-card").forEach((card) => {
+        card.onclick = () => handleOpen(card.dataset.card, card);
+      });
 
-    prevBtn.onclick = () => {
-      if (curPage > 0) curPage--;
-      render();
-    };
+      prevBtn.onclick = () => {
+        if (curPage > 0) curPage--;
+        render();
+      };
 
-    nextBtn.onclick = () => {
-      if (curPage < totalPages - 1) curPage++;
-      render();
-    };
+      nextBtn.onclick = () => {
+        if (curPage < totalPages - 1) curPage++;
+        render();
+      };
 
-    window.addEventListener("resize", () => {
+      window.addEventListener("resize", () => {
+        calcPages();
+        render();
+        updateCommitteeSlider();
+        updateClubSlider();
+      });
+
       calcPages();
       render();
-      updateCommitteeSlider();
-      updateClubSlider();
-    });
 
-    calcPages();
-    render();
+      const first = row.querySelector(".image-card[data-card='1']");
+      if (first) first.click();
+    };
 
-    const first = row.querySelector(".image-card[data-card='1']");
-    if (first) first.click();
-  };
+    // ---------------------------------------------------------
+    // CLUBS STUDENT SLIDER LOGIC
+    // ---------------------------------------------------------
+    let clubIdx = 0;
 
-  // ---------------------------------------------------------
-  // CLUBS STUDENT SLIDER LOGIC
-  // ---------------------------------------------------------
-  let clubIdx = 0;
+    const updateClubSlider = () => {
+      if (
+        !studentTrackClubsRef.current ||
+        !studentTrackClubsRef.current.children.length
+      )
+        return;
 
-  const updateClubSlider = () => {
-    if (!studentTrackClubsRef.current || !studentTrackClubsRef.current.children.length) return;
+      const visible = window.innerWidth >= 992 ? 3 : 1;
+      const total = studentTrackClubsRef.current.children.length;
+      const maxIdx = Math.max(0, total - visible);
 
-    const visible = window.innerWidth >= 992 ? 3 : 1;
-    const total = studentTrackClubsRef.current.children.length;
-    const maxIdx = Math.max(0, total - visible);
+      clubIdx = Math.min(Math.max(clubIdx, 0), maxIdx);
 
-    clubIdx = Math.min(Math.max(clubIdx, 0), maxIdx);
+      const w =
+        studentTrackClubsRef.current.children[0].getBoundingClientRect().width;
+      const gap = 20;
 
-    const w = studentTrackClubsRef.current.children[0].getBoundingClientRect().width;
-    const gap = 20;
+      studentTrackClubsRef.current.style.transform = `translateX(-${
+        clubIdx * (w + gap)
+      }px)`;
 
-    studentTrackClubsRef.current.style.transform = `translateX(-${clubIdx * (w + gap)}px)`;
+      studentPrevClubsRef.current.disabled = clubIdx === 0;
+      studentNextClubsRef.current.disabled = clubIdx === maxIdx;
+    };
 
-    studentPrevClubsRef.current.disabled = clubIdx === 0;
-    studentNextClubsRef.current.disabled = clubIdx === maxIdx;
-  };
+    // ---------------------------------------------------------
+    // INIT CLUBS SLIDER
+    // ---------------------------------------------------------
+    initMainSlider({
+      rowRef: clubsRowRef,
+      prevBtnId: "prevBtnClubs",
+      nextBtnId: "nextBtnClubs",
+      dotsId: "dotsClubs",
+      totalCards: 8,
+      desktopVis: 8,
+      dataObj: clubData,
+      detailRefs: {
+        card: detailCardClubsRef.current,
+        title: detailTitleClubsRef.current,
+        content: detailContentClubsRef.current,
+        links: detailLinksClubsRef.current,
+      },
 
-  // ---------------------------------------------------------
-  // INIT CLUBS SLIDER
-  // ---------------------------------------------------------
-  initMainSlider({
-    rowRef: clubsRowRef,
-    prevBtnId: "prevBtnClubs",
-    nextBtnId: "nextBtnClubs",
-    dotsId: "dotsClubs",
-    totalCards: 8,
-    desktopVis: 8,
-    dataObj: clubData,
-    detailRefs: {
-      card: detailCardClubsRef.current,
-      title: detailTitleClubsRef.current,
-      content: detailContentClubsRef.current,
-      links: detailLinksClubsRef.current,
-    },
-
-    onOpen: (item) => {
-      mentorContainerClubsRef.current.innerHTML = `
+      onOpen: (item) => {
+        mentorContainerClubsRef.current.innerHTML = `
         <div class="member-card">
           <img src="${item.mentor.img}" alt="${item.mentor.name}">
           <div class="member-info"><h5>${item.mentor.name}</h5></div>
         </div>`;
 
-      studentTrackClubsRef.current.innerHTML = item.students
-        .map(
-          (s) => `
+        studentTrackClubsRef.current.innerHTML = item.students
+          .map(
+            (s) => `
         <div class="student-card-wrapper">
          <div class="member-card">
   <img src="${s.img}" alt="">
 </div>
 
         </div>`
-        )
-        .join("");
+          )
+          .join("");
 
-      clubIdx = 0;
-      setTimeout(updateClubSlider, 50);
-    },
-  });
+        clubIdx = 0;
+        setTimeout(updateClubSlider, 50);
+      },
+    });
 
-  // ---------------------------------------------------------
-  // INIT COMMITTEES SLIDER
-  // ---------------------------------------------------------
-  initMainSlider({
-    rowRef: committeesRowRef,
-    prevBtnId: "prevBtnCommittee",
-    nextBtnId: "nextBtnCommittee",
-    dotsId: "dotsCommittee",
-    totalCards: 6,
-    desktopVis: 6,
-    dataObj: committeeData,
-    detailRefs: {
-      card: detailCardCommitteeRef.current,
-      title: detailTitleCommitteeRef.current,
-      content: detailContentCommitteeRef.current,
-      links: detailLinksCommitteeRef.current,
-    },
+    // ---------------------------------------------------------
+    // INIT COMMITTEES SLIDER
+    // ---------------------------------------------------------
+    initMainSlider({
+      rowRef: committeesRowRef,
+      prevBtnId: "prevBtnCommittee",
+      nextBtnId: "nextBtnCommittee",
+      dotsId: "dotsCommittee",
+      totalCards: 6,
+      desktopVis: 6,
+      dataObj: committeeData,
+      detailRefs: {
+        card: detailCardCommitteeRef.current,
+        title: detailTitleCommitteeRef.current,
+        content: detailContentCommitteeRef.current,
+        links: detailLinksCommitteeRef.current,
+      },
 
-    onOpen: (item) => {
-      mentorContainerRef.current.innerHTML = `
+      onOpen: (item) => {
+        mentorContainerRef.current.innerHTML = `
         <div class="member-card">
           <img src="${item.mentor.img}" alt="${item.mentor.name}">
           <div class="member-info"><h5>${item.mentor.name}</h5></div>
         </div>`;
 
-      studentTrackRef.current.innerHTML = item.students
-        .map(
-          (s) => `
+        studentTrackRef.current.innerHTML = item.students
+          .map(
+            (s) => `
         <div class="student-card-wrapper">
           <div class="member-card">
           <img src="${s.img}" alt="">
            </div>
 
         </div>`
-        )
-        .join("");
+          )
+          .join("");
 
-      committeeIdx = 0;
-      setTimeout(updateCommitteeSlider, 50);
-    },
-  });
+        committeeIdx = 0;
+        setTimeout(updateCommitteeSlider, 50);
+      },
+    });
 
-  // ---------------------------------------------------------
-  // STUDENT NAV BUTTONS (CLUBS)
-  // ---------------------------------------------------------
-  studentPrevClubsRef.current.onclick = () => {
-    clubIdx--;
-    updateClubSlider();
-  };
+    // ---------------------------------------------------------
+    // STUDENT NAV BUTTONS (CLUBS)
+    // ---------------------------------------------------------
+    studentPrevClubsRef.current.onclick = () => {
+      clubIdx--;
+      updateClubSlider();
+    };
 
-  studentNextClubsRef.current.onclick = () => {
-    clubIdx++;
-    updateClubSlider();
-  };
+    studentNextClubsRef.current.onclick = () => {
+      clubIdx++;
+      updateClubSlider();
+    };
 
-  // ---------------------------------------------------------
-  // STUDENT NAV BUTTONS (COMMITTEES)
-  // ---------------------------------------------------------
-  studentPrevRef.current.onclick = () => {
-    committeeIdx--;
-    updateCommitteeSlider();
-  };
+    // ---------------------------------------------------------
+    // STUDENT NAV BUTTONS (COMMITTEES)
+    // ---------------------------------------------------------
+    studentPrevRef.current.onclick = () => {
+      committeeIdx--;
+      updateCommitteeSlider();
+    };
 
-  studentNextRef.current.onclick = () => {
-    committeeIdx++;
-    updateCommitteeSlider();
-  };
-
-}, []);
+    studentNextRef.current.onclick = () => {
+      committeeIdx++;
+      updateCommitteeSlider();
+    };
+  }, []);
 
   return (
     <>
@@ -1170,7 +1217,7 @@ useEffect(() => {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
-              backgroundPosition: "center !important"
+            backgroundPosition: "center !important",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">
@@ -1264,113 +1311,110 @@ useEffect(() => {
         </div>
       </section>
 
-    {/* Clubs Section */}
-<section className="py-5">
-  <div className="container">
-    <h2
-      className="section-title text-center"
-      style={{ color: "#08317a" }}
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      CLUBS @ IMT
-    </h2>
+      {/* Clubs Section */}
+      <section className="py-5">
+        <div className="container">
+          <h2
+            className="section-title text-center"
+            style={{ color: "#08317a" }}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            CLUBS @ IMT
+          </h2>
 
-    {/* TOP SLIDER (Images Row) */}
-    <div className="slider-container clubs">
-      <div className="cards-slider">
-        <div className="cards-row" ref={clubsRowRef}>
-          {Object.entries(clubData).map(([key, club]) => (
-            <div className="card-wrapper" key={key}>
-              <div className="image-card" data-card={key}>
-                <img src={club.img} alt={club.title} />
-                <div className="card-overlay">
-                  <h5>{club.title.split(" – ")[0]}</h5>
+          {/* TOP SLIDER (Images Row) */}
+          <div className="slider-container clubs">
+            <div className="cards-slider">
+              <div className="cards-row" ref={clubsRowRef}>
+                {Object.entries(clubData).map(([key, club]) => (
+                  <div className="card-wrapper" key={key}>
+                    <div className="image-card" data-card={key}>
+                      <img src={club.img} alt={club.title} />
+                      <div className="card-overlay">
+                        <h5>{club.title.split(" – ")[0]}</h5>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Slider Nav Buttons + Dots */}
+            <div className="slider-controls">
+              <button className="nav-btn prev-btn" id="prevBtnClubs">
+                &lt;
+              </button>
+              <ul className="dots" id="dotsClubs"></ul>
+              <button className="nav-btn next-btn" id="nextBtnClubs">
+                &gt;
+              </button>
+            </div>
+          </div>
+
+          {/* DETAIL CARD */}
+          <div
+            className="card detail-card"
+            style={{ color: "#08317a" }}
+            ref={detailCardClubsRef}
+          >
+            <div className="card-body">
+              <h4 className="card-title text-center" ref={detailTitleClubsRef}>
+                Club Details
+              </h4>
+
+              <p className="card-text" ref={detailContentClubsRef}></p>
+
+              {/* Social Links */}
+              <div ref={detailLinksClubsRef}></div>
+
+              {/* MENTOR SECTION */}
+              <div className="mentor-section text-center mt-5">
+                <div
+                  ref={mentorContainerClubsRef}
+                  className="d-flex justify-content-center"
+                ></div>
+              </div>
+
+              {/* STUDENTS SLIDER SECTION */}
+              <div className="student-section mt-5">
+                <h4
+                  className="text-center text-uppercase fw-bold mb-4"
+                  style={{ color: "#08317a" }}
+                >
+                  Our Events
+                </h4>
+
+                <div className="student-slider-container">
+                  {/* Prev Button */}
+                  <button
+                    className="student-nav prev-btn btn btn-warning"
+                    ref={studentPrevClubsRef}
+                  >
+                    &lt;
+                  </button>
+
+                  {/* Track Window */}
+                  <div className="student-track-window">
+                    <div
+                      className="student-track"
+                      ref={studentTrackClubsRef}
+                    ></div>
+                  </div>
+
+                  {/* Next Button */}
+                  <button
+                    className="student-nav next-btn btn btn-warning"
+                    ref={studentNextClubsRef}
+                  >
+                    &gt;
+                  </button>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Slider Nav Buttons + Dots */}
-      <div className="slider-controls">
-        <button className="nav-btn prev-btn" id="prevBtnClubs">
-          &lt;
-        </button>
-        <ul className="dots" id="dotsClubs"></ul>
-        <button className="nav-btn next-btn" id="nextBtnClubs">
-          &gt;
-        </button>
-      </div>
-    </div>
-
-    {/* DETAIL CARD */}
-    <div
-      className="card detail-card"
-      style={{ color: "#08317a" }}
-      ref={detailCardClubsRef}
-    >
-      <div className="card-body">
-        <h4 className="card-title text-center" ref={detailTitleClubsRef}>
-          Club Details
-        </h4>
-
-        <p className="card-text" ref={detailContentClubsRef}></p>
-
-        {/* Social Links */}
-        <div ref={detailLinksClubsRef}></div>
-
-        {/* MENTOR SECTION */}
-        <div className="mentor-section text-center mt-5">
-          
-
-          <div
-            ref={mentorContainerClubsRef}
-            className="d-flex justify-content-center"
-          ></div>
-        </div>
-
-        {/* STUDENTS SLIDER SECTION */}
-        <div className="student-section mt-5">
-          <h4
-            className="text-center text-uppercase fw-bold mb-4"
-            style={{ color: "#08317a" }}
-          >
-           Our Events
-          </h4>
-
-          <div className="student-slider-container">
-            {/* Prev Button */}
-            <button
-              className="student-nav prev-btn btn btn-warning"
-              ref={studentPrevClubsRef}
-            >
-              &lt;
-            </button>
-
-            {/* Track Window */}
-            <div className="student-track-window">
-              <div
-                className="student-track"
-                ref={studentTrackClubsRef}
-              ></div>
-            </div>
-
-            {/* Next Button */}
-            <button
-              className="student-nav next-btn btn btn-warning"
-              ref={studentNextClubsRef}
-            >
-              &gt;
-            </button>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Upcoming Events Carousel */}
       <section className="video-carousel-section py-5">
@@ -1442,7 +1486,6 @@ useEffect(() => {
               </h4>
               <p className="card-text" ref={detailContentCommitteeRef}></p>
               <div className="mentor-section text-center mt-5">
-              
                 <div
                   ref={mentorContainerRef}
                   className="d-flex justify-content-center"
@@ -1453,7 +1496,7 @@ useEffect(() => {
                   className="text-center text-uppercase fw-bold mb-4"
                   style={{ color: "#08317a" }}
                 >
-                   Our Events
+                  Our Events
                 </h4>
                 <div className="student-slider-container">
                   <button
