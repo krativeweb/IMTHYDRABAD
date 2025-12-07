@@ -360,23 +360,23 @@ export default function PGDMProgramsSection() {
       }
 
       /* Faculty Hero */
-      .faculty-hero {
-        background: url("/media/banners/pgdm.webp") center/cover no-repeat;
-        position: relative;
-        height: 60vh;
-      }
-      .faculty-hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.3);
-      }
-      .faculty-hero h2,
-      .faculty-hero p {
+.faculty-hero-pgdm {
+  background: url("/media/banners/pgdm.webp") center/cover no-repeat !important;
+  position: relative;
+  height: 60vh;
+}
+.faculty-hero-pgdm::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+      .faculty-hero-pgdm h2,
+      .faculty-hero-pgdm p {
         position: relative;
         z-index: 1;
       }
-      .faculty-hero h2 {
+      .faculty-hero-pgdm h2 {
         margin-top: 150px;
       }
 
@@ -666,7 +666,7 @@ export default function PGDMProgramsSection() {
 
       {/* Top Banner */}
       <div
-        className="faculty-hero text-center text-white py-5"
+        className="faculty-hero-pgdm text-center text-white py-5"
         data-aos="fade-up"
       >
         <h2 className="display-5 fw-bold mb-2">About-PGDM-Programs</h2>
