@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 export default function NavbarFour() {
   return (
-    
     <header id="masthead" className="header ttm-header-style-04">
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light sticky-top">
@@ -69,7 +68,7 @@ export default function NavbarFour() {
 
             {/* Contact Button */}
             <Link
-              href="https://admissions.imt.edu/login.htm"
+              href="https://pgdm.imthyderabad.edu.in/login.htm"
               className="btn btn-warning border-dark rounded-pill mx-3"
               target="_blank"
             >
