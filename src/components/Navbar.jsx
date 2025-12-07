@@ -72,7 +72,7 @@ export default function Navbar() {
               src="/media/imtpilllogo.webp"
               alt="Logo"
               width={270} // 2x retina
-              height={90}
+              height={100}
               style={{ margin: "2px" }}
             />
           </Link>
@@ -110,11 +110,8 @@ export default function Navbar() {
                   aria-labelledby="admissionsDropdown"
                 >
                   <li>
-                    <Link
-                      className="dropdown-item"
-                      href="/admissions/pgdm"
-                    >
-                      PGDM  
+                    <Link className="dropdown-item" href="/admissions/pgdm">
+                      PGDM
                     </Link>
                   </li>
                   <li>
@@ -148,22 +145,34 @@ export default function Navbar() {
                       </Link>
                       <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
                         <li>
-                          <Link className="item" href="/pgdm-course-in-hyderabad">
+                          <Link
+                            className="item"
+                            href="/pgdm-course-in-hyderabad"
+                          >
                             About PGDM
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="/pgdm-general-management">
+                          <Link
+                            className="item"
+                            href="/pgdm-general-management"
+                          >
                             PGDM
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="/pgdm-finance-management">
+                          <Link
+                            className="item"
+                            href="/pgdm-finance-management"
+                          >
                             PGDM (Finance)
                           </Link>
                         </li>
                         <li>
-                          <Link className="item" href="/pgdm-marketing-management">
+                          <Link
+                            className="item"
+                            href="/pgdm-marketing-management"
+                          >
                             PGDM (Marketing)
                           </Link>
                         </li>
@@ -173,15 +182,15 @@ export default function Navbar() {
                           </Link>
                         </li>
                         <li>
-                        <Link className="item" href="/fpm-program-hyderabad">
-                          Fellow Program in Management
-                        </Link>
-                               <li>
+                          <Link className="item" href="/fpm-program-hyderabad">
+                            Fellow Program in Management
+                          </Link>
+                          <li>
                             <Link className="item" href="/executive-education">
                               Executive Education
                             </Link>
                           </li>
-                      </li>
+                        </li>
                       </ul>
                     </li>
                   </div>
@@ -217,12 +226,18 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="/awards-and-recognisation">
+                            <Link
+                              className="item"
+                              href="/awards-and-recognisation"
+                            >
                               Awards & Recognitions
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="/conferences-workshops">
+                            <Link
+                              className="item"
+                              href="/conferences-workshops"
+                            >
                               Workshop & Conference
                             </Link>
                           </li>
@@ -308,11 +323,11 @@ export default function Navbar() {
                           Mandatory Disclosure
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
-                           <li>
+                          <li>
                             <Link className="item" href="/mandatory-disclosure">
                               Mandatory Disclosure
                             </Link>
-                          </li> 
+                          </li>
                           <li>
                             <Link className="item" href="/committees">
                               Committees
@@ -324,7 +339,10 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="/model-code-of-conduct">
+                            <Link
+                              className="item"
+                              href="/model-code-of-conduct"
+                            >
                               Model Code Of Conduct
                             </Link>
                           </li>
@@ -342,7 +360,10 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="/accredations&approvals">
+                            <Link
+                              className="item"
+                              href="/accredations&approvals"
+                            >
                               Approvals & Accreditation
                             </Link>
                           </li>
@@ -493,7 +514,6 @@ export default function Navbar() {
                           Others
                         </Link>
                         <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
-                     
                           <li>
                             <Link className="item" href="/Careers">
                               Careers
@@ -505,7 +525,10 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link className="item" href="/business-school-ranking">
+                            <Link
+                              className="item"
+                              href="/business-school-ranking"
+                            >
                               Rankings
                             </Link>
                           </li>

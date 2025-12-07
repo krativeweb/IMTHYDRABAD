@@ -11,17 +11,12 @@ export default function NavbarFour() {
           {/* Logo */}
           <a className="navbar-brand" href="#">
             <Image
-              src="/admission/media/imtpilllogo.png"
+              src="/media/imtpilllogo.webp"
               alt="Logo"
               width={270}
-              height={90}
-              style={{
-                height: "85px",
-                marginLeft: "-9px",
-                marginTop: "2px",
-                marginBottom: "2px",
-              }}
+              height={100}
               priority
+              style={{ margin: "2px" }}
             />
           </a>
 
