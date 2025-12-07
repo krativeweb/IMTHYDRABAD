@@ -29,9 +29,9 @@ export default function ModelCodeSection() {
       </noscript>
 
       {/* Styles */}
-<style
-  dangerouslySetInnerHTML={{
-    __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
       .model .card {
         background-color: #f9f9f9;
         border-radius: 15px;
@@ -46,7 +46,7 @@ export default function ModelCodeSection() {
         line-height: 1.6;
       }
       .faculty-hero {
-        background: url("/media/banners/pgdmfinance.webp") center/cover no-repeat;
+        background: url("/media/banners/pgdmfinance.webp") center/cover no-repeat!important;
         position: relative;
         height: 60vh;
           background-position: center !important;
@@ -79,31 +79,43 @@ export default function ModelCodeSection() {
         color: #000;
       }
     `,
-  }}
-/>
-
+        }}
+      />
 
       <section className="faculty-section">
         {/* Top Banner */}
-        <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
+        <div
+          className="faculty-hero text-center text-white py-5"
+          data-aos="fade-up"
+        >
           <h2 className="display-5 fw-bold mb-2">Model Code of Conduct</h2>
           <p className="text-white">
             Rooted in values that define our community. <br />
-Our code of conduct promotes respect, discipline, and professionalism in every interaction and endeavor.
+            Our code of conduct promotes respect, discipline, and
+            professionalism in every interaction and endeavor.
           </p>
         </div>
 
         {/* Breadcrumb */}
-        <div className="breadcrumb p-4" style={{ backgroundColor: "rgb(22, 57, 119)" }}>
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
           <div className="container-fluid">
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0 m-0">
                 <li className="breadcrumb-item">
-                  <Link href="/" className="text-white fw-bold text-decoration-none">
+                  <Link
+                    href="/"
+                    className="text-white fw-bold text-decoration-none"
+                  >
                     Home
                   </Link>
                 </li>
-                <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+                <li
+                  className="breadcrumb-item active text-warning fw-bold"
+                  aria-current="page"
+                >
                   Model Code of Conduct
                 </li>
               </ol>
@@ -115,18 +127,24 @@ Our code of conduct promotes respect, discipline, and professionalism in every i
         <section className="model py-5">
           <div className="container">
             <div className="card p-4 shadow-lg border-0">
-              <h2 className="text-center mb-4 fw-bold" style={{ color: "#08317a" }}>
+              <h2
+                className="text-center mb-4 fw-bold"
+                style={{ color: "#08317a" }}
+              >
                 Model Code of Conduct
               </h2>
               <p>
-                IMT upholds a set of standards that govern its global activities and stakeholder relationships. The standards
-                explained in this “Code of Conduct Commandments” are the ethical foundation of the institute and apply to all
-                transactions/dealings undertaken by the institute. IMT believes that all employees must be aware of and abide
-                with its values and policies.
+                IMT upholds a set of standards that govern its global activities
+                and stakeholder relationships. The standards explained in this
+                “Code of Conduct Commandments” are the ethical foundation of the
+                institute and apply to all transactions/dealings undertaken by
+                the institute. IMT believes that all employees must be aware of
+                and abide with its values and policies.
               </p>
               <p>
-                <strong>To be read and signed by all IMT employees</strong> (full time regular, contractual, temporary ad-hoc
-                & consultants / advisors)
+                <strong>To be read and signed by all IMT employees</strong>{" "}
+                (full time regular, contractual, temporary ad-hoc & consultants
+                / advisors)
               </p>
 
               <ul className="list-unstyled">
@@ -150,7 +168,8 @@ Our code of conduct promotes respect, discipline, and professionalism in every i
               </ul>
 
               <h5 className="mt-4 fw-bold" style={{ color: "#08317a" }}>
-                The following acts will constitute misconduct on the part of an employee:
+                The following acts will constitute misconduct on the part of an
+                employee:
               </h5>
               <ul className="list-unstyled">
                 {[
@@ -179,7 +198,9 @@ Our code of conduct promotes respect, discipline, and professionalism in every i
                 ))}
               </ul>
 
-              <p className="mt-4 fw-bold">I will abide by the rules and regulations of the Institute.</p>
+              <p className="mt-4 fw-bold">
+                I will abide by the rules and regulations of the Institute.
+              </p>
             </div>
           </div>
         </section>
