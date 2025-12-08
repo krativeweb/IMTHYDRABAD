@@ -11,10 +11,11 @@ export default function CentreSustainabilityCSR() {
         <div
           className="faculty-hero text-center text-white py-5"
           style={{
-            background: "url(./media/banners/csr.webp)",
+            background: "url(./media/banners/researcharchive.webp)",
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
+            backgroundPosition: "center",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">

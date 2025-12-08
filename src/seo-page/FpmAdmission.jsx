@@ -898,7 +898,7 @@ export default function FpmAdmission() {
       <section
         className="faculty-hero text-center text-white py-5 position-relative"
         style={{
-          backgroundImage: 'url("/media/banners/carrier.webp")',
+          backgroundImage: 'url("/media/banners/Group 16.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "60vh",
