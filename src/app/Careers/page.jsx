@@ -17,7 +17,7 @@ export default function Careers() {
         <div
           className="faculty-hero text-center text-white py-5"
           style={{
-            background: "url('./media/banners/carrier.webp')",
+            background: "url('./media/banners/Group 13.jpg')",
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",

@@ -179,7 +179,7 @@ export default function FPMProgram() {
           __html: `
         /* Faculty Hero */
         .faculty-hero {
-          background: url('/media/banners/internationalrelations.webp') !important;
+          background: url('/media/banners/Group 4.jpg') !important;
           position: relative;
           background-size: cover !important;
           height: 60vh;
@@ -262,7 +262,7 @@ export default function FPMProgram() {
         <div
           className="faculty-hero text-center text-white py-5"
           style={{
-            background: "url('/media/banners/internationalrelations.webp')",
+            background: "url('/media/banners/Group 4.jpg')",
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
