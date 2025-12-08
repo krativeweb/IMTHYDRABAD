@@ -34,7 +34,7 @@ export default function PointOfContactSection() {
     __html: `
       /* Faculty Hero */
       .faculty-hero {
-        background: url("/media/banners/internationalrelations.webp") center/cover no-repeat;
+        background: url("/media/banners/Group 5.jpg") center/cover no-repeat;
         position: relative;
         height: 60vh;
       }

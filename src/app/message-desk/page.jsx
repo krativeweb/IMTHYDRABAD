@@ -108,6 +108,12 @@ export default function LeadershipSection() {
           background: #ffc107;
           color: #000;
         }
+          @media screen and (min-width: 1000px) {
+  .your-class {
+    margin-top: -60px !important;
+  }
+}
+
     `,
         }}
       />
@@ -474,7 +480,7 @@ export default function LeadershipSection() {
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
-                          marginTop: "-60px",
+                         
                         }}
                       >
                         <h4

@@ -561,7 +561,7 @@ Our Learning Resource Centre integrates digital depth with academic richness for
 
       /* Hero Banner */
       .faculty-hero {
-        background: url('/media/banners/learningresourcecenter.webp') no-repeat center center;
+        background: url('/media/banners/Group 16.jpg') no-repeat center center;
         background-size: cover;
         height: 60vh;
         position: relative;

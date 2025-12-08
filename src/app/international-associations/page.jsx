@@ -141,7 +141,7 @@ const InternationalAssociations = () => {
   dangerouslySetInnerHTML={{
     __html: `
       .faculty-hero {
-        background: url("./media/banners/internationalrelations.webp") no-repeat center center;
+        background: url("./media/banners/Group 2.jpg") no-repeat center center;
         background-size: cover;
         height: 60vh;
         position: relative;

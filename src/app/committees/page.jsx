@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import PlacementAlliances from '@/sections/PlacementAlliances.jsx';
-import Link from 'next/link';
-import { useEffect } from 'react';
+import PlacementAlliances from "@/sections/PlacementAlliances.jsx";
+import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Committees() {
   // Embedded committee data
   const committeeData = {
     antiRagging: {
       policy: {
-        title: 'Anti-Ragging',
+        title: "Anti-Ragging",
         content: `
           <p><strong>Prevention and Prohibition of Ragging</strong></p>
           <p>It has been Institute’s endeavor to keep it free from any act of ragging among students on its premises or outside. All students are hereby advised not to indulge in any act of ragging including any conduct by any student, which has the effect of teasing, treating or handling with rudeness a fresher or any other student or an act of indiscipline causing annoyance, hardship or psychological harm, etc. to any fresher or any other student.</p>
@@ -43,107 +43,115 @@ export default function Committees() {
         `,
       },
       committee: {
-        title: 'Anti-Ragging Committee',
+        title: "Anti-Ragging Committee",
         members: [
           {
             sno: 1,
-            name: 'Dr. K. Sriharsha Reddy',
-            designation: 'Director',
-            phone: '9849528676',
-            landline: '08414-671661',
+            name: "Prof (Dr) K M Baharul Islam",
+            designation: "Director",
+            phone: "8392811111",
+            landline: "08414671661",
           },
           {
             sno: 2,
-            name: 'Prof. Nikhil Rastogi',
-            designation: 'Chairperson-Disciplinary & Academic Counselling Committee',
-            phone: '7306874901',
-            landline: '08414-671670',
+            name: "Prof. Romina Mathew",
+            designation: "Chairperson- Disciplinary",
+            phone: "9246295292",
+            landline: "08414671689",
           },
           {
             sno: 3,
-            name: 'Prof. Vinay Kumar K',
-            designation: 'PGP Chairperson',
-            phone: '8639342389',
-            landline: '08414-671688',
+            name: "Prof. Vinay Kumar K",
+            designation: "PGP Chairperson",
+            phone: "8639342389",
+            landline: "08414671688",
           },
           {
             sno: 4,
-            name: 'Prof. Tumpa Dey',
-            designation: 'Warden - Girls Hostel',
-            phone: '9000195605',
-            landline: '08414-671695',
+            name: "Prof. Pushpesh Pant",
+            designation: "Warden- Boys Hostel",
+            phone: "8827218443",
+            landline: "08414671602",
           },
           {
             sno: 5,
-            name: 'Prof. Pushpesh Pant',
-            designation: 'Warden - Boys Hostel',
-            phone: '8827218443',
-            landline: '08414-671602',
+            name: "Prof. Irfan Ahmad Shah",
+            designation: "Warden- Boys Hostel",
+            phone: "9567452826",
+            landline: "08414671601",
           },
           {
             sno: 6,
-            name: 'Mr. Kavi Bhushan Pandey',
-            designation: 'Manager - Administration and Maintenance',
-            phone: '9000114443',
-            landline: '08414-671683',
+            name: "Prof. Sanchari Guha Niyogi",
+            designation: "Warden- Girls Hostel",
+            phone: "8584968955",
+            landline: "08414671625",
           },
           {
             sno: 7,
-            name: 'Ms. K. Padama Sundari',
-            designation: 'Incharge-HR',
-            phone: '9959968904',
-            landline: '08414-671661',
+            name: "Mr. Raj Kumar Meena",
+            designation: "Chief Admin. Officer",
+            phone: "9582805564",
+            landline: "08414671683",
           },
           {
             sno: 8,
-            name: 'Dr. Mamatha Raghuveer Achanta',
-            designation: 'Social Worker',
-            phone: '9849418592',
-            landline: '',
+            name: "Ms. Jaya Vamshi",
+            designation: "Asst. Manager-HR",
+            phone: "9885770267",
+            landline: "08414671656",
           },
           {
             sno: 9,
-            name: 'Mr. K. Srinivasa Rao',
-            designation: 'ACP-Shamshabad Police Station',
-            phone: '9490617481',
-            landline: '',
+            name: "Dr. Mamatha Rahuveer Achanta (NGO representative)",
+            designation: "Social Worker",
+            phone: "9849418592",
+            landline: "",
           },
           {
             sno: 10,
-            name: 'Mr. A. Ravindra Seshu',
-            designation: 'Senior Reporter, Khammam District',
-            phone: '9063718675',
-            landline: '',
+            name: "Mr. K. Srinivasa Rao",
+            designation: "ACP - Shamshabad Police Station",
+            phone: "9490617481",
+            landline: "",
           },
           {
             sno: 11,
-            name: 'Parent Representative',
-            designation: 'Hyderabad',
-            phone: '9391424271',
-            landline: '',
+            name: "Mr. A. Ravindra Seshu (Media Representative)",
+            designation: "Senior Reporter, Khammam Dist.",
+            phone: "9063718675",
+            landline: "",
           },
           {
             sno: 12,
-            name: 'Mr. Jerry James',
-            designation: 'Sr.Student Representative',
-            phone: '7356673254',
-            landline: '',
+            name: "Parent Representative",
+            designation: "Hyderabad",
+            phone: "9391424271",
+            landline: "",
           },
           {
             sno: 13,
-            name: 'Ms. Mahak Agrawal',
-            designation: 'Sr.Student Representative',
-            phone: '7830443111',
-            landline: '',
+            name: "Mr. Ekansh Uniyal (Sr. Student Representative)",
+            designation: "IMT Hyderabad",
+            phone: "7020132115",
+            landline: "",
           },
           {
             sno: 14,
-            name: 'Mr. Ekansh Uniyal',
-            designation: 'Jr.Student Representative',
-            phone: '7020132115',
-            landline: '',
+            name: "Ms. Priya Arya (Sr. Student Representative)",
+            designation: "IMT Hyderabad",
+            phone: "9810302199",
+            landline: "",
+          },
+          {
+            sno: 15,
+            name: "Mr. Shailendra Gautam (Jr. Student Representative)",
+            designation: "IMT Hyderabad",
+            phone: "7078587873",
+            landline: "",
           },
         ],
+
         responsibilities: `
           <p>The Anti-Ragging squad shall be responsible for maintaining vigil, oversight and patrolling functions and shall remain mobile, alert and active at all times.</p>
           <p>It shall be the duty of the Anti-Ragging Squad to make surprise raids on hostels and other places vulnerable to incidents of and having the potential of, ragging and shall be empowered to inspect such places.</p>
@@ -154,128 +162,116 @@ export default function Committees() {
       },
     },
     internalComplaints: {
-      title: 'Internal Complaints Committee',
+      title: "Internal Complaints Committee",
       content: `
         <p class="lead">The institute has constituted an "Internal Complaints Committee" (Prevention of Sexual Harassment) to investigate and to redress grievances relating to sexual harassment at workplace at IMT, Hyderabad campus or at any official off campus activity is constituted as follows:</p>
       `,
-      members: [
-        {
-          sno: 1,
-          name: 'Prof. Tumpa Dey, <strong>Chairperson</strong>',
-          profession: 'Teaching',
-          phone: '9000195605',
-          address: 'IMT Hyderabad',
-        },
-        {
-          sno: 2,
-          name: 'Prof. Tulika Sharma',
-          profession: 'Teaching',
-          phone: '9160511828',
-          address: 'IMT Hyderabad',
-        },
-        {
-          sno: 3,
-          name: 'Prof. Vinay Kumar Kalakbandi - PGP Chairperson',
-          profession: 'Teaching',
-          phone: '8639342389',
-          address: 'IMT Hyderabad',
-        },
-        {
-          sno: 4,
-          name: 'Dr. Mamatha Raghuveer Achanta',
-          profession: 'Social Worker',
-          phone: '9849418592',
-          address: 'Begumpet, Hyderabad',
-        },
-        {
-          sno: 5,
-          name: 'Ms. K Padma Sundari',
-          profession: 'Non-Teaching',
-          phone: '9959968904',
-          address: 'IMT Hyderabad',
-        },
-        {
-          sno: 6,
-          name: 'Mrs. K Sita Mahalakshmi',
-          profession: 'Advocate',
-          phone: '8008239807',
-          address: 'Hyderabad',
-        },
-        {
-          sno: 7,
-          name: 'Ms. Uma Maheswari N',
-          profession: 'Sr. Student Representative',
-          phone: '8123203165',
-          address: 'IMT Hyderabad',
-        },
-        {
-          sno: 8,
-          name: 'Ms. Aksharita Vaidehi Jayanti',
-          profession: 'Jr. Student Representative',
-          phone: '9398124097',
-          address: 'IMT Hyderabad',
-        },
-        {
-          sno: 9,
-          name: 'Ms. Shivangi Mohan',
-          profession: 'Jr. Student Representative',
-          phone: '7974261041',
-          address: 'IMT Hyderabad',
-        },
-      ],
+     members: [
+  {
+    sno: 1,
+    name: "Prof. Aindrilla Chatterjee - <strong>Chairperson</strong>",
+    profession: "Teaching",
+    phone: "9849692730",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 2,
+    name: "Prof. Akhila V - <strong>Co-Chairperson</strong>",
+    profession: "Teaching",
+    phone: "7842701485",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 3,
+    name: "Prof. Pushpesh Pant",
+    profession: "Teaching",
+    phone: "8827218443",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 4,
+    name: "Dr. Mamatha Raghuveer Achanta (NGO Representative)",
+    profession: "Social Worker",
+    phone: "9849418592",
+    address: "Begumpet, Hyderabad",
+  },
+  {
+    sno: 5,
+    name: "Mrs. K. Sita Mahalakshmi",
+    profession: "Advocate",
+    phone: "8008239807",
+    address: "Hyderabad",
+  },
+  {
+    sno: 6,
+    name: "Mr. Akash - (Sr. Student Representative)",
+    profession: "Sr. Student Representative",
+    phone: "-",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 7,
+    name: "Ms. Ashmita Banda - (Sr. Student Representative)",
+    profession: "Sr. Student Representative",
+    phone: "-",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 8,
+    name: "Ms. Jaysree SS - (Jr. Student Representative)",
+    profession: "Jr. Student Representative",
+    phone: "-",
+    address: "IMT, Hyderabad",
+  },
+],
+
     },
     grievanceRedressal: {
-      title: 'Grievance Redressal Committee',
+      title: "Grievance Redressal Committee",
       content: `
         <p class="lead">The institute has constituted an "Internal Complaints Committee" (Prevention of Sexual Harassment) to investigate and to redress grievances relating to sexual harassment at workplace at IMT, Hyderabad campus or at any official off campus activity is constituted as follows:</p>
       `,
-      members: [
-        {
-          sno: 1,
-          name: 'Prof. Tulika Sharma - <strong>Chairperson</strong>',
-          profession: 'Teaching',
-          phone: '9160511828',
-          address: 'IMT, Hyderabad',
-        },
-        {
-          sno: 2,
-          name: 'Prof. C. Chakrapani - <strong>Dean (Academics)</strong>',
-          profession: 'Teaching',
-          phone: '9849652207',
-          address: 'IMT, Hyderabad',
-        },
-        {
-          sno: 3,
-          name: 'Prof. K Vinay Kumar',
-          profession: 'Teaching',
-          phone: '8639342389',
-          address: 'IMT, Hyderabad',
-        },
-        {
-          sno: 4,
-          name: 'Prof. Tumpa Dey',
-          profession: 'Teaching',
-          phone: '9000195605',
-          address: 'IMT, Hyderabad',
-        },
-        {
-          sno: 5,
-          name: 'Ms. K. Padma Sundari',
-          profession: 'Non-Teaching',
-          phone: '9959968904',
-          address: 'IMT, Hyderabad',
-        },
-        {
-          sno: 6,
-          name: 'Prof. Mamatha Raghuveer Achanta',
-          profession: 'Social Worker',
-          phone: '9849418592',
-          address: 'Begumpet, Hyderabad',
-        },
-      ],
+  members: [
+  {
+    sno: 1,
+    name: "Prof. Nikhil Rastogi, <br/>(Professor-Finance) – <strong>Chairperson</strong>",
+    profession: "Teaching",
+    phone: "7306874901",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 2,
+    name: "Prof. Akhila V, <br/>(Asst. Professor-HRM), <strong>Co-Chairperson</strong>",
+    profession: "Teaching",
+    phone: "7842701485",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 3,
+    name: "Prof. Musarrat Shaheen, <br/>(Asst. Professor-HRM)",
+    profession: "Teaching",
+    phone: "8978219231",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 4,
+    name: "Ms. Jaya Vamshi",
+    profession: "Non-Teaching",
+    phone: "9885770267",
+    address: "IMT, Hyderabad",
+  },
+  {
+    sno: 5,
+    name: "Dr. Mamatha Raghuveer Achanta (NGO Representative)",
+    profession: "Social Worker",
+    phone: "9849418591",
+    address: "Begumpet, Hyderabad",
+  },
+]
+
     },
     antiDrug: {
-      title: 'Anti Drug Committee',
+      title: "Anti Drug Committee",
       content: `
         <p>Anti-Drug Committee is constituted with the following members.</p>
         <p><b>Functions and Responsibilities:</b></p>
@@ -285,52 +281,87 @@ export default function Committees() {
       members: [
         {
           sno: 1,
-          category: 'Two faculty members (Appointed by Academic Senate)',
+          category: "Two faculty members (Appointed by Academic Senate)",
           names: [
-            { name: 'Prof. (Dr.) C. Chakrapani, Dean-Academics', phone: '08414671669' },
-            { name: 'Prof. (Dr.) Vinay Kumar, PGP Chairperson', phone: '08414671688' },
+            {
+              name: "Prof. (Dr.) C. Chakrapani, Dean-Academics",
+              phone: "08414671669",
+            },
+            {
+              name: "Prof. (Dr.) Vinay Kumar, PGP Chairperson",
+              phone: "08414671688",
+            },
           ],
         },
         {
           sno: 2,
-          category: 'Two Non-Teaching members',
+          category: "Two Non-Teaching members",
           names: [
-            { name: 'Mr. Kavi Bhushan Pandey, Manager-Administration & Maintenance', phone: '08414671654' },
-            { name: 'Mr. Sarat Kumar, Manager, Academic Programs Office', phone: '08414671662' },
+            {
+              name: "Mr. Kavi Bhushan Pandey, Manager-Administration & Maintenance",
+              phone: "08414671654",
+            },
+            {
+              name: "Mr. Sarat Kumar, Manager, Academic Programs Office",
+              phone: "08414671662",
+            },
           ],
         },
         {
           sno: 3,
-          category: 'Representative from Institute’s Security',
-          names: [{ name: 'Mr. Binod Bihari Raul, Supervisor - Campus Maintenance', phone: '08414671654' }],
+          category: "Representative from Institute’s Security",
+          names: [
+            {
+              name: "Mr. Binod Bihari Raul, Supervisor - Campus Maintenance",
+              phone: "08414671654",
+            },
+          ],
         },
         {
           sno: 4,
-          category: 'Representative from local police station',
-          names: [{ name: 'Mr. K. Narender Reddy, Inspector of Police, Shamshabad Police Station', phone: '9490617213' }],
+          category: "Representative from local police station",
+          names: [
+            {
+              name: "Mr. K. Narender Reddy, Inspector of Police, Shamshabad Police Station",
+              phone: "9490617213",
+            },
+          ],
         },
         {
           sno: 5,
-          category: 'Hostel warden if hostel facility available',
+          category: "Hostel warden if hostel facility available",
           names: [
-            { name: 'Prof. (Dr.) P. Tumpa Dey, Assistant Professor, (Girls Hostel Warden)', phone: '08414671695' },
-            { name: 'Prof. (Dr.) Pushpesh Pant, Assistant Professor, (Boys Hostel Warden)', phone: '08414671602' },
+            {
+              name: "Prof. (Dr.) P. Tumpa Dey, Assistant Professor, (Girls Hostel Warden)",
+              phone: "08414671695",
+            },
+            {
+              name: "Prof. (Dr.) Pushpesh Pant, Assistant Professor, (Boys Hostel Warden)",
+              phone: "08414671602",
+            },
           ],
         },
         {
           sno: 6,
-          category: 'One representative from students from each stream available in the Institute or as suits the Institute',
-          names: [{ name: 'Mr. Hritik Yadav, Senior Student', phone: '8830050891' }],
+          category:
+            "One representative from students from each stream available in the Institute or as suits the Institute",
+          names: [
+            { name: "Mr. Hritik Yadav, Senior Student", phone: "8830050891" },
+          ],
         },
         {
           sno: 7,
-          category: 'Representative from university medical unit/local hospital',
-          names: [{ name: 'Dr. Sreenath Reddy, MBBS', phone: '9133152377' }],
+          category:
+            "Representative from university medical unit/local hospital",
+          names: [{ name: "Dr. Sreenath Reddy, MBBS", phone: "9133152377" }],
         },
         {
           sno: 8,
-          category: 'One representative from Counseling and Psychological Services of the Institute/Health Department/NGO',
-          names: [{ name: 'Ms. Priya, Student Counsellor', phone: '08414671650' }],
+          category:
+            "One representative from Counseling and Psychological Services of the Institute/Health Department/NGO",
+          names: [
+            { name: "Ms. Priya, Student Counsellor", phone: "08414671650" },
+          ],
         },
       ],
     },
@@ -339,11 +370,11 @@ export default function Committees() {
   // Initialize dependencies
   useEffect(() => {
     // Import jQuery and Owl Carousel
-    import('jquery').then(($) => {
+    import("jquery").then(($) => {
       window.$ = window.jQuery = $.default;
-      import('owl.carousel').then(() => {
+      import("owl.carousel").then(() => {
         // Initialize Owl Carousel for Placement Alliances
-        window.$('#placement-carousel').owlCarousel({
+        window.$("#placement-carousel").owlCarousel({
           loop: true,
           margin: 20,
           nav: true,
@@ -361,7 +392,7 @@ export default function Committees() {
     });
 
     // Initialize AOS
-    import('aos').then((AOS) => {
+    import("aos").then((AOS) => {
       AOS.init({
         duration: 1000,
         once: true,
@@ -525,7 +556,7 @@ export default function Committees() {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
-              backgroundPosition: "center !important"
+            backgroundPosition: "center !important",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Committees</h2>

@@ -38,7 +38,7 @@ export default function FAQ() {
   dangerouslySetInnerHTML={{
     __html: `
       .faculty-hero {
-        background: url("/media/banners/internationalrelations.webp") !important;
+        background: url("/media/banners/Group 2.jpg") !important;
         position: relative;
         background-size: cover !important;
         height: 60vh;
