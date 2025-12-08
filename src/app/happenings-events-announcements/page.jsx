@@ -367,20 +367,34 @@ From new appointments to dynamic events, our community thrives on engagement, in
                               className="img-fluid rounded shadow-sm w-150"
                             />
                           </div>
-                          <div className="col-12 col-md-8">
-                            <h4
-                              className="fw-bold mt-2 mb-2"
-                              style={{ color: "#08317a" }}
-                            >
-                              {item.title}
-                            </h4>
-                <div
-  className="mb-0"
-  dangerouslySetInnerHTML={{
-    __html: decodeHTMLEntities(item.description)
-  }}
-></div>
-                          </div>
+                        <div className="col-12 col-md-8">
+  <h4
+    className="fw-bold mt-2 mb-2"
+    style={{ color: "#08317a" }}
+  >
+    {item.title}
+  </h4>
+
+  <div
+    className="mb-3"
+    dangerouslySetInnerHTML={{
+      __html: decodeHTMLEntities(item.description),
+    }}
+  ></div>
+
+  {/* Show additional images below description if available */}
+  {[item.team_image_two, item.team_image_three, item.team_image_four]
+    .filter(Boolean)
+    .map((img, i) => (
+      <img
+        key={i}
+        src={img}
+        alt={item.title}
+        className="img-fluid rounded shadow-sm w-100 mb-3"
+      />
+    ))}
+</div>
+
                         </div>
 
                         {/* Placeholder for additional content/images if needed */}
