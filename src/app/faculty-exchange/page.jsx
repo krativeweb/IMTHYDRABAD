@@ -55,7 +55,7 @@ export default function FacultyExchange() {
           __html: `
         /* Faculty Hero */
         .faculty-hero {
-          background: url('/media/banners/internationalrelations.webp') !important;
+          background: url('/media/banners/Group 3.jpg') !important;
           position: relative;
           background-size: cover !important;
           height: 60vh;
