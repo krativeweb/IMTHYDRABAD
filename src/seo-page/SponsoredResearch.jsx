@@ -27,7 +27,7 @@ const SponsoredResearch = () => {
         <div
           className="faculty-hero text-center text-white py-5"
           style={{
-            background: `url('/media/banners/campus.webp') no-repeat center center`,
+            background: `url('/media/banners/Group 9.jpg') no-repeat center center`,
             backgroundSize: "cover",
             height: "60vh",
             position: "relative",
