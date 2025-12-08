@@ -73,7 +73,7 @@ a{
 
 /* Responsive adjustments */
 @media (max-width: 767.98px) {
-  .navbar-brand img { height: 68px; }
+  .navbar-brand img { height: 101px; }
   .navbar-collapse { max-height: 80vh; overflow-y: auto !important; }
   .dropdown-menu.mega-dropdown { position: static !important; min-width: 100% !important; padding: 0 10px !important; }
   .mega-dropdown .row { flex-direction: column; margin: 0; }
