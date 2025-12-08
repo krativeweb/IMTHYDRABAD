@@ -179,7 +179,7 @@ export default function FPMProgram() {
           __html: `
         /* Faculty Hero */
         .faculty-hero {
-          background: url('/media/banners/Group 4.jpg') !important;
+          background: url('/media/banners/Group 12.jpg') !important;
           position: relative;
           background-size: cover !important;
           height: 60vh;
