@@ -71,8 +71,8 @@ export default function Navbar() {
             <Image
               src="/media/IMT-logo.png"
               alt="Logo"
-              width={270} // 2x retina
-              height={100}
+              width={290} // 2x retina
+              height={86}
               style={{ margin: "2px",marginLeft:"17px" }}
             />
           </Link>
