@@ -131,7 +131,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link className="navbar-brand" href="/">
         <img
-          src="./media/imtpilllogo.webp"
+          src="./media/IMT-logo.png"
           alt="Logo"
           style={{ height: 86, marginLeft: "17px !important", margin: 2 }}
         />
