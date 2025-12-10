@@ -11,7 +11,7 @@ export default function NavbarFour() {
           {/* Logo */}
           <a className="navbar-brand" href="#">
             <Image
-              src="/media/imtpilllogo.webp"
+              src="/media/IMT-logo.png"
               alt="Logo"
               width={270}
               height={100}
