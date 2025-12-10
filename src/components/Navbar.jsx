@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link className="navbar-brand" href="/">
             <Image
-              src="/media/imtpilllogo.webp"
+              src="/media/IMT-logo.png"
               alt="Logo"
               width={270} // 2x retina
               height={100}
