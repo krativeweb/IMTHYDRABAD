@@ -73,7 +73,7 @@ export default function Navbar() {
               alt="Logo"
               width={270} // 2x retina
               height={100}
-              style={{ margin: "2px" }}
+              style={{ margin: "2px",margin-left:"17px" }}
             />
           </Link>
 
