@@ -91,7 +91,7 @@ export default function NavbarTwo() {
 
       {/* Navbar */}
      <nav   ref={navbarRef}  className="navbar navbar-expand-lg navbar-light sticky-top" >
-    <div className="container shadow-sm">
+    <div className="container shadow-sm navbarcontainer p-1">
       {/* Logo */}
       <a className="navbar-brand" href="/">
         <img
