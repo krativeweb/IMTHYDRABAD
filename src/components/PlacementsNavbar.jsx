@@ -133,7 +133,7 @@ export default function Navbar() {
         <img
           src="./media/imtpilllogo.webp"
           alt="Logo"
-          style={{ height: 86, marginLeft: "-9px !important", margin: 2 }}
+          style={{ height: 86, marginLeft: "17px !important", margin: 2 }}
         />
       </Link>
       {/* Toggler (Mobile) */}
