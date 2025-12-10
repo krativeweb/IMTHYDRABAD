@@ -13,8 +13,8 @@ export default function NavbarFour() {
             <Image
               src="/media/IMT-logo.png"
               alt="Logo"
-              width={270}
-              height={100}
+              width={290}
+              height={86}
               priority
               style={{ margin: "2px" }}
             />
