@@ -127,7 +127,7 @@ export default function Navbar() {
     <>
   {/* Navbar */}
   <nav className="navbar navbar-expand-lg navbar-light sticky-top">
-    <div className="container shadow-sm">
+    <div className="container shadow-sm navbarcontainer p-1">
       {/* Logo */}
       <Link className="navbar-brand" href="/">
         <img
