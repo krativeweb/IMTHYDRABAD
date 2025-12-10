@@ -85,8 +85,8 @@ export default function CampusLifeSection() {
               <div className="layer-content">
                 <div className="section-title">
                   <div className="title-header">
-                    <h2 className="title">Life @ IMT HYDRABAD Campus</h2>
-                    <h5 className="mt-3">CAMPUS OF IMT HYDRABAD</h5>
+                    <h2 className="title">Life @ IMT HYDERABAD Campus</h2>
+                    <h5 className="mt-3">CAMPUS OF IMT HYDERABAD</h5>
                   </div>
                   <div className="heading-seperator">
                     <span />
