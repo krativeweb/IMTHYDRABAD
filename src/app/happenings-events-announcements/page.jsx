@@ -4,7 +4,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
 const HappeningsPage = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -14,11 +13,11 @@ const HappeningsPage = () => {
   // Handle external scripts in useEffect
 
   function decodeHTMLEntities(str) {
-  if (!str) return "";
-  const txt = document.createElement("textarea");
-  txt.innerHTML = str;
-  return txt.value;
-}
+    if (!str) return "";
+    const txt = document.createElement("textarea");
+    txt.innerHTML = str;
+    return txt.value;
+  }
   useEffect(() => {
     let isMounted = true; // Prevent state update after unmount
 
@@ -99,9 +98,9 @@ const HappeningsPage = () => {
   return (
     <>
       {/* Inline Styles */}
-  <style
-  dangerouslySetInnerHTML={{
-    __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
       /* Makes ANY active tab (main or sub) turn yellow (bg-warning) */
       .nav-pills .nav-link.active {
         background-color: var(--bs-warning) !important;
@@ -248,9 +247,8 @@ height: 80vh;
   }
 }
     `,
-  }}
-/>
-
+        }}
+      />
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -272,15 +270,17 @@ height: 80vh;
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
-              backgroundPosition: "center !important"
+            backgroundPosition: "center !important",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">
             Happenings Events & Announcements
           </h2>
           <p className="text-white">
-  A campus always alive with ideas and initiatives.<br/>
-From new appointments to dynamic events, our community thrives on engagement, inspiration, and progress.
+            A campus always alive with ideas and initiatives.
+            <br />
+            From new appointments to dynamic events, our community thrives on
+            engagement, inspiration, and progress.
           </p>
         </div>
 
@@ -359,48 +359,46 @@ From new appointments to dynamic events, our community thrives on engagement, in
                         }`}
                         id={`v-pills-std${idx + 1}`}
                       >
-                        <div className="row align-items-start mb-4">
-                          <div className="col-12 col-md-4 mb-3 mb-md-0">
-                            <img
-                              src={item.team_image}
-                              alt={item.title}
-                              className="img-fluid rounded shadow-sm w-150"
-                            />
+                        {/* Title Row */}
+                        <div className="row mb-3">
+                          <div className="col-12">
+                            <h4
+                              className="fw-bold mt-2 mb-2"
+                              style={{ color: "#08317a" }}
+                            >
+                              {item.title}
+                            </h4>
                           </div>
-                        <div className="col-12 col-md-8">
-  <h4
-    className="fw-bold mt-2 mb-2"
-    style={{ color: "#08317a" }}
-  >
-    {item.title}
-  </h4>
-
-  <div
-    className="mb-3"
-    dangerouslySetInnerHTML={{
-      __html: decodeHTMLEntities(item.description),
-    }}
-  ></div>
-
-  {/* Show additional images below description if available */}
-  {[item.team_image_two, item.team_image_three, item.team_image_four]
-    .filter(Boolean)
-    .map((img, i) => (
-      <img
-        key={i}
-        src={img}
-        alt={item.title}
-        className="img-fluid rounded shadow-sm w-100 mb-3"
-      />
-    ))}
-</div>
-
                         </div>
 
-                        {/* Placeholder for additional content/images if needed */}
+                        {/* Images Row (only if available) */}
+                        <div className="row mb-4">
+                          {[
+                            item.team_image,
+                            item.team_image_two,
+                            item.team_image_three,
+                            item.team_image_four,
+                          ]
+                            .filter(Boolean)
+                            .map((img, i) => (
+                              <div key={i} className="col-12 col-md-4 mb-3">
+                                <img
+                                  src={img}
+                                  alt={item.title}
+                                  className="img-fluid rounded shadow-sm w-100"
+                                />
+                              </div>
+                            ))}
+                        </div>
+
+                        {/* Description Row */}
                         <div className="row mb-5">
                           <div className="col-12">
-                            {/* Additional text or images can be inserted here dynamically if available */}
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: decodeHTMLEntities(item.description),
+                              }}
+                            ></div>
                           </div>
                         </div>
                       </div>
@@ -455,7 +453,7 @@ From new appointments to dynamic events, our community thrives on engagement, in
                           </div>
                           <div>
                             <Link
-                              href='#'
+                              href="#"
                               className="text-dark fw-semibold text-decoration-none"
                             >
                               {event.title || "Untitled Event"}
