@@ -516,87 +516,81 @@ export default function PlacementsSection() {
 
       {/* Message from Head of Corporate Relations */}
       <section className="py-5">
-        <div className="container">
-          <div className="card border-0 shadow-lg rounded-4 p-4 p-md-5">
-            <div className="position-relative">
-              <img
-                src="/media/imt-prasanth.webp"
-                alt="Mr. Prakash Pathak"
-                className="float-md-start me-md-4 mb-3 shadow-sm"
-                style={{
-                  width: "180px",
-                  height: "auto",
-                  borderRadius: "1rem",
-                  objectFit: "cover",
-                  shapeOutside: "circle(50%)",
-                 
-                  float: "left",
-                  marginRight: "1.5rem",
-                  marginBottom: "0.5rem",
-                }}
-              />
-              <h2 className="h4 fw-bold text-dark mb-1">
-                Message from the Head, Corporate Relations
-              </h2>
-              <hr className="border-dark opacity-50 w-25 mb-3" />
-              <div className="text-dark fs-6 lh-lg mt-3">
-                <p>Dear Recruiters,</p>
-                <p>
-                  I am pleased to invite you for campus placements of our PGDM
-                  Class of 2026 students. IMT Hyderabad is a part of the IMT
-                  Group and the institute is well known for its quality
-                  education and is a preferred destination for students who are
-                  seeking management education. With our management education
-                  experience of more than four decades, we have been able to
-                  provide an edge over our contemporaries, that goes a long way
-                  in grooming our students to not only be industry-ready, but
-                  also future-ready.
-                </p>
-                <p>
-                  The last year has been affected by many global and domestic
-                  events that had an impact on campus placements across all
-                  institutes and universities. However, IMT Hyderabad has been
-                  able to respond by taking extra measures for our placements.
-                  Even this year, recruiters like{" "}
-                  <strong>
-                    Arcesium, BNY, Micron, HCL, Berkedia, Oracle, PepsiCo,
-                    Volvo, Zeta Global, Sony India, Wipro, Infosys, Cognizant,
-                    Advance Auto Parts, Voltas, Nerolac, CRISIL, Netelixir
-                  </strong>{" "}
-                  and many more conducted campus placement process and selected
-                  our students, with a <strong>highest CTC of ₹31 LPA</strong>{" "}
-                  and an <strong>average CTC of ₹12.2 LPA</strong>.
-                </p>
-                <p>
-                  The batch of 2024–26 is a good mix of students from all
-                  backgrounds, and has students from Engineering (18%), Arts &
-                  Commerce (47%), Management (18%) and Science (16%). There are
-                  students with work experience greater than 2 years (5%), less
-                  than 2 years (14%), and freshers (81%). Besides diverse
-                  backgrounds, the batch is a good mix of gender diversity with{" "}
-                  <strong>34% female students</strong>.
-                </p>
-                <p>
-                  The students specialize in the areas of Marketing, Finance,
-                  HR, Operations, IT, Analytics, and General Management. All the
-                  students have undergone a 12-week summer internship which
-                  gives them a good notion of the market trends. The students
-                  contribute substantially and at the same time gain valuable
-                  learning during their summer internships.
-                </p>
-                <p>
-                  I extend a warm invite to you to attend our final placement
-                  process for the Class of 2026 and look forward to a symbiotic
-                  relationship.
-                </p>
-                <p className="mt-4 mb-0 fw-bold">Warm Regards,</p>
-                <p className="mb-0">Prakash Pathak</p>
-                <p className="text-muted">Head – Corporate Relations</p>
-              </div>
-            </div>
+  <div className="container">
+    <div className="card border-0 shadow-lg rounded-4 p-4 p-md-5">
+
+      {/* FLEX WRAPPER */}
+      <div className="d-flex flex-column flex-md-row gap-4 align-items-start">
+
+        {/* IMAGE */}
+        <img
+          src="/media/imt-prasanth.webp"
+          alt="Mr. Prakash Pathak"
+          className="corporate-head-img shadow-sm"
+        />
+
+        {/* CONTENT */}
+        <div className="flex-grow-1">
+          <h2 className="h4 fw-bold text-dark mb-1">
+            Message from the Head, Corporate Relations
+          </h2>
+
+          <hr className="border-dark opacity-50 w-25 mb-3" />
+
+          <div className="text-dark fs-6 lh-lg mt-3">
+            <p>Dear Recruiters,</p>
+
+            <p>
+              I am pleased to invite you for campus placements of our PGDM
+              Class of 2026 students. IMT Hyderabad is a part of the IMT
+              Group and the institute is well known for its quality
+              education and is a preferred destination for students who are
+              seeking management education.
+            </p>
+
+            <p>
+              The last year has been affected by many global and domestic
+              events that had an impact on campus placements. However, IMT
+              Hyderabad responded by taking extra measures for our placements.
+              Recruiters like{" "}
+              <strong>
+                Arcesium, BNY, Micron, HCL, Berkedia, Oracle, PepsiCo, Volvo,
+                Zeta Global, Sony India, Wipro, Infosys, Cognizant, Advance Auto
+                Parts, Voltas, Nerolac, CRISIL, Netelixir
+              </strong>{" "}
+              selected our students, with a{" "}
+              <strong>highest CTC of ₹31 LPA</strong> and an{" "}
+              <strong>average CTC of ₹12.2 LPA</strong>.
+            </p>
+
+            <p>
+              The batch of 2024–26 is a good mix of students from Engineering,
+              Arts & Commerce, Management, and Science backgrounds with{" "}
+              <strong>34% female students</strong>.
+            </p>
+
+            <p>
+              Students specialize in Marketing, Finance, HR, Operations, IT,
+              Analytics, and General Management, and have completed a 12-week
+              summer internship.
+            </p>
+
+            <p>
+              I extend a warm invite to attend our final placement process
+              for the Class of 2026 and look forward to a symbiotic
+              relationship.
+            </p>
+
+            <p className="mt-4 mb-0 fw-bold">Warm Regards,</p>
+            <p className="mb-0">Prakash Pathak</p>
+            <p className="text-muted">Head – Corporate Relations</p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Sector Wise Statistics */}
       <section className="py-3">
