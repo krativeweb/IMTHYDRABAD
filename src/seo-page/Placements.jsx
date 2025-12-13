@@ -268,7 +268,6 @@ export default function PlacementsSection() {
         border-radius: 1rem;
         object-fit: cover;
         shape-outside: circle(50%);
-        clip-path: circle(50%);
         float: left;
         margin-right: 1.5rem;
         margin-bottom: 0.5rem;
