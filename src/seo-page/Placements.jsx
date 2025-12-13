@@ -400,80 +400,70 @@ export default function PlacementsSection() {
       </section>
 
       {/* Director's Message Section */}
-   <section className="directors-message py-5">
-  <div className="container">
-    <div className="message-wrapper bg-white shadow-sm rounded-4 p-4 p-md-5">
-      
-      <h2 className="fw-bold text-dark mb-4 text-center text-md-start">
-        Director’s Message
-      </h2>
-
-      {/* SIDE-BY-SIDE WRAPPER */}
-      <div className="d-flex flex-column flex-md-row gap-4 align-items-start">
-
-        {/* IMAGE */}
-        <img
-          src="./media/prof-Islam.webp"
-          alt="Prof. (Dr.) K. M. Baharul Islam"
-          className="director-img shadow-sm rounded-3"
-        />
-
-        {/* TEXT */}
-        <div className="text-secondary lh-lg">
-          <p>
-            It is my privilege to invite your esteemed organization to
-            participate in IMT Hyderabad’s campus recruitment process for
-            the 2024–25 academic year. We take great pride in presenting our
-            thirteenth postgraduate batch — a cohort of exceptional young
-            professionals poised to make significant contributions in
-            today’s dynamic business landscape shaped by Industry 5.0.
-          </p>
-
-          <p>
-            At IMT Hyderabad, we have cultivated a distinctive “Know-Do-Be”
-            educational philosophy that transcends conventional learning.
-            Our approach integrates rigorous academic training with
-            real-world exposure, developing leaders who combine technical
-            expertise with emotional intelligence and social awareness.
-          </p>
-
-          <p>
-            The curriculum blends Harvard and Ivey case methodologies with
-            international immersion experiences, while our community
-            initiatives foster responsible leadership.
-          </p>
-
-          <p>
-            Over the past twelve years, our alumni network has established
-            an impressive track record of driving innovation and delivering
-            sustainable results across diverse sectors.
-          </p>
-
-          <p>
-            We are confident that their unique blend of theoretical
-            knowledge, practical orientation, and creative problem-solving
-            abilities will add substantial value to your organization.
-          </p>
-
-          <p>
-            Our dedicated placement team stands ready to customize the
-            recruitment process to your specific requirements.
-          </p>
-
-          <div className="mt-4">
-            <p className="fw-bold text-dark mb-0">Warm Regards,</p>
-            <p className="fw-bold text-dark mb-0">
-              Prof. (Dr.) K. M. Baharul Islam
-            </p>
-            <small className="text-muted">Director, IMT Hyderabad</small>
+      <section className="directors-message py-5">
+        <div className="container">
+          <div className="message-wrapper bg-white shadow-sm rounded-4 p-4 p-md-5 position-relative">
+            <h2 className="fw-bold text-dark mb-4 text-center text-md-start">
+              Director’s Message
+            </h2>
+            <img
+              src="./media/prof-Islam.webp"
+              alt="Prof. (Dr.) K. M. Baharul Islam"
+              className="director-img float-md-start me-md-4 mb-3 shadow-sm rounded-3"
+            />
+            <div className="text-secondary lh-lg">
+              <p>
+                It is my privilege to invite your esteemed organization to
+                participate in IMT Hyderabad’s campus recruitment process for
+                the 2024–25 academic year. We take great pride in presenting our
+                thirteenth postgraduate batch — a cohort of exceptional young
+                professionals poised to make significant contributions in
+                today’s dynamic business landscape shaped by Industry 5.0.
+              </p>
+              <p>
+                At IMT Hyderabad, we have cultivated a distinctive “Know-Do-Be”
+                educational philosophy that transcends conventional learning.
+                Our approach integrates rigorous academic training with
+                real-world exposure, developing leaders who combine technical
+                expertise with emotional intelligence and social awareness.
+              </p>
+              <p>
+                The curriculum blends Harvard and Ivey case methodologies with
+                international immersion experiences, while our community
+                initiatives foster responsible leadership. This holistic
+                development model produces graduates with sharp analytical
+                capabilities, strong interpersonal skills, and the agility to
+                navigate complex business challenges.
+              </p>
+              <p>
+                Over the past twelve years, our alumni network has established
+                an impressive track record of driving innovation and delivering
+                sustainable results across diverse sectors. The current batch
+                embodies this legacy while bringing fresh perspectives shaped by
+                emerging industry paradigms.
+              </p>
+              <p>
+                We are confident that their unique blend of theoretical
+                knowledge, practical orientation, and creative problem-solving
+                abilities will add substantial value to your organization.
+              </p>
+              <p>
+                Our dedicated placement team stands ready to customize the
+                recruitment process to your specific requirements. We look
+                forward to welcoming you to our campus and facilitating
+                meaningful connections with these promising future leaders.
+              </p>
+              <div className="mt-4">
+                <p className="fw-bold text-dark mb-0">Warm Regards,</p>
+                <p className="fw-bold text-dark mb-0">
+                  Prof. (Dr.) K. M. Baharul Islam
+                </p>
+                <small className="text-muted">Director, IMT Hyderabad</small>
+              </div>
+            </div>
           </div>
         </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Placement Alliances Section */}
       <section
@@ -515,7 +505,7 @@ export default function PlacementsSection() {
       </section>
 
       {/* Message from Head of Corporate Relations */}
-          <section className="py-5">
+      <section className="py-5">
         <div className="container">
           <div className="card border-0 shadow-lg rounded-4 p-4 p-md-5">
             <div className="position-relative">
