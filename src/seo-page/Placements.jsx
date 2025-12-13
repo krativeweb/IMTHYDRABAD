@@ -519,7 +519,7 @@ export default function PlacementsSection() {
                   borderRadius: "1rem",
                   objectFit: "cover",
                   shapeOutside: "circle(50%)",
-                  clipPath: "circle(50%)",
+                 
                   float: "left",
                   marginRight: "1.5rem",
                   marginBottom: "0.5rem",
