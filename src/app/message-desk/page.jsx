@@ -552,7 +552,7 @@ export default function LeadershipSection() {
                       journey.
                     </p>
                     <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                      <p className="fst-italic mb-0">
+                      <p className="mb-0">
                         &quot;Two roads diverged in a wood, and I took the one
                         less travelled by, And that has made all the
                         difference.&quot;
