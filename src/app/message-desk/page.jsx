@@ -215,25 +215,22 @@ export default function LeadershipSection() {
                   aria-labelledby="president-tab"
                 >
                   <div className="row align-items-center g-4">
-                   <div className="col-md-4">
-    <div className="leader-img-box shadow">
-      <img
-        src="/media/shri-bakul-nath.jpg"
-        alt="President"
-      />
-    </div>
+                    <div className="col-md-4">
+                      <div className="leader-img-box shadow">
+                        <img src="/media/shri-bakul-nath.jpg" alt="President" />
+                      </div>
 
-    <div className="text-center mt-2">
-      <h4 className="fw-bold mb-0">Shri Bakul Nath</h4>
-      <h6 className="text-warning">President</h6>
-    </div>
-  </div>
+                      <div className="text-center mt-2">
+                        <h4 className="fw-bold mb-0">Shri Bakul Nath</h4>
+                        <h6 className="text-warning">President</h6>
+                      </div>
+                    </div>
                     <div className="col-md-8">
                       <div
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
-                           marginTop: "-72px",
+                          marginTop: "-72px",
                         }}
                       >
                         <h4
@@ -279,8 +276,8 @@ export default function LeadershipSection() {
                       </p>
                       <footer className="blockquote-footer mt-2">
                         Shri Bakul Nath
-                      </footer> 
-                    </blockquote> 
+                      </footer>
+                    </blockquote>
                   </div>
                 </div>
 
@@ -475,52 +472,46 @@ export default function LeadershipSection() {
                   role="tabpanel"
                   aria-labelledby="director-tab"
                 >
-<div className="row align-items-start g-4">
+                  <div className="row align-items-start g-4">
+                    {/* IMAGE COLUMN */}
+                    <div className="col-md-4">
+                      <div className="leader-img-box shadow">
+                        <img src="/media/prof-Islam.webp" alt="Director" />
+                      </div>
 
-    {/* IMAGE COLUMN */}
-    <div className="col-md-4">
-      <div className="leader-img-box shadow">
-        <img
-          src="/media/prof-Islam.webp"
-          alt="Director"
-        />
-      </div>
-
-      <div className="text-center mt-2">
-        <h4 className="mb-0">Prof (Dr) K M Baharul Islam</h4>
-        <h6 className="text-warning">Director</h6>
-      </div>
-    </div>
+                      <div className="text-center mt-2">
+                        <h4 className="mb-0">Prof (Dr) K M Baharul Islam</h4>
+                        <h6 className="text-warning">Director</h6>
+                      </div>
+                    </div>
                     <div className="col-md-8">
                       <div
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
-                          marginTop:"-14px"
-                         
+                          marginTop: "-14px",
                         }}
                       >
                         <h4
-                          className="fw-bold text-center mb-3"
+                          className="fw-bold text-left mb-3"
                           style={{ color: "#08317a" }}
                         >
                           Director&apos;s Message
                         </h4>
                         <p>
-                          The world around us is changing at an
-                          unprecedented pace. Technology is reshaping
-                          industries, redefining our work, and creating new
-                          possibilities. While technology may disrupt
-                          traditional work methods, it also opens doors to
-                          innovation, creativity, and growth. At IMT Hyderabad,
-                          we are dedicated to preparing you for this evolving
-                          landscape. Our programs are designed to help you
-                          develop the skills that matter most—critical thinking,
-                          adaptability, and the ability to collaborate
-                          effectively in a digital-first world. Our
-                          learner-centric approach and industry-aligned
-                          curriculum aim to equip you with the tools to thrive
-                          in a complex and interconnected world.
+                          The world around us is changing at an unprecedented
+                          pace. Technology is reshaping industries, redefining
+                          our work, and creating new possibilities. While
+                          technology may disrupt traditional work methods, it
+                          also opens doors to innovation, creativity, and
+                          growth. At IMT Hyderabad, we are dedicated to
+                          preparing you for this evolving landscape. Our
+                          programs are designed to help you develop the skills
+                          that matter most—critical thinking, adaptability, and
+                          the ability to collaborate effectively in a
+                          digital-first world. Our learner-centric approach and
+                          industry-aligned curriculum aim to equip you with the
+                          tools to thrive in a complex and interconnected world.
                         </p>
                         <p>
                           Here at IMT Hyderabad, you will find more than a
@@ -540,27 +531,25 @@ export default function LeadershipSection() {
                       your peers, embrace new perspectives, and push yourself to
                       grow as a professional and a person. Remember, the world
                       needs leaders who are not only skilled but also
-                      compassionate and socially conscious.
+                      compassionate and socially conscious
                     </p>
                     <p>
                       With great excitement and pride, I welcome you to IMT
                       Hyderabad, a place where aspirations meet opportunities
-                      and where the leaders of tomorrow are shaped today. Let us
-                      work together to create a bold, inclusive, and
-                      transformative future. Famous poet Robert Frost
-                      beautifully captured the essence of embarking on this
-                      journey.
+                      and where tomorrow's leaders are shaped today. Let us work
+                      together to create a bold, inclusive, and transformative
+                      future. Famous poet Robert Frost beautifully captured the
+                      essence of embarking on this journey.
                     </p>
                     <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
                       <p className="fst-italic mb-0">
-                        &quot;Two roads diverged in a wood, and I took the one
-                        less travelled by, And that has made all the
-                        difference.&quot;
+                        "Two roads diverged in a wood, and I took the one less
+                        travelled by, And that has made all the difference."
                       </p>
                       <footer className="blockquote-footer mt-2">
-                       Robert Lee Frost
-                      </footer> 
-                    </blockquote> 
+                        Robert Lee Frost
+                      </footer>
+                    </blockquote>
                   </div>
                 </div>
               </div>
