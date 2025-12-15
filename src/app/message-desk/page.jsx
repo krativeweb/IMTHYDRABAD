@@ -343,7 +343,7 @@ export default function LeadershipSection() {
                   </div>
 
                   <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                    <p className=" mb-2">
+                    <p className=" mb-2" style={{ fontSize:"17px" }}>
                       There is a sense of pride in seeing the institute do well
                       and belief that the institute and its graduates will be
                       able to scale the pinnacle of success and contribute to
@@ -600,19 +600,25 @@ export default function LeadershipSection() {
                     <p>
                       With great excitement and pride, I welcome you to IMT
                       Hyderabad, a place where aspirations meet opportunities
-                      and where the leaders of tomorrow are shaped today.
+                      and where the leaders of tomorrow are shaped today.With
+                      great excitement and pride, I welcome you to IMT
+                      Hyderabad, a place where aspirations meet opportunities
+                      and where tomorrow's leaders are shaped today. Let us work
+                      together to create a bold, inclusive, and transformative
+                      future. Famous poet Robert Frost beautifully captured the
+                      essence of embarking on this journey.
                     </p>
                   </div>
 
                   <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                    <p className="mb-0">
+                    <p className="mb-0" style={{ fontSize:"17px" }}>
                       &quot;Two roads diverged in a wood, and I took the one
                       less travelled by, And that has made all the
                       difference.&quot;
                     </p>
-                    <footer className="blockquote-footer mt-2">
+                    {/* <footer className="blockquote-footer mt-2">
                       Robert Lee Frost
-                    </footer>
+                    </footer> */}
                   </blockquote>
                 </div>
               </div>
