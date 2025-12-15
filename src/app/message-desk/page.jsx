@@ -237,7 +237,7 @@ export default function LeadershipSection() {
                         }}
                       >
                         <h4
-                          className="fw-bold text-center mb-3"
+                          className="fw-bold text-left mb-3"
                           style={{ color: "#08317a" }}
                         >
                           President&apos;s Message
@@ -501,7 +501,7 @@ export default function LeadershipSection() {
                         }}
                       >
                         <h4
-                          className="fw-bold text-center mb-3"
+                          className="fw-bold text-left mb-3"
                           style={{ color: "#08317a" }}
                         >
                           Director&apos;s Message
