@@ -480,6 +480,7 @@ export default function LeadershipSection() {
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
+                          marginTop:"-55px"
                          
                         }}
                       >
