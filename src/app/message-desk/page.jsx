@@ -215,19 +215,19 @@ export default function LeadershipSection() {
                   aria-labelledby="president-tab"
                 >
                   <div className="row align-items-center g-4">
-                    <div className="col-md-4">
-                      <div className="position-relative">
-                        <img
-                          src="/media/shri-bakul-nath.jpg"
-                          alt="President"
-                          className="img-fluid rounded shadow"
-                        />
-                      </div>
-                      <div className="text-center mt-2">
-                        <h4 className="fw-bold">Shri Bakul Nath</h4>
-                        <h5 className="text-warning">President</h5>
-                      </div>
-                    </div>
+                   <div className="col-md-4">
+    <div className="leader-img-box shadow">
+      <img
+        src="/media/shri-bakul-nath.jpg"
+        alt="President"
+      />
+    </div>
+
+    <div className="text-center mt-2">
+      <h4 className="fw-bold mb-0">Shri Bakul Nath</h4>
+      <h6 className="text-warning">President</h6>
+    </div>
+  </div>
                     <div className="col-md-8">
                       <div
                         style={{
