@@ -99,6 +99,20 @@ export default function LeadershipSection() {
           transition: all 0.3s ease;
         }
 
+        .leader-img-box {
+  width: 320px;        /* fixed width */
+  height: 340px;       /* control height freely */
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;      /* center horizontally */
+}
+
+.leader-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
         #leadership-section .nav-tabs .nav-link.active {
           background: #ffc107;
           color: #000;
