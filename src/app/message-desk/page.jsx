@@ -461,20 +461,22 @@ export default function LeadershipSection() {
                   role="tabpanel"
                   aria-labelledby="director-tab"
                 >
-                  <div className="row align-items-center g-4">
-                    <div className="col-md-4">
-                      <div className="position-relative">
-                        <img
-                          src="/media/prof-Islam.webp"
-                          alt="Director"
-                          className="img-fluid rounded shadow"
-                        />
-                      </div>
-                      <div className="text-center mt-2">
-                        <h4>Prof (Dr) K M Baharul Islam</h4>
-                        <h5 className="text-warning">Director</h5>
-                      </div>
-                    </div>
+<div className="row align-items-start g-4">
+
+    {/* IMAGE COLUMN */}
+    <div className="col-md-4">
+      <div className="leader-img-box shadow">
+        <img
+          src="/media/prof-Islam.webp"
+          alt="Director"
+        />
+      </div>
+
+      <div className="text-center mt-2">
+        <h4 className="mb-0">Prof (Dr) K M Baharul Islam</h4>
+        <h6 className="text-warning">Director</h6>
+      </div>
+    </div>
                     <div className="col-md-8">
                       <div
                         style={{
