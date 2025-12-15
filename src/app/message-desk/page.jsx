@@ -219,7 +219,7 @@ export default function LeadershipSection() {
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
-                           marginTop: "-54px",
+                           marginTop: "-37px",
                         }}
                       >
                         <h4
@@ -256,7 +256,7 @@ export default function LeadershipSection() {
                     </div>
                   </div>
                   <div className="mt-4 px-3 px-md-5">
-                    <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
+                    {/* <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
                       <p className="fst-italic mb-0">
                         There is a sense of pride in seeing the institute do
                         well and belief that the institute and its graduates
@@ -266,7 +266,7 @@ export default function LeadershipSection() {
                       <footer className="blockquote-footer mt-2">
                         Shri Bakul Nath
                       </footer>
-                    </blockquote>
+                    </blockquote> */}
                   </div>
                 </div>
 
@@ -535,7 +535,7 @@ export default function LeadershipSection() {
                       beautifully captured the essence of embarking on this
                       journey:
                     </p>
-                    <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
+                    {/* <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
                       <p className="fst-italic mb-0">
                         &quot;Two roads diverged in a wood, and I took the one
                         less travelled by, And that has made all the
@@ -544,7 +544,7 @@ export default function LeadershipSection() {
                       <footer className="blockquote-footer mt-2">
                         Prof (Dr) K M Baharul Islam
                       </footer>
-                    </blockquote>
+                    </blockquote> */}
                   </div>
                 </div>
               </div>
