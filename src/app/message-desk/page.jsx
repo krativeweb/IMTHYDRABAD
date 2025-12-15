@@ -549,7 +549,7 @@ export default function LeadershipSection() {
                       work together to create a bold, inclusive, and
                       transformative future. Famous poet Robert Frost
                       beautifully captured the essence of embarking on this
-                      journey:
+                      journey.
                     </p>
                     <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
                       <p className="fst-italic mb-0">
