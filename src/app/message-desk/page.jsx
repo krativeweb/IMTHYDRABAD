@@ -476,7 +476,12 @@ export default function LeadershipSection() {
                   aria-labelledby="director-tab"
                 >
 <div className="row align-items-start g-4">
-
+                <h4
+                          className="fw-bold text-left mb-3"
+                          style={{ color: "#08317a" }}
+                        >
+                          Director&apos;s Message
+                        </h4>
     {/* IMAGE COLUMN */}
     <div className="col-md-4">
       <div className="leader-img-box shadow">
@@ -500,12 +505,7 @@ export default function LeadershipSection() {
                          
                         }}
                       >
-                        <h4
-                          className="fw-bold text-center mb-3"
-                          style={{ color: "#08317a" }}
-                        >
-                          Director&apos;s Message
-                        </h4>
+                      
                         <p>
                           The world around us is changing at an
                           unprecedented pace. Technology is reshaping
