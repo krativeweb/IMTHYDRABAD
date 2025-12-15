@@ -507,7 +507,7 @@ export default function LeadershipSection() {
                           Director&apos;s Message
                         </h4>
                         <p>
-                          &quot;The world around us is changing at an
+                          The world around us is changing at an
                           unprecedented pace. Technology is reshaping
                           industries, redefining our work, and creating new
                           possibilities. While technology may disrupt
