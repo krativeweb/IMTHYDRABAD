@@ -127,6 +127,85 @@ export default function LeadershipSection() {
     margin-top: -60px !important;
   }
 }
+  .director-message {
+  line-height: 1.8;
+  color: #333;
+}
+
+/* FLOAT IMAGE */
+.director-img {
+  float: left;
+  width: 300px;
+  margin: 6px 30px 20px 0;
+}
+
+.director-img img {
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* CLEAR FLOAT AT END */
+.director-message::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .director-img {
+    float: none;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.director-message p {
+  line-height: 2.2;          /* increase line height */
+
+}
+  .president-message {
+  line-height: 1.9;
+  color: #333;
+}
+
+/* FLOAT IMAGE */
+.president-img {
+  float: left;
+  width: 300px;
+  margin: 6px 30px 20px 0;
+}
+
+.president-img img {
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* CLEAR FLOAT */
+.president-message::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* PARAGRAPH SPACING */
+.president-message p {
+  line-height: 2;
+  margin-bottom: 1.2rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .president-img {
+    float: none;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
 
     `,
         }}
@@ -214,74 +293,66 @@ export default function LeadershipSection() {
                   role="tabpanel"
                   aria-labelledby="president-tab"
                 >
-                  <div className="row align-items-center g-4">
-                   <div className="col-md-4">
-    <div className="leader-img-box shadow">
-      <img
-        src="/media/shri-bakul-nath.jpg"
-        alt="President"
-      />
-    </div>
+                  <h4 className="fw-bold mb-4" style={{ color: "#08317a" }}>
+                    President&apos;s Message
+                  </h4>
 
-    <div className="text-center mt-2">
-      <h4 className="fw-bold mb-0">Shri Bakul Nath</h4>
-      <h6 className="text-warning">President</h6>
-    </div>
-  </div>
-                    <div className="col-md-8">
-                      <div
-                        style={{
-                          lineHeight: 1.8,
-                          color: "#333",
-                           marginTop: "-72px",
-                        }}
-                      >
-                        <h4
-                          className="fw-bold text-center mb-3"
-                          style={{ color: "#08317a" }}
-                        >
-                          President&apos;s Message
+                  <div className="president-message">
+                    {/* FLOAT IMAGE */}
+                    <div className="president-img">
+                      <img src="/media/shri-bakul-nath.jpg" alt="President" />
+                      <div className="text-center mt-2">
+                        <h4 className="mb-2" style={{ fontSize: "22px" }}>
+                          Shri Bakul Nath
                         </h4>
-                        <p>
-                          Educational excellence was the mantra with which
-                          Institute of Management Technology (IMT) started.
-                          Nearly forty years later, IMT continues to be at the
-                          forefront of management education in India, grooming
-                          leaders and entrepreneurs. Upholding the motto of the
-                          IMT group, Institute of Management Technology
-                          Hyderabad (IMTH) has within a short span of eight
-                          years carved a niche for itself as an institution with
-                          global academic standards.
-                        </p>
-                        <p>
-                          A competent and committed faculty body have worked to
-                          create an excellent learning experience through
-                          practice oriented pedagogy and industry relevant
-                          curriculum. The associations with corporates,
-                          communities and global academic partners ensure that
-                          the students are industry ready, responsible citizens
-                          and prepared for global leadership roles. IMT
-                          Hyderabad offers something for all its stakeholders –
-                          an enriching learning experience for the students, a
-                          collegial environment for faculty and staff, ready
-                          talent and knowledge pool for the industry.
-                        </p>
+                        <h6 className="text-warning">President</h6>
                       </div>
                     </div>
+
+                    {/* TEXT – wraps beside image, then full width */}
+                    <p>
+                      Educational excellence was the mantra with which Institute
+                      of Management Technology (IMT) started. Nearly forty years
+                      later, IMT continues to be at the forefront of management
+                      education in India, grooming leaders and entrepreneurs.
+                    </p>
+
+                    <p>
+                      Upholding the motto of the IMT group, Institute of
+                      Management Technology Hyderabad (IMTH) has within a short
+                      span of eight years carved a niche for itself as an
+                      institution with global academic standards.
+                    </p>
+
+                    <p>
+                      A competent and committed faculty body have worked to
+                      create an excellent learning experience through practice
+                      oriented pedagogy and industry relevant curriculum. The
+                      associations with corporates, communities and global
+                      academic partners ensure that the students are industry
+                      ready, responsible citizens and prepared for global
+                      leadership roles.
+                    </p>
+
+                    <p>
+                      IMT Hyderabad offers something for all its stakeholders –
+                      an enriching learning experience for the students, a
+                      collegial environment for faculty and staff, ready talent
+                      and knowledge pool for the industry.
+                    </p>
                   </div>
-                  <div className="mt-4 px-3 px-md-5">
-                    <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                      <p className="fst-italic mb-0">
-                        There is a sense of pride in seeing the institute do
-                        well and belief that the institute and its graduates
-                        will be able to scale the pinnacle of success and
-                        contribute to the growth of the nation and its citizens.
-                      </p>
-                      <footer className="blockquote-footer mt-2">
-                        Shri Bakul Nath
-                      </footer> 
-                    </blockquote> 
-                  </div>
+
+                  <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
+                    <p className=" mb-2">
+                      There is a sense of pride in seeing the institute do well
+                      and belief that the institute and its graduates will be
+                      able to scale the pinnacle of success and contribute to
+                      the growth of the nation and its citizens.
+                    </p>
+                    <footer className="blockquote-footer mt-2">
+                      Shri Bakul Nath
+                    </footer>
+                  </blockquote>
                 </div>
 
                 {/* Governing Council */}
@@ -475,65 +546,48 @@ export default function LeadershipSection() {
                   role="tabpanel"
                   aria-labelledby="director-tab"
                 >
-<div className="row align-items-start g-4">
-                <h4
-                          className="fw-bold text-left mb-3"
-                          style={{ color: "#08317a" }}
-                        >
-                          Director&apos;s Message
-                        </h4>
-    {/* IMAGE COLUMN */}
-    <div className="col-md-4">
-      <div className="leader-img-box shadow">
-        <img
-          src="/media/prof-Islam.webp"
-          alt="Director"
-        />
-      </div>
+                  <h4 className="fw-bold mb-4" style={{ color: "#08317a" }}>
+                    Director&apos;s Message
+                  </h4>
 
-      <div className="text-center mt-2">
-        <h4 className="mb-0">Prof (Dr) K M Baharul Islam</h4>
-        <h6 className="text-warning">Director</h6>
-      </div>
-    </div>
-                    <div className="col-md-8">
-                      <div
-                        style={{
-                          lineHeight: 1.8,
-                          color: "#333",
-                          marginTop:"-6px"
-                         
-                        }}
-                      >
-                      
-                        <p>
-                          The world around us is changing at an
-                          unprecedented pace. Technology is reshaping
-                          industries, redefining our work, and creating new
-                          possibilities. While technology may disrupt
-                          traditional work methods, it also opens doors to
-                          innovation, creativity, and growth. At IMT Hyderabad,
-                          we are dedicated to preparing you for this evolving
-                          landscape. Our programs are designed to help you
-                          develop the skills that matter most—critical thinking,
-                          adaptability, and the ability to collaborate
-                          effectively in a digital-first world. Our
-                          learner-centric approach and industry-aligned
-                          curriculum aim to equip you with the tools to thrive
-                          in a complex and interconnected world.
-                        </p>
-                        <p>
-                          Here at IMT Hyderabad, you will find more than a
-                          management institute. You will find a vibrant
-                          ecosystem that encourages curiosity, innovation, and
-                          growth. Our faculty, industry partners, and alums are
-                          here to support you as you explore new ideas, take on
-                          challenges, and discover your unique potential.
-                        </p>
+                  <div className="director-message">
+                    {/* FLOAT IMAGE */}
+                    <div className="director-img">
+                      <img src="/media/prof-Islam.webp" alt="Director" />
+                      <div className="text-center mt-2">
+                        <h4 className="mb-2" style={{ fontSize: "22px" }}>
+                          Prof (Dr) K M Baharul Islam
+                        </h4>
+                        <h6 className="text-warning">Director</h6>
                       </div>
                     </div>
-                  </div>
-                  <div className="mt-4 px-3 px-md-5">
+
+                    {/* TEXT – auto wraps + full width after image */}
+                    <p>
+                      The world around us is changing at an unprecedented pace.
+                      Technology is reshaping industries, redefining our work,
+                      and creating new possibilities. While technology may
+                      disrupt traditional work methods, it also opens doors to
+                      innovation, creativity, and growth.
+                    </p>
+
+                    <p>
+                      At IMT Hyderabad, we are dedicated to preparing you for
+                      this evolving landscape. Our programs are designed to help
+                      you develop the skills that matter most—critical thinking,
+                      adaptability, and the ability to collaborate effectively
+                      in a digital-first world.
+                    </p>
+
+                    <p>
+                      Here at IMT Hyderabad, you will find more than a
+                      management institute. You will find a vibrant ecosystem
+                      that encourages curiosity, innovation, and growth. Our
+                      faculty, industry partners, and alums are here to support
+                      you as you explore new ideas, take on challenges, and
+                      discover your unique potential.
+                    </p>
+
                     <p>
                       As you step into this new phase of your journey, I urge
                       you to make the most of every moment. Engage deeply with
@@ -542,26 +596,24 @@ export default function LeadershipSection() {
                       needs leaders who are not only skilled but also
                       compassionate and socially conscious.
                     </p>
+
                     <p>
                       With great excitement and pride, I welcome you to IMT
                       Hyderabad, a place where aspirations meet opportunities
-                      and where the leaders of tomorrow are shaped today. Let us
-                      work together to create a bold, inclusive, and
-                      transformative future. Famous poet Robert Frost
-                      beautifully captured the essence of embarking on this
-                      journey.
+                      and where the leaders of tomorrow are shaped today.
                     </p>
-                    <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                      <p className="mb-0">
-                        &quot;Two roads diverged in a wood, and I took the one
-                        less travelled by, And that has made all the
-                        difference.&quot;
-                      </p>
-                      <footer className="blockquote-footer mt-2">
-                       Robert Lee Frost
-                      </footer> 
-                    </blockquote> 
                   </div>
+
+                  <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
+                    <p className="mb-0">
+                      &quot;Two roads diverged in a wood, and I took the one
+                      less travelled by, And that has made all the
+                      difference.&quot;
+                    </p>
+                    <footer className="blockquote-footer mt-2">
+                      Robert Lee Frost
+                    </footer>
+                  </blockquote>
                 </div>
               </div>
             </div>
