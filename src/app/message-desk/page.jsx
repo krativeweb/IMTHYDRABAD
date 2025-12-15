@@ -263,9 +263,9 @@ export default function LeadershipSection() {
                         will be able to scale the pinnacle of success and
                         contribute to the growth of the nation and its citizens.
                       </p>
-                      {/* <footer className="blockquote-footer mt-2">
+                      <footer className="blockquote-footer mt-2">
                         Shri Bakul Nath
-                      </footer> */}
+                      </footer> 
                     </blockquote> 
                   </div>
                 </div>
@@ -541,9 +541,9 @@ export default function LeadershipSection() {
                         less travelled by, And that has made all the
                         difference.&quot;
                       </p>
-                      {/* <footer className="blockquote-footer mt-2">
-                        Prof (Dr) K M Baharul Islam
-                      </footer> */}
+                      <footer className="blockquote-footer mt-2">
+                       Robert Lee Frost
+                      </footer> 
                     </blockquote> 
                   </div>
                 </div>
