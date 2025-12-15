@@ -219,7 +219,7 @@ export default function LeadershipSection() {
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
-                          marginTop: "-54px",
+                           marginTop: "-54px",
                         }}
                       >
                         <h4
