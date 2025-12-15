@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="col-sm-12">
               <div className="text-center pb-15 mt-3">
                 Copyright © 2025
-                <span className="text-light fw-bold"> IMT HYDRABAD.</span> All
+                <span className="text-light fw-bold"> IMT HYDERABAD.</span> All
                 Rights Reserved.
               </div>
             </div>
