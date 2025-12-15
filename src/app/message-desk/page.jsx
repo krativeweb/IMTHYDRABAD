@@ -101,10 +101,10 @@ export default function LeadershipSection() {
 
         .leader-img-box {
   width: 320px;        /* fixed width */
-  height: 340px;       /* control height freely */
+  height: auto;       /* control height freely */
   overflow: hidden;
   border-radius: 12px;
-  margin: 0 auto;      /* center horizontally */
+  margin: 32px auto;      /* center horizontally */
 }
 
 .leader-img-box img {
@@ -496,7 +496,7 @@ export default function LeadershipSection() {
                         style={{
                           lineHeight: 1.8,
                           color: "#333",
-                          marginTop:"-59px"
+                          marginTop:"-14px"
                          
                         }}
                       >
