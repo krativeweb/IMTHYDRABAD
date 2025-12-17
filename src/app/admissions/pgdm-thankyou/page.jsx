@@ -108,7 +108,7 @@ const ThankYouPage = () => {
               </a>
 
                <a
-    href="/admission/IMTH - ADMISSIONS BROCHURE - FINAL - 12 DEC - PAGES"
+    href="/admission/ADMISSIONS-BROCHURE.pdf"
     className="btn-brochure"
     target="_blank"
     rel="noopener noreferrer"
