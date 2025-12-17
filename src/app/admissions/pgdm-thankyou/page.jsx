@@ -106,6 +106,15 @@ const ThankYouPage = () => {
               >
                 Apply Now
               </a>
+
+               <a
+    href="/admission/IMTH - ADMISSIONS BROCHURE - FINAL - 12 DEC - PAGES"
+    className="btn-brochure"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Admissions Brochure
+  </a>
             </div>
 
             <style jsx>{`
@@ -150,6 +159,24 @@ const ThankYouPage = () => {
                 transform: translateY(-3px);
                 box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
               }
+              .btn-brochure {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #012749;
+  background: #ffffff;
+  color: #012749;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-brochure:hover {
+  background: #012749;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-sh
             `}</style>
           </div>
         </section>
