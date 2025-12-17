@@ -96,7 +96,7 @@ const ThankYouPage = () => {
               We will get back to you shortly.
             </p>
 
-            <div className="d-flex gap-3 justify-content-center mt-3">
+            <div className="d-flex gap-3 justify-content-center mt-3 flex-wrap button-group">
               <a href="/admissions/pgdm" className="btn-back-home">
                 Back To Home
               </a>
@@ -118,65 +118,73 @@ const ThankYouPage = () => {
             </div>
 
             <style jsx>{`
-              .btn-back-home,
-              .btn-apply-now {
-                display: inline-block;
-                padding: 12px 28px;
-                font-size: 16px;
-                font-weight: 600;
-                border-radius: 50px;
-                border: 2px solid #000;
-                text-decoration: none;
-                transition: all 0.3s ease-in-out;
-              }
+        .button-group {
+    row-gap: 12px;
+  }
 
-              .btn-apply-now {
-                background: #f6bd04;
-                color: #000;
-              }
-              .btn-apply-now:hover {
-                background: #012749;
-                color: #fff;
-                transform: translateY(-3px);
-                box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
-              }
-              .btn-back-home {
-                display: inline-block;
-                padding: 12px 28px;
-                background: #012749;
-                color: #ffffff;
-                font-size: 16px;
-                font-weight: 600;
-                border-radius: 50px;
-                border: 2px solid #000;
-                text-decoration: none;
-                transition: all 0.3s ease-in-out;
-              }
-              .btn-back-home:hover {
-                background: #f6bd04;
-                color: #fff;
-                border-color: #000;
-                transform: translateY(-3px);
-                box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
-              }
-              .btn-brochure {
-  display: inline-block;
-  padding: 12px 28px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 50px;
-  border: 2px solid #012749;
-  background: #ffffff;
-  color: #012749;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
+  .btn-back-home,
+  .btn-apply-now,
+  .btn-brochure {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+  }
 
-.btn-brochure:hover {
-  background: #012749;
-  color: #ffffff;
-  transform: translateY(-3px);
-  box-sh
+  .btn-apply-now {
+    background: #f6bd04;
+    color: #000;
+  }
+
+  .btn-apply-now:hover {
+    background: #012749;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-back-home {
+    background: #012749;
+    color: #ffffff;
+  }
+
+  .btn-back-home:hover {
+    background: #f6bd04;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-brochure {
+    border-color: #012749;
+    background: #ffffff;
+    color: #012749;
+  }
+
+  .btn-brochure:hover {
+    background: #012749;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ✅ MOBILE FIX */
+  @media (max-width: 576px) {
+    .btn-back-home,
+    .btn-apply-now,
+    .btn-brochure {
+      width: 100%;
+      max-width: 280px;
+      font-size: 15px;
+    }
+  }
             `}</style>
           </div>
         </section>
