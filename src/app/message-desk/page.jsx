@@ -163,11 +163,11 @@ export default function LeadershipSection() {
   }
 }
 .director-message p {
-  line-height: 1.7;          /* increase line height */
+  line-height: 22px;          /* increase line height */
   text-align: justify;
 }
   .president-message {
-  line-height: 1.7;
+  line-height: 22px;
   color: #333;
   text-align: justify;
 }
@@ -194,7 +194,7 @@ export default function LeadershipSection() {
 
 /* PARAGRAPH SPACING */
 .president-message p {
-  line-height: 1.6;
+  line-height: 22px;
   
 }
 
