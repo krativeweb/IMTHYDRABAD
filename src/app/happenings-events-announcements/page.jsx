@@ -381,7 +381,7 @@ height: 80vh;
                           ]
                             .filter(Boolean)
                             .map((img, i) => (
-                              <div key={i} className="col-12 col-md-4 mb-3">
+                              <div key={i} className="col-12 col-md-6 mb-3">
                                 <img
                                   src={img}
                                   alt={item.title}
