@@ -128,7 +128,7 @@ export default function LeadershipSection() {
   }
 }
   .director-message {
-  line-height: 1.8;
+  line-height: 1.7;
   color: #333;
 }
 
@@ -163,12 +163,13 @@ export default function LeadershipSection() {
   }
 }
 .director-message p {
-  line-height: 2.2;          /* increase line height */
-
+  line-height: 1.7;          /* increase line height */
+  text-align: justify;
 }
   .president-message {
-  line-height: 1.9;
+  line-height: 1.7;
   color: #333;
+  text-align: justify;
 }
 
 /* FLOAT IMAGE */
@@ -193,8 +194,8 @@ export default function LeadershipSection() {
 
 /* PARAGRAPH SPACING */
 .president-message p {
-  line-height: 2;
-  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  
 }
 
 /* MOBILE */
@@ -302,7 +303,7 @@ export default function LeadershipSection() {
                     <div className="president-img">
                       <img src="/media/shri-bakul-nath.jpg" alt="President" />
                       <div className="text-center mt-2">
-                        <h4 className="mb-2" style={{ fontSize: "22px" }}>
+                        <h4 className="mb-2" style={{ fontSize: "20px" }}>
                           Shri Bakul Nath
                         </h4>
                         <h6 className="text-warning">President</h6>
@@ -343,7 +344,7 @@ export default function LeadershipSection() {
                   </div>
 
                   <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                    <p className=" mb-2" style={{ fontSize:"17px" }}>
+                    <p className=" mb-2" style={{ fontSize: "17px" }}>
                       There is a sense of pride in seeing the institute do well
                       and belief that the institute and its graduates will be
                       able to scale the pinnacle of success and contribute to
@@ -555,7 +556,7 @@ export default function LeadershipSection() {
                     <div className="director-img">
                       <img src="/media/prof-Islam.webp" alt="Director" />
                       <div className="text-center mt-2">
-                        <h4 className="mb-2" style={{ fontSize: "22px" }}>
+                        <h4 className="mb-2" style={{ fontSize: "20px" }}>
                           Prof (Dr) K M Baharul Islam
                         </h4>
                         <h6 className="text-warning">Director</h6>
@@ -611,7 +612,7 @@ export default function LeadershipSection() {
                   </div>
 
                   <blockquote className="blockquote ps-4 border-start border-3 border-warning my-4">
-                    <p className="mb-0" style={{ fontSize:"17px" }}>
+                    <p className="mb-0" style={{ fontSize: "17px" }}>
                       &quot;Two roads diverged in a wood, and I took the one
                       less travelled by, And that has made all the
                       difference.&quot;
