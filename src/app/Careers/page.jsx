@@ -21,7 +21,7 @@ export default function Careers() {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
-              backgroundPosition: "center !important"
+            backgroundPosition: "center !important"
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Careers</h2>
@@ -551,6 +551,105 @@ export default function Careers() {
                           Institute of Management Technology Hyderabad invites
                           applications for the following non-teaching positions:
                         </p>
+
+                        <div className="mb-5">
+                          <h5>Executive – Travel Desk</h5>
+
+                          {/* Job Summary */}
+                          <p className="mb-3">
+                            <b>Job Summary:</b>
+                          </p>
+                          <p className="mb-3">
+                            IMT Hyderabad is seeking a proactive and service-oriented Travel Desk
+                            Executive to manage campus travel and transportation operations. The role
+                            involves coordinating travel arrangements, ensuring excellent guest
+                            hospitality, overseeing in-house vehicle maintenance, and liaising with
+                            external transport vendors. The ideal candidate will ensure seamless travel
+                            experiences while maintaining compliance with institutional standards.
+                          </p>
+
+                          {/* Key Responsibilities */}
+                          <p className="mb-3">
+                            <b>Key Responsibilities:</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Manage the campus travel desk and coordinate travel arrangements for
+                                guests and staff.
+                              </li>
+                              <li>
+                                Handle bookings and confirmations for flights, trains, taxis, and
+                                accommodation.
+                              </li>
+                              <li>
+                                Ensure high standards of guest hospitality and comfort during visits.
+                              </li>
+                              <li>
+                                Coordinate with guest house and administrative teams for smooth transport
+                                and stay.
+                              </li>
+                              <li>
+                                Oversee maintenance, servicing, cleanliness, and documentation of
+                                campus-owned vehicles.
+                              </li>
+                              <li>
+                                Monitor insurance, fitness certificates, pollution checks, and service
+                                schedules.
+                              </li>
+                              <li>
+                                Liaise with external cab and transport vendors to ensure service quality
+                                and reliability.
+                              </li>
+                              <li>
+                                Maintain accurate records related to travel, vehicle usage, servicing,
+                                and compliance.
+                              </li>
+                              <li>
+                                Be available on-call for urgent or after-hours travel requirements when
+                                needed.
+                              </li>
+                              <li>
+                                Perform additional duties related to travel and transport services as
+                                assigned.
+                              </li>
+                            </ul>
+                          </div>
+
+                          {/* Desired Skills */}
+                          <p className="mb-3">
+                            <b>Desired Skills &amp; Competencies:</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>Strong coordination and organizational skills</li>
+                              <li>Customer-focused approach with attention to detail</li>
+                              <li>Ability to manage multiple tasks and vendors effectively</li>
+                              <li>Good communication and interpersonal skills</li>
+                              <li>Problem-solving ability and flexibility for on-call support</li>
+                            </ul>
+                          </div>
+
+                          {/* Qualifications */}
+                          <p className="mb-3">
+                            <b>Qualifications &amp; Experience:</b>
+                          </p>
+                          <p className="mb-3">
+                            Bachelor’s degree or equivalent preferred. Prior experience in travel desk
+                            operations, hospitality, or transport management is an advantage.
+                          </p>
+
+                          {/* Salary */}
+                          <p className="mb-3">
+                            <b>Salary, Allowances &amp; Benefits:</b>
+                          </p>
+                          <p>
+                            As per IMT norms corresponding with qualifications, experience, and
+                            performance in the interview. Salary will not be a constraint for deserving
+                            candidates.
+                          </p>
+                        </div>
+
                         <div className="mb-5">
                           <h5>
                             Assistant Manager / Manager – Corporate Relations
