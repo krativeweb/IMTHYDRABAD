@@ -1261,7 +1261,7 @@ export default function Careers() {
       .nav-pills .nav-link {
         background-color: #e9ecef;
         border-radius: 30px;
-        color: #333;
+        color: #333;  
       }
     `,
         }}
