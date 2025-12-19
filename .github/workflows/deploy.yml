@@ -7,6 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,20 +19,28 @@ jobs:
           username: Am4DiLNbs9P0aCnA
           port: 22
           key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            cd ~/imt-hyderabad-test/public_html
-            echo "Deploying at $(date)"
 
-            # Always reset to the latest remote version (discard local edits)
+          script: |
+            echo "🚀 Deploy started at $(date)"
+
+            cd ~/imt-hyderabad-test/public_html || exit 1
+
+            # Reset repo
             git fetch origin main
             git reset --hard origin/main
 
-              rm -rf node_modules package-lock.json .next
-            # Install dependencies and rebuild
-            npm install --omit=dev
+            # Clean old build
+            rm -rf .next
+
+            # Install dependencies (IMPORTANT)
+            npm ci
+
+            # Build Next.js
             npm run build
 
-            # Restart the PM2 process
-            pm2 restart imt-hyderabad-test
+            # Restart app safely
+            pm2 restart imt-hyderabad-test || pm2 start npm --name imt-hyderabad-test -- start
 
-            echo "✅ Deploy complete!"
+            pm2 save
+
+            echo "✅ Deploy finished successfully!"
