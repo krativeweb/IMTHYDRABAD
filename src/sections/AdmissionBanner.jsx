@@ -14,7 +14,7 @@ export default function BannerSlider() {
        "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/css/stylesheet.min.css";
      document.head.appendChild(css);
    }
-
+ 
    // Load JS
    const script = document.createElement("script");
    script.src =
