@@ -269,8 +269,8 @@ export default function InnovationLab() {
                 <ol>
                   <li>
                     Fill the application form and send to{" "}
-                    <a href="mailto:saikatb@imthyderabad.edu.in">
-                      saikatb@imthyderabad.edu.in
+                    <a href="mailto:aindrila.chatterjee@imthyderabad.edu.in">
+                      aindrila.chatterjee@imthyderabad.edu.in
                     </a>
                   </li>
                   <li>
@@ -389,3 +389,4 @@ export default function InnovationLab() {
     </>
   );
 }
+
