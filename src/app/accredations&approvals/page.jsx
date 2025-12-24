@@ -319,56 +319,64 @@ export default function ApprovalsAccreditation() {
                   </div>
                 </div>
 
-                {/* PGDM Finance */}
-                <div
-                  className="tab-pane fade"
-                  id="pgdm-finance"
-                  role="tabpanel"
+{/* PGDM Finance */}
+<div
+  className="tab-pane fade"
+  id="pgdm-finance"
+  role="tabpanel"
+>
+  <div className="card shadow-sm p-4">
+    <h4 className="fw-bold text-warning mb-3">
+      PGDM - Finance AIU Certificate
+    </h4>
+
+    <p>
+      The PGDM-Finance program is approved by AICTE and has
+      received equivalence to an MBA degree from AIU.
+    </p>
+
+    <div className="table-responsive mt-4">
+      <table className="table table-bordered align-middle text-center">
+        <thead className="table-primary">
+          <tr>
+            <th>Academic Year</th>
+            <th>View</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {[
+            { year: "2026-30", pdf: "/pdf/PGDM-Finance-AIU-2026-2030.pdf" },
+            { year: "2024-25", pdf: "#" },
+            { year: "2023-24", pdf: "#" },
+            { year: "2022-23", pdf: "#" },
+            { year: "2021-22", pdf: "#" },
+            { year: "2020-21", pdf: "#" },
+            { year: "2019-20", pdf: "#" },
+            { year: "2018-19", pdf: "#" },
+            { year: "2017-18", pdf: "#" },
+          ].map(({ year, pdf }) => (
+            <tr key={year}>
+              <td>{year}</td>
+              <td>
+                <a
+                  href={pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-warning btn-sm"
                 >
-                  <div className="card shadow-sm p-4">
-                    <h4 className="fw-bold text-warning mb-3">
-                      PGDM - Finance AIU Certificate
-                    </h4>
-                    <p>
-                      The PGDM-Finance program is approved by AICTE and has
-                      received equivalence to an MBA degree from AIU.
-                    </p>
-                    <div className="table-responsive mt-4">
-                      <table className="table table-bordered align-middle text-center">
-                        <thead className="table-primary">
-                          <tr>
-                            <th>Academic Year</th>
-                            <th>View</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {[
-                            "2024-25",
-                            "2023-24",
-                            "2022-23",
-                            "2021-22",
-                            "2020-21",
-                            "2019-20",
-                            "2018-19",
-                            "2017-18",
-                          ].map((year) => (
-                            <tr key={year}>
-                              <td>{year}</td>
-                              <td>
-                                <Link
-                                  href="#"
-                                  className="btn btn-warning btn-sm"
-                                >
-                                  Click Here
-                                </Link>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+                  Click Here
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
 
                 {/* PGDM Marketing */}
                 <div
