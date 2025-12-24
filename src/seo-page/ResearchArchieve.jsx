@@ -318,6 +318,12 @@ export default function ResearchArchive() {
                 role="tabpanel"
               >
                 <p className="">
+                   Kashif Mansoor  &amp; Basit Abdullah, "Minimum Wages Under the New Labour Codes: What the Law Promises and What It Misses", The Wire, Foundation for Independent Journalism 30 November 2025
+                  <br/>
+                  <br/>
+                  Basit Abdullah   &amp; Satyaki Dasgupta , "Numbers may not tell whole story",The Statesman, The Statesman Ltd 19 November 2025
+                  <br />
+                  <br />
                   Ritesh Kumar Singh &amp; Steven Raj Padakandla, "India
                   redefines global green finance amid US withdrawal", Money
                   Control 29 October 2025
