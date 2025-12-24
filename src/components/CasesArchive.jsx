@@ -5,6 +5,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
+import DOMPurify from "dompurify";
 
 export default function CasesArchive() {
   const [data, setData] = useState([]);
@@ -74,9 +75,8 @@ export default function CasesArchive() {
               <Link
                 key={year}
                 href={`#sub-case-${yearKey}`}
-                className={`nav-link bg-light text-dark rounded-pill tab ${
-                  isActive ? "active" : ""
-                }`}
+                className={`nav-link bg-light text-dark rounded-pill tab ${isActive ? "active" : ""
+                  }`}
                 data-bs-toggle="pill"
                 role="tab"
               >
@@ -122,14 +122,14 @@ export default function CasesArchive() {
                             <img
                               src={
                                 item.final_image
-                                
+
                                   ? item.final_image
                                   : ""
                               }
                               className="img-fluid rounded-start w-75"
                               alt={item.res_title}
                               style={{ height: 250 }}
-                              
+
                             />
                           </div>
                           <div className="col-md-8">
@@ -194,10 +194,14 @@ export default function CasesArchive() {
                                 className="accordion-collapse collapse"
                                 data-bs-parent={`#accordion-case-${item.gen_id}`}
                               >
-                                <div className="accordion-body text-start">
-                                  {item.res_abstract ||
-                                    "No abstract available."}
-                                </div>
+                                <div
+                                  className="accordion-body text-start"
+                                  dangerouslySetInnerHTML={{
+                                    __html: item.res_abstract
+                                      ? DOMPurify.sanitize(item.res_abstract)
+                                      : "<p>No abstract available.</p>",
+                                  }}
+                                />
                               </div>
                             </div>
                           </div>
