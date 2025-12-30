@@ -53,7 +53,7 @@ export default function Footer() {
                   <i className="fab fa-xl text-warning fa-x-twitter"></i>
                 </Link> */}
                 <Link
-                  href="https://www.linkedin.com/school/imthyderabad/"
+                  href="https://www.linkedin.com/company/institute-of-management-technology-hyderabad/"
                   className="text-reset"
                   aria-label="LinkedIn"
                 >
