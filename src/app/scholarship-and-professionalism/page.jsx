@@ -8,13 +8,20 @@ export default function StandardsOfScholarship() {
   // Initialize Owl Carousel safely after jQuery & Owl are loaded
   useEffect(() => {
     const initCarousel = () => {
-      if (!window.$ || !window.$.fn.owlCarousel || !document.getElementById("placement-carousel")) return;
+      if (
+        !window.$ ||
+        !window.$.fn.owlCarousel ||
+        !document.getElementById("placement-carousel")
+      )
+        return;
 
       const $carousel = $("#placement-carousel");
 
       // Destroy previous instance to prevent conflicts
       if ($carousel.hasClass("owl-loaded")) {
-        $carousel.trigger("destroy.owl.carousel").removeClass("owl-loaded owl-drag");
+        $carousel
+          .trigger("destroy.owl.carousel")
+          .removeClass("owl-loaded owl-drag");
       }
 
       $carousel.owlCarousel({
@@ -59,9 +66,9 @@ export default function StandardsOfScholarship() {
       </noscript>
 
       {/* Page-specific styles */}
-<style
-  dangerouslySetInnerHTML={{
-    __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
       .table-responsive {
         border-radius: 0.5rem;
         overflow-x: auto;
@@ -169,10 +176,8 @@ export default function StandardsOfScholarship() {
         color: #333;
       }
     `,
-  }}
-/>
-
-
+        }}
+      />
 
       {/* Main Section */}
       <section className="faculty-section">
@@ -411,113 +416,117 @@ export default function StandardsOfScholarship() {
                           <th className="fw-bold">Landline No.</th>
                         </tr>
                       </thead>
+
                       <tbody>
                         <tr>
-                          <td>Prof. (Dr.) K. Sriharsha Reddy</td>
+                          <td>Prof. (Dr.) K. M. Baharul Islam</td>
                           <td>Director</td>
-                          <td>9849528676</td>
-                          <td>040-30461673</td>
+                          <td>8392811111</td>
+                          <td>08414-671661</td>
                         </tr>
+
                         <tr>
-                          <td>Prof. (Dr.) Nikhil Rastogi</td>
-                          <td>
-                            Chairperson- Disciplinary & Academic Counselling
-                            Committee
-                          </td>
-                          <td>7306874901</td>
-                          <td>040-30461670</td>
+                          <td>Prof. Romina Mathew</td>
+                          <td>Chairperson – Disciplinary</td>
+                          <td>9246295292</td>
+                          <td>08414-671689</td>
                         </tr>
+
                         <tr>
-                          <td>Prof. (Dr.) Rambalak Yadav</td>
-                          <td>Warden - Boys Hostel</td>
-                          <td>8186802138</td>
+                          <td>Prof. Vinay Kumar K</td>
+                          <td>PGP Chairperson</td>
+                          <td>8639342389</td>
+                          <td>08414-671688</td>
+                        </tr>
+
+                        <tr>
+                          <td>Prof. Pushpesh Pant</td>
+                          <td>Warden – Boys Hostel</td>
+                          <td>8827218443</td>
                           <td>08414-671602</td>
                         </tr>
+
                         <tr>
-                          <td>Prof. (Dr.) P Steven Raj</td>
-                          <td>Warden - Boys Hostel</td>
-                          <td>9440999119</td>
-                          <td>040-30461658</td>
+                          <td>Prof. Irfan Ahmad Shah</td>
+                          <td>Warden – Boys Hostel</td>
+                          <td>9567452826</td>
+                          <td>08414-671601</td>
                         </tr>
+
                         <tr>
-                          <td>Prof. (Dr.) Shabnam Priyadarshini</td>
-                          <td>Warden - Girls Hostel</td>
-                          <td>9618525250</td>
-                          <td>040-30461697</td>
+                          <td>Prof. Sanchari Guha Niyogi</td>
+                          <td>Warden – Girls Hostel</td>
+                          <td>8584968955</td>
+                          <td>08414-671625</td>
                         </tr>
+
                         <tr>
-                          <td>Prof. (Dr.) Sarath Babu</td>
-                          <td>Chairperson-PGDM (Executive) Program</td>
-                          <td>9160501754</td>
-                          <td>040-30461670</td>
+                          <td>Mr. Raj Kumar Meena</td>
+                          <td>Chief Admin. Officer</td>
+                          <td>9582805564</td>
+                          <td>08414-671683</td>
                         </tr>
+
                         <tr>
-                          <td>Prof. (Dr.) Romina Mathew</td>
-                          <td>Chairperson – Examination Committee</td>
-                          <td>9246295292</td>
-                          <td>040-30461689</td>
+                          <td>Ms. Jaya Vamshi</td>
+                          <td>Asst. Manager – HR</td>
+                          <td>9885770267</td>
+                          <td>08414-671656</td>
                         </tr>
-                        <tr>
-                          <td>Prof. (Dr.) Tumpa Dey</td>
-                          <td>Area Chairperson - HRM</td>
-                          <td>9955199476</td>
-                          <td>040-30461695</td>
-                        </tr>
-                        <tr>
-                          <td>Mr. Sarat Kumar</td>
-                          <td>Incharge – Administration and Maintenance</td>
-                          <td>9490187243</td>
-                          <td>040-30461683</td>
-                        </tr>
-                        <tr>
-                          <td>Ms. Padma Sundari</td>
-                          <td>In Charge – HR</td>
-                          <td>9959968904</td>
-                          <td>040-30461661</td>
-                        </tr>
+
                         <tr>
                           <td>
-                            Dr. Maratha Raghuveer Aclianta (NGO Representative)
+                            Dr. Mamatha Rahuveer Achanta (NGO Representative)
                           </td>
                           <td>Social Worker</td>
                           <td>9849418592</td>
-                          <td></td>
+                          <td>-</td>
                         </tr>
+
                         <tr>
-                          <td>Mr. V Bhaskar</td>
-                          <td>ACP — Shamshabad Police Station</td>
+                          <td>Mr. K. Srinivasa Rao</td>
+                          <td>ACP – Shamshabad Police Station</td>
                           <td>9490617481</td>
-                          <td>08413-222488</td>
+                          <td>-</td>
                         </tr>
+
                         <tr>
-                          <td>Mr. A Ravindra Seshu (Media Representative)</td>
+                          <td>Mr. A. Ravindra Seshu (Media Representative)</td>
                           <td>Senior Reporter, Khammam District</td>
-                          <td>90637 18675</td>
-                          <td></td>
+                          <td>9063718675</td>
+                          <td>-</td>
                         </tr>
+
                         <tr>
                           <td>Parent Representative</td>
                           <td>Hyderabad</td>
-                          <td>9848023095</td>
-                          <td></td>
+                          <td>9391424271</td>
+                          <td>-</td>
                         </tr>
+
                         <tr>
-                          <td>Sr. Student Representative</td>
+                          <td>
+                            Mr. Ekansh Uniyal (Sr. Student Representative)
+                          </td>
                           <td>IMT Hyderabad</td>
-                          <td></td>
-                          <td></td>
+                          <td>7020132115</td>
+                          <td>-</td>
                         </tr>
+
                         <tr>
-                          <td>Sr. Student Representative</td>
+                          <td>Ms. Priya Arya (Sr. Student Representative)</td>
                           <td>IMT Hyderabad</td>
-                          <td></td>
-                          <td></td>
+                          <td>9810302199</td>
+                          <td>-</td>
                         </tr>
+
                         <tr>
-                          <td>Jr. Student Representative</td>
+                          <td>
+                            Mr. Shailendra Gautam (Jr. Student Representative)
+                          </td>
                           <td>IMT Hyderabad</td>
-                          <td></td>
-                          <td></td>
+                          <td>7078587873</td>
+                          <td>-</td>
                         </tr>
                       </tbody>
                     </table>
