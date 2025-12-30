@@ -184,7 +184,7 @@ export default function CentreDigitalTransformation() {
                   </li>
                   <li>Conducting seminars on Digital Transformation</li>
                   <li>
-                    Funding long-term research studies undertaken by IMT H
+                    Funding long-term research studies undertaken by IMT Hyderabad
                     faculty.
                   </li>
                 </ul>

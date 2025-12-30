@@ -1,66 +1,64 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import Link from 'next/link';
+import { useEffect } from "react";
+import Link from "next/link";
 
 export default function FinancialStatements() {
   // ✅ Separate financial data for both tabs
   const FinancialData = {
     incomeExpenditure: [
       {
-        year: '2023 - 24',
-        link: 'https://drive.google.com/file/d/1cC4Vha2oPCxkXi-8lYf5CJ-BoLVBMpy8/view',
+        year: "2023 - 24",
+        link: "https://drive.google.com/file/d/1cC4Vha2oPCxkXi-8lYf5CJ-BoLVBMpy8/view",
       },
       {
-        year: '2022 - 23',
-        link: 'https://drive.google.com/file/d/1KFHTJ4mW3Jl_Dkr6eSoUmrU_EA8bOeO2/view',
+        year: "2022 - 23",
+        link: "https://drive.google.com/file/d/1KFHTJ4mW3Jl_Dkr6eSoUmrU_EA8bOeO2/view",
       },
       {
-        year: '2021 - 22',
-        link: 'https://drive.google.com/file/d/1bPV7jGQ5wEzed8e7x14qDmqypFRhz-5e/view',
+        year: "2021 - 22",
+        link: "https://drive.google.com/file/d/1bPV7jGQ5wEzed8e7x14qDmqypFRhz-5e/view",
       },
       {
-        year: '2020 - 21',
-        link: 'https://drive.google.com/file/d/1AvWNIfU0870xzJPNl2e2xuy-tgO2McuM/view',
+        year: "2020 - 21",
+        link: "https://drive.google.com/file/d/1AvWNIfU0870xzJPNl2e2xuy-tgO2McuM/view",
       },
       {
-        year: '2019 - 20',
-        link: 'https://drive.google.com/file/d/1BzoABySXIZzf1IdBCx2dZo2ttDnv4ypA/view',
+        year: "2019 - 20",
+        link: "https://drive.google.com/file/d/1BzoABySXIZzf1IdBCx2dZo2ttDnv4ypA/view",
       },
-      
     ],
     balanceSheet: [
       {
-        year: '2023 - 24',
-        link: 'https://drive.google.com/file/d/1a1U1NnKKfM24vJjtLZM5HESgwHgYuGe7/view',
+        year: "2023 - 24",
+        link: "https://drive.google.com/file/d/1a1U1NnKKfM24vJjtLZM5HESgwHgYuGe7/view",
       },
       {
-        year: '2022 - 23',
-        link: 'https://drive.google.com/file/d/1QZzG9SRVtWHIA1NmGtmD8jd3pNM2Q0LY/view',
+        year: "2022 - 23",
+        link: "https://drive.google.com/file/d/1QZzG9SRVtWHIA1NmGtmD8jd3pNM2Q0LY/view",
       },
       {
-        year: '2021 - 22',
-        link: 'https://drive.google.com/file/d/1qLnbVCqOSKbgKSH40nVi0htRutcHL_3q/view',
+        year: "2021 - 22",
+        link: "https://drive.google.com/file/d/1qLnbVCqOSKbgKSH40nVi0htRutcHL_3q/view",
       },
       {
-        year: '2020 - 21',
-        link: 'https://drive.google.com/file/d/1y94s_DpafLHxio1Od9H9tA8zVfRYXzbN/view',
+        year: "2020 - 21",
+        link: "https://drive.google.com/file/d/1y94s_DpafLHxio1Od9H9tA8zVfRYXzbN/view",
       },
       {
-        year: '2019 - 21',
-        link: 'https://drive.google.com/file/d/1odaZWLoeRImuwwL4Gju2Z30SDBgVmddd/view',
+        year: "2019 - 21",
+        link: "https://drive.google.com/file/d/1odaZWLoeRImuwwL4Gju2Z30SDBgVmddd/view",
       },
       {
-        year: '2018 - 20',
-        link: 'https://drive.google.com/file/d/1z-IgdKFkMT8hNk1-dWVm3YZ7ThZfMpPj/view',
+        year: "2018 - 20",
+        link: "https://drive.google.com/file/d/1z-IgdKFkMT8hNk1-dWVm3YZ7ThZfMpPj/view",
       },
-      
     ],
   };
 
   // ✅ Initialize AOS animation
   useEffect(() => {
-    import('aos').then((AOS) => {
+    import("aos").then((AOS) => {
       AOS.init({ duration: 1000, once: true });
     });
   }, []);
@@ -171,6 +169,18 @@ export default function FinancialStatements() {
           border-radius: 30px;
           color: #333;
         }
+          /* Gap between tab pills */
+#financialTab {
+  gap: 12px; /* adjust as needed: 10px–20px */
+}
+
+/* Optional: mobile pe thoda aur gap */
+@media (max-width: 768px) {
+  #financialTab {
+    gap: 10px;
+  }
+}
+
     `,
         }}
       />
@@ -225,7 +235,7 @@ export default function FinancialStatements() {
             role="tablist"
             data-aos="zoom-in"
           >
-            <li className="nav-item" role="presentation">
+            <li className="nav-item " role="presentation">
               <button
                 className="nav-link active fw-semibold"
                 id="income-tab"

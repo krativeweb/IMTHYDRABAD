@@ -73,171 +73,189 @@ const IndustryRelevance = () => {
         </div>
 
         {/* Industry Relevance Section */}
-        <section id="industry-relevance" className="py-5">
-          <div className="container" data-aos="fade-up" data-aos-delay="200">
-            <div className="text-center mb-5">
-              <h2 className="section-title">Industry Relevance</h2>
-              <p className="section-description">
-                IMT Hyderabad works to deploy the offerings students need to
-                acquire industry certifications and professional credits. IMT
-                Hyderabad works to <strong>increase placement rates</strong> of
-                graduating students with advanced training in fundamental
-                skills, best practices, and emerging technologies. IMT Hyderabad
-                possesses potential for greater student retention and improved
-                student placement rates.
+<section id="industry-relevance" className="py-5">
+  <div className="container" data-aos="fade-up" data-aos-delay="200">
+    <div className="text-center mb-5">
+      <h2 className="section-title">Industry Relevance</h2>
+      <p className="section-description">
+        IMT Hyderabad works to deploy the offerings students need to acquire
+        industry certifications and professional credits. IMT Hyderabad works
+        to <strong>increase placement rates</strong> of graduating students with
+        advanced training in fundamental skills, best practices, and emerging
+        technologies. IMT Hyderabad possesses potential for greater student
+        retention and improved student placement rates.
+      </p>
+    </div>
+
+    <div className="row g-4">
+
+      {/* CARD 1 */}
+      <div className="col-12">
+        <div className="card border-0 shadow-sm rounded-3 p-4">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-4 order-md-2 text-center">
+              <img
+                src="/media/IR/1.jpg"
+                alt="Industry Mentor-Mentee Program"
+                className="img-fluid ir-fixed-img"
+                loading="lazy"
+              />
+            </div>
+            <div className="col-12 col-md-8 order-md-1">
+              <h5 className="fw-bold text-warning mb-3">
+                Industry Mentor - Mentee Program 2020
+              </h5>
+              <p className="card-text">
+                Industry Mentor Mentee Program (IM2P) enhances industry
+                readiness and nurtures business leadership. Mentors help
+                students develop interpersonal, critical thinking, and
+                problem-solving skills.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div className="row g-4">
-              {/* Card 1 */}
-              <div className="col-12">
-                <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
-                  <div className="col-md-4 image-container-right">
-                    <img
-                      src="/media/IR/1.jpg"
-                      alt="Industry Mentor-Mentee Program"
-                      className="img-fluid rounded shadow clipped-img-1"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">
-                      Industry Mentor - Mentee Program 2020
-                    </h5>
-                    <p className="card-text">
-                      Industry Mentor Mentee Program (IM2P) enhances industry
-                      readiness and nurtures business leadership. Mentors help
-                      students develop interpersonal, critical thinking, and
-                      problem-solving skills.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 2 */}
-              <div className="col-12">
-                <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
-                  <div className="col-md-4">
-                    <img
-                      src="/media/IR/2.JPG"
-                      alt="Leadership Series & MOP"
-                      className="img-fluid rounded shadow clipped-img-2"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">
-                      Leadership Series & MOP
-                    </h5>
-                    <p className="card-text">
-                      MOP prepares students from diverse backgrounds, with
-                      workshops in leadership, teambuilding, and creativity.
-                      Leadership series ensures interaction with business
-                      leaders.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 3 */}
-              <div className="col-12">
-                <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
-                  <div className="col-md-4 image-container-right">
-                    <img
-                      src="/media/IR/3.JPG"
-                      alt="Leadership Series & Practitioner Session"
-                      className="img-fluid rounded shadow clipped-img-1"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">
-                      Leadership Series & Practitioner&apos;s Session
-                    </h5>
-                    <p className="card-text">
-                      Industry experts form an integral part of the curriculum.
-                      15-20% of courses are delivered by practitioners.
-                      Leadership series ensures regular interaction with
-                      students.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 4 */}
-              <div className="col-12">
-                <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
-                  <div className="col-md-4">
-                    <img
-                      src="/media/IR/4.jpg"
-                      alt="Internship Program"
-                      className="img-fluid rounded shadow clipped-img-2"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">
-                      Internship Program
-                    </h5>
-                    <p className="card-text">
-                      The 14-week intensive internship forms the core of IMT H
-                      pedagogy. Faculty and company mentors supervise
-                      internships, providing real-world experience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 5 */}
-              <div className="col-12">
-                <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row flex-md-row-reverse align-items-center">
-                  <div className="col-md-4 image-container-right">
-                    <img
-                      src="/media/IR/5.jpeg"
-                      alt="Industry-Oriented Courses"
-                      className="img-fluid rounded shadow clipped-img-1"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">
-                      Industry-Oriented Courses
-                    </h5>
-                    <p className="card-text">
-                      IMT Hyderabad offers specialized elective streams like
-                      Business Analytics, Investment Banking, and Digital
-                      Marketing. More streams will be introduced in the future.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 6 */}
-              <div className="col-12">
-                <div className="card border-0 shadow-sm rounded-3 p-4 d-flex flex-row align-items-center">
-                  <div className="col-md-4">
-                    <img
-                      src="/media/IR/6.jpg"
-                      alt="Management Project"
-                      className="img-fluid rounded shadow clipped-img-2"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-md-8">
-                    <h5 className="fw-bold text-warning mb-3">
-                      Management Project (MP)
-                    </h5>
-                    <p className="card-text">
-                      The Management Project spans two trimesters of the second
-                      year. Students gain higher expertise and develop
-                      collaboration skills extending beyond the classroom.
-                    </p>
-                  </div>
-                </div>
-              </div>
+      {/* CARD 2 */}
+      <div className="col-12">
+        <div className="card border-0 shadow-sm rounded-3 p-4">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-4 text-center">
+              <img
+                src="/media/IR/2.JPG"
+                alt="Leadership Series & MOP"
+                className="img-fluid ir-fixed-img"
+                loading="lazy"
+              />
+            </div>
+            <div className="col-12 col-md-8">
+              <h5 className="fw-bold text-warning mb-3">
+                Leadership Series & MOP
+              </h5>
+              <p className="card-text">
+                MOP prepares students from diverse backgrounds, with workshops
+                in leadership, team building, and creativity. Leadership series
+                ensures regular interaction and engagement with senior business
+                leaders from diverse industries.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+
+      {/* CARD 3 */}
+      <div className="col-12">
+        <div className="card border-0 shadow-sm rounded-3 p-4">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-4 order-md-2 text-center">
+              <img
+                src="/media/IR/3.JPG"
+                alt="Leadership Series & Practitioner's Session"
+                className="img-fluid ir-fixed-img"
+                loading="lazy"
+              />
+            </div>
+            <div className="col-12 col-md-8 order-md-1">
+              <h5 className="fw-bold text-warning mb-3">
+                Leadership Series & Practitioner&apos;s Session
+              </h5>
+              <p className="card-text">
+                Industry experts form an integral part of the academic
+                curriculum. Nearly 15–20% of the courses are delivered by
+                experienced industry practitioners, ensuring practical
+                exposure and strong industry-academia integration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CARD 4 */}
+      <div className="col-12">
+        <div className="card border-0 shadow-sm rounded-3 p-4">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-4 text-center">
+              <img
+                src="/media/IR/4.jpg"
+                alt="Internship Program"
+                className="img-fluid ir-fixed-img"
+                loading="lazy"
+              />
+            </div>
+            <div className="col-12 col-md-8">
+              <h5 className="fw-bold text-warning mb-3">
+                Internship Program
+              </h5>
+              <p className="card-text">
+                The 14-week intensive internship forms the core of IMT Hyderabad’s
+                pedagogy. Faculty mentors and company supervisors jointly
+                evaluate students, providing them with hands-on real-world
+                industry experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CARD 5 */}
+      <div className="col-12">
+        <div className="card border-0 shadow-sm rounded-3 p-4">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-4 order-md-2 text-center">
+              <img
+                src="/media/IR/5.jpeg"
+                alt="Industry-Oriented Courses"
+                className="img-fluid ir-fixed-img"
+                loading="lazy"
+              />
+            </div>
+            <div className="col-12 col-md-8 order-md-1">
+              <h5 className="fw-bold text-warning mb-3">
+                Industry-Oriented Courses
+              </h5>
+              <p className="card-text">
+                IMT Hyderabad offers industry-aligned elective streams such as
+                Business Analytics, Investment Banking, Digital Marketing, and
+                Operations Management. Additional specializations will be
+                introduced in line with evolving industry needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CARD 6 */}
+      <div className="col-12">
+        <div className="card border-0 shadow-sm rounded-3 p-4">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-4 text-center">
+              <img
+                src="/media/IR/6.jpg"
+                alt="Management Project"
+                className="img-fluid ir-fixed-img"
+                loading="lazy"
+              />
+            </div>
+            <div className="col-12 col-md-8">
+              <h5 className="fw-bold text-warning mb-3">
+                Management Project (MP)
+              </h5>
+              <p className="card-text">
+                The Management Project is spread across two trimesters during
+                the second year. It enables students to gain in-depth domain
+                expertise while developing research, collaboration, and
+                professional consulting skills beyond the classroom.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
         {/* Quality Policy Section */}
         <section className="py-5">
@@ -275,7 +293,10 @@ const IndustryRelevance = () => {
         column-gap: 1rem;
         padding-right: 10px;
       }
-
+        .breadcrumb{
+        background-color: rgb(22, 57, 119);
+        }
+    
       /* For screens wider than 1300px */
       @media (min-width: 1300px) {
         .scrollable-columns {
@@ -398,6 +419,21 @@ const IndustryRelevance = () => {
         background: #bbb;
         border-radius: 10px;
       }
+        /* ONLY industry relevance image fix */
+.ir-fixed-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* mobile spacing */
+@media (max-width: 767px) {
+  .ir-fixed-img {
+    max-height: 200px;
+  }
+}
+
     `,
   }}
 />

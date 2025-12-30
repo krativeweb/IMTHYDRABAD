@@ -259,7 +259,7 @@ export default function ResearchPublication() {
     },
     {
       author: "Rambalak Yadav",
-      title: "Young Consumers’ intension towards buying green products in a developing nation: Extending the theory of planned behavior",
+      title: "Young Consumers’ intention towards buying green products in a developing nation: Extending the theory of planned behavior",
       journal: "Journal of Cleaner Production",
       coAuthors: ["Govind S Pathak"],
     },
@@ -733,7 +733,7 @@ export default function ResearchPublication() {
     },
     {
       author: "Nitin Gupta",
-      title: "ATHER ENERGY: Motivating India for Amart Elektcric Scooters",
+      title: "ATHER ENERGY: Motivating India for  Ather Electric Scooters",
       journal: "IVEY Publishing",
     },
     {

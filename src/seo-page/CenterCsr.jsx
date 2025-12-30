@@ -220,7 +220,7 @@ export default function CentreSustainabilityCSR() {
                     strategic implementation practices.
                   </li>
                   <li>
-                    Funding long-term research studies undertaken by IMT H
+                    Funding long-term research studies undertaken by IMT Hyderabad
                     faculty. Providing advisory support and capacity building
                     help to NGOs and other organisations engaged in providing
                     sustainable development solutions.
@@ -509,6 +509,13 @@ export default function CentreSustainabilityCSR() {
         background: #ffc107;
         color: #000000ff;
       }
+        /* Fix long links overflow */
+a,
+a:visited {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
     `,
         }}
       />

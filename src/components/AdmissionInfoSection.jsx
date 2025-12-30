@@ -64,33 +64,29 @@ export default function AdmissionInfoSection() {
                           </h5>
                           <p className="card-text text-muted mb-2">
                             <strong className="text-dark">
-                              Tuition Fee Waiver (TFW) scheme:
-                            </strong>
+                              Tuition Fee Waiver (TFW) scheme: </strong>
                             100% waiver on academic fees.
-                            <a href="#">click here</a>
                           </p>
                           <p className="card-text text-muted mb-2">
                             <strong className="text-dark">
                               TFW Application:
                             </strong>
-                            <a href="#">click here</a>
                           </p>
                           <p className="card-text text-muted mb-2">
                             <strong className="text-dark">
                               Smt Leela Nath Memorial Scholarship:
-                            </strong>
-                            20% scholarship for all female candidates admitted
+                            
+                            </strong> 20% scholarship for all female candidates admitted
                             to any PGDM program at IMT Hyderabad.
                           </p>
                           <p className="card-text text-muted mb-2">
                             <strong className="text-dark">
                               Merit-Based Scholarship:
-                            </strong>
-                            Candidates are eligible for a
-                            <strong className="text-dark">
-                              40% scholarship
-                            </strong>
-                            on the academic fee if they meet any of the
+                           
+                           </strong> Candidates are eligible for a
+                            <strong className="text-dark"> 40% scholarship
+                            
+                          </strong>  on the academic fee if they meet any of the
                             following criteria:
                             <br />
                             <strong className="text-dark">CAT/XAT:</strong>{" "}
@@ -110,8 +106,8 @@ export default function AdmissionInfoSection() {
                             <strong className="text-dark">
                               The Late Shri Mahendra Nath Merit-cum-Means
                               Scholarship:
-                            </strong>
-                            Awarded to second-year students who demonstrate
+                            
+                           </strong> Awarded to second-year students who demonstrate
                             exceptional academic performance during their first
                             year. Selection is based on academic results,
                             socio-economic background, overall conduct, and
@@ -152,14 +148,13 @@ export default function AdmissionInfoSection() {
                             Beneficiary account must belong to the student only.
                           </p>
                           <p className="card-text text-muted mb-0">
-                            To read the Refund Policy please
-                            <a href="" className="text-warning">
+                            To read the Refund Policy please <a href="" className="text-warning">
                               click here
                             </a>
                           </p>
                           <p className="card-text text-muted mb-0">
                             <em>
-                              <strong className="text-dark"> Note:</strong>
+                              <strong className="text-dark"> Note: </strong>
                               Request(s) sent to any other place will not be
                               entertained and will be considered null and void.
                             </em>

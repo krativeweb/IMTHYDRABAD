@@ -255,7 +255,7 @@ export default function ContactUs() {
                         </label>
                         <input
                           type="text"
-                          className={`form-control mt-3 ${
+                          className={`form-control  ${
                             formErrors.firstName ? "is-invalid" : ""
                           }`}
                           id="firstName"
@@ -277,7 +277,7 @@ export default function ContactUs() {
                         </label>
                         <input
                           type="text"
-                          className="form-control mt-3"
+                          className="form-control "
                           id="lastName"
                           name="lastName"
                           placeholder="Last name"
@@ -323,7 +323,7 @@ export default function ContactUs() {
                         </label>
                         <input
                           type="tel"
-                          className="form-control mt-2"
+                          className="form-control "
                           id="phone"
                           name="phone"
                           placeholder="Enter your phone number"
@@ -342,7 +342,7 @@ export default function ContactUs() {
                         <select
                           id="category"
                           name="category"
-                          className="form-select mt-2"
+                          className="form-select "
                           value={formData.category || ""}
                           onChange={handleInputChange}
                         >

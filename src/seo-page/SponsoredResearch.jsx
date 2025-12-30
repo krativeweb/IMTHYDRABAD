@@ -200,7 +200,7 @@ const SponsoredResearch = () => {
                               Study on Adoption of Cashless transactions at
                               small merchants in Tier 2 & 3 cities of Telangana
                             </strong>{" "}
-                            in collaboration with National Corporation of India
+                            in collaboration with National Payments Corporation of India
                             (NPCI). The team comprising 3 Faculty Members.
                           </li>
                           <li className="mb-2">

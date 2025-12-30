@@ -136,11 +136,11 @@ export default function LeadershipSection() {
 .director-img {
   float: left;
   width: 300px;
-  margin: 6px 30px 20px 0;
+  margin: 6px 30px 0px 0;
 }
 
 .director-img img {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);

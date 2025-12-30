@@ -125,7 +125,7 @@ Our refund policy ensures clarity, accountability, and compliance with all regul
           <div className="card shadow p-4">
             <h3 className="fw-bold mb-4 text-center text-warning">Refund Policy</h3>
             <p>
-              IMT Hyderabad follows the <strong>AICTE guidelines</strong> for refund policy.
+              IMT Hyderabad follows the <strong> AICTE guidelines</strong> for refund policy.
             </p>
             <p>
               The candidates who have been provisionally admitted into
@@ -137,8 +137,8 @@ Our refund policy ensures clarity, accountability, and compliance with all regul
             <p>
               The cut-off date for all the two-year programs of IMT Hyderabad i.e. <strong>PGDM, PGDM (Logistics &
               Supply Chain Management), PGDM (Information Technology), PGDM (Marketing), and PGDM (Finance)</strong> is
-              <strong>September 11th, 2024</strong>. The academic session for all the above-stated programs starts from
-              <strong>June 19th, 2024</strong>. The refund shall be made after deduction of the cancellation charges as
+              <strong> September 11th, 2024</strong>. The academic session for all the above-stated programs starts from
+              <strong> June 19th, 2024</strong>. The refund shall be made after deduction of the cancellation charges as
               shown below:
             </p>
             <div className="table-responsive mt-4">

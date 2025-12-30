@@ -45,13 +45,13 @@ export default function Footer() {
                 >
                   <i className="fab fa-xl text-warning fa-facebook-f"></i>
                 </Link>
-                <Link
+                {/* <Link
                   href="https://twitter.com/IMTHyderabad"
                   className="text-reset"
                   aria-label="Twitter"
                 >
                   <i className="fab fa-xl text-warning fa-x-twitter"></i>
-                </Link>
+                </Link> */}
                 <Link
                   href="https://www.linkedin.com/school/imthyderabad/"
                   className="text-reset"
@@ -60,14 +60,14 @@ export default function Footer() {
                   <i className="fab fa-xl text-warning fa-linkedin-in"></i>
                 </Link>
                 <Link
-                  href="https://instagram.com/IMTHyderabad"
+                  href="https://www.instagram.com/hyderabadimt?igsh=MXNsMmNmMmRrMWl2ZA=="
                   className="text-reset"
                   aria-label="Instagram"
                 >
                   <i className="fab fa-xl text-warning fa-instagram"></i>
                 </Link>
                 <Link
-                  href="https://www.youtube.com/@IMTHyderabad"
+                  href="https://youtube.com/@imthyderabadchannel?si=QfVmqF3W6tjFyiQl"
                   className="text-reset"
                   aria-label="YouTube"
                 >

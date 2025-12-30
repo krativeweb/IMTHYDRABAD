@@ -10,7 +10,7 @@ export default function EligibilitySection() {
               <p className="mb-4">
                 Minimum three years bachelor’s degree or equivalent in any
                 discipline with
-                <strong>minimum 50% marks in aggregate</strong>
+                <strong> minimum 50% marks in aggregate</strong>
                 <br />
                 <em>
                   * CAT (2025) / XAT (2026) / GMAT (January&nbsp;1,&nbsp;2022 –
