@@ -434,7 +434,7 @@ export default function StandardsOfScholarship() {
 
                         <tr>
                           <td>Prof. Vinay Kumar K</td>
-                          <td>PGP Chairperson</td>
+                          <td>Associate Dean (Accreditation & Rankings)</td>
                           <td>8639342389</td>
                           <td>08414-671688</td>
                         </tr>
