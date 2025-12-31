@@ -558,7 +558,7 @@ const MandatoryDisclosure = () => {
                       <p>Prof. Vinay Kumar K</p>
                     </td>
                     <td>
-                      <p>PGP Chairperson</p>
+                      <p>Associate Dean (Accreditation & Rankings)</p>
                     </td>
                     <td>
                       <p>8639342389</p>
