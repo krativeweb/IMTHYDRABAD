@@ -62,7 +62,7 @@ export default function Committees() {
           {
             sno: 3,
             name: "Prof. Vinay Kumar K",
-            designation: "PGP Chairperson",
+            designation: "Associate Dean (Accreditation & Rankings)",
             phone: "8639342389",
             landline: "08414671688",
           },
@@ -288,7 +288,7 @@ export default function Committees() {
               phone: "08414671669",
             },
             {
-              name: "Prof. (Dr.) Vinay Kumar, PGP Chairperson",
+              name: "Prof. (Dr.) Vinay Kumar, Associate Dean (Accreditation & Rankings)",
               phone: "08414671688",
             },
           ],
