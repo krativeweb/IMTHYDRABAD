@@ -8,6 +8,10 @@ export default function FinancialStatements() {
   const FinancialData = {
     incomeExpenditure: [
       {
+        year: "2024 - 25",
+        link: "https://drive.google.com/file/d/1sJKBIzvcPdobqPysKs8QclLFiFt7BoCx/view?usp=sharing",
+      },
+      {
         year: "2023 - 24",
         link: "https://drive.google.com/file/d/1cC4Vha2oPCxkXi-8lYf5CJ-BoLVBMpy8/view",
       },
@@ -29,6 +33,10 @@ export default function FinancialStatements() {
       },
     ],
     balanceSheet: [
+        {
+        year: "2024 - 25",
+        link: "https://drive.google.com/file/d/1MNOAbXNi_x_7ogSHfZp2Oxspk6RexIoh/view?usp=sharing",
+      },
       {
         year: "2023 - 24",
         link: "https://drive.google.com/file/d/1a1U1NnKKfM24vJjtLZM5HESgwHgYuGe7/view",
