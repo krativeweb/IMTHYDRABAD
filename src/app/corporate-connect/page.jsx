@@ -7,6 +7,18 @@ export default function CorporateConnect() {
   // Embedded data for corporate connect
   const data = {
     panelDiscussions: {
+      '2025-26': [
+        {
+          title: 'From Classroom to Boardrooms: Thriving in a Technology-Driven Global Economy',
+          date: '30-Jun-2025',
+          speakers: [
+            'Mr.Saravana Kumar, Vice President&India HR Business Partner, Salesforce',
+            'Ms.Asma Joshi, Pepsico GCC Hyderabad , HR Campus Head.',
+            'Mr.Sudhendra S.Kulkarni, Cloud4C Services,Vice President Head of L&D & Campus Requirment',
+            'Mr.Hemant Kumar Ravi, EY,Bangalore, Program Lead',
+          ],
+        },
+      ],
       '2024-25': [
         {
           title: 'Industry expectations from Management students',
@@ -189,6 +201,18 @@ export default function CorporateConnect() {
       ],
     },
     leadershipSeries: {
+      '2025-26': [
+        {
+          title: 'Leadership Series Talk',
+          date: '8-Oct-2025',
+          speakers: ['Mr.Rupessh Goel, Managing Director, First Citizens Bank'],
+        },
+        {
+          title: 'The Real Expectations from a Management Graduate While Hiring for the First Job',
+          date: '27-Jun-2025',
+          speakers: ['Mr.Rajesh Menon, Board of Director, CrowdStrike'],
+        },
+      ],
       '2024-25': [
         {
           title: 'Business insights from medical institution and the importance of socially responsible leaders in healthcare',
