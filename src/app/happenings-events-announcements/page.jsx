@@ -396,7 +396,7 @@ height: 80vh;
                           <div className="col-12">
                             <div
                               dangerouslySetInnerHTML={{
-                                __html: decodeHTMLEntities(item.description),
+                                __html: (item.description),
                               }}
                             ></div>
                           </div>
