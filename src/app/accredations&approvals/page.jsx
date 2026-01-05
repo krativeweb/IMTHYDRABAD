@@ -292,20 +292,45 @@ export default function ApprovalsAccreditation() {
                         </thead>
                         <tbody>
                           {[
-                            "2024-25",
-                            "2023-24",
-                            "2022-23",
-                            "2021-22",
-                            "2020-21",
-                            "2019-20",
-                            "2018-19",
-                            "2017-18",
-                          ].map((year) => (
+                            {
+                              year: "2024-25",
+                              link: "https://drive.google.com/file/d/1F9Y4vH5QR2K0EpCN_9h4hPtOVU1NHnkB/view?usp=sharing",
+                            },
+                            {
+                              year: "2023-24",
+                              link: "https://drive.google.com/file/d/1FVSCp745uHLj3ndZeHIY03ulpG47bOxG/view?usp=share_link",
+                            },
+                            {
+                              year: "2022-23",
+                              link: "https://drive.google.com/file/d/1FVSCp745uHLj3ndZeHIY03ulpG47bOxG/view?usp=share_link",
+                            },
+                            {
+                              year: "2021-22",
+                              link: "https://drive.google.com/file/d/1DNMqVntL3GRoVnstIX7teCarH_E0acuX/view?usp=sharing",
+                            },
+                            {
+                              year: "2020-21",
+                              link: "https://drive.google.com/file/d/1WP9Bf3ScPYdqgB4EKFHYQo9tfI0TwX3K/view?usp=sharing",
+                            },
+                            {
+                              year: "2019-20",
+                              link: "https://drive.google.com/file/d/1Y2MGjoxmkGEP495SCM97iSeVAQBDa_Ei/view?usp=sharing",
+                            },
+                            {
+                              year: "2018-19",
+                              link: "https://drive.google.com/file/d/1wsWDnRedKQEIdRx1RwqHRO_vEQAv9rDV/view?usp=sharing",
+                            },
+                            {
+                              year: "2017-18",
+                              link: "https://drive.google.com/file/d/1wsWDnRedKQEIdRx1RwqHRO_vEQAv9rDV/view?usp=sharing",
+                            },
+                          ].map(({ year, link }) => (
                             <tr key={year}>
                               <td>{year}</td>
                               <td>
                                 <Link
-                                  href="#"
+                                  href={link}
+                                  target="_blank"
                                   className="btn btn-sm btn-warning fw-semibold"
                                 >
                                   Click Here
@@ -319,64 +344,89 @@ export default function ApprovalsAccreditation() {
                   </div>
                 </div>
 
-{/* PGDM Finance */}
-<div
-  className="tab-pane fade"
-  id="pgdm-finance"
-  role="tabpanel"
->
-  <div className="card shadow-sm p-4">
-    <h4 className="fw-bold text-warning mb-3">
-      PGDM - Finance AIU Certificate
-    </h4>
-
-    <p>
-      The PGDM-Finance program is approved by AICTE and has
-      received equivalence to an MBA degree from AIU.
-    </p>
-
-    <div className="table-responsive mt-4">
-      <table className="table table-bordered align-middle text-center">
-        <thead className="table-primary">
-          <tr>
-            <th>Academic Year</th>
-            <th>View</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {[
-            { year: "2026-30", pdf: "/pdf/PGDM-Finance-AIU-2026-2030.pdf" },
-            { year: "2024-25", pdf: "#" },
-            { year: "2023-24", pdf: "#" },
-            { year: "2022-23", pdf: "#" },
-            { year: "2021-22", pdf: "#" },
-            { year: "2020-21", pdf: "#" },
-            { year: "2019-20", pdf: "#" },
-            { year: "2018-19", pdf: "#" },
-            { year: "2017-18", pdf: "#" },
-          ].map(({ year, pdf }) => (
-            <tr key={year}>
-              <td>{year}</td>
-              <td>
-                <a
-                  href={pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-warning btn-sm"
+                {/* PGDM Finance */}
+                <div
+                  className="tab-pane fade"
+                  id="pgdm-finance"
+                  role="tabpanel"
                 >
-                  Click Here
-                </a>
-              </td>
-            </tr>
-          ))}
-        </tbody>
+                  <div className="card shadow-sm p-4">
+                    <h4 className="fw-bold text-warning mb-3">
+                      PGDM - Finance AIU Certificate
+                    </h4>
 
-      </table>
-    </div>
-  </div>
-</div>
+                    <p>
+                      The PGDM-Finance program is approved by AICTE and has
+                      received equivalence to an MBA degree from AIU.
+                    </p>
 
+                    <div className="table-responsive mt-4">
+                      <table className="table table-bordered align-middle text-center">
+                        <thead className="table-primary">
+                          <tr>
+                            <th>Academic Year</th>
+                            <th>View</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          {[
+                            {
+                              year: "2026-30",
+                              pdf: "/pdf/PGDM-Finance-AIU-2026-2030.pdf",
+                            },
+                            {
+                              year: "2024-25",
+                              link: "https://drive.google.com/file/d/12JTDsdF-97ytKQLA5E_Z4PwywNBkf5RU/view?usp=sharing",
+                            },
+                            {
+                              year: "2023-24",
+                              link: "https://drive.google.com/file/d/1aHf3xwBFpFV2B5WQlBHvbCeghVVSliRO/view?usp=share_link",
+                            },
+                            {
+                              year: "2022-23",
+                              link: "https://drive.google.com/file/d/1aHf3xwBFpFV2B5WQlBHvbCeghVVSliRO/view?usp=share_link",
+                            },
+                            {
+                              year: "2021-22",
+                              link: "https://drive.google.com/file/d/14fGBQVceuEdbA7wZhCoqHQ2yfUMcXcAK/view?usp=sharing",
+                            },
+                            {
+                              year: "2020-21",
+                              link: "https://drive.google.com/file/d/1kazLbEtgc_j8tQb4OWR6KAwQXBcsc8Cl/view?usp=sharing",
+                            },
+                            {
+                              year: "2019-20",
+                              link: "https://drive.google.com/file/d/1AJ0B9pchk2OZ-xC1ZO-eTlaMGb-POcWc/view?usp=sharing",
+                            },
+                            {
+                              year: "2018-19",
+                              link: "https://drive.google.com/file/d/1tEbwo5WDdYRt3uU70d-EerwKRS2XVbOh/view?usp=sharing",
+                            },
+                            {
+                              year: "2017-18",
+                              link: "https://drive.google.com/file/d/1tEbwo5WDdYRt3uU70d-EerwKRS2XVbOh/view?usp=sharing",
+                            },
+                          ].map(({ year, link }) => (
+                            <tr key={year}>
+                              <td>{year}</td>
+                              <td>
+                                <a
+                                  href={link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="btn btn-warning btn-sm"
+                                >
+                                  Click Here
+                                </a>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
 
                 {/* PGDM Marketing */}
                 <div
@@ -403,18 +453,37 @@ export default function ApprovalsAccreditation() {
                         </thead>
                         <tbody>
                           {[
-                            "2025-26",
-                            "2024-25",
-                            "2023-24",
-                            "2022-23",
-                            "2021-22",
-                            "2020-21",
-                          ].map((year) => (
+                            {
+                              year: "2025-26",
+                              link: "https://drive.google.com/file/d/1686v_e6wq4w1q5Sw1SS9Ch8qCSETq7Od/view?usp=sharing",
+                            },
+                            {
+                              year: "2024-25",
+                              link: "https://drive.google.com/file/d/1686v_e6wq4w1q5Sw1SS9Ch8qCSETq7Od/view?usp=sharing",
+                            },
+                            {
+                              year: "2023-24",
+                              link: "https://drive.google.com/file/d/18u_LLkiQ5iO-r3R-Bmr-gcngI7irE_8l/view?usp=sharing",
+                            },
+                            {
+                              year: "2022-23",
+                              link: "https://drive.google.com/file/d/1KK2oY300tU6U2vQrQhKHVzXx0dUXAnLH/view?usp=sharing",
+                            },
+                            {
+                              year: "2021-22",
+                              link: "https://drive.google.com/file/d/1KK2oY300tU6U2vQrQhKHVzXx0dUXAnLH/view?usp=sharing",
+                            },
+                            {
+                              year: "2020-21",
+                              link: "https://drive.google.com/file/d/1KK2oY300tU6U2vQrQhKHVzXx0dUXAnLH/view?usp=sharing",
+                            },
+                          ].map(({ year, link }) => (
                             <tr key={year}>
                               <td>{year}</td>
                               <td>
                                 <Link
-                                  href="#"
+                                  href={link}
+                                  target="_blank"
                                   className="btn btn-warning btn-sm"
                                 >
                                   Click Here
@@ -592,7 +661,7 @@ export default function ApprovalsAccreditation() {
               </div>
 
               {/* Accreditation Status */}
-              {/* <div className="row mt-4">
+              <div className="row mt-4">
                 <div className="col-md-12 text-center">
                   <p>
                     <strong>NBA and NAAC Accreditation Status:</strong>{" "}
@@ -606,7 +675,7 @@ export default function ApprovalsAccreditation() {
                     </Link>
                   </p>
                 </div>
-              </div> */}
+              </div>
             </div>
 
             {/* SAQS */}
