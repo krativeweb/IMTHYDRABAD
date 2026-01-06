@@ -445,25 +445,25 @@ export default function ContactUs() {
                   <div className="col mt-2">
                     <div className="bg-light p-3 rounded-5 d-flex justify-content-evenly">
                       <Link
-                        href="https://www.instagram.com/IMTHyderabad/"
+                        href="https://www.instagram.com/hyderabadimt?igsh=MXNsMmNmMmRrMWl2ZA=="
                         className="social-icon"
                       >
                         <i className="bi bi-instagram fs-4"></i>
                       </Link>
                       <Link
-                        href="https://www.facebook.com/IMThyderabad/"
+                        href="https://facebook.com/IMTHyderabad"
                         className="social-icon"
                       >
                         <i className="bi bi-facebook fs-4"></i>
                       </Link>
                       <Link
-                        href="https://x.com/IMTHyderabad"
+                        href="https://www.linkedin.com/company/institute-of-management-technology-hyderabad/"
                         className="social-icon"
                       >
-                        <i className="bi bi-twitter-x fs-4"></i>
+                        <i className="bi bi-linkedin fs-4"></i>
                       </Link>
                       <Link
-                        href="https://www.youtube.com/@IMTHyderabad"
+                        href="https://www.instagram.com/hyderabadimt?igsh=MXNsMmNmMmRrMWl2ZA=="
                         className="social-icon"
                       >
                         <i className="bi bi-youtube fs-4"></i>
