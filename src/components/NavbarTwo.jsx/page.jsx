@@ -129,7 +129,7 @@ export default function NavbarTwo() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#calender">
+            <a className="nav-link" href="#calendar">
               EDP CALENDAR
             </a>
           </li>
