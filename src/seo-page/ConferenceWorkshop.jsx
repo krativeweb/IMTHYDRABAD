@@ -14,7 +14,7 @@ workshops: [
       "Prof. A Sarath Babu, Prof Kiranmai Pendyala, Prof Dhananjay Singh, Prof Sathish Kumar Kannan",
     image: "/images/edp/1.webp",
     alt: "Workshop 1",
-    link: "https://drive.google.com/file/d/1WDSiOx69hg7K6AkNEJ1EcP904J4a-PDW/view",
+    link: "https://drive.google.com/file/d/1HATMqS_WqRruS7sKGfTbfYAhLVyUwQCL/view",
   },
   {
     title: "PG Certification in Leadership",
@@ -22,7 +22,7 @@ workshops: [
     programDirector: "Prof. (Dr.) Romina Mathew",
     image: "/images/edp/2.webp",
     alt: "Workshop 2",
-    link: "https://drive.google.com/file/d/1WDSiOx69hg7K6AkNEJ1EcP904J4a-PDW/view",
+    link: "https://drive.google.com/file/d/1fGGBfU3TteXq4RE989xD48hK9pwMAKtO/view",
   },
   {
     title: "Enhancing HR Competencies for Effective People Management",
@@ -30,7 +30,7 @@ workshops: [
     programDirector: "Prof Romina Mathew",
     image: "/images/edp/3.webp",
     alt: "Workshop 3",
-    link: "https://drive.google.com/file/d/1WDSiOx69hg7K6AkNEJ1EcP904J4a-PDW/view",
+    link: "http://drive.google.com/file/d/16GWqCQcX73grc5s1RlZx5jUrCRTswilX/view",
   },
   {
     title: "ASPIRE 7.0",
@@ -39,7 +39,7 @@ workshops: [
       "Prof Romina Mathew, Prof A Sarath Babu, Prof Dhananjay Singh",
     image: "/images/edp/4.webp",
     alt: "Workshop 4",
-    link: "https://drive.google.com/file/d/1WDSiOx69hg7K6AkNEJ1EcP904J4a-PDW/view",
+    link: "https://drive.google.com/file/d/1Yimju-euEQWSS-EEcKwOjjbBeUlNJGaI/view",
   },
   {
     title:
@@ -48,7 +48,7 @@ workshops: [
     programDirector: "Prof. Sathish Kumar Kannan",
     image: "/images/edp/5.webp",
     alt: "Workshop 5",
-    link: "https://drive.google.com/file/d/1WDSiOx69hg7K6AkNEJ1EcP904J4a-PDW/view",
+    link: "https://drive.google.com/file/d/1V4-8wnfU9Dkd-_q30n9W0o72IU3e3Eha/view",
   },
   {
     title:
