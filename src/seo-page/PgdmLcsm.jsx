@@ -350,7 +350,7 @@ export default function PGDMLSCMSection() {
                 aria-controls="competency"
                 aria-selected="false"
               >
-                COMPETENCY GOAL
+                Program Learning Outcomes
               </button>
             </li>
           </ul>
@@ -529,6 +529,88 @@ export default function PGDMLSCMSection() {
                   role="tabpanel"
                   aria-labelledby="competency-tab"
                 >
+                  <div className="container my-5">
+                    <h4 className="fw-semibold text-center mb-4">
+                       Program Learning Outcomes – PGDM (LSCM)
+                    </h4>
+
+                    <ul className="list-unstyled">
+                      {/* CG 1 */}
+                      <li className="mb-4">
+                        <h5 className="fw-bold">CG 1. Business Acumen</h5>
+                        <p>
+                          Graduating students should demonstrate proficiency in
+                          applying core business concepts and integrate
+                          knowledge from various business disciplines to analyze
+                          and solve global business challenges.
+                        </p>
+
+                        <ul>
+                          <li>
+                            <strong>PLO 1.1:</strong> Acquire LSCM functional
+                            skills and domain-specific expertise.
+                          </li>
+                          <li>
+                            <strong>PLO 1.2:</strong> Deploy global benchmarks
+                            and real-world scenarios for effective LSCM
+                            decision-making.
+                          </li>
+                        </ul>
+                      </li>
+
+                      {/* CG 2 */}
+                      <li className="mb-4">
+                        <h5 className="fw-bold">CG 2. Leadership</h5>
+                        <p>
+                          Graduating students should have the capacity to lead
+                          and inspire others and the capability to make
+                          strategic decisions.
+                        </p>
+
+                        <ul>
+                          <li>
+                            <strong>PLO 2.1:</strong> Leverage emerging
+                            technologies to achieve superior leadership and
+                            performance in LSCM.
+                          </li>
+                          <li>
+                            <strong>PLO 2.2:</strong> Extract, process, and
+                            analyze LSCM data to generate insights for informed
+                            decision-making.
+                          </li>
+                        </ul>
+                      </li>
+
+                      {/* CG 3 */}
+                      <li className="mb-4">
+                        <h5 className="fw-bold">CG 3. Responsibility</h5>
+                        <p>
+                          Graduating students should be committed to responsible
+                          and sustainable business practices that balance
+                          stakeholder priorities.
+                        </p>
+
+                        <ul>
+                          <li>
+                            <strong>PLO 3.1:</strong> Understand and apply ESG
+                            concepts within the LSCM domain.
+                          </li>
+                          <li>
+                            <strong>PLO 3.2:</strong> Design and implement
+                            responsible and sustainable LSCM practices.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* <div
+                  className="tab-pane fade"
+                  id="competency"
+                  role="tabpanel"
+                  aria-labelledby="competency-tab"
+                >
                   <div class="container my-5">
                     <div class="table-responsive">
                       <table class="table table-bordered table-striped">
@@ -616,7 +698,7 @@ export default function PGDMLSCMSection() {
                       </table>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

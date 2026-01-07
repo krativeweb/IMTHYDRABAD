@@ -764,34 +764,56 @@ export default function PGDMProgramsSection() {
                   </h5>
                   <ul>
                     <li>
-                      <b>PEO1:</b> Apply the theories of management science to
-                      understand and solve Industry problems effectively and
-                      being efficient always.
+                      <b>PO1:</b> Apply knowledge of management theories and
+                      practices to analyze and solve business problems
+                      effectively.
                     </li>
                     <li>
-                      <b>PEO2:</b> Use the skills gained through practice
-                      oriented learning that equip the students to be industry
-                      ready.
+                      <b>PO2:</b> Foster analytical and critical thinking
+                      abilities for data-driven decision-making.
                     </li>
                     <li>
-                      <b>PEO3:</b> Ability to adapt to the dynamic business
-                      environment using skills learned through industry projects
-                      and assignments.
+                      <b>PO3:</b> Develop value-based leadership abilities to
+                      lead individuals and teams ethically and effectively.
                     </li>
                     <li>
-                      <b>PEO4:</b> Function with an orientation to ethical
-                      practices and societal well-being.
+                      <b>PO4:</b> Understand, analyze, and communicate global,
+                      economic, legal, and ethical aspects of business.
+                    </li>
+                    <li>
+                      <b>PO5:</b> Lead self and others in achieving
+                      organizational goals while contributing effectively in a
+                      team environment.
+                    </li>
+                    <li>
+                      <b>PO6:</b> Develop responsible and sustainable business
+                      strategies with due consideration of all key stakeholders.
                     </li>
                   </ul>
+
                   <h5 style={{ color: "#08317a" }}>Program Goals</h5>
                   <ul>
-                    <li>Functional proficiency and integration</li>
-                    <li>Analytical and critical thinking ability</li>
-                    <li>Leadership and interpersonal skills</li>
-                    <li>Communication skills</li>
-                    <li>Creativity and innovation skills</li>
-                    <li>Social responsibility</li>
+                    <li>
+                      <strong>CG1: Business Acumen:</strong>
+                      Graduating students should demonstrate proficiency in
+                      applying core business concepts and integrate knowledge
+                      from various business disciplines to analyze and solve
+                      global business challenges.
+                    </li>
+                    <li>
+                      <strong>CG2: Leadership:</strong>
+                      Graduating students should have the capacity to lead and
+                      inspire others and the capability to make strategic
+                      decisions.
+                    </li>
+                    <li>
+                      <strong>CG3: Responsibility:</strong>
+                      Graduating students should be committed to responsible and
+                      sustainable business practices that balance stakeholder
+                      priorities.
+                    </li>
                   </ul>
+
                   <p>
                     The PGDM program structure is based on the trimester system,
                     where each trimester is on an average of 12 weeks. The

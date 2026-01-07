@@ -335,7 +335,7 @@ export default function PGDMFinanceSection() {
                 aria-controls="competency"
                 aria-selected="false"
               >
-                COMPETENCY GOAL
+                Program Learning Outcomes
               </button>
             </li>
           </ul>
@@ -523,6 +523,86 @@ export default function PGDMFinanceSection() {
                 </div>
                 {/* compentency */}
                 <div
+  className="tab-pane fade"
+  id="competency"
+  role="tabpanel"
+  aria-labelledby="competency-tab"
+>
+  <div className="container my-5">
+
+    <h4 className="fw-semibold text-center mb-4">
+       Program Learning Outcomes – PGDM (Finance)
+    </h4>
+
+    <ul className="list-unstyled">
+
+      {/* CG 1 */}
+      <li className="mb-4">
+        <h5 className="fw-bold">CG 1. Business Acumen</h5>
+        <p>
+          Graduating students should demonstrate proficiency in applying core
+          business concepts and integrate knowledge from various business
+          disciplines to analyze and solve global business challenges.
+        </p>
+
+        <ul>
+          <li>
+            <strong>PLO 1.1:</strong> Demonstrate in-depth and contemporary
+            knowledge of business functions.
+          </li>
+          <li>
+            <strong>PLO 1.2:</strong> Integrate the principles of finance with
+            different functional areas to solve global business problems.
+          </li>
+        </ul>
+      </li>
+
+      {/* CG 2 */}
+      <li className="mb-4">
+        <h5 className="fw-bold">CG 2. Leadership</h5>
+        <p>
+          Graduating students should have the capacity to lead and inspire
+          others and the capability to make strategic decisions.
+        </p>
+
+        <ul>
+          <li>
+            <strong>PLO 2.1:</strong> Demonstrate interpersonal skills to
+            communicate ideas and resolve conflicts effectively.
+          </li>
+          <li>
+            <strong>PLO 2.2:</strong> Develop acumen to make effective financial
+            decisions in complex and ambiguous scenarios.
+          </li>
+        </ul>
+      </li>
+
+      {/* CG 3 */}
+      <li className="mb-4">
+        <h5 className="fw-bold">CG 3. Responsibility</h5>
+        <p>
+          Graduating students should be committed to responsible and
+          sustainable business practices that balance stakeholder priorities.
+        </p>
+
+        <ul>
+          <li>
+            <strong>PLO 3.1:</strong> Demonstrate sensitivity towards
+            environmental and social implications of business decisions.
+          </li>
+          <li>
+            <strong>PLO 3.2:</strong> Develop responsible and sustainable
+            business strategies with due consideration to all key internal
+            and external stakeholders.
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+                {/* <div
                   className="tab-pane fade"
                   id="competency"
                   role="tabpanel"
@@ -622,7 +702,7 @@ export default function PGDMFinanceSection() {
                       </table>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

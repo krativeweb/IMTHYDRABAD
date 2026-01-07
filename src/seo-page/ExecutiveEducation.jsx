@@ -14,36 +14,37 @@ export default function ExecutiveEducation() {
   const data = {
     workshops: [
       {
-        title:
-          "Finance and Accounting Excellence Program: Strategic Financial Management",
-        company: "Telangana State Road Transport Corporation",
-        programDirector: "Prof. (Dr.) A. Sarath Babu",
-        image: "/images/EDP-1.webp",
-      },
-      {
-        title: "Mastering People Management and Team Leadership",
-        company: "BHARAT Financial Inclusion Ltd",
-        programDirector: "Prof. (Dr.) Romina Mathew",
-        image: "/images/EDP-2.webp",
-      },
-      {
-        title: "CoroElite – Sales Excellence in Retail",
-        company: "Coromandel International Ltd.",
-        programDirector: "Prof. (Dr.) A. Sarath Babu",
-        image: "/images/EDP-3.webp",
-      },
-      {
-        title: "Mastering People Management & Team Leadership",
-        company: "BHARAT Financial Inclusion Ltd",
-        programDirector: "Prof. (Dr.) Pavan Kumar Balivada",
-        image: "/images/EDP-4.webp",
-      },
-      {
-        title: "Middle Management Development Program",
-        company: "Greenko Group",
+        title: "IMT Hyderabad – Amara Raja Future Leaders Program (AR-FLP) ",
+        company: "Amara Raja Group",
         programDirector:
-          "Prof. (Dr.) Pavan Kumar Balivada & Prof. (Dr.) A. Sarath Babu",
-        image: "/images/EDP-5.webp",
+          " Prof. A Sarath Babu, Prof Kiranmai Pendyala, Prof Dhananjay Singh, Prof Sathish Kumar Kannan",
+        image: "/images/edp/1.webp",
+      },
+      {
+        title: "PG Certification in Leadership",
+        company: "Apitoria Pharma Pvt. Ltd.",
+        programDirector: "Prof. (Dr.) Romina Mathew",
+        image: "/images/edp/2.webp",
+      },
+      {
+        title: " Enhancing HR Competencies for Effective People Management",
+        company: " Telangana State Road Transport Corporation",
+        programDirector: "Prof Romina Mathew",
+        image: "/images/edp/3.webp",
+      },
+      {
+        title: "ASPIRE 7.0",
+        company: "Apollo Tyres Ltd ",
+        programDirector:
+          "Prof Romina Mathew, Prof A Sarath Babu, Prof Dhananjay Singh",
+        image: "/images/EDP-38.webp",
+      },
+      {
+        title:
+          "Advanced Leadership Excellence Program – Driving Transformation through Strategic Foresight and Leadership Agility",
+        company: "Telangana State Road Transport Corporation (TGSRTC) ",
+        programDirector: "Prof. Sathish Kumar Kannan ",
+        image: "/images/EDP-39.webp",
       },
       {
         title:
@@ -532,149 +533,148 @@ export default function ExecutiveEducation() {
       </section>
 
       {/* EDP Calendar Section */}
-      <section id="calendar" className="py-4">
-        <div className="container" data-aos="fade-up" data-aos-delay="200">
-          <div className="card p-3">
-            <h2
-              className="section-title text-center mb-4"
-              style={{ color: "#08317a", fontWeight: 700 }}
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              EDP Calendar (July – December 2025)
-            </h2>
+<section id="calendar" className="py-4">
+  <div className="container" data-aos="fade-up" data-aos-delay="200">
+    <div className="card p-3">
+      <h2
+        className="section-title text-center mb-4"
+        style={{ color: "#08317a", fontWeight: 700 }}
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        EDP Calendar (January – June 2026)
+      </h2>
 
-            <div className="table-responsive shadow-sm rounded">
-              <table className="table table-bordered table-striped table-hover align-middle mb-0">
-                <thead className="table text-center">
-                  <tr>
-                    <th scope="col">Function</th>
-                    <th scope="col">Programs</th>
-                    <th scope="col">Program Director</th>
-                    <th scope="col">Duration</th>
-                    <th scope="col">Dates</th>
-                    <th scope="col">Know More</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    {
-                      function: "Marketing",
-                      program: "Customer Orientation and Sales Effectiveness",
-                      director: "Prof (Dr) Pranay Sindhu",
-                      duration: "2 Days",
-                      dates: "4 - 5 July’25",
-                    },
-                    {
-                      function: "Information Technology",
-                      program: "Block Chain Management",
-                      director: "Prof (Dr) R Mahesh",
-                      duration: "3 Days",
-                      dates: "17 - 19 July’25",
-                    },
-                    {
-                      function: "Operations",
-                      program: "The Science of Operations Management",
-                      director: "Prof (Dr) Kalyana C Chejarla",
-                      duration: "4 Days",
-                      dates: "25 - 26 July & 1 - 2 August’25",
-                    },
-                    {
-                      function: "Finance",
-                      program: "Business Valuation",
-                      director: "Prof (Dr) Nikhil Rastogi",
-                      duration: "2 Days",
-                      dates: "8 - 9 August’25",
-                    },
-                    {
-                      function: "Strategy",
-                      program: "Decision Making in Uncertain Environment",
-                      director: "Prof (Dr) Kalyana C Chejarla",
-                      duration: "3 Days",
-                      dates: "21 - 23 August’25",
-                    },
-                    {
-                      function: "Marketing",
-                      program:
-                        "Sales Management - Shaping Future Sales Leaders",
-                      director: "Prof Dhananjay Singh",
-                      duration: "2 Days",
-                      dates: "29 - 30 August’25",
-                    },
-                    {
-                      function: "Operations",
-                      program: "Lean Management and Process Improvement",
-                      director: "Prof (Dr) Kalyana C Chejarla",
-                      duration: "3 Days",
-                      dates: "11 - 13 September’25",
-                    },
-                    {
-                      function: "General Management",
-                      program: "Strategy and Leadership in VUCA World",
-                      director: "Prof (Dr) Romina Mathew",
-                      duration: "5 Days",
-                      dates: "23 - 27 September’25",
-                    },
-                    {
-                      function: "Finance",
-                      program: "Finance for Non-Finance Executives",
-                      director: "Prof (Dr) A Sarath Babu",
-                      duration: "2 Days",
-                      dates: "9 – 10 October’25",
-                    },
-                    {
-                      function: "Human Resource Management",
-                      program: "Leadership and Personal Effectiveness",
-                      director: "Prof (Dr) Romina Mathew",
-                      duration: "2 Days",
-                      dates: "23 – 24 October’25",
-                    },
-                    {
-                      function: "Finance",
-                      program: "Financial Modelling Using Excel",
-                      director: "Prof (Dr) VC Chakrapani",
-                      duration: "2 Days",
-                      dates: "14 - 15 November’25",
-                    },
-                    {
-                      function: "Human Resource Management",
-                      program:
-                        "Emotional Intelligence for Leadership Effectiveness",
-                      director: "Prof (Dr) Romina Mathew",
-                      duration: "2 Days",
-                      dates: "21 - 22 November’25",
-                    },
-                    {
-                      function: "Marketing",
-                      program: "Strategic Digital Marketing",
-                      director: "Prof (Dr) Pranay Sindhu",
-                      duration: "3 Days",
-                      dates: "3 - 5 December’25",
-                    },
-                    {
-                      function: "Human Resource Management",
-                      program:
-                        "Effective Communication for Managers and Leaders",
-                      director: "Prof (Dr) Romina Mathew",
-                      duration: "3 Days",
-                      dates: "22 - 24 December’25",
-                    },
-                  ].map((program, index) => (
-                    <tr key={index}>
-                      <td>{program.function}</td>
-                      <td>{program.program}</td>
-                      <td>{program.director}</td>
-                      <td>{program.duration}</td>
-                      <td>{program.dates}</td>
-                      <td className="text-center">-</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="table-responsive shadow-sm rounded">
+        <table className="table table-bordered table-striped table-hover align-middle mb-0">
+          <thead className="table text-center">
+            <tr>
+              <th scope="col">Function</th>
+              <th scope="col">Programs</th>
+              <th scope="col">Program Director</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Dates</th>
+              <th scope="col">Know More</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {[
+              {
+                function: "Finance",
+                program: "Business Valuation",
+                director: "Prof (Dr) Nikhil Rastogi",
+                duration: "2 Days",
+                dates: "8 - 9 January’26",
+              },
+              {
+                function: "Strategy",
+                program: "Decision Making in Uncertain Environment",
+                director: "Prof (Dr) Romina Mathew",
+                duration: "3 Days",
+                dates: "22 - 24 January’26",
+              },
+              {
+                function: "Operations",
+                program: "The Science of Operations Management",
+                director: "Prof (Dr) Kalyana C Chejarla",
+                duration: "4 Days",
+                dates: "29 - 30 January & 5 - 6 February’26",
+              },
+              {
+                function: "Human Resource Management",
+                program: "Leadership and Personal Effectiveness",
+                director: "Prof (Dr) Romina Mathew",
+                duration: "2 Days",
+                dates: "20 - 21 February’26",
+              },
+              {
+                function: "Marketing",
+                program: "Strategic Digital Marketing",
+                director: "Prof (Dr) Pranay Sindhu",
+                duration: "3 Days",
+                dates: "26 - 28 February’26",
+              },
+              {
+                function: "Marketing",
+                program: "Sales Management - Shaping Future Sales Leaders",
+                director: "Prof Dhananjay Singh",
+                duration: "2 Days",
+                dates: "6 - 7 March’26",
+              },
+              {
+                function: "Operations",
+                program: "Lean Management and Process Improvement",
+                director: "Prof (Dr) Kalyana C Chejarla",
+                duration: "3 Days",
+                dates: "12 - 14 March’26",
+              },
+              {
+                function: "General Management",
+                program: "Strategy and Leadership in VUCA World",
+                director: "Prof (Dr) Romina Mathew",
+                duration: "5 Days",
+                dates: "7 - 11 April’26",
+              },
+              {
+                function: "Finance",
+                program: "Finance for Non-Finance Executives",
+                director: "Prof (Dr) A Sarath Babu",
+                duration: "2 Days",
+                dates: "17 - 18 April’26",
+              },
+              {
+                function: "Marketing",
+                program: "Customer Orientation and Sales Effectiveness",
+                director: "Prof (Dr) Pranay Sindhu",
+                duration: "2 Days",
+                dates: "24 - 25 April’26",
+              },
+              {
+                function: "Finance",
+                program: "Financial Modelling Using Excel",
+                director: "Prof (Dr) VC Chakrapani",
+                duration: "2 Days",
+                dates: "7 - 8 May’26",
+              },
+              {
+                function: "Human Resource Management",
+                program: "Emotional Intelligence for Leadership Effectiveness",
+                director: "Prof (Dr) Romina Mathew",
+                duration: "2 Days",
+                dates: "21 - 22 May’26",
+              },
+              {
+                function: "Information Technology",
+                program: "Block Chain Management",
+                director: "Prof (Dr) R Mahesh",
+                duration: "3 Days",
+                dates: "4 - 6 June’26",
+              },
+              {
+                function: "Human Resource Management",
+                program: "Effective Communication for Managers and Leaders",
+                director: "Prof (Dr) Romina Mathew",
+                duration: "3 Days",
+                dates: "17 - 19 June’26",
+              },
+            ].map((program, index) => (
+              <tr key={index}>
+                <td>{program.function}</td>
+                <td>{program.program}</td>
+                <td>{program.director}</td>
+                <td>{program.duration}</td>
+                <td>{program.dates}</td>
+                <td className="text-center">-</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Offerings Section */}
       <section id="offering" className="py-5">
@@ -1410,102 +1410,150 @@ export default function ExecutiveEducation() {
               <h4 className="fw-semibold mb-4 mt-3 text-center">
                 Certificate Programs
               </h4>
+
               <div className="row g-4">
                 {/* Card 1 */}
                 <div className="col-md-4 col-sm-6">
-                  <div className="custom-card card h-100 shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">
-                        PG Certificate Program in Data Science &amp; AI
-                      </h5>
-                      <p className="card-text mb-1">
-                        <strong>Mode:</strong> Online / Hybrid
-                      </p>
-                      <p className="card-text">
-                        <strong>Duration:</strong> 6 Months
-                      </p>
+                  <a
+                    href="https://www.nseacademy.com/pages/executives_education/IMTHYD-Data_Science-AI/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <div className="custom-card card h-100 shadow-sm">
+                      <div className="card-body">
+                        <h5 className="card-title fw-bold">
+                          PG Certificate Program in Data Science &amp; AI
+                        </h5>
+                        <p className="card-text mb-1">
+                          <strong>Mode:</strong> Online / Hybrid
+                        </p>
+                        <p className="card-text">
+                          <strong>Duration:</strong> 6 Months
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 {/* Card 2 */}
                 <div className="col-md-4 col-sm-6">
-                  <div className="custom-card card h-100 shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">
-                        PG Certificate Program in Financial Technologies
-                      </h5>
-                      <p className="card-text mb-1">
-                        <strong>Mode:</strong> Online
-                      </p>
-                      <p className="card-text">
-                        <strong>Duration:</strong> 6 Months
-                      </p>
+                  <a
+                    href="https://www.nseacademy.com/pages/executives_education/imt-pg-certificate-financial-technologies/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <div className="custom-card card h-100 shadow-sm">
+                      <div className="card-body">
+                        <h5 className="card-title fw-bold">
+                          PG Certificate Program in Financial Technologies
+                        </h5>
+                        <p className="card-text mb-1">
+                          <strong>Mode:</strong> Online
+                        </p>
+                        <p className="card-text">
+                          <strong>Duration:</strong> 6 Months
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 {/* Card 3 */}
                 <div className="col-md-4 col-sm-6">
-                  <div className="custom-card card h-100 shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">
-                        Sales and Marketing
-                      </h5>
-                      <p className="card-text mb-1">
-                        <strong>Mode:</strong> Classroom / Online
-                      </p>
-                      <p className="card-text">
-                        <strong>Duration:</strong> 4 Months
-                      </p>
+                  <a
+                    href="#"
+                  
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <div className="custom-card card h-100 shadow-sm">
+                      <div className="card-body">
+                        <h5 className="card-title fw-bold">
+                          Sales and Marketing
+                        </h5>
+                        <p className="card-text mb-1">
+                          <strong>Mode:</strong> Classroom / Online
+                        </p>
+                        <p className="card-text">
+                          <strong>Duration:</strong> 4 Months
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 {/* Card 4 */}
                 <div className="col-md-4 col-sm-6">
-                  <div className="custom-card card h-100 shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">
-                        Strategic Digital Marketing
-                      </h5>
-                      <p className="card-text mb-1">
-                        <strong>Mode:</strong> Online
-                      </p>
-                      <p className="card-text">
-                        <strong>Duration:</strong> 5 Months
-                      </p>
+                  <a
+                    href="#"
+                   
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <div className="custom-card card h-100 shadow-sm">
+                      <div className="card-body">
+                        <h5 className="card-title fw-bold">
+                          Strategic Digital Marketing
+                        </h5>
+                        <p className="card-text mb-1">
+                          <strong>Mode:</strong> Online
+                        </p>
+                        <p className="card-text">
+                          <strong>Duration:</strong> 5 Months
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 {/* Card 5 */}
                 <div className="col-md-4 col-sm-6">
-                  <div className="custom-card card h-100 shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">
-                        Compensation Management
-                      </h5>
-                      <p className="card-text mb-1">
-                        <strong>Mode:</strong> Hybrid
-                      </p>
-                      <p className="card-text">
-                        <strong>Duration:</strong> 3 Months
-                      </p>
+                  <a
+                    href="#"
+                  
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <div className="custom-card card h-100 shadow-sm">
+                      <div className="card-body">
+                        <h5 className="card-title fw-bold">
+                          Compensation Management
+                        </h5>
+                        <p className="card-text mb-1">
+                          <strong>Mode:</strong> Hybrid
+                        </p>
+                        <p className="card-text">
+                          <strong>Duration:</strong> 3 Months
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
+
                 {/* Card 6 */}
                 <div className="col-md-4 col-sm-6">
-                  <div className="custom-card card h-100 shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title fw-bold">
-                        AI and Machine Learning
-                      </h5>
-                      <p className="card-text mb-1">
-                        <strong>Mode:</strong> Online / Hybrid
-                      </p>
-                      <p className="card-text">
-                        <strong>Duration:</strong> 6 Months
-                      </p>
+                  <a
+                    href="#"
+                   
+                    rel="noopener noreferrer"
+                    className="text-decoration-none text-dark"
+                  >
+                    <div className="custom-card card h-100 shadow-sm">
+                      <div className="card-body">
+                        <h5 className="card-title fw-bold">
+                          AI and Machine Learning
+                        </h5>
+                        <p className="card-text mb-1">
+                          <strong>Mode:</strong> Online / Hybrid
+                        </p>
+                        <p className="card-text">
+                          <strong>Duration:</strong> 6 Months
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
