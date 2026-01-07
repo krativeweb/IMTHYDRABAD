@@ -248,7 +248,7 @@ Our Learning Resource Centre integrates digital depth with academic richness for
                   <p>
                     P. Srinivasulu - Deputy Librarian <br /><br />
                     C. Narasimha - Sr. Library Assistant <br /><br />
-                    Kalyan J. Sandilya - Analyst <br /><br />
+                    Kalyan J. Sandilya - Analyst to Execute. <br /><br />
                     Ravi Varma - Library Intern
                   </p>
                 </div>

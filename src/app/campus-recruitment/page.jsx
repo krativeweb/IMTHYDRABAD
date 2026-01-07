@@ -17,7 +17,7 @@ export default function CampusPlacements() {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
-              backgroundPosition: "center !important"
+            backgroundPosition: "center !important",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Campus Placements</h2>
@@ -462,19 +462,24 @@ export default function CampusPlacements() {
                         </th>
                       </tr>
                     </thead>
+
                     <tbody className="bg-white">
                       {[
-                        "Shahbaz Khan",
-                        "Parth Kulkarni",
-                        "Niharika A",
-                        "Saurav Anand",
-                        "Swananya Nayak",
-                        "Ananyaa Nirmal Bisht",
-                        "Komal Singh",
-                        "Anoushka Jain",
-                        "Anand Ramanathan",
-                        "Aastha Shukla",
-                        "Mayur Agrawal",
+                        "Ankur Srivastava",
+                        "Akhil Thulasi Das",
+                        "Akshay Pathania",
+                        "Aditya Shankar",
+                        "Bipasha Guha",
+                        "Dharmesh Babu",
+                        "Garima Sharma",
+                        "Kanak Sharma",
+                        "Ketaki Bedekar",
+                        "Madhura Kulkarni",
+                        "Rohit Gupta",
+                        "R. Vignesh",
+                        "Shashank Jha",
+                        "Shivani Sathaye",
+                        "Tanmay Dey",
                       ].map((name, i) => (
                         <tr key={i}>
                           <td className="fw-medium">{i + 1}</td>

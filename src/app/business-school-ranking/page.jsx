@@ -54,7 +54,7 @@ export default function Rankings() {
         </div>
       </section>
 
-      {/* Rankings Section */}
+  {/* Rankings Section */}
       <section id="rankings" className="py-5">
         <div className="container">
           <h2
@@ -72,155 +72,325 @@ export default function Rankings() {
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
                   National Institutional Ranking Framework (NIRF) India Rankings
-                  2025
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">72nd</span> Ranked Among
-                    1026 Participating Management Institutes
-                  </li>
-                </ul>
+                
+                {/* 2025 */}
+                <div className="mb-3">
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">72nd</span> Ranked Among 1026 Participating Management Institutes
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">97th</span> Ranked Among Participating Management Institutes
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* The Week-Hansa Ranking */}
+              {/* Education World */}
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  The Week-Hansa Best B-School Rankings 2024
+                  Education World (EW) Higher Education Rankings
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">8th</span> Ranked Among
-                    84 Private B-Schools in South India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">12th</span> Ranked Among
-                    89 Government and Private B-Schools in South India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">35th</span> Ranked Among
-                    213 Private B-Schools from all-over India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">49th</span> Ranked Among
-                    235 Government and Private B-Schools from all-over India
-                  </li>
-                </ul>
+                
+                {/* 2024-25 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2024-25</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">15th</span> Ranked Among India's top 100 Business Schools
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Fortune India-ACRA Ranking */}
+              {/* GHRDC */}
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  Fortune India-ACRA B-School Rankings 2024
+                  GHRDC B-School Ranking
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">13th</span> Ranked Among
-                    90 Government and Private B-Schools in South India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">25th</span> Ranked Among
-                    192 Private B-Schools from all-over India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">55th</span> Ranked Among
-                    233 Government and Private B-Schools from all-over India
-                  </li>
-                </ul>
+                
+                {/* 2025 */}
+                <div className="mb-3">
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">1st</span> Ranked Private B-School in Telangana
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">10th</span> Ranked Among 69 Private B-Schools in India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">12th</span> Ranked Among 91 Government and Private B-Schools in South India
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">1st</span> Ranked Private B-School in Telangana
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">9th</span> Ranked Among 58 Private B-Schools in India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">14th</span> Ranked Among Top 20 Government and Private B-Schools in South India
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Education World Ranking */}
+              {/* Business Today BT-MDRA */}
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  Education World (EW) Higher Education Rankings 2024-25
+                  Business Today - MDRA B-School Ranking
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">17th</span> Ranked Among
-                    India’s top 100 private B-Schools
-                  </li>
-                </ul>
+                
+                {/* 2025 */}
+                <div className="mb-3">
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">33rd</span> Ranked Among 100 Private B-Schools from all-over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">54th</span> Ranked Among 270 Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">33rd</span> Ranked Among 100 Private B-Schools from all-over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">53rd</span> Ranked Among 275 Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Businessworld Ranking */}
+              {/* BusinessWorld (BW) */}
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  Businessworld B-School Rankings 2024
+                  Businessworld B-School Rankings
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">9th</span> Ranked Among
-                    57 Private B-Schools in South India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">24th</span> Ranked Among
-                    154 Private B-Schools
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">39th</span> Ranked Among
-                    175 Government and Private B-Schools
-                  </li>
-                </ul>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">9th</span> Ranked Among 57 Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">24th</span> Ranked Among 154 Private B-Schools
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">39th</span> Ranked Among 175 Government and Private B-Schools
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Business Today Ranking */}
+              {/* Careers360 */}
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  Business Today - MDRA B-School Ranking 2024
+                  Careers 360 Rankings of India's Best B-Schools
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">14th</span> Ranked Among
-                    Top 20 Government and Private B-Schools in South India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">33rd</span> Ranked Among
-                    100 Private B-Schools from all-over India
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">53rd</span> Ranked Among
-                    275 Government and Private B-Schools from all-over India
-                  </li>
-                </ul>
+                
+                {/* 2025 */}
+                <div className="mb-3">
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">38th</span> Ranked Among Private B-Schools
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">AAAA Rated</span> Among Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">31st</span> Ranked Among Private B-Schools
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">3rd</span> in Supply Chain & Operations Domain
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">AAAA+ Rated</span> Among Government and Private B-Schools from all over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">8th</span> Ranked Among 84 Private B-Schools in South India
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Careers 360 Ranking */}
+              {/* The Week - Hansa Research Survey */}
               <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  Careers 360 Rankings of India’s Best B-Schools 2025
+                  The Week - Hansa Research Best B-School Rankings
                 </div>
-                <ul className="list-group ranking-list">
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">38th</span> Ranked Among
-                    Private B-Schools
-                  </li>
-                  <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">AAAA Rated</span> Among
-                    Government and Private B-Schools from all-over India
-                  </li>
-                </ul>
+                
+                {/* 2025 */}
+                <div className="mb-3">
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">8th</span> Ranked Among 89 Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">13th</span> Ranked Among 95 Government and Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">33rd</span> Ranked Among 211 Private B-Schools from all-over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">49th</span> Ranked Among 233 Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">8th</span> Ranked Among 84 Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">12th</span> Ranked Among 89 Government and Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">35th</span> Ranked Among 213 Private B-Schools from all-over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">49th</span> Ranked Among 235 Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* GHRDC Ranking */}
-              <div className="mb-0">
+              {/* India Today B-School Ranking */}
+              <div className="mb-4">
                 <div className="ranking-header" style={{ color: "#08317a" }}>
-                  GHRDC B-School Ranking 2025
+                  India Today B-School Ranking
                 </div>
-                <ul className="list-group ranking-list">
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">11th</span> Ranked Among Top 85 Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">33rd</span> Ranked Among 243 Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Education Post IIRF */}
+              <div className="mb-4">
+                <div className="ranking-header" style={{ color: "#08317a" }}>
+                  Education Post IIRF Rankings
+                </div>
+                
+                {/* 2025 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">1st</span> Ranked Private B-School in Telangana state for PGDM program
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">18th</span> Ranked Among 100 Private B-Schools from all-over India offering PGDM program
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">20th</span> Ranked Among 122 Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Fortune India */}
+              <div className="mb-4">
+                <div className="ranking-header" style={{ color: "#08317a" }}>
+                  Fortune India - ACRA B-School Rankings
+                </div>
+                
+                {/* 2025 */}
+                <div className="mb-3">
+                  <h5 style={{ color: "#08317a", fontWeight: "600", marginTop: "15px" }}>2025</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">11th</span> Ranked Among 87 Government and Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">26th</span> Ranked Among 197 Private B-Schools from all-over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">54th</span> Ranked Among 234 Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* 2024 */}
+                <div>
+                  <h5 style={{ color: "#08317a", fontWeight: "600" }}>2024</h5>
+                  <ul className="list-group ranking-list">
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">13th</span> Ranked Among 90 Government and Private B-Schools in South India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">25th</span> Ranked Among 192 Private B-Schools from all-over India
+                    </li>
+                    <li className="list-group-item bg-transparent border-0">
+                      <span className="institution-rank">55th</span> Ranked Among 233 Government and Private B-Schools from all-over India
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Other Rankings */}
+              {/* <div className="mb-0">
+                <div className="ranking-header" style={{ color: "#08317a" }}>
+                  Other Rankings
+                </div>
+                <ul className="list-group ranking-list" style={{ marginTop: "15px" }}>
                   <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">1st</span> Ranked Private
-                    B-School in Telangana
+                    <strong>QS:</strong> Will be available once we have an international accreditation
                   </li>
                   <li className="list-group-item bg-transparent border-0">
-                    <span className="institution-rank">10th</span> Ranked Among
-                    69 Private B-Schools in India
+                    <strong>TimesHigherEd:</strong> -
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
-
       {/* Logos Section */}
       <section className="py-5" style={{ backgroundColor: "#151f54" }}>
         <div className="container">
