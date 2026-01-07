@@ -100,14 +100,14 @@ export default function ApprovalsAccreditation() {
             >
               NBA Accredited
             </Link>
-            <Link
+            {/* <Link
               className="nav-link rounded-pill bg-white"
               data-bs-toggle="tab"
               href="#tab-saqs"
               role="tab"
             >
               SAQS Accredited
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="tab-content mt-4 mb-4">
@@ -674,37 +674,6 @@ export default function ApprovalsAccreditation() {
                       Click Here
                     </Link>
                   </p>
-                </div>
-              </div>
-            </div>
-
-            {/* SAQS */}
-            <div
-              className="tab-pane fade bg-white p-4 rounded-4"
-              id="tab-saqs"
-              role="tabpanel"
-            >
-              <div className="card p-4">
-                <h2
-                  className="section-title text-center"
-                  style={{ color: "#08317a" }}
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  SAQS Accreditation
-                </h2>
-                <div className="row justify-content-center mt-3">
-                  <div className="col-lg-12 text-justify">
-                    <p className="mb-4">
-                      <Link
-                        href="https://drive.google.com/file/d/1NrHVlBSUTOqXC13joaJI58A87G45s2_v/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        SAQS Accreditation Award Certificate-IMT Hyderabad
-                      </Link>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

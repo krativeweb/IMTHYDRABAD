@@ -73,7 +73,7 @@ export default function Navbar() {
               alt="Logo"
               width={290} // 2x retina
               height={86}
-              style={{ margin: "2px",marginLeft:"17px" }}
+              style={{ margin: "2px", marginLeft: "17px" }}
             />
           </Link>
 
@@ -185,12 +185,13 @@ export default function Navbar() {
                           <Link className="item" href="/fpm-program-hyderabad">
                             Fellow Program in Management
                           </Link>
-                          <li>
-                            <Link className="item" href="/executive-education">
+                        </li>
+                        <li>
+                          <Link className="item" href="/executive-education">
                               Executive Education
                             </Link>
                           </li>
-                        </li>
+            
                       </ul>
                     </li>
                   </div>
@@ -359,14 +360,7 @@ export default function Navbar() {
                               Refund Policy
                             </Link>
                           </li>
-                          <li>
-                            <Link
-                              className="item"
-                              href="/accredations&approvals"
-                            >
-                              Approvals & Accreditation
-                            </Link>
-                          </li>
+
                           <li>
                             <Link className="item" href="/feedback">
                               Feedback Faculties
@@ -433,6 +427,17 @@ export default function Navbar() {
                           <li>
                             <Link className="item" href="/anualevents">
                               Annual Events
+                            </Link>
+                          </li>
+
+                          <li>
+                            <Link className="item" href="/accredations">
+                              Accreditation
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="item" href="/approvals">
+                              Approvals
                             </Link>
                           </li>
                         </ul>
