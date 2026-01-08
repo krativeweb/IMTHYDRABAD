@@ -17,7 +17,7 @@ export default function AdvantagesSection() {
           <div className="title-header">
             <h2 className="title">Advantage of IMT Hyderabad</h2>
             <h5 className="mt-3">
-              Building • Hyderabad • Vibrant &amp; Progressive
+              Innovate • Create • Transform • Dominate
             </h5>
           </div>
           <div className="heading-seperator text-center">
