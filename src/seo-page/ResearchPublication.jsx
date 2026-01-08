@@ -18,7 +18,48 @@ export default function ResearchPublication() {
 
   // Sorted publication lists
   const publicationsA = [
+      {
+    author: "A. Sarath Babu",
+    title:
+      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+    journal: "Economics Letters",
+    volume: "259",
+    publicationDate: "February 2026 (Published 29 December 2025)",
+    category: "A",
+    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  },
+  {
+    author: "Chakrapani Chaturvedula",
+    title:
+      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+    journal: "Economics Letters",
+    volume: "259",
+    publicationDate: "February 2026 (Published 29 December 2025)",
+    category: "A",
+    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  },
+  {
+    author: "Nikhil Rastogi",
+    title:
+      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+    journal: "Economics Letters",
+    volume: "259",
+    publicationDate: "February 2026 (Published 29 December 2025)",
+    category: "A",
+    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  },
+  {
+    author: "K. Sriharsha Reddy",
+    title:
+      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+    journal: "Economics Letters",
+    volume: "259",
+    publicationDate: "February 2026 (Published 29 December 2025)",
+    category: "A",
+    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  },
     {
+      
       author: "Arun Kumar Biswal",
       title: "Product subsidy and expected consumption with inventory inaccuracy: Implications of RFID adoption in Indian Public Distribution System",
       journal: "Computers & Industrial Engineering",
@@ -1031,6 +1072,7 @@ Faculty and scholars publish in global journals, contributing insights that shap
             {/* A* Section */}
             <div className="section-header">A*</div>
             <ul className="list-unstyled">
+              
               <li className="mb-3">
                 <b>Arun Kumar Biswal</b>, Mamata Jenamani & Sri Krishna Kumar, “Warehouse efficiency improvement using RFID in a humanitarian supply chain: Implications for Indian food security system”,
                 <i>Transportation Research Part –E</i>.
@@ -1064,7 +1106,7 @@ Faculty and scholars publish in global journals, contributing insights that shap
 
             {/* A Section */}
             <div className="section-header">A</div>
-            <ul className="list-unstyled">
+            {/* <ul className="list-unstyled">
               {publicationsA.map((pub, index) => (
                 <li key={index} className="mb-3">
                   <b>{pub.author}</b>
@@ -1072,7 +1114,33 @@ Faculty and scholars publish in global journals, contributing insights that shap
                   <i>{pub.journal}</i>.
                 </li>
               ))}
-            </ul>
+            </ul> */}
+            <ul className="list-unstyled">
+  {publicationsA.map((pub, index) => (
+    <li key={index} className="mb-3">
+      <b>{pub.author}</b>
+      {pub.coAuthors && pub.coAuthors.length > 0 &&
+        `, ${pub.coAuthors.join(", ")}`}
+      , “{pub.title}”, <i>{pub.journal}</i>
+      {pub.url && (
+        <>
+          {" "}
+          |{" "}
+          <a
+            href={pub.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary"
+          >
+            View Paper
+          </a>
+        </>
+      )}
+      .
+    </li>
+  ))}
+</ul>
+
 
             {/* B Section */}
             <div className="section-header">B</div>
