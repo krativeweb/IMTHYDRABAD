@@ -16,7 +16,15 @@ export default function Rankings() {
             backgroundPosition: "center !important",
           }}
         >
-          <h2 className="display-5 fw-bold mb-2">
+             <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "rgba(0, 0, 0, 0.3)",
+              zIndex: 1,
+            }}
+          />
+          <h2 className="display-5 fw-bold mb-2 position-relative"  style={{ zIndex: 2, marginTop: "100px" }}>
             Top Business Schools Rankings
           </h2>
           <p className="text-white px-3">
@@ -440,6 +448,18 @@ export default function Rankings() {
       .faculty-hero { display: flex; flex-direction: column; justify-content: center; align-items: center; }
       .faculty-hero h2 { margin-top: 0 !important; }
 
+    .faculty-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .faculty-hero h2,
+      .faculty-hero p {
+        position: relative;
+        z-index: 2;
+      }
       /* Grid Layout */
       .rankings-grid {
         display: grid;
@@ -573,3 +593,4 @@ export default function Rankings() {
     </>
   );
 }
+
