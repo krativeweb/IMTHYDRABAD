@@ -24,7 +24,7 @@ export default function Rankings() {
               zIndex: 1,
             }}
           />
-          <h2 className="display-5 fw-bold mb-2 position-relative"  style={{ zIndex: 2, marginTop: "100px" }}>
+          <h2 className="display-5 fw-bold mb-2 position-relative"  style={{ zIndex: 2, marginTop: "100px!important" }}>
             Top Business Schools Rankings
           </h2>
           <p className="text-white px-3">
@@ -593,4 +593,5 @@ export default function Rankings() {
     </>
   );
 }
+
 
