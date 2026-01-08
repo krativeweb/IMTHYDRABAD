@@ -34,7 +34,7 @@ export default function ApprovalsAccreditation() {
             className="display-5 fw-bold mb-2"
             style={{ zIndex: 2, marginTop: "100px" }}
           >
-            Approvals & Accreditation
+          Accreditation
           </h2>
           <p className="position-relative text-white" style={{ zIndex: 2 }}>
             Our accreditations reflect our dedication to excellence, integrity,{" "}
@@ -213,6 +213,27 @@ export default function ApprovalsAccreditation() {
                     width={80}
                     height={80}
                   />
+                </div>
+                <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
+                  <Image
+                    src="/media/aacsb-logo.webp"
+                    alt="NBA Accreditation"
+                    width={80}
+                    height={80}
+                  />
+                  <Image
+                    src="/media/acc/ITU Acd Member Logo.jpg"
+                    alt="SAQS Accreditation"
+                    width={80}
+                    height={80}
+                  />
+                  <Image
+                    src="/media/acc/Shastri Logo.png"
+                    alt="AIU Recognition"
+                    width={80}
+                    height={80}
+                  />
+                
                 </div>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default function ApprovalsAccreditation() {
             className="display-5 fw-bold mb-2"
             style={{ zIndex: 2, marginTop: "100px" }}
           >
-            Approvals & Accreditation
+            Approvals
           </h2>
           <p className="position-relative text-white" style={{ zIndex: 2 }}>
             Our accreditations reflect our dedication to excellence, integrity,{" "}
