@@ -189,6 +189,7 @@ export default function ApprovalsAccreditation() {
                 </div>
                       {/* Logos */}
                 <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
+                  <h2>Accreditations & Approvals</h2>
                   <Image
                     src="/media/acc/nba.png"
                     alt="NBA Accreditation"
@@ -215,11 +216,12 @@ export default function ApprovalsAccreditation() {
                   />
                 </div>
                 <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
+                    <h2>Member</h2>
                   <Image
                     src="/media/aacsb-logo.webp"
                     alt="NBA Accreditation"
                     width={80}
-                    height={80}
+                    height={70}
                   />
                   <Image
                     src="/media/acc/ITU Acd Member Logo.jpg"
