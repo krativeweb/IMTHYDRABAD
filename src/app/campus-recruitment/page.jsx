@@ -247,6 +247,100 @@ export default function CampusPlacements() {
                     boxShadow: "0 5px 15px rgba(56, 54, 51, 0.3)",
                   }}
                 />
+
+                <h4
+                  className="fw-semibold mb-3 text-center"
+                  style={{ color: "#08317a" }}
+                >
+                  Head – Corporate Relations Message
+                </h4>
+
+                <p className="mb-3">Dear Recruiters,</p>
+
+                <p className="mb-3">
+                  I am pleased to invite you for campus placements of our PGDM
+                  Class of 2026 students. IMT Hyderabad is a part of the IMT
+                  Group and the institute is well known for its quality
+                  education and is a preferred destination for students who are
+                  seeking management education. With our management education
+                  experience of more than four decades, we have been able to
+                  provide an edge over our contemporaries, which goes a long way
+                  in grooming our students to not only be industry-ready, but
+                  also future-ready.
+                </p>
+
+                <p className="mb-3">
+                  The last year witnessed several global and domestic
+                  developments that impacted campus placements across institutes
+                  and universities. However, IMT Hyderabad responded proactively
+                  by implementing additional measures to strengthen our
+                  placement processes. Recruiters such as Arcesium, BNY, Micron,
+                  HCL, Berkedia, Oracle, PepsiCo, Volvo, Zeta Global, Sony
+                  India, Wipro, Infosys, Cognizant, Advance Auto Parts, Voltas,
+                  Nerolac, CRISIL, Netelixir, and many others participated in
+                  our placement process and selected our students. The highest
+                  CTC offered stood at 31 LPA, with an average CTC of 12.2 LPA.
+                </p>
+
+                <p className="mb-3">
+                  The PGDM batch of 2024–26 represents a diverse academic mix
+                  comprising students from Engineering (18%), Arts &amp;
+                  Commerce (47%), Management (18%), and Science (16%). The
+                  cohort includes students with work experience greater than two
+                  years (5%), less than two years (14%), and freshers (81%). The
+                  batch also reflects healthy gender diversity, with 34% female
+                  students.
+                </p>
+
+                <p className="mb-3">
+                  Students specialize across key functional areas including
+                  Marketing, Finance, Human Resources, Operations, Information
+                  Technology, Analytics, and General Management.
+                </p>
+
+                <p className="mb-3">
+                  All students have successfully completed a mandatory 12-week
+                  summer internship, enabling them to gain strong exposure to
+                  market trends and real-world business challenges. During their
+                  internships, students contribute meaningfully to organizations
+                  while acquiring valuable hands-on learning.
+                </p>
+
+                <p className="mb-3">
+                  I extend a warm invitation to you to participate in the final
+                  placement process for the PGDM Class of 2026 and look forward
+                  to building a strong and mutually beneficial relationship.
+                </p>
+
+                <div className="clearfix"></div>
+
+                <div className="signature mt-4">
+                  Warm Regards
+                  <br />
+                  <strong>Prakash Pathak</strong>
+                  <br />
+                  Head – Corporate Relations
+                </div>
+              </div>
+            )}
+
+            {/* {activeTab === "head" && (
+              <div className="tab-pane fade show active">
+                <img
+                  src="/media/imt-prasanth.webp"
+                  className="profile-img img-fluid"
+                  alt="Prakash Pathak"
+                  style={{
+                    float: "left",
+                    margin: "0 1.5rem 0.5rem 0",
+                    width: "150px",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "0.75rem",
+                    border: "2px solid #0d0d0d",
+                    boxShadow: "0 5px 15px rgba(56, 54, 51, 0.3)",
+                  }}
+                />
                 <h4
                   className="fw-semibold mb-3 text-center"
                   style={{ color: "#08317a" }}
@@ -317,7 +411,7 @@ export default function CampusPlacements() {
                   Head – Corporate Relations
                 </div>
               </div>
-            )}
+            )} */}
 
             {/* Placements Procedure */}
             {activeTab === "Procedure" && (
