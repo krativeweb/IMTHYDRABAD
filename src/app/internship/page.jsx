@@ -493,6 +493,81 @@ const SummerInternships = () => {
                 className="profile-img img-fluid"
                 alt="Prakash Pathak"
               />
+
+              <h4 className="fw-semibold mb-3 text-center section-subtitle">
+                Head – Corporate Relations Message
+              </h4>
+
+              <p className="inv-txt">Dear Recruiters,</p>
+
+              <p className="inv-txt">
+                I am pleased to invite you for campus placements of our PGDM
+                Class of 2026 students. IMT Hyderabad is a part of the IMT Group
+                and the institute is well known for its quality education and is
+                a preferred destination for students who are seeking management
+                education. With our management education experience of more than
+                four decades, we have been able to provide an edge over our
+                contemporaries, which goes a long way in grooming our students
+                to not only be industry-ready, but also future-ready.
+              </p>
+
+              <p className="inv-txt">
+                The last year has been affected by several global and domestic
+                events that had an impact on campus placements across institutes
+                and universities. However, IMT Hyderabad has responded
+                proactively by taking additional measures to strengthen our
+                placement processes. Even this year, recruiters such as
+                Arcesium, BNY, Micron, HCL, Berkedia, Oracle, PepsiCo, Volvo,
+                Zeta Global, Sony India, Wipro, Infosys, Cognizant, Advance Auto
+                Parts, Voltas, Nerolac, CRISIL, Netelixir, and many others
+                conducted campus placement processes and selected our students,
+                with the highest CTC of 31 LPA and an average CTC of 12.2 LPA.
+              </p>
+
+              <p className="inv-txt">
+                The PGDM batch of 2024–26 is a diverse mix of students from
+                various academic backgrounds, including Engineering (18%), Arts
+                &amp; Commerce (47%), Management (18%), and Science (16%). The
+                batch also includes students with work experience greater than
+                two years (5%), work experience less than two years (14%), and
+                freshers (81%). In addition, the batch reflects healthy gender
+                diversity, with 34% female students.
+              </p>
+
+              <p className="inv-txt">
+                Our students specialize in Marketing, Finance, Human Resources,
+                Operations, Information Technology, Analytics, and General
+                Management. All students have completed a mandatory 12-week
+                summer internship, which provides them with practical exposure
+                to market realities. During their internships, students
+                contribute meaningfully to organizations while gaining valuable
+                hands-on learning.
+              </p>
+
+              <p className="inv-txt">
+                I extend a warm invitation to you to participate in our final
+                placement process for the PGDM Class of 2026 and look forward to
+                building a strong and mutually beneficial relationship.
+              </p>
+
+              <p className="inv-txt">
+                Warm Regards <br />
+                <strong>Prakash Pathak</strong> <br />
+                Head – Corporate Relations
+              </p>
+            </div>
+
+            {/* <div
+              className="tab-pane fade show active"
+              id="head"
+              role="tabpanel"
+              aria-labelledby="head-tab"
+            >
+              <img
+                src="/media/imt-prasanth.webp"
+                className="profile-img img-fluid"
+                alt="Prakash Pathak"
+              />
               <h4 className="fw-semibold mb-3 text-center section-subtitle">
                 Head CRO Message
               </h4>
@@ -526,7 +601,7 @@ const SummerInternships = () => {
                 Warm Regards <br /> Prakash Pathak <br /> Head - Corporate
                 Relations
               </p>
-            </div>
+            </div> */}
 
             {/* Internship Procedure Tab */}
             <div
