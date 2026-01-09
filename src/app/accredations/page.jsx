@@ -188,55 +188,22 @@ export default function ApprovalsAccreditation() {
                   </div>
                 </div>
                       {/* Logos */}
-                <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
-                  <h2>Accreditations & Approvals</h2>
-                  <Image
-                    src="/media/acc/nba.png"
-                    alt="NBA Accreditation"
-                    width={80}
-                    height={80}
-                  />
-                  <Image
-                    src="/media/acc/sas.jpg"
-                    alt="SAQS Accreditation"
-                    width={80}
-                    height={80}
-                  />
-                  <Image
-                    src="/media/acc/aiu.png"
-                    alt="AIU Recognition"
-                    width={80}
-                    height={80}
-                  />
-                  <Image
-                    src="/media/acc/aicte.png"
-                    alt="AICTE Approval"
-                    width={80}
-                    height={80}
-                  />
-                </div>
-                <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
-                    <h2>Member</h2>
-                  <Image
-                    src="/media/aacsb-logo.webp"
-                    alt="NBA Accreditation"
-                    width={80}
-                    height={70}
-                  />
-                  <Image
-                    src="/media/acc/ITU Acd Member Logo.jpg"
-                    alt="SAQS Accreditation"
-                    width={80}
-                    height={80}
-                  />
-                  <Image
-                    src="/media/acc/Shastri Logo.png"
-                    alt="AIU Recognition"
-                    width={80}
-                    height={80}
-                  />
-                
-                </div>
+          {/* Accreditations */}
+<h2 className="text-center my-3">Accreditations & Approvals</h2>
+<div className="d-flex justify-content-center flex-wrap gap-4 my-4">
+  <Image src="/media/acc/nba.png" alt="NBA Accreditation" width={80} height={80} />
+  <Image src="/media/acc/sas.jpg" alt="SAQS Accreditation" width={80} height={80} />
+  <Image src="/media/acc/aiu.png" alt="AIU Recognition" width={80} height={80} />
+  <Image src="/media/acc/aicte.png" alt="AICTE Approval" width={80} height={80} />
+</div>
+
+{/* Members */}
+<h2 className="text-center my-3">Members</h2>
+<div className="d-flex justify-content-center flex-wrap gap-4 my-4">
+  <Image src="/media/aacsb-logo.webp" alt="AACSB Member" width={80} height={70} />
+  <Image src="/media/acc/ITU Acd Member Logo.jpg" alt="ITU Academic Member" width={80} height={80} />
+  <Image src="/media/acc/Shastri Logo.png" alt="Shastri Indo-Canadian Institute" width={80} height={80} />
+</div>
               </div>
             </div>
 
