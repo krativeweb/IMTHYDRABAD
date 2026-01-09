@@ -189,7 +189,7 @@ export default function ApprovalsAccreditation() {
                 </div>
                       {/* Logos */}
           {/* Accreditations */}
-<h2 className="text-center my-3">Accreditations & Approvals</h2>
+<h3 className="text-center my-3">Accreditations & Approvals</h3>
 <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
   <Image src="/media/acc/nba.png" alt="NBA Accreditation" width={80} height={80} />
   <Image src="/media/acc/sas.jpg" alt="SAQS Accreditation" width={80} height={80} />
@@ -198,7 +198,7 @@ export default function ApprovalsAccreditation() {
 </div>
 
 {/* Members */}
-<h2 className="text-center my-3">Members</h2>
+<h3 className="text-center my-3">Members</h3>
 <div className="d-flex justify-content-center flex-wrap gap-4 my-4">
   <Image src="/media/aacsb-logo.webp" alt="AACSB Member" width={80} height={70} />
   <Image src="/media/acc/ITU Acd Member Logo.jpg" alt="ITU Academic Member" width={80} height={80} />
