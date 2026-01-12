@@ -184,9 +184,12 @@ export default function JournalComponents() {
                                 className="accordion-collapse collapse"
                                 data-bs-parent={`#accordion-${pub.gen_id}`}
                               >
-                                <div className="accordion-body text-start">
-                                  {pub.res_abstract || "No abstract available."}
-                                </div>
+                              <div
+  className="accordion-body text-start"
+  dangerouslySetInnerHTML={{
+    __html: pub.res_abstract || "No abstract available.",
+  }}
+></div>
                               </div>
                             </div>
                           </div>
@@ -203,3 +206,4 @@ export default function JournalComponents() {
     </div>
   );
 }
+
