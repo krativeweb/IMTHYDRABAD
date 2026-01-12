@@ -18,46 +18,46 @@ export default function ResearchPublication() {
 
   // Sorted publication lists
   const publicationsA = [
-      {
-    author: "A. Sarath Babu",
-    title:
-      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
-    journal: "Economics Letters",
-    volume: "259",
-    publicationDate: "February 2026 (Published 29 December 2025)",
-    category: "A",
-    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
-  },
-  {
-    author: "Chakrapani Chaturvedula",
-    title:
-      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
-    journal: "Economics Letters",
-    volume: "259",
-    publicationDate: "February 2026 (Published 29 December 2025)",
-    category: "A",
-    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
-  },
-  {
-    author: "Nikhil Rastogi",
-    title:
-      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
-    journal: "Economics Letters",
-    volume: "259",
-    publicationDate: "February 2026 (Published 29 December 2025)",
-    category: "A",
-    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
-  },
-  {
-    author: "K. Sriharsha Reddy",
-    title:
-      "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
-    journal: "Economics Letters",
-    volume: "259",
-    publicationDate: "February 2026 (Published 29 December 2025)",
-    category: "A",
-    url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
-  },
+  //     {
+  //   author: "A. Sarath Babu",
+  //   title:
+  //     "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+  //   journal: "Economics Letters",
+  //   volume: "259",
+  //   publicationDate: "February 2026 (Published 29 December 2025)",
+  //   category: "A",
+  //   url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  // },
+  // {
+  //   author: "Chakrapani Chaturvedula",
+  //   title:
+  //     "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+  //   journal: "Economics Letters",
+  //   volume: "259",
+  //   publicationDate: "February 2026 (Published 29 December 2025)",
+  //   category: "A",
+  //   url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  // },
+  // {
+  //   author: "Nikhil Rastogi",
+  //   title:
+  //     "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+  //   journal: "Economics Letters",
+  //   volume: "259",
+  //   publicationDate: "February 2026 (Published 29 December 2025)",
+  //   category: "A",
+  //   url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  // },
+  // {
+  //   author: "K. Sriharsha Reddy",
+  //   title:
+  //     "Dividend initiations, regulatory reforms, and institutional monitoring of insider trading: Evidence from India",
+  //   journal: "Economics Letters",
+  //   volume: "259",
+  //   publicationDate: "February 2026 (Published 29 December 2025)",
+  //   category: "A",
+  //   url: "https://www.sciencedirect.com/science/article/pii/S0165176525006391?dgcid=coauthor",
+  // },
     {
       
       author: "Arun Kumar Biswal",
