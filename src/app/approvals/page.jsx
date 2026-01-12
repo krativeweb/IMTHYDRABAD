@@ -661,7 +661,7 @@ export default function ApprovalsAccreditation() {
               </div>
 
               {/* Accreditation Status */}
-              <div className="row mt-4">
+              {/* <div className="row mt-4">
                 <div className="col-md-12 text-center">
                   <p>
                     <strong>NBA and NAAC Accreditation Status:</strong>{" "}
@@ -675,7 +675,7 @@ export default function ApprovalsAccreditation() {
                     </Link>
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
