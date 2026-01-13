@@ -746,11 +746,11 @@ export default function Careers() {
         Salary will not be a constraint for deserving candidates.
       </p>
 
-      <p className="mb-3">
+      {/* <p className="mb-3">
         <b>General Terms and Conditions</b>
-      </p>
+      </p> */}
 
-      <div className="crs_list">
+      {/* <div className="crs_list">
         <ul>
           <li>
             Interested and eligible candidates are requested to send their applications latest by 31
@@ -777,7 +777,7 @@ export default function Careers() {
           <li>The selected candidates are required to join immediately.</li>
           <li>The decision of IMT Hyderabad will be final and binding.</li>
         </ul>
-      </div>
+      </div> */}
     </div>
 
                         {/* <div className="mb-5">
