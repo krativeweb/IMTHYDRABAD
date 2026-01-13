@@ -21,7 +21,7 @@ export default function Careers() {
             position: "relative",
             backgroundSize: "cover",
             height: "60vh",
-            backgroundPosition: "center !important"
+            backgroundPosition: "center !important",
           }}
         >
           <h2 className="display-5 fw-bold mb-2">Careers</h2>
@@ -551,11 +551,239 @@ export default function Careers() {
                           Institute of Management Technology Hyderabad invites
                           applications for the following non-teaching positions:
                         </p>
+                       <div className="mb-5">
+      <h5>Chief Programs Officer</h5>
 
-                        <div className="mb-5">
+      <p className="mb-3">
+        <b>Role Purpose</b>
+      </p>
+      <p className="mb-3">
+        To lead and manage end-to-end academic administration and program operations for all
+        degree-granting programs of the Institute, ensuring academic excellence, regulatory
+        compliance, efficient systems, and seamless student lifecycle management in alignment with
+        institutional framework.
+      </p>
+
+      <p className="mb-3">
+        <b>Key Responsibilities</b>
+      </p>
+
+      <p className="mb-3">
+        <b>1. Academic Administration & Program Governance</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>Oversee academic administration of all degree-granting programs of the Institute.</li>
+          <li>
+            Ensure compliance with institutional regulations, academic frameworks, and statutory
+            requirements.
+          </li>
+          <li>
+            Coordinate with Program Chairpersons and faculty for effective implementation and
+            monitoring of academic activities.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>2. Program Operations & Delivery Excellence</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Lead end-to-end program operations including academic calendars, class schedules,
+            budgeting, onboarding, program commencement, procurement of course materials, elective
+            bidding, feedback, Convocation arrangement etc.
+          </li>
+          <li>
+            Support Program Committees time to time fostering the enhancement of academic activities.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>3. Institutional Development & Program Expansion</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Contribute to institutional building through process streamlining, system strengthening,
+            and continuous improvement initiatives.
+          </li>
+          <li>
+            Contribute to planning and execution of new academic program launches, ensuring
+            operational readiness across all functional areas.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>4. Examinations, Assessment & Results</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Ensuring smooth conduct of examinations, timely grade submission, result processing,
+            finalization, and announcements.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>5. Student Records, Data, & Compliance</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>Maintain accurate and secure academic databases for students and faculty.</li>
+          <li>
+            Facilitate timely and accurate data sharing for accreditation, rankings, annual reports,
+            and statutory submissions.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>6. Student Support, Discipline & Advisory</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Ensure fair and timely handling of student grievances, appeals, disciplinary matters, and
+            mitigating circumstances.
+          </li>
+          <li>
+            Implement academic advisory and intervention mechanisms to enhance student performance.
+          </li>
+          <li>
+            Engage with the Student Council and ensure alignment with institutional policies.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>7. Academic Governance Documentation & Compliance</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Prepare, review, update, and implement Student Handbooks, Faculty Handbooks, Program
+            Manuals, Ordinances, and Academic Regulations in consultation with academic committees and
+            statutory bodies. Review, draft, and update academic guidelines, process documents, modalities, SOPs, and
+            standardized forms/formats to ensure consistency and efficiency across programs.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>8. Digital Systems and Automation</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Administer LMS, ERP implementation, handling DigiLocker, Academic Bank of Credits, and
+            APAAR IDs.
+          </li>
+          <li>
+            Drive automation of academic and administrative processes to enhance efficiency and data
+            accuracy.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>9. Team Leadership & Institutional Growth</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Guide and mentor officers and staff engaged in academic administration functions.
+          </li>
+          <li>
+            Promote a culture of continuous learning and operational excellence within the academic
+            administration team.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>10. Accreditation, Ranking, Assurance of Learning & Quality Assurance</b>
+      </p>
+      <div className="crs_list">
+        <ul>
+          <li>
+            Support and coordinate activities related to Accreditation, NIRF Ranking etc including
+            documentation, data management, and compliance with accreditation standards.
+          </li>
+          <li>
+            Implement and monitor Assurance of Learning processes across programs, including learning
+            goal mapping, assessment cycles, data collection, analysis, and continuous improvement
+            actions.
+          </li>
+          <li>
+            Establish and strengthen academic quality assurance frameworks, ensuring consistency,
+            outcome measurement, and continuous enhancement of program delivery.
+          </li>
+          <li>
+            Coordinate with faculty, program teams, and accreditation committees to ensure timely
+            reporting and evidence-based decision-making.
+          </li>
+        </ul>
+      </div>
+
+      <p className="mb-3">
+        <b>Qualifications & Experience:</b>
+      </p>
+      <p className="mb-3">
+        Master's degree or equivalent preferred. Prior experience in relevant area and in reputed
+        B-school is an advantage.
+      </p>
+
+      <p className="mb-3">
+        <b>Salary, Allowances & Benefits:</b>
+      </p>
+      <p className="mb-3">
+        As per IMT norms correspond with qualifications, experience, and performance in the interview.
+        Salary will not be a constraint for deserving candidates.
+      </p>
+
+      <p className="mb-3">
+        <b>General Terms and Conditions</b>
+      </p>
+
+      <div className="crs_list">
+        <ul>
+          <li>
+            Interested and eligible candidates are requested to send their applications latest by 31
+            Jan 2026 in the Prescribed Format via email at careers@imthyderabad.edu.in with the subject
+            line: "Application For the Post of ______________________"
+          </li>
+          <li>
+            Applications without the prescribed format mentioned above will not be considered.
+            Applications are accepted only via email to careers@imthyderabad.edu.in; no other mode is
+            allowed.
+          </li>
+          <li>Fulfilling minimum qualifications does not guarantee an interview or selection.</li>
+          <li>
+            Candidates not found suitable for a position may be considered for a lower position or on
+            a consolidated salary.
+          </li>
+          <li>The Institute reserves the right not to select anyone without assigning a reason.</li>
+          <li>
+            The Institute reserves the right to apply additional shortlisting criteria in case of many
+            applications.
+          </li>
+          <li>Only shortlisted candidates will be contacted.</li>
+          <li>Incomplete applications will be rejected.</li>
+          <li>The selected candidates are required to join immediately.</li>
+          <li>The decision of IMT Hyderabad will be final and binding.</li>
+        </ul>
+      </div>
+    </div>
+
+                        {/* <div className="mb-5">
                           <h5>Executive – Travel Desk</h5>
 
-                          {/* Job Summary */}
+                        
                           <p className="mb-3">
                             <b>Job Summary:</b>
                           </p>
@@ -568,7 +796,7 @@ export default function Careers() {
                             experiences while maintaining compliance with institutional standards.
                           </p>
 
-                          {/* Key Responsibilities */}
+                        
                           <p className="mb-3">
                             <b>Key Responsibilities:</b>
                           </p>
@@ -616,7 +844,7 @@ export default function Careers() {
                             </ul>
                           </div>
 
-                          {/* Desired Skills */}
+                        
                           <p className="mb-3">
                             <b>Desired Skills &amp; Competencies:</b>
                           </p>
@@ -630,7 +858,7 @@ export default function Careers() {
                             </ul>
                           </div>
 
-                          {/* Qualifications */}
+                       
                           <p className="mb-3">
                             <b>Qualifications &amp; Experience:</b>
                           </p>
@@ -639,7 +867,7 @@ export default function Careers() {
                             operations, hospitality, or transport management is an advantage.
                           </p>
 
-                          {/* Salary */}
+                        
                           <p className="mb-3">
                             <b>Salary, Allowances &amp; Benefits:</b>
                           </p>
@@ -648,7 +876,7 @@ export default function Careers() {
                             performance in the interview. Salary will not be a constraint for deserving
                             candidates.
                           </p>
-                        </div>
+                        </div> */}
 
                         <div className="mb-5">
                           <h5>
@@ -656,7 +884,6 @@ export default function Careers() {
                             &amp; Placements
                           </h5>
 
-                          {/* Function */}
                           <p className="mb-3">
                             <b>Function:</b>
                           </p>
@@ -668,7 +895,6 @@ export default function Careers() {
                             engagement.
                           </p>
 
-                          {/* Job Description */}
                           <p className="mb-3">
                             <b>Job Description:</b>
                           </p>
@@ -714,7 +940,6 @@ export default function Careers() {
                             </ul>
                           </div>
 
-                          {/* Key Skills */}
                           <p className="mb-3">
                             <b>Key Skills:</b>
                           </p>
@@ -734,7 +959,6 @@ export default function Careers() {
                             </ul>
                           </div>
 
-                          {/* Qualification */}
                           <p className="mb-3">
                             <b>Qualification:</b>
                           </p>
@@ -828,7 +1052,7 @@ export default function Careers() {
                         </div>
 
                         {/* Data Analyst */}
-                        <div className="mb-5">
+                        {/* <div className="mb-5">
                           <h5>Data Analyst (Accreditation and Rankings)</h5>
 
                           <p className="mb-3">
@@ -924,7 +1148,7 @@ export default function Careers() {
                             after three months of joining and may continue for
                             the first year only upon satisfactory performance.
                           </p>
-                        </div>
+                        </div> */}
 
                         {/* Academic Associates */}
                         <div className="mb-5">
