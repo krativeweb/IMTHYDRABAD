@@ -265,7 +265,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="container copyright text-center mt-4">
           <p className="text-light">
-            ©2025 Copyright{" "}
+            ©2026 Copyright{" "}
             <strong className="text-warning">IMT Hyderabad.</strong> All Rights
             Reserved
           </p>
@@ -274,5 +274,6 @@ export default function Footer() {
     </>
   );
 }
+
 
 
