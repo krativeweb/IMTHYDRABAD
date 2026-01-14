@@ -1215,7 +1215,7 @@ export default function Careers() {
                               <li>
                                 Interested and eligible candidates are requested
                                 to send their applications latest by{" "}
-                                <b>31 December 2026</b> in the{" "}
+                                <b>31 January 2026</b> in the{" "}
                                 <b>
                                   <a
                                     href="https://docs.google.com/document/d/1a9sXdJD3iyFbG4nU3u4NwuYSmQE5kZdd/edit?usp=sharing&ouid=106736229483075051654&rtpof=true&sd=true"
