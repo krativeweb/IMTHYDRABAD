@@ -914,6 +914,38 @@ export default function Careers() {
         Salary will not be a constraint for deserving candidates.
       </p>
 
+      <p className="mb-3">
+        <b> Terms and Conditions</b>
+      </p>
+
+      <div className="crs_list">
+        <ul>
+          <li>
+            Interested and eligible candidates are requested to send their applications latest by 31
+            Jan 2026 in the Prescribed Format via email at careers@imthyderabad.edu.in with the subject
+            line: "Application For the Post of ______________________"
+          </li>
+          <li>
+            Applications without the prescribed format mentioned above will not be considered.
+            Applications are accepted only via email to careers@imthyderabad.edu.in; no other mode is
+            allowed.
+          </li>
+          <li>Fulfilling minimum qualifications does not guarantee an interview or selection.</li>
+          <li>
+            Candidates not found suitable for a position may be considered for a lower position or on
+            a consolidated salary.
+          </li>
+          <li>The Institute reserves the right not to select anyone without assigning a reason.</li>
+          <li>
+            The Institute reserves the right to apply additional shortlisting criteria in case of many
+            applications.
+          </li>
+          <li>Only shortlisted candidates will be contacted.</li>
+          <li>Incomplete applications will be rejected.</li>
+          <li>The selected candidates are required to join immediately.</li>
+          <li>The decision of IMT Hyderabad will be final and binding.</li>
+        </ul>
+      </div>
     </div>
 
                         {/* <div className="mb-5">
