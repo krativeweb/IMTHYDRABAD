@@ -551,627 +551,935 @@ export default function Careers() {
                           Institute of Management Technology Hyderabad invites
                           applications for the following non-teaching positions:
                         </p>
-                        <div className="mb-5">
-  <h5>Consultant Engineering Firm Required</h5>
-  <p className="mb-3">
-    <small>(Contract Based – Yearly Basis)</small>
-  </p>
+                        {/* <div className="mb-5">
+                          <h5>Consultant Engineering Firm Required</h5>
+                          <p className="mb-3">
+                            <small>(Contract Based – Yearly Basis)</small>
+                          </p>
 
-  <p className="mb-3">
-    We are seeking an experienced Consultant Engineer to provide comprehensive support for
-    upcoming &amp; existing construction projects. The scope includes planning, design, execution
-    oversight, and quality control.
-  </p>
+                          <p className="mb-3">
+                            We are seeking an experienced Consultant Engineer to
+                            provide comprehensive support for upcoming &amp;
+                            existing construction projects. The scope includes
+                            planning, design, execution oversight, and quality
+                            control.
+                          </p>
 
-  <p className="mb-3">
-    <b>Scope of Services</b>
-  </p>
+                          <p className="mb-3">
+                            <b>Scope of Services</b>
+                          </p>
 
-  <p className="mb-3">
-    <b>1. Site Assessment &amp; Feasibility</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Site surveys, inspections, and feasibility evaluation</li>
-      <li>Reports on soil, drainage, and site accessibility</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>1. Site Assessment &amp; Feasibility</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Site surveys, inspections, and feasibility
+                                evaluation
+                              </li>
+                              <li>
+                                Reports on soil, drainage, and site
+                                accessibility
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>2. Planning &amp; Design</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Architectural and structural drawings</li>
-      <li>Layouts, elevations, sections</li>
-      <li>Compliance with codes and guidelines</li>
-      <li>Design revisions based on stakeholder input</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>2. Planning &amp; Design</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>Architectural and structural drawings</li>
+                              <li>Layouts, elevations, sections</li>
+                              <li>Compliance with codes and guidelines</li>
+                              <li>
+                                Design revisions based on stakeholder input
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>3. BOQ &amp; Cost Estimation</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Detailed BOQ and cost estimates</li>
-      <li>Support in budgeting and tender finalization</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>3. BOQ &amp; Cost Estimation</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>Detailed BOQ and cost estimates</li>
+                              <li>
+                                Support in budgeting and tender finalization
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>4. Project Oversight</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Site visits to monitor progress</li>
-      <li>Ensure quality and design adherence</li>
-      <li>On-site technical support</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>4. Project Oversight</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>Site visits to monitor progress</li>
+                              <li>Ensure quality and design adherence</li>
+                              <li>On-site technical support</li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>5. Quality &amp; Compliance</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Material/workmanship verification</li>
-      <li>Support third-party quality checks</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>5. Quality &amp; Compliance</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>Material/workmanship verification</li>
+                              <li>Support third-party quality checks</li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>6. Final Inspection &amp; Handover</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Post-completion inspection and compliance reporting</li>
-      <li>Assist in handover documentation</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>6. Final Inspection &amp; Handover</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Post-completion inspection and compliance
+                                reporting
+                              </li>
+                              <li>Assist in handover documentation</li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>7. Advisory Support</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Structural safety, repair, and retrofitting guidance</li>
-      <li>On-call technical consultation during project</li>
-      <li>Strong knowledge of codes, safety, and project execution</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>7. Advisory Support</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Structural safety, repair, and retrofitting
+                                guidance
+                              </li>
+                              <li>
+                                On-call technical consultation during project
+                              </li>
+                              <li>
+                                Strong knowledge of codes, safety, and project
+                                execution
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">Regards</p>
-  <p className="mb-3">
-    <b>Rajkumar</b>
-  </p>
-</div>
-
-<div className="mb-5">
-  <h5>
-    Social Media &amp; PR Executive <br />
-    <small>(Anchoring | Guest Engagement | Digital Content Shoot)</small>
-  </h5>
-
-  <p className="mb-3">
-    <b>Role</b>
-  </p>
-  <p className="mb-3">
-    Are you confident in front of the camera, great with people, and love creating buzz on social
-    media? We are looking for a dynamic, well-presented, and energetic professional who can
-    anchor guest interviews, visitors’ podcasts, events, engage students, manage Institute’s social
-    media visibility, and represent our brand with confidence—both online and offline.
-  </p>
-  <p className="mb-3">
-    If you have a jolly personality, strong English communication skills, basic knowledge of
-    videography (shooting video on mobile / camera) and natural stage presence, this role is
-    made for you!
-  </p>
-
-  <p className="mb-3">
-    <b>Key Responsibilities</b>
-  </p>
-
-  <p className="mb-3">
-    <b>Anchoring &amp; Content Hosting</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Host and anchor interviews with guests, events, live sessions, podcasts, and campus activities.</li>
-      <li>Present scripted and unscripted content with confidence, clarity, and voice modulation.</li>
-      <li>Engage live and digital audiences effectively.</li>
-      <li>Handle on-camera appearances, retakes, and spontaneous interactions smoothly.</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Social Media &amp; Digital Engagement</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Support creation and promotion of social media content (reels, videos, stories, live sessions).</li>
-      <li>Act as the on-screen face for digital campaigns and institutional content.</li>
-      <li>Engage with guests, students and audiences through interactive content and live platforms.</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Student Engagement &amp; PR</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Interact with students during events, orientations, workshops, and campus activities.</li>
-      <li>Build positive public relations and represent the brand professionally.</li>
-      <li>Coordinate with media houses, journalists, marketing, content, and production teams for campaigns and events.</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Content Preparation &amp; Coordination</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Research topics and script preparation identifying suitable questions and discussion topics.</li>
-      <li>Participate in rehearsals, content planning, and promotional shoots.</li>
-      <li>Ensure brand tone, accuracy, and professionalism in all communications.</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Required Skills &amp; Qualifications</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Excellent verbal communication and presentation skills in English.</li>
-      <li>Confidence in front of the camera and live audiences.</li>
-      <li>Strong command of English (Hindi is a plus).</li>
-      <li>Ability to improvise and think on the spot.</li>
-      <li>Presentable personality with positive energy.</li>
-      <li>Bachelor’s degree in Mass Communication / Journalism / Media / Related fields (preferred).</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Preferred Skills</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Experience in anchoring, event hosting, podcasts, or live streaming.</li>
-      <li>Familiarity with teleprompters and basic studio setups.</li>
-      <li>Social media savviness and audience engagement skills.</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Why Join IMT Hyderabad?</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Be the face and voice of our institute – a reputed brand in B-schools in India.</li>
-      <li>High-visibility role with creative freedom.</li>
-      <li>Dynamic campus and media-driven environment.</li>
-      <li>Strong growth opportunities in media, PR, and digital communication.</li>
-    </ul>
-  </div>
-
-  <p className="mb-3">
-    <b>Salary &amp; Allowances:</b>
-  </p>
-  <p className="mb-3">
-    As per IMT norms corresponding with qualifications, experience, and performance in the
-    interview. Salary will not be a constraint for the deserving candidate.
-  </p>
-
-  <p className="mb-3">
-    <b>Freshers / Experienced Welcome!</b>
-  </p>
-  <p className="mb-3">
-    If you love being on stage, on screen, and in the spotlight—we want to meet you!
-  </p>
-
-  <p className="mb-3">
-    Apply now via email at{" "}
-    <a href="mailto:careers@imthyderabad.edu.in">careers@imthyderabad.edu.in</a>
-  </p>
-</div>
-
+                          <p className="mb-3">Regards</p>
+                          <p className="mb-3">
+                            <b>Rajkumar</b>
+                          </p>
+                        </div> */}
 
                         <div className="mb-5">
-  <h5>In charge, ERP &amp; Web</h5>
+                          <h5>
+                            Social Media &amp; PR Executive <br />
+                            <small>
+                              (Anchoring | Guest Engagement | Digital Content
+                              Shoot)
+                            </small>
+                          </h5>
 
-  <p className="mb-3">
-    <b>Position Level:</b> Mid-Level Leadership
-  </p>
-  <p className="mb-3">
-    <b>Reporting To:</b> Director / CAO
-  </p>
-  <p className="mb-3">
-    <b>Location:</b> IMT Hyderabad
-  </p>
-  <p className="mb-3">
-    Office of the Director, 38, Cherlaguda, Shamshabad, Hyderabad 501218 India
-  </p>
+                          <p className="mb-3">
+                            <b>Role</b>
+                          </p>
+                          <p className="mb-3">
+                            Are you confident in front of the camera, great with
+                            people, and love creating buzz on social media? We
+                            are looking for a dynamic, well-presented, and
+                            energetic professional who can anchor guest
+                            interviews, visitors’ podcasts, events, engage
+                            students, manage Institute’s social media
+                            visibility, and represent our brand with
+                            confidence—both online and offline.
+                          </p>
+                          <p className="mb-3">
+                            If you have a jolly personality, strong English
+                            communication skills, basic knowledge of videography
+                            (shooting video on mobile / camera) and natural
+                            stage presence, this role is made for you!
+                          </p>
 
-  <p className="mb-3">
-    <b>Role Objective</b>
-  </p>
-  <p className="mb-3">
-    In charge, ERP &amp; Web will provide strategic and operational leadership for the Institute’s
-    technology ecosystem, ensuring robustness, scalability, security, and alignment with
-    academic and admissions objectives. The role demands strong expertise in cloud
-    infrastructure (AWS), ERP customization, admissions technology platforms, institutional
-    websites, and end-to-end vendor governance, while leading and mentoring a high-
-    performance IT team.
-  </p>
+                          <p className="mb-3">
+                            <b>Key Responsibilities</b>
+                          </p>
 
-  <p className="mb-3">
-    <b>Key Responsibilities</b>
-  </p>
+                          <p className="mb-3">
+                            <b>Anchoring &amp; Content Hosting</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Host and anchor interviews with guests, events,
+                                live sessions, podcasts, and campus activities.
+                              </li>
+                              <li>
+                                Present scripted and unscripted content with
+                                confidence, clarity, and voice modulation.
+                              </li>
+                              <li>
+                                Engage live and digital audiences effectively.
+                              </li>
+                              <li>
+                                Handle on-camera appearances, retakes, and
+                                spontaneous interactions smoothly.
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>1. IT Strategy &amp; Governance</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Help execute the Institute’s IT roadmap in alignment with academic, administrative, and admissions goals.</li>
-      <li>Set IT governance frameworks, SOPs, security protocols, and compliance standards.</li>
-      <li>Act as the primary technology advisor to senior management and academic leadership.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Social Media &amp; Digital Engagement</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Support creation and promotion of social media
+                                content (reels, videos, stories, live sessions).
+                              </li>
+                              <li>
+                                Act as the on-screen face for digital campaigns
+                                and institutional content.
+                              </li>
+                              <li>
+                                Engage with guests, students and audiences
+                                through interactive content and live platforms.
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>2. Cloud &amp; Infrastructure Management (AWS)</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Oversee end-to-end AWS server architecture, including deployment, monitoring, scaling, backup, and disaster recovery.</li>
-      <li>Ensure high availability, performance optimization, cost efficiency, and data security across cloud infrastructure.</li>
-      <li>Implement best practices for access control, audits, and compliance.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Student Engagement &amp; PR</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Interact with students during events,
+                                orientations, workshops, and campus activities.
+                              </li>
+                              <li>
+                                Build positive public relations and represent
+                                the brand professionally.
+                              </li>
+                              <li>
+                                Coordinate with media houses, journalists,
+                                marketing, content, and production teams for
+                                campaigns and events.
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>3. ERP &amp; Enterprise Systems</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Lead ERP customization, enhancement, and integration across academic, finance, HR, and student lifecycle modules.</li>
-      <li>Coordinate with internal stakeholders to translate business requirements into technical solutions.</li>
-      <li>Ensure system stability, data integrity, and continuous improvement of ERP platforms.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Content Preparation &amp; Coordination</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Research topics and script preparation
+                                identifying suitable questions and discussion
+                                topics.
+                              </li>
+                              <li>
+                                Participate in rehearsals, content planning, and
+                                promotional shoots.
+                              </li>
+                              <li>
+                                Ensure brand tone, accuracy, and professionalism
+                                in all communications.
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>4. Admissions Technology &amp; Digital Platforms</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Own and manage admissions tools, CRM platforms, and application workflows.</li>
-      <li>Ensure seamless integration between admissions systems, ERP, website, and marketing platforms.</li>
-      <li>Support admissions cycles with system readiness, scalability, analytics, and reporting.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Required Skills &amp; Qualifications</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Excellent verbal communication and presentation
+                                skills in English.
+                              </li>
+                              <li>
+                                Confidence in front of the camera and live
+                                audiences.
+                              </li>
+                              <li>
+                                Strong command of English (Hindi is a plus).
+                              </li>
+                              <li>
+                                Ability to improvise and think on the spot.
+                              </li>
+                              <li>
+                                Presentable personality with positive energy.
+                              </li>
+                              <li>
+                                Bachelor’s degree in Mass Communication /
+                                Journalism / Media / Related fields (preferred).
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>5. Website &amp; Digital Customization</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Oversee institutional website architecture, performance, security, and custom feature implementations.</li>
-      <li>Manage CMS, backend integrations, forms, tracking tools, and third-party APIs.</li>
-      <li>Ensure optimal performance, uptime, and compliance with data privacy standards.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Preferred Skills</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Experience in anchoring, event hosting,
+                                podcasts, or live streaming.
+                              </li>
+                              <li>
+                                Familiarity with teleprompters and basic studio
+                                setups.
+                              </li>
+                              <li>
+                                Social media savviness and audience engagement
+                                skills.
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>6. Vendor &amp; Partner Management</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Lead selection, onboarding, evaluation, and governance of IT vendors and technology partners.</li>
-      <li>Manage SLAs, contracts, budgets, timelines, and deliverables.</li>
-      <li>Ensure accountability, quality control, and cost optimization across vendors.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Why Join IMT Hyderabad?</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Be the face and voice of our institute – a
+                                reputed brand in B-schools in India.
+                              </li>
+                              <li>
+                                High-visibility role with creative freedom.
+                              </li>
+                              <li>
+                                Dynamic campus and media-driven environment.
+                              </li>
+                              <li>
+                                Strong growth opportunities in media, PR, and
+                                digital communication.
+                              </li>
+                            </ul>
+                          </div>
 
-  <p className="mb-3">
-    <b>7. Team Leadership &amp; Capability Building</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Lead, mentor, and scale the internal IT team across infrastructure, applications, and support functions.</li>
-      <li>Drive performance management, skill development, and succession planning.</li>
-      <li>Foster a culture of accountability, innovation, and service excellence.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Salary &amp; Allowances:</b>
+                          </p>
+                          <p className="mb-3">
+                            As per IMT norms corresponding with qualifications,
+                            experience, and performance in the interview. Salary
+                            will not be a constraint for the deserving
+                            candidate.
+                          </p>
 
-  <p className="mb-3">
-    <b>8. Cybersecurity &amp; Risk Management</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Implement robust cybersecurity frameworks, data protection measures, and risk mitigation strategies.</li>
-      <li>Conduct regular audits, vulnerability assessments, and incident response planning.</li>
-      <li>Ensure compliance with institutional, regulatory, and data privacy requirements.</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Freshers / Experienced Welcome!</b>
+                          </p>
+                          <p className="mb-3">
+                            If you love being on stage, on screen, and in the
+                            spotlight—we want to meet you!
+                          </p>
 
-  <p className="mb-3">
-    <b>Key Skills &amp; Competencies</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Strong expertise in AWS server management and cloud architecture</li>
-      <li>Proven experience in ERP customization and enterprise system integration</li>
-      <li>Hands-on knowledge of admissions tools, CRMs, and application management systems</li>
-      <li>Advanced understanding of website development, customization, and integrations</li>
-      <li>Excellent vendor management, negotiation, and SLA governance capabilities</li>
-      <li>Strategic thinking with strong execution and stakeholder management skills</li>
-      <li>High level of leadership maturity and team management experience</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            Apply now via email at{" "}
+                            <a href="mailto:careers@imthyderabad.edu.in">
+                              careers@imthyderabad.edu.in
+                            </a>
+                          </p>
+                        </div>
 
-  <p className="mb-3">
-    <b>Qualifications &amp; Experience</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Bachelor’s / Master’s degree in Computer Science, Information Technology, or related field</li>
-      <li>10–15+ years of progressive IT experience, with at least 5 years in a senior leadership role</li>
-      <li>Prior experience in higher education / academic institutions will be a strong advantage</li>
-    </ul>
-  </div>
+                        <div className="mb-5">
+                          <h5>In charge, ERP &amp; Web</h5>
 
-  <p className="mb-3">
-    <b>Key Performance Indicators (KPIs)</b>
-  </p>
-  <div className="crs_list">
-    <ul>
-      <li>Infrastructure uptime and system reliability</li>
-      <li>ERP and admissions system effectiveness</li>
-      <li>Website performance and security metrics</li>
-      <li>Vendor delivery adherence and cost efficiency</li>
-      <li>Team productivity and stakeholder satisfaction</li>
-    </ul>
-  </div>
+                          <p className="mb-3">
+                            <b>Position Level:</b> Mid-Level Leadership
+                          </p>
+                          <p className="mb-3">
+                            <b>Reporting To:</b> Director / CAO
+                          </p>
+                          <p className="mb-3">
+                            <b>Location:</b> IMT Hyderabad
+                          </p>
+                          <p className="mb-3">
+                            Office of the Director, 38, Cherlaguda, Shamshabad,
+                            Hyderabad 501218 India
+                          </p>
 
-  <p className="mb-3">
-    <b>Salary &amp; Allowances:</b>
-  </p>
-  <p className="mb-3">
-    As per IMT norms corresponding with qualifications, experience, and performance in the
-    interview. Salary will not be a constraint for the deserving candidate.
-  </p>
-</div>
+                          <p className="mb-3">
+                            <b>Role Objective</b>
+                          </p>
+                          <p className="mb-3">
+                            In charge, ERP &amp; Web will provide strategic and
+                            operational leadership for the Institute’s
+                            technology ecosystem, ensuring robustness,
+                            scalability, security, and alignment with academic
+                            and admissions objectives. The role demands strong
+                            expertise in cloud infrastructure (AWS), ERP
+                            customization, admissions technology platforms,
+                            institutional websites, and end-to-end vendor
+                            governance, while leading and mentoring a high-
+                            performance IT team.
+                          </p>
 
-                       <div className="mb-5">
-      <h5>Chief Programs Officer</h5>
+                          <p className="mb-3">
+                            <b>Key Responsibilities</b>
+                          </p>
 
-      <p className="mb-3">
-        <b>Role Purpose</b>
-      </p>
-      <p className="mb-3">
-        To lead and manage end-to-end academic administration and program operations for all
-        degree-granting programs of the Institute, ensuring academic excellence, regulatory
-        compliance, efficient systems, and seamless student lifecycle management in alignment with
-        institutional framework.
-      </p>
+                          <p className="mb-3">
+                            <b>1. IT Strategy &amp; Governance</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Help execute the Institute’s IT roadmap in
+                                alignment with academic, administrative, and
+                                admissions goals.
+                              </li>
+                              <li>
+                                Set IT governance frameworks, SOPs, security
+                                protocols, and compliance standards.
+                              </li>
+                              <li>
+                                Act as the primary technology advisor to senior
+                                management and academic leadership.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>Key Responsibilities</b>
-      </p>
+                          <p className="mb-3">
+                            <b>
+                              2. Cloud &amp; Infrastructure Management (AWS)
+                            </b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Oversee end-to-end AWS server architecture,
+                                including deployment, monitoring, scaling,
+                                backup, and disaster recovery.
+                              </li>
+                              <li>
+                                Ensure high availability, performance
+                                optimization, cost efficiency, and data security
+                                across cloud infrastructure.
+                              </li>
+                              <li>
+                                Implement best practices for access control,
+                                audits, and compliance.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>1. Academic Administration & Program Governance</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>Oversee academic administration of all degree-granting programs of the Institute.</li>
-          <li>
-            Ensure compliance with institutional regulations, academic frameworks, and statutory
-            requirements.
-          </li>
-          <li>
-            Coordinate with Program Chairpersons and faculty for effective implementation and
-            monitoring of academic activities.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>3. ERP &amp; Enterprise Systems</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Lead ERP customization, enhancement, and
+                                integration across academic, finance, HR, and
+                                student lifecycle modules.
+                              </li>
+                              <li>
+                                Coordinate with internal stakeholders to
+                                translate business requirements into technical
+                                solutions.
+                              </li>
+                              <li>
+                                Ensure system stability, data integrity, and
+                                continuous improvement of ERP platforms.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>2. Program Operations & Delivery Excellence</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Lead end-to-end program operations including academic calendars, class schedules,
-            budgeting, onboarding, program commencement, procurement of course materials, elective
-            bidding, feedback, Convocation arrangement etc.
-          </li>
-          <li>
-            Support Program Committees time to time fostering the enhancement of academic activities.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>
+                              4. Admissions Technology &amp; Digital Platforms
+                            </b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Own and manage admissions tools, CRM platforms,
+                                and application workflows.
+                              </li>
+                              <li>
+                                Ensure seamless integration between admissions
+                                systems, ERP, website, and marketing platforms.
+                              </li>
+                              <li>
+                                Support admissions cycles with system readiness,
+                                scalability, analytics, and reporting.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>3. Institutional Development & Program Expansion</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Contribute to institutional building through process streamlining, system strengthening,
-            and continuous improvement initiatives.
-          </li>
-          <li>
-            Contribute to planning and execution of new academic program launches, ensuring
-            operational readiness across all functional areas.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>5. Website &amp; Digital Customization</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Oversee institutional website architecture,
+                                performance, security, and custom feature
+                                implementations.
+                              </li>
+                              <li>
+                                Manage CMS, backend integrations, forms,
+                                tracking tools, and third-party APIs.
+                              </li>
+                              <li>
+                                Ensure optimal performance, uptime, and
+                                compliance with data privacy standards.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>4. Examinations, Assessment & Results</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Ensuring smooth conduct of examinations, timely grade submission, result processing,
-            finalization, and announcements.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>6. Vendor &amp; Partner Management</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Lead selection, onboarding, evaluation, and
+                                governance of IT vendors and technology
+                                partners.
+                              </li>
+                              <li>
+                                Manage SLAs, contracts, budgets, timelines, and
+                                deliverables.
+                              </li>
+                              <li>
+                                Ensure accountability, quality control, and cost
+                                optimization across vendors.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>5. Student Records, Data, & Compliance</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>Maintain accurate and secure academic databases for students and faculty.</li>
-          <li>
-            Facilitate timely and accurate data sharing for accreditation, rankings, annual reports,
-            and statutory submissions.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>7. Team Leadership &amp; Capability Building</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Lead, mentor, and scale the internal IT team
+                                across infrastructure, applications, and support
+                                functions.
+                              </li>
+                              <li>
+                                Drive performance management, skill development,
+                                and succession planning.
+                              </li>
+                              <li>
+                                Foster a culture of accountability, innovation,
+                                and service excellence.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>6. Student Support, Discipline & Advisory</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Ensure fair and timely handling of student grievances, appeals, disciplinary matters, and
-            mitigating circumstances.
-          </li>
-          <li>
-            Implement academic advisory and intervention mechanisms to enhance student performance.
-          </li>
-          <li>
-            Engage with the Student Council and ensure alignment with institutional policies.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>8. Cybersecurity &amp; Risk Management</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Implement robust cybersecurity frameworks, data
+                                protection measures, and risk mitigation
+                                strategies.
+                              </li>
+                              <li>
+                                Conduct regular audits, vulnerability
+                                assessments, and incident response planning.
+                              </li>
+                              <li>
+                                Ensure compliance with institutional,
+                                regulatory, and data privacy requirements.
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>7. Academic Governance Documentation & Compliance</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Prepare, review, update, and implement Student Handbooks, Faculty Handbooks, Program
-            Manuals, Ordinances, and Academic Regulations in consultation with academic committees and
-            statutory bodies. Review, draft, and update academic guidelines, process documents, modalities, SOPs, and
-            standardized forms/formats to ensure consistency and efficiency across programs.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>Key Skills &amp; Competencies</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Strong expertise in AWS server management and
+                                cloud architecture
+                              </li>
+                              <li>
+                                Proven experience in ERP customization and
+                                enterprise system integration
+                              </li>
+                              <li>
+                                Hands-on knowledge of admissions tools, CRMs,
+                                and application management systems
+                              </li>
+                              <li>
+                                Advanced understanding of website development,
+                                customization, and integrations
+                              </li>
+                              <li>
+                                Excellent vendor management, negotiation, and
+                                SLA governance capabilities
+                              </li>
+                              <li>
+                                Strategic thinking with strong execution and
+                                stakeholder management skills
+                              </li>
+                              <li>
+                                High level of leadership maturity and team
+                                management experience
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>8. Digital Systems and Automation</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Administer LMS, ERP implementation, handling DigiLocker, Academic Bank of Credits, and
-            APAAR IDs.
-          </li>
-          <li>
-            Drive automation of academic and administrative processes to enhance efficiency and data
-            accuracy.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>Qualifications &amp; Experience</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Bachelor’s / Master’s degree in Computer
+                                Science, Information Technology, or related
+                                field
+                              </li>
+                              <li>
+                                10–15+ years of progressive IT experience, with
+                                at least 5 years in a senior leadership role
+                              </li>
+                              <li>
+                                Prior experience in higher education / academic
+                                institutions will be a strong advantage
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>9. Team Leadership & Institutional Growth</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Guide and mentor officers and staff engaged in academic administration functions.
-          </li>
-          <li>
-            Promote a culture of continuous learning and operational excellence within the academic
-            administration team.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>Key Performance Indicators (KPIs)</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Infrastructure uptime and system reliability
+                              </li>
+                              <li>ERP and admissions system effectiveness</li>
+                              <li>Website performance and security metrics</li>
+                              <li>
+                                Vendor delivery adherence and cost efficiency
+                              </li>
+                              <li>
+                                Team productivity and stakeholder satisfaction
+                              </li>
+                            </ul>
+                          </div>
 
-      <p className="mb-3">
-        <b>10. Accreditation, Ranking, Assurance of Learning & Quality Assurance</b>
-      </p>
-      <div className="crs_list">
-        <ul>
-          <li>
-            Support and coordinate activities related to Accreditation, NIRF Ranking etc including
-            documentation, data management, and compliance with accreditation standards.
-          </li>
-          <li>
-            Implement and monitor Assurance of Learning processes across programs, including learning
-            goal mapping, assessment cycles, data collection, analysis, and continuous improvement
-            actions.
-          </li>
-          <li>
-            Establish and strengthen academic quality assurance frameworks, ensuring consistency,
-            outcome measurement, and continuous enhancement of program delivery.
-          </li>
-          <li>
-            Coordinate with faculty, program teams, and accreditation committees to ensure timely
-            reporting and evidence-based decision-making.
-          </li>
-        </ul>
-      </div>
+                          <p className="mb-3">
+                            <b>Salary &amp; Allowances:</b>
+                          </p>
+                          <p className="mb-3">
+                            As per IMT norms corresponding with qualifications,
+                            experience, and performance in the interview. Salary
+                            will not be a constraint for the deserving
+                            candidate.
+                          </p>
+                        </div>
 
-      <p className="mb-3">
-        <b>Qualifications & Experience:</b>
-      </p>
-      <p className="mb-3">
-        Master's degree or equivalent preferred. Prior experience in relevant area and in reputed
-        B-school is an advantage.
-      </p>
+                        <div className="mb-5">
+                          <h5>Chief Programs Officer</h5>
 
-      <p className="mb-3">
-        <b>Salary, Allowances & Benefits:</b>
-      </p>
-      <p className="mb-3">
-        As per IMT norms correspond with qualifications, experience, and performance in the interview.
-        Salary will not be a constraint for deserving candidates.
-      </p>
+                          <p className="mb-3">
+                            <b>Role Purpose</b>
+                          </p>
+                          <p className="mb-3">
+                            To lead and manage end-to-end academic
+                            administration and program operations for all
+                            degree-granting programs of the Institute, ensuring
+                            academic excellence, regulatory compliance,
+                            efficient systems, and seamless student lifecycle
+                            management in alignment with institutional
+                            framework.
+                          </p>
 
-      <p className="mb-3">
-        <b> Terms and Conditions</b>
-      </p>
+                          <p className="mb-3">
+                            <b>Key Responsibilities</b>
+                          </p>
 
-      <div className="crs_list">
-        <ul>
-          <li>
-            Interested and eligible candidates are requested to send their applications latest by 31
-            Jan 2026 in the Prescribed Format via email at careers@imthyderabad.edu.in with the subject
-            line: "Application For the Post of ______________________"
-          </li>
-          <li>
-            Applications without the prescribed format mentioned above will not be considered.
-            Applications are accepted only via email to careers@imthyderabad.edu.in; no other mode is
-            allowed.
-          </li>
-          <li>Fulfilling minimum qualifications does not guarantee an interview or selection.</li>
-          <li>
-            Candidates not found suitable for a position may be considered for a lower position or on
-            a consolidated salary.
-          </li>
-          <li>The Institute reserves the right not to select anyone without assigning a reason.</li>
-          <li>
-            The Institute reserves the right to apply additional shortlisting criteria in case of many
-            applications.
-          </li>
-          <li>Only shortlisted candidates will be contacted.</li>
-          <li>Incomplete applications will be rejected.</li>
-          <li>The selected candidates are required to join immediately.</li>
-          <li>The decision of IMT Hyderabad will be final and binding.</li>
-        </ul>
-      </div>
-    </div>
+                          <p className="mb-3">
+                            <b>
+                              1. Academic Administration & Program Governance
+                            </b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Oversee academic administration of all
+                                degree-granting programs of the Institute.
+                              </li>
+                              <li>
+                                Ensure compliance with institutional
+                                regulations, academic frameworks, and statutory
+                                requirements.
+                              </li>
+                              <li>
+                                Coordinate with Program Chairpersons and faculty
+                                for effective implementation and monitoring of
+                                academic activities.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>2. Program Operations & Delivery Excellence</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Lead end-to-end program operations including
+                                academic calendars, class schedules, budgeting,
+                                onboarding, program commencement, procurement of
+                                course materials, elective bidding, feedback,
+                                Convocation arrangement etc.
+                              </li>
+                              <li>
+                                Support Program Committees time to time
+                                fostering the enhancement of academic
+                                activities.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>
+                              3. Institutional Development & Program Expansion
+                            </b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Contribute to institutional building through
+                                process streamlining, system strengthening, and
+                                continuous improvement initiatives.
+                              </li>
+                              <li>
+                                Contribute to planning and execution of new
+                                academic program launches, ensuring operational
+                                readiness across all functional areas.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>4. Examinations, Assessment & Results</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Ensuring smooth conduct of examinations, timely
+                                grade submission, result processing,
+                                finalization, and announcements.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>5. Student Records, Data, & Compliance</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Maintain accurate and secure academic databases
+                                for students and faculty.
+                              </li>
+                              <li>
+                                Facilitate timely and accurate data sharing for
+                                accreditation, rankings, annual reports, and
+                                statutory submissions.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>6. Student Support, Discipline & Advisory</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Ensure fair and timely handling of student
+                                grievances, appeals, disciplinary matters, and
+                                mitigating circumstances.
+                              </li>
+                              <li>
+                                Implement academic advisory and intervention
+                                mechanisms to enhance student performance.
+                              </li>
+                              <li>
+                                Engage with the Student Council and ensure
+                                alignment with institutional policies.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>
+                              7. Academic Governance Documentation & Compliance
+                            </b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Prepare, review, update, and implement Student
+                                Handbooks, Faculty Handbooks, Program Manuals,
+                                Ordinances, and Academic Regulations in
+                                consultation with academic committees and
+                                statutory bodies. Review, draft, and update
+                                academic guidelines, process documents,
+                                modalities, SOPs, and standardized forms/formats
+                                to ensure consistency and efficiency across
+                                programs.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>8. Digital Systems and Automation</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Administer LMS, ERP implementation, handling
+                                DigiLocker, Academic Bank of Credits, and APAAR
+                                IDs.
+                              </li>
+                              <li>
+                                Drive automation of academic and administrative
+                                processes to enhance efficiency and data
+                                accuracy.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>9. Team Leadership & Institutional Growth</b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Guide and mentor officers and staff engaged in
+                                academic administration functions.
+                              </li>
+                              <li>
+                                Promote a culture of continuous learning and
+                                operational excellence within the academic
+                                administration team.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>
+                              10. Accreditation, Ranking, Assurance of Learning
+                              & Quality Assurance
+                            </b>
+                          </p>
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Support and coordinate activities related to
+                                Accreditation, NIRF Ranking etc including
+                                documentation, data management, and compliance
+                                with accreditation standards.
+                              </li>
+                              <li>
+                                Implement and monitor Assurance of Learning
+                                processes across programs, including learning
+                                goal mapping, assessment cycles, data
+                                collection, analysis, and continuous improvement
+                                actions.
+                              </li>
+                              <li>
+                                Establish and strengthen academic quality
+                                assurance frameworks, ensuring consistency,
+                                outcome measurement, and continuous enhancement
+                                of program delivery.
+                              </li>
+                              <li>
+                                Coordinate with faculty, program teams, and
+                                accreditation committees to ensure timely
+                                reporting and evidence-based decision-making.
+                              </li>
+                            </ul>
+                          </div>
+
+                          <p className="mb-3">
+                            <b>Qualifications & Experience:</b>
+                          </p>
+                          <p className="mb-3">
+                            Master's degree or equivalent preferred. Prior
+                            experience in relevant area and in reputed B-school
+                            is an advantage.
+                          </p>
+
+                          <p className="mb-3">
+                            <b>Salary, Allowances & Benefits:</b>
+                          </p>
+                          <p className="mb-3">
+                            As per IMT norms correspond with qualifications,
+                            experience, and performance in the interview. Salary
+                            will not be a constraint for deserving candidates.
+                          </p>
+
+                          <p className="mb-3">
+                            <b> Terms and Conditions</b>
+                          </p>
+
+                          <div className="crs_list">
+                            <ul>
+                              <li>
+                                Interested and eligible candidates are requested
+                                to send their applications latest by 31 Jan 2026
+                                in the Prescribed Format via email at
+                                careers@imthyderabad.edu.in with the subject
+                                line: "Application For the Post of
+                                ______________________"
+                              </li>
+                              <li>
+                                Applications without the prescribed format
+                                mentioned above will not be considered.
+                                Applications are accepted only via email to
+                                careers@imthyderabad.edu.in; no other mode is
+                                allowed.
+                              </li>
+                              <li>
+                                Fulfilling minimum qualifications does not
+                                guarantee an interview or selection.
+                              </li>
+                              <li>
+                                Candidates not found suitable for a position may
+                                be considered for a lower position or on a
+                                consolidated salary.
+                              </li>
+                              <li>
+                                The Institute reserves the right not to select
+                                anyone without assigning a reason.
+                              </li>
+                              <li>
+                                The Institute reserves the right to apply
+                                additional shortlisting criteria in case of many
+                                applications.
+                              </li>
+                              <li>
+                                Only shortlisted candidates will be contacted.
+                              </li>
+                              <li>Incomplete applications will be rejected.</li>
+                              <li>
+                                The selected candidates are required to join
+                                immediately.
+                              </li>
+                              <li>
+                                The decision of IMT Hyderabad will be final and
+                                binding.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
 
                         {/* <div className="mb-5">
                           <h5>Executive – Travel Desk</h5>
