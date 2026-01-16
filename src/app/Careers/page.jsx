@@ -552,6 +552,231 @@ export default function Careers() {
                           applications for the following non-teaching positions:
                         </p>
                         <div className="mb-5">
+  <h5>Consultant Engineering Firm Required</h5>
+  <p className="mb-3">
+    <small>(Contract Based – Yearly Basis)</small>
+  </p>
+
+  <p className="mb-3">
+    We are seeking an experienced Consultant Engineer to provide comprehensive support for
+    upcoming &amp; existing construction projects. The scope includes planning, design, execution
+    oversight, and quality control.
+  </p>
+
+  <p className="mb-3">
+    <b>Scope of Services</b>
+  </p>
+
+  <p className="mb-3">
+    <b>1. Site Assessment &amp; Feasibility</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Site surveys, inspections, and feasibility evaluation</li>
+      <li>Reports on soil, drainage, and site accessibility</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>2. Planning &amp; Design</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Architectural and structural drawings</li>
+      <li>Layouts, elevations, sections</li>
+      <li>Compliance with codes and guidelines</li>
+      <li>Design revisions based on stakeholder input</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>3. BOQ &amp; Cost Estimation</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Detailed BOQ and cost estimates</li>
+      <li>Support in budgeting and tender finalization</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>4. Project Oversight</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Site visits to monitor progress</li>
+      <li>Ensure quality and design adherence</li>
+      <li>On-site technical support</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>5. Quality &amp; Compliance</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Material/workmanship verification</li>
+      <li>Support third-party quality checks</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>6. Final Inspection &amp; Handover</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Post-completion inspection and compliance reporting</li>
+      <li>Assist in handover documentation</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>7. Advisory Support</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Structural safety, repair, and retrofitting guidance</li>
+      <li>On-call technical consultation during project</li>
+      <li>Strong knowledge of codes, safety, and project execution</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">Regards</p>
+  <p className="mb-3">
+    <b>Rajkumar</b>
+  </p>
+</div>
+
+<div className="mb-5">
+  <h5>
+    Social Media &amp; PR Executive <br />
+    <small>(Anchoring | Guest Engagement | Digital Content Shoot)</small>
+  </h5>
+
+  <p className="mb-3">
+    <b>Role</b>
+  </p>
+  <p className="mb-3">
+    Are you confident in front of the camera, great with people, and love creating buzz on social
+    media? We are looking for a dynamic, well-presented, and energetic professional who can
+    anchor guest interviews, visitors’ podcasts, events, engage students, manage Institute’s social
+    media visibility, and represent our brand with confidence—both online and offline.
+  </p>
+  <p className="mb-3">
+    If you have a jolly personality, strong English communication skills, basic knowledge of
+    videography (shooting video on mobile / camera) and natural stage presence, this role is
+    made for you!
+  </p>
+
+  <p className="mb-3">
+    <b>Key Responsibilities</b>
+  </p>
+
+  <p className="mb-3">
+    <b>Anchoring &amp; Content Hosting</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Host and anchor interviews with guests, events, live sessions, podcasts, and campus activities.</li>
+      <li>Present scripted and unscripted content with confidence, clarity, and voice modulation.</li>
+      <li>Engage live and digital audiences effectively.</li>
+      <li>Handle on-camera appearances, retakes, and spontaneous interactions smoothly.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Social Media &amp; Digital Engagement</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Support creation and promotion of social media content (reels, videos, stories, live sessions).</li>
+      <li>Act as the on-screen face for digital campaigns and institutional content.</li>
+      <li>Engage with guests, students and audiences through interactive content and live platforms.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Student Engagement &amp; PR</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Interact with students during events, orientations, workshops, and campus activities.</li>
+      <li>Build positive public relations and represent the brand professionally.</li>
+      <li>Coordinate with media houses, journalists, marketing, content, and production teams for campaigns and events.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Content Preparation &amp; Coordination</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Research topics and script preparation identifying suitable questions and discussion topics.</li>
+      <li>Participate in rehearsals, content planning, and promotional shoots.</li>
+      <li>Ensure brand tone, accuracy, and professionalism in all communications.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Required Skills &amp; Qualifications</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Excellent verbal communication and presentation skills in English.</li>
+      <li>Confidence in front of the camera and live audiences.</li>
+      <li>Strong command of English (Hindi is a plus).</li>
+      <li>Ability to improvise and think on the spot.</li>
+      <li>Presentable personality with positive energy.</li>
+      <li>Bachelor’s degree in Mass Communication / Journalism / Media / Related fields (preferred).</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Preferred Skills</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Experience in anchoring, event hosting, podcasts, or live streaming.</li>
+      <li>Familiarity with teleprompters and basic studio setups.</li>
+      <li>Social media savviness and audience engagement skills.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Why Join IMT Hyderabad?</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Be the face and voice of our institute – a reputed brand in B-schools in India.</li>
+      <li>High-visibility role with creative freedom.</li>
+      <li>Dynamic campus and media-driven environment.</li>
+      <li>Strong growth opportunities in media, PR, and digital communication.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Salary &amp; Allowances:</b>
+  </p>
+  <p className="mb-3">
+    As per IMT norms corresponding with qualifications, experience, and performance in the
+    interview. Salary will not be a constraint for the deserving candidate.
+  </p>
+
+  <p className="mb-3">
+    <b>Freshers / Experienced Welcome!</b>
+  </p>
+  <p className="mb-3">
+    If you love being on stage, on screen, and in the spotlight—we want to meet you!
+  </p>
+
+  <p className="mb-3">
+    Apply now via email at{" "}
+    <a href="mailto:careers@imthyderabad.edu.in">careers@imthyderabad.edu.in</a>
+  </p>
+</div>
+
+
+                        <div className="mb-5">
   <h5>In charge, ERP &amp; Web</h5>
 
   <p className="mb-3">
