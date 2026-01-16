@@ -61,14 +61,15 @@ Our tender processes reflect fairness, accountability, and adherence to institut
                 Procurement
               </h2>
               <p>
-                Quotations are invited for Website Design & Development at Institute of Management Technology, Hyderabad
+                Consultant Engineering firm Required ( Contract Based for yearly basis)
               </p>
               <p>
-                <Link href="https://drive.google.com/file/d/1_Z5kOJp9n5l-EvBQvVxSQdDhWjkLVt41/view">
-                  <button className="btn rounded-pill btn-warning">
-                  <strong>Click here to view</strong>
-                </button>
-                </Link>
+<a href="/pdf/documents.pdf" target="_blank" rel="noopener noreferrer">
+  <button className="btn rounded-pill btn-warning">
+    <strong>Click here to view</strong>
+  </button>
+</a>
+
               </p>
             </div>
           </div>
