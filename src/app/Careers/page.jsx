@@ -551,6 +551,174 @@ export default function Careers() {
                           Institute of Management Technology Hyderabad invites
                           applications for the following non-teaching positions:
                         </p>
+                        <div className="mb-5">
+  <h5>In charge, ERP &amp; Web</h5>
+
+  <p className="mb-3">
+    <b>Position Level:</b> Mid-Level Leadership
+  </p>
+  <p className="mb-3">
+    <b>Reporting To:</b> Director / CAO
+  </p>
+  <p className="mb-3">
+    <b>Location:</b> IMT Hyderabad
+  </p>
+  <p className="mb-3">
+    Office of the Director, 38, Cherlaguda, Shamshabad, Hyderabad 501218 India
+  </p>
+
+  <p className="mb-3">
+    <b>Role Objective</b>
+  </p>
+  <p className="mb-3">
+    In charge, ERP &amp; Web will provide strategic and operational leadership for the Institute’s
+    technology ecosystem, ensuring robustness, scalability, security, and alignment with
+    academic and admissions objectives. The role demands strong expertise in cloud
+    infrastructure (AWS), ERP customization, admissions technology platforms, institutional
+    websites, and end-to-end vendor governance, while leading and mentoring a high-
+    performance IT team.
+  </p>
+
+  <p className="mb-3">
+    <b>Key Responsibilities</b>
+  </p>
+
+  <p className="mb-3">
+    <b>1. IT Strategy &amp; Governance</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Help execute the Institute’s IT roadmap in alignment with academic, administrative, and admissions goals.</li>
+      <li>Set IT governance frameworks, SOPs, security protocols, and compliance standards.</li>
+      <li>Act as the primary technology advisor to senior management and academic leadership.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>2. Cloud &amp; Infrastructure Management (AWS)</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Oversee end-to-end AWS server architecture, including deployment, monitoring, scaling, backup, and disaster recovery.</li>
+      <li>Ensure high availability, performance optimization, cost efficiency, and data security across cloud infrastructure.</li>
+      <li>Implement best practices for access control, audits, and compliance.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>3. ERP &amp; Enterprise Systems</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Lead ERP customization, enhancement, and integration across academic, finance, HR, and student lifecycle modules.</li>
+      <li>Coordinate with internal stakeholders to translate business requirements into technical solutions.</li>
+      <li>Ensure system stability, data integrity, and continuous improvement of ERP platforms.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>4. Admissions Technology &amp; Digital Platforms</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Own and manage admissions tools, CRM platforms, and application workflows.</li>
+      <li>Ensure seamless integration between admissions systems, ERP, website, and marketing platforms.</li>
+      <li>Support admissions cycles with system readiness, scalability, analytics, and reporting.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>5. Website &amp; Digital Customization</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Oversee institutional website architecture, performance, security, and custom feature implementations.</li>
+      <li>Manage CMS, backend integrations, forms, tracking tools, and third-party APIs.</li>
+      <li>Ensure optimal performance, uptime, and compliance with data privacy standards.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>6. Vendor &amp; Partner Management</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Lead selection, onboarding, evaluation, and governance of IT vendors and technology partners.</li>
+      <li>Manage SLAs, contracts, budgets, timelines, and deliverables.</li>
+      <li>Ensure accountability, quality control, and cost optimization across vendors.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>7. Team Leadership &amp; Capability Building</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Lead, mentor, and scale the internal IT team across infrastructure, applications, and support functions.</li>
+      <li>Drive performance management, skill development, and succession planning.</li>
+      <li>Foster a culture of accountability, innovation, and service excellence.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>8. Cybersecurity &amp; Risk Management</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Implement robust cybersecurity frameworks, data protection measures, and risk mitigation strategies.</li>
+      <li>Conduct regular audits, vulnerability assessments, and incident response planning.</li>
+      <li>Ensure compliance with institutional, regulatory, and data privacy requirements.</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Key Skills &amp; Competencies</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Strong expertise in AWS server management and cloud architecture</li>
+      <li>Proven experience in ERP customization and enterprise system integration</li>
+      <li>Hands-on knowledge of admissions tools, CRMs, and application management systems</li>
+      <li>Advanced understanding of website development, customization, and integrations</li>
+      <li>Excellent vendor management, negotiation, and SLA governance capabilities</li>
+      <li>Strategic thinking with strong execution and stakeholder management skills</li>
+      <li>High level of leadership maturity and team management experience</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Qualifications &amp; Experience</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Bachelor’s / Master’s degree in Computer Science, Information Technology, or related field</li>
+      <li>10–15+ years of progressive IT experience, with at least 5 years in a senior leadership role</li>
+      <li>Prior experience in higher education / academic institutions will be a strong advantage</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Key Performance Indicators (KPIs)</b>
+  </p>
+  <div className="crs_list">
+    <ul>
+      <li>Infrastructure uptime and system reliability</li>
+      <li>ERP and admissions system effectiveness</li>
+      <li>Website performance and security metrics</li>
+      <li>Vendor delivery adherence and cost efficiency</li>
+      <li>Team productivity and stakeholder satisfaction</li>
+    </ul>
+  </div>
+
+  <p className="mb-3">
+    <b>Salary &amp; Allowances:</b>
+  </p>
+  <p className="mb-3">
+    As per IMT norms corresponding with qualifications, experience, and performance in the
+    interview. Salary will not be a constraint for the deserving candidate.
+  </p>
+</div>
+
                        <div className="mb-5">
       <h5>Chief Programs Officer</h5>
 
@@ -746,38 +914,6 @@ export default function Careers() {
         Salary will not be a constraint for deserving candidates.
       </p>
 
-      {/* <p className="mb-3">
-        <b>General Terms and Conditions</b>
-      </p> */}
-
-      {/* <div className="crs_list">
-        <ul>
-          <li>
-            Interested and eligible candidates are requested to send their applications latest by 31
-            Jan 2026 in the Prescribed Format via email at careers@imthyderabad.edu.in with the subject
-            line: "Application For the Post of ______________________"
-          </li>
-          <li>
-            Applications without the prescribed format mentioned above will not be considered.
-            Applications are accepted only via email to careers@imthyderabad.edu.in; no other mode is
-            allowed.
-          </li>
-          <li>Fulfilling minimum qualifications does not guarantee an interview or selection.</li>
-          <li>
-            Candidates not found suitable for a position may be considered for a lower position or on
-            a consolidated salary.
-          </li>
-          <li>The Institute reserves the right not to select anyone without assigning a reason.</li>
-          <li>
-            The Institute reserves the right to apply additional shortlisting criteria in case of many
-            applications.
-          </li>
-          <li>Only shortlisted candidates will be contacted.</li>
-          <li>Incomplete applications will be rejected.</li>
-          <li>The selected candidates are required to join immediately.</li>
-          <li>The decision of IMT Hyderabad will be final and binding.</li>
-        </ul>
-      </div> */}
     </div>
 
                         {/* <div className="mb-5">
