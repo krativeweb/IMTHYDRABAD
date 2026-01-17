@@ -508,7 +508,8 @@ export default function Careers() {
 
                         <p className="mb-4">
                           <b>
-                            Indicative Guidelines for Shortlisted Candidates:{" "}
+                            Indicative Guidelines for Shortlisted
+                            Candidates:{" "}
                           </b>
                           <a
                             href="https://drive.google.com/file/d/103o59AmRCPlTjsayjYFgJwpZtdq-ItwQ/view?usp=sharing"
@@ -1426,11 +1427,11 @@ export default function Careers() {
                             will not be a constraint for deserving candidates.
                           </p>
 
-                          <p className="mb-3">
+                          {/* <p className="mb-3">
                             <b> Terms and Conditions</b>
-                          </p>
+                          </p> */}
 
-                          <div className="crs_list">
+                          {/* <div className="crs_list">
                             <ul>
                               <li>
                                 Interested and eligible candidates are requested
@@ -1478,7 +1479,7 @@ export default function Careers() {
                                 binding.
                               </li>
                             </ul>
-                          </div>
+                          </div> */}
                         </div>
 
                         {/* <div className="mb-5">
@@ -1910,71 +1911,72 @@ export default function Careers() {
 
                         {/* General Terms */}
                         <div className="mb-4">
-                          <h5>General Terms and Conditions</h5>
+                          <h5> Terms and Conditions</h5>
                           <div className="crs_list">
                             <ol>
                               <li>
                                 Interested and eligible candidates are requested
                                 to send their applications latest by{" "}
-                                <b>31 January 2026</b> in the{" "}
+                                <b>31 January 2026</b> in the Prescribed Format
+                                via email at{" "}
                                 <b>
-                                  <a
-                                    href="https://docs.google.com/document/d/1a9sXdJD3iyFbG4nU3u4NwuYSmQE5kZdd/edit?usp=sharing&ouid=106736229483075051654&rtpof=true&sd=true"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                  >
-                                    Prescribed Format
+                                  <a href="mailto:careers@imthyderabad.edu.in">
+                                    careers@imthyderabad.edu.in
                                   </a>
                                 </b>{" "}
-                                along with scanned copies of{" "}
-                                <b>Qualification Certificates</b> (one PDF file
-                                for all qualifications from class 10th onwards)
-                                and <b>Experience Certificates</b> (one PDF file
-                                for all experience certificates) via email at{" "}
-                                <b>careers@imthyderabad.edu.in</b> with the
-                                subject line:
+                                with the subject line:
                                 <br />
                                 <u>
-                                  “Application For The Post of
+                                  “Application For the Post of
                                   ______________________”
                                 </u>
                               </li>
+
                               <li>
-                                Applications without the prescribed format and
-                                annexures mentioned above will not be
-                                considered. Applications are accepted only via
-                                email to <b>careers@imthyderabad.edu.in</b>; no
-                                other mode is allowed.
+                                Applications without the prescribed format
+                                mentioned above will not be considered.
+                                Applications are accepted only via email to{" "}
+                                <b>
+                                  <a href="mailto:careers@imthyderabad.edu.in">
+                                    careers@imthyderabad.edu.in
+                                  </a>
+                                </b>
+                                ; no other mode is allowed.
                               </li>
+
                               <li>
                                 Fulfilling minimum qualifications does not
                                 guarantee an interview or selection.
                               </li>
+
                               <li>
                                 Candidates not found suitable for a position may
                                 be considered for a lower position or on a
                                 consolidated salary.
                               </li>
+
                               <li>
                                 The Institute reserves the right not to select
                                 anyone without assigning a reason.
                               </li>
+
                               <li>
                                 The Institute reserves the right to apply
                                 additional shortlisting criteria in case of many
                                 applications.
                               </li>
+
                               <li>
                                 Only shortlisted candidates will be contacted.
                               </li>
-                              <li>
-                                Incomplete applications or those without proper
-                                supporting documents will be rejected.
-                              </li>
+
+                              <li>Incomplete applications will be rejected.</li>
+
                               <li>
                                 The selected candidates are required to join
                                 immediately.
                               </li>
+
                               <li>
                                 The decision of IMT Hyderabad will be final and
                                 binding.
