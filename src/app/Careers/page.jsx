@@ -1681,7 +1681,7 @@ export default function Careers() {
                         </div>
 
                         {/* Executive – Inventory & Administration */}
-                        <div className="mb-5">
+                        {/* <div className="mb-5">
                           <h5>Executive – Inventory &amp; Administration</h5>
 
                           <p className="mb-3">
@@ -1751,7 +1751,7 @@ export default function Careers() {
                             will not be a constraint for the deserving
                             candidate.
                           </p>
-                        </div>
+                        </div> */}
 
                         {/* Data Analyst */}
                         {/* <div className="mb-5">
