@@ -1917,7 +1917,7 @@ export default function Careers() {
                               <li>
                                 Interested and eligible candidates are requested
                                 to send their applications latest by{" "}
-                                <b>31 January 2026</b> in the <a href="https://docs.google.com/document/d/1a9sXdJD3iyFbG4nU3u4NwuYSmQE5kZdd/edit" target="_blank" rel="noopener noreferrer">Prescribed Format</a>
+                                <b>31 January 2026</b> in the <a href="https://docs.google.com/document/d/1a9sXdJD3iyFbG4nU3u4NwuYSmQE5kZdd/edit" target="_blank" rel="noopener noreferrer">Prescribed Format </a>
                                 via email at{" "}
                                 <b>
                                   <a href="mailto:careers@imthyderabad.edu.in">
