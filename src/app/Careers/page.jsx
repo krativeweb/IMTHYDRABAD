@@ -1910,14 +1910,14 @@ export default function Careers() {
                         </div>
 
                         {/* General Terms */}
-                        <div className="mb-4">
+                  <div className="mb-4">
                           <h5> Terms and Conditions</h5>
                           <div className="crs_list">
                             <ol>
                               <li>
                                 Interested and eligible candidates are requested
                                 to send their applications latest by{" "}
-                                <b>31 January 2026</b> in the Prescribed Format
+                                <b>31 January 2026</b> in the <a href="https://docs.google.com/document/d/1a9sXdJD3iyFbG4nU3u4NwuYSmQE5kZdd/edit" target="_blank" rel="noopener noreferrer">Prescribed Format</a>
                                 via email at{" "}
                                 <b>
                                   <a href="mailto:careers@imthyderabad.edu.in">
@@ -1928,10 +1928,10 @@ export default function Careers() {
                                 <br />
                                 <u>
                                   “Application For the Post of
-                                  ______________________”
+                                  ________”
                                 </u>
                               </li>
-
+ 
                               <li>
                                 Applications without the prescribed format
                                 mentioned above will not be considered.
@@ -1943,40 +1943,40 @@ export default function Careers() {
                                 </b>
                                 ; no other mode is allowed.
                               </li>
-
+ 
                               <li>
                                 Fulfilling minimum qualifications does not
                                 guarantee an interview or selection.
                               </li>
-
+ 
                               <li>
                                 Candidates not found suitable for a position may
                                 be considered for a lower position or on a
                                 consolidated salary.
                               </li>
-
+ 
                               <li>
                                 The Institute reserves the right not to select
                                 anyone without assigning a reason.
                               </li>
-
+ 
                               <li>
                                 The Institute reserves the right to apply
                                 additional shortlisting criteria in case of many
                                 applications.
                               </li>
-
+ 
                               <li>
                                 Only shortlisted candidates will be contacted.
                               </li>
-
+ 
                               <li>Incomplete applications will be rejected.</li>
-
+ 
                               <li>
                                 The selected candidates are required to join
                                 immediately.
                               </li>
-
+ 
                               <li>
                                 The decision of IMT Hyderabad will be final and
                                 binding.
