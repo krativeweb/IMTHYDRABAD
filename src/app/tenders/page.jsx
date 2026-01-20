@@ -64,7 +64,7 @@ Our tender processes reflect fairness, accountability, and adherence to institut
                 Consultant Engineering firm Required ( Contract Based for yearly basis)
               </p>
               <p>
-<a href="/pdf/documents.pdf" target="_blank" rel="noopener noreferrer">
+<a href="https://drive.google.com/file/d/1Dv7HlbeeUDIOZTaKf8bESuu0CYWw6H5U/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <button className="btn rounded-pill btn-warning">
     <strong>Click here to view</strong>
   </button>
