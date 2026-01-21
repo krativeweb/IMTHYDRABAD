@@ -318,6 +318,9 @@ export default function ResearchArchive() {
                 role="tabpanel"
               >
                 <p className="">
+                  Basit Abdullah, "Labour codes must look at the invisible workers", The Statesman, 26 December 2025
+                  <br/>
+                  <br/>
                    Kashif Mansoor  &amp; Basit Abdullah, "Minimum Wages Under the New Labour Codes: What the Law Promises and What It Misses", The Wire, Foundation for Independent Journalism 30 November 2025
                   <br/>
                   <br/>
@@ -479,6 +482,128 @@ export default function ResearchArchive() {
                   </tr>
                 </thead>
                 <tbody>
+                 
+    <tr>
+      <td>Prof. Surajit Ghosh Dastidar</td>
+      <td>Country Delight: Positioning Natural Coconut Water in India</td>
+      <td>International Case Conference 2026</td>
+      <td>29–31 Jan 2026</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Sourabh Bhattacharya</td>
+      <td>
+        Short Term vs Longer Term Sustainability Education: Impact on Students'
+        Pro-Environmental Dispositions
+      </td>
+      <td>ISDSI-Global Conference 2025</td>
+      <td>25–29 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Sivadasan TM</td>
+      <td>
+        Knowledge and Usage Gaps: The Role of Caste Networks in Financial
+        Inclusion among Indian Households
+      </td>
+      <td>
+        Indian Finance Conference 2025, Indian Finance Association, IIM
+        Vishakhapatnam
+      </td>
+      <td>18–20 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Nikhil Rastogi</td>
+      <td>When Taxes Shape Dividends: Evidence from India's DDT Abolition</td>
+      <td>
+        Indian Finance Conference 2025, Indian Finance Association, IIM
+        Vishakhapatnam
+      </td>
+      <td>18–20 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Vinay Kumar Kalakbandi</td>
+      <td>
+        Pooling the Fragments: Contract Design &amp; Governance for Aggregated
+        Waste Collection in Unorganized Remanufacturing Markets
+      </td>
+      <td>
+       Society of operations management conference (XXVIII Annual International Conference of the Society of Operations Management (SOM 2025)
+      </td>
+      <td>19–21 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Sanchari Guha Niyogi</td>
+      <td>
+        1 Digital Fashion: A Game-Theoretic Exploration of Competitive Strategy.
+        <br />
+        2 Freeride or Build? The Strategic Dilemma of EV Charging
+      </td>
+      <td>POMS India International Conference 2025, IIM Sambalpur</td>
+      <td>13–16 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Basit Abdullah</td>
+      <td>
+        Structural Transformation and Unequal Returns to Self-Employment in India
+      </td>
+      <td>University of Hyderabad</td>
+      <td>8–9 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Musarrat Shaheen</td>
+      <td>
+        Can Positive and Engaged Healthcare Service Providers Drive Medical
+        Tourists' Trust?
+      </td>
+      <td>IMRC 2025, IIM Ahmedabad</td>
+      <td>5–7 Dec 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Pushpesh Pant</td>
+      <td>
+        Inefficient Yet Enduring: Revisiting Business Group Performance in India
+      </td>
+      <td>10th PAN IIM World Management Conference</td>
+      <td>27–29 Nov 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Surajit Ghosh Dastidar</td>
+      <td>GRTM Industries: Tackling Competition</td>
+      <td>14th International Conference on Management Cases</td>
+      <td>26–28 Nov 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Aindrila Chatterjee</td>
+      <td>
+        Reducing Resistance to Change: The Role of Balanced Culture in Learning
+        Transfer
+      </td>
+      <td>ESETBiz 3.0, International School of Business &amp; Media</td>
+      <td>29–30 Aug 2025</td>
+    </tr>
+
+    <tr>
+      <td>Prof. Aindrila Chatterjee</td>
+      <td>
+        Extension of Lessons from Business Ethics Education to Business
+        Situations: Role of Authority
+      </td>
+      <td>
+        85th Annual Meeting of the Academy of Management (AOM 2025), Copenhagen,
+        Denmark
+      </td>
+      <td>25–29 Jul 2025</td>
+    </tr>
+             
                   <tr>
                     <td>Prof. Krishna Dixit</td>
                     <td>
