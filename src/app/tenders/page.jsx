@@ -63,6 +63,50 @@ Our tender processes reflect fairness, accountability, and adherence to institut
               <p>
                 Consultant Engineering firm Required ( Contract Based for yearly basis)
               </p>
+<section className="model py-5">
+  <div className="container">
+    <div className="card p-4 shadow-lg border-0" data-aos="fade-up">
+      <h2 className="text-center mb-4 fw-bold" style={{ color: '#08317a' }}>
+        Procurement
+      </h2>      {/* New Item */}
+      <p>
+        Tender Notice – Construction of WTP Water Storage Tank
+      </p>
+      <p>
+        <a
+          href="https://imtindia-my.sharepoint.com/:b:/g/personal/webadmin_imthyderabad_edu_in/IQAuGMbDeDEiTJYk1EUppDIkAWM83jb0BJzmFgf6Dz6DitM?e=3VEcgc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn rounded-pill btn-warning">
+            <strong>Click here to view</strong>
+          </button>
+        </a>
+      </p>
+
+
+      <hr />
+      {/* Existing Item */}
+      <p>
+        Consultant Engineering firm Required ( Contract Based for yearly basis)
+      </p>
+      <p>
+        <a
+          href="https://drive.google.com/file/d/1Dv7HlbeeUDIOZTaKf8bESuu0CYWw6H5U/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn rounded-pill btn-warning">
+            <strong>Click here to view</strong>
+          </button>
+        </a>
+      </p>
+
+
+    </div>
+  </div>
+</section>
+
               <p>
 <a href="https://drive.google.com/file/d/1Dv7HlbeeUDIOZTaKf8bESuu0CYWw6H5U/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   <button className="btn rounded-pill btn-warning">
