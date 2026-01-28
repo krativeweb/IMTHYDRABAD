@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import DistinguishedClientsSection from "@/components/DistinguishedClient";
-
+import useEmblaCarousel from "embla-carousel-react";
 
 export default function PrivacyPolicySection() {
   // Initialize AOS
