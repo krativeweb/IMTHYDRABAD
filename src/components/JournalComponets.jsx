@@ -8,6 +8,8 @@ export default function JournalComponents() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
   const journalYears = [
     "2025-26",
     "2024-25",
@@ -27,29 +29,26 @@ export default function JournalComponents() {
     "2010-11",
   ];
 
-  const sortedYears = [...journalYears].sort((a, b) => {
-    const aNum = parseInt(a.split("-")[0]);
-    const bNum = parseInt(b.split("-")[0]);
-    return bNum - aNum;
-  });
+  const sortedYears = [...journalYears].sort(
+    (a, b) => parseInt(b) - parseInt(a)
+  );
 
+  /* ---------------- FETCH JOURNALS ---------------- */
   useEffect(() => {
     axios
-      .get(
-        "https://thekreativeweb.com/codes/imt_hydrabad/api/journal_publication"
-      )
+      .get(`${API_URL}/api/research-journal-publication`)
       .then((res) => {
-        setData(res.data);
-        setLoading(false);
+        setData(res.data?.data || []);
       })
       .catch((err) => {
-        console.error("Fetch error:", err);
-        setLoading(false);
-      });
-  }, []);
+        console.error("Journal fetch error:", err);
+      })
+      .finally(() => setLoading(false));
+  }, [API_URL]);
 
+  /* ---------------- GROUP BY YEAR ---------------- */
   const grouped = data.reduce((acc, item) => {
-    const year = item.res_year || "Unknown";
+    const year = item.academic_year || "Unknown";
     if (!acc[year]) acc[year] = [];
     acc[year].push(item);
     return acc;
@@ -65,16 +64,17 @@ export default function JournalComponents() {
         id="tab-journal"
         role="tabpanel"
       >
-        {/* SUB-TABS */}
+        {/* ===== SUB TABS (YEARS) ===== */}
         <nav className="nav nav-pills flex-wrap gap-2 mb-4 justify-content-center mt-4">
           {sortedYears.map((year) => {
             const yearKey = year.split("-")[0];
             const isActive = year === activeYear;
+
             return (
               <Link
                 key={year}
                 href={`#sub-res-${yearKey}`}
-                className={`nav-link bg-light text-dark rounded-pill tab ${
+                className={`nav-link bg-light text-dark rounded-pill ${
                   isActive ? "active" : ""
                 }`}
                 data-bs-toggle="pill"
@@ -86,7 +86,7 @@ export default function JournalComponents() {
           })}
         </nav>
 
-        {/* SUB-TAB CONTENT */}
+        {/* ===== SUB TAB CONTENT ===== */}
         <div className="tab-content container-sm">
           {sortedYears.map((year) => {
             const yearKey = year.split("-")[0];
@@ -103,12 +103,7 @@ export default function JournalComponents() {
                 <div className="container bg-white p-4 rounded-4">
                   {loading ? (
                     <div className="text-center py-5">
-                      <div
-                        className="spinner-border text-warning"
-                        role="status"
-                      >
-                        <span className="visually-hidden">Loading...</span>
-                      </div>
+                      <div className="spinner-border text-warning" />
                     </div>
                   ) : pubs.length === 0 ? (
                     <div className="text-center py-5 text-muted">
@@ -116,40 +111,44 @@ export default function JournalComponents() {
                     </div>
                   ) : (
                     pubs.map((pub) => (
-                      <div key={pub.gen_id} className="card mb-3">
+                      <div key={pub._id} className="card mb-3">
                         <div className="row g-0">
+                          {/* IMAGE */}
                           <div className="col-md-4 d-flex justify-content-center align-items-center">
-                            <img
-                              src={pub.final_image ? pub.final_image : ""}
-                              className="img-fluid rounded-start w-75"
-                              alt={pub.res_title}
-                              style={{ height: 250 }}
-                            />
+                            {pub.image && (
+                              <img
+                                src={`${API_URL}/${pub.image}`}
+                                className="img-fluid rounded-start w-75"
+                                alt={pub.publication_title}
+                                style={{ height: 250, objectFit: "cover" }}
+                              />
+                            )}
                           </div>
+
+                          {/* CONTENT */}
                           <div className="col-md-8">
                             <div className="card-body">
-                              <p className="card-title">
-                                <strong>Name:</strong> {pub.res_name}
+                              <p>
+                                <strong>Name:</strong> {pub.author_name}
                               </p>
-                              <p className="card-text fs6">
-                                <strong>Title:</strong> {pub.res_title}
+                              <p>
+                                <strong>Title:</strong> {pub.publication_title}
                               </p>
-                              <p className="card-text fs6">
-                                <strong>Authors:</strong> {pub.res_authors}
+                              <p>
+                                <strong>Authors:</strong> {pub.authors}
                               </p>
-                              <p className="card-text fs6">
-                                <strong>Journal:</strong> {pub.journal}
+                              <p>
+                                <strong>Journal:</strong> {pub.journal_name}
                               </p>
-                              {pub.volume && (
-                                <p className="card-text fs6">
-                                  <strong>Volume:</strong> {pub.volume}
-                                </p>
-                              )}
-                              {pub.res_url && (
-                                <p className="card-text fs6">
+                                    <p>
+                                <strong>Volume:</strong> {pub.volume}
+                              </p>
+
+                              {pub.publication_url && (
+                                <p>
                                   <strong>URL:</strong>{" "}
                                   <a
-                                    href={pub.res_url}
+                                    href={pub.publication_url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-primary text-decoration-underline"
@@ -162,34 +161,35 @@ export default function JournalComponents() {
                           </div>
                         </div>
 
-                        {/* ABSTRACT ACCORDION */}
-                        <div className="bg-light h-100 w-100 text-center py-2 rounded-4 fw-bold mb-3">
+                        {/* ABSTRACT */}
+                        <div className="bg-light text-center py-2 rounded-4 fw-bold mb-3">
                           <div
                             className="accordion"
-                            id={`accordion-${pub.gen_id}`}
+                            id={`accordion-${pub._id}`}
                           >
                             <div className="accordion-item">
                               <h2 className="accordion-header">
                                 <button
-                                  className="accordion-button collapsed bg-light fw-bold rounded-4"
+                                  className="accordion-button collapsed bg-light fw-bold"
                                   type="button"
                                   data-bs-toggle="collapse"
-                                  data-bs-target={`#collapse-${pub.gen_id}`}
+                                  data-bs-target={`#collapse-${pub._id}`}
                                 >
                                   ABSTRACT
                                 </button>
                               </h2>
                               <div
-                                id={`collapse-${pub.gen_id}`}
+                                id={`collapse-${pub._id}`}
                                 className="accordion-collapse collapse"
-                                data-bs-parent={`#accordion-${pub.gen_id}`}
+                                data-bs-parent={`#accordion-${pub._id}`}
                               >
-                              <div
+<div
   className="accordion-body text-start"
   dangerouslySetInnerHTML={{
-    __html: pub.res_abstract || "No abstract available.",
+    __html: pub.abstract || "No abstract available."
   }}
-></div>
+/>
+
                               </div>
                             </div>
                           </div>
@@ -206,4 +206,3 @@ export default function JournalComponents() {
     </div>
   );
 }
-

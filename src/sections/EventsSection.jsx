@@ -10,19 +10,19 @@ export default function EventsSection() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    let isMounted = true; // Prevent state update after unmount
+    let isMounted = true;
 
     const fetchEvents = async () => {
       try {
-      const { data } = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/events`
+        const { data } = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/events`
         );
 
-        if (isMounted && Array.isArray(data)) {
-          // Filter out deleted or invalid events
-          const filtered = data.filter((e) => e.is_del === 0);
+        if (isMounted && data?.success && Array.isArray(data.data)) {
+          // Filter non-deleted
+          const filtered = data.data.filter((e) => e.isDeleted === false);
 
-          // Sort by latest date first
+          // Sort by latest date
           const sorted = filtered.sort(
             (a, b) => new Date(b.event_date) - new Date(a.event_date)
           );
@@ -52,8 +52,7 @@ export default function EventsSection() {
       </div>
     );
 
-  if (error)
-    return <div className="text-center text-danger py-4">{error}</div>;
+  if (error) return <div className="text-center text-danger py-4">{error}</div>;
 
   return (
     <section className="py-2">
@@ -71,15 +70,20 @@ export default function EventsSection() {
           {events.slice(0, 4).map((event) => {
             const dateObj = new Date(event.event_date);
             const date = dateObj.getDate().toString().padStart(2, "0");
-            const month = dateObj.toLocaleString("en-US", { month: "short" });
+            const month = dateObj.toLocaleString("en-US", {
+              month: "short",
+            });
             const year = dateObj.getFullYear();
-            const time = new Date(`1970-01-01T${event.event_time}`).toLocaleTimeString([], {
+
+            const time = new Date(
+              `1970-01-01T${event.event_time}`
+            ).toLocaleTimeString([], {
               hour: "2-digit",
               minute: "2-digit",
             });
 
             return (
-              <div key={event.id} className="col-md-6">
+              <div key={event._id} className="col-md-6">
                 <div className="card shadow-sm border-0 h-100">
                   <div className="card-body d-flex">
                     <div className="date-box bg-warning text-white text-center rounded me-3 px-3 py-2">
@@ -87,12 +91,13 @@ export default function EventsSection() {
                       <div className="text-uppercase small">{month}</div>
                       <div className="small">{year}</div>
                     </div>
+
                     <div>
                       <Link
                         href="#"
                         className="text-dark fw-semibold text-decoration-none"
                       >
-                        {event.title}
+                        {event.event_title}
                       </Link>
                       <br />
                       <small className="text-muted">

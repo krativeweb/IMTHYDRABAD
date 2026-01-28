@@ -138,63 +138,76 @@ export default function Navbar() {
                   aria-labelledby="programsDropdown"
                   style={{ minWidth: "245px" }}
                 >
-                  <div className="row mx-3">
-                    <li className="dropdown-submenu mt-2">
-                      <Link className="fw-bold" href="#">
-                        PGDM
-                      </Link>
-                      <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
-                        <li>
-                          <Link
-                            className="item"
-                            href="/pgdm-course-in-hyderabad"
-                          >
-                            About PGDM
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="item"
-                            href="/pgdm-general-management"
-                          >
-                            PGDM
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="item"
-                            href="/pgdm-finance-management"
-                          >
-                            PGDM (Finance)
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="item"
-                            href="/pgdm-marketing-management"
-                          >
-                            PGDM (Marketing)
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="item" href="/pgdm-lscm">
-                            PGDM (LSCM)
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="item" href="/fpm-program-hyderabad">
-                            Fellow Program in Management
-                          </Link>
-                        </li>
-                        <li>
-                          <Link className="item" href="/executive-education">
-                              Executive Education
+                  {/* ✅ ul → li → div (VALID) */}
+                  <li>
+                    <div className="row mx-3">
+                      <div className="col-12">
+                        <ul className="list-unstyled p-0 m-0">
+                          <li className="dropdown-submenu mt-2">
+                            <Link className="fw-bold" href="#">
+                              PGDM
                             </Link>
+
+                            <ul className="position-static border-0 p-0 mt-2 spaced-list list-unstyled">
+                              <li>
+                                <Link
+                                  className="item"
+                                  href="/pgdm-course-in-hyderabad"
+                                >
+                                  About PGDM
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  className="item"
+                                  href="/pgdm-general-management"
+                                >
+                                  PGDM
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  className="item"
+                                  href="/pgdm-finance-management"
+                                >
+                                  PGDM (Finance)
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  className="item"
+                                  href="/pgdm-marketing-management"
+                                >
+                                  PGDM (Marketing)
+                                </Link>
+                              </li>
+                              <li>
+                                <Link className="item" href="/pgdm-lscm">
+                                  PGDM (LSCM)
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  className="item"
+                                  href="/fpm-program-hyderabad"
+                                >
+                                  Fellow Program in Management
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  className="item"
+                                  href="/executive-education"
+                                >
+                                  Executive Education
+                                </Link>
+                              </li>
+                            </ul>
                           </li>
-            
-                      </ul>
-                    </li>
-                  </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </li>
 
@@ -360,7 +373,14 @@ export default function Navbar() {
                               Refund Policy
                             </Link>
                           </li>
-
+                          {/* <li>
+                            <Link
+                              className="item"
+                              href="/accredations&approvals"
+                            >
+                              Approvals & Accreditation
+                            </Link>
+                          </li> */}
                           <li>
                             <Link className="item" href="/feedback">
                               Feedback Faculties
@@ -429,15 +449,14 @@ export default function Navbar() {
                               Annual Events
                             </Link>
                           </li>
-
                           <li>
                             <Link className="item" href="/accredations">
-                              Accreditation
+                            Accredations
                             </Link>
                           </li>
-                          <li>
+                             <li>
                             <Link className="item" href="/approvals">
-                              Approvals
+                           Approvals
                             </Link>
                           </li>
                         </ul>

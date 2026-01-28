@@ -13,7 +13,7 @@ import ConditionalHeadAndScripts, {
   ConditionalFooterAndExtras,
 } from "./ConditionalLayoutClient";
 import { getMetadata } from "@/utils/getMetadata";
-
+import Preloader from "@/components/Preloader";
 
 
 export async function generateMetadata() {
@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
       <body>
         <GoogleTagManager />
         <ClarityScript />
+            <Preloader/>
         <ConditionalHeadAndScripts>
           <NavbarWrapper />
           <main>{children}</main>

@@ -97,7 +97,7 @@ export default function NavbarTwo() {
         <img
           src="./media/IMT-logo.png"
           alt="Logo"
-          style={{ height: 86, marginLeft: "16px !important", margin: 2 }}
+          style={{ height: 86, margin: 2 }}
         />
       </a>
       {/* Toggler (Mobile) */}

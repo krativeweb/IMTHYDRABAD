@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import DOMPurify from "isomorphic-dompurify";
 
-
 function limitWordsHtml(html, limit) {
   // 1. Sanitize the HTML
   const cleanHtml = DOMPurify.sanitize(html);
@@ -16,9 +15,9 @@ function limitWordsHtml(html, limit) {
 
   // 3. Limit words
   const words = decoded.split(" ");
-  const limitedText = words.length > limit ? words.slice(0, limit).join(" ") + "..." : decoded;
-
-  return limitedText;
+  return words.length > limit
+    ? words.slice(0, limit).join(" ") + "..."
+    : decoded;
 }
 
 export default function HappeningsSection() {
@@ -28,10 +27,13 @@ export default function HappeningsSection() {
     const fetchHappenings = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/happiness`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/happenings`
         );
-        const data = await res.json();
-        setHappenings(data.filter((item) => item.is_del === 0));
+        const json = await res.json();
+
+        if (json?.success) {
+          setHappenings(json.data.filter((item) => item.isDeleted === false));
+        }
       } catch (err) {
         console.error("Failed to fetch happenings:", err);
       }
@@ -72,20 +74,25 @@ export default function HappeningsSection() {
             >
               <div className="blog-card card h-100 shadow">
                 <img
-                  src={happenings[0].team_image}
+                  src={`${process.env.NEXT_PUBLIC_API_URL}/${happenings[0].images[0]}`}
                   className="card-img-top"
                   style={{ height: "25vh", objectFit: "cover" }}
                   alt={happenings[0].title}
                 />
                 <div className="card-body">
                   <h5 className="card-title">{happenings[0].title}</h5>
-             <p
-        className="card-text"
-        dangerouslySetInnerHTML={{
-          __html: limitWordsHtml(happenings[0].description, 30), // limit to 50 words
-        }}
-      />
-                  <Link href="/happenings-events-announcements" className="btn btn-primary rounded-pill">
+
+                  <p
+                    className="card-text"
+                    dangerouslySetInnerHTML={{
+                      __html: limitWordsHtml(happenings[0].description, 30),
+                    }}
+                  />
+
+                  <Link
+                    href="/happenings-events-announcements"
+                    className="btn btn-primary rounded-pill"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -98,26 +105,32 @@ export default function HappeningsSection() {
             <div className="row g-4">
               {happenings.slice(1, 3).map((item, idx) => (
                 <div
-                  key={item.id}
+                  key={item._id}
                   className="col-12 col-md-6"
                   data-aos="fade-up"
                   data-aos-delay={200 + idx * 100}
                 >
                   <div className="blog-card card h-100 shadow">
                     <img
-                      src={item.team_image}
+                      src={`${process.env.NEXT_PUBLIC_API_URL}/${item.images[0]}`}
                       className="card-img-top"
                       style={{ height: "20vh", objectFit: "cover" }}
                       alt={item.title}
                     />
                     <div className="card-body">
                       <h5 className="card-title">{item.title}</h5>
-                 <p
-        className="card-text"
-        dangerouslySetInnerHTML={{ __html: limitWordsHtml(item.description, 30) }}
-      />
 
-                      <Link href="/happenings-events-announcements" className="btn btn-primary rounded-pill">
+                      <p
+                        className="card-text"
+                        dangerouslySetInnerHTML={{
+                          __html: limitWordsHtml(item.description, 30),
+                        }}
+                      />
+
+                      <Link
+                        href="/happenings-events-announcements"
+                        className="btn btn-primary rounded-pill"
+                      >
                         Read More
                       </Link>
                     </div>

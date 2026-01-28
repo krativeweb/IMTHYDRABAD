@@ -21,13 +21,19 @@ export default function ResearchCarousel() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  // 🔹 NEW API INTEGRATION (structure untouched)
   useEffect(() => {
     const fetchResearch = async () => {
       try {
         const res = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/research_infocus`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/research-infocus`
         );
-        setResearches(res.data.filter((item) => item.is_del === 0));
+
+        if (res.data?.success) {
+          setResearches(
+            res.data.data.filter((item) => item.isDeleted === false)
+          );
+        }
       } catch (err) {
         console.error("Failed to fetch research data:", err);
       }
@@ -108,28 +114,26 @@ export default function ResearchCarousel() {
                 <div className="row g-4 justify-content-center">
                   {slideItems.map((item, idx) => (
                     <div
-                      key={item.id}
+                      key={item._id}
                       className={`${isMobile ? "col-12" : "col-lg-3 col-md-6"}`}
                       data-aos="fade-up"
                       data-aos-delay={100 + idx * 100}
                     >
                       <div className="research-card p-3 h-100 bg-white shadow rounded text-center">
                         <img
-                          src={item.team_image}
+                          src={`${process.env.NEXT_PUBLIC_API_URL}/${item.image}`}
                           className="img-fluid rounded mb-3"
-                          alt={item.title}
-                          style={{  objectFit: "cover" }}
+                          alt={item.name}
+                          style={{ objectFit: "cover" }}
                         />
                         <h5 className="research-org text-primary">
-                          {item.title}
+                          {item.name}
                         </h5>
                         <p className="research-title small">
-                          {item.description}
+                          {item.home_title}
                         </p>
                         <Link
-                          href={`/${item.short_title
-                            .toLowerCase()
-                            .replace(/\s+/g, "")}`}
+                          href={`/${item.page_slug}`}
                           className="link-warning fw-bold text-decoration-underline"
                         >
                           Read More

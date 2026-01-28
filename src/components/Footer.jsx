@@ -7,135 +7,99 @@ import Link from "next/link";
 
 export default function Footer() {
   const [loaded, setLoaded] = useState(false);
+  const [footer, setFooter] = useState(null);
 
   useEffect(() => {
-    // Fade out preloader after mount
-    const timeout = setTimeout(() => setLoaded(true), 500);
-    return () => clearTimeout(timeout);
+    const handleLoad = () => {
+      setLoaded(true);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
+
+    useEffect(() => {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/footer`)
+        .then((res) => res.json())
+        .then((data) => setFooter(data))
+        .catch(console.error);
+    }, []);
+
+      if (!footer) return null;
+
+      const currentYear = new Date().getFullYear();
 
   return (
     <>
       {/* Preloader */}
-      <div id="preloader" className={`preloader ${loaded ? "fade-out" : ""}`}>
+      {/* <div id="preloader" className={`preloader ${loaded ? "fade-out" : ""}`}>
         <Image
-         className="bg-white"
           src="/media/imtpilllogo.webp"
-          alt="Website Logo"
-          width={150}
+          alt="IMT Hyderabad Logo"
+          width={300}
           height={100}
           priority
           unoptimized
-          style={{ width: 300, height: 100 }}
         />
-      </div>
-
+      </div> */}
       {/* Footer */}
       <footer className="footer position-relative dark-background">
         <div className="container footer-top">
           <div className="row gy-4">
-            {/* About / Contact */}
+            {/* SOCIAL + CONTACT */}
             <div className="col-lg-4 col-md-6 footer-about">
               <h4 className="mb-3">Follow Us &amp; Get Connected</h4>
+
               <div className="footer-social d-flex gap-3 mb-3">
-                <Link
-                  href="https://facebook.com/IMTHyderabad"
-                  className="text-reset"
-                  aria-label="Facebook"
-                >
-                  <i className="fab fa-xl text-warning fa-facebook-f"></i>
-                </Link>
-                {/* <Link
-                  href="https://twitter.com/IMTHyderabad"
-                  className="text-reset"
-                  aria-label="Twitter"
-                >
-                  <i className="fab fa-xl text-warning fa-x-twitter"></i>
-                </Link> */}
-                <Link
-                  href="https://www.linkedin.com/company/institute-of-management-technology-hyderabad/"
-                  className="text-reset"
-                  aria-label="LinkedIn"
-                >
-                  <i className="fab fa-xl text-warning fa-linkedin-in"></i>
-                </Link>
-                <Link
-                  href="https://www.instagram.com/hyderabadimt?igsh=MXNsMmNmMmRrMWl2ZA=="
-                  className="text-reset"
-                  aria-label="Instagram"
-                >
-                  <i className="fab fa-xl text-warning fa-instagram"></i>
-                </Link>
-                <Link
-                  href="https://youtube.com/@imthyderabadchannel?si=QfVmqF3W6tjFyiQl"
-                  className="text-reset"
-                  aria-label="YouTube"
-                >
-                  <i className="fab fa-xl text-warning fa-youtube"></i>
-                </Link>
+                {footer.facebook_url && (
+                  <Link href={footer.facebook_url} className="text-reset">
+                    <i className="fab fa-xl text-warning fa-facebook-f" />
+                  </Link>
+                )}
+                {footer.linkedin_url && (
+                  <Link href={footer.linkedin_url} className="text-reset">
+                    <i className="fab fa-xl text-warning fa-linkedin-in" />
+                  </Link>
+                )}
+                {footer.instagram_url && (
+                  <Link href={footer.instagram_url} className="text-reset">
+                    <i className="fab fa-xl text-warning fa-instagram" />
+                  </Link>
+                )}
+                {footer.youtube_url && (
+                  <Link href={footer.youtube_url} className="text-reset">
+                    <i className="fab fa-xl text-warning fa-youtube" />
+                  </Link>
+                )}
               </div>
 
               <div className="footer-contact pt-2">
                 <h5 className="text-warning">
                   <b>Address:</b>
                 </h5>
-                <p className="text-light">
-                  38, Cherlaguda, Shamshabad, Hyderabad-501 218, <br /> India
-                </p>
+                <p className="text-light">{footer.address}</p>
+
                 <p className="mt-3">
                   <strong className="text-warning">Email:</strong>{" "}
-                  <span className="text-light">info@imthyderabad.edu.in</span>
+                  <span className="text-light">{footer.email}</span>
                 </p>
+
                 <p className="text-light">
                   <strong className="text-warning">Phone:</strong>{" "}
-                  <span>+91-08414 671661</span>
+                  {footer.phone}
                 </p>
-
-                {/* QR Code Modal Trigger */}
-                {/* <button
-                  type="button"
-                  className="btn btn-warning rounded-pill border-white"
-                  data-bs-toggle="modal"
-                  data-bs-target="#qrModal"
-                >
-                  View QR Code
-                </button> */}
-
-                {/* QR Code Modal */}
-                <div
-                  className="modal fade"
-                  id="qrModal"
-                  tabIndex="-1"
-                  aria-hidden="true"
-                >
-                  <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content border-0 shadow-lg">
-                      <div className="modal-header border-0">
-                        <h5 className="modal-title">QR Code</h5>
-                        <button
-                          type="button"
-                          className="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div className="modal-body text-center">
-                        <Image
-                          src=""
-                          alt="QR Code"
-                          width={300}
-                          height={300}
-                          className="img-fluid rounded"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="col-lg-4 col-md-6" style={{ paddingLeft:"29px" }}>
+            <div className="col-lg-4 col-md-6" style={{ paddingLeft: "29px" }}>
               <div className="row">
                 <div className="col-6 footer-links">
                   <h4>Quick Links</h4>
@@ -147,13 +111,17 @@ export default function Footer() {
                       <Link href="fpm-program-hyderabad">FPM</Link>
                     </li>
                     <li>
-                      <Link href="executive-education">Executive Education</Link>
+                      <Link href="executive-education">
+                        Executive Education
+                      </Link>
                     </li>
                     <li>
                       <Link href="placements">Placements</Link>
                     </li>
                     <li>
-                      <Link href="https://alumni.imthyderabad.edu.in">Alumni</Link>
+                      <Link href="https://alumni.imthyderabad.edu.in">
+                        Alumni
+                      </Link>
                     </li>
                     <li>
                       <Link href="Campus-Tour">Campus Tour</Link>
@@ -170,13 +138,19 @@ export default function Footer() {
                       <Link href="student-life-imt">Student Life</Link>
                     </li>
                     <li>
-                      <Link href="international-associations">International Relations</Link>
+                      <Link href="international-associations">
+                        International Relations
+                      </Link>
                     </li>
                     <li>
-                      <Link href="sponsered-research-advisory">Research & Advisory</Link>
+                      <Link href="sponsered-research-advisory">
+                        Research & Advisory
+                      </Link>
                     </li>
                     <li>
-                      <Link href="mandatory-disclosure">Mandatory Disclosure</Link>
+                      <Link href="mandatory-disclosure">
+                        Mandatory Disclosure
+                      </Link>
                     </li>
                     <li>
                       <Link href="newsletters">Newsletters</Link>
@@ -196,67 +170,30 @@ export default function Footer() {
 
             {/* Get Connected / Accreditations */}
             <div className="col-lg-4 col-md-6 footer-subscribe">
-             <div className="accreditations">
-                <h6 className="text-white fw-bold">Accreditations & Approvals</h6>
-                <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
+              <h6 className="text-white fw-bold">Accreditations & Approvals</h6>
+              <div className="d-flex flex-wrap gap-3 mt-2">
+                {footer.accreditations?.map((img, i) => (
                   <Image
-                   className=""
-                    src="/media/acc/nba.png"
-                    alt="Accreditation 1"
+                    key={i}
+                    src={`${process.env.NEXT_PUBLIC_API_URL}${img}`}
+                    alt="Accreditation"
                     width={80}
                     height={80}
                   />
-                  <Image
-                   className=""
-                    src="/media/acc/sas.jpg"
-                    alt="Accreditation 2"
-                    width={80}
-                    height={80}
-                  />
-                  <Image
-                   className=""
-                    src="/media/acc/aiu.png"
-                    alt="Accreditation 3"
-                    width={80}
-                    height={80}
-                  />
-                  <Image
-                    src="/media/acc/aicte.png"
-                    alt="Accreditation 4"
-                    width={80}
-                    height={80}
-                  />
-               
-                </div>
+                ))}
               </div>
 
-                 <div className="membership mt-4">
-                <h6 className="text-white fw-bold">Member</h6>
-                <div className="d-flex flex-wrap align-items-center gap-3 mt-2">
-             
+              <h6 className="text-white fw-bold mt-4">Member</h6>
+              <div className="d-flex flex-wrap gap-3 mt-2">
+                {footer.members?.map((img, i) => (
                   <Image
-                   className=""
-                    src="/media/aacsb-logo.webp"
-                    alt="Accreditation 5"
-                    width={120}
+                    key={i}
+                    src={`${process.env.NEXT_PUBLIC_API_URL}${img}`}
+                    alt="Member"
+                    width={100}
                     height={80}
                   />
-                       <Image
-                   className=""
-                    src="/media/acc/ITU Acd Member Logo.jpg"
-                    alt="Accreditation 5"
-                    width={75}
-                    height={80}
-                  />
-                  <Image
-                   className=""
-                    src="/media/acc/Shastri Logo.png"
-                    alt="Accreditation 5"
-                    width={140}
-                    height={80}
-                  />
-                  
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -265,7 +202,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="container copyright text-center mt-4">
           <p className="text-light">
-            ©2026 Copyright{" "}
+            ©{new Date().getFullYear()} Copyright{" "}
             <strong className="text-warning">IMT Hyderabad.</strong> All Rights
             Reserved
           </p>
@@ -274,6 +211,5 @@ export default function Footer() {
     </>
   );
 }
-
 
 

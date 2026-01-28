@@ -1,16 +1,46 @@
-// components/ProgramsSection.jsx
-import Image from "next/image";
+"use client";
+
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-
 
 export default function ProgramsSection() {
-    useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
+  const [programs, setPrograms] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // Init AOS
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  // ✅ API call INSIDE this component
+  useEffect(() => {
+    async function fetchPrograms() {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/program-offered-admission`,
+          { cache: "no-store" }
+        );
+
+        if (!res.ok) throw new Error("Failed to fetch programs");
+
+        const data = await res.json();
+        setPrograms(data || []);
+      } catch (error) {
+        console.error("Programs fetch error:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchPrograms();
+  }, []);
+
+  if (loading || !programs.length) return null;
+
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
   return (
-    
     <section
       className="ttm-row programs-offered-section clearfix py-5"
       style={{ backgroundColor: "#0f265a" }}
@@ -29,97 +59,42 @@ export default function ProgramsSection() {
 
         {/* Programs Cards */}
         <div className="row g-4 justify-content-center">
-          {/* Program 1 */}
-          <div
-            className="col-lg-3 col-md-6"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div className="card h-100 shadow border-0 text-center program-card">
-              <img
-                src="/media/img/b.webp"
-                className="card-img-top"
-                alt="PGDM"
-              />
-              <div className="card-body">
-                <h5 className="card-title fw-bold text-dark">PGDM</h5>
-                <p className="card-text">
-                  Build strong foundations in management, strategy, and
-                  leadership across all business functions.
-                </p>
-              </div>
-            </div>
-          </div>
+          {programs.map((program, index) => {
+            const imageUrl = program.image.startsWith("http")
+              ? program.image
+              : `${API_URL}/${program.image}`;
 
-          {/* Program 2 */}
-          <div
-            className="col-lg-3 col-md-6"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div className="card h-100 shadow border-0 text-center program-card">
-              <img
-                src="/media/img/d.webp"
-                className="card-img-top"
-                alt="PGDM Finance"
-              />
-              <div className="card-body">
-                <h5 className="card-title fw-bold text-dark">PGDM (Finance)</h5>
-                <p className="card-text">
-                  Gain expertise in corporate finance, investment analysis, risk
-                  management, and financial planning.
-                </p>
-              </div>
-            </div>
-          </div>
+            return (
+              <div
+                key={program._id}
+                className="col-lg-3 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay={(index + 1) * 100}
+              >
+                <div className="card h-100 shadow border-0 text-center program-card">
+                  <img
+                    src={imageUrl}
+                    className="card-img-top"
+                    alt={program.title}
+                  />
 
-          {/* Program 3 */}
-          <div
-            className="col-lg-3 col-md-6"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div className="card h-100 shadow border-0 text-center program-card">
-              <img
-                src="/media/img/c.webp"
-                className="card-img-top"
-                alt="PGDM Marketing"
-              />
-              <div className="card-body">
-                <h5 className="card-title fw-bold text-dark">
-                  PGDM (Marketing)
-                </h5>
-                <p className="card-text">
-                  Master brand strategy, market research, digital marketing, and
-                  customer engagement techniques.
-                </p>
-              </div>
-            </div>
-          </div>
+                  <div className="card-body">
+                    <h5 className="card-title fw-bold text-dark">
+                      {program.title}
+                    </h5>
 
-          {/* Program 4 */}
-          <div
-            className="col-lg-3 col-md-6"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div className="card h-100 shadow border-0 text-center program-card">
-              <img
-                src="/media/img/a.webp"
-                className="card-img-top"
-                alt="PGDM Logistics & Supply Chain Management"
-              />
-              <div className="card-body">
-                <h5 className="card-title fw-bold text-dark">
-                  PGDM (Logistics & Supply Chain Management)
-                </h5>
-                <p className="card-text">
-                  Learn procurement, inventory control, and end-to-end supply
-                  chain optimization for seamless operations.
-                </p>
+                    {/* CMS HTML description */}
+                    <div
+                      className="card-text"
+                      dangerouslySetInnerHTML={{
+                        __html: program.description,
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
         {/* row end */}
       </div>

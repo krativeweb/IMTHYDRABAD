@@ -1,23 +1,23 @@
 "use client";
 
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
 
 export default function InitScripts() {
-  const pathname = usePathname(); // Detect route changes
-
   useEffect(() => {
-    const checkReady = setInterval(() => {
-      const $ = window.$;
-      if (window.jQuery && window.AOS && $?.fn?.owlCarousel) {
-        console.log("✅ Scripts loaded successfully");
+    // Run AFTER browser paint & hydration
+    const init = () => {
+      if (typeof window === "undefined") return;
 
-        // Initialize AOS
-        window.AOS.init();
-        window.AOS.refresh();
+      // ---- AOS ----
+      if (window.AOS) {
+        window.AOS.refreshHard();
+      }
 
-        // Initialize Owl Carousel if it exists and not already initialized
+      // ---- Owl Carousel ----
+      if (window.jQuery) {
+        const $ = window.jQuery;
         const $carousel = $("#researchCardCarousel");
+
         if ($carousel.length && !$carousel.hasClass("owl-loaded")) {
           $carousel.owlCarousel({
             loop: true,
@@ -31,13 +31,13 @@ export default function InitScripts() {
             },
           });
         }
-
-        clearInterval(checkReady);
       }
-    }, 300);
+    };
 
-    return () => clearInterval(checkReady);
-  }, [pathname]); // ✅ Add pathname as dependency
+    // Run once after mount
+    requestAnimationFrame(init);
+
+  }, []); // 🔥 RUN ONCE ONLY
 
   return null;
 }

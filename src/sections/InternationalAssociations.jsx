@@ -27,35 +27,29 @@ export default function InternationalAssociations() {
   );
 
   // --------------------------------------------------------------
-  // Fetch data from env + /int_association
+  // Fetch data (NEW API)
   // --------------------------------------------------------------
   useEffect(() => {
     const fetchLogos = async () => {
       try {
-        const base = process.env.NEXT_PUBLIC_BASE_URL;
-        if (!base)
-          throw new Error("NEXT_PUBLIC_BASE_URL is not defined in .env.local");
+        const base = process.env.NEXT_PUBLIC_API_URL;
+        if (!base) throw new Error("NEXT_PUBLIC_API_URL is not defined");
 
-        // Build full URL (remove trailing slash if present)
-        const url = `${
-          base.endsWith("/") ? base.slice(0, -1) : base
-        }/int_association`;
-        // console.log("Fetching international associations →", url);
+        const url = `${base}/api/international-association`;
 
         const { data } = await axios.get(url, { timeout: 8000 });
-        // console.log("API response →", data);
 
-        // Keep only non-deleted items
-        const active = data.filter((item) => item.is_del === 0);
-        setLogos(active);
+        if (data?.success && Array.isArray(data.data)) {
+          const active = data.data.filter((item) => item.isDeleted === false);
+          setLogos(active);
+        } else {
+          setLogos([]);
+        }
+
         setError(null);
       } catch (err) {
         console.error("InternationalAssociations error →", err);
-        const msg =
-          err.response && err.response.status === 404
-            ? "No associations found (404)"
-            : err.message || "Network error";
-        setError(msg);
+        setError(err.message || "Failed to load associations");
       } finally {
         setLoading(false);
       }
@@ -110,11 +104,11 @@ export default function InternationalAssociations() {
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
               {logos.map((logo) => (
-                <div key={logo.id} className="embla__slide px-2">
+                <div key={logo._id} className="embla__slide px-2">
                   <div className="item bg-white p-3 rounded d-flex align-items-center justify-content-center">
                     <div className="img-wrapper">
                       <Image
-                        src={logo.image}
+                        src={`${process.env.NEXT_PUBLIC_API_URL}/${logo.image}`}
                         alt={logo.title}
                         fill
                         sizes="(max-width: 768px) 80vw, (max-width: 1200px) 30vw, 200px"
@@ -130,12 +124,11 @@ export default function InternationalAssociations() {
         )}
       </div>
 
-      {/* ------------------------------------------------- CSS ------------------------------------------------- */}
+      {/* ------------------------------- CSS ------------------------------- */}
       <style jsx>{`
         .parallax-section {
           position: relative;
-          background: url("/media/hero.webp") center/cover
-            no-repeat;
+          background: url("/media/hero.webp") center/cover no-repeat;
         }
         .overlay {
           position: absolute;
@@ -157,7 +150,7 @@ export default function InternationalAssociations() {
           touch-action: pan-y;
         }
         .embla__slide {
-          flex: 0 0 25%; /* 4 per view */
+          flex: 0 0 25%;
           min-width: 0;
           padding: 0 8px;
           box-sizing: border-box;
@@ -186,7 +179,6 @@ export default function InternationalAssociations() {
           transform: translateY(-5px);
         }
 
-        /* RESPONSIVE */
         @media (max-width: 1024px) {
           .embla__slide {
             flex: 0 0 33.333%;

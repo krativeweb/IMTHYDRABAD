@@ -13,48 +13,69 @@ export default function FacultyProfile({ params }) {
   const [faculty, setFaculty] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [banner, setBanner] = useState(null);
+  const baseURL = process.env.NEXT_PUBLIC_API_URL;
 
+  useEffect(() => {
+    const fetchBanner = async () => {
+      try {
+        const res = await axios.get(`${baseURL}/api/faculty-details-seo`);
+        if (Array.isArray(res.data) && res.data.length > 0) {
+          setBanner(res.data[0]);
+        }
+      } catch (err) {
+        console.error("Error fetching faculty banner:", err);
+      }
+    };
+    fetchBanner();
+  }, [baseURL]);
   // -----------------------------------------------------------------
   // Fetch data
   // -----------------------------------------------------------------
   useEffect(() => {
+    if (!params?.slug) return;
+
     const fetchFaculty = async () => {
       try {
         const res = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/faculties/${params.id}`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/faculty/slug/${params.slug}`
         );
+
         const data = res.data;
 
         setFaculty({
-          name: `${data.prof_prefix || ""} ${data.prof_name || ""}`.trim(),
-          designation: data.prof_designation || "",
-          qualification: data.prof_qualification || "",
-          functionalArea: data.prof_functional_area || "",
-          dateOfJoining: new Date(data.joining_date).toLocaleDateString(
-            "en-GB",
-            {
-              day: "2-digit",
-              month: "long",
-              year: "numeric",
-            }
-          ),
-          email: data.prof_email || "",
-          phone:
-            `+91 ${data.prof_mobile?.replace(/(\d{5})(\d{5})/, "$1 $2")}` || "",
-          image: data.prof_image || "/placeholder.jpg",
-          qrCode: data.prof_qrcode || "/qr-placeholder.png",
-          brief: data.prof_description || "",
-          teachingResearchHtml: data.prof_teaching_interest || "", // RAW HTML
-          publicationsHtml: data.prof_publications || "", // RAW HTML
-          educationHtml: data.prof_education || "", // RAW HTML
-          awardsHtml: data.prof_awards || "", // RAW HTML
-          serviceHtml: data.prof_service || "", // RAW HTML
-          otherActivitiesHtml: data.prof_other_activity || "", // RAW HTML
+          name: `${data.academic_title || ""} ${data.name || ""}`.trim(),
+          designation: data.designation || "",
+          qualification: data.qualification || "",
+          functionalArea: data.functional_area || "",
+          dateOfJoining: data.date_of_joining
+            ? new Date(data.date_of_joining).toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "long",
+                year: "numeric",
+              })
+            : "",
+          email: data.email || "",
+          phone: data.phone
+            ? `+91 ${data.phone.replace(/(\d{5})(\d{5})/, "$1 $2")}`
+            : "",
+          image: data.faculty_image
+            ? `${process.env.NEXT_PUBLIC_API_URL}/${data.faculty_image}`
+            : `${process.env.NEXT_PUBLIC_API_URL}/uploads/no.webp`,
+
+          qrCode: data.qr_image
+            ? `${process.env.NEXT_PUBLIC_API_URL}/${data.qr_image}`
+            : `${process.env.NEXT_PUBLIC_API_URL}/uploads/no.webp`,
+
+          brief: data.brief || "",
+          educationHtml: data.education || "",
+          teachingResearchHtml: data.teaching_research_interests || "",
+          publicationsHtml: data.publications || "",
+          awardsHtml: data.awards_honors || "",
+          otherActivitiesHtml: data.other_professional_activities || "",
           social: {
-            linkedin: data.prof_linkedin || "",
-            website: data.prof_website || "",
-            scholar: data.prof_scholar_link || "",
-            researchGate: data.prof_research_gate || "",
+            linkedin: data.linkedin_url || "",
+            scholar: data.google_scholar_url || "",
           },
         });
       } catch (err) {
@@ -63,8 +84,9 @@ export default function FacultyProfile({ params }) {
         setLoading(false);
       }
     };
+
     fetchFaculty();
-  }, [params.id]);
+  }, [params.slug]);
 
   // -----------------------------------------------------------------
   // Initialise AOS (optional – keep if you already use it)
@@ -143,13 +165,7 @@ export default function FacultyProfile({ params }) {
           background-color: #ffc109;
         }
 
-        .faculty-hero {
-          background: url("/media/banners/carrier.webp") !important;
-          background-size: cover !important;
-          height: 60vh;
-          position: relative;
-            background-position: center !important;
-        }
+       
         .faculty-hero::before {
           content: "";
           position: absolute;
@@ -240,13 +256,27 @@ export default function FacultyProfile({ params }) {
 
       {/* ------------------------------------------------- Hero ------------------------------------------------- */}
       <section className="faculty-section">
-        <div className="faculty-hero text-center text-white py-5">
-          <h2 className="display-5 fw-bold mb-2" data-aos="fade-up">
-            Our Inspiring Faculties
-          </h2>
-          <p className="text-white" data-aos="fade-up" data-aos-delay="100">
-            Meet the mentors shaping the future
-          </p>
+        <div
+          className="faculty-hero text-center text-white py-5"
+          style={{
+            backgroundImage: banner?.banner_image
+              ? `url(${baseURL}${banner.banner_image})`
+              : undefined,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            position: "relative",
+            height: "60vh",
+          }}
+        >
+          {/* 🔥 BANNER TEXT FROM API (RAW HTML) */}
+          {banner?.banner_text && (
+            <div
+              dangerouslySetInnerHTML={{
+                __html: banner.banner_text,
+              }}
+            />
+          )}
         </div>
 
         {/* ------------------------------------------------- Breadcrumb ------------------------------------------------- */}
@@ -592,4 +622,3 @@ export default function FacultyProfile({ params }) {
     </>
   );
 }
-

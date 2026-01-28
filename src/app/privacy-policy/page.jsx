@@ -3,9 +3,8 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import DistinguishedClientsSection from "@/components/DistinguishedClient";
 
-// Dynamically import OwlCarousel to avoid SSR issues
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
 
 export default function PrivacyPolicySection() {
   // Initialize AOS
@@ -20,91 +19,11 @@ export default function PrivacyPolicySection() {
     }
   }, []);
 
-  // Owl Carousel options for placement alliances
-  const placementCarouselOptions = {
-    loop: true,
-    margin: 20,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: { items: 1 },
-      600: { items: 3 },
-      1000: { items: 4 },
-    },
-  };
+    const [emblaRef] = useEmblaCarousel(
+      { loop: true, align: "start", containScroll: "trimSnaps" },
+      [Autoplay({ delay: 2000, stopOnInteraction: false })]
+    );
 
-  // Placement alliances data
-  const placementAlliances = [
-  { src: "/media/placementimg/1.webp", alt: "Logo 1" },
-  { src: "/media/placementimg/2.webp", alt: "Logo 2" },
-  { src: "/media/placementimg/3.webp", alt: "Logo 3" },
-  { src: "/media/placementimg/4.webp", alt: "Logo 4" },
-  { src: "/media/placementimg/5.webp", alt: "Logo 5" },
-  { src: "/media/placementimg/6.webp", alt: "Logo 6" },
-  { src: "/media/placementimg/7.webp", alt: "Logo 7" },
-  { src: "/media/placementimg/8.webp", alt: "Logo 8" },
-  { src: "/media/placementimg/9.webp", alt: "Logo 9" },
-  { src: "/media/placementimg/10.webp", alt: "Logo 10" },
-  { src: "/media/placementimg/11.webp", alt: "Logo 11" },
-  { src: "/media/placementimg/12.webp", alt: "Logo 12" },
-  { src: "/media/placementimg/13.webp", alt: "Logo 13" },
-  { src: "/media/placementimg/14.webp", alt: "Logo 14" },
-  { src: "/media/placementimg/15.webp", alt: "Logo 15" },
-  { src: "/media/placementimg/16.webp", alt: "Logo 16" },
-  { src: "/media/placementimg/17.webp", alt: "Logo 17" },
-  { src: "/media/placementimg/18.webp", alt: "Logo 18" },
-  { src: "/media/placementimg/19.webp", alt: "Logo 19" },
-  { src: "/media/placementimg/20.webp", alt: "Logo 20" },
-  { src: "/media/placementimg/21.webp", alt: "Logo 21" },
-  { src: "/media/placementimg/22.webp", alt: "Logo 22" },
-  { src: "/media/placementimg/23.webp", alt: "Logo 23" },
-  { src: "/media/placementimg/24.webp", alt: "Logo 24" },
-  { src: "/media/placementimg/25.webp", alt: "Logo 25" },
-  { src: "/media/placementimg/26.webp", alt: "Logo 26" },
-  { src: "/media/placementimg/27.webp", alt: "Logo 27" },
-  { src: "/media/placementimg/28.webp", alt: "Logo 28" },
-  { src: "/media/placementimg/29.webp", alt: "Logo 29" },
-  { src: "/media/placementimg/30.webp", alt: "Logo 30" },
-  { src: "/media/placementimg/31.webp", alt: "Logo 31" },
-  { src: "/media/placementimg/32.webp", alt: "Logo 32" },
-  { src: "/media/placementimg/33.webp", alt: "Logo 33" },
-  { src: "/media/placementimg/34.webp", alt: "Logo 34" },
-  { src: "/media/placementimg/35.webp", alt: "Logo 35" },
-  { src: "/media/placementimg/36.webp", alt: "Logo 36" },
-  { src: "/media/placementimg/37.webp", alt: "Logo 37" },
-  { src: "/media/placementimg/38.webp", alt: "Logo 38" },
-  { src: "/media/placementimg/39.webp", alt: "Logo 39" },
-  { src: "/media/placementimg/40.webp", alt: "Logo 40" },
-  { src: "/media/placementimg/41.webp", alt: "Logo 41" },
-  { src: "/media/placementimg/42.webp", alt: "Logo 42" },
-  { src: "/media/placementimg/43.webp", alt: "Logo 43" },
-  { src: "/media/placementimg/44.webp", alt: "Logo 44" },
-  { src: "/media/placementimg/45.webp", alt: "Logo 45" },
-  { src: "/media/placementimg/46.webp", alt: "Logo 46" },
-  { src: "/media/placementimg/47.webp", alt: "Logo 47" },
-  { src: "/media/placementimg/48.webp", alt: "Logo 48" },
-  { src: "/media/placementimg/49.webp", alt: "Logo 49" },
-  { src: "/media/placementimg/50.webp", alt: "Logo 50" },
-  { src: "/media/placementimg/51.webp", alt: "Logo 51" },
-  { src: "/media/placementimg/52.webp", alt: "Logo 52" },
-  { src: "/media/placementimg/53.webp", alt: "Logo 53" },
-  { src: "/media/placementimg/54.webp", alt: "Logo 54" },
-  { src: "/media/placementimg/55.webp", alt: "Logo 55" },
-  { src: "/media/placementimg/56.webp", alt: "Logo 56" },
-  { src: "/media/placementimg/57.webp", alt: "Logo 57" },
-  { src: "/media/placementimg/58.webp", alt: "Logo 58" },
-  { src: "/media/placementimg/59.webp", alt: "Logo 59" },
-  { src: "/media/placementimg/60.webp", alt: "Logo 60" },
-  { src: "/media/placementimg/61.webp", alt: "Logo 61" },
-  { src: "/media/placementimg/62.webp", alt: "Logo 62" },
-  { src: "/media/placementimg/63.webp", alt: "Logo 63" },
-  { src: "/media/placementimg/64.webp", alt: "Logo 64" },
-  { src: "/media/placementimg/65.webp", alt: "Logo 65" },
-  { src: "/media/placementimg/66.webp", alt: "Logo 66" },
-  ];
 
   return (
     <>
@@ -401,26 +320,7 @@ Our privacy policy safeguards personal information with integrity, ensuring resp
       </section>
 
       {/* Placement Alliances Section */}
-      <section className="placement-alliances-section py-4" data-aos="fade-up" data-aos-duration="1000">
-        <div className="container text-center">
-          <h6 className="subtitle text-center text-warning" data-aos="fade-down" data-aos-delay="100">
-            Our Clients
-          </h6>
-          <h2 className="section-title mb-4" data-aos="zoom-in" data-aos-delay="200">
-            Our Distinguished Clients
-          </h2>
-          <p className="mb-5" data-aos="fade-up" data-aos-delay="300">
-            We are proud to be associated with top companies.
-          </p>
-          <OwlCarousel className="owl-theme" {...placementCarouselOptions}>
-            {placementAlliances.map((item, index) => (
-              <div key={index} className="item">
-                <img src={item.src} alt={item.alt} />
-              </div>
-            ))}
-          </OwlCarousel>
-        </div>
-      </section>
+    <DistinguishedClientsSection emblaRef={emblaRef} />
 
       {/* Contact Strip */}
       <section className="contact-strip py-3">

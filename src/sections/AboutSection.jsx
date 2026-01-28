@@ -1,11 +1,40 @@
 "use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import DOMPurify from "dompurify";
+
 export default function AboutSection() {
+  const [about, setAbout] = useState(null);
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+  useEffect(() => {
+    const fetchAbout = async () => {
+      try {
+        const res = await fetch(`${API_URL}/api/home-about`);
+        const data = await res.json();
+        setAbout(data);
+      } catch (error) {
+        console.error("Failed to fetch About data", error);
+      }
+    };
+
+    fetchAbout();
+  }, [API_URL]);
+
+  // 🔑 AOS FIX
+  useEffect(() => {
+    if (about && window.AOS) {
+      window.AOS.refreshHard();
+    }
+  }, [about]);
+
+  if (!about) return null;
+
   return (
     <section className="about-section py-4">
       <div className="container">
         <div className="row align-items-center">
-          {/* Left Content */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div
               className="about-content pe-lg-5"
@@ -13,23 +42,15 @@ export default function AboutSection() {
               data-aos-duration="1000"
             >
               <h6 className="subtitle text-warning">About Us</h6>
-              <h2 className="title">
-                Shaping Future Leaders Through Holistic Education
-              </h2>
-              <p style={{ textAlign: "justify" }}>
-                Institute of Management Technology, Hyderabad (IMT Hyderabad) is
-                a residential management institute established in 2011, situated
-                on a sprawling, verdant 30-acre campus just 15 minutes away from
-                Rajiv Gandhi International Airport.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                The institute offers rigorous and innovative 2-year PGDM
-                programs — along with executive variants — powered by
-                learner-centric pedagogy and a curriculum that aligns with
-                evolving business needs. Its mission is to nurture socially
-                responsible business leaders equipped to thrive in today’s
-                dynamic and interconnected world.
-              </p>
+              <h2 className="title">{about.title}</h2>
+
+              <div
+                style={{ textAlign: "justify" }}
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(about.description),
+                }}
+              />
+
               <Link
                 href="/about-imt-hyderabad"
                 className="btn btn-primary rounded-pill border border-dark mt-3"
@@ -41,17 +62,15 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="col-lg-6 text-end">
             <div
               className="about-img position-relative"
               data-aos="fade-left"
               data-aos-duration="1000"
             >
-              <div className="bg-shape"></div>
               <img
-                src="/media/img/a.webp"
-                alt="About Us"
+                src={`${API_URL}${about.image}`}
+                alt="About IMT Hyderabad"
                 className="img-fluid shadow-lg rounded-3"
               />
             </div>

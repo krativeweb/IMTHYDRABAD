@@ -14,8 +14,6 @@ import InternationalAssociations from "@/sections/InternationalAssociations";
 import CampusLifeGallery from "@/sections/CampusLifeGallery";
 import PlacementAlliances from "@/sections/PlacementAlliances";
 import ApplyButton from "@/components/ApplyButton";
-
-
 export default function Home() {
   return (
     <>
@@ -24,10 +22,12 @@ export default function Home() {
           margin-top: 41px !important;
         }
       `}</style>
-
       {/* Announcement Strip */}
       <AnnouncementStrip />
 
+      {/* Add body class for padding */}
+
+      {/* All Page Sections */}
       <VideoSection />
       <AboutSection />
       <USPSection />

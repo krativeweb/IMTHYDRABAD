@@ -1,5 +1,3 @@
-// Save this as: components/CasesArchive.jsx  (or inside your page)
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -11,8 +9,9 @@ export default function CasesArchive() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const journalYears = [
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
+  const journalYears = [
     "2025-26",
     "2024-25",
     "2023-24",
@@ -27,30 +26,28 @@ export default function CasesArchive() {
     "2014-15",
     "2013-14",
     "2012-13",
-
   ];
 
-  const sortedYears = [...journalYears].sort((a, b) => {
-    const aNum = parseInt(a.split("-")[0]);
-    const bNum = parseInt(b.split("-")[0]);
-    return bNum - aNum;
-  });
+  const sortedYears = [...journalYears].sort(
+    (a, b) => parseInt(b) - parseInt(a)
+  );
 
+  /* ---------------- FETCH CASES ---------------- */
   useEffect(() => {
     axios
-      .get("https://thekreativeweb.com/codes/imt_hydrabad/api/case_publication")
+      .get(`${API_URL}/api/research-cases-publication`)
       .then((res) => {
-        setData(res.data);
-        setLoading(false);
+        setData(res.data?.data || []);
       })
       .catch((err) => {
         console.error("Cases fetch error:", err);
-        setLoading(false);
-      });
-  }, []);
+      })
+      .finally(() => setLoading(false));
+  }, [API_URL]);
 
+  /* ---------------- GROUP BY YEAR ---------------- */
   const grouped = data.reduce((acc, item) => {
-    const year = item.res_year || "Unknown";
+    const year = item.academic_year || "Unknown";
     if (!acc[year]) acc[year] = [];
     acc[year].push(item);
     return acc;
@@ -66,17 +63,19 @@ export default function CasesArchive() {
         id="tab-cases"
         role="tabpanel"
       >
-        {/* SUB-TABS */}
+        {/* ===== YEAR SUB-TABS ===== */}
         <nav className="nav nav-pills flex-wrap gap-2 mb-4 justify-content-center mt-4">
           {sortedYears.map((year) => {
             const yearKey = year.split("-")[0];
             const isActive = year === activeYear;
+
             return (
               <Link
                 key={year}
                 href={`#sub-case-${yearKey}`}
-                className={`nav-link bg-light text-dark rounded-pill tab ${isActive ? "active" : ""
-                  }`}
+                className={`nav-link bg-light text-dark rounded-pill ${
+                  isActive ? "active" : ""
+                }`}
                 data-bs-toggle="pill"
                 role="tab"
               >
@@ -86,7 +85,7 @@ export default function CasesArchive() {
           })}
         </nav>
 
-        {/* SUB-TAB CONTENT */}
+        {/* ===== YEAR CONTENT ===== */}
         <div className="tab-content container-sm">
           {sortedYears.map((year) => {
             const yearKey = year.split("-")[0];
@@ -103,12 +102,7 @@ export default function CasesArchive() {
                 <div className="container bg-white p-4 rounded-4">
                   {loading ? (
                     <div className="text-center py-5">
-                      <div
-                        className="spinner-border text-warning"
-                        role="status"
-                      >
-                        <span className="visually-hidden">Loading...</span>
-                      </div>
+                      <div className="spinner-border text-warning" />
                     </div>
                   ) : cases.length === 0 ? (
                     <div className="text-center py-5 text-muted">
@@ -116,50 +110,51 @@ export default function CasesArchive() {
                     </div>
                   ) : (
                     cases.map((item) => (
-                      <div key={item.gen_id} className="card mb-3">
+                      <div key={item._id} className="card mb-3">
                         <div className="row g-0">
+                          {/* IMAGE */}
                           <div className="col-md-4 d-flex justify-content-center align-items-center">
-                            <img
-                              src={
-                                item.final_image
-
-                                  ? item.final_image
-                                  : ""
-                              }
-                              className="img-fluid rounded-start w-75"
-                              alt={item.res_title}
-                              style={{ height: 250 }}
-
-                            />
+                            {item.image && (
+                              <img
+                                src={`${API_URL}/${item.image}`}
+                                className="img-fluid rounded-start w-75"
+                                alt={item.title}
+                                style={{ height: 250, objectFit: "cover" }}
+                              />
+                            )}
                           </div>
+
+                          {/* CONTENT */}
                           <div className="col-md-8">
                             <div className="card-body">
-                              <p className="card-title">
-                                <strong>Name:</strong> {item.res_name}
+                              <p>
+                                <strong>Name:</strong> {item.name}
                               </p>
-                              <p className="card-text fs6">
-                                <strong>Title:</strong> {item.res_title}
+                              <p>
+                                <strong>Title:</strong> {item.title}
                               </p>
-                              <p className="card-text fs6">
-                                <strong>Authors:</strong> {item.res_authors}
+                              <p>
+                                <strong>Authors:</strong> {item.authors}
                               </p>
-                              {item.case_publisher && (
-                                <p className="card-text fs6">
-                                  <strong>Publisher:</strong>{" "}
-                                  {item.case_publisher}
+
+                              {item.publisher && (
+                                <p>
+                                  <strong>Publisher:</strong> {item.publisher}
                                 </p>
                               )}
-                              {item.case_reff_no && (
-                                <p className="card-text fs6">
+
+                              {item.reference && (
+                                <p>
                                   <strong>Reference No:</strong>{" "}
-                                  {item.case_reff_no}
+                                  {item.reference}
                                 </p>
                               )}
-                              {item.res_url && (
-                                <p className="card-text fs6">
+
+                              {item.case_url && (
+                                <p>
                                   <strong>URL:</strong>{" "}
                                   <a
-                                    href={item.res_url}
+                                    href={item.case_url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-primary text-decoration-underline"
@@ -172,33 +167,33 @@ export default function CasesArchive() {
                           </div>
                         </div>
 
-                        {/* ABSTRACT ACCORDION */}
-                        <div className="bg-light h-100 w-100 text-center py-2 rounded-4 fw-bold mb-3">
+                        {/* ABSTRACT */}
+                        <div className="bg-light text-center py-2 rounded-4 fw-bold mb-3">
                           <div
                             className="accordion"
-                            id={`accordion-case-${item.gen_id}`}
+                            id={`accordion-${item._id}`}
                           >
                             <div className="accordion-item">
                               <h2 className="accordion-header">
                                 <button
-                                  className="accordion-button collapsed bg-light fw-bold rounded-4"
+                                  className="accordion-button collapsed bg-light fw-bold"
                                   type="button"
                                   data-bs-toggle="collapse"
-                                  data-bs-target={`#collapse-case-${item.gen_id}`}
+                                  data-bs-target={`#collapse-${item._id}`}
                                 >
                                   ABSTRACT
                                 </button>
                               </h2>
                               <div
-                                id={`collapse-case-${item.gen_id}`}
+                                id={`collapse-${item._id}`}
                                 className="accordion-collapse collapse"
-                                data-bs-parent={`#accordion-case-${item.gen_id}`}
+                                data-bs-parent={`#accordion-${item._id}`}
                               >
                                 <div
                                   className="accordion-body text-start"
                                   dangerouslySetInnerHTML={{
-                                    __html: item.res_abstract
-                                      ? DOMPurify.sanitize(item.res_abstract)
+                                    __html: item.abstract
+                                      ? DOMPurify.sanitize(item.abstract)
                                       : "<p>No abstract available.</p>",
                                   }}
                                 />
@@ -218,4 +213,3 @@ export default function CasesArchive() {
     </div>
   );
 }
-

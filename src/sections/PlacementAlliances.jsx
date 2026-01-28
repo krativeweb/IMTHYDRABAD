@@ -1,12 +1,23 @@
 // src/sections/PlacementAlliances.jsx
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import axios from "axios";
 
 export default function PlacementAlliances() {
+  // --------------------------------------------------------------
+  // State
+  // --------------------------------------------------------------
+  const [logos, setLogos] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // --------------------------------------------------------------
   // Embla Carousel Setup
+  // --------------------------------------------------------------
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
@@ -16,74 +27,37 @@ export default function PlacementAlliances() {
     [Autoplay({ delay: 2000, stopOnInteraction: false })]
   );
 
-  const logos = [
-  { src: "/media/placementimg/1.webp", alt: "Logo 1" },
-  { src: "/media/placementimg/2.webp", alt: "Logo 2" },
-  { src: "/media/placementimg/3.webp", alt: "Logo 3" },
-  { src: "/media/placementimg/4.webp", alt: "Logo 4" },
-  { src: "/media/placementimg/5.webp", alt: "Logo 5" },
-  { src: "/media/placementimg/6.webp", alt: "Logo 6" },
-  { src: "/media/placementimg/7.webp", alt: "Logo 7" },
-  { src: "/media/placementimg/8.webp", alt: "Logo 8" },
-  { src: "/media/placementimg/9.webp", alt: "Logo 9" },
-  { src: "/media/placementimg/10.webp", alt: "Logo 10" },
-  { src: "/media/placementimg/11.webp", alt: "Logo 11" },
-  { src: "/media/placementimg/12.webp", alt: "Logo 12" },
-  { src: "/media/placementimg/13.webp", alt: "Logo 13" },
-  { src: "/media/placementimg/14.webp", alt: "Logo 14" },
-  { src: "/media/placementimg/15.webp", alt: "Logo 15" },
-  { src: "/media/placementimg/16.webp", alt: "Logo 16" },
-  { src: "/media/placementimg/17.webp", alt: "Logo 17" },
-  { src: "/media/placementimg/18.webp", alt: "Logo 18" },
-  { src: "/media/placementimg/19.webp", alt: "Logo 19" },
-  { src: "/media/placementimg/20.webp", alt: "Logo 20" },
-  { src: "/media/placementimg/21.webp", alt: "Logo 21" },
-  { src: "/media/placementimg/22.webp", alt: "Logo 22" },
-  { src: "/media/placementimg/23.webp", alt: "Logo 23" },
-  { src: "/media/placementimg/24.webp", alt: "Logo 24" },
-  { src: "/media/placementimg/25.webp", alt: "Logo 25" },
-  { src: "/media/placementimg/26.webp", alt: "Logo 26" },
-  { src: "/media/placementimg/27.webp", alt: "Logo 27" },
-  { src: "/media/placementimg/28.webp", alt: "Logo 28" },
-  { src: "/media/placementimg/29.webp", alt: "Logo 29" },
-  { src: "/media/placementimg/30.webp", alt: "Logo 30" },
-  { src: "/media/placementimg/31.webp", alt: "Logo 31" },
-  { src: "/media/placementimg/32.webp", alt: "Logo 32" },
-  { src: "/media/placementimg/33.webp", alt: "Logo 33" },
-  { src: "/media/placementimg/34.webp", alt: "Logo 34" },
-  { src: "/media/placementimg/35.webp", alt: "Logo 35" },
-  { src: "/media/placementimg/36.webp", alt: "Logo 36" },
-  { src: "/media/placementimg/37.webp", alt: "Logo 37" },
-  { src: "/media/placementimg/38.webp", alt: "Logo 38" },
-  { src: "/media/placementimg/39.webp", alt: "Logo 39" },
-  { src: "/media/placementimg/40.webp", alt: "Logo 40" },
-  { src: "/media/placementimg/41.webp", alt: "Logo 41" },
-  { src: "/media/placementimg/42.webp", alt: "Logo 42" },
-  { src: "/media/placementimg/43.webp", alt: "Logo 43" },
-  { src: "/media/placementimg/44.webp", alt: "Logo 44" },
-  { src: "/media/placementimg/45.webp", alt: "Logo 45" },
-  { src: "/media/placementimg/46.webp", alt: "Logo 46" },
-  { src: "/media/placementimg/47.webp", alt: "Logo 47" },
-  { src: "/media/placementimg/48.webp", alt: "Logo 48" },
-  { src: "/media/placementimg/49.webp", alt: "Logo 49" },
-  { src: "/media/placementimg/50.webp", alt: "Logo 50" },
-  { src: "/media/placementimg/51.webp", alt: "Logo 51" },
-  { src: "/media/placementimg/52.webp", alt: "Logo 52" },
-  { src: "/media/placementimg/53.webp", alt: "Logo 53" },
-  { src: "/media/placementimg/54.webp", alt: "Logo 54" },
-  { src: "/media/placementimg/55.webp", alt: "Logo 55" },
-  { src: "/media/placementimg/56.webp", alt: "Logo 56" },
-  { src: "/media/placementimg/57.webp", alt: "Logo 57" },
-  { src: "/media/placementimg/58.webp", alt: "Logo 58" },
-  { src: "/media/placementimg/59.webp", alt: "Logo 59" },
-  { src: "/media/placementimg/60.webp", alt: "Logo 60" },
-  { src: "/media/placementimg/61.webp", alt: "Logo 61" },
-  { src: "/media/placementimg/62.webp", alt: "Logo 62" },
-  { src: "/media/placementimg/63.webp", alt: "Logo 63" },
-  { src: "/media/placementimg/64.webp", alt: "Logo 64" },
-  { src: "/media/placementimg/65.webp", alt: "Logo 65" },
-  { src: "/media/placementimg/66.webp", alt: "Logo 66" },
-];
+  // --------------------------------------------------------------
+  // Fetch placement alliances (NEW API)
+  // --------------------------------------------------------------
+  useEffect(() => {
+    const fetchLogos = async () => {
+      try {
+        const base = process.env.NEXT_PUBLIC_API_URL;
+        if (!base) throw new Error("NEXT_PUBLIC_API_URL is not defined");
+
+        const { data } = await axios.get(`${base}/api/placement-alliances`, {
+          timeout: 8000,
+        });
+
+        if (data?.success && Array.isArray(data.data)) {
+          const active = data.data.filter((item) => item.isDeleted === false);
+          setLogos(active);
+        } else {
+          setLogos([]);
+        }
+
+        setError(null);
+      } catch (err) {
+        console.error("PlacementAlliances error →", err);
+        setError("Failed to load placement alliances");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchLogos();
+  }, []);
 
   return (
     <section className="py-5 ">
@@ -95,29 +69,45 @@ export default function PlacementAlliances() {
           placements.
         </p>
 
-        {/* EMBLA CAROUSEL */}
-        <div className="embla" ref={emblaRef}>
-          <div className="embla__container">
-            {logos.map((logo, i) => (
-              <div key={i} className="embla__slide">
-                <div className="logo-box">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={140}
-                    height={80}
-                    style={{
-                      objectFit: "contain",
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    priority={i < 3}
-                  />
-                </div>
-              </div>
-            ))}
+        {/* ---------- Loading ---------- */}
+        {loading && (
+          <div className="d-flex justify-content-center align-items-center my-4">
+            <div className="spinner-border text-warning" role="status">
+              <span className="visually-hidden">Loading…</span>
+            </div>
           </div>
-        </div>
+        )}
+
+        {/* ---------- Error ---------- */}
+        {error && !loading && (
+          <div className="alert alert-danger d-inline-block">{error}</div>
+        )}
+
+        {/* ---------- Carousel ---------- */}
+        {!loading && !error && logos.length > 0 && (
+          <div className="embla" ref={emblaRef}>
+            <div className="embla__container">
+              {logos.map((logo, i) => (
+                <div key={logo._id} className="embla__slide">
+                  <div className="logo-box">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_API_URL}/${logo.image}`}
+                      alt={logo.title}
+                      width={140}
+                      height={80}
+                      style={{
+                        objectFit: "contain",
+                        maxWidth: "100%",
+                        height: "auto",
+                      }}
+                      priority={i < 3}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       <style jsx>{`
@@ -130,7 +120,7 @@ export default function PlacementAlliances() {
           touch-action: pan-y;
         }
         .embla__slide {
-          flex: 0 0 25%; /* 4 slides on desktop */
+          flex: 0 0 25%;
           min-width: 0;
           padding: 0 8px;
           box-sizing: border-box;
@@ -151,30 +141,29 @@ export default function PlacementAlliances() {
           transform: translateY(-5px);
         }
 
-        /* RESPONSIVE */
         @media (max-width: 1400px) {
           .embla__slide {
             flex: 0 0 25%;
-          } /* 4 */
+          }
         }
         @media (max-width: 1200px) {
           .embla__slide {
             flex: 0 0 33.333%;
-          } /* 3 */
+          }
         }
         @media (max-width: 992px) {
           .embla__slide {
             flex: 0 0 33.333%;
-          } /* 3 */
+          }
         }
         @media (max-width: 768px) {
           .embla__slide {
             flex: 0 0 50%;
-          } /* 2 */
+          }
         }
         @media (max-width: 576px) {
           .embla__slide {
-            flex: 0 0 100%; /* 1 slide */
+            flex: 0 0 100%;
             padding: 0 12px;
           }
           .logo-box {

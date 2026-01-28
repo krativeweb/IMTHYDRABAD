@@ -3,7 +3,7 @@ import PgdmCourseClient from "@/seo-page/PgdmCourse";
 
 // 🟢 Apply faculty page SEO for ALL faculty profiles
 export async function generateMetadata() {
-  return getMetadata("/pgdm-course-in-hyderabad");
+  return getMetadata("/pgdm-course-in-hyderabad", "/api/about-pgdm");
 }
 
 export default function PgdmCourse() {

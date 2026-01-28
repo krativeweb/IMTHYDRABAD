@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "thekreativeweb.com",
+        hostname: "imt-hyderabad-api.salite.space",
         port: "",
         pathname: "/**",
       },

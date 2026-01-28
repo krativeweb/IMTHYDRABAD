@@ -1,0 +1,273 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import DOMPurify from "dompurify";
+
+export default function FinancialStatements() {
+  const [data, setData] = useState(null);
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+  /* ======================
+     AOS INIT
+  ====================== */
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    });
+  }, []);
+
+  /* ======================
+     FETCH PAGE DATA
+  ====================== */
+  useEffect(() => {
+    if (!API_URL) return;
+
+    const fetchData = async () => {
+      try {
+        const res = await fetch(
+          `${API_URL}/api/mandatory/slug/financial-statements`
+        );
+        const json = await res.json();
+        setData(json?.data || json);
+      } catch (err) {
+        console.error("Failed to load Financial Statements", err);
+      }
+    };
+
+    fetchData();
+  }, [API_URL]);
+
+  if (!data) return null;
+
+  return (
+    <>
+      {/* ======================
+          HERO (FROM API)
+      ====================== */}
+      <section className="faculty-section">
+        <div
+          className="faculty-hero text-center text-white py-5"
+          data-aos="fade-up"
+          style={{
+            backgroundImage: `url(${API_URL}${data.banner_image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "60vh",
+            position: "relative",
+          }}
+        >
+          <div
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(data.banner_text),
+            }}
+          />
+        </div>
+
+        {/* ======================
+            BREADCRUMB (STATIC)
+        ====================== */}
+        <div
+          className="breadcrumb p-4"
+          style={{ backgroundColor: "rgb(22, 57, 119)" }}
+        >
+          <div className="container-fluid">
+            <nav aria-label="breadcrumb">
+              <ol className="breadcrumb bg-transparent p-0 m-0">
+                <li className="breadcrumb-item">
+                  <Link
+                    href="/"
+                    className="text-white fw-bold"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="breadcrumb-item active text-warning fw-bold">
+                  Financial Statements
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      {/* ======================
+          TABS SECTION
+      ====================== */}
+      <section className="py-5">
+        <div className="container">
+          {/* 🔒 STATIC TAB BUTTONS (YOU ASKED FOR THIS) */}
+          <ul
+            className="nav nav-pills justify-content-center mb-4"
+            id="financialTab"
+            role="tablist"
+            data-aos="zoom-in"
+          >
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link active fw-semibold"
+                id="income-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#income"
+                type="button"
+                role="tab"
+                aria-controls="income"
+                aria-selected="true"
+              >
+                Income &amp; Expenditure
+              </button>
+            </li>
+
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link fw-semibold"
+                id="balance-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#balance"
+                type="button"
+                role="tab"
+                aria-controls="balance"
+                aria-selected="false"
+              >
+                Balance Sheet
+              </button>
+            </li>
+          </ul>
+
+          {/* ======================
+              TAB CONTENT (FROM API)
+          ====================== */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: DOMPurify.sanitize(data.page_content),
+            }}
+          />
+        </div>
+      </section>
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+        .faculty-hero {
+          background: url("/media/banners/aboutus.webp") center/cover no-repeat;
+          position: relative;
+          height: 60vh;
+            background-position: center !important;
+        }
+        .faculty-hero::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.3);
+        }
+        .faculty-hero h2 {
+          margin-top: 150px;
+        }
+        .nav-pills .nav-link.active {
+          background: #ffc107 !important;
+          color: #000 !important;
+        }
+        .table thead th {
+          background-color: #08317a !important;
+          color: #fff;
+          font-weight: 600;
+        }
+        .table a.btn {
+          background-color: #ffc107;
+          color: #000;
+          border: none;
+        }
+        .table a.btn:hover {
+          background-color: #e0a800;
+          color: #fff;
+        }
+
+        .faculty-hero {
+          background: url("/media/banners/aboutus.webp") center/cover no-repeat;
+          position: relative;
+          height: 60vh;
+        }
+        .faculty-hero::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.3);
+        }
+        .faculty-hero h2,
+        .faculty-hero p {
+          position: relative;
+          z-index: 1;
+        }
+        .faculty-hero h2 {
+          margin-top: 150px;
+        }
+        .faculty-card {
+          background: #f8f9fa;
+          border: none;
+          border-radius: 1.5rem;
+        }
+        .faculty-img {
+          border-radius: 1.2rem;
+          transition: transform 0.4s ease;
+        }
+        .faculty-img:hover {
+          transform: scale(1.03);
+        }
+        .social-icon {
+          display: inline-flex;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          background: #ffc107;
+          color: #ffffffff;
+          transition: all 0.3s;
+        }
+        .social-icon:hover {
+          background: #5390d9;
+          color: #ffffffff;
+          transform: translateY(-3px);
+        }
+        .faculty-tabs .nav-pills .nav-link.active {
+          background: #ffc107 !important;
+          color: #000000ff !important;
+        }
+        .small-placeholder::placeholder {
+          font-size: 0.85rem;
+        }
+        .nav-pills .nav-link.active,
+        .nav-pills .show > .nav-link {
+          border-radius: 50rem !important;
+          background: #ffc107 !important;
+          color: #333 !important;
+          transition: all 0.3s !important;
+        }
+        .nav-pills .nav-link {
+          border-radius: var(--bs-nav-pills-border-radius);
+          background-color: #e9ecef;
+          border-radius: 30px;
+          color: #333;
+        }
+          /* Gap between tab pills */
+#financialTab {
+  gap: 12px; /* adjust as needed: 10px–20px */
+}
+
+/* Optional: mobile pe thoda aur gap */
+@media (max-width: 768px) {
+  #financialTab {
+    gap: 10px;
+  }
+}
+
+    `,
+        }}
+      />
+    </>
+  );
+}

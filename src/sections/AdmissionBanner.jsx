@@ -1,67 +1,65 @@
 "use client";
 
 import { useEffect } from "react";
-import Script from "next/script";
 
-export default function BannerSlider() {
- useEffect(() => {
-   // Load CSS
-   if (!document.getElementById("__formWidgetCss")) {
-     const css = document.createElement("link");
-     css.id = "__formWidgetCss";
-     css.rel = "stylesheet";
-     css.href =
-       "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/css/stylesheet.min.css";
-     document.head.appendChild(css);
-   }
- 
-   // Load JS
-   const script = document.createElement("script");
-   script.src =
-     "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/js/eeFormWidget.min.js";
-   script.async = true;
+export default function BannerSlider({ bannerData }) {
+  useEffect(() => {
+    if (!document.getElementById("__formWidgetCss")) {
+      const css = document.createElement("link");
+      css.id = "__formWidgetCss";
+      css.rel = "stylesheet";
+      css.href =
+        "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/css/stylesheet.min.css";
+      document.head.appendChild(css);
+    }
 
-   script.onload = async () => {
-     console.log("Widget script loaded");
+    const script = document.createElement("script");
+    script.src =
+      "https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/ee-form-widget/js/eeFormWidget.min.js";
+    script.async = true;
 
-     if (typeof eeFormWidget !== "undefined") {
-       const widget = new eeFormWidget();
-       await widget.init("imthyderabad", "form-1", "ee-form-1");
-     } else {
-       console.error("eeFormWidget not found!");
-     }
-   };
+    script.onload = async () => {
+      if (typeof eeFormWidget !== "undefined") {
+        const widget = new eeFormWidget();
+        await widget.init("imthyderabad", "form-1", "ee-form-1");
+      }
+    };
 
-   document.head.appendChild(script);
+    document.head.appendChild(script);
+  }, []);
 
-   return () => {
-     // Cleanup if needed
-   };
- }, []);
+  if (!bannerData) return null;
+
+  const { banner_image, banner_text } = bannerData;
+
+  // ✅ ENV BASE URL
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+  // ✅ Final image URL
+  const bannerImageUrl = banner_image
+    ? `${API_URL}${banner_image}`
+    : "/admission/images/hero.jpg"; // fallback
 
   return (
     <div className="banner-slider slick-arrows-style1" id="admission">
       <div className="banner-slide">
+        {/* ✅ ENV-based Dynamic Banner Image */}
         <img
-          src="/admission/images/hero.jpg"
-          alt=""
-          width="100%"
-          height={966}
+          src={bannerImageUrl}
+          alt="IMT Hyderabad Admission Banner"
           className="img-fluid"
-          style={{ objectFit: "cover", height: "140vh" }}
+          style={{ objectFit: "cover", height: "140vh", width: "100%" }}
         />
 
+        {/* Overlay */}
         <div
           style={{
             position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
+            inset: 0,
             background: "rgba(1, 3, 28, 0.53)",
             zIndex: 0,
           }}
-        ></div>
+        />
 
         <div className="banner-caption">
           <div className="info mb-4 custom-margin">
@@ -78,30 +76,18 @@ export default function BannerSlider() {
 
             <div className="container">
               <div className="row align-items-center">
-                {/* Left Column */}
-                <div className="col-lg-8 col-md-12 d-block">
-                  <div className="banner-text_1 ttm-textcolor-white text-start res-1199-mt-0 pt-4">
-                    <div className="mb-15">
-                      <h1
-                        className="slideInUp animated"
-                        style={{ fontSize: "3rem" }}
-                      >
-                        <span className="text-warning">
-                          IMT Hyderabad Admissions 2026
-                        </span>
-                      </h1>
-                      <p style={{ fontSize: "1.6rem" }}>
-                        Applications Open for Two-Year PGDM Program
-                      </p>
-                     
-                    </div>
+                {/* LEFT CONTENT */}
+                <div className="col-lg-8 col-md-12">
+                  <div className="banner-text_1 ttm-textcolor-white text-start pt-4">
+                    <div
+                      dangerouslySetInnerHTML={{ __html: banner_text }}
+                    />
                   </div>
                 </div>
 
-                {/* Right Column: Form */}
+                {/* RIGHT FORM */}
                 <div className="col-lg-4 col-md-12" id="form">
                   <div className="bg-white rounded shadow">
-                    {/* <script src="https://eequeuestorage.blob.core.windows.net/staticfiles/imthyderabad/ee-form-widget/form-1/widget.js"></script> */}
                     <div id="ee-form-1"></div>
                   </div>
                 </div>
