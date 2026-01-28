@@ -24,7 +24,7 @@ export async function getMetadata(pathname, apiPath = null) {
       const data = await res.json();
       const seo = Array.isArray(data) ? data[0] : data;
 
-      // console.log("SEO DATA RECEIVED:", seo);
+      // console.log("SEO DATA RECEIVED:", seo); 
 
       if (seo) {
         return {
