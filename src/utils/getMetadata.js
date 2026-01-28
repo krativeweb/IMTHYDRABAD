@@ -21,7 +21,7 @@ export async function getMetadata(pathname, apiPath = null) {
         throw new Error(`SEO API failed: ${res.status} ${text}`);
       }
 
-      const data = await res.json();
+      const data = await res.json();  
       const seo = Array.isArray(data) ? data[0] : data;
 
       // console.log("SEO DATA RECEIVED:", seo); 
