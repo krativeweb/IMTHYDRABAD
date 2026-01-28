@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import DOMPurify from "dompurify";
-
+ 
 export default function AboutSection() {
   const [about, setAbout] = useState(null);
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
