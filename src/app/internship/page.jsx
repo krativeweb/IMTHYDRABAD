@@ -709,7 +709,7 @@ const SummerInternships = () => {
               </h4>
               <p className="inv-txt">
                 <Link
-                  href="https://drive.google.com/file/d/19gMWjbmz6xe69NqulcQVu0trDjssKJw5/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1OaObJn3rOucYi5Yib3ojuiLzY42-O4my/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
