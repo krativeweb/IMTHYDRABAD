@@ -643,7 +643,7 @@ export default function PlacementsSection() {
             Placement Brochure
           </a>
           <a
-            href="https://drive.google.com/file/d/19gMWjbmz6xe69NqulcQVu0trDjssKJw5/view"
+            href="https://drive.google.com/file/d/1OaObJn3rOucYi5Yib3ojuiLzY42-O4my/view?usp=sharing"
             target="_blank"
             className="sticky-btn"
           >
