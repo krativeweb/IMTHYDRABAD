@@ -19,20 +19,63 @@ export default function PlacementDataSection() {
   // Placement data for each tab
   const placementData = {
     pgdm: [
-      { year: "2020 - 22", link: "https://drive.google.com/file/d/14pKySbYLBdsHNtsopLVfbB67yUkbYQtL/view" },
-      { year: "2019 - 21", link: "https://drive.google.com/file/d/1akoh7Ml_OTY6e7kIRLpxjDK3FDRJ4dQ5/view" },
-      { year: "2018 - 20", link: "https://drive.google.com/file/d/19YY8GmXPbVxgKUVeu5tYxQHOUB2x5ybL/view" },
+      {
+        year: "2023 - 25",
+        link: "https://drive.google.com/file/d/1H7YBWB80qbv1oUWy3OIdMIzzKWXmrDKT/view?usp=sharing",
+      },
+      {
+        year: "2022 - 24",
+        link: "https://drive.google.com/file/d/1aSxe0RZl3TAmz2KuKFmsMT-KWgZkXQmS/view?usp=sharing",
+      },
+      {
+        year: "2021 - 23",
+        link: "https://drive.google.com/file/d/1qNrQVvwFfb19Ytdc8ZFFfoD2uWaBevX8/view?usp=sharing",
+      },
+
+      {
+        year: "2020 - 22",
+        link: "https://drive.google.com/file/d/14pKySbYLBdsHNtsopLVfbB67yUkbYQtL/view",
+      },
+      {
+        year: "2019 - 21",
+        link: "https://drive.google.com/file/d/1akoh7Ml_OTY6e7kIRLpxjDK3FDRJ4dQ5/view",
+      },
+      {
+        year: "2018 - 20",
+        link: "https://drive.google.com/file/d/19YY8GmXPbVxgKUVeu5tYxQHOUB2x5ybL/view",
+      },
     ],
     "pgdm-finance": [
-      { year: "2020 - 22", link: "https://drive.google.com/file/d/1xsIWjOCibHq0aeZMgPqcb1R0a0BuD0w_/view" },
-      { year: "2019 - 21", link: "http://drive.google.com/file/d/1zu9dEIxxtQhjFd_6r8GzThDEiSLnHe__/view" },
-      { year: "2018 - 20", link: "https://drive.google.com/file/d/1rZOzFUvlANWo7rJHiTI1l5rH2-8J2fdH/view" },
+      {
+        year: "2020 - 22",
+        link: "https://drive.google.com/file/d/1xsIWjOCibHq0aeZMgPqcb1R0a0BuD0w_/view",
+      },
+      {
+        year: "2019 - 21",
+        link: "http://drive.google.com/file/d/1zu9dEIxxtQhjFd_6r8GzThDEiSLnHe__/view",
+      },
+      {
+        year: "2018 - 20",
+        link: "https://drive.google.com/file/d/1rZOzFUvlANWo7rJHiTI1l5rH2-8J2fdH/view",
+      },
     ],
     "pgdm-marketing": [
-      { year: "2021 - 23", link: "https://drive.google.com/file/d/1XV3vkjC7An0j0AT2Mf4_Ov7xMd-M8hdd/view" },
-      { year: "2020 - 22", link: "https://drive.google.com/file/d/180qm15y4YS_vPpLIoqn54ksHWvvpsy_q/view" },
-      { year: "2019 - 21", link: "https://drive.google.com/file/d/1j8SVJ3gEw3bQx1Fju7X0V_9-69grxZ8f/view" },
-      { year: "2018 - 20", link: "https://drive.google.com/file/d/1Pn3AlbjbhlPhkCrGl_Y2YMcwkjDKgpY9/view" },
+      {
+        year: "2021 - 23",
+        link: "https://drive.google.com/file/d/1XV3vkjC7An0j0AT2Mf4_Ov7xMd-M8hdd/view",
+      },
+      {
+        year: "2020 - 22",
+        link: "https://drive.google.com/file/d/180qm15y4YS_vPpLIoqn54ksHWvvpsy_q/view",
+      },
+      {
+        year: "2019 - 21",
+        link: "https://drive.google.com/file/d/1j8SVJ3gEw3bQx1Fju7X0V_9-69grxZ8f/view",
+      },
+      {
+        year: "2018 - 20",
+        link: "https://drive.google.com/file/d/1Pn3AlbjbhlPhkCrGl_Y2YMcwkjDKgpY9/view",
+      },
     ],
   };
 
@@ -49,9 +92,9 @@ export default function PlacementDataSection() {
       </noscript>
 
       {/* Styles */}
-<style
-  dangerouslySetInnerHTML={{
-    __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
       /* Faculty Hero */
       .faculty-hero {
         background: url("/media/banners/placement.webp") center/cover no-repeat;
@@ -133,16 +176,19 @@ export default function PlacementDataSection() {
         background-color: rgb(22, 57, 119);
       }
     `,
-  }}
-/>
-
+        }}
+      />
 
       {/* Top Banner */}
-      <div className="faculty-hero text-center text-white py-5" data-aos="fade-up">
+      <div
+        className="faculty-hero text-center text-white py-5"
+        data-aos="fade-up"
+      >
         <h2 className="display-5 fw-bold mb-2">Placement Data</h2>
         <p className="text-white">
           Proven outcomes through real-world success. <br />
-Our placement record reflects strong industry trust, competitive performance, and a network of distinguished recruiters.
+          Our placement record reflects strong industry trust, competitive
+          performance, and a network of distinguished recruiters.
         </p>
       </div>
 
@@ -152,11 +198,18 @@ Our placement record reflects strong industry trust, competitive performance, an
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb bg-transparent p-0 m-0">
               <li className="breadcrumb-item">
-                <Link href="/" className="text-white fw-bold" style={{ textDecoration: "none" }}>
+                <Link
+                  href="/"
+                  className="text-white fw-bold"
+                  style={{ textDecoration: "none" }}
+                >
                   Home
                 </Link>
               </li>
-              <li className="breadcrumb-item active text-warning fw-bold" aria-current="page">
+              <li
+                className="breadcrumb-item active text-warning fw-bold"
+                aria-current="page"
+              >
                 Placement Data
               </li>
             </ol>
@@ -168,7 +221,11 @@ Our placement record reflects strong industry trust, competitive performance, an
       <section className="aiu-certificates py-5 faculty-tabs model">
         <div className="container">
           {/* Tabs Navigation */}
-          <ul className="nav nav-pills justify-content-center mb-4" id="aiuTab" role="tablist">
+          <ul
+            className="nav nav-pills justify-content-center mb-4"
+            id="aiuTab"
+            role="tablist"
+          >
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link active fw-semibold"
@@ -216,9 +273,16 @@ Our placement record reflects strong industry trust, competitive performance, an
           {/* Tabs Content */}
           <div className="tab-content" id="aiuTabContent">
             {/* PGDM Tab */}
-            <div className="tab-pane fade show active" id="pgdm" role="tabpanel" aria-labelledby="pgdm-tab">
+            <div
+              className="tab-pane fade show active"
+              id="pgdm"
+              role="tabpanel"
+              aria-labelledby="pgdm-tab"
+            >
               <div className="card shadow-sm p-4">
-                <h4 className="fw-bold text-warning mb-3">PGDM - Placement Data</h4>
+                <h4 className="fw-bold text-warning mb-3">
+                  PGDM - Placement Data
+                </h4>
                 <div className="table-responsive mt-4">
                   <table className="table table-bordered align-middle text-center">
                     <thead className="table-warning">
@@ -232,7 +296,10 @@ Our placement record reflects strong industry trust, competitive performance, an
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-sm btn-warning rounded-pill fw-semibold">
+                            <Link
+                              href={item.link}
+                              className="btn btn-sm btn-warning rounded-pill fw-semibold"
+                            >
                               Click Here
                             </Link>
                           </td>
@@ -245,9 +312,16 @@ Our placement record reflects strong industry trust, competitive performance, an
             </div>
 
             {/* PGDM Finance Tab */}
-            <div className="tab-pane fade" id="pgdm-finance" role="tabpanel" aria-labelledby="pgdm-finance-tab">
+            <div
+              className="tab-pane fade"
+              id="pgdm-finance"
+              role="tabpanel"
+              aria-labelledby="pgdm-finance-tab"
+            >
               <div className="card shadow-sm p-4">
-                <h4 className="fw-bold text-warning mb-3">PGDM - Finance Placement Data</h4>
+                <h4 className="fw-bold text-warning mb-3">
+                  PGDM - Finance Placement Data
+                </h4>
                 <div className="table-responsive mt-4">
                   <table className="table table-bordered align-middle text-center">
                     <thead className="table-primary">
@@ -261,7 +335,10 @@ Our placement record reflects strong industry trust, competitive performance, an
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-primary rounded-pill btn-sm">
+                            <Link
+                              href={item.link}
+                              className="btn btn-primary rounded-pill btn-sm"
+                            >
                               Click Here
                             </Link>
                           </td>
@@ -274,9 +351,16 @@ Our placement record reflects strong industry trust, competitive performance, an
             </div>
 
             {/* PGDM Marketing Tab */}
-            <div className="tab-pane fade" id="pgdm-marketing" role="tabpanel" aria-labelledby="pgdm-marketing-tab">
+            <div
+              className="tab-pane fade"
+              id="pgdm-marketing"
+              role="tabpanel"
+              aria-labelledby="pgdm-marketing-tab"
+            >
               <div className="card shadow-sm p-4">
-                <h4 className="fw-bold text-warning mb-3">PGDM - Marketing Placement Data</h4>
+                <h4 className="fw-bold text-warning mb-3">
+                  PGDM - Marketing Placement Data
+                </h4>
                 <div className="table-responsive mt-4">
                   <table className="table table-bordered align-middle text-center">
                     <thead className="table-primary">
@@ -290,7 +374,10 @@ Our placement record reflects strong industry trust, competitive performance, an
                         <tr key={index}>
                           <td>{item.year}</td>
                           <td>
-                            <Link href={item.link} className="btn btn-primary rounded-pill btn-sm">
+                            <Link
+                              href={item.link}
+                              className="btn btn-primary rounded-pill btn-sm"
+                            >
                               Click Here
                             </Link>
                           </td>
