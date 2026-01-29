@@ -1919,6 +1919,95 @@ export default function ProgramHighlightsSection() {
           </div>
         </section>
       )}
+<section className="contact-strip">
+  <div className="container">
+    <div className="strip-inner">
+      <h4>Contact Details</h4>
+      <div className="strip-info">
+        <span>
+          <strong>Email ID :</strong>{" "}
+          <a
+            href="mailto:admissions@imthyderabad.edu.in"
+            className="contact-link"
+          >
+            admissions@imthyderabad.edu.in
+          </a>
+        </span>
+
+        <span className="divider">|</span>
+
+        <span>
+          <strong>Phone :</strong>{" "}
+          <a href="tel:9391424273" className="contact-link">
+            9391424273
+          </a>{" "}
+          /{" "}
+          <a href="tel:9391424275" className="contact-link">
+            9391424275
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style jsx>{`
+  .contact-strip {
+    width: 100%;
+    background: #0f2559;
+    color: #fff;
+    padding: 18px 0;
+  }
+
+  .strip-inner {
+    text-align: center;
+  }
+
+  .strip-inner h4 {
+    color: #ffcc00;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .strip-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .strip-info strong {
+    color: #ffcc00;
+  }
+
+  .divider {
+    opacity: 0.6;
+  }
+
+  @media (max-width: 576px) {
+    .strip-info {
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .divider {
+      display: none;
+    }
+  }
+    .contact-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+`}</style>
+
     </>
   );
 }
