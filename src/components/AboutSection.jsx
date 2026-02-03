@@ -1,6 +1,6 @@
 // src/components/AboutSection.
 
-
+ 
 export default function AboutSection() {
   return (
     <section className="about-section py-4">
