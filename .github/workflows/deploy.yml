@@ -6,10 +6,10 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code 
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Deploy via SSH
@@ -19,28 +19,20 @@ jobs:
           username: Am4DiLNbs9P0aCnA
           port: 22
           key: ${{ secrets.SERVER_SSH_KEY }}
-
           script: |
+            set -e
             echo "🚀 Deploy started at $(date)"
 
-            cd ~/imt-hyderabad-test/public_html || exit 1
+            cd /home/Am4DiLNbs9P0aCnA/imt-hyderabad-test/public_html
 
-            # Reset repo
-            git fetch origin main
-            git reset --hard origin/main
+            git pull origin main
 
-            # Clean old build
             rm -rf .next
 
-            # Install dependencies (IMPORTANT)
-            npm ci
-
-            # Build Next.js
+            npm install
             npm run build
 
-            # Restart app safely
-            pm2 restart imt-hyderabad-test || pm2 start npm --name imt-hyderabad-test -- start
-
+            pm2 reload imt-hyderabad-test || pm2 start npm --name imt-hyderabad-test -- start
             pm2 save
 
             echo "✅ Deploy finished successfully!"
