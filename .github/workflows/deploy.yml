@@ -28,7 +28,7 @@ jobs:
             git pull origin main
 
             rm -rf .next
-
+  
             npm install
             npm run build
 
