@@ -10,5 +10,5 @@ export async function generateMetadata() {
 }
 
 export default function RefundPolicy() { 
-  return <ApprovalsAccreditationClient />;
+  return <ApprovalsAccreditationClient />; 
 }
