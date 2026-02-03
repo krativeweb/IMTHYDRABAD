@@ -3,14 +3,18 @@ name: Deploy to Server
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.10
@@ -21,18 +25,17 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             set -e
-            echo "🚀 Deploy started at $(date)"
+            echo "🚀 Deploy started for $GITHUB_SHA"
 
             cd /home/Am4DiLNbs9P0aCnA/imt-hyderabad-test/public_html
-
             git pull origin main
 
             rm -rf .next
-  
             npm install
             npm run build
 
             pm2 reload imt-hyderabad-test || pm2 start npm --name imt-hyderabad-test -- start
             pm2 save
 
-            echo "✅ Deploy finished successfully!"
+            echo "Deployed commit $GITHUB_SHA at $(date)" >> deploy.log
+            echo "✅ Deploy finished successfully"
