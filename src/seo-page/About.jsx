@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DOMPurify from "dompurify";
-
+ 
 export default function AboutIMTHyderabad() {
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
