@@ -9,6 +9,6 @@ export async function generateMetadata() {
   );
 }
 
-export default function RefundPolicy() {
+export default function RefundPolicy() { 
   return <ApprovalsAccreditationClient />;
 }
