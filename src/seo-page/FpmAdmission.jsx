@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Loader from "@/components/Loader";
-
+import ApplyButton from "@/components/ApplyGuide";
 const API = process.env.NEXT_PUBLIC_API_URL;
 
 export default function FpmAdmission() {
@@ -41,6 +41,7 @@ export default function FpmAdmission() {
 
   return (
     <>
+        <ApplyButton />
       {/* HERO */}
       <section
         className="faculty-hero text-center text-white py-5 position-relative"
