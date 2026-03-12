@@ -5,8 +5,8 @@ export default function ApplyNowButton() {
     <>
    
       {/* Apply Now Button */}
-      <a href="https://admissions.imt.edu/applicantStudentProfileGuidlinesHyderabadFPM.json" className="apply-now-btn">
-        Apply Now
+      <a href="/admissions/pgdm" className="apply-now-btn">
+      Apply for PGDM
       </a>
 
       {/* CSS */}
