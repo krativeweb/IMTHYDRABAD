@@ -1,5 +1,5 @@
 import SEO from "../../seo-config";
-
+ 
 export async function getMetadata(pathname, apiPath = null) {
   // 1️⃣ API SEO FIRST
   if (apiPath) {
