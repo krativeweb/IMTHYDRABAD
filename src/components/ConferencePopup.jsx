@@ -1,7 +1,7 @@
 "use client";
 
 export default function ConferenceBanner() {
-  return (
+  return ( 
     <div className="conference-banner">
       <a href="https://isdsiglobal.com/" target="_blank" rel="noopener noreferrer">
         <img
