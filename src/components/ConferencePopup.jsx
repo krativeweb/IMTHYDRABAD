@@ -5,7 +5,7 @@ export default function ConferenceBanner() {
     <div className="conference-banner">
       <a href="https://isdsiglobal.com/" target="_blank" rel="noopener noreferrer">
         <img
-          src="/imt-global.jpeg"
+          src="/imt-global.png"
           alt="ISDSI Global Conference"
           className="banner-img"
         />
