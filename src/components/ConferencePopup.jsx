@@ -16,7 +16,7 @@ export default function ConferencePopup() {
 
         <a href="https://isdsiglobal.com/" target="_blank">
           <img
-            src="/images/imt-global.jpeg"
+            src="/imt-global.jpeg"
             alt="ISDSI Conference"
             className="popup-img"
           />
