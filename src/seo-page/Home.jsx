@@ -26,7 +26,7 @@ export default function Home() {
       {/* Announcement Strip */}
    
       <AnnouncementStrip />
-           <ConferencePopup />
+           {/* <ConferencePopup /> */}
 
       {/* Add body class for padding */}
 
