@@ -43,7 +43,7 @@ export async function getMetadata(pathname, apiPath = null) {
         };
       }
     } catch (err) {
-      console.error("Dynamic SEO error:", err.message);
+      // console.error("Dynamic SEO error:", err.message);
     }
   }
 
