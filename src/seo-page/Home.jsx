@@ -14,6 +14,7 @@ import InternationalAssociations from "@/sections/InternationalAssociations";
 import CampusLifeGallery from "@/sections/CampusLifeGallery";
 import PlacementAlliances from "@/sections/PlacementAlliances";
 import ApplyButton from "@/components/ApplyButton";
+import ConferencePopup from "@/components/ConferencePopup";
 export default function Home() {
   return (
     <>
@@ -23,7 +24,9 @@ export default function Home() {
         }
       `}</style>
       {/* Announcement Strip */}
+        <ConferencePopup />
       <AnnouncementStrip />
+      
 
       {/* Add body class for padding */}
 
