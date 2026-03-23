@@ -190,6 +190,39 @@ const ThankYouPage = () => {
         </section>
       </div>
 
+      <Script id="ec-form-submit" strategy="afterInteractive">
+  {`
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+
+      const email = params.get("email") || "";
+      const phone = params.get("phone_number") || "";
+
+      const utm_source = params.get("utm_source") || "";
+      const utm_medium = params.get("utm_medium") || "";
+      const utm_campaign = params.get("utm_campaign") || "";
+      const utm_id = params.get("utm_id") || "";
+
+      if (email) sessionStorage.setItem("user_email", email);
+      if (phone) sessionStorage.setItem("user_phone", phone);
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "ec_form_submit",
+        user_data: {
+          email: email,
+          phone_number: phone
+        },
+        utm_data: {
+          utm_source,
+          utm_medium,
+          utm_campaign,
+          utm_id
+        }
+      });
+    })();
+  `}
+</Script>
       <Script
         src="/admission/js/jquery-3.7.1.min.js"
         strategy="beforeInteractive"
